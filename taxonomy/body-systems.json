@@ -7,47 +7,35 @@
     },
     {
       "id": "BS002",
-      "name": "Cardiovascular System"
+      "name": "Intestinal System"
     },
     {
       "id": "BS003",
-      "name": "Brain & Nervous System"
+      "name": "Circulatory System"
     },
     {
       "id": "BS004",
-      "name": "Immune System"
+      "name": "Nervous System"
     },
     {
       "id": "BS005",
-      "name": "Endocrine System"
+      "name": "Immune System"
     },
     {
       "id": "BS006",
-      "name": "Metabolic Health"
-    },
-    {
-      "id": "BS007",
-      "name": "Liver & Detoxification"
-    },
-    {
-      "id": "BS008",
-      "name": "Musculoskeletal System"
-    },
-    {
-      "id": "BS009",
       "name": "Respiratory System"
     },
     {
-      "id": "BS010",
+      "id": "BS007",
       "name": "Urinary System"
     },
     {
-      "id": "BS011",
-      "name": "Reproductive System"
+      "id": "BS008",
+      "name": "Glandular System"
     },
     {
-      "id": "BS012",
-      "name": "Integumentary System"
+      "id": "BS009",
+      "name": "Structural System"
     }
   ]
 }
