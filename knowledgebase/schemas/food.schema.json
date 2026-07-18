@@ -1,0 +1,228 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://personalwellnessblueprint.com/schema/food.schema.json",
+
+  "title": "Personal Wellness Blueprint - Food Schema",
+  "description": "Schema for food knowledge base entries.",
+  "type": "object",
+
+  "required": [
+    "id",
+    "version",
+    "name",
+    "category",
+    "summary",
+    "supportsSystems",
+    "keyNutrients",
+    "sections",
+    "tags"
+  ],
+
+  "properties": {
+
+    "id": {
+      "type": "string",
+      "pattern": "^F[0-9]{3}$"
+    },
+
+    "version": {
+      "type": "string"
+    },
+
+    "name": {
+      "type": "string"
+    },
+
+    "scientificName": {
+      "type": "string"
+    },
+
+    "category": {
+      "type": "string"
+    },
+
+    "summary": {
+      "type": "string"
+    },
+
+    "heroImage": {
+      "type": "string"
+    },
+
+    "supportsSystems": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+
+    "keyNutrients": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/nutrient"
+      }
+    },
+
+    "scorecard": {
+      "$ref": "#/$defs/scorecard"
+    },
+
+    "sections": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/section"
+      }
+    },
+
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+
+    "metadata": {
+      "$ref": "#/$defs/metadata"
+    }
+
+  },
+
+  "$defs": {
+
+    "section": {
+
+      "type": "object",
+
+      "required": [
+        "id",
+        "title",
+        "content"
+      ],
+
+      "properties": {
+
+        "id": {
+          "type": "string"
+        },
+
+        "title": {
+          "type": "string"
+        },
+
+        "content": {
+          "type": "string"
+        }
+
+      }
+
+    },
+
+    "nutrient": {
+
+      "type": "object",
+
+      "required": [
+        "name",
+        "benefit"
+      ],
+
+      "properties": {
+
+        "name": {
+          "type": "string"
+        },
+
+        "type": {
+          "type": "string"
+        },
+
+        "benefit": {
+          "type": "string"
+        }
+
+      }
+
+    },
+
+    "scorecard": {
+
+      "type": "object",
+
+      "properties": {
+
+        "digestive": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 5
+        },
+
+        "heart": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 5
+        },
+
+        "immune": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 5
+        },
+
+        "brain": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 5
+        },
+
+        "energy": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 5
+        },
+
+        "budget": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 5
+        },
+
+        "versatility": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 5
+        }
+
+      }
+
+    },
+
+    "metadata": {
+
+      "type": "object",
+
+      "properties": {
+
+        "created": {
+          "type": "string",
+          "format": "date"
+        },
+
+        "lastReviewed": {
+          "type": "string",
+          "format": "date"
+        },
+
+        "reviewCycleMonths": {
+          "type": "integer"
+        },
+
+        "reviewedBy": {
+          "type": "string"
+        }
+
+      }
+
+    }
+
+  }
+}
