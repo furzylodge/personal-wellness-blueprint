@@ -1,0 +1,14 @@
+{
+    "name": "simon/personal-wellness-blueprint",
+    "authors": [
+        {
+            "name": "Simon"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "PWB\\": "engine/src/"
+        }
+    }
+}
