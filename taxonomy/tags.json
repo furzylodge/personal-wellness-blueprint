@@ -1,0 +1,69 @@
+{
+  "version": "1.1",
+  "tags": [
+    {
+      "id": "TAG001",
+      "name": "Breakfast"
+    },
+    {
+      "id": "TAG002",
+      "name": "Budget Friendly"
+    },
+    {
+      "id": "TAG003",
+      "name": "Gut Health"
+    },
+    {
+      "id": "TAG004",
+      "name": "Heart Health"
+    },
+    {
+      "id": "TAG005",
+      "name": "High Fibre"
+    },
+    {
+      "id": "TAG006",
+      "name": "High Protein"
+    },
+    {
+      "id": "TAG007",
+      "name": "Energy"
+    },
+    {
+      "id": "TAG008",
+      "name": "Plant Based"
+    },
+    {
+      "id": "TAG009",
+      "name": "Whole Food"
+    },
+    {
+      "id": "TAG010",
+      "name": "Meal Prep"
+    },
+    {
+      "id": "TAG011",
+      "name": "Weight Management"
+    },
+    {
+      "id": "TAG012",
+      "name": "Anti-inflammatory"
+    },
+    {
+      "id": "TAG013",
+      "name": "Antioxidant Rich"
+    },
+    {
+      "id": "TAG014",
+      "name": "Low Sugar"
+    },
+    {
+      "id": "TAG015",
+      "name": "Quick Meal"
+    },
+    {
+      "id": "TAG016",
+      "name": "Slow Release Energy"
+    }
+  ]
+}

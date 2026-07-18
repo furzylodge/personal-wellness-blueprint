@@ -1,0 +1,57 @@
+{
+  "version": "1.0",
+  "vitamins": [
+    {
+      "id": "V001",
+      "name": "Vitamin A"
+    },
+    {
+      "id": "V002",
+      "name": "Vitamin B1 (Thiamine)"
+    },
+    {
+      "id": "V003",
+      "name": "Vitamin B2 (Riboflavin)"
+    },
+    {
+      "id": "V004",
+      "name": "Vitamin B3 (Niacin)"
+    },
+    {
+      "id": "V005",
+      "name": "Vitamin B5 (Pantothenic Acid)"
+    },
+    {
+      "id": "V006",
+      "name": "Vitamin B6"
+    },
+    {
+      "id": "V007",
+      "name": "Vitamin B7 (Biotin)"
+    },
+    {
+      "id": "V008",
+      "name": "Vitamin B9 (Folate)"
+    },
+    {
+      "id": "V009",
+      "name": "Vitamin B12"
+    },
+    {
+      "id": "V010",
+      "name": "Vitamin C"
+    },
+    {
+      "id": "V011",
+      "name": "Vitamin D"
+    },
+    {
+      "id": "V012",
+      "name": "Vitamin E"
+    },
+    {
+      "id": "V013",
+      "name": "Vitamin K"
+    }
+  ]
+}

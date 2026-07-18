@@ -1,0 +1,75 @@
+{
+  "version": "1.0",
+  "foods": [
+    {
+      "id": "F001",
+      "name": "Oats",
+      "slug": "oats",
+      "foodGroup": "FG001",
+      "status": "Planned"
+    },
+    {
+      "id": "F002",
+      "name": "Brown Rice",
+      "slug": "brown-rice",
+      "foodGroup": "FG001",
+      "status": "Planned"
+    },
+    {
+      "id": "F003",
+      "name": "Quinoa",
+      "slug": "quinoa",
+      "foodGroup": "FG001",
+      "status": "Planned"
+    },
+    {
+      "id": "F004",
+      "name": "Broccoli",
+      "slug": "broccoli",
+      "foodGroup": "FG002",
+      "status": "Planned"
+    },
+    {
+      "id": "F005",
+      "name": "Blueberries",
+      "slug": "blueberries",
+      "foodGroup": "FG003",
+      "status": "Planned"
+    },
+    {
+      "id": "F006",
+      "name": "Spinach",
+      "slug": "spinach",
+      "foodGroup": "FG002",
+      "status": "Planned"
+    },
+    {
+      "id": "F007",
+      "name": "Lentils",
+      "slug": "lentils",
+      "foodGroup": "FG004",
+      "status": "Planned"
+    },
+    {
+      "id": "F008",
+      "name": "Chickpeas",
+      "slug": "chickpeas",
+      "foodGroup": "FG004",
+      "status": "Planned"
+    },
+    {
+      "id": "F009",
+      "name": "Salmon",
+      "slug": "salmon",
+      "foodGroup": "FG007",
+      "status": "Planned"
+    },
+    {
+      "id": "F010",
+      "name": "Walnuts",
+      "slug": "walnuts",
+      "foodGroup": "FG005",
+      "status": "Planned"
+    }
+  ]
+}

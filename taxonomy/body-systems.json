@@ -1,0 +1,53 @@
+{
+  "version": "1.1",
+  "bodySystems": [
+    {
+      "id": "BS001",
+      "name": "Digestive System"
+    },
+    {
+      "id": "BS002",
+      "name": "Cardiovascular System"
+    },
+    {
+      "id": "BS003",
+      "name": "Brain & Nervous System"
+    },
+    {
+      "id": "BS004",
+      "name": "Immune System"
+    },
+    {
+      "id": "BS005",
+      "name": "Endocrine System"
+    },
+    {
+      "id": "BS006",
+      "name": "Metabolic Health"
+    },
+    {
+      "id": "BS007",
+      "name": "Liver & Detoxification"
+    },
+    {
+      "id": "BS008",
+      "name": "Musculoskeletal System"
+    },
+    {
+      "id": "BS009",
+      "name": "Respiratory System"
+    },
+    {
+      "id": "BS010",
+      "name": "Urinary System"
+    },
+    {
+      "id": "BS011",
+      "name": "Reproductive System"
+    },
+    {
+      "id": "BS012",
+      "name": "Integumentary System"
+    }
+  ]
+}

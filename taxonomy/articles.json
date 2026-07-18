@@ -1,0 +1,40 @@
+{
+  "version": "1.0",
+  "articles": [
+    {
+      "id": "A001",
+      "title": "Understanding Fibre",
+      "slug": "understanding-fibre",
+      "category": "Nutrition",
+      "status": "Draft"
+    },
+    {
+      "id": "A002",
+      "title": "Hydration Basics",
+      "slug": "hydration-basics",
+      "category": "Hydration",
+      "status": "Draft"
+    },
+    {
+      "id": "A003",
+      "title": "Inflammation and Diet",
+      "slug": "inflammation-and-diet",
+      "category": "Inflammation",
+      "status": "Draft"
+    },
+    {
+      "id": "A004",
+      "title": "Blood Sugar Balance",
+      "slug": "blood-sugar-balance",
+      "category": "Metabolic Health",
+      "status": "Draft"
+    },
+    {
+      "id": "A005",
+      "title": "Building a Healthy Plate",
+      "slug": "building-a-healthy-plate",
+      "category": "Healthy Eating",
+      "status": "Draft"
+    }
+  ]
+}

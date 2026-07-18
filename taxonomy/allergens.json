@@ -1,0 +1,61 @@
+{
+  "version": "1.1",
+  "allergens": [
+    {
+      "id": "AL001",
+      "name": "Celery"
+    },
+    {
+      "id": "AL002",
+      "name": "Cereals containing Gluten"
+    },
+    {
+      "id": "AL003",
+      "name": "Crustaceans"
+    },
+    {
+      "id": "AL004",
+      "name": "Eggs"
+    },
+    {
+      "id": "AL005",
+      "name": "Fish"
+    },
+    {
+      "id": "AL006",
+      "name": "Lupin"
+    },
+    {
+      "id": "AL007",
+      "name": "Milk"
+    },
+    {
+      "id": "AL008",
+      "name": "Molluscs"
+    },
+    {
+      "id": "AL009",
+      "name": "Mustard"
+    },
+    {
+      "id": "AL010",
+      "name": "Peanuts"
+    },
+    {
+      "id": "AL011",
+      "name": "Sesame"
+    },
+    {
+      "id": "AL012",
+      "name": "Soy"
+    },
+    {
+      "id": "AL013",
+      "name": "Sulphites"
+    },
+    {
+      "id": "AL014",
+      "name": "Tree Nuts"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "version": "1.0",
+  "minerals": [
+    {
+      "id": "M001",
+      "name": "Calcium"
+    },
+    {
+      "id": "M002",
+      "name": "Chromium"
+    },
+    {
+      "id": "M003",
+      "name": "Copper"
+    },
+    {
+      "id": "M004",
+      "name": "Iodine"
+    },
+    {
+      "id": "M005",
+      "name": "Iron"
+    },
+    {
+      "id": "M006",
+      "name": "Magnesium"
+    },
+    {
+      "id": "M007",
+      "name": "Manganese"
+    },
+    {
+      "id": "M008",
+      "name": "Molybdenum"
+    },
+    {
+      "id": "M009",
+      "name": "Phosphorus"
+    },
+    {
+      "id": "M010",
+      "name": "Potassium"
+    },
+    {
+      "id": "M011",
+      "name": "Selenium"
+    },
+    {
+      "id": "M012",
+      "name": "Sodium"
+    },
+    {
+      "id": "M013",
+      "name": "Zinc"
+    }
+  ]
+}

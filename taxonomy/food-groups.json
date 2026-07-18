@@ -1,0 +1,75 @@
+{
+  "version": "1.1",
+  "foodGroups": [
+    {
+      "id": "FG001",
+      "name": "Wholegrains",
+      "description": "Whole cereal grains retaining bran, germ and endosperm."
+    },
+    {
+      "id": "FG002",
+      "name": "Vegetables",
+      "description": "Edible vegetables."
+    },
+    {
+      "id": "FG003",
+      "name": "Fruit",
+      "description": "Fresh, frozen or dried fruit."
+    },
+    {
+      "id": "FG004",
+      "name": "Beans & Legumes",
+      "description": "Beans, lentils, peas and pulses."
+    },
+    {
+      "id": "FG005",
+      "name": "Nuts & Seeds",
+      "description": "Tree nuts and edible seeds."
+    },
+    {
+      "id": "FG006",
+      "name": "Herbs & Spices",
+      "description": "Culinary herbs and spices."
+    },
+    {
+      "id": "FG007",
+      "name": "Fish & Seafood",
+      "description": "Fish and seafood."
+    },
+    {
+      "id": "FG008",
+      "name": "Meat & Poultry",
+      "description": "Meat and poultry."
+    },
+    {
+      "id": "FG009",
+      "name": "Eggs",
+      "description": "Eggs and egg products."
+    },
+    {
+      "id": "FG010",
+      "name": "Dairy",
+      "description": "Milk and dairy foods."
+    },
+    {
+      "id": "FG011",
+      "name": "Fermented Foods",
+      "description": "Naturally fermented foods."
+    },
+    {
+      "id": "FG012",
+      "name": "Oils & Fats",
+      "description": "Cooking oils and fats."
+    },
+    {
+      "id": "FG013",
+      "name": "Plant-Based Alternatives",
+      "description": "Plant-based substitutes."
+    },
+    {
+      "id": "FG014",
+      "name": "Sea Vegetables",
+      "description": "Edible seaweeds."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "version": "1.0",
+  "habits": [
+    {
+      "id": "H001",
+      "name": "Drink More Water"
+    },
+    {
+      "id": "H002",
+      "name": "Eat More Whole Foods"
+    },
+    {
+      "id": "H003",
+      "name": "Increase Fibre Intake"
+    },
+    {
+      "id": "H004",
+      "name": "Eat Slowly and Mindfully"
+    },
+    {
+      "id": "H005",
+      "name": "Regular Physical Activity"
+    },
+    {
+      "id": "H006",
+      "name": "Prioritise Sleep"
+    },
+    {
+      "id": "H007",
+      "name": "Reduce Ultra-Processed Foods"
+    },
+    {
+      "id": "H008",
+      "name": "Eat a Variety of Plants"
+    },
+    {
+      "id": "H009",
+      "name": "Manage Stress"
+    },
+    {
+      "id": "H010",
+      "name": "Regular Meal Times"
+    },
+    {
+      "id": "H011",
+      "name": "Limit Added Sugar"
+    },
+    {
+      "id": "H012",
+      "name": "Include Healthy Fats"
+    },
+    {
+      "id": "H013",
+      "name": "Moderate Alcohol Intake"
+    },
+    {
+      "id": "H014",
+      "name": "Support Gut Microbiome"
+    },
+    {
+      "id": "H015",
+      "name": "Stay Consistent"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "version": "1.1",
+  "dietaryPreferences": [
+    {
+      "id": "DP001",
+      "name": "Vegetarian"
+    },
+    {
+      "id": "DP002",
+      "name": "Vegan"
+    },
+    {
+      "id": "DP003",
+      "name": "Gluten Free"
+    },
+    {
+      "id": "DP004",
+      "name": "Dairy Free"
+    },
+    {
+      "id": "DP005",
+      "name": "Egg Free"
+    },
+    {
+      "id": "DP006",
+      "name": "Nut Free"
+    },
+    {
+      "id": "DP007",
+      "name": "Soy Free"
+    },
+    {
+      "id": "DP008",
+      "name": "Halal"
+    },
+    {
+      "id": "DP009",
+      "name": "Kosher"
+    },
+    {
+      "id": "DP010",
+      "name": "Pregnancy Suitable"
+    },
+    {
+      "id": "DP011",
+      "name": "Child Friendly"
+    },
+    {
+      "id": "DP012",
+      "name": "Plant Based"
+    },
+    {
+      "id": "DP013",
+      "name": "High Fibre"
+    },
+    {
+      "id": "DP014",
+      "name": "High Protein"
+    },
+    {
+      "id": "DP015",
+      "name": "Low FODMAP"
+    },
+    {
+      "id": "DP016",
+      "name": "Paleo"
+    }
+  ]
+}

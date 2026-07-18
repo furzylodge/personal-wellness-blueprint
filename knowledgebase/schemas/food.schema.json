@@ -1,485 +1,99 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://personalwellnessblueprint.com/schema/food.schema.json",
-
   "title": "Personal Wellness Blueprint Food Schema",
-  "description": "Schema for food knowledge base entries.",
+  "version": "1.1",
   "type": "object",
-
   "required": [
     "id",
     "version",
     "identity",
     "classification",
+    "tags",
+    "nutritionHighlights",
+    "knowledge",
     "suitability",
     "allergens",
-    "nutrition",
+    "contraindications",
+    "personalisation",
+    "supports",
     "relationships",
     "practical",
-    "content",
+    "editorial",
     "evidence",
-    "metadata"
+    "metadata",
+    "status"
   ],
-
   "properties": {
-
     "id": {
       "type": "string",
       "pattern": "^F[0-9]{3}$"
     },
-
     "version": {
       "type": "string"
     },
-
     "identity": {
-      "$ref": "#/$defs/identity"
-    },
-
-    "classification": {
-      "$ref": "#/$defs/classification"
-    },
-
-    "suitability": {
-      "$ref": "#/$defs/suitability"
-    },
-
-    "allergens": {
-      "$ref": "#/$defs/allergens"
-    },
-
-    "nutrition": {
-      "$ref": "#/$defs/nutrition"
-    },
-
-    "relationships": {
-      "$ref": "#/$defs/relationships"
-    },
-
-    "practical": {
-      "$ref": "#/$defs/practical"
-    },
-
-    "content": {
-      "$ref": "#/$defs/content"
-    },
-
-    "evidence": {
-      "$ref": "#/$defs/evidence"
-    },
-
-    "metadata": {
-      "$ref": "#/$defs/metadata"
-    }
-
-  },
-
-  "$defs": {
-
-    "identity": {
-
       "type": "object",
-
       "required": [
         "name",
         "scientificName",
-        "slug",
-        "category"
-      ],
-
-      "properties": {
-
-        "name": {
-          "type": "string"
-        },
-
-        "scientificName": {
-          "type": "string"
-        },
-
-        "slug": {
-          "type": "string"
-        },
-
-        "category": {
-          "type": "string"
-        }
-
-      }
-
+        "slug"
+      ]
     },
-
     "classification": {
-
       "type": "object",
-
-      "properties": {
-
-        "foodGroup": {
-          "type": "string"
-        },
-
-        "plantBased": {
-          "type": "boolean"
-        },
-
-        "minimallyProcessed": {
-          "type": "boolean"
-        }
-
-      }
-
+      "required": [
+        "foodGroup",
+        "category"
+      ]
     },
-
+    "images": {
+      "type": "object"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "nutritionHighlights": {
+      "type": "object"
+    },
+    "knowledge": {
+      "type": "object"
+    },
     "suitability": {
-
-      "type": "object",
-
-      "properties": {
-
-        "vegetarian": {
-          "type": "boolean"
-        },
-
-        "vegan": {
-          "type": "boolean"
-        },
-
-        "glutenFree": {
-          "type": "boolean"
-        },
-
-        "dairyFree": {
-          "type": "boolean"
-        },
-
-        "eggFree": {
-          "type": "boolean"
-        },
-
-        "nutFree": {
-          "type": "boolean"
-        },
-
-        "soyFree": {
-          "type": "boolean"
-        },
-
-        "halal": {
-          "type": "boolean"
-        },
-
-        "kosher": {
-          "type": "boolean"
-        },
-
-        "childFriendly": {
-          "type": "boolean"
-        },
-
-        "pregnancySuitable": {
-          "type": "boolean"
-        }
-
-      }
-
+      "type": "object"
     },
-
     "allergens": {
-
-      "type": "object",
-
-      "properties": {
-
-        "contains": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
-
-        "mayContain": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
-
-        "notes": {
-          "type": "string"
-        }
-
-      }
-
+      "type": "object"
     },
-
-    "nutrition": {
-
-      "type": "object",
-
-      "properties": {
-
-        "serving": {
-          "type": "string"
-        },
-
-        "energyKcal": {
-          "type": "number"
-        },
-
-        "protein": {
-          "type": "number"
-        },
-
-        "fat": {
-          "type": "number"
-        },
-
-        "saturates": {
-          "type": "number"
-        },
-
-        "carbohydrate": {
-          "type": "number"
-        },
-
-        "sugars": {
-          "type": "number"
-        },
-
-        "fibre": {
-          "type": "number"
-        },
-
-        "salt": {
-          "type": "number"
-        },
-
-        "keyNutrients": {
-          "type": "array",
-
-          "items": {
-
-            "type": "object",
-
-            "properties": {
-
-              "name": {
-                "type": "string"
-              },
-
-              "benefit": {
-                "type": "string"
-              }
-
-            }
-
-          }
-
-        }
-
-      }
-
+    "contraindications": {
+      "type": "object"
     },
-
+    "personalisation": {
+      "type": "object"
+    },
+    "supports": {
+      "type": "object"
+    },
     "relationships": {
-
-      "type": "object",
-
-      "properties": {
-
-        "supportsBodySystems": {
-
-          "type": "array",
-
-          "items": {
-            "type": "string"
-          }
-
-        },
-
-        "relatedFoods": {
-
-          "type": "array",
-
-          "items": {
-            "type": "string"
-          }
-
-        },
-
-        "relatedHabits": {
-
-          "type": "array",
-
-          "items": {
-            "type": "string"
-          }
-
-        },
-
-        "relatedArticles": {
-
-          "type": "array",
-
-          "items": {
-            "type": "string"
-          }
-
-        }
-
-      }
-
+      "type": "object"
     },
-
     "practical": {
-
-      "type": "object",
-
-      "properties": {
-
-        "availability": {
-          "type": "string"
-        },
-
-        "season": {
-          "type": "string"
-        },
-
-        "typicalCost": {
-          "type": "string"
-        },
-
-        "storage": {
-          "type": "string"
-        },
-
-        "prepTime": {
-          "type": "string"
-        },
-
-        "cookTime": {
-          "type": "string"
-        }
-
-      }
-
+      "type": "object"
     },
-
-    "content": {
-
-      "type": "object",
-
-      "properties": {
-
-        "summary": {
-          "type": "string"
-        },
-
-        "whyItMatters": {
-          "type": "string"
-        },
-
-        "healthBenefits": {
-
-          "type": "array",
-
-          "items": {
-            "type": "string"
-          }
-
-        },
-
-        "shoppingTips": {
-          "type": "string"
-        },
-
-        "preparationTips": {
-          "type": "string"
-        },
-
-        "pairingSuggestions": {
-
-          "type": "array",
-
-          "items": {
-            "type": "string"
-          }
-
-        },
-
-        "didYouKnow": {
-          "type": "string"
-        },
-
-        "myth": {
-          "type": "string"
-        },
-
-        "fact": {
-          "type": "string"
-        },
-
-        "keyTakeaway": {
-          "type": "string"
-        }
-
-      }
-
+    "editorial": {
+      "type": "object"
     },
-
     "evidence": {
-
-      "type": "object",
-
-      "properties": {
-
-        "level": {
-          "type": "string"
-        },
-
-        "sources": {
-
-          "type": "array",
-
-          "items": {
-            "type": "string"
-          }
-
-        }
-
-      }
-
+      "type": "object"
     },
-
     "metadata": {
-
-      "type": "object",
-
-      "properties": {
-
-        "author": {
-          "type": "string"
-        },
-
-        "created": {
-          "type": "string",
-          "format": "date"
-        },
-
-        "reviewed": {
-          "type": "string",
-          "format": "date"
-        },
-
-        "nextReview": {
-          "type": "string",
-          "format": "date"
-        }
-
-      }
-
+      "type": "object"
+    },
+    "status": {
+      "type": "object"
     }
-
-  }
+  },
+  "additionalProperties": false
 }
