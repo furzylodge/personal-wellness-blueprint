@@ -2,20 +2,23 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://personalwellnessblueprint.com/schema/food.schema.json",
 
-  "title": "Personal Wellness Blueprint - Food Schema",
+  "title": "Personal Wellness Blueprint Food Schema",
   "description": "Schema for food knowledge base entries.",
   "type": "object",
 
   "required": [
     "id",
     "version",
-    "name",
-    "category",
-    "summary",
-    "supportsSystems",
-    "keyNutrients",
-    "sections",
-    "tags"
+    "identity",
+    "classification",
+    "suitability",
+    "allergens",
+    "nutrition",
+    "relationships",
+    "practical",
+    "content",
+    "evidence",
+    "metadata"
   ],
 
   "properties": {
@@ -29,56 +32,40 @@
       "type": "string"
     },
 
-    "name": {
-      "type": "string"
+    "identity": {
+      "$ref": "#/$defs/identity"
     },
 
-    "scientificName": {
-      "type": "string"
+    "classification": {
+      "$ref": "#/$defs/classification"
     },
 
-    "category": {
-      "type": "string"
+    "suitability": {
+      "$ref": "#/$defs/suitability"
     },
 
-    "summary": {
-      "type": "string"
+    "allergens": {
+      "$ref": "#/$defs/allergens"
     },
 
-    "heroImage": {
-      "type": "string"
+    "nutrition": {
+      "$ref": "#/$defs/nutrition"
     },
 
-    "supportsSystems": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
+    "relationships": {
+      "$ref": "#/$defs/relationships"
     },
 
-    "keyNutrients": {
-      "type": "array",
-      "items": {
-        "$ref": "#/$defs/nutrient"
-      }
+    "practical": {
+      "$ref": "#/$defs/practical"
     },
 
-    "scorecard": {
-      "$ref": "#/$defs/scorecard"
+    "content": {
+      "$ref": "#/$defs/content"
     },
 
-    "sections": {
-      "type": "array",
-      "items": {
-        "$ref": "#/$defs/section"
-      }
-    },
-
-    "tags": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
+    "evidence": {
+      "$ref": "#/$defs/evidence"
     },
 
     "metadata": {
@@ -89,41 +76,15 @@
 
   "$defs": {
 
-    "section": {
-
-      "type": "object",
-
-      "required": [
-        "id",
-        "title",
-        "content"
-      ],
-
-      "properties": {
-
-        "id": {
-          "type": "string"
-        },
-
-        "title": {
-          "type": "string"
-        },
-
-        "content": {
-          "type": "string"
-        }
-
-      }
-
-    },
-
-    "nutrient": {
+    "identity": {
 
       "type": "object",
 
       "required": [
         "name",
-        "benefit"
+        "scientificName",
+        "slug",
+        "category"
       ],
 
       "properties": {
@@ -132,11 +93,15 @@
           "type": "string"
         },
 
-        "type": {
+        "scientificName": {
           "type": "string"
         },
 
-        "benefit": {
+        "slug": {
+          "type": "string"
+        },
+
+        "category": {
           "type": "string"
         }
 
@@ -144,52 +109,343 @@
 
     },
 
-    "scorecard": {
+    "classification": {
 
       "type": "object",
 
       "properties": {
 
-        "digestive": {
-          "type": "integer",
-          "minimum": 0,
-          "maximum": 5
+        "foodGroup": {
+          "type": "string"
         },
 
-        "heart": {
-          "type": "integer",
-          "minimum": 0,
-          "maximum": 5
+        "plantBased": {
+          "type": "boolean"
         },
 
-        "immune": {
-          "type": "integer",
-          "minimum": 0,
-          "maximum": 5
+        "minimallyProcessed": {
+          "type": "boolean"
+        }
+
+      }
+
+    },
+
+    "suitability": {
+
+      "type": "object",
+
+      "properties": {
+
+        "vegetarian": {
+          "type": "boolean"
         },
 
-        "brain": {
-          "type": "integer",
-          "minimum": 0,
-          "maximum": 5
+        "vegan": {
+          "type": "boolean"
         },
 
-        "energy": {
-          "type": "integer",
-          "minimum": 0,
-          "maximum": 5
+        "glutenFree": {
+          "type": "boolean"
         },
 
-        "budget": {
-          "type": "integer",
-          "minimum": 0,
-          "maximum": 5
+        "dairyFree": {
+          "type": "boolean"
         },
 
-        "versatility": {
-          "type": "integer",
-          "minimum": 0,
-          "maximum": 5
+        "eggFree": {
+          "type": "boolean"
+        },
+
+        "nutFree": {
+          "type": "boolean"
+        },
+
+        "soyFree": {
+          "type": "boolean"
+        },
+
+        "halal": {
+          "type": "boolean"
+        },
+
+        "kosher": {
+          "type": "boolean"
+        },
+
+        "childFriendly": {
+          "type": "boolean"
+        },
+
+        "pregnancySuitable": {
+          "type": "boolean"
+        }
+
+      }
+
+    },
+
+    "allergens": {
+
+      "type": "object",
+
+      "properties": {
+
+        "contains": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+
+        "mayContain": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+
+        "notes": {
+          "type": "string"
+        }
+
+      }
+
+    },
+
+    "nutrition": {
+
+      "type": "object",
+
+      "properties": {
+
+        "serving": {
+          "type": "string"
+        },
+
+        "energyKcal": {
+          "type": "number"
+        },
+
+        "protein": {
+          "type": "number"
+        },
+
+        "fat": {
+          "type": "number"
+        },
+
+        "saturates": {
+          "type": "number"
+        },
+
+        "carbohydrate": {
+          "type": "number"
+        },
+
+        "sugars": {
+          "type": "number"
+        },
+
+        "fibre": {
+          "type": "number"
+        },
+
+        "salt": {
+          "type": "number"
+        },
+
+        "keyNutrients": {
+          "type": "array",
+
+          "items": {
+
+            "type": "object",
+
+            "properties": {
+
+              "name": {
+                "type": "string"
+              },
+
+              "benefit": {
+                "type": "string"
+              }
+
+            }
+
+          }
+
+        }
+
+      }
+
+    },
+
+    "relationships": {
+
+      "type": "object",
+
+      "properties": {
+
+        "supportsBodySystems": {
+
+          "type": "array",
+
+          "items": {
+            "type": "string"
+          }
+
+        },
+
+        "relatedFoods": {
+
+          "type": "array",
+
+          "items": {
+            "type": "string"
+          }
+
+        },
+
+        "relatedHabits": {
+
+          "type": "array",
+
+          "items": {
+            "type": "string"
+          }
+
+        },
+
+        "relatedArticles": {
+
+          "type": "array",
+
+          "items": {
+            "type": "string"
+          }
+
+        }
+
+      }
+
+    },
+
+    "practical": {
+
+      "type": "object",
+
+      "properties": {
+
+        "availability": {
+          "type": "string"
+        },
+
+        "season": {
+          "type": "string"
+        },
+
+        "typicalCost": {
+          "type": "string"
+        },
+
+        "storage": {
+          "type": "string"
+        },
+
+        "prepTime": {
+          "type": "string"
+        },
+
+        "cookTime": {
+          "type": "string"
+        }
+
+      }
+
+    },
+
+    "content": {
+
+      "type": "object",
+
+      "properties": {
+
+        "summary": {
+          "type": "string"
+        },
+
+        "whyItMatters": {
+          "type": "string"
+        },
+
+        "healthBenefits": {
+
+          "type": "array",
+
+          "items": {
+            "type": "string"
+          }
+
+        },
+
+        "shoppingTips": {
+          "type": "string"
+        },
+
+        "preparationTips": {
+          "type": "string"
+        },
+
+        "pairingSuggestions": {
+
+          "type": "array",
+
+          "items": {
+            "type": "string"
+          }
+
+        },
+
+        "didYouKnow": {
+          "type": "string"
+        },
+
+        "myth": {
+          "type": "string"
+        },
+
+        "fact": {
+          "type": "string"
+        },
+
+        "keyTakeaway": {
+          "type": "string"
+        }
+
+      }
+
+    },
+
+    "evidence": {
+
+      "type": "object",
+
+      "properties": {
+
+        "level": {
+          "type": "string"
+        },
+
+        "sources": {
+
+          "type": "array",
+
+          "items": {
+            "type": "string"
+          }
+
         }
 
       }
@@ -202,22 +458,23 @@
 
       "properties": {
 
+        "author": {
+          "type": "string"
+        },
+
         "created": {
           "type": "string",
           "format": "date"
         },
 
-        "lastReviewed": {
+        "reviewed": {
           "type": "string",
           "format": "date"
         },
 
-        "reviewCycleMonths": {
-          "type": "integer"
-        },
-
-        "reviewedBy": {
-          "type": "string"
+        "nextReview": {
+          "type": "string",
+          "format": "date"
         }
 
       }
