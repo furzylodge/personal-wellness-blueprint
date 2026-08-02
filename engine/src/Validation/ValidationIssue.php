@@ -9,6 +9,7 @@ class ValidationIssue
     public const INFO = 'info';
 
     public function __construct(
+        public string $validator,
         public string $severity,
         public string $file,
         public string $message,

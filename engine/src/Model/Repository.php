@@ -76,6 +76,17 @@ class Repository
     }
 
     /**
+     * Get all JSON files.
+     */
+    public function getAllJsonFiles(): array
+    {
+        return array_merge(
+    	$this->foods,
+    	$this->taxonomies);
+    }
+
+
+    /**
      * Number of food files.
      */
     public function countFoods(): int
@@ -117,5 +128,15 @@ class Repository
             + $this->countMonographs()
             + $this->countTaxonomies()
             + $this->countSchemas();
+    }
+    
+    public function hasMonograph(string $foodId): bool
+    {
+	    foreach ($this->monographs as $file) {
+        	if (pathinfo($file, PATHINFO_FILENAME) === $foodId) {
+            	return true;
+        	}
+    	}
+    	return false;
     }
 }

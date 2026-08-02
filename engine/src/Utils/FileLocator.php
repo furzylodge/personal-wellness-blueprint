@@ -21,61 +21,26 @@ class FileLocator
 
     public function getKnowledgeBasePath(): string
     {
-	$path = $this->projectRoot . DIRECTORY_SEPARATOR . 'knowledgebase';
-   	if (!is_dir($path)) 
-    	{
-        	throw new \RuntimeException(
-            	"Knowledge base directory not found: {$path}"
-        	);
-    	}
-	return $path;
+	return $this->projectRoot . DIRECTORY_SEPARATOR . 'knowledgebase';
     }
 
     public function getFoodDirectory(): string
     {
-	$path = $this->getKnowledgeBasePath() . DIRECTORY_SEPARATOR . 'foods';
-   	if (!is_dir($path)) 
-    	{
-        	throw new \RuntimeException(
-            	"Foods directory not found: {$path}"
-        	);
-    	}
-    	return $path;
+	return $this->getKnowledgeBasePath() . DIRECTORY_SEPARATOR . 'foods';
     }
 
     public function getMonographDirectory(): string
     {
-	$path = $this->getKnowledgeBasePath() . DIRECTORY_SEPARATOR . 'monographs';
-   	if (!is_dir($path)) 
-    	{
-        	throw new \RuntimeException(
-            	"Monographs directory not found: {$path}"
-        	);
-    	}
-    	return $path;
+	return $this->getKnowledgeBasePath() . DIRECTORY_SEPARATOR . 'monographs';
     }
 
     public function getTaxonomyDirectory(): string
     {
-	$path = $this->getKnowledgeBasePath() . DIRECTORY_SEPARATOR . 'taxonomy';
-   	if (!is_dir($path)) 
-    	{
-        	throw new \RuntimeException(
-            	"Taxonomy directory not found: {$path}"
-        	);
-    	}
-    	return $path;
+	return $this->getKnowledgeBasePath() . DIRECTORY_SEPARATOR . 'taxonomy';
     }
 
     public function getSchemaDirectory(): string
     {
-	$path = $this->getKnowledgeBasePath() . DIRECTORY_SEPARATOR . 'schemas';
-   	if (!is_dir($path)) 
-    	{
-        	throw new \RuntimeException(
-            	"Schemas directory not found: {$path}"
-        	);
-    	}
-    	return $path;
+	return $this->getKnowledgeBasePath() . DIRECTORY_SEPARATOR . 'schemas';
     }
 }
