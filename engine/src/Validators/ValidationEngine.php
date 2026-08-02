@@ -6,6 +6,7 @@ use PWB\Utils\FileLocator;
 use PWB\Scanner\RepositoryScanner;
 use PWB\Loader\JsonLoader;
 use PWB\Validators\SchemaValidator;
+use PWB\Validators\TaxonomyValidator;
 use PWB\Validation\ValidationReport;
 use PWB\Validators\RepositoryValidator;
 
@@ -54,8 +55,10 @@ class ValidationEngine
 
 	$repositoryValidator = new RepositoryValidator($repository,$locator);
 	$schemaValidator = new SchemaValidator($repository,$loader,$locator);
+	$taxonomyValidator = new TaxonomyValidator($repository, $loader, $locator);
 	$report->add($repositoryValidator->validate());
 	$report->add($schemaValidator->validate());
+	$report->add($taxonomyValidator->validate());
 	
 	echo PHP_EOL;
 
