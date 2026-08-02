@@ -10,9 +10,9 @@ use PWB\Validation\ValidationReport;
 use PWB\Validators\RepositoryValidator;
 
 
-class Validator
+class ValidationEngine
 {
-    public function run(): void
+    public function execute(): void
     {
     	$report = new ValidationReport();
     
@@ -53,9 +53,22 @@ class Validator
 	$loader = new JsonLoader();
 
 	$repositoryValidator = new RepositoryValidator($repository,$locator);
-	$schemaValidator = new SchemaValidator($repository,$loader);
+	$schemaValidator = new SchemaValidator($repository,$loader,$locator);
 	$report->add($repositoryValidator->validate());
 	$report->add($schemaValidator->validate());
+	
+	echo PHP_EOL;
+
+	if ($report->errorCount() > 0) {
+	    	echo "Validation Errors" . PHP_EOL;
+    		echo "-----------------" . PHP_EOL;
+		    foreach ($report->getIssues() as $issue) {
+		        echo "[" . $issue->validator . "]" . PHP_EOL;
+        		echo "File    : " . $issue->file . PHP_EOL;
+        		echo "Message : " . $issue->message . PHP_EOL;
+        		echo PHP_EOL;
+		    }
+	}
 	
 	echo "==========================================" . PHP_EOL;
 	echo "Validation Summary" . PHP_EOL;

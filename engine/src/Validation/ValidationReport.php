@@ -54,4 +54,15 @@ class ValidationReport
 
         return $count;
     }
+    
+    public function getIssues(): array
+    {
+    	$issues = [];
+	foreach ($this->results as $result) {
+	        foreach ($result->getIssues() as $issue) {
+            $issues[] = $issue;
+        	}
+    	}
+    	return $issues;
+    }
 }

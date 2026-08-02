@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use PWB\Validators\Validator;
+use PWB\Validators\ValidationEngine;
 
-$validator = new Validator();
+$engine = new ValidationEngine();
 
-$validator->run();
+$engine->execute();
