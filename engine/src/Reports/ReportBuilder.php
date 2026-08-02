@@ -3,6 +3,9 @@
 declare(strict_types=1);
 
 namespace PWB\Reports;
+use PWB\Reports\Sections\FoodSection;
+use PWB\Reports\Sections\BodySystemsSection;
+use PWB\Reports\Sections\ActionPlanSection;
 
 class ReportBuilder
 {
@@ -68,16 +71,16 @@ HTML;
 
 </ul>
 
-<h2>Recommended Foods</h2>
-
 <ul>
 
 HTML;
 
-        foreach ($foods as $food) {
-            $html .= "<li>{$food}</li>";
-        }
-
+	$foodSection = new FoodSection();
+	$bodySystemsSection = new BodySystemsSection();
+	$actionPlanSection = new ActionPlanSection();
+	$html .= $foodSection->render($reportData);
+	$html .= $bodySystemsSection->render($reportData);
+	$html .= $actionPlanSection->render($reportData);
         $html .= <<<HTML
 
 </ul>

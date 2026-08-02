@@ -29,7 +29,7 @@ regulation.
 
 ------------------------------------------------------------------------
 
-# Why Oats Matter
+# Why It Matters
 
 Oats provide an exceptional combination of nutrition, affordability and
 scientific evidence.
@@ -52,17 +52,21 @@ pattern.
 
 # Nutritional Highlights
 
-Oats are a good source of:
+High In
 
--   Soluble fibre (Beta-glucan)
--   Insoluble fibre
--   Plant protein
--   Manganese
--   Magnesium
--   Phosphorus
--   Iron
--   Zinc
--   B vitamins
+- Fibre
+- Magnesium
+- Vitamin B1
+
+Contains
+
+- Beta-glucan
+- Avenanthramides
+
+Claims
+
+- Wholegrain
+- High Fibre
 
 ------------------------------------------------------------------------
 
@@ -246,3 +250,65 @@ Supported by:
 -   NHS Eatwell Guide
 -   Harvard T.H. Chan School of Public Health -- The Nutrition Source
 -   World Health Organization -- Healthy Diet Guidance
+
+------------------------------------------------------------------------
+
+# JSON Mapping (Parser Reference)
+
+Slug: oats
+
+Category: Wholegrain
+
+Tags:
+- TAG001
+- TAG003
+- TAG005
+- TAG007
+- TAG009
+
+Body Systems:
+- BS001
+- BS002
+- BS004
+- BS006
+
+Recommendation Strength:
+BS001: 5
+BS002: 5
+BS004: 3
+BS006: 5
+
+Related Foods:
+- F005
+- F007
+- F010
+
+Related Vitamins:
+- V002
+- V004
+- V008
+
+Related Minerals:
+- M005
+- M006
+- M010
+- M013
+
+Related Habits:
+- H003
+- H008
+
+Related Articles:
+- A001
+- A004
+
+Images:
+
+Hero: foods/oats/hero.jpg
+Thumbnail: foods/oats/thumb.jpg
+
+Status:
+
+Draft: false
+Approved: true
+Published: true

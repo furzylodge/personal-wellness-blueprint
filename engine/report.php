@@ -5,54 +5,27 @@ declare(strict_types=1);
 require_once __DIR__ . '/../vendor/autoload.php';
 
 use PWB\Reports\ReportBuilder;
-use PWB\Utils\FileLocator;
+use PWB\Reports\ReportDataBuilder;
 
-// Create the report builder
-$builder = new ReportBuilder();
+// Build the report data
+$dataBuilder = new ReportDataBuilder();
 
-// Temporary test data
-$reportData = [
+$reportData = $dataBuilder->build();
 
-    'client' => [
-        'name' => 'Test User'
-    ],
+// Generate the HTML report
+$reportBuilder = new ReportBuilder();
 
-    'summary' => [
-        'Your digestive system would benefit from additional fibre.',
-        'Increasing antioxidant-rich foods may support overall wellbeing.',
-        'Aim to include a wider variety of whole plant foods each week.'
-    ],
+$html = $reportBuilder->build($reportData);
 
-    'foods' => [
-        'Oats',
-        'Blueberries',
-        'Spinach',
-        'Walnuts',
-        'Greek Yoghurt'
-    ]
-
-];
-
-// Build the HTML
-$html = $builder->build($reportData);
-
-// Create the output folder if required
-$locator = new FileLocator();
-
-$outputDirectory =
-    $locator->getProjectRoot()
-    . DIRECTORY_SEPARATOR
-    . 'output';
+// Create output directory
+$outputDirectory = dirname(__DIR__) . DIRECTORY_SEPARATOR . 'output';
 
 if (!is_dir($outputDirectory)) {
     mkdir($outputDirectory, 0777, true);
 }
 
-// Save the report
-$outputFile =
-    $outputDirectory
-    . DIRECTORY_SEPARATOR
-    . 'report.html';
+// Save report
+$outputFile = $outputDirectory . DIRECTORY_SEPARATOR . 'report.html';
 
 file_put_contents($outputFile, $html);
 
@@ -63,7 +36,5 @@ echo "Personal Wellness Blueprint" . PHP_EOL;
 echo "==========================================" . PHP_EOL;
 echo PHP_EOL;
 echo "Report successfully generated." . PHP_EOL;
-echo PHP_EOL;
-echo "Output:" . PHP_EOL;
-echo $outputFile . PHP_EOL;
+echo "Output: " . $outputFile . PHP_EOL;
 echo PHP_EOL;

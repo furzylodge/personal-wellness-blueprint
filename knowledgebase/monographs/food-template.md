@@ -4,8 +4,8 @@
 **Scientific Name:** *{{Scientific Name}}*\
 **Common Names:** {{Common Names}}\
 **Food Group:** {{Food Group}} ({{Food Group ID}})\
-**Evidence Level:** {{High\|Moderate\|Emerging\|Limited}}\
-**Status:** {{Draft\|Approved\|Published}}
+**Evidence Level:** {{High|Moderate|Emerging|Limited}}\
+**Status:** {{Draft|Approved|Published}}
 
 ------------------------------------------------------------------------
 
@@ -18,14 +18,13 @@ and why it is nutritionally important.
 
 # Why It Matters
 
-Explain why this food is important from a health and wellness
-perspective.
+Explain why this food is important from a health and wellness perspective.
 
 Include:
 
--   Primary health benefits
--   Key nutritional strengths
--   Where it fits within a healthy dietary pattern
+- Primary health benefits
+- Key nutritional strengths
+- Where it fits within a healthy dietary pattern
 
 ------------------------------------------------------------------------
 
@@ -35,11 +34,11 @@ List the principal nutrients and notable characteristics.
 
 Example:
 
--   Fibre
--   Protein
--   Healthy fats
--   Vitamins
--   Minerals
+- Fibre
+- Protein
+- Healthy fats
+- Vitamins
+- Minerals
 
 ------------------------------------------------------------------------
 
@@ -47,11 +46,22 @@ Example:
 
 ## Compound 1
 
-Describe the compound, mechanism of action and evidence.
+Describe the compound.
+
+Research suggests it may:
+
+- Mechanism 1
+- Mechanism 2
+- Mechanism 3
 
 ## Compound 2
 
-Repeat as required.
+Describe the compound.
+
+Research suggests it may:
+
+- Mechanism 1
+- Mechanism 2
 
 ------------------------------------------------------------------------
 
@@ -59,13 +69,23 @@ Repeat as required.
 
 ## Cardiovascular Health
 
+Describe evidence-supported benefits.
+
 ## Digestive Health
+
+Describe evidence-supported benefits.
 
 ## Metabolic Health
 
+Describe evidence-supported benefits.
+
 ## Brain & Nervous System
 
+Describe evidence-supported benefits.
+
 ## Immune Function
+
+Describe evidence-supported benefits.
 
 Only include sections supported by evidence.
 
@@ -73,31 +93,34 @@ Only include sections supported by evidence.
 
 # Suitable For
 
-List suitable dietary patterns and populations.
-
-Examples:
-
--   Vegetarian
--   Vegan
--   Pregnancy
--   Children
--   Older Adults
+- Vegetarian
+- Vegan
+- Dairy Free
+- Egg Free
+- Nut Free
+- Soy Free
+- Halal
+- Kosher
+- Pregnancy
+- Children
 
 ------------------------------------------------------------------------
 
-# Allergens & Contraindications
+# Gluten Information
 
-## Allergens
+Describe any gluten considerations.
 
-State known allergens or contamination risks.
+------------------------------------------------------------------------
+
+# Contraindications
 
 ## Avoid If
 
-List situations where the food should not be consumed.
+- ...
 
 ## Use With Caution
 
-List situations requiring professional advice.
+- ...
 
 ------------------------------------------------------------------------
 
@@ -109,16 +132,17 @@ List situations requiring professional advice.
 
 ## Preparation
 
-## Portion Guidance
-
-## Frequency
-
 ------------------------------------------------------------------------
 
 # Food Pairings
 
-Suggest complementary foods and explain why they pair well
-nutritionally.
+List complementary foods.
+
+Example:
+
+- Blueberries
+- Walnuts
+- Greek yoghurt
 
 ------------------------------------------------------------------------
 
@@ -144,25 +168,71 @@ Summarise the food in one or two paragraphs.
 
 **Overall Evidence Rating:** {{Rating}}
 
-Summarise the current evidence and identify any limitations.
+Supported by:
+
+- Systematic reviews
+- Randomised controlled trials
+- NHS
+- British Dietetic Association
+- EFSA
 
 ------------------------------------------------------------------------
 
 # References
 
-Include authoritative sources only, for example:
-
--   NHS
--   British Dietetic Association
--   European Food Safety Authority (EFSA)
--   Harvard T.H. Chan School of Public Health
--   World Health Organization
--   Peer-reviewed systematic reviews and meta-analyses
+- European Food Safety Authority (EFSA)
+- British Dietetic Association
+- NHS Eatwell Guide
+- Harvard T.H. Chan School of Public Health
+- World Health Organization
 
 ------------------------------------------------------------------------
 
-# Revision History
+# JSON Mapping (Parser Reference)
 
-  Version   Date       Author       Notes
-  --------- ---------- ------------ ---------------------
-  1.0       {{Date}}   {{Author}}   Initial publication
+Slug: {{slug}}
+
+Category: {{category}}
+
+Tags:
+
+- TAG001
+
+Body Systems:
+
+- BS001
+
+Recommendation Strength:
+
+BS001: 5
+
+Related Foods:
+
+- F001
+
+Related Vitamins:
+
+- V001
+
+Related Minerals:
+
+- M001
+
+Related Habits:
+
+- H001
+
+Related Articles:
+
+- A001
+
+Images:
+
+Hero: foods/{{slug}}/hero.jpg
+Thumbnail: foods/{{slug}}/thumb.jpg
+
+Status:
+
+Draft: false
+Approved: true
+Published: true
