@@ -1,0 +1,53 @@
+{
+    "name": "Garlic",
+    "id": "FD025",
+    "version": "1.1",
+    "identity": {
+        "name": "Garlic",
+        "scientificName": "Allium sativum",
+        "slug": "garlic",
+        "commonNames": [
+            "Garlic"
+        ]
+    },
+    "classification": {
+        "foodGroup": "FG006",
+        "category": "Functional Food",
+        "plantBased": true,
+        "minimallyProcessed": true
+    },
+    "nutritionHighlights": {
+        "highIn": [
+            "Vitamin B6",
+            "Manganese"
+        ],
+        "contains": [
+            "Allicin",
+            "Organosulphur compounds"
+        ],
+        "claims": [
+            "Whole Food",
+            "Functional Food"
+        ]
+    },
+    "knowledge": {
+        "description": "Garlic contains organosulphur compounds, particularly allicin, and has one of the strongest evidence bases among culinary herbs for cardiovascular support."
+    },
+    "metadata": {
+        "schemaVersion": "1.1",
+        "author": "Simon Bradley"
+    },
+    "status": {
+        "draft": false,
+        "approved": true,
+        "published": true
+    },
+    "practical": {
+        "availability": "",
+        "seasonality": "",
+        "typicalCost": "",
+        "storage": "Store according to product recommendations.",
+        "preparation": "Use as part of varied meals.",
+        "shoppingTips": "Prioritise quality over heavily processed alternatives."
+    }
+}

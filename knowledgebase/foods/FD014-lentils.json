@@ -1,0 +1,57 @@
+{
+    "name": "Lentils",
+    "id": "FD014",
+    "version": "1.1",
+    "identity": {
+        "name": "Lentils",
+        "scientificName": "Lens culinaris",
+        "slug": "lentils",
+        "commonNames": [
+            "Lentils"
+        ]
+    },
+    "classification": {
+        "foodGroup": "FG004",
+        "category": "Legume",
+        "plantBased": true,
+        "minimallyProcessed": true
+    },
+    "nutritionHighlights": {
+        "highIn": [
+            "Folate",
+            "Iron",
+            "Fibre",
+            "Plant Protein"
+        ],
+        "contains": [
+            "Resistant starch",
+            "Polyphenols",
+            "Prebiotic fibre"
+        ],
+        "claims": [
+            "Whole Food",
+            "High Fibre",
+            "High Protein"
+        ]
+    },
+    "knowledge": {
+        "description": "Lentils are among the most nutrient-dense legumes, providing plant protein, dietary fibre, iron, folate and resistant starch while remaining naturally low in fat."
+    },
+    "metadata": {
+        "schemaVersion": "1.1",
+        "author": "Simon Bradley"
+    },
+    "status": {
+        "draft": false,
+        "approved": true,
+        "published": true
+    },
+    "practical": {
+        "availability": "",
+        "seasonality": "",
+        "typicalCost": "",
+        "storage": "Store dried legumes in airtight containers.",
+        "preparation": "Soak dried beans where appropriate and cook thoroughly.",
+        "shoppingTips": "Choose products with no added salt where possible."
+    }
+}

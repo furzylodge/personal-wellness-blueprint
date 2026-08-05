@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace PWB\Knowledge;
 
 use PWB\Utils\FileLocator;
+use PWB\Utils\JsonWriter;
 use RuntimeException;
 
 class FoodGenerator
@@ -13,7 +14,6 @@ class FoodGenerator
 
     private MarkdownParser $parser;
 
-    private JsonWriter $writer;
 
     public function __construct()
     {
@@ -21,7 +21,6 @@ class FoodGenerator
 
         $this->parser = new MarkdownParser();
 
-        $this->writer = new JsonWriter();
     }
 
     public function generate(string $slug): void
@@ -38,15 +37,9 @@ class FoodGenerator
 
 	$food = $this->parser->parse($markdown);
 	
-	print_r($food);
-	exit;
-        
         $outputFile = $this->getOutputFile($food);
 
-        $this->writer->write(
-            $outputFile,
-            $food
-        );
+        JsonWriter::save($outputFile,$food);
     }
 
 private function getMarkdownFile(string $slug): string
@@ -86,7 +79,7 @@ private function getMarkdownFile(string $slug): string
         return
             $this->locator->getFoodDirectory()
             . DIRECTORY_SEPARATOR
-            . strtolower($food['id'])
+            . $food['id']
             . '-'
             . $food['identity']['slug']
             . '.json';

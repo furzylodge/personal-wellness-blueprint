@@ -3,7 +3,7 @@
 **Knowledge Base ID:** FD037\
 **Scientific Name:** *Fermented Vegetables*\
 **Common Names:** Kimchi\
-**Food Group:** Fermented Foods\
+**Food Group:** Fermented Foods (FG011)\
 **Evidence Level:** High\
 **Status:** Approved
 

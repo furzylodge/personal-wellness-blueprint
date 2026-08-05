@@ -3,7 +3,7 @@
 **Knowledge Base ID:** FD035\
 **Scientific Name:** *Fermented Milk*\
 **Common Names:** Live Yoghurt\
-**Food Group:** Fermented Foods\
+**Food Group:** Fermented Foods (FG011)\
 **Evidence Level:** High\
 **Status:** Approved
 

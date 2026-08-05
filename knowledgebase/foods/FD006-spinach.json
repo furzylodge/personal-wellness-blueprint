@@ -1,0 +1,57 @@
+{
+    "name": "Spinach",
+    "id": "FD006",
+    "version": "1.1",
+    "identity": {
+        "name": "Spinach",
+        "scientificName": "Spinacia oleracea",
+        "slug": "spinach",
+        "commonNames": [
+            "Spinach"
+        ]
+    },
+    "classification": {
+        "foodGroup": "FG003",
+        "category": "Leafy Green",
+        "plantBased": true,
+        "minimallyProcessed": true
+    },
+    "nutritionHighlights": {
+        "highIn": [
+            "Vitamin K",
+            "Folate",
+            "Vitamin A",
+            "Magnesium"
+        ],
+        "contains": [
+            "Lutein",
+            "Zeaxanthin",
+            "Nitrates"
+        ],
+        "claims": [
+            "Whole Food",
+            "Leafy Green",
+            "Nutrient Dense"
+        ]
+    },
+    "knowledge": {
+        "description": "Spinach is a nutrient-dense leafy green rich in folate, vitamin K, vitamin A, magnesium and lutein. It provides exceptional nutritional value with very few calories."
+    },
+    "metadata": {
+        "schemaVersion": "1.1",
+        "author": "Simon Bradley"
+    },
+    "status": {
+        "draft": false,
+        "approved": true,
+        "published": true
+    },
+    "practical": {
+        "availability": "",
+        "seasonality": "",
+        "typicalCost": "",
+        "storage": "Refrigerate and use within a few days.",
+        "preparation": "Wash thoroughly before eating or cooking.",
+        "shoppingTips": "Avoid wilted or yellowing leaves."
+    }
+}

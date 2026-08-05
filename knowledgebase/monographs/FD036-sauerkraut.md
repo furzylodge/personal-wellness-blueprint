@@ -3,7 +3,7 @@
 **Knowledge Base ID:** FD036\
 **Scientific Name:** *Fermented Cabbage*\
 **Common Names:** Sauerkraut\
-**Food Group:** Fermented Foods\
+**Food Group:** Fermented Foods (FG011)\
 **Evidence Level:** High\
 **Status:** Approved
 

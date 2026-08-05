@@ -3,7 +3,7 @@
 **Knowledge Base ID:** FD033\
 **Scientific Name:** *Clupea harengus*\
 **Common Names:** Herring\
-**Food Group:** Oily Fish\
+**Food Group:** Fish & Seafood (FG007)\
 **Evidence Level:** High\
 **Status:** Approved
 

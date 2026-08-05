@@ -1,0 +1,57 @@
+{
+    "name": "Blueberries",
+    "id": "FD002",
+    "version": "1.1",
+    "identity": {
+        "name": "Blueberries",
+        "scientificName": "Vaccinium corymbosum",
+        "slug": "blueberries",
+        "commonNames": [
+            "Blueberries",
+            "Highbush Blueberries"
+        ]
+    },
+    "classification": {
+        "foodGroup": "FG002",
+        "category": "Berry",
+        "plantBased": true,
+        "minimallyProcessed": true
+    },
+    "nutritionHighlights": {
+        "highIn": [
+            "Vitamin C",
+            "Vitamin K",
+            "Manganese",
+            "Fibre"
+        ],
+        "contains": [
+            "Anthocyanins",
+            "Flavonoids",
+            "Polyphenols"
+        ],
+        "claims": [
+            "Whole Food",
+            "Antioxidant Rich"
+        ]
+    },
+    "knowledge": {
+        "description": "Blueberries are small, nutrient-dense berries recognised for their exceptionally high concentration of polyphenols, particularly anthocyanins. They provide fibre, vitamin C, vitamin K and manganese while contributing relatively few calories."
+    },
+    "metadata": {
+        "schemaVersion": "1.1",
+        "author": "Simon Bradley"
+    },
+    "status": {
+        "draft": false,
+        "approved": true,
+        "published": true
+    },
+    "practical": {
+        "availability": "",
+        "seasonality": "",
+        "typicalCost": "",
+        "storage": "Keep refrigerated and consume within one week.",
+        "preparation": "Rinse immediately before eating.",
+        "shoppingTips": "Fresh and frozen blueberries provide similar nutritional value."
+    }
+}

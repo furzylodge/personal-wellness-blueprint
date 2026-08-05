@@ -3,7 +3,7 @@
 **Knowledge Base ID:** FD030\
 **Scientific Name:** *Salmo salar*\
 **Common Names:** Salmon\
-**Food Group:** Oily Fish\
+**Food Group:** Fish & Seafood (FG007)\
 **Evidence Level:** High\
 **Status:** Approved
 

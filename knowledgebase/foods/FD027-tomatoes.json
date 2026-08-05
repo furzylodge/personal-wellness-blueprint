@@ -1,0 +1,53 @@
+{
+    "name": "Tomatoes",
+    "id": "FD027",
+    "version": "1.1",
+    "identity": {
+        "name": "Tomatoes",
+        "scientificName": "Solanum lycopersicum",
+        "slug": "tomatoes",
+        "commonNames": [
+            "Tomatoes"
+        ]
+    },
+    "classification": {
+        "foodGroup": "FG006",
+        "category": "Functional Food",
+        "plantBased": true,
+        "minimallyProcessed": true
+    },
+    "nutritionHighlights": {
+        "highIn": [
+            "Vitamin C",
+            "Potassium"
+        ],
+        "contains": [
+            "Lycopene",
+            "Beta-carotene"
+        ],
+        "claims": [
+            "Whole Food",
+            "Antioxidant Rich"
+        ]
+    },
+    "knowledge": {
+        "description": "Tomatoes are the primary dietary source of lycopene, a carotenoid associated with cardiovascular health and healthy ageing."
+    },
+    "metadata": {
+        "schemaVersion": "1.1",
+        "author": "Simon Bradley"
+    },
+    "status": {
+        "draft": false,
+        "approved": true,
+        "published": true
+    },
+    "practical": {
+        "availability": "",
+        "seasonality": "",
+        "typicalCost": "",
+        "storage": "Store according to product recommendations.",
+        "preparation": "Use as part of varied meals.",
+        "shoppingTips": "Prioritise quality over heavily processed alternatives."
+    }
+}

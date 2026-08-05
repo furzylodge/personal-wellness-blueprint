@@ -1,0 +1,57 @@
+{
+    "name": "Brazil Nuts",
+    "id": "FD023",
+    "version": "1.1",
+    "identity": {
+        "name": "Brazil Nuts",
+        "scientificName": "Bertholletia excelsa",
+        "slug": "brazil-nuts",
+        "commonNames": [
+            "Brazil Nuts"
+        ]
+    },
+    "classification": {
+        "foodGroup": "FG005",
+        "category": "Nut or Seed",
+        "plantBased": true,
+        "minimallyProcessed": true
+    },
+    "nutritionHighlights": {
+        "highIn": [
+            "Selenium",
+            "Magnesium",
+            "Healthy Fats",
+            "Plant Protein"
+        ],
+        "contains": [
+            "Selenium compounds",
+            "Polyphenols",
+            "Phytosterols"
+        ],
+        "claims": [
+            "Whole Food",
+            "Selenium Rich",
+            "Healthy Fats"
+        ]
+    },
+    "knowledge": {
+        "description": "Brazil nuts are the richest natural dietary source of selenium and also provide healthy fats, magnesium and plant protein."
+    },
+    "metadata": {
+        "schemaVersion": "1.1",
+        "author": "Simon Bradley"
+    },
+    "status": {
+        "draft": false,
+        "approved": true,
+        "published": true
+    },
+    "practical": {
+        "availability": "",
+        "seasonality": "",
+        "typicalCost": "",
+        "storage": "Store in an airtight container in a cool place.",
+        "preparation": "Eat raw, soaked or lightly roasted as appropriate.",
+        "shoppingTips": "Avoid heavily salted or sugar-coated varieties."
+    }
+}

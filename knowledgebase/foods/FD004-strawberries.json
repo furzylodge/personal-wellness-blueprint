@@ -1,0 +1,57 @@
+{
+    "name": "Strawberries",
+    "id": "FD004",
+    "version": "1.1",
+    "identity": {
+        "name": "Strawberries",
+        "scientificName": "Fragaria × ananassa",
+        "slug": "strawberries",
+        "commonNames": [
+            "Strawberries"
+        ]
+    },
+    "classification": {
+        "foodGroup": "FG002",
+        "category": "Berry",
+        "plantBased": true,
+        "minimallyProcessed": true
+    },
+    "nutritionHighlights": {
+        "highIn": [
+            "Vitamin C",
+            "Folate",
+            "Fibre",
+            "Manganese"
+        ],
+        "contains": [
+            "Anthocyanins",
+            "Ellagic acid",
+            "Flavonoids"
+        ],
+        "claims": [
+            "Whole Food",
+            "Low Sugar",
+            "Antioxidant Rich"
+        ]
+    },
+    "knowledge": {
+        "description": "Strawberries are nutrient-dense berries rich in vitamin C, fibre and protective polyphenols. They combine excellent nutritional value with relatively low energy density.\n\nThey are well supported by evidence for cardiovascular and metabolic health."
+    },
+    "metadata": {
+        "schemaVersion": "1.1",
+        "author": "Simon Bradley"
+    },
+    "status": {
+        "draft": false,
+        "approved": true,
+        "published": true
+    },
+    "practical": {
+        "availability": "",
+        "seasonality": "",
+        "typicalCost": "",
+        "storage": "Refrigerate and consume within a few days.",
+        "preparation": "Rinse immediately before eating.",
+        "shoppingTips": "Frozen fruit retains most nutritional value."
+    }
+}

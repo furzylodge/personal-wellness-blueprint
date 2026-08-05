@@ -3,7 +3,7 @@
 **Knowledge Base ID:** FD038\
 **Scientific Name:** *Curcuma longa*\
 **Common Names:** Turmeric\
-**Food Group:** Herbs & Spices\
+**Food Group:** Herbs & Spices (FG006)
 **Evidence Level:** High\
 **Status:** Approved
 

@@ -3,7 +3,7 @@
 **Knowledge Base ID:** FD041\
 **Scientific Name:** *Salvia rosmarinus*\
 **Common Names:** Rosemary\
-**Food Group:** Herbs & Spices\
+**Food Group:** Herbs & Spices (FG006)
 **Evidence Level:** High\
 **Status:** Approved
 

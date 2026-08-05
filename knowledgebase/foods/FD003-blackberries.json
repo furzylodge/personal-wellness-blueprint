@@ -1,0 +1,57 @@
+{
+    "name": "Blackberries",
+    "id": "FD003",
+    "version": "1.1",
+    "identity": {
+        "name": "Blackberries",
+        "scientificName": "Rubus fruticosus",
+        "slug": "blackberries",
+        "commonNames": [
+            "Blackberries"
+        ]
+    },
+    "classification": {
+        "foodGroup": "FG002",
+        "category": "Berry",
+        "plantBased": true,
+        "minimallyProcessed": true
+    },
+    "nutritionHighlights": {
+        "highIn": [
+            "Vitamin C",
+            "Vitamin K",
+            "Manganese",
+            "Fibre"
+        ],
+        "contains": [
+            "Anthocyanins",
+            "Ellagic acid",
+            "Flavonoids"
+        ],
+        "claims": [
+            "Whole Food",
+            "High Fibre",
+            "Antioxidant Rich"
+        ]
+    },
+    "knowledge": {
+        "description": "Blackberries are richly pigmented berries providing fibre, vitamin C, vitamin K and manganese. They are among the highest-fibre commonly consumed fruits and are an excellent source of polyphenols.\n\nThey are particularly valuable for digestive health, cardiovascular wellbeing and healthy ageing."
+    },
+    "metadata": {
+        "schemaVersion": "1.1",
+        "author": "Simon Bradley"
+    },
+    "status": {
+        "draft": false,
+        "approved": true,
+        "published": true
+    },
+    "practical": {
+        "availability": "",
+        "seasonality": "",
+        "typicalCost": "",
+        "storage": "Refrigerate and consume within a few days.",
+        "preparation": "Rinse immediately before eating.",
+        "shoppingTips": "Frozen fruit retains most nutritional value."
+    }
+}

@@ -1,0 +1,57 @@
+{
+    "name": "Almonds",
+    "id": "FD019",
+    "version": "1.1",
+    "identity": {
+        "name": "Almonds",
+        "scientificName": "Prunus dulcis",
+        "slug": "almonds",
+        "commonNames": [
+            "Almonds"
+        ]
+    },
+    "classification": {
+        "foodGroup": "FG005",
+        "category": "Nut or Seed",
+        "plantBased": true,
+        "minimallyProcessed": true
+    },
+    "nutritionHighlights": {
+        "highIn": [
+            "Vitamin E",
+            "Magnesium",
+            "Fibre",
+            "Healthy Fats"
+        ],
+        "contains": [
+            "Polyphenols",
+            "Phytosterols",
+            "Flavonoids"
+        ],
+        "claims": [
+            "Whole Food",
+            "High Fibre",
+            "Vitamin E Source"
+        ]
+    },
+    "knowledge": {
+        "description": "Almonds provide vitamin E, magnesium, fibre and monounsaturated fats, making them one of the most evidence-supported nuts for cardiovascular health."
+    },
+    "metadata": {
+        "schemaVersion": "1.1",
+        "author": "Simon Bradley"
+    },
+    "status": {
+        "draft": false,
+        "approved": true,
+        "published": true
+    },
+    "practical": {
+        "availability": "",
+        "seasonality": "",
+        "typicalCost": "",
+        "storage": "Store in an airtight container in a cool place.",
+        "preparation": "Eat raw, soaked or lightly roasted as appropriate.",
+        "shoppingTips": "Avoid heavily salted or sugar-coated varieties."
+    }
+}

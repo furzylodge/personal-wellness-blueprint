@@ -3,7 +3,7 @@
 **Knowledge Base ID:** FD040\
 **Scientific Name:** *Cinnamomum verum*\
 **Common Names:** Cinnamon\
-**Food Group:** Herbs & Spices\
+**Food Group:** Herbs & Spices (FG006)
 **Evidence Level:** High\
 **Status:** Approved
 

@@ -1,0 +1,57 @@
+{
+    "name": "Walnuts",
+    "id": "FD018",
+    "version": "1.1",
+    "identity": {
+        "name": "Walnuts",
+        "scientificName": "Juglans regia",
+        "slug": "walnuts",
+        "commonNames": [
+            "Walnuts"
+        ]
+    },
+    "classification": {
+        "foodGroup": "FG005",
+        "category": "Nut or Seed",
+        "plantBased": true,
+        "minimallyProcessed": true
+    },
+    "nutritionHighlights": {
+        "highIn": [
+            "Omega-3 (ALA)",
+            "Copper",
+            "Manganese",
+            "Healthy Fats"
+        ],
+        "contains": [
+            "Ellagitannins",
+            "Polyphenols",
+            "Phytosterols"
+        ],
+        "claims": [
+            "Whole Food",
+            "Healthy Fats",
+            "Omega-3 Source"
+        ]
+    },
+    "knowledge": {
+        "description": "Walnuts are unique among commonly eaten nuts for their high alpha-linolenic acid (ALA) omega-3 content, together with polyphenols, vitamin E and copper."
+    },
+    "metadata": {
+        "schemaVersion": "1.1",
+        "author": "Simon Bradley"
+    },
+    "status": {
+        "draft": false,
+        "approved": true,
+        "published": true
+    },
+    "practical": {
+        "availability": "",
+        "seasonality": "",
+        "typicalCost": "",
+        "storage": "Store in an airtight container in a cool place.",
+        "preparation": "Eat raw, soaked or lightly roasted as appropriate.",
+        "shoppingTips": "Avoid heavily salted or sugar-coated varieties."
+    }
+}

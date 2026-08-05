@@ -1,0 +1,54 @@
+{
+    "name": "Extra Virgin Olive Oil",
+    "id": "FD024",
+    "version": "1.1",
+    "identity": {
+        "name": "Extra Virgin Olive Oil",
+        "scientificName": "Olea europaea",
+        "slug": "extra-virgin-olive-oil",
+        "commonNames": [
+            "Extra Virgin Olive Oil"
+        ]
+    },
+    "classification": {
+        "foodGroup": "FG006",
+        "category": "Functional Food",
+        "plantBased": true,
+        "minimallyProcessed": true
+    },
+    "nutritionHighlights": {
+        "highIn": [
+            "Vitamin E",
+            "Monounsaturated Fats"
+        ],
+        "contains": [
+            "Oleocanthal",
+            "Hydroxytyrosol",
+            "Polyphenols"
+        ],
+        "claims": [
+            "Mediterranean Staple",
+            "Healthy Fat"
+        ]
+    },
+    "knowledge": {
+        "description": "Extra virgin olive oil is the cornerstone of the Mediterranean diet and is rich in monounsaturated fats and polyphenols including oleocanthal and hydroxytyrosol."
+    },
+    "metadata": {
+        "schemaVersion": "1.1",
+        "author": "Simon Bradley"
+    },
+    "status": {
+        "draft": false,
+        "approved": true,
+        "published": true
+    },
+    "practical": {
+        "availability": "",
+        "seasonality": "",
+        "typicalCost": "",
+        "storage": "Store according to product recommendations.",
+        "preparation": "Use as part of varied meals.",
+        "shoppingTips": "Prioritise quality over heavily processed alternatives."
+    }
+}

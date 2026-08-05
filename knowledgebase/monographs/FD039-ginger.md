@@ -3,7 +3,7 @@
 **Knowledge Base ID:** FD039\
 **Scientific Name:** *Zingiber officinale*\
 **Common Names:** Ginger\
-**Food Group:** Herbs & Spices\
+**Food Group:** Herbs & Spices (FG006)
 **Evidence Level:** High\
 **Status:** Approved
 

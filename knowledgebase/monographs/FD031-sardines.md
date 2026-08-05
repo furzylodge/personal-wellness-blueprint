@@ -3,7 +3,7 @@
 **Knowledge Base ID:** FD031\
 **Scientific Name:** *Sardina pilchardus*\
 **Common Names:** Sardines\
-**Food Group:** Oily Fish\
+**Food Group:** Fish & Seafood (FG007)\
 **Evidence Level:** High\
 **Status:** Approved
 

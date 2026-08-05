@@ -1,0 +1,56 @@
+{
+    "name": "Watercress",
+    "id": "FD008",
+    "version": "1.1",
+    "identity": {
+        "name": "Watercress",
+        "scientificName": "Nasturtium officinale",
+        "slug": "watercress",
+        "commonNames": [
+            "Watercress"
+        ]
+    },
+    "classification": {
+        "foodGroup": "FG003",
+        "category": "Leafy Green",
+        "plantBased": true,
+        "minimallyProcessed": true
+    },
+    "nutritionHighlights": {
+        "highIn": [
+            "Vitamin K",
+            "Vitamin C",
+            "Vitamin A"
+        ],
+        "contains": [
+            "Glucosinolates",
+            "Phenethyl isothiocyanate",
+            "Carotenoids"
+        ],
+        "claims": [
+            "Whole Food",
+            "Leafy Green",
+            "Antioxidant Rich"
+        ]
+    },
+    "knowledge": {
+        "description": "Watercress is a peppery leafy green exceptionally rich in vitamin K and protective phytochemicals while remaining very low in energy."
+    },
+    "metadata": {
+        "schemaVersion": "1.1",
+        "author": "Simon Bradley"
+    },
+    "status": {
+        "draft": false,
+        "approved": true,
+        "published": true
+    },
+    "practical": {
+        "availability": "",
+        "seasonality": "",
+        "typicalCost": "",
+        "storage": "Refrigerate and use within a few days.",
+        "preparation": "Wash thoroughly before eating or cooking.",
+        "shoppingTips": "Avoid wilted or yellowing leaves."
+    }
+}

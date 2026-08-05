@@ -1,0 +1,57 @@
+{
+    "name": "Chickpeas",
+    "id": "FD015",
+    "version": "1.1",
+    "identity": {
+        "name": "Chickpeas",
+        "scientificName": "Cicer arietinum",
+        "slug": "chickpeas",
+        "commonNames": [
+            "Chickpeas"
+        ]
+    },
+    "classification": {
+        "foodGroup": "FG004",
+        "category": "Legume",
+        "plantBased": true,
+        "minimallyProcessed": true
+    },
+    "nutritionHighlights": {
+        "highIn": [
+            "Folate",
+            "Manganese",
+            "Fibre",
+            "Plant Protein"
+        ],
+        "contains": [
+            "Resistant starch",
+            "Saponins",
+            "Polyphenols"
+        ],
+        "claims": [
+            "Whole Food",
+            "High Fibre",
+            "Plant Protein"
+        ]
+    },
+    "knowledge": {
+        "description": "Chickpeas provide an excellent combination of plant protein, fibre and slowly digested carbohydrate, making them a valuable staple food."
+    },
+    "metadata": {
+        "schemaVersion": "1.1",
+        "author": "Simon Bradley"
+    },
+    "status": {
+        "draft": false,
+        "approved": true,
+        "published": true
+    },
+    "practical": {
+        "availability": "",
+        "seasonality": "",
+        "typicalCost": "",
+        "storage": "Store dried legumes in airtight containers.",
+        "preparation": "Soak dried beans where appropriate and cook thoroughly.",
+        "shoppingTips": "Choose products with no added salt where possible."
+    }
+}

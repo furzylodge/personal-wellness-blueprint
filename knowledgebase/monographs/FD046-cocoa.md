@@ -3,7 +3,7 @@
 **Knowledge Base ID:** FD046\
 **Scientific Name:** *Theobroma cacao*\
 **Common Names:** Cocoa\
-**Food Group:** Beverages\
+**Food Group:** Beverages (FG015)\
 **Evidence Level:** High\
 **Status:** Approved
 

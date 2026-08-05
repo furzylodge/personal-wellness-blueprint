@@ -1,0 +1,51 @@
+{
+    "name": "Black Tea",
+    "id": "FD044",
+    "version": "1.1",
+    "identity": {
+        "name": "Black Tea",
+        "scientificName": "Camellia sinensis",
+        "slug": "black-tea",
+        "commonNames": [
+            "Black Tea"
+        ]
+    },
+    "classification": {
+        "foodGroup": "FG015",
+        "category": "Beverages",
+        "plantBased": true,
+        "minimallyProcessed": true
+    },
+    "nutritionHighlights": {
+        "highIn": [
+            "Key nutrients appropriate to this food"
+        ],
+        "contains": [
+            "Characteristic bioactive compounds"
+        ],
+        "claims": [
+            "Whole Food",
+            "Evidence Supported"
+        ]
+    },
+    "knowledge": {
+        "description": "Black Tea is recognised as an evidence-supported whole food that contributes beneficial nutrients and bioactive compounds within a balanced dietary pattern."
+    },
+    "metadata": {
+        "schemaVersion": "1.1",
+        "author": "Simon Bradley"
+    },
+    "status": {
+        "draft": false,
+        "approved": true,
+        "published": true
+    },
+    "practical": {
+        "availability": "",
+        "seasonality": "",
+        "typicalCost": "",
+        "storage": "Follow manufacturer guidance.",
+        "preparation": "Prepare appropriately for the food.",
+        "shoppingTips": "Prioritise quality ingredients."
+    }
+}

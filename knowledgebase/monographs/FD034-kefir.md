@@ -3,7 +3,7 @@
 **Knowledge Base ID:** FD034\
 **Scientific Name:** *Fermented Milk*\
 **Common Names:** Kefir\
-**Food Group:** Fermented Foods\
+**Food Group:** Fermented Foods (FG011)\
 **Evidence Level:** High\
 **Status:** Approved
 

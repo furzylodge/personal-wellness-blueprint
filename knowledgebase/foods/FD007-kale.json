@@ -1,0 +1,57 @@
+{
+    "name": "Kale",
+    "id": "FD007",
+    "version": "1.1",
+    "identity": {
+        "name": "Kale",
+        "scientificName": "Brassica oleracea var. sabellica",
+        "slug": "kale",
+        "commonNames": [
+            "Kale"
+        ]
+    },
+    "classification": {
+        "foodGroup": "FG003",
+        "category": "Leafy Green",
+        "plantBased": true,
+        "minimallyProcessed": true
+    },
+    "nutritionHighlights": {
+        "highIn": [
+            "Vitamin K",
+            "Vitamin C",
+            "Vitamin A",
+            "Fibre"
+        ],
+        "contains": [
+            "Glucosinolates",
+            "Lutein",
+            "Kaempferol"
+        ],
+        "claims": [
+            "Whole Food",
+            "Leafy Green",
+            "High Fibre"
+        ]
+    },
+    "knowledge": {
+        "description": "Kale is one of the most nutrient-dense vegetables available, providing vitamins K, C and A together with fibre and glucosinolates."
+    },
+    "metadata": {
+        "schemaVersion": "1.1",
+        "author": "Simon Bradley"
+    },
+    "status": {
+        "draft": false,
+        "approved": true,
+        "published": true
+    },
+    "practical": {
+        "availability": "",
+        "seasonality": "",
+        "typicalCost": "",
+        "storage": "Refrigerate and use within a few days.",
+        "preparation": "Wash thoroughly before eating or cooking.",
+        "shoppingTips": "Avoid wilted or yellowing leaves."
+    }
+}

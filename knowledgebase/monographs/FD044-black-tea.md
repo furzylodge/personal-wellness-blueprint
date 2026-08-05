@@ -3,7 +3,7 @@
 **Knowledge Base ID:** FD044\
 **Scientific Name:** *Camellia sinensis*\
 **Common Names:** Black Tea\
-**Food Group:** Beverages\
+**Food Group:** Beverages (FG015)\
 **Evidence Level:** High\
 **Status:** Approved
 

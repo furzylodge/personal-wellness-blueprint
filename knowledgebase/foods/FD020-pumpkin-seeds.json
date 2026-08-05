@@ -1,0 +1,57 @@
+{
+    "name": "Pumpkin Seeds",
+    "id": "FD020",
+    "version": "1.1",
+    "identity": {
+        "name": "Pumpkin Seeds",
+        "scientificName": "Cucurbita pepo",
+        "slug": "pumpkin-seeds",
+        "commonNames": [
+            "Pumpkin Seeds"
+        ]
+    },
+    "classification": {
+        "foodGroup": "FG005",
+        "category": "Nut or Seed",
+        "plantBased": true,
+        "minimallyProcessed": true
+    },
+    "nutritionHighlights": {
+        "highIn": [
+            "Magnesium",
+            "Zinc",
+            "Iron",
+            "Plant Protein"
+        ],
+        "contains": [
+            "Phytosterols",
+            "Polyphenols",
+            "Lignans"
+        ],
+        "claims": [
+            "Whole Food",
+            "Mineral Rich",
+            "High Protein"
+        ]
+    },
+    "knowledge": {
+        "description": "Pumpkin seeds are rich in magnesium, zinc, iron and plant protein together with healthy unsaturated fats."
+    },
+    "metadata": {
+        "schemaVersion": "1.1",
+        "author": "Simon Bradley"
+    },
+    "status": {
+        "draft": false,
+        "approved": true,
+        "published": true
+    },
+    "practical": {
+        "availability": "",
+        "seasonality": "",
+        "typicalCost": "",
+        "storage": "Store in an airtight container in a cool place.",
+        "preparation": "Eat raw, soaked or lightly roasted as appropriate.",
+        "shoppingTips": "Avoid heavily salted or sugar-coated varieties."
+    }
+}

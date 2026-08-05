@@ -3,7 +3,7 @@
 **Knowledge Base ID:** FD042\
 **Scientific Name:** *Origanum vulgare*\
 **Common Names:** Oregano\
-**Food Group:** Herbs & Spices\
+**Food Group:** Herbs & Spices (FG006)
 **Evidence Level:** High\
 **Status:** Approved
 

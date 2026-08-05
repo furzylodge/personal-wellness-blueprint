@@ -1,0 +1,57 @@
+{
+    "name": "Cabbage",
+    "id": "FD013",
+    "version": "1.1",
+    "identity": {
+        "name": "Cabbage",
+        "scientificName": "Brassica oleracea var. capitata",
+        "slug": "cabbage",
+        "commonNames": [
+            "Cabbage"
+        ]
+    },
+    "classification": {
+        "foodGroup": "FG003",
+        "category": "Cruciferous Vegetable",
+        "plantBased": true,
+        "minimallyProcessed": true
+    },
+    "nutritionHighlights": {
+        "highIn": [
+            "Vitamin C",
+            "Vitamin K",
+            "Fibre",
+            "Folate"
+        ],
+        "contains": [
+            "Glucosinolates",
+            "Sulforaphane (or precursor compounds)",
+            "Isothiocyanates"
+        ],
+        "claims": [
+            "Whole Food",
+            "High Fibre",
+            "Cruciferous Vegetable"
+        ]
+    },
+    "knowledge": {
+        "description": "Cabbage is an economical, nutrient-rich cruciferous vegetable providing vitamin C, vitamin K, fibre and glucosinolates that support overall health."
+    },
+    "metadata": {
+        "schemaVersion": "1.1",
+        "author": "Simon Bradley"
+    },
+    "status": {
+        "draft": false,
+        "approved": true,
+        "published": true
+    },
+    "practical": {
+        "availability": "",
+        "seasonality": "",
+        "typicalCost": "",
+        "storage": "Refrigerate and use within several days.",
+        "preparation": "Light steaming helps preserve texture and nutritional quality.",
+        "shoppingTips": "Frozen varieties remain nutritionally valuable and are convenient."
+    }
+}

@@ -3,7 +3,7 @@
 **Knowledge Base ID:** FD032\
 **Scientific Name:** *Scomber scombrus*\
 **Common Names:** Mackerel\
-**Food Group:** Oily Fish\
+**Food Group:** Fish & Seafood (FG007)\
 **Evidence Level:** High\
 **Status:** Approved
 

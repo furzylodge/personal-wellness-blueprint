@@ -3,7 +3,7 @@
 **Knowledge Base ID:** FD045\
 **Scientific Name:** *Coffea arabica*\
 **Common Names:** Coffee\
-**Food Group:** Beverages\
+**Food Group:** Beverages (FG015)\
 **Evidence Level:** High\
 **Status:** Approved
 

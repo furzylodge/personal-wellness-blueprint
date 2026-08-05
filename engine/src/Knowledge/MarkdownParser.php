@@ -350,7 +350,7 @@ private function extractFoodName(string $markdown): string
 {
     if (
         preg_match(
-            '/^#\s+F\d+\s*-\s*(.+)$/m',
+            '/^#\s+FD\d+\s*-\s*(.+)$/m',
             $markdown,
             $matches
         )
