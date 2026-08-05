@@ -12,7 +12,7 @@ class RecommendationEngine
         return [
 
             'foods' => [
-                'FD001'
+                'F001'
             ],
 
             'summary' => [

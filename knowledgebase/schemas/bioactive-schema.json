@@ -1,0 +1,135 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://personalwellnessblueprint.com/schema/bioactive-schema.json",
+
+  "title": "Personal Wellness Blueprint Bioactive",
+
+  "description": "Schema defining a bioactive compound used by the Personal Wellness Blueprint knowledge graph.",
+
+  "type": "object",
+
+  "additionalProperties": false,
+
+  "required": [
+    "id",
+    "name",
+    "canonicalName",
+    "aliases",
+    "category",
+    "subcategory",
+    "plainEnglish",
+    "primaryAction",
+    "description",
+    "scientificSummary",
+    "evidence",
+    "clinicalImportance",
+    "maturity",
+    "status",
+    "keywords"
+  ],
+
+  "properties": {
+
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Z]{2}[0-9]{3}$",
+      "description": "Unique bioactive identifier."
+    },
+
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+
+    "canonicalName": {
+      "type": "string",
+      "minLength": 1
+    },
+
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+
+    "category": {
+      "type": "string",
+      "enum": [
+        "Dietary Fibre",
+        "Polyphenols",
+        "Sulphur Compounds",
+        "Glucosinolates",
+        "Carotenoids",
+        "Fatty Acids",
+        "Phytosterols",
+        "Terpenes",
+        "Other Bioactives"
+      ]
+    },
+
+    "subcategory": {
+      "type": "string"
+    },
+
+    "plainEnglish": {
+      "type": "string"
+    },
+
+    "primaryAction": {
+      "type": "string"
+    },
+
+    "description": {
+      "type": "string"
+    },
+
+    "scientificSummary": {
+      "type": "string"
+    },
+
+    "evidence": {
+      "type": "string",
+      "enum": [
+        "High",
+        "Moderate",
+        "Emerging"
+      ]
+    },
+
+    "clinicalImportance": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+    },
+
+    "maturity": {
+      "type": "string",
+      "enum": [
+        "Established",
+        "Growing",
+        "Emerging"
+      ]
+    },
+
+    "status": {
+      "type": "string",
+      "enum": [
+        "Active",
+        "Deprecated",
+        "Merged"
+      ]
+    },
+
+    "keywords": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    }
+
+  }
+
+}

@@ -1,0 +1,994 @@
+{
+  "version": "2.0",
+  "description": "Weighted relationships between foods and biological mechanisms.",
+  "strengthScale": {
+    "5": "Primary evidence-supported food for this mechanism",
+    "4": "Strong contributor",
+    "3": "Moderate contributor",
+    "2": "Minor contributor",
+    "1": "Incidental contributor"
+  },
+  "confidenceScale": "0.0-1.0 reflects confidence in the food\u2192mechanism relationship.",
+  "relationships": [
+    {
+      "foodId": "FD001",
+      "mechanisms": [
+        {
+          "id": "MEC001",
+          "strength": 5,
+          "confidence": 0.98
+        },
+        {
+          "id": "MEC002",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC030",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC031",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC040",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC042",
+          "strength": 3,
+          "confidence": 0.86
+        },
+        {
+          "id": "MEC043",
+          "strength": 3,
+          "confidence": 0.86
+        }
+      ]
+    },
+    {
+      "foodId": "FD002",
+      "mechanisms": [
+        {
+          "id": "MEC010",
+          "strength": 5,
+          "confidence": 0.98
+        },
+        {
+          "id": "MEC020",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC021",
+          "strength": 3,
+          "confidence": 0.86
+        },
+        {
+          "id": "MEC041",
+          "strength": 3,
+          "confidence": 0.86
+        },
+        {
+          "id": "MEC050",
+          "strength": 3,
+          "confidence": 0.86
+        },
+        {
+          "id": "MEC051",
+          "strength": 3,
+          "confidence": 0.86
+        },
+        {
+          "id": "MEC052",
+          "strength": 3,
+          "confidence": 0.86
+        }
+      ]
+    },
+    {
+      "foodId": "FD003",
+      "mechanisms": [
+        {
+          "id": "MEC020",
+          "strength": 5,
+          "confidence": 0.98
+        },
+        {
+          "id": "MEC021",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC030",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC041",
+          "strength": 3,
+          "confidence": 0.86
+        }
+      ]
+    },
+    {
+      "foodId": "FD004",
+      "mechanisms": [
+        {
+          "id": "MEC010",
+          "strength": 5,
+          "confidence": 0.98
+        },
+        {
+          "id": "MEC020",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC021",
+          "strength": 3,
+          "confidence": 0.86
+        }
+      ]
+    },
+    {
+      "foodId": "FD005",
+      "mechanisms": [
+        {
+          "id": "MEC020",
+          "strength": 5,
+          "confidence": 0.98
+        },
+        {
+          "id": "MEC021",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC030",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC043",
+          "strength": 3,
+          "confidence": 0.86
+        }
+      ]
+    },
+    {
+      "foodId": "FD006",
+      "mechanisms": [
+        {
+          "id": "MEC011",
+          "strength": 5,
+          "confidence": 0.98
+        },
+        {
+          "id": "MEC013",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC020",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC021",
+          "strength": 3,
+          "confidence": 0.86
+        }
+      ]
+    },
+    {
+      "foodId": "FD007",
+      "mechanisms": [
+        {
+          "id": "MEC020",
+          "strength": 5,
+          "confidence": 0.98
+        },
+        {
+          "id": "MEC022",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC060",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC070",
+          "strength": 3,
+          "confidence": 0.86
+        }
+      ]
+    },
+    {
+      "foodId": "FD008",
+      "mechanisms": [
+        {
+          "id": "MEC011",
+          "strength": 5,
+          "confidence": 0.98
+        },
+        {
+          "id": "MEC020",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC022",
+          "strength": 3,
+          "confidence": 0.86
+        }
+      ]
+    },
+    {
+      "foodId": "FD009",
+      "mechanisms": [
+        {
+          "id": "MEC013",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC020",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC021",
+          "strength": 3,
+          "confidence": 0.86
+        }
+      ]
+    },
+    {
+      "foodId": "FD010",
+      "mechanisms": [
+        {
+          "id": "MEC022",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC030",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC060",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC070",
+          "strength": 3,
+          "confidence": 0.86
+        }
+      ]
+    },
+    {
+      "foodId": "FD011",
+      "mechanisms": [
+        {
+          "id": "MEC022",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC060",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC070",
+          "strength": 3,
+          "confidence": 0.86
+        }
+      ]
+    },
+    {
+      "foodId": "FD012",
+      "mechanisms": [
+        {
+          "id": "MEC022",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC060",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC070",
+          "strength": 3,
+          "confidence": 0.86
+        }
+      ]
+    },
+    {
+      "foodId": "FD013",
+      "mechanisms": [
+        {
+          "id": "MEC022",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC030",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC060",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC070",
+          "strength": 3,
+          "confidence": 0.86
+        }
+      ]
+    },
+    {
+      "foodId": "FD014",
+      "mechanisms": [
+        {
+          "id": "MEC030",
+          "strength": 5,
+          "confidence": 0.98
+        },
+        {
+          "id": "MEC031",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC040",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC041",
+          "strength": 3,
+          "confidence": 0.86
+        },
+        {
+          "id": "MEC043",
+          "strength": 3,
+          "confidence": 0.86
+        }
+      ]
+    },
+    {
+      "foodId": "FD015",
+      "mechanisms": [
+        {
+          "id": "MEC030",
+          "strength": 5,
+          "confidence": 0.98
+        },
+        {
+          "id": "MEC031",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC040",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC043",
+          "strength": 3,
+          "confidence": 0.86
+        }
+      ]
+    },
+    {
+      "foodId": "FD016",
+      "mechanisms": [
+        {
+          "id": "MEC020",
+          "strength": 5,
+          "confidence": 0.98
+        },
+        {
+          "id": "MEC021",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC030",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC041",
+          "strength": 3,
+          "confidence": 0.86
+        }
+      ]
+    },
+    {
+      "foodId": "FD017",
+      "mechanisms": [
+        {
+          "id": "MEC030",
+          "strength": 5,
+          "confidence": 0.98
+        },
+        {
+          "id": "MEC031",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC040",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC043",
+          "strength": 3,
+          "confidence": 0.86
+        }
+      ]
+    },
+    {
+      "foodId": "FD018",
+      "mechanisms": [
+        {
+          "id": "MEC002",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC003",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC020",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC060",
+          "strength": 4,
+          "confidence": 0.93
+        }
+      ]
+    },
+    {
+      "foodId": "FD019",
+      "mechanisms": [
+        {
+          "id": "MEC002",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC020",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC043",
+          "strength": 3,
+          "confidence": 0.86
+        }
+      ]
+    },
+    {
+      "foodId": "FD020",
+      "mechanisms": [
+        {
+          "id": "MEC020",
+          "strength": 5,
+          "confidence": 0.98
+        },
+        {
+          "id": "MEC060",
+          "strength": 4,
+          "confidence": 0.93
+        }
+      ]
+    },
+    {
+      "foodId": "FD021",
+      "mechanisms": [
+        {
+          "id": "MEC003",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC030",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC031",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC043",
+          "strength": 3,
+          "confidence": 0.86
+        },
+        {
+          "id": "MEC060",
+          "strength": 4,
+          "confidence": 0.93
+        }
+      ]
+    },
+    {
+      "foodId": "FD022",
+      "mechanisms": [
+        {
+          "id": "MEC003",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC030",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC031",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC060",
+          "strength": 4,
+          "confidence": 0.93
+        }
+      ]
+    },
+    {
+      "foodId": "FD023",
+      "mechanisms": [
+        {
+          "id": "MEC020",
+          "strength": 5,
+          "confidence": 0.98
+        },
+        {
+          "id": "MEC060",
+          "strength": 4,
+          "confidence": 0.93
+        }
+      ]
+    },
+    {
+      "foodId": "FD024",
+      "mechanisms": [
+        {
+          "id": "MEC002",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC012",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC020",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC060",
+          "strength": 4,
+          "confidence": 0.93
+        }
+      ]
+    },
+    {
+      "foodId": "FD025",
+      "mechanisms": [
+        {
+          "id": "MEC010",
+          "strength": 5,
+          "confidence": 0.98
+        },
+        {
+          "id": "MEC011",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC060",
+          "strength": 4,
+          "confidence": 0.93
+        }
+      ]
+    },
+    {
+      "foodId": "FD026",
+      "mechanisms": [
+        {
+          "id": "MEC020",
+          "strength": 5,
+          "confidence": 0.98
+        },
+        {
+          "id": "MEC030",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC060",
+          "strength": 4,
+          "confidence": 0.93
+        }
+      ]
+    },
+    {
+      "foodId": "FD027",
+      "mechanisms": [
+        {
+          "id": "MEC020",
+          "strength": 5,
+          "confidence": 0.98
+        },
+        {
+          "id": "MEC021",
+          "strength": 4,
+          "confidence": 0.93
+        }
+      ]
+    },
+    {
+      "foodId": "FD028",
+      "mechanisms": [
+        {
+          "id": "MEC002",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC043",
+          "strength": 4,
+          "confidence": 0.93
+        }
+      ]
+    },
+    {
+      "foodId": "FD029",
+      "mechanisms": [
+        {
+          "id": "MEC020",
+          "strength": 5,
+          "confidence": 0.98
+        },
+        {
+          "id": "MEC030",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC060",
+          "strength": 4,
+          "confidence": 0.93
+        }
+      ]
+    },
+    {
+      "foodId": "FD030",
+      "mechanisms": [
+        {
+          "id": "MEC003",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC060",
+          "strength": 4,
+          "confidence": 0.93
+        }
+      ]
+    },
+    {
+      "foodId": "FD031",
+      "mechanisms": [
+        {
+          "id": "MEC003",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC020",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC060",
+          "strength": 4,
+          "confidence": 0.93
+        }
+      ]
+    },
+    {
+      "foodId": "FD032",
+      "mechanisms": [
+        {
+          "id": "MEC003",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC060",
+          "strength": 4,
+          "confidence": 0.93
+        }
+      ]
+    },
+    {
+      "foodId": "FD033",
+      "mechanisms": [
+        {
+          "id": "MEC003",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC060",
+          "strength": 4,
+          "confidence": 0.93
+        }
+      ]
+    },
+    {
+      "foodId": "FD034",
+      "mechanisms": [
+        {
+          "id": "MEC030",
+          "strength": 5,
+          "confidence": 0.98
+        },
+        {
+          "id": "MEC031",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC060",
+          "strength": 4,
+          "confidence": 0.93
+        }
+      ]
+    },
+    {
+      "foodId": "FD035",
+      "mechanisms": [
+        {
+          "id": "MEC030",
+          "strength": 5,
+          "confidence": 0.98
+        },
+        {
+          "id": "MEC031",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC060",
+          "strength": 4,
+          "confidence": 0.93
+        }
+      ]
+    },
+    {
+      "foodId": "FD036",
+      "mechanisms": [
+        {
+          "id": "MEC030",
+          "strength": 5,
+          "confidence": 0.98
+        },
+        {
+          "id": "MEC031",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC060",
+          "strength": 4,
+          "confidence": 0.93
+        }
+      ]
+    },
+    {
+      "foodId": "FD037",
+      "mechanisms": [
+        {
+          "id": "MEC030",
+          "strength": 5,
+          "confidence": 0.98
+        },
+        {
+          "id": "MEC031",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC060",
+          "strength": 4,
+          "confidence": 0.93
+        }
+      ]
+    },
+    {
+      "foodId": "FD038",
+      "mechanisms": [
+        {
+          "id": "MEC020",
+          "strength": 5,
+          "confidence": 0.98
+        },
+        {
+          "id": "MEC060",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC070",
+          "strength": 3,
+          "confidence": 0.86
+        }
+      ]
+    },
+    {
+      "foodId": "FD039",
+      "mechanisms": [
+        {
+          "id": "MEC020",
+          "strength": 5,
+          "confidence": 0.98
+        },
+        {
+          "id": "MEC060",
+          "strength": 4,
+          "confidence": 0.93
+        }
+      ]
+    },
+    {
+      "foodId": "FD040",
+      "mechanisms": [
+        {
+          "id": "MEC041",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC060",
+          "strength": 4,
+          "confidence": 0.93
+        }
+      ]
+    },
+    {
+      "foodId": "FD041",
+      "mechanisms": [
+        {
+          "id": "MEC020",
+          "strength": 5,
+          "confidence": 0.98
+        },
+        {
+          "id": "MEC060",
+          "strength": 4,
+          "confidence": 0.93
+        }
+      ]
+    },
+    {
+      "foodId": "FD042",
+      "mechanisms": [
+        {
+          "id": "MEC020",
+          "strength": 5,
+          "confidence": 0.98
+        },
+        {
+          "id": "MEC060",
+          "strength": 4,
+          "confidence": 0.93
+        }
+      ]
+    },
+    {
+      "foodId": "FD043",
+      "mechanisms": [
+        {
+          "id": "MEC020",
+          "strength": 5,
+          "confidence": 0.98
+        },
+        {
+          "id": "MEC021",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC052",
+          "strength": 3,
+          "confidence": 0.86
+        }
+      ]
+    },
+    {
+      "foodId": "FD044",
+      "mechanisms": [
+        {
+          "id": "MEC020",
+          "strength": 5,
+          "confidence": 0.98
+        },
+        {
+          "id": "MEC021",
+          "strength": 4,
+          "confidence": 0.93
+        }
+      ]
+    },
+    {
+      "foodId": "FD045",
+      "mechanisms": [
+        {
+          "id": "MEC020",
+          "strength": 5,
+          "confidence": 0.98
+        },
+        {
+          "id": "MEC021",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC051",
+          "strength": 3,
+          "confidence": 0.86
+        }
+      ]
+    },
+    {
+      "foodId": "FD046",
+      "mechanisms": [
+        {
+          "id": "MEC020",
+          "strength": 5,
+          "confidence": 0.98
+        },
+        {
+          "id": "MEC021",
+          "strength": 4,
+          "confidence": 0.93
+        },
+        {
+          "id": "MEC060",
+          "strength": 4,
+          "confidence": 0.93
+        }
+      ]
+    }
+  ]
+}

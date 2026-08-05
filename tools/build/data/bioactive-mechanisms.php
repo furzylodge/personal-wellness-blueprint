@@ -1,0 +1,108 @@
+<?php
+
+declare(strict_types=1);
+
+return [
+
+    // ---------------------------------------------------------------------
+    // OS002 - Sulforaphane
+    // ---------------------------------------------------------------------
+
+    [
+        'id' => 'BM000001',
+
+        'bioactive' => 'OS002',
+
+        'mechanism' => 'MEC071',
+
+        'strength' => 5,
+
+        'confidence' => 'High',
+
+        'notes' =>
+            'One of the best characterised dietary activators of the Nrf2 signalling pathway.',
+
+        'references' => [
+            'PubMed',
+            'NIH'
+        ]
+    ],
+
+    [
+        'id' => 'BM000002',
+
+        'bioactive' => 'OS002',
+
+        'mechanism' => 'MEC070',
+
+        'strength' => 5,
+
+        'confidence' => 'High',
+
+        'notes' =>
+            'Strongly induces Phase II detoxification enzymes through Nrf2 activation.',
+
+        'references' => [
+            'PubMed',
+            'NIH'
+        ]
+    ],
+
+    [
+        'id' => 'BM000003',
+
+        'bioactive' => 'OS002',
+
+        'mechanism' => 'MEC072',
+
+        'strength' => 5,
+
+        'confidence' => 'High',
+
+        'notes' =>
+            'Supports glutathione synthesis and recycling.',
+
+        'references' => [
+            'PubMed'
+        ]
+    ],
+
+    [
+        'id' => 'BM000004',
+
+        'bioactive' => 'OS002',
+
+        'mechanism' => 'MEC060',
+
+        'strength' => 4,
+
+        'confidence' => 'High',
+
+        'notes' =>
+            'Supports healthy inflammatory balance through modulation of NF-κB signalling.',
+
+        'references' => [
+            'PubMed'
+        ]
+    ],
+
+    [
+        'id' => 'BM000005',
+
+        'bioactive' => 'OS002',
+
+        'mechanism' => 'MEC020',
+
+        'strength' => 5,
+
+        'confidence' => 'High',
+
+        'notes' =>
+            'Reduces oxidative stress by activating endogenous antioxidant defence systems.',
+
+        'references' => [
+            'PubMed'
+        ]
+    ]
+
+];

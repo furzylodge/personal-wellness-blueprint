@@ -1,0 +1,177 @@
+{
+  "id": "FD001",
+  "version": "1.1",
+  "identity": {
+    "name": "Oats",
+    "scientificName": "Avena sativa",
+    "slug": "oats",
+    "commonNames": [
+      "Rolled oats",
+      "Steel-cut oats",
+      "Jumbo oats"
+    ]
+  },
+  "classification": {
+    "foodGroup": "FG001",
+    "category": "Wholegrain",
+    "plantBased": true,
+    "minimallyProcessed": true
+  },
+  "images": {
+    "hero": "foods/oats/hero.jpg",
+    "thumbnail": "foods/oats/thumb.jpg"
+  },
+  "tags": [
+    "TAG001",
+    "TAG003",
+    "TAG005",
+    "TAG007",
+    "TAG009"
+  ],
+  "nutritionHighlights": {
+    "highIn": [
+      "M006",
+      "M010",
+      "V002",
+      "V004",
+      "V008"
+    ],
+    "contains": [
+      "Beta-glucan",
+      "Avenanthramides"
+    ],
+    "claims": [
+      "Wholegrain",
+      "High Fibre"
+    ]
+  },
+  "knowledge": {
+    "description": "A nutrient-dense wholegrain with strong evidence supporting cardiovascular and digestive health.",
+    "activeCompounds": [
+      "Beta-glucan",
+      "Avenanthramides"
+    ],
+    "mechanisms": [
+      "Supports LDL cholesterol reduction",
+      "Feeds beneficial gut bacteria",
+      "Improves satiety",
+      "Slows glucose absorption"
+    ]
+  },
+  "suitability": {
+    "vegetarian": true,
+    "vegan": true,
+    "glutenFree": false,
+    "dairyFree": true,
+    "eggFree": true,
+    "nutFree": true,
+    "soyFree": true,
+    "halal": true,
+    "kosher": true,
+    "pregnancySuitable": true,
+    "childFriendly": true
+  },
+  "allergens": {
+    "contains": [],
+    "mayContain": [
+      "AL002"
+    ],
+    "notes": "Use certified gluten-free oats where appropriate."
+  },
+  "contraindications": {
+    "avoidIf": [
+      "Confirmed oat allergy"
+    ],
+    "useWithCaution": [
+      "Coeliac disease unless certified gluten free"
+    ]
+  },
+  "personalisation": {
+    "recommendedFor": [
+      "Raised cholesterol",
+      "Weight management",
+      "Prediabetes",
+      "Digestive health"
+    ],
+    "avoidFor": [
+      "Confirmed oat allergy"
+    ],
+    "goalsSupported": [
+      "Increase fibre intake",
+      "Support heart health",
+      "Improve gut health"
+    ]
+  },
+  "supports": {
+    "bodySystems": [
+      "BS001",
+      "BS002",
+      "BS004",
+      "BS006"
+    ],
+    "recommendationStrength": {
+      "BS001": 5,
+      "BS002": 5,
+      "BS004": 3,
+      "BS006": 5
+    }
+  },
+  "relationships": {
+    "relatedFoods": [
+      "FD005",
+      "FD007",
+      "FD010"
+    ],
+    "relatedVitamins": [
+      "V002",
+      "V004",
+      "V008"
+    ],
+    "relatedMinerals": [
+      "M005",
+      "M006",
+      "M010",
+      "M013"
+    ],
+    "relatedHabits": [
+      "H003",
+      "H008"
+    ],
+    "relatedArticles": [
+      "A001",
+      "A004"
+    ]
+  },
+  "practical": {
+    "availability": "Year round",
+    "seasonality": "All year",
+    "typicalCost": "Low",
+    "storage": "Cool dry airtight container",
+    "preparation": "Cook, soak overnight or bake",
+    "shoppingTips": "Choose minimally processed oats."
+  },
+  "editorial": {
+    "summary": "One of the strongest evidence-based whole foods.",
+    "didYouKnow": "Beta-glucan is responsible for many recognised benefits.",
+    "myth": "All oats are gluten free.",
+    "fact": "Cross-contamination is common.",
+    "keyTakeaway": "Excellent everyday wholegrain."
+  },
+  "evidence": {
+    "level": "High",
+    "references": [
+      "EFSA beta-glucan claim",
+      "NHS Eatwell Guide",
+      "British Dietetic Association"
+    ]
+  },
+  "metadata": {
+    "author": "Simon Bradley",
+    "schemaVersion": "1.1"
+  },
+  "status": {
+    "draft": false,
+    "approved": true,
+    "published": true
+  }
+}

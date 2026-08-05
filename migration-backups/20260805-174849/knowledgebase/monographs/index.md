@@ -32,7 +32,7 @@ monograph serves as the authoritative reference document.
   ----------------------------------------------------------------------------------
   ID     Food   Scientific Name   Food Group    Evidence   Status     Monograph
   ------ ------ ----------------- ------------- ---------- ---------- --------------
-  FD001   Oats   *Avena sativa*    Wholegrains   High       Approved   FD001-oats.md
+  F001   Oats   *Avena sativa*    Wholegrains   High       Approved   F001-oats.md
 
   ----------------------------------------------------------------------------------
 
@@ -54,11 +54,11 @@ monograph serves as the authoritative reference document.
 
 ### Knowledge Objects
 
-    foods/FD001-oats.json
+    foods/F001-oats.json
 
 ### Monographs
 
-    monographs/FD001-oats.md
+    monographs/F001-oats.md
 
 ------------------------------------------------------------------------
 

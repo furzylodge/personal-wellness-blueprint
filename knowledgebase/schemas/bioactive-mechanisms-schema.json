@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "bioactive-mechanisms-schema.json",
+
+  "title": "Bioactive Mechanism Relationships",
+
+  "description": "Relationships between bioactive compounds and biological mechanisms used by the Personal Wellness Blueprint recommendation engine.",
+
+  "type": "object",
+
+  "required": [
+    "version",
+    "generated",
+    "count",
+    "relationships"
+  ],
+
+  "properties": {
+
+    "version": {
+      "type": "string"
+    },
+
+    "generated": {
+      "type": "string",
+      "format": "date-time"
+    },
+
+    "count": {
+      "type": "integer",
+      "minimum": 0
+    },
+
+    "relationships": {
+
+      "type": "array",
+
+      "items": {
+
+        "type": "object",
+
+        "required": [
+          "id",
+          "bioactive",
+          "mechanism",
+          "strength",
+          "confidence",
+          "notes"
+        ],
+
+        "properties": {
+
+          "id": {
+            "type": "string",
+            "pattern": "^BM[0-9]{6}$",
+            "description": "Unique relationship identifier."
+          },
+
+          "bioactive": {
+            "type": "string",
+            "pattern": "^(DF|PP|OS|CA|FA|PS|TP|FC)[0-9]{3}$",
+            "description": "Bioactive identifier."
+          },
+
+          "mechanism": {
+            "type": "string",
+            "pattern": "^MEC[0-9]{3}$",
+            "description": "Mechanism identifier."
+          },
+
+          "strength": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 5,
+            "description": "Strength of evidence that the bioactive influences the mechanism."
+          },
+
+          "confidence": {
+            "type": "string",
+            "enum": [
+              "High",
+              "Moderate",
+              "Emerging"
+            ]
+          },
+
+          "notes": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+
+          "references": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "default": []
+          }
+
+        },
+
+        "additionalProperties": false
+
+      }
+
+    }
+
+  },
+
+  "additionalProperties": false
+}

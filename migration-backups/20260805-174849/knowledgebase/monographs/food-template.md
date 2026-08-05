@@ -208,7 +208,7 @@ BS001: 5
 
 Related Foods:
 
-- FD001
+- F001
 
 Related Vitamins:
 

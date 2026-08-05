@@ -1,0 +1,159 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "food-bioactives-schema.json",
+
+  "title": "Food Bioactive Relationships",
+
+  "description": "Relationships between foods and bioactive compounds used by the recommendation engine.",
+
+  "type": "object",
+
+  "required": [
+    "version",
+    "generated",
+    "count",
+    "relationships"
+  ],
+
+  "properties": {
+
+    "version": {
+      "type": "string"
+    },
+
+    "generated": {
+      "type": "string",
+      "format": "date-time"
+    },
+
+    "count": {
+      "type": "integer",
+      "minimum": 0
+    },
+
+    "relationships": {
+
+      "type": "array",
+
+      "items": {
+
+        "type": "object",
+
+        "required": [
+          "id",
+          "food",
+          "bioactive",
+          "strength",
+          "confidence",
+          "part",
+          "preparation",
+          "bioavailability",
+          "notes"
+        ],
+
+        "properties": {
+
+          "id": {
+            "type": "string",
+            "pattern": "^FB[0-9]{6}$",
+            "description": "Unique relationship identifier."
+          },
+
+          "food": {
+            "type": "string",
+            "pattern": "^FD[0-9]{3}$",
+            "description": "Food identifier."
+          },
+
+          "bioactive": {
+            "type": "string",
+            "pattern": "^(DF|PP|OS|CA|FA|PS|TP|FC)[0-9]{3}$",
+            "description": "Bioactive identifier."
+          },
+
+          "strength": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 5,
+            "description": "Relative abundance of the bioactive within the food."
+          },
+
+          "confidence": {
+            "type": "string",
+            "enum": [
+              "High",
+              "Moderate",
+              "Emerging"
+            ],
+            "description": "Confidence in the relationship based on current evidence."
+          },
+
+          "part": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Edible part of the food containing the bioactive."
+          },
+
+          "preparation": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "enum": [
+                "Any",
+                "Raw",
+                "Cooked",
+                "Lightly Steamed",
+                "Steamed",
+                "Boiled",
+                "Roasted",
+                "Baked",
+                "Grilled",
+                "Stir Fried",
+                "Crushed",
+                "Crushed and Rested",
+                "Chopped",
+                "Juiced",
+                "Fermented",
+                "Dried"
+              ]
+            }
+          },
+
+          "bioavailability": {
+            "type": "string",
+            "enum": [
+              "Low",
+              "Moderate",
+              "High",
+              "Variable"
+            ]
+          },
+
+          "notes": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+
+          "references": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "default": []
+          }
+
+        },
+
+        "additionalProperties": false
+
+      }
+
+    }
+
+  },
+
+  "additionalProperties": false
+}
