@@ -1,0 +1,136 @@
+{
+  "version": "2.0-alpha1",
+  "category": "Gut Health",
+  "bodySystems": [
+    {
+      "id": "BS001",
+      "relationships": [
+        {
+          "id": "MEC033",
+          "weight": 100,
+          "evidence": "High"
+        },
+        {
+          "id": "MEC035",
+          "weight": 100,
+          "evidence": "High"
+        },
+        {
+          "id": "MEC032",
+          "weight": 100,
+          "evidence": "High"
+        },
+        {
+          "id": "MEC037",
+          "weight": 80,
+          "evidence": "High"
+        },
+        {
+          "id": "MEC030",
+          "weight": 80,
+          "evidence": "High"
+        },
+        {
+          "id": "MEC034",
+          "weight": 80,
+          "evidence": "High"
+        },
+        {
+          "id": "MEC036",
+          "weight": 80,
+          "evidence": "High"
+        },
+        {
+          "id": "MEC041",
+          "weight": 80,
+          "evidence": "High"
+        },
+        {
+          "id": "MEC031",
+          "weight": 60,
+          "evidence": "High"
+        },
+        {
+          "id": "MEC038",
+          "weight": 60,
+          "evidence": "High"
+        },
+        {
+          "id": "MEC039",
+          "weight": 60,
+          "evidence": "Moderate"
+        },
+        {
+          "id": "MEC040",
+          "weight": 60,
+          "evidence": "Moderate"
+        }
+      ]
+    },
+    {
+      "id": "BS002",
+      "relationships": [
+        {
+          "id": "MEC030",
+          "weight": 100,
+          "evidence": "High"
+        },
+        {
+          "id": "MEC032",
+          "weight": 100,
+          "evidence": "High"
+        },
+        {
+          "id": "MEC034",
+          "weight": 100,
+          "evidence": "High"
+        },
+        {
+          "id": "MEC036",
+          "weight": 100,
+          "evidence": "High"
+        },
+        {
+          "id": "MEC031",
+          "weight": 80,
+          "evidence": "High"
+        },
+        {
+          "id": "MEC035",
+          "weight": 80,
+          "evidence": "High"
+        },
+        {
+          "id": "MEC037",
+          "weight": 80,
+          "evidence": "High"
+        },
+        {
+          "id": "MEC038",
+          "weight": 80,
+          "evidence": "High"
+        },
+        {
+          "id": "MEC039",
+          "weight": 80,
+          "evidence": "Moderate"
+        },
+        {
+          "id": "MEC040",
+          "weight": 80,
+          "evidence": "Moderate"
+        },
+        {
+          "id": "MEC041",
+          "weight": 40,
+          "evidence": "Moderate"
+        },
+        {
+          "id": "MEC033",
+          "weight": 40,
+          "evidence": "Moderate"
+        }
+      ]
+    }
+  ]
+}

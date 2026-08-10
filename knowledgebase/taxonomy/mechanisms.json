@@ -1,1828 +1,220 @@
 {
   "version": "2.0",
   "description": "Mechanisms aligned to the nine Personal Wellness Blueprint body systems",
-  "mechanisms": [
-    {
-      "id": "MEC001",
-      "name": "Bile Acid Binding",
-      "category": "Lipid Metabolism",
-      "description": "Evidence-informed mechanism describing how foods may contribute to bile acid binding.",
-      "plainEnglish": "Bile Acid Binding.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS003"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "bile acid binding"
-      ],
-      "primaryBodySystemNames": [
-        "Circulatory"
-      ]
-    },
-    {
-      "id": "MEC002",
-      "name": "Supports Healthy Cholesterol Metabolism",
-      "category": "Lipid Metabolism",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports healthy cholesterol metabolism.",
-      "plainEnglish": "Supports Healthy Cholesterol Metabolism.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS003"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports healthy cholesterol metabolism"
-      ],
-      "primaryBodySystemNames": [
-        "Circulatory"
-      ]
-    },
-    {
-      "id": "MEC003",
-      "name": "Supports Healthy Triglyceride Metabolism",
-      "category": "Lipid Metabolism",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports healthy triglyceride metabolism.",
-      "plainEnglish": "Supports Healthy Triglyceride Metabolism.",
-      "evidence": "High",
-      "primaryBodySystems": [
-        "BS003"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports healthy triglyceride metabolism"
-      ],
-      "primaryBodySystemNames": [
-        "Circulatory"
-      ]
-    },
-    {
-      "id": "MEC004",
-      "name": "Reduces Cholesterol Absorption",
-      "category": "Lipid Metabolism",
-      "description": "Evidence-informed mechanism describing how foods may contribute to reduces cholesterol absorption.",
-      "plainEnglish": "Reduces Cholesterol Absorption.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS003"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "reduces cholesterol absorption"
-      ],
-      "primaryBodySystemNames": [
-        "Circulatory"
-      ]
-    },
-    {
-      "id": "MEC005",
-      "name": "Supports HDL Maintenance",
-      "category": "Lipid Metabolism",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports hdl maintenance.",
-      "plainEnglish": "Supports HDL Maintenance.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS003"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports hdl maintenance"
-      ],
-      "primaryBodySystemNames": [
-        "Circulatory"
-      ]
-    },
-    {
-      "id": "MEC006",
-      "name": "Supports LDL Reduction",
-      "category": "Lipid Metabolism",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports ldl reduction.",
-      "plainEnglish": "Supports LDL Reduction.",
-      "evidence": "High",
-      "primaryBodySystems": [
-        "BS003"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports ldl reduction"
-      ],
-      "primaryBodySystemNames": [
-        "Circulatory"
-      ]
-    },
-    {
-      "id": "MEC007",
-      "name": "Supports Lipid Transport",
-      "category": "Lipid Metabolism",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports lipid transport.",
-      "plainEnglish": "Supports Lipid Transport.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS003"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports lipid transport"
-      ],
-      "primaryBodySystemNames": [
-        "Circulatory"
-      ]
-    },
-    {
-      "id": "MEC008",
-      "name": "Supports Lipid Oxidation",
-      "category": "Lipid Metabolism",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports lipid oxidation.",
-      "plainEnglish": "Supports Lipid Oxidation.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS003"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports lipid oxidation"
-      ],
-      "primaryBodySystemNames": [
-        "Circulatory"
-      ]
-    },
-    {
-      "id": "MEC009",
-      "name": "Supports Healthy Lipoprotein Balance",
-      "category": "Lipid Metabolism",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports healthy lipoprotein balance.",
-      "plainEnglish": "Supports Healthy Lipoprotein Balance.",
-      "evidence": "High",
-      "primaryBodySystems": [
-        "BS003"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports healthy lipoprotein balance"
-      ],
-      "primaryBodySystemNames": [
-        "Circulatory"
-      ]
-    },
-    {
-      "id": "MEC010",
-      "name": "Supports Endothelial Function",
-      "category": "Vascular Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports endothelial function.",
-      "plainEnglish": "Supports Endothelial Function.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS003"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports endothelial function"
-      ],
-      "primaryBodySystemNames": [
-        "Circulatory"
-      ]
-    },
-    {
-      "id": "MEC011",
-      "name": "Supports Nitric Oxide Production",
-      "category": "Vascular Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports nitric oxide production.",
-      "plainEnglish": "Supports Nitric Oxide Production.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS003"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports nitric oxide production"
-      ],
-      "primaryBodySystemNames": [
-        "Circulatory"
-      ]
-    },
-    {
-      "id": "MEC012",
-      "name": "Supports Vascular Elasticity",
-      "category": "Vascular Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports vascular elasticity.",
-      "plainEnglish": "Supports Vascular Elasticity.",
-      "evidence": "High",
-      "primaryBodySystems": [
-        "BS003"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports vascular elasticity"
-      ],
-      "primaryBodySystemNames": [
-        "Circulatory"
-      ]
-    },
-    {
-      "id": "MEC013",
-      "name": "Supports Healthy Blood Pressure Regulation",
-      "category": "Vascular Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports healthy blood pressure regulation.",
-      "plainEnglish": "Supports Healthy Blood Pressure Regulation.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS003"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports healthy blood pressure regulation"
-      ],
-      "primaryBodySystemNames": [
-        "Circulatory"
-      ]
-    },
-    {
-      "id": "MEC014",
-      "name": "Supports Microcirculation",
-      "category": "Vascular Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports microcirculation.",
-      "plainEnglish": "Supports Microcirculation.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS003"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports microcirculation"
-      ],
-      "primaryBodySystemNames": [
-        "Circulatory"
-      ]
-    },
-    {
-      "id": "MEC015",
-      "name": "Supports Vascular Repair",
-      "category": "Vascular Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports vascular repair.",
-      "plainEnglish": "Supports Vascular Repair.",
-      "evidence": "High",
-      "primaryBodySystems": [
-        "BS003"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports vascular repair"
-      ],
-      "primaryBodySystemNames": [
-        "Circulatory"
-      ]
-    },
-    {
-      "id": "MEC016",
-      "name": "Supports Healthy Platelet Function",
-      "category": "Vascular Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports healthy platelet function.",
-      "plainEnglish": "Supports Healthy Platelet Function.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS003"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports healthy platelet function"
-      ],
-      "primaryBodySystemNames": [
-        "Circulatory"
-      ]
-    },
-    {
-      "id": "MEC017",
-      "name": "Supports Capillary Integrity",
-      "category": "Vascular Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports capillary integrity.",
-      "plainEnglish": "Supports Capillary Integrity.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS003"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports capillary integrity"
-      ],
-      "primaryBodySystemNames": [
-        "Circulatory"
-      ]
-    },
-    {
-      "id": "MEC018",
-      "name": "Supports Healthy Blood Flow",
-      "category": "Vascular Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports healthy blood flow.",
-      "plainEnglish": "Supports Healthy Blood Flow.",
-      "evidence": "High",
-      "primaryBodySystems": [
-        "BS003"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports healthy blood flow"
-      ],
-      "primaryBodySystemNames": [
-        "Circulatory"
-      ]
-    },
-    {
-      "id": "MEC019",
-      "name": "Supports Vascular Resilience",
-      "category": "Vascular Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports vascular resilience.",
-      "plainEnglish": "Supports Vascular Resilience.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS003"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports vascular resilience"
-      ],
-      "primaryBodySystemNames": [
-        "Circulatory"
-      ]
-    },
-    {
-      "id": "MEC020",
-      "name": "Reduces Oxidative Stress",
-      "category": "Oxidative Stress",
-      "description": "Evidence-informed mechanism describing how foods may contribute to reduces oxidative stress.",
-      "plainEnglish": "Reduces Oxidative Stress.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS005",
-        "BS006"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "reduces oxidative stress"
-      ],
-      "primaryBodySystemNames": [
-        "Immune",
-        "Respiratory"
-      ]
-    },
-    {
-      "id": "MEC021",
-      "name": "Neutralises Free Radicals",
-      "category": "Oxidative Stress",
-      "description": "Evidence-informed mechanism describing how foods may contribute to neutralises free radicals.",
-      "plainEnglish": "Neutralises Free Radicals.",
-      "evidence": "High",
-      "primaryBodySystems": [
-        "BS005",
-        "BS006"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "neutralises free radicals"
-      ],
-      "primaryBodySystemNames": [
-        "Immune",
-        "Respiratory"
-      ]
-    },
-    {
-      "id": "MEC022",
-      "name": "Activates Endogenous Antioxidant Pathways",
-      "category": "Oxidative Stress",
-      "description": "Evidence-informed mechanism describing how foods may contribute to activates endogenous antioxidant pathways.",
-      "plainEnglish": "Activates Endogenous Antioxidant Pathways.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS005",
-        "BS006"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "activates endogenous antioxidant pathways"
-      ],
-      "primaryBodySystemNames": [
-        "Immune",
-        "Respiratory"
-      ]
-    },
-    {
-      "id": "MEC023",
-      "name": "Protects Cellular Membranes",
-      "category": "Oxidative Stress",
-      "description": "Evidence-informed mechanism describing how foods may contribute to protects cellular membranes.",
-      "plainEnglish": "Protects Cellular Membranes.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS005",
-        "BS006"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "protects cellular membranes"
-      ],
-      "primaryBodySystemNames": [
-        "Immune",
-        "Respiratory"
-      ]
-    },
-    {
-      "id": "MEC024",
-      "name": "Supports Mitochondrial Resilience",
-      "category": "Oxidative Stress",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports mitochondrial resilience.",
-      "plainEnglish": "Supports Mitochondrial Resilience.",
-      "evidence": "High",
-      "primaryBodySystems": [
-        "BS005",
-        "BS006"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports mitochondrial resilience"
-      ],
-      "primaryBodySystemNames": [
-        "Immune",
-        "Respiratory"
-      ]
-    },
-    {
-      "id": "MEC025",
-      "name": "Reduces DNA Oxidative Damage",
-      "category": "Oxidative Stress",
-      "description": "Evidence-informed mechanism describing how foods may contribute to reduces dna oxidative damage.",
-      "plainEnglish": "Reduces DNA Oxidative Damage.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS005",
-        "BS006"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "reduces dna oxidative damage"
-      ],
-      "primaryBodySystemNames": [
-        "Immune",
-        "Respiratory"
-      ]
-    },
-    {
-      "id": "MEC026",
-      "name": "Supports Redox Balance",
-      "category": "Oxidative Stress",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports redox balance.",
-      "plainEnglish": "Supports Redox Balance.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS005",
-        "BS006"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports redox balance"
-      ],
-      "primaryBodySystemNames": [
-        "Immune",
-        "Respiratory"
-      ]
-    },
-    {
-      "id": "MEC027",
-      "name": "Supports Cellular Repair",
-      "category": "Oxidative Stress",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports cellular repair.",
-      "plainEnglish": "Supports Cellular Repair.",
-      "evidence": "High",
-      "primaryBodySystems": [
-        "BS005",
-        "BS006"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports cellular repair"
-      ],
-      "primaryBodySystemNames": [
-        "Immune",
-        "Respiratory"
-      ]
-    },
-    {
-      "id": "MEC028",
-      "name": "Protects Proteins from Oxidation",
-      "category": "Oxidative Stress",
-      "description": "Evidence-informed mechanism describing how foods may contribute to protects proteins from oxidation.",
-      "plainEnglish": "Protects Proteins from Oxidation.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS005",
-        "BS006"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "protects proteins from oxidation"
-      ],
-      "primaryBodySystemNames": [
-        "Immune",
-        "Respiratory"
-      ]
-    },
-    {
-      "id": "MEC029",
-      "name": "Supports Healthy Ageing",
-      "category": "Oxidative Stress",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports healthy ageing.",
-      "plainEnglish": "Supports Healthy Ageing.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS005",
-        "BS006"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports healthy ageing"
-      ],
-      "primaryBodySystemNames": [
-        "Immune",
-        "Respiratory"
-      ]
-    },
-    {
-      "id": "MEC030",
-      "name": "Feeds Beneficial Gut Bacteria",
-      "category": "Gut Health",
-      "description": "Evidence-informed mechanism describing how foods may contribute to feeds beneficial gut bacteria.",
-      "plainEnglish": "Feeds Beneficial Gut Bacteria.",
-      "evidence": "High",
-      "primaryBodySystems": [
-        "BS001",
-        "BS002"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "feeds beneficial gut bacteria"
-      ],
-      "primaryBodySystemNames": [
-        "Digestive",
-        "Intestinal"
-      ]
-    },
-    {
-      "id": "MEC031",
-      "name": "Increases Short-Chain Fatty Acid Production",
-      "category": "Gut Health",
-      "description": "Evidence-informed mechanism describing how foods may contribute to increases short-chain fatty acid production.",
-      "plainEnglish": "Increases Short-Chain Fatty Acid Production.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS001",
-        "BS002"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "increases short-chain fatty acid production"
-      ],
-      "primaryBodySystemNames": [
-        "Digestive",
-        "Intestinal"
-      ]
-    },
-    {
-      "id": "MEC032",
-      "name": "Supports Gut Barrier Integrity",
-      "category": "Gut Health",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports gut barrier integrity.",
-      "plainEnglish": "Supports Gut Barrier Integrity.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS001",
-        "BS002"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports gut barrier integrity"
-      ],
-      "primaryBodySystemNames": [
-        "Digestive",
-        "Intestinal"
-      ]
-    },
-    {
-      "id": "MEC033",
-      "name": "Improves Bowel Regularity",
-      "category": "Gut Health",
-      "description": "Evidence-informed mechanism describing how foods may contribute to improves bowel regularity.",
-      "plainEnglish": "Improves Bowel Regularity.",
-      "evidence": "High",
-      "primaryBodySystems": [
-        "BS001",
-        "BS002"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "improves bowel regularity"
-      ],
-      "primaryBodySystemNames": [
-        "Digestive",
-        "Intestinal"
-      ]
-    },
-    {
-      "id": "MEC034",
-      "name": "Supports Digestive Enzyme Activity",
-      "category": "Gut Health",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports digestive enzyme activity.",
-      "plainEnglish": "Supports Digestive Enzyme Activity.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS001",
-        "BS002"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports digestive enzyme activity"
-      ],
-      "primaryBodySystemNames": [
-        "Digestive",
-        "Intestinal"
-      ]
-    },
-    {
-      "id": "MEC035",
-      "name": "Supports Microbiome Diversity",
-      "category": "Gut Health",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports microbiome diversity.",
-      "plainEnglish": "Supports Microbiome Diversity.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS001",
-        "BS002"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports microbiome diversity"
-      ],
-      "primaryBodySystemNames": [
-        "Digestive",
-        "Intestinal"
-      ]
-    },
-    {
-      "id": "MEC036",
-      "name": "Supports Healthy Gut pH",
-      "category": "Gut Health",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports healthy gut ph.",
-      "plainEnglish": "Supports Healthy Gut pH.",
-      "evidence": "High",
-      "primaryBodySystems": [
-        "BS001",
-        "BS002"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports healthy gut ph"
-      ],
-      "primaryBodySystemNames": [
-        "Digestive",
-        "Intestinal"
-      ]
-    },
-    {
-      "id": "MEC037",
-      "name": "Supports Nutrient Absorption",
-      "category": "Gut Health",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports nutrient absorption.",
-      "plainEnglish": "Supports Nutrient Absorption.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS001",
-        "BS002"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports nutrient absorption"
-      ],
-      "primaryBodySystemNames": [
-        "Digestive",
-        "Intestinal"
-      ]
-    },
-    {
-      "id": "MEC038",
-      "name": "Supports Mucosal Health",
-      "category": "Gut Health",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports mucosal health.",
-      "plainEnglish": "Supports Mucosal Health.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS001",
-        "BS002"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports mucosal health"
-      ],
-      "primaryBodySystemNames": [
-        "Digestive",
-        "Intestinal"
-      ]
-    },
-    {
-      "id": "MEC039",
-      "name": "Reduces Digestive Discomfort",
-      "category": "Gut Health",
-      "description": "Evidence-informed mechanism describing how foods may contribute to reduces digestive discomfort.",
-      "plainEnglish": "Reduces Digestive Discomfort.",
-      "evidence": "High",
-      "primaryBodySystems": [
-        "BS001",
-        "BS002"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "reduces digestive discomfort"
-      ],
-      "primaryBodySystemNames": [
-        "Digestive",
-        "Intestinal"
-      ]
-    },
-    {
-      "id": "MEC040",
-      "name": "Slows Glucose Absorption",
-      "category": "Glucose Regulation",
-      "description": "Evidence-informed mechanism describing how foods may contribute to slows glucose absorption.",
-      "plainEnglish": "Slows Glucose Absorption.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS008"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "slows glucose absorption"
-      ],
-      "primaryBodySystemNames": [
-        "Glandular"
-      ]
-    },
-    {
-      "id": "MEC041",
-      "name": "Improves Insulin Sensitivity",
-      "category": "Glucose Regulation",
-      "description": "Evidence-informed mechanism describing how foods may contribute to improves insulin sensitivity.",
-      "plainEnglish": "Improves Insulin Sensitivity.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS008"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "improves insulin sensitivity"
-      ],
-      "primaryBodySystemNames": [
-        "Glandular"
-      ]
-    },
-    {
-      "id": "MEC042",
-      "name": "Reduces Post-Meal Glucose Response",
-      "category": "Glucose Regulation",
-      "description": "Evidence-informed mechanism describing how foods may contribute to reduces post-meal glucose response.",
-      "plainEnglish": "Reduces Post-Meal Glucose Response.",
-      "evidence": "High",
-      "primaryBodySystems": [
-        "BS008"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "reduces post-meal glucose response"
-      ],
-      "primaryBodySystemNames": [
-        "Glandular"
-      ]
-    },
-    {
-      "id": "MEC043",
-      "name": "Improves Satiety",
-      "category": "Glucose Regulation",
-      "description": "Evidence-informed mechanism describing how foods may contribute to improves satiety.",
-      "plainEnglish": "Improves Satiety.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS008"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "improves satiety"
-      ],
-      "primaryBodySystemNames": [
-        "Glandular"
-      ]
-    },
-    {
-      "id": "MEC044",
-      "name": "Supports Healthy Energy Regulation",
-      "category": "Glucose Regulation",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports healthy energy regulation.",
-      "plainEnglish": "Supports Healthy Energy Regulation.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS008"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports healthy energy regulation"
-      ],
-      "primaryBodySystemNames": [
-        "Glandular"
-      ]
-    },
-    {
-      "id": "MEC045",
-      "name": "Supports Glycaemic Stability",
-      "category": "Glucose Regulation",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports glycaemic stability.",
-      "plainEnglish": "Supports Glycaemic Stability.",
-      "evidence": "High",
-      "primaryBodySystems": [
-        "BS008"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports glycaemic stability"
-      ],
-      "primaryBodySystemNames": [
-        "Glandular"
-      ]
-    },
-    {
-      "id": "MEC046",
-      "name": "Supports Pancreatic Function",
-      "category": "Glucose Regulation",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports pancreatic function.",
-      "plainEnglish": "Supports Pancreatic Function.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS008"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports pancreatic function"
-      ],
-      "primaryBodySystemNames": [
-        "Glandular"
-      ]
-    },
-    {
-      "id": "MEC047",
-      "name": "Supports Glucose Uptake",
-      "category": "Glucose Regulation",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports glucose uptake.",
-      "plainEnglish": "Supports Glucose Uptake.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS008"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports glucose uptake"
-      ],
-      "primaryBodySystemNames": [
-        "Glandular"
-      ]
-    },
-    {
-      "id": "MEC048",
-      "name": "Supports Glycogen Storage",
-      "category": "Glucose Regulation",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports glycogen storage.",
-      "plainEnglish": "Supports Glycogen Storage.",
-      "evidence": "High",
-      "primaryBodySystems": [
-        "BS008"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports glycogen storage"
-      ],
-      "primaryBodySystemNames": [
-        "Glandular"
-      ]
-    },
-    {
-      "id": "MEC049",
-      "name": "Reduces Glycaemic Variability",
-      "category": "Glucose Regulation",
-      "description": "Evidence-informed mechanism describing how foods may contribute to reduces glycaemic variability.",
-      "plainEnglish": "Reduces Glycaemic Variability.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS008"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "reduces glycaemic variability"
-      ],
-      "primaryBodySystemNames": [
-        "Glandular"
-      ]
-    },
-    {
-      "id": "MEC050",
-      "name": "Supports Synaptic Plasticity",
-      "category": "Brain Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports synaptic plasticity.",
-      "plainEnglish": "Supports Synaptic Plasticity.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS004"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports synaptic plasticity"
-      ],
-      "primaryBodySystemNames": [
-        "Nervous"
-      ]
-    },
-    {
-      "id": "MEC051",
-      "name": "Supports Cerebral Blood Flow",
-      "category": "Brain Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports cerebral blood flow.",
-      "plainEnglish": "Supports Cerebral Blood Flow.",
-      "evidence": "High",
-      "primaryBodySystems": [
-        "BS004"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports cerebral blood flow"
-      ],
-      "primaryBodySystemNames": [
-        "Nervous"
-      ]
-    },
-    {
-      "id": "MEC052",
-      "name": "Supports Neuronal Antioxidant Defence",
-      "category": "Brain Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports neuronal antioxidant defence.",
-      "plainEnglish": "Supports Neuronal Antioxidant Defence.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS004"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports neuronal antioxidant defence"
-      ],
-      "primaryBodySystemNames": [
-        "Nervous"
-      ]
-    },
-    {
-      "id": "MEC053",
-      "name": "Supports Neurotransmitter Synthesis",
-      "category": "Brain Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports neurotransmitter synthesis.",
-      "plainEnglish": "Supports Neurotransmitter Synthesis.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS004"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports neurotransmitter synthesis"
-      ],
-      "primaryBodySystemNames": [
-        "Nervous"
-      ]
-    },
-    {
-      "id": "MEC054",
-      "name": "Supports Cognitive Resilience",
-      "category": "Brain Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports cognitive resilience.",
-      "plainEnglish": "Supports Cognitive Resilience.",
-      "evidence": "High",
-      "primaryBodySystems": [
-        "BS004"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports cognitive resilience"
-      ],
-      "primaryBodySystemNames": [
-        "Nervous"
-      ]
-    },
-    {
-      "id": "MEC055",
-      "name": "Supports Memory Formation",
-      "category": "Brain Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports memory formation.",
-      "plainEnglish": "Supports Memory Formation.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS004"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports memory formation"
-      ],
-      "primaryBodySystemNames": [
-        "Nervous"
-      ]
-    },
-    {
-      "id": "MEC056",
-      "name": "Supports Mental Performance",
-      "category": "Brain Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports mental performance.",
-      "plainEnglish": "Supports Mental Performance.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS004"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports mental performance"
-      ],
-      "primaryBodySystemNames": [
-        "Nervous"
-      ]
-    },
-    {
-      "id": "MEC057",
-      "name": "Supports Nervous System Function",
-      "category": "Brain Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports nervous system function.",
-      "plainEnglish": "Supports Nervous System Function.",
-      "evidence": "High",
-      "primaryBodySystems": [
-        "BS004"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports nervous system function"
-      ],
-      "primaryBodySystemNames": [
-        "Nervous"
-      ]
-    },
-    {
-      "id": "MEC058",
-      "name": "Supports Healthy Mood",
-      "category": "Brain Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports healthy mood.",
-      "plainEnglish": "Supports Healthy Mood.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS004"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports healthy mood"
-      ],
-      "primaryBodySystemNames": [
-        "Nervous"
-      ]
-    },
-    {
-      "id": "MEC059",
-      "name": "Supports Neuroprotection",
-      "category": "Brain Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports neuroprotection.",
-      "plainEnglish": "Supports Neuroprotection.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS004"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports neuroprotection"
-      ],
-      "primaryBodySystemNames": [
-        "Nervous"
-      ]
-    },
-    {
-      "id": "MEC060",
-      "name": "Supports Healthy Inflammatory Balance",
-      "category": "Immune Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports healthy inflammatory balance.",
-      "plainEnglish": "Supports Healthy Inflammatory Balance.",
-      "evidence": "High",
-      "primaryBodySystems": [
-        "BS005"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports healthy inflammatory balance"
-      ],
-      "primaryBodySystemNames": [
-        "Immune"
-      ]
-    },
-    {
-      "id": "MEC061",
-      "name": "Supports Innate Immune Function",
-      "category": "Immune Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports innate immune function.",
-      "plainEnglish": "Supports Innate Immune Function.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS005"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports innate immune function"
-      ],
-      "primaryBodySystemNames": [
-        "Immune"
-      ]
-    },
-    {
-      "id": "MEC062",
-      "name": "Supports Adaptive Immune Function",
-      "category": "Immune Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports adaptive immune function.",
-      "plainEnglish": "Supports Adaptive Immune Function.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS005"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports adaptive immune function"
-      ],
-      "primaryBodySystemNames": [
-        "Immune"
-      ]
-    },
-    {
-      "id": "MEC063",
-      "name": "Supports Immune Cell Signalling",
-      "category": "Immune Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports immune cell signalling.",
-      "plainEnglish": "Supports Immune Cell Signalling.",
-      "evidence": "High",
-      "primaryBodySystems": [
-        "BS005"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports immune cell signalling"
-      ],
-      "primaryBodySystemNames": [
-        "Immune"
-      ]
-    },
-    {
-      "id": "MEC064",
-      "name": "Supports Resolution of Inflammation",
-      "category": "Immune Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports resolution of inflammation.",
-      "plainEnglish": "Supports Resolution of Inflammation.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS005"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports resolution of inflammation"
-      ],
-      "primaryBodySystemNames": [
-        "Immune"
-      ]
-    },
-    {
-      "id": "MEC065",
-      "name": "Supports Antimicrobial Defence",
-      "category": "Immune Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports antimicrobial defence.",
-      "plainEnglish": "Supports Antimicrobial Defence.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS005"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports antimicrobial defence"
-      ],
-      "primaryBodySystemNames": [
-        "Immune"
-      ]
-    },
-    {
-      "id": "MEC066",
-      "name": "Supports Antiviral Defence",
-      "category": "Immune Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports antiviral defence.",
-      "plainEnglish": "Supports Antiviral Defence.",
-      "evidence": "High",
-      "primaryBodySystems": [
-        "BS005"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports antiviral defence"
-      ],
-      "primaryBodySystemNames": [
-        "Immune"
-      ]
-    },
-    {
-      "id": "MEC067",
-      "name": "Supports Immune Surveillance",
-      "category": "Immune Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports immune surveillance.",
-      "plainEnglish": "Supports Immune Surveillance.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS005"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports immune surveillance"
-      ],
-      "primaryBodySystemNames": [
-        "Immune"
-      ]
-    },
-    {
-      "id": "MEC068",
-      "name": "Supports Healthy Cytokine Balance",
-      "category": "Immune Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports healthy cytokine balance.",
-      "plainEnglish": "Supports Healthy Cytokine Balance.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS005"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports healthy cytokine balance"
-      ],
-      "primaryBodySystemNames": [
-        "Immune"
-      ]
-    },
-    {
-      "id": "MEC069",
-      "name": "Supports Immune Resilience",
-      "category": "Immune Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports immune resilience.",
-      "plainEnglish": "Supports Immune Resilience.",
-      "evidence": "High",
-      "primaryBodySystems": [
-        "BS005"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports immune resilience"
-      ],
-      "primaryBodySystemNames": [
-        "Immune"
-      ]
-    },
-    {
-      "id": "MEC070",
-      "name": "Supports Phase II Detoxification",
-      "category": "Liver Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports phase ii detoxification.",
-      "plainEnglish": "Supports Phase II Detoxification.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS007"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports phase ii detoxification"
-      ],
-      "primaryBodySystemNames": [
-        "Urinary"
-      ]
-    },
-    {
-      "id": "MEC071",
-      "name": "Activates Nrf2 Pathways",
-      "category": "Liver Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to activates nrf2 pathways.",
-      "plainEnglish": "Activates Nrf2 Pathways.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS007"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "activates nrf2 pathways"
-      ],
-      "primaryBodySystemNames": [
-        "Urinary"
-      ]
-    },
-    {
-      "id": "MEC072",
-      "name": "Supports Glutathione Production",
-      "category": "Liver Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports glutathione production.",
-      "plainEnglish": "Supports Glutathione Production.",
-      "evidence": "High",
-      "primaryBodySystems": [
-        "BS007"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports glutathione production"
-      ],
-      "primaryBodySystemNames": [
-        "Urinary"
-      ]
-    },
-    {
-      "id": "MEC073",
-      "name": "Supports Hepatic Antioxidant Capacity",
-      "category": "Liver Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports hepatic antioxidant capacity.",
-      "plainEnglish": "Supports Hepatic Antioxidant Capacity.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS007"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports hepatic antioxidant capacity"
-      ],
-      "primaryBodySystemNames": [
-        "Urinary"
-      ]
-    },
-    {
-      "id": "MEC074",
-      "name": "Supports Bile Production",
-      "category": "Liver Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports bile production.",
-      "plainEnglish": "Supports Bile Production.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS007"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports bile production"
-      ],
-      "primaryBodySystemNames": [
-        "Urinary"
-      ]
-    },
-    {
-      "id": "MEC075",
-      "name": "Supports Liver Cell Protection",
-      "category": "Liver Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports liver cell protection.",
-      "plainEnglish": "Supports Liver Cell Protection.",
-      "evidence": "High",
-      "primaryBodySystems": [
-        "BS007"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports liver cell protection"
-      ],
-      "primaryBodySystemNames": [
-        "Urinary"
-      ]
-    },
-    {
-      "id": "MEC076",
-      "name": "Supports Xenobiotic Metabolism",
-      "category": "Liver Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports xenobiotic metabolism.",
-      "plainEnglish": "Supports Xenobiotic Metabolism.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS007"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports xenobiotic metabolism"
-      ],
-      "primaryBodySystemNames": [
-        "Urinary"
-      ]
-    },
-    {
-      "id": "MEC077",
-      "name": "Supports Fat Metabolism",
-      "category": "Liver Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports fat metabolism.",
-      "plainEnglish": "Supports Fat Metabolism.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS007"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports fat metabolism"
-      ],
-      "primaryBodySystemNames": [
-        "Urinary"
-      ]
-    },
-    {
-      "id": "MEC078",
-      "name": "Supports Healthy Liver Enzymes",
-      "category": "Liver Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports healthy liver enzymes.",
-      "plainEnglish": "Supports Healthy Liver Enzymes.",
-      "evidence": "High",
-      "primaryBodySystems": [
-        "BS007"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports healthy liver enzymes"
-      ],
-      "primaryBodySystemNames": [
-        "Urinary"
-      ]
-    },
-    {
-      "id": "MEC079",
-      "name": "Supports Hepatic Regeneration",
-      "category": "Liver Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports hepatic regeneration.",
-      "plainEnglish": "Supports Hepatic Regeneration.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS007"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports hepatic regeneration"
-      ],
-      "primaryBodySystemNames": [
-        "Urinary"
-      ]
-    },
-    {
-      "id": "MEC080",
-      "name": "Supports Hormone Synthesis",
-      "category": "Hormonal Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports hormone synthesis.",
-      "plainEnglish": "Supports Hormone Synthesis.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS008"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports hormone synthesis"
-      ],
-      "primaryBodySystemNames": [
-        "Glandular"
-      ]
-    },
-    {
-      "id": "MEC081",
-      "name": "Supports Thyroid Function",
-      "category": "Hormonal Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports thyroid function.",
-      "plainEnglish": "Supports Thyroid Function.",
-      "evidence": "High",
-      "primaryBodySystems": [
-        "BS008"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports thyroid function"
-      ],
-      "primaryBodySystemNames": [
-        "Glandular"
-      ]
-    },
-    {
-      "id": "MEC082",
-      "name": "Supports Insulin Signalling",
-      "category": "Hormonal Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports insulin signalling.",
-      "plainEnglish": "Supports Insulin Signalling.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS008"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports insulin signalling"
-      ],
-      "primaryBodySystemNames": [
-        "Glandular"
-      ]
-    },
-    {
-      "id": "MEC083",
-      "name": "Supports Sex Hormone Balance",
-      "category": "Hormonal Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports sex hormone balance.",
-      "plainEnglish": "Supports Sex Hormone Balance.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS008"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports sex hormone balance"
-      ],
-      "primaryBodySystemNames": [
-        "Glandular"
-      ]
-    },
-    {
-      "id": "MEC084",
-      "name": "Supports Adrenal Function",
-      "category": "Hormonal Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports adrenal function.",
-      "plainEnglish": "Supports Adrenal Function.",
-      "evidence": "High",
-      "primaryBodySystems": [
-        "BS008"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports adrenal function"
-      ],
-      "primaryBodySystemNames": [
-        "Glandular"
-      ]
-    },
-    {
-      "id": "MEC085",
-      "name": "Supports Oestrogen Metabolism",
-      "category": "Hormonal Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports oestrogen metabolism.",
-      "plainEnglish": "Supports Oestrogen Metabolism.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS008"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports oestrogen metabolism"
-      ],
-      "primaryBodySystemNames": [
-        "Glandular"
-      ]
-    },
-    {
-      "id": "MEC086",
-      "name": "Supports Testosterone Production",
-      "category": "Hormonal Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports testosterone production.",
-      "plainEnglish": "Supports Testosterone Production.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS008"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports testosterone production"
-      ],
-      "primaryBodySystemNames": [
-        "Glandular"
-      ]
-    },
-    {
-      "id": "MEC087",
-      "name": "Supports Hormonal Homeostasis",
-      "category": "Hormonal Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports hormonal homeostasis.",
-      "plainEnglish": "Supports Hormonal Homeostasis.",
-      "evidence": "High",
-      "primaryBodySystems": [
-        "BS008"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports hormonal homeostasis"
-      ],
-      "primaryBodySystemNames": [
-        "Glandular"
-      ]
-    },
-    {
-      "id": "MEC088",
-      "name": "Supports Endocrine Resilience",
-      "category": "Hormonal Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports endocrine resilience.",
-      "plainEnglish": "Supports Endocrine Resilience.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS008"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports endocrine resilience"
-      ],
-      "primaryBodySystemNames": [
-        "Glandular"
-      ]
-    },
-    {
-      "id": "MEC089",
-      "name": "Supports Menopausal Health",
-      "category": "Hormonal Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports menopausal health.",
-      "plainEnglish": "Supports Menopausal Health.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS008"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports menopausal health"
-      ],
-      "primaryBodySystemNames": [
-        "Glandular"
-      ]
-    },
-    {
-      "id": "MEC090",
-      "name": "Supports Collagen Formation",
-      "category": "Musculoskeletal Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports collagen formation.",
-      "plainEnglish": "Supports Collagen Formation.",
-      "evidence": "High",
-      "primaryBodySystems": [
-        "BS009"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports collagen formation"
-      ],
-      "primaryBodySystemNames": [
-        "Structural"
-      ]
-    },
-    {
-      "id": "MEC091",
-      "name": "Supports Bone Mineralisation",
-      "category": "Musculoskeletal Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports bone mineralisation.",
-      "plainEnglish": "Supports Bone Mineralisation.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS009"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports bone mineralisation"
-      ],
-      "primaryBodySystemNames": [
-        "Structural"
-      ]
-    },
-    {
-      "id": "MEC092",
-      "name": "Supports Muscle Protein Synthesis",
-      "category": "Musculoskeletal Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports muscle protein synthesis.",
-      "plainEnglish": "Supports Muscle Protein Synthesis.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS009"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports muscle protein synthesis"
-      ],
-      "primaryBodySystemNames": [
-        "Structural"
-      ]
-    },
-    {
-      "id": "MEC093",
-      "name": "Supports Connective Tissue Integrity",
-      "category": "Musculoskeletal Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports connective tissue integrity.",
-      "plainEnglish": "Supports Connective Tissue Integrity.",
-      "evidence": "High",
-      "primaryBodySystems": [
-        "BS009"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports connective tissue integrity"
-      ],
-      "primaryBodySystemNames": [
-        "Structural"
-      ]
-    },
-    {
-      "id": "MEC094",
-      "name": "Supports Joint Health",
-      "category": "Musculoskeletal Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports joint health.",
-      "plainEnglish": "Supports Joint Health.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS009"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports joint health"
-      ],
-      "primaryBodySystemNames": [
-        "Structural"
-      ]
-    },
-    {
-      "id": "MEC095",
-      "name": "Supports Muscle Recovery",
-      "category": "Musculoskeletal Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports muscle recovery.",
-      "plainEnglish": "Supports Muscle Recovery.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS009"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports muscle recovery"
-      ],
-      "primaryBodySystemNames": [
-        "Structural"
-      ]
-    },
-    {
-      "id": "MEC096",
-      "name": "Supports Bone Remodelling",
-      "category": "Musculoskeletal Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports bone remodelling.",
-      "plainEnglish": "Supports Bone Remodelling.",
-      "evidence": "High",
-      "primaryBodySystems": [
-        "BS009"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports bone remodelling"
-      ],
-      "primaryBodySystemNames": [
-        "Structural"
-      ]
-    },
-    {
-      "id": "MEC097",
-      "name": "Supports Tendon Health",
-      "category": "Musculoskeletal Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports tendon health.",
-      "plainEnglish": "Supports Tendon Health.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS009"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports tendon health"
-      ],
-      "primaryBodySystemNames": [
-        "Structural"
-      ]
-    },
-    {
-      "id": "MEC098",
-      "name": "Supports Physical Performance",
-      "category": "Musculoskeletal Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports physical performance.",
-      "plainEnglish": "Supports Physical Performance.",
-      "evidence": "Moderate",
-      "primaryBodySystems": [
-        "BS009"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports physical performance"
-      ],
-      "primaryBodySystemNames": [
-        "Structural"
-      ]
-    },
-    {
-      "id": "MEC099",
-      "name": "Supports Healthy Ageing of Musculoskeletal System",
-      "category": "Musculoskeletal Function",
-      "description": "Evidence-informed mechanism describing how foods may contribute to supports healthy ageing of musculoskeletal system.",
-      "plainEnglish": "Supports Healthy Ageing of Musculoskeletal System.",
-      "evidence": "High",
-      "primaryBodySystems": [
-        "BS009"
-      ],
-      "bioactiveCompounds": [],
-      "keywords": [
-        "supports healthy ageing of musculoskeletal system"
-      ],
-      "primaryBodySystemNames": [
-        "Structural"
-      ]
-    }
+  "mechanisms": 
+[
+
+{
+  "id": "MEC030",
+  "name": "Beneficial Gut Bacteria",
+  "category": "Gut Health",
+  "description": "Supports the growth, diversity and metabolic activity of beneficial gut microorganisms that contribute to digestive function, immune regulation, nutrient metabolism and overall host health.",
+  "plainEnglish": "Helps nourish the beneficial bacteria in your gut, supporting digestion, immunity and overall wellbeing.",
+  "evidence": "High",
+  "primaryBodySystem": "BS002",
+  "bioactiveCompounds": [],
+  "keywords": [
+    "beneficial bacteria",
+    "gut bacteria",
+    "intestinal bacteria",
+    "gut microbiota",
+    "gut microbiome",
+    "commensal bacteria",
+    "probiotics",
+    "prebiotics",
+    "dysbiosis"
   ]
+},
+{
+  "id": "MEC031",
+  "name": "Short-Chain Fatty Acid Production",
+  "category": "Gut Health",
+  "description": "Enhances microbial production of short-chain fatty acids including acetate, propionate and butyrate, supporting intestinal integrity, immune regulation and metabolic health.",
+  "plainEnglish": "Helps your gut bacteria produce beneficial compounds that nourish the bowel and support overall health.",
+  "evidence": "High",
+  "primaryBodySystem": "BS002",
+  "bioactiveCompounds": [],
+  "keywords": [
+    "SCFA",
+    "short-chain fatty acids",
+    "butyrate",
+    "acetate",
+    "propionate",
+    "microbial fermentation"
+  ]
+},
+{
+  "id": "MEC032",
+  "name": "Gut Barrier Integrity",
+  "category": "Gut Health",
+  "description": "Maintains the integrity of the intestinal epithelial barrier by supporting tight junction function and regulating intestinal permeability.",
+  "plainEnglish": "Helps keep the gut lining strong so unwanted substances are less likely to pass into the bloodstream.",
+  "evidence": "High",
+  "primaryBodySystem": "BS002",
+  "bioactiveCompounds": [],
+  "keywords": [
+    "gut barrier",
+    "intestinal barrier",
+    "tight junctions",
+    "intestinal permeability",
+    "leaky gut",
+    "epithelial barrier"
+  ]
+},
+{
+  "id": "MEC033",
+  "name": "Digestive Enzyme Activity",
+  "category": "Gut Health",
+  "description": "Supports the production and activity of digestive enzymes involved in the efficient digestion of proteins, fats and carbohydrates.",
+  "plainEnglish": "Helps your body break down food efficiently so nutrients can be absorbed properly.",
+  "evidence": "High",
+  "primaryBodySystem": "BS001",
+  "bioactiveCompounds": [],
+  "keywords": [
+    "digestive enzymes",
+    "protease",
+    "lipase",
+    "amylase",
+    "enzyme activity",
+    "digestion"
+  ]
+},
+{
+  "id": "MEC034",
+  "name": "Microbiome Diversity",
+  "category": "Gut Health",
+  "description": "Promotes a diverse and resilient gut microbial ecosystem associated with improved digestive, metabolic and immune function.",
+  "plainEnglish": "Helps maintain a healthy variety of beneficial gut bacteria.",
+  "evidence": "High",
+  "primaryBodySystem": "BS002",
+  "bioactiveCompounds": [],
+  "keywords": [
+    "microbiome diversity",
+    "gut diversity",
+    "microbial diversity",
+    "gut flora",
+    "healthy microbiome"
+  ]
+},
+{
+  "id": "MEC035",
+  "name": "Nutrient Absorption",
+  "category": "Gut Health",
+  "description": "Supports the efficient absorption and utilisation of vitamins, minerals, amino acids, fatty acids and other nutrients across the intestinal lining.",
+  "plainEnglish": "Helps your body absorb nutrients from the food you eat.",
+  "evidence": "High",
+  "primaryBodySystem": "BS001",
+  "bioactiveCompounds": [],
+  "keywords": [
+    "nutrient absorption",
+    "intestinal absorption",
+    "bioavailability",
+    "vitamin absorption",
+    "mineral absorption"
+  ]
+},
+{
+  "id": "MEC036",
+  "name": "Mucosal Health",
+  "category": "Gut Health",
+  "description": "Supports the health and maintenance of the gastrointestinal mucosal lining, contributing to protection, repair and normal digestive function.",
+  "plainEnglish": "Helps maintain the protective lining of the digestive tract.",
+  "evidence": "High",
+  "primaryBodySystem": "BS002",
+  "bioactiveCompounds": [],
+  "keywords": [
+    "mucosal health",
+    "intestinal mucosa",
+    "gut lining",
+    "mucosa",
+    "gastrointestinal mucosa"
+  ]
+},
+{
+  "id": "MEC037",
+  "name": "Gastrointestinal Motility",
+  "category": "Gut Health",
+  "description": "Supports coordinated movement of the gastrointestinal tract, promoting healthy transit time and digestive function.",
+  "plainEnglish": "Helps food move through the digestive system at a healthy rate.",
+  "evidence": "High",
+  "primaryBodySystem": "BS001",
+  "bioactiveCompounds": [],
+  "keywords": [
+    "gut motility",
+    "intestinal motility",
+    "peristalsis",
+    "bowel transit",
+    "digestive motility"
+  ]
+},
+{
+  "id": "MEC038",
+  "name": "Intestinal Inflammation",
+  "category": "Gut Health",
+  "description": "Modulates inflammatory signalling within the intestinal environment, supporting tissue integrity and digestive homeostasis.",
+  "plainEnglish": "Helps maintain a healthy inflammatory balance within the gut.",
+  "evidence": "High",
+  "primaryBodySystem": "BS002",
+  "bioactiveCompounds": [],
+  "keywords": [
+    "intestinal inflammation",
+    "gut inflammation",
+    "intestinal cytokines",
+    "digestive inflammation",
+    "mucosal inflammation"
+  ]
+},
+{
+  "id": "MEC039",
+  "name": "Intestinal Epithelial Repair",
+  "category": "Gut Health",
+  "description": "Supports the repair and regeneration of intestinal epithelial cells following normal physiological stress or injury.",
+  "plainEnglish": "Helps the cells lining the intestine repair and renew themselves.",
+  "evidence": "Moderate",
+  "primaryBodySystem": "BS002",
+  "bioactiveCompounds": [],
+  "keywords": [
+    "epithelial repair",
+    "intestinal repair",
+    "mucosal repair",
+    "epithelial regeneration",
+    "gut healing"
+  ]
+},
+{
+  "id": "MEC040",
+  "name": "Mucin Production",
+  "category": "Gut Health",
+  "description": "Supports the production and maintenance of the protective mucus layer lining the gastrointestinal tract.",
+  "plainEnglish": "Helps maintain the protective mucus layer that shields the gut lining.",
+  "evidence": "Moderate",
+  "primaryBodySystem": "BS002",
+  "bioactiveCompounds": [],
+  "keywords": [
+    "mucin",
+    "mucus layer",
+    "goblet cells",
+    "intestinal mucus",
+    "mucosal barrier"
+  ]
+},
+{
+  "id": "MEC041",
+  "name": "Bile Acid Metabolism",
+  "category": "Gut Health",
+  "description": "Supports healthy bile acid metabolism and recycling, contributing to lipid digestion, microbial balance and metabolic regulation.",
+  "plainEnglish": "Helps your body recycle bile acids so fats can be digested efficiently.",
+  "evidence": "High",
+  "primaryBodySystem": "BS001",
+  "bioactiveCompounds": [],
+  "keywords": [
+    "bile acids",
+    "enterohepatic circulation",
+    "FXR",
+    "lipid digestion",
+    "bile metabolism"
+  ]
+}
+
+]
 }

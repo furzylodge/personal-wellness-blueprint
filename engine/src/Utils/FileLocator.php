@@ -19,28 +19,37 @@ class FileLocator
         return $this->projectRoot;
     }
 
-    public function getKnowledgeBasePath(): string
+    public function getKnowledgebaseDirectory(): string
     {
 	return $this->projectRoot . DIRECTORY_SEPARATOR . 'knowledgebase';
     }
 
     public function getFoodDirectory(): string
     {
-	return $this->getKnowledgeBasePath() . DIRECTORY_SEPARATOR . 'foods';
+	return $this->getKnowledgebaseDirectory() . DIRECTORY_SEPARATOR . 'foods';
     }
 
     public function getMonographDirectory(): string
     {
-	return $this->getKnowledgeBasePath() . DIRECTORY_SEPARATOR . 'monographs';
+	return $this->getKnowledgebaseDirectory() . DIRECTORY_SEPARATOR . 'monographs';
     }
 
     public function getTaxonomyDirectory(): string
     {
-	return $this->getKnowledgeBasePath() . DIRECTORY_SEPARATOR . 'taxonomy';
+	return $this->getKnowledgebaseDirectory() . DIRECTORY_SEPARATOR . 'taxonomy';
     }
 
     public function getSchemaDirectory(): string
     {
-	return $this->getKnowledgeBasePath() . DIRECTORY_SEPARATOR . 'schemas';
+	return $this->getKnowledgebaseDirectory() . DIRECTORY_SEPARATOR . 'schemas';
+    }
+    
+    public function getRecommendationConfiguration(): string
+    {
+    	return $this->getKnowledgebaseDirectory()
+        . DIRECTORY_SEPARATOR
+        . 'configuration'
+        . DIRECTORY_SEPARATOR
+        . 'recommendation.json';
     }
 }

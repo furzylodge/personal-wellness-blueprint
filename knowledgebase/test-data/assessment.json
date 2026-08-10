@@ -1,0 +1,40 @@
+{
+  "assessment": {
+    "assessmentId": "TEST-0001",
+    "assessmentVersion": "1.0",
+    "created": "2026-08-06T15:45:00Z"
+  },
+
+  "person": {
+    "firstName": "Simon",
+    "surname": "Bradley",
+    "email": "simon@simonbradley.org",
+    "phone": "07930 925926",
+    "gender": "Male",
+    "ageRange": "51-64"
+  },
+
+  "answers": {
+  },
+
+  "bodySystems": {
+    "BS001": 82,
+    "BS002": 46,
+    "BS003": 71,
+    "BS004": 38,
+    "BS005": 63,
+    "BS006": 55,
+    "BS007": 91,
+    "BS008": 49,
+    "BS009": 77
+  },
+
+  "preferences": {
+  },
+
+  "restrictions": {
+  },
+
+  "goals": [
+  ]
+}
