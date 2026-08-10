@@ -9,8 +9,7 @@
     "slug": "swiss-chard"
   },
   "classification": {
-    "foodGroup": "Vegetables",
-    "foodGroupId": "FG003",
+    "foodGroup": "FG003",
     "category": "Leafy Green"
   },
   "tags": [
