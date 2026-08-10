@@ -1,0 +1,220 @@
+{
+  "version": "2.0",
+  "description": "Mechanisms aligned to the nine Personal Wellness Blueprint body systems",
+  "mechanisms": 
+[
+
+{
+  "id": "MEC030",
+  "name": "Beneficial Gut Bacteria",
+  "category": "Gut Health",
+  "description": "Supports the growth, diversity and metabolic activity of beneficial gut microorganisms that contribute to digestive function, immune regulation, nutrient metabolism and overall host health.",
+  "plainEnglish": "Helps nourish the beneficial bacteria in your gut, supporting digestion, immunity and overall wellbeing.",
+  "evidence": "High",
+  "primaryBodySystem": "BS002",
+  "bioactiveCompounds": [],
+  "keywords": [
+    "beneficial bacteria",
+    "gut bacteria",
+    "intestinal bacteria",
+    "gut microbiota",
+    "gut microbiome",
+    "commensal bacteria",
+    "probiotics",
+    "prebiotics",
+    "dysbiosis"
+  ]
+},
+{
+  "id": "MEC031",
+  "name": "Short-Chain Fatty Acid Production",
+  "category": "Gut Health",
+  "description": "Enhances microbial production of short-chain fatty acids including acetate, propionate and butyrate, supporting intestinal integrity, immune regulation and metabolic health.",
+  "plainEnglish": "Helps your gut bacteria produce beneficial compounds that nourish the bowel and support overall health.",
+  "evidence": "High",
+  "primaryBodySystem": "BS002",
+  "bioactiveCompounds": [],
+  "keywords": [
+    "SCFA",
+    "short-chain fatty acids",
+    "butyrate",
+    "acetate",
+    "propionate",
+    "microbial fermentation"
+  ]
+},
+{
+  "id": "MEC032",
+  "name": "Gut Barrier Integrity",
+  "category": "Gut Health",
+  "description": "Maintains the integrity of the intestinal epithelial barrier by supporting tight junction function and regulating intestinal permeability.",
+  "plainEnglish": "Helps keep the gut lining strong so unwanted substances are less likely to pass into the bloodstream.",
+  "evidence": "High",
+  "primaryBodySystem": "BS002",
+  "bioactiveCompounds": [],
+  "keywords": [
+    "gut barrier",
+    "intestinal barrier",
+    "tight junctions",
+    "intestinal permeability",
+    "leaky gut",
+    "epithelial barrier"
+  ]
+},
+{
+  "id": "MEC033",
+  "name": "Digestive Enzyme Activity",
+  "category": "Gut Health",
+  "description": "Supports the production and activity of digestive enzymes involved in the efficient digestion of proteins, fats and carbohydrates.",
+  "plainEnglish": "Helps your body break down food efficiently so nutrients can be absorbed properly.",
+  "evidence": "High",
+  "primaryBodySystem": "BS001",
+  "bioactiveCompounds": [],
+  "keywords": [
+    "digestive enzymes",
+    "protease",
+    "lipase",
+    "amylase",
+    "enzyme activity",
+    "digestion"
+  ]
+},
+{
+  "id": "MEC034",
+  "name": "Microbiome Diversity",
+  "category": "Gut Health",
+  "description": "Promotes a diverse and resilient gut microbial ecosystem associated with improved digestive, metabolic and immune function.",
+  "plainEnglish": "Helps maintain a healthy variety of beneficial gut bacteria.",
+  "evidence": "High",
+  "primaryBodySystem": "BS002",
+  "bioactiveCompounds": [],
+  "keywords": [
+    "microbiome diversity",
+    "gut diversity",
+    "microbial diversity",
+    "gut flora",
+    "healthy microbiome"
+  ]
+},
+{
+  "id": "MEC035",
+  "name": "Nutrient Absorption",
+  "category": "Gut Health",
+  "description": "Supports the efficient absorption and utilisation of vitamins, minerals, amino acids, fatty acids and other nutrients across the intestinal lining.",
+  "plainEnglish": "Helps your body absorb nutrients from the food you eat.",
+  "evidence": "High",
+  "primaryBodySystem": "BS001",
+  "bioactiveCompounds": [],
+  "keywords": [
+    "nutrient absorption",
+    "intestinal absorption",
+    "bioavailability",
+    "vitamin absorption",
+    "mineral absorption"
+  ]
+},
+{
+  "id": "MEC036",
+  "name": "Mucosal Health",
+  "category": "Gut Health",
+  "description": "Supports the health and maintenance of the gastrointestinal mucosal lining, contributing to protection, repair and normal digestive function.",
+  "plainEnglish": "Helps maintain the protective lining of the digestive tract.",
+  "evidence": "High",
+  "primaryBodySystem": "BS002",
+  "bioactiveCompounds": [],
+  "keywords": [
+    "mucosal health",
+    "intestinal mucosa",
+    "gut lining",
+    "mucosa",
+    "gastrointestinal mucosa"
+  ]
+},
+{
+  "id": "MEC037",
+  "name": "Gastrointestinal Motility",
+  "category": "Gut Health",
+  "description": "Supports coordinated movement of the gastrointestinal tract, promoting healthy transit time and digestive function.",
+  "plainEnglish": "Helps food move through the digestive system at a healthy rate.",
+  "evidence": "High",
+  "primaryBodySystem": "BS001",
+  "bioactiveCompounds": [],
+  "keywords": [
+    "gut motility",
+    "intestinal motility",
+    "peristalsis",
+    "bowel transit",
+    "digestive motility"
+  ]
+},
+{
+  "id": "MEC038",
+  "name": "Intestinal Inflammation",
+  "category": "Gut Health",
+  "description": "Modulates inflammatory signalling within the intestinal environment, supporting tissue integrity and digestive homeostasis.",
+  "plainEnglish": "Helps maintain a healthy inflammatory balance within the gut.",
+  "evidence": "High",
+  "primaryBodySystem": "BS002",
+  "bioactiveCompounds": [],
+  "keywords": [
+    "intestinal inflammation",
+    "gut inflammation",
+    "intestinal cytokines",
+    "digestive inflammation",
+    "mucosal inflammation"
+  ]
+},
+{
+  "id": "MEC039",
+  "name": "Intestinal Epithelial Repair",
+  "category": "Gut Health",
+  "description": "Supports the repair and regeneration of intestinal epithelial cells following normal physiological stress or injury.",
+  "plainEnglish": "Helps the cells lining the intestine repair and renew themselves.",
+  "evidence": "Moderate",
+  "primaryBodySystem": "BS002",
+  "bioactiveCompounds": [],
+  "keywords": [
+    "epithelial repair",
+    "intestinal repair",
+    "mucosal repair",
+    "epithelial regeneration",
+    "gut healing"
+  ]
+},
+{
+  "id": "MEC040",
+  "name": "Mucin Production",
+  "category": "Gut Health",
+  "description": "Supports the production and maintenance of the protective mucus layer lining the gastrointestinal tract.",
+  "plainEnglish": "Helps maintain the protective mucus layer that shields the gut lining.",
+  "evidence": "Moderate",
+  "primaryBodySystem": "BS002",
+  "bioactiveCompounds": [],
+  "keywords": [
+    "mucin",
+    "mucus layer",
+    "goblet cells",
+    "intestinal mucus",
+    "mucosal barrier"
+  ]
+},
+{
+  "id": "MEC041",
+  "name": "Bile Acid Metabolism",
+  "category": "Gut Health",
+  "description": "Supports healthy bile acid metabolism and recycling, contributing to lipid digestion, microbial balance and metabolic regulation.",
+  "plainEnglish": "Helps your body recycle bile acids so fats can be digested efficiently.",
+  "evidence": "High",
+  "primaryBodySystem": "BS001",
+  "bioactiveCompounds": [],
+  "keywords": [
+    "bile acids",
+    "enterohepatic circulation",
+    "FXR",
+    "lipid digestion",
+    "bile metabolism"
+  ]
+}
+
+]
+}
