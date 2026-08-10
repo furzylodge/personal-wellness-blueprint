@@ -1,29 +1,26 @@
 {
   "version": "1.0",
-  "generated": "2026-08-10T00:00:00+00:00",
-  "source": "Derived from food-bioactives(5).json using the current canonical 55-entry bioactives catalogue.",
-  "count": 66,
   "relationships": [
     {
       "foodId": "FD001",
       "bioactives": [
         {
-          "id": "DF001",
+          "id": "PR007",
           "strength": 5,
           "confidence": 0.99
         },
         {
-          "id": "PP012",
+          "id": "OB023",
           "strength": 4,
           "confidence": 0.94
         },
         {
-          "id": "DF004",
+          "id": "PR005",
           "strength": 3,
           "confidence": 0.87
         },
         {
-          "id": "DF006",
+          "id": "DF008",
           "strength": 3,
           "confidence": 0.87
         }
@@ -38,12 +35,12 @@
           "confidence": 0.99
         },
         {
-          "id": "PP008",
+          "id": "PP003",
           "strength": 4,
           "confidence": 0.94
         },
         {
-          "id": "PP003",
+          "id": "PP009",
           "strength": 3,
           "confidence": 0.87
         }
@@ -58,9 +55,14 @@
           "confidence": 0.99
         },
         {
-          "id": "PP007",
+          "id": "PP002",
           "strength": 4,
           "confidence": 0.94
+        },
+        {
+          "id": "PP008",
+          "strength": 3,
+          "confidence": 0.87
         }
       ]
     },
@@ -73,12 +75,12 @@
           "confidence": 0.99
         },
         {
-          "id": "PP009",
+          "id": "PP029",
           "strength": 4,
           "confidence": 0.94
         },
         {
-          "id": "CA004",
+          "id": "CA002",
           "strength": 3,
           "confidence": 0.87
         }
@@ -93,12 +95,12 @@
           "confidence": 0.99
         },
         {
-          "id": "PP007",
+          "id": "PP002",
           "strength": 4,
           "confidence": 0.94
         },
         {
-          "id": "DF004",
+          "id": "PR005",
           "strength": 3,
           "confidence": 0.87
         }
@@ -108,14 +110,19 @@
       "foodId": "FD006",
       "bioactives": [
         {
-          "id": "CA002",
+          "id": "CA004",
           "strength": 5,
           "confidence": 0.99
         },
         {
-          "id": "CA003",
+          "id": "CA005",
           "strength": 4,
           "confidence": 0.94
+        },
+        {
+          "id": "PP005",
+          "strength": 3,
+          "confidence": 0.87
         }
       ]
     },
@@ -123,12 +130,12 @@
       "foodId": "FD007",
       "bioactives": [
         {
-          "id": "OS002",
+          "id": "GI001",
           "strength": 5,
           "confidence": 0.99
         },
         {
-          "id": "OS003",
+          "id": "GI002",
           "strength": 4,
           "confidence": 0.94
         },
@@ -143,7 +150,12 @@
       "foodId": "FD008",
       "bioactives": [
         {
-          "id": "OS002",
+          "id": "GI006",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "GI001",
           "strength": 4,
           "confidence": 0.94
         }
@@ -153,7 +165,12 @@
       "foodId": "FD009",
       "bioactives": [
         {
-          "id": "CA004",
+          "id": "OB006",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "CA002",
           "strength": 4,
           "confidence": 0.94
         }
@@ -163,14 +180,19 @@
       "foodId": "FD010",
       "bioactives": [
         {
-          "id": "OS002",
+          "id": "GI001",
           "strength": 5,
           "confidence": 0.99
         },
         {
-          "id": "OS003",
+          "id": "GI002",
           "strength": 4,
           "confidence": 0.94
+        },
+        {
+          "id": "GI003",
+          "strength": 3,
+          "confidence": 0.87
         }
       ]
     },
@@ -178,9 +200,14 @@
       "foodId": "FD011",
       "bioactives": [
         {
-          "id": "OS002",
+          "id": "GI001",
           "strength": 5,
           "confidence": 0.99
+        },
+        {
+          "id": "GI003",
+          "strength": 4,
+          "confidence": 0.94
         }
       ]
     },
@@ -188,12 +215,12 @@
       "foodId": "FD012",
       "bioactives": [
         {
-          "id": "OS002",
+          "id": "GI001",
           "strength": 5,
           "confidence": 0.99
         },
         {
-          "id": "OS003",
+          "id": "GI002",
           "strength": 4,
           "confidence": 0.94
         }
@@ -203,9 +230,14 @@
       "foodId": "FD013",
       "bioactives": [
         {
-          "id": "OS002",
+          "id": "GI001",
           "strength": 5,
           "confidence": 0.99
+        },
+        {
+          "id": "GI018",
+          "strength": 4,
+          "confidence": 0.94
         }
       ]
     },
@@ -213,17 +245,17 @@
       "foodId": "FD014",
       "bioactives": [
         {
-          "id": "DF004",
+          "id": "PR005",
           "strength": 5,
           "confidence": 0.99
         },
         {
-          "id": "PP011",
+          "id": "OB015",
           "strength": 4,
           "confidence": 0.94
         },
         {
-          "id": "DF003",
+          "id": "PR001",
           "strength": 3,
           "confidence": 0.87
         }
@@ -233,12 +265,17 @@
       "foodId": "FD015",
       "bioactives": [
         {
-          "id": "DF004",
+          "id": "PR005",
           "strength": 5,
           "confidence": 0.99
         },
         {
-          "id": "DF003",
+          "id": "OB016",
+          "strength": 4,
+          "confidence": 0.94
+        },
+        {
+          "id": "PR001",
           "strength": 3,
           "confidence": 0.87
         }
@@ -253,7 +290,7 @@
           "confidence": 0.99
         },
         {
-          "id": "PP011",
+          "id": "OB015",
           "strength": 4,
           "confidence": 0.94
         }
@@ -263,12 +300,12 @@
       "foodId": "FD017",
       "bioactives": [
         {
-          "id": "DF004",
+          "id": "PR005",
           "strength": 5,
           "confidence": 0.99
         },
         {
-          "id": "PP011",
+          "id": "OB015",
           "strength": 4,
           "confidence": 0.94
         }
@@ -278,12 +315,17 @@
       "foodId": "FD018",
       "bioactives": [
         {
+          "id": "FA001",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
           "id": "PS001",
           "strength": 4,
           "confidence": 0.94
         },
         {
-          "id": "PP008",
+          "id": "PP003",
           "strength": 3,
           "confidence": 0.87
         }
@@ -311,6 +353,11 @@
           "id": "PS001",
           "strength": 5,
           "confidence": 0.99
+        },
+        {
+          "id": "FA017",
+          "strength": 4,
+          "confidence": 0.94
         }
       ]
     },
@@ -318,9 +365,19 @@
       "foodId": "FD021",
       "bioactives": [
         {
-          "id": "DF004",
+          "id": "FA001",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "PR005",
           "strength": 4,
           "confidence": 0.94
+        },
+        {
+          "id": "OB016",
+          "strength": 3,
+          "confidence": 0.87
         }
       ]
     },
@@ -328,15 +385,50 @@
       "foodId": "FD022",
       "bioactives": [
         {
-          "id": "DF004",
+          "id": "FA001",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "OB016",
+          "strength": 4,
+          "confidence": 0.94
+        },
+        {
+          "id": "PR005",
           "strength": 3,
           "confidence": 0.87
         }
       ]
     },
     {
+      "foodId": "FD023",
+      "bioactives": [
+        {
+          "id": "OB027",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "FA014",
+          "strength": 4,
+          "confidence": 0.94
+        }
+      ]
+    },
+    {
       "foodId": "FD024",
       "bioactives": [
+        {
+          "id": "PP017",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "PP018",
+          "strength": 4,
+          "confidence": 0.94
+        },
         {
           "id": "FA004",
           "strength": 3,
@@ -351,6 +443,11 @@
           "id": "OS001",
           "strength": 5,
           "confidence": 0.99
+        },
+        {
+          "id": "OS017",
+          "strength": 3,
+          "confidence": 0.87
         }
       ]
     },
@@ -358,12 +455,17 @@
       "foodId": "FD026",
       "bioactives": [
         {
-          "id": "PP002",
+          "id": "FL001",
           "strength": 5,
           "confidence": 0.99
         },
         {
-          "id": "DF003",
+          "id": "OS009",
+          "strength": 4,
+          "confidence": 0.94
+        },
+        {
+          "id": "PR001",
           "strength": 3,
           "confidence": 0.87
         }
@@ -378,7 +480,7 @@
           "confidence": 0.99
         },
         {
-          "id": "CA004",
+          "id": "CA002",
           "strength": 4,
           "confidence": 0.94
         }
@@ -400,6 +502,16 @@
       ]
     },
     {
+      "foodId": "FD029",
+      "bioactives": [
+        {
+          "id": "OB001",
+          "strength": 5,
+          "confidence": 0.99
+        }
+      ]
+    },
+    {
       "foodId": "FD030",
       "bioactives": [
         {
@@ -411,6 +523,11 @@
           "id": "FA003",
           "strength": 4,
           "confidence": 0.94
+        },
+        {
+          "id": "FA015",
+          "strength": 3,
+          "confidence": 0.87
         }
       ]
     },
@@ -460,10 +577,65 @@
       ]
     },
     {
+      "foodId": "FD034",
+      "bioactives": [
+        {
+          "id": "PF001",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "PF006",
+          "strength": 4,
+          "confidence": 0.94
+        }
+      ]
+    },
+    {
+      "foodId": "FD035",
+      "bioactives": [
+        {
+          "id": "PF001",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "PF002",
+          "strength": 4,
+          "confidence": 0.94
+        }
+      ]
+    },
+    {
+      "foodId": "FD036",
+      "bioactives": [
+        {
+          "id": "PF003",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "PR009",
+          "strength": 4,
+          "confidence": 0.94
+        }
+      ]
+    },
+    {
       "foodId": "FD037",
       "bioactives": [
         {
-          "id": "OS002",
+          "id": "PF001",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "PF008",
+          "strength": 4,
+          "confidence": 0.94
+        },
+        {
+          "id": "GI001",
           "strength": 3,
           "confidence": 0.87
         }
@@ -473,9 +645,74 @@
       "foodId": "FD038",
       "bioactives": [
         {
-          "id": "FC001",
+          "id": "PP016",
           "strength": 5,
           "confidence": 0.99
+        },
+        {
+          "id": "OB022",
+          "strength": 4,
+          "confidence": 0.94
+        }
+      ]
+    },
+    {
+      "foodId": "FD039",
+      "bioactives": [
+        {
+          "id": "OB003",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "OB004",
+          "strength": 4,
+          "confidence": 0.94
+        }
+      ]
+    },
+    {
+      "foodId": "FD040",
+      "bioactives": [
+        {
+          "id": "PP015",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "PP005",
+          "strength": 4,
+          "confidence": 0.94
+        }
+      ]
+    },
+    {
+      "foodId": "FD041",
+      "bioactives": [
+        {
+          "id": "PP020",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "PP021",
+          "strength": 4,
+          "confidence": 0.94
+        }
+      ]
+    },
+    {
+      "foodId": "FD042",
+      "bioactives": [
+        {
+          "id": "PP027",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "PP028",
+          "strength": 4,
+          "confidence": 0.94
         }
       ]
     },
@@ -486,6 +723,11 @@
           "id": "PP001",
           "strength": 5,
           "confidence": 0.99
+        },
+        {
+          "id": "PP011",
+          "strength": 4,
+          "confidence": 0.94
         }
       ]
     },
@@ -493,9 +735,14 @@
       "foodId": "FD044",
       "bioactives": [
         {
-          "id": "PP007",
+          "id": "PP002",
           "strength": 5,
           "confidence": 0.99
+        },
+        {
+          "id": "PP012",
+          "strength": 4,
+          "confidence": 0.94
         }
       ]
     },
@@ -503,7 +750,12 @@
       "foodId": "FD045",
       "bioactives": [
         {
-          "id": "PP008",
+          "id": "PP025",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "PP003",
           "strength": 4,
           "confidence": 0.94
         }
@@ -513,7 +765,12 @@
       "foodId": "FD046",
       "bioactives": [
         {
-          "id": "FC001",
+          "id": "OB034",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "PP016",
           "strength": 4,
           "confidence": 0.94
         }

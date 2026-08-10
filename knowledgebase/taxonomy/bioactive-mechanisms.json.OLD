@@ -2,7 +2,7 @@
   "schema": "bioactive-mechanisms-schema.json",
   "version": "1.0",
   "generated": "2026-08-10T09:36:00+01:00",
-  "count": 297,
+  "count": 293,
   "relationships": [
     {
       "id": "BM000001",
@@ -434,17 +434,6 @@
       ]
     },
     {
-      "id": "BM000040",
-      "bioactive": "DF006",
-      "mechanism": "MEC031",
-      "strength": 1,
-      "confidence": "Emerging",
-      "notes": "Very limited fermentation compared with soluble fibres.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
       "id": "BM000041",
       "bioactive": "DF006",
       "mechanism": "MEC039",
@@ -500,17 +489,6 @@
       ]
     },
     {
-      "id": "BM000046",
-      "bioactive": "DF007",
-      "mechanism": "MEC036",
-      "strength": 2,
-      "confidence": "Emerging",
-      "notes": "Secondary consequence of limited SCFA production.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
       "id": "BM000047",
       "bioactive": "DF008",
       "mechanism": "MEC030",
@@ -522,34 +500,12 @@
       ]
     },
     {
-      "id": "BM000048",
-      "bioactive": "DF008",
-      "mechanism": "MEC031",
-      "strength": 1,
-      "confidence": "Emerging",
-      "notes": "Not a primary SCFA substrate; any effect is indirect.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
       "id": "BM000049",
       "bioactive": "DF008",
       "mechanism": "MEC035",
       "strength": 4,
       "confidence": "Moderate",
       "notes": "Healthy microbiota are required for lignan conversion to enterolignans.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000050",
-      "bioactive": "DF008",
-      "mechanism": "MEC032",
-      "strength": 2,
-      "confidence": "Emerging",
-      "notes": "Possible downstream benefit through microbial metabolism rather than a direct effect.",
       "references": [
         "Scientific Literature"
       ]
