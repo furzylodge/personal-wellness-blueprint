@@ -12,7 +12,7 @@
   "classification": {
     "foodGroup": "FG007",
     "category": "Oily Fish",
-    "plantBased": true,
+    "plantBased": false,
     "minimallyProcessed": true
   },
   "images": {
@@ -38,7 +38,7 @@
     "mechanisms": []
   },
   "suitability": {
-    "vegetarian": true,
+    "vegetarian": false,
     "vegan": false,
     "glutenFree": true,
     "dairyFree": false,
