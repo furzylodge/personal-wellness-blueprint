@@ -10,7 +10,7 @@
     ]
   },
   "classification": {
-    "foodGroup": "",
+    "foodGroup": "FG006",
     "category": "Herbs & Spices",
     "plantBased": true,
     "minimallyProcessed": true

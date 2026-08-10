@@ -329,9 +329,7 @@
       "slug": "salmon",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD030-salmon.md",
-      "foodGroup": "FG007",
-      "foodGroupName": "Fish & Seafood"
+      "monograph": "FD030-salmon.md"
     },
     {
       "id": "FD031",
@@ -340,9 +338,7 @@
       "slug": "sardines",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD031-sardines.md",
-      "foodGroup": "FG007",
-      "foodGroupName": "Fish & Seafood"
+      "monograph": "FD031-sardines.md"
     },
     {
       "id": "FD032",
@@ -351,9 +347,7 @@
       "slug": "mackerel",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD032-mackerel.md",
-      "foodGroup": "FG007",
-      "foodGroupName": "Fish & Seafood"
+      "monograph": "FD032-mackerel.md"
     },
     {
       "id": "FD033",
@@ -362,9 +356,7 @@
       "slug": "herring",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD033-herring.md",
-      "foodGroup": "FG007",
-      "foodGroupName": "Fish & Seafood"
+      "monograph": "FD033-herring.md"
     },
     {
       "id": "FD034",
@@ -373,9 +365,7 @@
       "slug": "kefir",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD034-kefir.md",
-      "foodGroup": "FG011",
-      "foodGroupName": "Fermented Foods"
+      "monograph": "FD034-kefir.md"
     },
     {
       "id": "FD035",
@@ -384,9 +374,7 @@
       "slug": "live-yoghurt",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD035-live-yoghurt.md",
-      "foodGroup": "FG011",
-      "foodGroupName": "Fermented Foods"
+      "monograph": "FD035-live-yoghurt.md"
     },
     {
       "id": "FD036",
@@ -395,9 +383,7 @@
       "slug": "sauerkraut",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD036-sauerkraut.md",
-      "foodGroup": "FG011",
-      "foodGroupName": "Fermented Foods"
+      "monograph": "FD036-sauerkraut.md"
     },
     {
       "id": "FD037",
@@ -406,9 +392,7 @@
       "slug": "kimchi",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD037-kimchi.md",
-      "foodGroup": "FG011",
-      "foodGroupName": "Fermented Foods"
+      "monograph": "FD037-kimchi.md"
     },
     {
       "id": "FD038",
@@ -417,9 +401,7 @@
       "slug": "turmeric",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD038-turmeric.md",
-      "foodGroup": "FG006",
-      "foodGroupName": "Herbs & Spices"
+      "monograph": "FD038-turmeric.md"
     },
     {
       "id": "FD039",
@@ -428,9 +410,7 @@
       "slug": "ginger",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD039-ginger.md",
-      "foodGroup": "FG006",
-      "foodGroupName": "Herbs & Spices"
+      "monograph": "FD039-ginger.md"
     },
     {
       "id": "FD040",
@@ -439,9 +419,7 @@
       "slug": "cinnamon",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD040-cinnamon.md",
-      "foodGroup": "FG006",
-      "foodGroupName": "Herbs & Spices"
+      "monograph": "FD040-cinnamon.md"
     },
     {
       "id": "FD041",
@@ -450,9 +428,7 @@
       "slug": "rosemary",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD041-rosemary.md",
-      "foodGroup": "FG006",
-      "foodGroupName": "Herbs & Spices"
+      "monograph": "FD041-rosemary.md"
     },
     {
       "id": "FD042",
@@ -461,9 +437,7 @@
       "slug": "oregano",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD042-oregano.md",
-      "foodGroup": "FG006",
-      "foodGroupName": "Herbs & Spices"
+      "monograph": "FD042-oregano.md"
     },
     {
       "id": "FD043",
@@ -472,9 +446,7 @@
       "slug": "green-tea",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD043-green-tea.md",
-      "foodGroup": "FG015",
-      "foodGroupName": "Beverages"
+      "monograph": "FD043-green-tea.md"
     },
     {
       "id": "FD044",
@@ -483,9 +455,7 @@
       "slug": "black-tea",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD044-black-tea.md",
-      "foodGroup": "FG015",
-      "foodGroupName": "Beverages"
+      "monograph": "FD044-black-tea.md"
     },
     {
       "id": "FD045",
@@ -494,9 +464,7 @@
       "slug": "coffee",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD045-coffee.md",
-      "foodGroup": "FG015",
-      "foodGroupName": "Beverages"
+      "monograph": "FD045-coffee.md"
     },
     {
       "id": "FD046",
@@ -505,9 +473,7 @@
       "slug": "cocoa",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD046-cocoa.md",
-      "foodGroup": "FG015",
-      "foodGroupName": "Beverages"
+      "monograph": "FD046-cocoa.md"
     }
   ]
 }

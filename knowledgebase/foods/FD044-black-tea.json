@@ -10,7 +10,7 @@
     ]
   },
   "classification": {
-    "foodGroup": "",
+    "foodGroup": "FG015",
     "category": "Beverages",
     "plantBased": true,
     "minimallyProcessed": false

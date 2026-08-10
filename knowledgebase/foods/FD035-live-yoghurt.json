@@ -10,7 +10,7 @@
     ]
   },
   "classification": {
-    "foodGroup": "",
+    "foodGroup": "FG011",
     "category": "Fermented Foods",
     "plantBased": true,
     "minimallyProcessed": false

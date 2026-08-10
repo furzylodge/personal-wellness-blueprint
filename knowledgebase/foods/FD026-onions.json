@@ -10,8 +10,8 @@
     ]
   },
   "classification": {
-    "foodGroup": "FG006",
-    "category": "Functional Food",
+    "foodGroup": "FG002",
+    "category": "Vegetables",
     "plantBased": true,
     "minimallyProcessed": true
   },
