@@ -2,7 +2,7 @@
   "schema": "bioactive-mechanisms-schema.json",
   "version": "1.0",
   "generated": "2026-08-10T09:36:00+01:00",
-  "count": 272,
+  "count": 297,
   "relationships": [
     {
       "id": "BM000001",
@@ -2450,6 +2450,231 @@
       "strength": 3,
       "confidence": "Moderate",
       "notes": "Healthy microbial balance contributes to intestinal health.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000273",
+      "bioactive": "TP003",
+      "mechanism": "MEC050",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Principal documented biological action.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000274",
+      "bioactive": "TP003",
+      "mechanism": "MEC041",
+      "strength": 4,
+      "confidence": "High",
+      "notes": "Repository explicitly identifies inflammatory modulation.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000275",
+      "bioactive": "TP003",
+      "mechanism": "MEC040",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Antioxidant activity is a primary biological action.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000276",
+      "bioactive": "TP003",
+      "mechanism": "MEC043",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Repository explicitly identifies immune support.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000277",
+      "bioactive": "TP003",
+      "mechanism": "MEC039",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Digestive health is identified as a secondary physiological benefit.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000278",
+      "bioactive": "TP003",
+      "mechanism": "MEC056",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Repository explicitly identifies respiratory support.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000279",
+      "bioactive": "TP004",
+      "mechanism": "MEC040",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Primary antioxidant mechanism explicitly described.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000280",
+      "bioactive": "TP004",
+      "mechanism": "MEC041",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Principal documented biological action.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000281",
+      "bioactive": "TP004",
+      "mechanism": "MEC043",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Repository explicitly identifies immune support.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000282",
+      "bioactive": "TP004",
+      "mechanism": "MEC044",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Direct cellular protection from oxidative stress.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000283",
+      "bioactive": "TP004",
+      "mechanism": "MEC049",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Repository identifies neurological support as a secondary physiological role.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000284",
+      "bioactive": "PS001",
+      "mechanism": "MEC002",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Principal biological mechanism explicitly described.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000285",
+      "bioactive": "PS001",
+      "mechanism": "MEC006",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Direct consequence of reduced intestinal cholesterol absorption.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000286",
+      "bioactive": "PS001",
+      "mechanism": "MEC042",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Cardiovascular support identified in the repository.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000287",
+      "bioactive": "PS001",
+      "mechanism": "MEC041",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Repository identifies inflammatory modulation.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000288",
+      "bioactive": "PS001",
+      "mechanism": "MEC043",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Normal immune support explicitly identified.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000289",
+      "bioactive": "PS002",
+      "mechanism": "MEC002",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Primary documented biological mechanism.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000290",
+      "bioactive": "PS002",
+      "mechanism": "MEC006",
+      "strength": 4,
+      "confidence": "High",
+      "notes": "Direct consequence of reduced cholesterol absorption.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000291",
+      "bioactive": "PS002",
+      "mechanism": "MEC042",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Cardiovascular support identified in the repository.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000292",
+      "bioactive": "PS002",
+      "mechanism": "MEC047",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Healthy lipid metabolism is explicitly described.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000293",
+      "bioactive": "PS003",
+      "mechanism": "MEC002",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Primary documented biological mechanism.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000294",
+      "bioactive": "PS003",
+      "mechanism": "MEC006",
+      "strength": 4,
+      "confidence": "High",
+      "notes": "Direct consequence of reduced intestinal cholesterol absorption.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000295",
+      "bioactive": "PS003",
+      "mechanism": "MEC042",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Cardiovascular support explicitly identified.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000296",
+      "bioactive": "PS003",
+      "mechanism": "MEC041",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Repository identifies healthy inflammatory balance.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000297",
+      "bioactive": "PS003",
+      "mechanism": "MEC044",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Healthy cell membrane structure is an explicit biological role.",
       "references": ["Scientific Literature"]
     }
   ]
