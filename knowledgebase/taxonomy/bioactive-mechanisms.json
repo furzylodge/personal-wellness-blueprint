@@ -1,65 +1,2456 @@
 {
-    "schema": "bioactive-mechanisms-schema.json",
-    "version": "1.0",
-    "generated": "2026-08-05T16:18:10+00:00",
-    "count": 5,
-    "relationships": [
-        {
-            "id": "BM000001",
-            "bioactive": "OS002",
-            "mechanism": "MEC071",
-            "strength": 5,
-            "confidence": "High",
-            "notes": "One of the best characterised dietary activators of the Nrf2 signalling pathway.",
-            "references": [
-                "PubMed",
-                "NIH"
-            ]
-        },
-        {
-            "id": "BM000002",
-            "bioactive": "OS002",
-            "mechanism": "MEC070",
-            "strength": 5,
-            "confidence": "High",
-            "notes": "Strongly induces Phase II detoxification enzymes through Nrf2 activation.",
-            "references": [
-                "PubMed",
-                "NIH"
-            ]
-        },
-        {
-            "id": "BM000003",
-            "bioactive": "OS002",
-            "mechanism": "MEC072",
-            "strength": 5,
-            "confidence": "High",
-            "notes": "Supports glutathione synthesis and recycling.",
-            "references": [
-                "PubMed"
-            ]
-        },
-        {
-            "id": "BM000004",
-            "bioactive": "OS002",
-            "mechanism": "MEC060",
-            "strength": 4,
-            "confidence": "High",
-            "notes": "Supports healthy inflammatory balance through modulation of NF-κB signalling.",
-            "references": [
-                "PubMed"
-            ]
-        },
-        {
-            "id": "BM000005",
-            "bioactive": "OS002",
-            "mechanism": "MEC020",
-            "strength": 5,
-            "confidence": "High",
-            "notes": "Reduces oxidative stress by activating endogenous antioxidant defence systems.",
-            "references": [
-                "PubMed"
-            ]
-        }
-    ]
+  "schema": "bioactive-mechanisms-schema.json",
+  "version": "1.0",
+  "generated": "2026-08-10T09:36:00+01:00",
+  "count": 272,
+  "relationships": [
+    {
+      "id": "BM000001",
+      "bioactive": "DF001",
+      "mechanism": "MEC030",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Relationship explicitly identified in the curation as an evidence-supported mechanism for Beta-glucan.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000002",
+      "bioactive": "DF001",
+      "mechanism": "MEC031",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Relationship explicitly identified in the curation as an evidence-supported mechanism for Beta-glucan.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000003",
+      "bioactive": "DF001",
+      "mechanism": "MEC032",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Relationship explicitly identified in the curation as an evidence-supported mechanism for Beta-glucan.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000004",
+      "bioactive": "DF001",
+      "mechanism": "MEC033",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Relationship explicitly identified in the curation as an evidence-supported mechanism for Beta-glucan.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000005",
+      "bioactive": "DF001",
+      "mechanism": "MEC036",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Relationship explicitly identified in the curation as an evidence-supported mechanism for Beta-glucan.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000006",
+      "bioactive": "DF001",
+      "mechanism": "MEC037",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Relationship explicitly identified in the curation as an evidence-supported mechanism for Beta-glucan.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000007",
+      "bioactive": "DF001",
+      "mechanism": "MEC038",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Relationship explicitly identified in the curation as an evidence-supported mechanism for Beta-glucan.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000008",
+      "bioactive": "DF001",
+      "mechanism": "MEC001",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Curation explicitly maps Beta-glucan to this circulatory mechanism.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000009",
+      "bioactive": "DF001",
+      "mechanism": "MEC002",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Curation explicitly maps Beta-glucan to this circulatory mechanism.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000010",
+      "bioactive": "DF001",
+      "mechanism": "MEC006",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Curation explicitly maps Beta-glucan to this circulatory mechanism.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000011",
+      "bioactive": "DF002",
+      "mechanism": "MEC030",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Primary action and description.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000012",
+      "bioactive": "DF002",
+      "mechanism": "MEC031",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Scientific summary explicitly states SCFA production.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000013",
+      "bioactive": "DF002",
+      "mechanism": "MEC032",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Downstream effect of SCFA production.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000014",
+      "bioactive": "DF002",
+      "mechanism": "MEC033",
+      "strength": 4,
+      "confidence": "High",
+      "notes": "Soluble fermentable fibre supports healthy bowel function.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000015",
+      "bioactive": "DF002",
+      "mechanism": "MEC035",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Explicit support for beneficial intestinal bacteria.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000016",
+      "bioactive": "DF002",
+      "mechanism": "MEC036",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Expected result of SCFA production.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000017",
+      "bioactive": "DF002",
+      "mechanism": "MEC001",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Consistent with soluble fibre effects.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000018",
+      "bioactive": "DF002",
+      "mechanism": "MEC002",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Explicit primary action.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000019",
+      "bioactive": "DF002",
+      "mechanism": "MEC006",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Supported through cholesterol-lowering mechanism.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000020",
+      "bioactive": "DF003",
+      "mechanism": "MEC030",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Primary action explicitly states selective stimulation of beneficial microbiota.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000021",
+      "bioactive": "DF003",
+      "mechanism": "MEC031",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Explicitly stated in the scientific summary.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000022",
+      "bioactive": "DF003",
+      "mechanism": "MEC032",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Plausible downstream effect of increased SCFA production.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000023",
+      "bioactive": "DF003",
+      "mechanism": "MEC035",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Directly supported by the description of beneficial microbiota.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000024",
+      "bioactive": "DF003",
+      "mechanism": "MEC036",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Consistent with SCFA production and fermentation.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000025",
+      "bioactive": "DF003",
+      "mechanism": "MEC039",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Repository states support for digestive wellbeing; this is a reasonable but less direct mapping.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000026",
+      "bioactive": "DF004",
+      "mechanism": "MEC030",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Primary prebiotic substrate for colonic bacteria.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000027",
+      "bioactive": "DF004",
+      "mechanism": "MEC031",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Strong evidence for fermentation to butyrate and other SCFAs.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000028",
+      "bioactive": "DF004",
+      "mechanism": "MEC032",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Strong downstream effect, particularly through butyrate production.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000029",
+      "bioactive": "DF004",
+      "mechanism": "MEC033",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Well-established effect on stool bulk and colonic transit.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000030",
+      "bioactive": "DF004",
+      "mechanism": "MEC035",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Consistently increases beneficial microbial populations.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000031",
+      "bioactive": "DF004",
+      "mechanism": "MEC036",
+      "strength": 4,
+      "confidence": "High",
+      "notes": "Fermentation lowers colonic pH through SCFA production.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000032",
+      "bioactive": "DF004",
+      "mechanism": "MEC038",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Butyrate is the preferred fuel for colonocytes, supporting mucosal integrity.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000033",
+      "bioactive": "DF005",
+      "mechanism": "MEC030",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Explicitly described as a prebiotic supporting the gut microbiome.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000034",
+      "bioactive": "DF005",
+      "mechanism": "MEC031",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Microbial fermentation produces beneficial metabolites, including SCFAs.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000035",
+      "bioactive": "DF005",
+      "mechanism": "MEC032",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Plausible downstream effect of SCFA production.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000036",
+      "bioactive": "DF005",
+      "mechanism": "MEC035",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Explicitly stated in the scientific summary.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000037",
+      "bioactive": "DF005",
+      "mechanism": "MEC036",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Expected consequence of fermentation and SCFA production.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000038",
+      "bioactive": "DF006",
+      "mechanism": "MEC033",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Primary physiological role of cellulose.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000039",
+      "bioactive": "DF006",
+      "mechanism": "MEC030",
+      "strength": 2,
+      "confidence": "Moderate",
+      "notes": "Limited fermentation provides only a modest prebiotic effect.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000040",
+      "bioactive": "DF006",
+      "mechanism": "MEC031",
+      "strength": 1,
+      "confidence": "Low",
+      "notes": "Very limited fermentation compared with soluble fibres.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000041",
+      "bioactive": "DF006",
+      "mechanism": "MEC039",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Improved bowel function may reduce constipation-related discomfort.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000042",
+      "bioactive": "DF007",
+      "mechanism": "MEC033",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Explicit contribution to stool bulk and digestive function.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000043",
+      "bioactive": "DF007",
+      "mechanism": "MEC030",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Repository explicitly describes support for beneficial intestinal bacteria.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000044",
+      "bioactive": "DF007",
+      "mechanism": "MEC031",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Partial fermentation supports SCFA production.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000045",
+      "bioactive": "DF007",
+      "mechanism": "MEC035",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Consistent with support of beneficial gut bacteria.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000046",
+      "bioactive": "DF007",
+      "mechanism": "MEC036",
+      "strength": 2,
+      "confidence": "Low",
+      "notes": "Secondary consequence of limited SCFA production.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000047",
+      "bioactive": "DF008",
+      "mechanism": "MEC030",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Requires microbial metabolism and supports gut microbial activity.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000048",
+      "bioactive": "DF008",
+      "mechanism": "MEC031",
+      "strength": 1,
+      "confidence": "Low",
+      "notes": "Not a primary SCFA substrate; any effect is indirect.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000049",
+      "bioactive": "DF008",
+      "mechanism": "MEC035",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Healthy microbiota are required for lignan conversion to enterolignans.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000050",
+      "bioactive": "DF008",
+      "mechanism": "MEC032",
+      "strength": 2,
+      "confidence": "Low",
+      "notes": "Possible downstream benefit through microbial metabolism rather than a direct effect.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000051",
+      "bioactive": "DF009",
+      "mechanism": "MEC030",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Explicit prebiotic fermentation.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000052",
+      "bioactive": "DF009",
+      "mechanism": "MEC031",
+      "strength": 4,
+      "confidence": "High",
+      "notes": "Direct result of microbial fermentation.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000053",
+      "bioactive": "DF009",
+      "mechanism": "MEC032",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Gel-forming and SCFA-mediated support of barrier function.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000054",
+      "bioactive": "DF009",
+      "mechanism": "MEC033",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Well-established effect of viscous soluble fibres.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000055",
+      "bioactive": "DF009",
+      "mechanism": "MEC038",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Protective gel layer is a primary physiological action.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000056",
+      "bioactive": "DF009",
+      "mechanism": "MEC039",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Repository explicitly describes digestive comfort benefits.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000057",
+      "bioactive": "DF010",
+      "mechanism": "MEC030",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Primary documented action.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000058",
+      "bioactive": "DF010",
+      "mechanism": "MEC031",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Explicit consequence of rapid fermentation.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000059",
+      "bioactive": "DF010",
+      "mechanism": "MEC032",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Supported through increased SCFA production.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000060",
+      "bioactive": "DF010",
+      "mechanism": "MEC035",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Strong selective stimulation of beneficial species.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000061",
+      "bioactive": "DF010",
+      "mechanism": "MEC036",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "SCFA production contributes to a healthy colonic environment.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000062",
+      "bioactive": "DF010",
+      "mechanism": "MEC039",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Repository refers to digestive health, but this is a secondary effect rather than a primary mechanism.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000063",
+      "bioactive": "PP001",
+      "mechanism": "MEC040",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Primary documented antioxidant mechanism.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000064",
+      "bioactive": "PP001",
+      "mechanism": "MEC041",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Explicit modulation of inflammatory signalling.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000065",
+      "bioactive": "PP001",
+      "mechanism": "MEC042",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Well-established vascular action described in the repository.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000066",
+      "bioactive": "PP001",
+      "mechanism": "MEC043",
+      "strength": 4,
+      "confidence": "High",
+      "notes": "Contributes to normal immune resilience.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000067",
+      "bioactive": "PP001",
+      "mechanism": "MEC044",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Cellular protection through antioxidant activity.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000068",
+      "bioactive": "PP002",
+      "mechanism": "MEC040",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Primary antioxidant mechanism.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000069",
+      "bioactive": "PP002",
+      "mechanism": "MEC041",
+      "strength": 4,
+      "confidence": "High",
+      "notes": "Well-supported modulation of inflammatory pathways.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000070",
+      "bioactive": "PP002",
+      "mechanism": "MEC042",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Strong evidence for vascular support.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000071",
+      "bioactive": "PP002",
+      "mechanism": "MEC043",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Secondary immune-supportive effects.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000072",
+      "bioactive": "PP002",
+      "mechanism": "MEC030",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Gut microbial metabolism is part of their biological activity.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000073",
+      "bioactive": "PP002",
+      "mechanism": "MEC035",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Interaction with the gut microbiota supports diversity, although this is not the primary mechanism.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000074",
+      "bioactive": "PP002",
+      "mechanism": "MEC044",
+      "strength": 4,
+      "confidence": "High",
+      "notes": "Cellular protection through antioxidant effects.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000075",
+      "bioactive": "PP003",
+      "mechanism": "MEC040",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Primary antioxidant mechanism explicitly described.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000076",
+      "bioactive": "PP003",
+      "mechanism": "MEC042",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Endothelial nitric oxide synthesis is a primary action.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000077",
+      "bioactive": "PP003",
+      "mechanism": "MEC045",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Repository explicitly states healthy blood flow support.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000078",
+      "bioactive": "PP003",
+      "mechanism": "MEC044",
+      "strength": 4,
+      "confidence": "High",
+      "notes": "Cellular protection through antioxidant activity.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000079",
+      "bioactive": "PP003",
+      "mechanism": "MEC041",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Consistent with vascular homeostasis, but not described as a primary action in the repository.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000080",
+      "bioactive": "PP004",
+      "mechanism": "MEC040",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Primary antioxidant mechanism explicitly described.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000081",
+      "bioactive": "PP004",
+      "mechanism": "MEC041",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Principal documented biological action.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000082",
+      "bioactive": "PP004",
+      "mechanism": "MEC043",
+      "strength": 4,
+      "confidence": "High",
+      "notes": "Supports normal immune regulation.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000083",
+      "bioactive": "PP004",
+      "mechanism": "MEC044",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Direct cellular protection through antioxidant activity.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000084",
+      "bioactive": "PP004",
+      "mechanism": "MEC046",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Repository identifies support for healthy joint function.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000085",
+      "bioactive": "PP004",
+      "mechanism": "MEC047",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Repository identifies metabolic support as a secondary action.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000086",
+      "bioactive": "PP005",
+      "mechanism": "MEC040",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Primary antioxidant mechanism explicitly described.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000087",
+      "bioactive": "PP005",
+      "mechanism": "MEC041",
+      "strength": 4,
+      "confidence": "High",
+      "notes": "Well-supported modulation of inflammatory pathways.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000088",
+      "bioactive": "PP005",
+      "mechanism": "MEC042",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Cardiovascular support includes endothelial health.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000089",
+      "bioactive": "PP005",
+      "mechanism": "MEC044",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Direct cellular protection from oxidative stress.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000090",
+      "bioactive": "PP005",
+      "mechanism": "MEC047",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Healthy ageing and mitochondrial function support metabolic health.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000091",
+      "bioactive": "PP005",
+      "mechanism": "MEC048",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Repository explicitly identifies healthy ageing as a primary benefit.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000092",
+      "bioactive": "PP006",
+      "mechanism": "MEC040",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Primary antioxidant mechanism explicitly described.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000093",
+      "bioactive": "PP006",
+      "mechanism": "MEC041",
+      "strength": 4,
+      "confidence": "High",
+      "notes": "Repository identifies inflammatory regulation as a principal action.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000094",
+      "bioactive": "PP006",
+      "mechanism": "MEC044",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Direct protection of cellular DNA and tissues from oxidative damage.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000095",
+      "bioactive": "PP006",
+      "mechanism": "MEC030",
+      "strength": 2,
+      "confidence": "Moderate",
+      "notes": "Biological activity depends on gut microbial metabolism rather than direct prebiotic effects.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000096",
+      "bioactive": "PP006",
+      "mechanism": "MEC035",
+      "strength": 2,
+      "confidence": "Moderate",
+      "notes": "Interaction with the gut microbiome is important but secondary to its antioxidant role.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000097",
+      "bioactive": "PP007",
+      "mechanism": "MEC040",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Primary antioxidant mechanism explicitly described.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000098",
+      "bioactive": "PP007",
+      "mechanism": "MEC041",
+      "strength": 4,
+      "confidence": "High",
+      "notes": "Repository identifies modulation of inflammatory pathways.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000099",
+      "bioactive": "PP007",
+      "mechanism": "MEC044",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Direct protection against oxidative damage.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000100",
+      "bioactive": "PP007",
+      "mechanism": "MEC047",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Healthy glucose metabolism is a primary documented action.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000101",
+      "bioactive": "PP007",
+      "mechanism": "MEC042",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Cardiovascular support includes endothelial health, although not the principal mechanism.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000102",
+      "bioactive": "PP008",
+      "mechanism": "MEC040",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Primary antioxidant mechanism explicitly described.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000103",
+      "bioactive": "PP008",
+      "mechanism": "MEC041",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Modulation of inflammatory signalling is a principal action.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000104",
+      "bioactive": "PP008",
+      "mechanism": "MEC044",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Direct protection against oxidative stress.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000105",
+      "bioactive": "PP008",
+      "mechanism": "MEC043",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Repository identifies healthy immune regulation.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000106",
+      "bioactive": "PP008",
+      "mechanism": "MEC049",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Neurological and cognitive support is explicitly described.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000107",
+      "bioactive": "PP009",
+      "mechanism": "MEC040",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Primary antioxidant mechanism explicitly described.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000108",
+      "bioactive": "PP009",
+      "mechanism": "MEC041",
+      "strength": 4,
+      "confidence": "High",
+      "notes": "Repository identifies modulation of inflammatory pathways.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000109",
+      "bioactive": "PP009",
+      "mechanism": "MEC042",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Principal documented vascular action.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000110",
+      "bioactive": "PP009",
+      "mechanism": "MEC045",
+      "strength": 4,
+      "confidence": "High",
+      "notes": "Healthy circulation is explicitly identified.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000111",
+      "bioactive": "PP009",
+      "mechanism": "MEC044",
+      "strength": 4,
+      "confidence": "High",
+      "notes": "Cellular protection through antioxidant activity.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000112",
+      "bioactive": "PP010",
+      "mechanism": "MEC040",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Primary antioxidant mechanism explicitly described.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000113",
+      "bioactive": "PP010",
+      "mechanism": "MEC041",
+      "strength": 4,
+      "confidence": "High",
+      "notes": "Modulation of inflammatory signalling is a principal action.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000114",
+      "bioactive": "PP010",
+      "mechanism": "MEC042",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Repository identifies cardiovascular support.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000115",
+      "bioactive": "PP010",
+      "mechanism": "MEC044",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Direct cellular protection against oxidative stress.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000116",
+      "bioactive": "PP010",
+      "mechanism": "MEC048",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Healthy cellular ageing is explicitly identified as a biological role.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000117",
+      "bioactive": "PP011",
+      "mechanism": "MEC040",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Primary antioxidant mechanism explicitly described.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000118",
+      "bioactive": "PP011",
+      "mechanism": "MEC041",
+      "strength": 4,
+      "confidence": "High",
+      "notes": "Modulation of inflammatory signalling is a principal action.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000119",
+      "bioactive": "PP011",
+      "mechanism": "MEC044",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Direct protection of cells from oxidative stress.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000120",
+      "bioactive": "PP011",
+      "mechanism": "MEC043",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Repository identifies normal immune regulation.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000121",
+      "bioactive": "PP011",
+      "mechanism": "MEC049",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Neurological support is explicitly identified.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000122",
+      "bioactive": "PP012",
+      "mechanism": "MEC040",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Primary antioxidant mechanism explicitly described.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000123",
+      "bioactive": "PP012",
+      "mechanism": "MEC041",
+      "strength": 4,
+      "confidence": "High",
+      "notes": "Modulation of inflammatory signalling is a principal biological action.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000124",
+      "bioactive": "PP012",
+      "mechanism": "MEC042",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Cardiovascular support includes endothelial function.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000125",
+      "bioactive": "PP012",
+      "mechanism": "MEC044",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Direct protection of cellular integrity from oxidative stress.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000126",
+      "bioactive": "PP012",
+      "mechanism": "MEC047",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Repository explicitly identifies metabolic support.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000127",
+      "bioactive": "PP012",
+      "mechanism": "MEC048",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Healthy ageing through improved cellular resilience is explicitly described.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000128",
+      "bioactive": "OS001",
+      "mechanism": "MEC040",
+      "strength": 4,
+      "confidence": "High",
+      "notes": "Repository identifies antioxidant activity as a principal action.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000129",
+      "bioactive": "OS001",
+      "mechanism": "MEC041",
+      "strength": 4,
+      "confidence": "High",
+      "notes": "Modulation of inflammatory signalling is explicitly described.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000130",
+      "bioactive": "OS001",
+      "mechanism": "MEC042",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Cardiovascular support includes endothelial health.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000131",
+      "bioactive": "OS001",
+      "mechanism": "MEC043",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Explicitly supports normal immune function.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000132",
+      "bioactive": "OS001",
+      "mechanism": "MEC050",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Principal documented biological action.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000133",
+      "bioactive": "OS002",
+      "mechanism": "MEC040",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Primary biological mechanism through Nrf2 activation.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000134",
+      "bioactive": "OS002",
+      "mechanism": "MEC041",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Strong evidence for inflammatory pathway modulation.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000135",
+      "bioactive": "OS002",
+      "mechanism": "MEC044",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Direct cytoprotective effect through antioxidant enzyme induction.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000136",
+      "bioactive": "OS002",
+      "mechanism": "MEC051",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Principal Nrf2-mediated mechanism.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000137",
+      "bioactive": "OS002",
+      "mechanism": "MEC052",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Repository explicitly identifies detoxification pathways.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000138",
+      "bioactive": "OS002",
+      "mechanism": "MEC043",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Secondary immune-supportive effects through redox regulation.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000139",
+      "bioactive": "OS003",
+      "mechanism": "MEC040",
+      "strength": 4,
+      "confidence": "High",
+      "notes": "Supports endogenous antioxidant systems.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000140",
+      "bioactive": "OS003",
+      "mechanism": "MEC041",
+      "strength": 4,
+      "confidence": "High",
+      "notes": "Repository explicitly identifies inflammatory modulation.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000141",
+      "bioactive": "OS003",
+      "mechanism": "MEC042",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Cardiovascular support includes endothelial health.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000142",
+      "bioactive": "OS003",
+      "mechanism": "MEC043",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Normal immune support explicitly identified.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000143",
+      "bioactive": "OS003",
+      "mechanism": "MEC051",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Supports the body's own antioxidant enzyme systems.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000144",
+      "bioactive": "OS003",
+      "mechanism": "MEC052",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Detoxification support is a principal documented action.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000145",
+      "bioactive": "OS004",
+      "mechanism": "MEC052",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Primary documented biological role.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000146",
+      "bioactive": "OS004",
+      "mechanism": "MEC051",
+      "strength": 4,
+      "confidence": "High",
+      "notes": "Through conversion to isothiocyanates such as sulforaphane.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000147",
+      "bioactive": "OS004",
+      "mechanism": "MEC040",
+      "strength": 4,
+      "confidence": "High",
+      "notes": "Antioxidant effects mediated by downstream metabolites.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000148",
+      "bioactive": "OS004",
+      "mechanism": "MEC041",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Repository identifies modulation of inflammatory pathways.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000149",
+      "bioactive": "OS004",
+      "mechanism": "MEC044",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Cellular protection is an explicit biological outcome.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000150",
+      "bioactive": "OS005",
+      "mechanism": "MEC051",
+      "strength": 4,
+      "confidence": "High",
+      "notes": "Primary biological role described in the repository.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000151",
+      "bioactive": "OS005",
+      "mechanism": "MEC052",
+      "strength": 4,
+      "confidence": "High",
+      "notes": "Detoxification support explicitly identified.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000152",
+      "bioactive": "OS005",
+      "mechanism": "MEC040",
+      "strength": 4,
+      "confidence": "High",
+      "notes": "Secondary consequence of enhanced endogenous antioxidant activity.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000153",
+      "bioactive": "OS005",
+      "mechanism": "MEC041",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Repository identifies inflammatory modulation.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000154",
+      "bioactive": "OS005",
+      "mechanism": "MEC044",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Supports normal cellular health through antioxidant and detoxification mechanisms.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000155",
+      "bioactive": "CA001",
+      "mechanism": "MEC040",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Primary antioxidant function explicitly described.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000156",
+      "bioactive": "CA001",
+      "mechanism": "MEC043",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Direct role through vitamin A production and immune regulation.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000157",
+      "bioactive": "CA001",
+      "mechanism": "MEC044",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Cellular protection from oxidative damage.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000158",
+      "bioactive": "CA001",
+      "mechanism": "MEC053",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Principal biological role through conversion to vitamin A.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000159",
+      "bioactive": "CA002",
+      "mechanism": "MEC053",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Principal biological role through macular accumulation and retinal protection.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000160",
+      "bioactive": "CA002",
+      "mechanism": "MEC040",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Primary antioxidant activity explicitly described.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000161",
+      "bioactive": "CA002",
+      "mechanism": "MEC044",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Direct protection of retinal and other tissues from oxidative damage.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000162",
+      "bioactive": "CA002",
+      "mechanism": "MEC049",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Repository explicitly identifies cognitive support.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000163",
+      "bioactive": "CA003",
+      "mechanism": "MEC040",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Primary antioxidant mechanism explicitly described.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000164",
+      "bioactive": "CA003",
+      "mechanism": "MEC044",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Direct protection of lipids and cell membranes from oxidative damage.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000165",
+      "bioactive": "CA003",
+      "mechanism": "MEC041",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Repository identifies support for healthy inflammatory balance.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000166",
+      "bioactive": "CA003",
+      "mechanism": "MEC042",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Cardiovascular support includes endothelial protection.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000167",
+      "bioactive": "CA003",
+      "mechanism": "MEC054",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Principal documented physiological role.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000168",
+      "bioactive": "CA004",
+      "mechanism": "MEC053",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Principal biological role through macular protection and visual function.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000169",
+      "bioactive": "CA004",
+      "mechanism": "MEC040",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Primary antioxidant activity within ocular tissues.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000170",
+      "bioactive": "CA004",
+      "mechanism": "MEC044",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Direct protection of retinal cells from oxidative damage.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000171",
+      "bioactive": "CA005",
+      "mechanism": "MEC040",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Primary documented biological action.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000172",
+      "bioactive": "CA005",
+      "mechanism": "MEC044",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Strong protection of cellular membranes from oxidative damage.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000173",
+      "bioactive": "CA005",
+      "mechanism": "MEC041",
+      "strength": 4,
+      "confidence": "High",
+      "notes": "Repository explicitly identifies inflammatory regulation.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000174",
+      "bioactive": "CA005",
+      "mechanism": "MEC042",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Cardiovascular support includes endothelial health.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000175",
+      "bioactive": "CA005",
+      "mechanism": "MEC053",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Ocular health is an explicit physiological benefit.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000176",
+      "bioactive": "CA005",
+      "mechanism": "MEC046",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Support for muscular function and inflammatory balance may contribute, but this is a secondary relationship.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000177",
+      "bioactive": "CA006",
+      "mechanism": "MEC053",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Principal biological role through provitamin A activity.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000178",
+      "bioactive": "CA006",
+      "mechanism": "MEC043",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Vitamin A production directly supports normal immune function.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000179",
+      "bioactive": "CA006",
+      "mechanism": "MEC040",
+      "strength": 4,
+      "confidence": "High",
+      "notes": "Primary antioxidant activity explicitly described.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000180",
+      "bioactive": "CA006",
+      "mechanism": "MEC044",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Contributes to normal cellular health through antioxidant protection.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000181",
+      "bioactive": "FA001",
+      "mechanism": "MEC041",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Primary documented biological action of EPA.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000182",
+      "bioactive": "FA001",
+      "mechanism": "MEC042",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Strong cardiovascular support explicitly described.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000183",
+      "bioactive": "FA001",
+      "mechanism": "MEC045",
+      "strength": 4,
+      "confidence": "High",
+      "notes": "Cardiovascular function includes healthy circulation.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000184",
+      "bioactive": "FA001",
+      "mechanism": "MEC043",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Repository identifies normal immune support.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000185",
+      "bioactive": "FA001",
+      "mechanism": "MEC044",
+      "strength": 4,
+      "confidence": "High",
+      "notes": "Cell membrane integrity is a principal biological role.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000186",
+      "bioactive": "FA001",
+      "mechanism": "MEC049",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Repository explicitly identifies brain health support.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000187",
+      "bioactive": "FA002",
+      "mechanism": "MEC049",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Principal structural and functional role in the brain.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000188",
+      "bioactive": "FA002",
+      "mechanism": "MEC053",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Essential structural component of the retina.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000189",
+      "bioactive": "FA002",
+      "mechanism": "MEC041",
+      "strength": 4,
+      "confidence": "High",
+      "notes": "Repository explicitly identifies inflammatory regulation.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000190",
+      "bioactive": "FA002",
+      "mechanism": "MEC044",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Cell membrane integrity is a principal biological role.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000191",
+      "bioactive": "FA002",
+      "mechanism": "MEC043",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Secondary support through normal inflammatory regulation.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000192",
+      "bioactive": "FA003",
+      "mechanism": "MEC041",
+      "strength": 4,
+      "confidence": "High",
+      "notes": "Primary documented biological action.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000193",
+      "bioactive": "FA003",
+      "mechanism": "MEC042",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Cardiovascular support explicitly identified.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000194",
+      "bioactive": "FA003",
+      "mechanism": "MEC045",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Secondary cardiovascular benefit.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000195",
+      "bioactive": "FA003",
+      "mechanism": "MEC044",
+      "strength": 4,
+      "confidence": "High",
+      "notes": "Cell membrane maintenance is a principal biological role.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000196",
+      "bioactive": "FA003",
+      "mechanism": "MEC047",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Repository explicitly identifies metabolic support.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000197",
+      "bioactive": "FA004",
+      "mechanism": "MEC042",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Principal cardiovascular mechanism explicitly described.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000198",
+      "bioactive": "FA004",
+      "mechanism": "MEC041",
+      "strength": 4,
+      "confidence": "High",
+      "notes": "Repository identifies healthy inflammatory balance.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000199",
+      "bioactive": "FA004",
+      "mechanism": "MEC044",
+      "strength": 4,
+      "confidence": "High",
+      "notes": "Healthy cell membrane structure and function.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000200",
+      "bioactive": "FA004",
+      "mechanism": "MEC047",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Repository explicitly identifies metabolic support.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000201",
+      "bioactive": "FA004",
+      "mechanism": "MEC045",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Secondary cardiovascular benefit through vascular health.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000202",
+      "bioactive": "FA005",
+      "mechanism": "MEC047",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Primary documented biological role.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000203",
+      "bioactive": "FA005",
+      "mechanism": "MEC041",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Repository identifies modulation of inflammatory signalling.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000204",
+      "bioactive": "FA005",
+      "mechanism": "MEC043",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Explicit support for normal immune function.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000205",
+      "bioactive": "FA005",
+      "mechanism": "MEC044",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Healthy lipid metabolism contributes to normal cell membrane function.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000206",
+      "bioactive": "FA005",
+      "mechanism": "MEC055",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Principal physiological role explicitly described.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000207",
+      "bioactive": "TP001",
+      "mechanism": "MEC040",
+      "strength": 4,
+      "confidence": "High",
+      "notes": "Primary antioxidant activity explicitly described.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000208",
+      "bioactive": "TP001",
+      "mechanism": "MEC041",
+      "strength": 4,
+      "confidence": "High",
+      "notes": "Repository identifies inflammatory modulation.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000209",
+      "bioactive": "TP001",
+      "mechanism": "MEC052",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Detoxification support is a principal documented action.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000210",
+      "bioactive": "TP001",
+      "mechanism": "MEC044",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Cellular protection explicitly described.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000211",
+      "bioactive": "TP001",
+      "mechanism": "MEC039",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Repository identifies digestive health support, but not as its primary role.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000212",
+      "bioactive": "TP002",
+      "mechanism": "MEC050",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Primary documented biological action.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000213",
+      "bioactive": "TP002",
+      "mechanism": "MEC041",
+      "strength": 4,
+      "confidence": "High",
+      "notes": "Repository explicitly identifies inflammatory modulation.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000214",
+      "bioactive": "TP002",
+      "mechanism": "MEC040",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Antioxidant activity is a principal action.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000215",
+      "bioactive": "TP002",
+      "mechanism": "MEC043",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Normal immune support explicitly identified.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000216",
+      "bioactive": "TP002",
+      "mechanism": "MEC039",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Repository identifies digestive health support as a secondary physiological benefit.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000217",
+      "bioactive": "FC001",
+      "mechanism": "MEC030",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Primary documented biological role.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000218",
+      "bioactive": "FC001",
+      "mechanism": "MEC031",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Explicitly described in the repository.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000219",
+      "bioactive": "FC001",
+      "mechanism": "MEC032",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Principal mechanism identified.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000220",
+      "bioactive": "FC001",
+      "mechanism": "MEC035",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Direct support for a balanced gut microbiome.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000221",
+      "bioactive": "FC001",
+      "mechanism": "MEC036",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Fermentation metabolites contribute to a healthy intestinal environment.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000222",
+      "bioactive": "FC001",
+      "mechanism": "MEC043",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Repository explicitly identifies immune support.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000223",
+      "bioactive": "FC002",
+      "mechanism": "MEC030",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Principal documented biological action.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000224",
+      "bioactive": "FC002",
+      "mechanism": "MEC031",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Explicitly identified in the repository.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000225",
+      "bioactive": "FC002",
+      "mechanism": "MEC032",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Primary physiological role.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000226",
+      "bioactive": "FC002",
+      "mechanism": "MEC035",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Supports growth and maintenance of beneficial microbial populations.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000227",
+      "bioactive": "FC002",
+      "mechanism": "MEC036",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "SCFA production contributes to a healthy intestinal environment.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000228",
+      "bioactive": "FC002",
+      "mechanism": "MEC043",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Repository explicitly identifies immune regulation.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000229",
+      "bioactive": "FC003",
+      "mechanism": "MEC032",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Principal biological function of SCFAs.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000230",
+      "bioactive": "FC003",
+      "mechanism": "MEC038",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Colonocytes depend on SCFAs, particularly butyrate.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000231",
+      "bioactive": "FC003",
+      "mechanism": "MEC036",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Direct effect of SCFA production within the colon.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000232",
+      "bioactive": "FC003",
+      "mechanism": "MEC043",
+      "strength": 4,
+      "confidence": "High",
+      "notes": "Repository explicitly identifies immune regulation.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000233",
+      "bioactive": "FC003",
+      "mechanism": "MEC047",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "SCFAs influence glucose and lipid metabolism.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000234",
+      "bioactive": "FC003",
+      "mechanism": "MEC041",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Immune modulation contributes to inflammatory balance.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000235",
+      "bioactive": "FC004",
+      "mechanism": "MEC032",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Primary documented biological role.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000236",
+      "bioactive": "FC004",
+      "mechanism": "MEC038",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Principal fuel source for colonocytes.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000237",
+      "bioactive": "FC004",
+      "mechanism": "MEC041",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Strong evidence for immune-mediated inflammatory regulation.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000238",
+      "bioactive": "FC004",
+      "mechanism": "MEC043",
+      "strength": 4,
+      "confidence": "High",
+      "notes": "Repository explicitly identifies immune regulation.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000239",
+      "bioactive": "FC004",
+      "mechanism": "MEC036",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Helps maintain a healthy colonic environment.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000240",
+      "bioactive": "FC004",
+      "mechanism": "MEC047",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Secondary metabolic effects identified in the repository.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000241",
+      "bioactive": "FC005",
+      "mechanism": "MEC047",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Primary documented role in glucose and lipid metabolism.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000242",
+      "bioactive": "FC005",
+      "mechanism": "MEC041",
+      "strength": 4,
+      "confidence": "High",
+      "notes": "Repository explicitly identifies inflammatory regulation.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000243",
+      "bioactive": "FC005",
+      "mechanism": "MEC043",
+      "strength": 4,
+      "confidence": "High",
+      "notes": "Supports normal immune regulation.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000244",
+      "bioactive": "FC005",
+      "mechanism": "MEC032",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Contributes to intestinal homeostasis.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000245",
+      "bioactive": "FC005",
+      "mechanism": "MEC036",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Supports a healthy colonic environment through fermentation.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000246",
+      "bioactive": "FC005",
+      "mechanism": "MEC038",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Secondary benefit through maintenance of intestinal homeostasis.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000247",
+      "bioactive": "FC006",
+      "mechanism": "MEC047",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Primary documented role in systemic energy metabolism.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000248",
+      "bioactive": "FC006",
+      "mechanism": "MEC036",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Principal contribution to maintaining a healthy intestinal environment.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000249",
+      "bioactive": "FC006",
+      "mechanism": "MEC032",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Supports intestinal homeostasis.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000250",
+      "bioactive": "FC006",
+      "mechanism": "MEC043",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Repository explicitly identifies immune regulation.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000251",
+      "bioactive": "FC006",
+      "mechanism": "MEC041",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Secondary consequence of immune regulation and gut homeostasis.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000252",
+      "bioactive": "FC006",
+      "mechanism": "MEC038",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Supports a healthy intestinal environment and epithelial function.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000253",
+      "bioactive": "FC007",
+      "mechanism": "MEC032",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Principal documented biological role.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000254",
+      "bioactive": "FC007",
+      "mechanism": "MEC043",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Primary mechanism explicitly identified in the repository.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000255",
+      "bioactive": "FC007",
+      "mechanism": "MEC041",
+      "strength": 4,
+      "confidence": "High",
+      "notes": "Healthy inflammatory regulation is a principal action.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000256",
+      "bioactive": "FC007",
+      "mechanism": "MEC035",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Repository identifies microbiome stability as a key function.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000257",
+      "bioactive": "FC007",
+      "mechanism": "MEC038",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Direct consequence of improved barrier integrity.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000258",
+      "bioactive": "FC008",
+      "mechanism": "MEC032",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Principal documented biological role.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000259",
+      "bioactive": "FC008",
+      "mechanism": "MEC035",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Repository explicitly identifies microbiome stability.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000260",
+      "bioactive": "FC008",
+      "mechanism": "MEC043",
+      "strength": 4,
+      "confidence": "High",
+      "notes": "Modulation of immune responses is a principal action.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000261",
+      "bioactive": "FC008",
+      "mechanism": "MEC041",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Healthy inflammatory balance explicitly identified.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000262",
+      "bioactive": "FC008",
+      "mechanism": "MEC038",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Contributes to intestinal resilience and epithelial protection.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000263",
+      "bioactive": "FC009",
+      "mechanism": "MEC043",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Principal documented biological role.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000264",
+      "bioactive": "FC009",
+      "mechanism": "MEC041",
+      "strength": 4,
+      "confidence": "High",
+      "notes": "Repository explicitly identifies inflammatory modulation.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000265",
+      "bioactive": "FC009",
+      "mechanism": "MEC042",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Cardiovascular support is a primary physiological benefit.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000266",
+      "bioactive": "FC009",
+      "mechanism": "MEC047",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Repository explicitly identifies metabolic regulation.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000267",
+      "bioactive": "FC009",
+      "mechanism": "MEC050",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Antimicrobial activity is an explicit biological function.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000268",
+      "bioactive": "FC010",
+      "mechanism": "MEC050",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Principal documented biological role.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000269",
+      "bioactive": "FC010",
+      "mechanism": "MEC035",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Helps maintain a balanced microbial ecosystem.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000270",
+      "bioactive": "FC010",
+      "mechanism": "MEC043",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Repository explicitly identifies immune support.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000271",
+      "bioactive": "FC010",
+      "mechanism": "MEC032",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Secondary consequence of maintaining microbial homeostasis.",
+      "references": ["Scientific Literature"]
+    },
+    {
+      "id": "BM000272",
+      "bioactive": "FC010",
+      "mechanism": "MEC039",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Healthy microbial balance contributes to intestinal health.",
+      "references": ["Scientific Literature"]
+    }
+  ]
 }
