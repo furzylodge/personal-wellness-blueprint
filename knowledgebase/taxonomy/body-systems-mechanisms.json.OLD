@@ -72,6 +72,18 @@
       "name": "Intestinal",
       "mechanisms": [
         {
+          "id": "MEC035",
+          "priority": 5,
+          "weight": 100,
+          "evidence": "High"
+        },
+        {
+          "id": "MEC032",
+          "priority": 5,
+          "weight": 95,
+          "evidence": "High"
+        },
+        {
           "id": "MEC030",
           "priority": 4,
           "weight": 90,
@@ -82,36 +94,6 @@
           "priority": 4,
           "weight": 85,
           "evidence": "High"
-        },
-        {
-          "id": "MEC032",
-          "priority": 5,
-          "weight": 95,
-          "evidence": "High"
-        },
-        {
-          "id": "MEC033",
-          "priority": 2,
-          "weight": 55,
-          "evidence": "Moderate"
-        },
-        {
-          "id": "MEC034",
-          "priority": 1,
-          "weight": 40,
-          "evidence": "Emerging"
-        },
-        {
-          "id": "MEC035",
-          "priority": 5,
-          "weight": 100,
-          "evidence": "High"
-        },
-        {
-          "id": "MEC036",
-          "priority": 3,
-          "weight": 65,
-          "evidence": "Moderate"
         },
         {
           "id": "MEC037",
@@ -126,10 +108,28 @@
           "evidence": "Moderate"
         },
         {
+          "id": "MEC036",
+          "priority": 3,
+          "weight": 65,
+          "evidence": "Moderate"
+        },
+        {
+          "id": "MEC033",
+          "priority": 2,
+          "weight": 55,
+          "evidence": "Moderate"
+        },
+        {
           "id": "MEC039",
           "priority": 2,
           "weight": 50,
           "evidence": "Moderate"
+        },
+        {
+          "id": "MEC034",
+          "priority": 1,
+          "weight": 40,
+          "evidence": "Emerging"
         }
       ]
     },
@@ -137,6 +137,18 @@
       "id": "BS003",
       "name": "Circulatory",
       "mechanisms": [
+        {
+          "id": "MEC010",
+          "priority": 5,
+          "weight": 100,
+          "evidence": "High"
+        },
+        {
+          "id": "MEC011",
+          "priority": 5,
+          "weight": 95,
+          "evidence": "High"
+        },
         {
           "id": "MEC001",
           "priority": 5,
@@ -148,6 +160,18 @@
           "priority": 4,
           "weight": 85,
           "evidence": "High"
+        },
+        {
+          "id": "MEC013",
+          "priority": 4,
+          "weight": 80,
+          "evidence": "High"
+        },
+        {
+          "id": "MEC012",
+          "priority": 3,
+          "weight": 70,
+          "evidence": "Moderate"
         },
         {
           "id": "MEC003",
@@ -168,88 +192,10 @@
           "evidence": "Moderate"
         },
         {
-          "id": "MEC006",
-          "priority": 3,
-          "weight": 30,
-          "evidence": "High"
-        },
-        {
-          "id": "MEC007",
-          "priority": 2,
-          "weight": 20,
-          "evidence": "Moderate"
-        },
-        {
-          "id": "MEC008",
-          "priority": 2,
-          "weight": 20,
-          "evidence": "Moderate"
-        },
-        {
           "id": "MEC009",
           "priority": 1,
           "weight": 40,
           "evidence": "Emerging"
-        },
-        {
-          "id": "MEC010",
-          "priority": 5,
-          "weight": 100,
-          "evidence": "High"
-        },
-        {
-          "id": "MEC011",
-          "priority": 5,
-          "weight": 95,
-          "evidence": "High"
-        },
-        {
-          "id": "MEC012",
-          "priority": 3,
-          "weight": 70,
-          "evidence": "Moderate"
-        },
-        {
-          "id": "MEC013",
-          "priority": 4,
-          "weight": 80,
-          "evidence": "High"
-        },
-        {
-          "id": "MEC014",
-          "priority": 2,
-          "weight": 20,
-          "evidence": "Moderate"
-        },
-        {
-          "id": "MEC015",
-          "priority": 3,
-          "weight": 30,
-          "evidence": "High"
-        },
-        {
-          "id": "MEC016",
-          "priority": 2,
-          "weight": 20,
-          "evidence": "Moderate"
-        },
-        {
-          "id": "MEC017",
-          "priority": 2,
-          "weight": 20,
-          "evidence": "Moderate"
-        },
-        {
-          "id": "MEC018",
-          "priority": 3,
-          "weight": 30,
-          "evidence": "High"
-        },
-        {
-          "id": "MEC019",
-          "priority": 2,
-          "weight": 20,
-          "evidence": "Moderate"
         }
       ]
     },
@@ -274,12 +220,6 @@
           "priority": 4,
           "weight": 85,
           "evidence": "High"
-        },
-        {
-          "id": "MEC053",
-          "priority": 2,
-          "weight": 40,
-          "evidence": "Moderate"
         },
         {
           "id": "MEC054",
@@ -316,6 +256,12 @@
           "priority": 2,
           "weight": 45,
           "evidence": "Moderate"
+        },
+        {
+          "id": "MEC053",
+          "priority": 2,
+          "weight": 40,
+          "evidence": "Moderate"
         }
       ]
     },
@@ -324,69 +270,15 @@
       "name": "Immune",
       "mechanisms": [
         {
-          "id": "MEC020",
-          "priority": 2,
-          "weight": 55,
-          "evidence": "Moderate"
-        },
-        {
-          "id": "MEC021",
-          "priority": 2,
-          "weight": 50,
-          "evidence": "Moderate"
-        },
-        {
-          "id": "MEC022",
-          "priority": 2,
-          "weight": 45,
-          "evidence": "Moderate"
-        },
-        {
-          "id": "MEC023",
-          "priority": 2,
-          "weight": 20,
-          "evidence": "Moderate"
-        },
-        {
-          "id": "MEC024",
-          "priority": 3,
-          "weight": 30,
-          "evidence": "High"
-        },
-        {
-          "id": "MEC025",
-          "priority": 2,
-          "weight": 20,
-          "evidence": "Moderate"
-        },
-        {
-          "id": "MEC026",
-          "priority": 2,
-          "weight": 20,
-          "evidence": "Moderate"
-        },
-        {
-          "id": "MEC027",
-          "priority": 3,
-          "weight": 30,
-          "evidence": "High"
-        },
-        {
-          "id": "MEC028",
-          "priority": 2,
-          "weight": 20,
-          "evidence": "Moderate"
-        },
-        {
-          "id": "MEC029",
-          "priority": 2,
-          "weight": 20,
-          "evidence": "Moderate"
-        },
-        {
           "id": "MEC060",
           "priority": 5,
           "weight": 100,
+          "evidence": "High"
+        },
+        {
+          "id": "MEC064",
+          "priority": 5,
+          "weight": 95,
           "evidence": "High"
         },
         {
@@ -408,30 +300,6 @@
           "evidence": "Moderate"
         },
         {
-          "id": "MEC064",
-          "priority": 5,
-          "weight": 95,
-          "evidence": "High"
-        },
-        {
-          "id": "MEC065",
-          "priority": 2,
-          "weight": 20,
-          "evidence": "Moderate"
-        },
-        {
-          "id": "MEC066",
-          "priority": 3,
-          "weight": 30,
-          "evidence": "High"
-        },
-        {
-          "id": "MEC067",
-          "priority": 2,
-          "weight": 20,
-          "evidence": "Moderate"
-        },
-        {
           "id": "MEC068",
           "priority": 3,
           "weight": 65,
@@ -441,6 +309,24 @@
           "id": "MEC069",
           "priority": 3,
           "weight": 60,
+          "evidence": "Moderate"
+        },
+        {
+          "id": "MEC020",
+          "priority": 2,
+          "weight": 55,
+          "evidence": "Moderate"
+        },
+        {
+          "id": "MEC021",
+          "priority": 2,
+          "weight": 50,
+          "evidence": "Moderate"
+        },
+        {
+          "id": "MEC022",
+          "priority": 2,
+          "weight": 45,
           "evidence": "Moderate"
         }
       ]
@@ -468,39 +354,15 @@
           "evidence": "High"
         },
         {
-          "id": "MEC023",
-          "priority": 2,
-          "weight": 20,
-          "evidence": "Moderate"
-        },
-        {
           "id": "MEC024",
           "priority": 3,
           "weight": 70,
           "evidence": "Moderate"
         },
         {
-          "id": "MEC025",
-          "priority": 2,
-          "weight": 20,
-          "evidence": "Moderate"
-        },
-        {
-          "id": "MEC026",
-          "priority": 2,
-          "weight": 20,
-          "evidence": "Moderate"
-        },
-        {
           "id": "MEC027",
           "priority": 3,
           "weight": 65,
-          "evidence": "Moderate"
-        },
-        {
-          "id": "MEC028",
-          "priority": 2,
-          "weight": 20,
           "evidence": "Moderate"
         },
         {
@@ -519,12 +381,6 @@
           "id": "MEC070",
           "priority": 5,
           "weight": 100,
-          "evidence": "High"
-        },
-        {
-          "id": "MEC071",
-          "priority": 4,
-          "weight": 90,
           "evidence": "High"
         },
         {
@@ -574,6 +430,12 @@
           "priority": 2,
           "weight": 45,
           "evidence": "Moderate"
+        },
+        {
+          "id": "MEC071",
+          "priority": 4,
+          "weight": 90,
+          "evidence": "High"
         }
       ]
     },
@@ -581,66 +443,6 @@
       "id": "BS008",
       "name": "Glandular",
       "mechanisms": [
-        {
-          "id": "MEC040",
-          "priority": 2,
-          "weight": 20,
-          "evidence": "Moderate"
-        },
-        {
-          "id": "MEC041",
-          "priority": 2,
-          "weight": 20,
-          "evidence": "Moderate"
-        },
-        {
-          "id": "MEC042",
-          "priority": 3,
-          "weight": 30,
-          "evidence": "High"
-        },
-        {
-          "id": "MEC043",
-          "priority": 2,
-          "weight": 20,
-          "evidence": "Moderate"
-        },
-        {
-          "id": "MEC044",
-          "priority": 2,
-          "weight": 20,
-          "evidence": "Moderate"
-        },
-        {
-          "id": "MEC045",
-          "priority": 3,
-          "weight": 29,
-          "evidence": "High"
-        },
-        {
-          "id": "MEC046",
-          "priority": 2,
-          "weight": 20,
-          "evidence": "Moderate"
-        },
-        {
-          "id": "MEC047",
-          "priority": 2,
-          "weight": 20,
-          "evidence": "Moderate"
-        },
-        {
-          "id": "MEC048",
-          "priority": 3,
-          "weight": 26,
-          "evidence": "High"
-        },
-        {
-          "id": "MEC049",
-          "priority": 2,
-          "weight": 20,
-          "evidence": "Moderate"
-        },
         {
           "id": "MEC080",
           "priority": 5,
@@ -666,6 +468,12 @@
           "evidence": "High"
         },
         {
+          "id": "MEC087",
+          "priority": 3,
+          "weight": 70,
+          "evidence": "Moderate"
+        },
+        {
           "id": "MEC084",
           "priority": 3,
           "weight": 65,
@@ -681,12 +489,6 @@
           "id": "MEC086",
           "priority": 2,
           "weight": 50,
-          "evidence": "Moderate"
-        },
-        {
-          "id": "MEC087",
-          "priority": 3,
-          "weight": 70,
           "evidence": "Moderate"
         },
         {
@@ -708,15 +510,15 @@
       "name": "Structural",
       "mechanisms": [
         {
-          "id": "MEC090",
-          "priority": 5,
-          "weight": 95,
-          "evidence": "High"
-        },
-        {
           "id": "MEC091",
           "priority": 5,
           "weight": 100,
+          "evidence": "High"
+        },
+        {
+          "id": "MEC090",
+          "priority": 5,
+          "weight": 95,
           "evidence": "High"
         },
         {
@@ -726,21 +528,15 @@
           "evidence": "High"
         },
         {
-          "id": "MEC093",
-          "priority": 3,
-          "weight": 70,
-          "evidence": "Moderate"
-        },
-        {
           "id": "MEC094",
           "priority": 4,
           "weight": 80,
           "evidence": "High"
         },
         {
-          "id": "MEC095",
-          "priority": 2,
-          "weight": 50,
+          "id": "MEC093",
+          "priority": 3,
+          "weight": 70,
           "evidence": "Moderate"
         },
         {
@@ -753,6 +549,12 @@
           "id": "MEC097",
           "priority": 2,
           "weight": 55,
+          "evidence": "Moderate"
+        },
+        {
+          "id": "MEC095",
+          "priority": 2,
+          "weight": 50,
           "evidence": "Moderate"
         },
         {
