@@ -1,57 +1,173 @@
 {
+  "id": "FD019",
+  "version": "1.1",
+  "identity": {
     "name": "Almonds",
-    "id": "FD019",
-    "version": "1.1",
-    "identity": {
-        "name": "Almonds",
-        "scientificName": "Prunus dulcis",
-        "slug": "almonds",
-        "commonNames": [
-            "Almonds"
-        ]
-    },
-    "classification": {
-        "foodGroup": "FG005",
-        "category": "Nut or Seed",
-        "plantBased": true,
-        "minimallyProcessed": true
-    },
-    "nutritionHighlights": {
-        "highIn": [
-            "Vitamin E",
-            "Magnesium",
-            "Fibre",
-            "Healthy Fats"
-        ],
-        "contains": [
-            "Polyphenols",
-            "Phytosterols",
-            "Flavonoids"
-        ],
-        "claims": [
-            "Whole Food",
-            "High Fibre",
-            "Vitamin E Source"
-        ]
-    },
-    "knowledge": {
-        "description": "Almonds provide vitamin E, magnesium, fibre and monounsaturated fats, making them one of the most evidence-supported nuts for cardiovascular health."
-    },
-    "metadata": {
-        "schemaVersion": "1.1",
-        "author": "Simon Bradley"
-    },
-    "status": {
-        "draft": false,
-        "approved": true,
-        "published": true
-    },
-    "practical": {
-        "availability": "",
-        "seasonality": "",
-        "typicalCost": "",
-        "storage": "Store in an airtight container in a cool place.",
-        "preparation": "Eat raw, soaked or lightly roasted as appropriate.",
-        "shoppingTips": "Avoid heavily salted or sugar-coated varieties."
+    "scientificName": "Prunus dulcis",
+    "slug": "almonds",
+    "commonNames": [
+      "Almonds"
+    ]
+  },
+  "classification": {
+    "foodGroup": "FG005",
+    "category": "Nut or Seed",
+    "plantBased": true,
+    "minimallyProcessed": true
+  },
+  "images": {
+    "hero": "foods/almonds/hero.jpg",
+    "thumbnail": "foods/almonds/thumb.jpg"
+  },
+  "tags": [
+    "TAG005",
+    "TAG006",
+    "TAG009",
+    "TAG011",
+    "TAG013"
+  ],
+  "nutritionHighlights": {
+    "highIn": [
+      "V012",
+      "M006",
+      "Fibre",
+      "Healthy Fats"
+    ],
+    "contains": [
+      "Polyphenols",
+      "Phytosterols",
+      "Flavonoids"
+    ],
+    "claims": [
+      "Whole Food",
+      "High Fibre",
+      "Vitamin E Source"
+    ]
+  },
+  "knowledge": {
+    "description": "Almonds provide vitamin E, magnesium, fibre and monounsaturated fats, making them one of the most evidence-supported nuts for cardiovascular health.",
+    "activeCompounds": [
+      "Healthy Lipids",
+      "Plant Phytochemicals"
+    ],
+    "mechanisms": [
+      "Support cardiovascular health",
+      "Promote healthy cell membranes",
+      "Support healthy ageing",
+      "Reduce oxidative stress",
+      "Support healthy inflammatory balance",
+      "Promote metabolic health"
+    ]
+  },
+  "suitability": {
+    "vegetarian": true,
+    "vegan": true,
+    "glutenFree": true,
+    "dairyFree": true,
+    "eggFree": true,
+    "nutFree": false,
+    "soyFree": true,
+    "halal": true,
+    "kosher": true,
+    "pregnancySuitable": true,
+    "childFriendly": false
+  },
+  "allergens": {
+    "contains": [],
+    "mayContain": [],
+    "notes": "Naturally gluten free."
+  },
+  "contraindications": {
+    "avoidIf": [
+      "Confirmed allergy to Almonds"
+    ],
+    "useWithCaution": [
+      "Consume appropriate portions due to high energy density."
+    ]
+  },
+  "personalisation": {
+    "recommendedFor": [
+      "Cardiovascular Health",
+      "Brain & Nervous System",
+      "Digestive Health",
+      "Metabolic Health"
+    ],
+    "avoidFor": [
+      "Confirmed allergy to Almonds"
+    ],
+    "goalsSupported": [
+      "Cardiovascular Health",
+      "Brain & Nervous System",
+      "Digestive Health",
+      "Metabolic Health"
+    ]
+  },
+  "supports": {
+    "bodySystems": [
+      "BS001",
+      "BS002",
+      "BS004",
+      "BS006"
+    ],
+    "recommendationStrength": {
+      "BS001": 5,
+      "BS002": 4,
+      "BS004": 4,
+      "BS006": 5
     }
+  },
+  "relationships": {
+    "relatedFoods": [
+      "FD001",
+      "FD002",
+      "FD014"
+    ],
+    "relatedVitamins": [
+      "V002",
+      "V007"
+    ],
+    "relatedMinerals": [
+      "M006",
+      "M010"
+    ],
+    "relatedHabits": [
+      "H001"
+    ],
+    "relatedArticles": [
+      "A005"
+    ]
+  },
+  "practical": {
+    "availability": "",
+    "seasonality": "",
+    "typicalCost": "",
+    "storage": "Store in an airtight container in a cool place.",
+    "preparation": "Eat raw, soaked or lightly roasted as appropriate.",
+    "shoppingTips": "Avoid heavily salted or sugar-coated varieties."
+  },
+  "editorial": {
+    "summary": "Almonds provide nutrient-dense healthy fats, plant protein and bioactive compounds that support cardiovascular, metabolic and brain health as part of a balanced diet.",
+    "didYouKnow": "Healthy Lipids",
+    "myth": "All fats are unhealthy.",
+    "fact": "Unsaturated fats from whole foods are associated with improved health outcomes.",
+    "keyTakeaway": "Almonds are nutrient-dense whole foods that provide healthy fats, fibre and protective phytochemicals."
+  },
+  "evidence": {
+    "level": "High",
+    "references": [
+      "EFSA",
+      "NHS Eatwell Guide",
+      "British Dietetic Association",
+      "Harvard T.H. Chan School of Public Health"
+    ]
+  },
+  "metadata": {
+    "author": "Simon Bradley",
+    "schemaVersion": "1.1"
+  },
+  "status": {
+    "draft": false,
+    "approved": true,
+    "published": true
+  }
 }

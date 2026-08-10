@@ -1,818 +1,780 @@
 {
-    "version": "1.0",
-    "generated": "2026-08-05T16:00:22+00:00",
-    "count": 49,
-    "relationships": [
+  "version": "1.0",
+  "relationships": [
+    {
+      "foodId": "FD001",
+      "bioactives": [
         {
-            "id": "FB000001",
-            "food": "FD001",
-            "bioactive": "OS002",
-            "strength": 5,
-            "confidence": "High",
-            "part": "Florets",
-            "preparation": [
-                "Raw",
-                "Lightly Steamed"
-            ],
-            "bioavailability": "High",
-            "notes": "Lightly chop and allow to stand for approximately 30 to 40 minutes before cooking to maximise sulforaphane formation.",
-            "references": [
-                "USDA FoodData Central",
-                "Phenol-Explorer"
-            ]
+          "id": "PR007",
+          "strength": 5,
+          "confidence": 0.99
         },
         {
-            "id": "FB000002",
-            "food": "FD001",
-            "bioactive": "OS003",
-            "strength": 5,
-            "confidence": "High",
-            "part": "Florets",
-            "preparation": [
-                "Raw",
-                "Lightly Steamed"
-            ],
-            "bioavailability": "Variable",
-            "notes": "Converted into sulforaphane by the enzyme myrosinase after chopping or chewing.",
-            "references": [
-                "USDA FoodData Central",
-                "Phenol-Explorer"
-            ]
+          "id": "OB023",
+          "strength": 4,
+          "confidence": 0.94
         },
         {
-            "id": "FB000003",
-            "food": "FD001",
-            "bioactive": "PP005",
-            "strength": 3,
-            "confidence": "High",
-            "part": "Whole",
-            "preparation": [
-                "Raw",
-                "Lightly Steamed",
-                "Steamed"
-            ],
-            "bioavailability": "Moderate",
-            "notes": null,
-            "references": [
-                "Phenol-Explorer"
-            ]
+          "id": "PR005",
+          "strength": 3,
+          "confidence": 0.87
         },
         {
-            "id": "FB000004",
-            "food": "FD001",
-            "bioactive": "CA002",
-            "strength": 3,
-            "confidence": "High",
-            "part": "Florets",
-            "preparation": [
-                "Raw",
-                "Steamed"
-            ],
-            "bioavailability": "Moderate",
-            "notes": null,
-            "references": [
-                "USDA FoodData Central"
-            ]
-        },
-        {
-            "id": "FB000005",
-            "food": "FD001",
-            "bioactive": "DF004",
-            "strength": 3,
-            "confidence": "High",
-            "part": "Whole",
-            "preparation": [
-                "Any"
-            ],
-            "bioavailability": "High",
-            "notes": null,
-            "references": [
-                "USDA FoodData Central"
-            ]
-        },
-        {
-            "id": "FB000006",
-            "food": "FD002",
-            "bioactive": "OS001",
-            "strength": 5,
-            "confidence": "High",
-            "part": "Clove",
-            "preparation": [
-                "Crushed and Rested",
-                "Raw"
-            ],
-            "bioavailability": "High",
-            "notes": "Crush or chop garlic and leave for around 10 minutes before cooking to maximise allicin formation.",
-            "references": [
-                "USDA FoodData Central",
-                "Phenol-Explorer"
-            ]
-        },
-        {
-            "id": "FB000007",
-            "food": "FD002",
-            "bioactive": "OS004",
-            "strength": 4,
-            "confidence": "High",
-            "part": "Clove",
-            "preparation": [
-                "Raw",
-                "Cooked"
-            ],
-            "bioavailability": "Moderate",
-            "notes": "Oil-soluble sulphur compounds remain after cooking and contribute to garlic's biological activity.",
-            "references": [
-                "Phenol-Explorer"
-            ]
-        },
-        {
-            "id": "FB000008",
-            "food": "FD002",
-            "bioactive": "OS005",
-            "strength": 3,
-            "confidence": "Moderate",
-            "part": "Clove",
-            "preparation": [
-                "Raw",
-                "Cooked"
-            ],
-            "bioavailability": "Moderate",
-            "notes": null,
-            "references": [
-                "Phenol-Explorer"
-            ]
-        },
-        {
-            "id": "FB000009",
-            "food": "FD002",
-            "bioactive": "PP002",
-            "strength": 2,
-            "confidence": "Moderate",
-            "part": "Whole",
-            "preparation": [
-                "Any"
-            ],
-            "bioavailability": "Moderate",
-            "notes": null,
-            "references": [
-                "Phenol-Explorer"
-            ]
-        },
-        {
-            "id": "FB000010",
-            "food": "FD003",
-            "bioactive": "PP001",
-            "strength": 5,
-            "confidence": "High",
-            "part": "Skin",
-            "preparation": [
-                "Raw"
-            ],
-            "bioavailability": "Moderate",
-            "notes": "Anthocyanins are concentrated in the skin and are best preserved when eaten fresh or minimally processed.",
-            "references": [
-                "Phenol-Explorer",
-                "USDA FoodData Central"
-            ]
-        },
-        {
-            "id": "FB000011",
-            "food": "FD003",
-            "bioactive": "PP007",
-            "strength": 3,
-            "confidence": "High",
-            "part": "Whole",
-            "preparation": [
-                "Raw"
-            ],
-            "bioavailability": "Moderate",
-            "notes": null,
-            "references": [
-                "Phenol-Explorer"
-            ]
-        },
-        {
-            "id": "FB000012",
-            "food": "FD003",
-            "bioactive": "PP008",
-            "strength": 2,
-            "confidence": "Moderate",
-            "part": "Whole",
-            "preparation": [
-                "Raw"
-            ],
-            "bioavailability": "Moderate",
-            "notes": null,
-            "references": [
-                "Phenol-Explorer"
-            ]
-        },
-        {
-            "id": "FB000013",
-            "food": "FD003",
-            "bioactive": "PP002",
-            "strength": 2,
-            "confidence": "Moderate",
-            "part": "Skin",
-            "preparation": [
-                "Raw"
-            ],
-            "bioavailability": "Moderate",
-            "notes": null,
-            "references": [
-                "Phenol-Explorer"
-            ]
-        },
-        {
-            "id": "FB000014",
-            "food": "FD003",
-            "bioactive": "DF004",
-            "strength": 2,
-            "confidence": "High",
-            "part": "Whole",
-            "preparation": [
-                "Any"
-            ],
-            "bioavailability": "High",
-            "notes": null,
-            "references": [
-                "USDA FoodData Central"
-            ]
-        },
-        {
-            "id": "FB000015",
-            "food": "FD004",
-            "bioactive": "CA002",
-            "strength": 5,
-            "confidence": "High",
-            "part": "Leaves",
-            "preparation": [
-                "Raw",
-                "Lightly Steamed"
-            ],
-            "bioavailability": "Moderate",
-            "notes": "A small amount of healthy fat improves lutein absorption.",
-            "references": [
-                "USDA FoodData Central",
-                "Phenol-Explorer"
-            ]
-        },
-        {
-            "id": "FB000016",
-            "food": "FD004",
-            "bioactive": "CA003",
-            "strength": 4,
-            "confidence": "High",
-            "part": "Leaves",
-            "preparation": [
-                "Raw",
-                "Lightly Steamed"
-            ],
-            "bioavailability": "Moderate",
-            "notes": null,
-            "references": [
-                "USDA FoodData Central"
-            ]
-        },
-        {
-            "id": "FB000017",
-            "food": "FD004",
-            "bioactive": "CA004",
-            "strength": 4,
-            "confidence": "High",
-            "part": "Leaves",
-            "preparation": [
-                "Raw",
-                "Lightly Steamed"
-            ],
-            "bioavailability": "Moderate",
-            "notes": null,
-            "references": [
-                "USDA FoodData Central"
-            ]
-        },
-        {
-            "id": "FB000018",
-            "food": "FD004",
-            "bioactive": "PP005",
-            "strength": 4,
-            "confidence": "High",
-            "part": "Leaves",
-            "preparation": [
-                "Raw",
-                "Steamed"
-            ],
-            "bioavailability": "Moderate",
-            "notes": null,
-            "references": [
-                "Phenol-Explorer"
-            ]
-        },
-        {
-            "id": "FB000019",
-            "food": "FD004",
-            "bioactive": "PP002",
-            "strength": 3,
-            "confidence": "High",
-            "part": "Leaves",
-            "preparation": [
-                "Raw",
-                "Steamed"
-            ],
-            "bioavailability": "Moderate",
-            "notes": null,
-            "references": [
-                "Phenol-Explorer"
-            ]
-        },
-        {
-            "id": "FB000020",
-            "food": "FD004",
-            "bioactive": "DF004",
-            "strength": 2,
-            "confidence": "High",
-            "part": "Leaves",
-            "preparation": [
-                "Any"
-            ],
-            "bioavailability": "High",
-            "notes": null,
-            "references": [
-                "USDA FoodData Central"
-            ]
-        },
-        {
-            "id": "FB000021",
-            "food": "FD005",
-            "bioactive": "CA002",
-            "strength": 5,
-            "confidence": "High",
-            "part": "Leaves",
-            "preparation": [
-                "Raw",
-                "Lightly Steamed"
-            ],
-            "bioavailability": "Moderate",
-            "notes": "Consuming with olive oil or another healthy fat increases carotenoid absorption.",
-            "references": [
-                "USDA FoodData Central",
-                "Phenol-Explorer"
-            ]
-        },
-        {
-            "id": "FB000022",
-            "food": "FD005",
-            "bioactive": "CA003",
-            "strength": 5,
-            "confidence": "High",
-            "part": "Leaves",
-            "preparation": [
-                "Raw",
-                "Lightly Steamed"
-            ],
-            "bioavailability": "Moderate",
-            "notes": null,
-            "references": [
-                "USDA FoodData Central"
-            ]
-        },
-        {
-            "id": "FB000023",
-            "food": "FD005",
-            "bioactive": "CA004",
-            "strength": 5,
-            "confidence": "High",
-            "part": "Leaves",
-            "preparation": [
-                "Raw",
-                "Lightly Steamed"
-            ],
-            "bioavailability": "Moderate",
-            "notes": null,
-            "references": [
-                "USDA FoodData Central"
-            ]
-        },
-        {
-            "id": "FB000024",
-            "food": "FD005",
-            "bioactive": "PP005",
-            "strength": 5,
-            "confidence": "High",
-            "part": "Leaves",
-            "preparation": [
-                "Raw",
-                "Steamed"
-            ],
-            "bioavailability": "Moderate",
-            "notes": null,
-            "references": [
-                "Phenol-Explorer"
-            ]
-        },
-        {
-            "id": "FB000025",
-            "food": "FD005",
-            "bioactive": "PP002",
-            "strength": 3,
-            "confidence": "High",
-            "part": "Leaves",
-            "preparation": [
-                "Raw",
-                "Steamed"
-            ],
-            "bioavailability": "Moderate",
-            "notes": null,
-            "references": [
-                "Phenol-Explorer"
-            ]
-        },
-        {
-            "id": "FB000026",
-            "food": "FD005",
-            "bioactive": "DF004",
-            "strength": 3,
-            "confidence": "High",
-            "part": "Leaves",
-            "preparation": [
-                "Any"
-            ],
-            "bioavailability": "High",
-            "notes": null,
-            "references": [
-                "USDA FoodData Central"
-            ]
-        },
-        {
-            "id": "FB000027",
-            "food": "FD006",
-            "bioactive": "CA001",
-            "strength": 5,
-            "confidence": "High",
-            "part": "Flesh",
-            "preparation": [
-                "Raw",
-                "Cooked"
-            ],
-            "bioavailability": "Variable",
-            "notes": "Cooking with a small amount of olive oil substantially increases lycopene absorption.",
-            "references": [
-                "USDA FoodData Central",
-                "Phenol-Explorer"
-            ]
-        },
-        {
-            "id": "FB000028",
-            "food": "FD006",
-            "bioactive": "CA004",
-            "strength": 2,
-            "confidence": "High",
-            "part": "Flesh",
-            "preparation": [
-                "Raw",
-                "Cooked"
-            ],
-            "bioavailability": "Moderate",
-            "notes": null,
-            "references": [
-                "USDA FoodData Central"
-            ]
-        },
-        {
-            "id": "FB000029",
-            "food": "FD006",
-            "bioactive": "PP008",
-            "strength": 2,
-            "confidence": "Moderate",
-            "part": "Whole",
-            "preparation": [
-                "Any"
-            ],
-            "bioavailability": "Moderate",
-            "notes": null,
-            "references": [
-                "Phenol-Explorer"
-            ]
-        },
-        {
-            "id": "FB000030",
-            "food": "FD006",
-            "bioactive": "PP002",
-            "strength": 2,
-            "confidence": "Moderate",
-            "part": "Skin",
-            "preparation": [
-                "Raw"
-            ],
-            "bioavailability": "Moderate",
-            "notes": null,
-            "references": [
-                "Phenol-Explorer"
-            ]
-        },
-        {
-            "id": "FB000031",
-            "food": "FD006",
-            "bioactive": "DF004",
-            "strength": 2,
-            "confidence": "High",
-            "part": "Whole",
-            "preparation": [
-                "Any"
-            ],
-            "bioavailability": "High",
-            "notes": null,
-            "references": [
-                "USDA FoodData Central"
-            ]
-        },
-        {
-            "id": "FB000032",
-            "food": "FD007",
-            "bioactive": "DF001",
-            "strength": 5,
-            "confidence": "High",
-            "part": "Whole Grain",
-            "preparation": [
-                "Cooked"
-            ],
-            "bioavailability": "High",
-            "notes": null,
-            "references": [
-                "USDA FoodData Central"
-            ]
-        },
-        {
-            "id": "FB000033",
-            "food": "FD007",
-            "bioactive": "DF005",
-            "strength": 4,
-            "confidence": "High",
-            "part": "Whole Grain",
-            "preparation": [
-                "Cooked"
-            ],
-            "bioavailability": "High",
-            "notes": null,
-            "references": [
-                "USDA FoodData Central"
-            ]
-        },
-        {
-            "id": "FB000034",
-            "food": "FD007",
-            "bioactive": "PP012",
-            "strength": 5,
-            "confidence": "High",
-            "part": "Whole Grain",
-            "preparation": [
-                "Cooked"
-            ],
-            "bioavailability": "Moderate",
-            "notes": null,
-            "references": [
-                "Phenol-Explorer"
-            ]
-        },
-        {
-            "id": "FB000035",
-            "food": "FD008",
-            "bioactive": "FA001",
-            "strength": 5,
-            "confidence": "High",
-            "part": "Seeds",
-            "preparation": [
-                "Raw"
-            ],
-            "bioavailability": "Moderate",
-            "notes": "Grinding flaxseed substantially improves nutrient availability.",
-            "references": [
-                "USDA FoodData Central"
-            ]
-        },
-        {
-            "id": "FB000036",
-            "food": "FD008",
-            "bioactive": "PP011",
-            "strength": 5,
-            "confidence": "High",
-            "part": "Seeds",
-            "preparation": [
-                "Raw"
-            ],
-            "bioavailability": "Moderate",
-            "notes": null,
-            "references": [
-                "Phenol-Explorer"
-            ]
-        },
-        {
-            "id": "FB000037",
-            "food": "FD008",
-            "bioactive": "DF006",
-            "strength": 4,
-            "confidence": "High",
-            "part": "Seeds",
-            "preparation": [
-                "Raw"
-            ],
-            "bioavailability": "High",
-            "notes": null,
-            "references": [
-                "USDA FoodData Central"
-            ]
-        },
-        {
-            "id": "FB000038",
-            "food": "FD008",
-            "bioactive": "DF005",
-            "strength": 3,
-            "confidence": "High",
-            "part": "Seeds",
-            "preparation": [
-                "Raw"
-            ],
-            "bioavailability": "High",
-            "notes": null,
-            "references": [
-                "USDA FoodData Central"
-            ]
-        },
-        {
-            "id": "FB000039",
-            "food": "FD008",
-            "bioactive": "PS001",
-            "strength": 3,
-            "confidence": "High",
-            "part": "Seeds",
-            "preparation": [
-                "Raw"
-            ],
-            "bioavailability": "Moderate",
-            "notes": null,
-            "references": [
-                "USDA FoodData Central"
-            ]
-        },
-        {
-            "id": "FB000040",
-            "food": "FD009",
-            "bioactive": "FA001",
-            "strength": 5,
-            "confidence": "High",
-            "part": "Seeds",
-            "preparation": [
-                "Raw"
-            ],
-            "bioavailability": "Moderate",
-            "notes": null,
-            "references": [
-                "USDA FoodData Central"
-            ]
-        },
-        {
-            "id": "FB000041",
-            "food": "FD009",
-            "bioactive": "DF006",
-            "strength": 4,
-            "confidence": "High",
-            "part": "Seeds",
-            "preparation": [
-                "Raw"
-            ],
-            "bioavailability": "High",
-            "notes": null,
-            "references": [
-                "USDA FoodData Central"
-            ]
-        },
-        {
-            "id": "FB000042",
-            "food": "FD009",
-            "bioactive": "DF005",
-            "strength": 4,
-            "confidence": "High",
-            "part": "Seeds",
-            "preparation": [
-                "Raw"
-            ],
-            "bioavailability": "High",
-            "notes": null,
-            "references": [
-                "USDA FoodData Central"
-            ]
-        },
-        {
-            "id": "FB000043",
-            "food": "FD009",
-            "bioactive": "PP011",
-            "strength": 3,
-            "confidence": "Moderate",
-            "part": "Seeds",
-            "preparation": [
-                "Raw"
-            ],
-            "bioavailability": "Moderate",
-            "notes": null,
-            "references": [
-                "Phenol-Explorer"
-            ]
-        },
-        {
-            "id": "FB000044",
-            "food": "FD010",
-            "bioactive": "FA001",
-            "strength": 5,
-            "confidence": "High",
-            "part": "Kernel",
-            "preparation": [
-                "Raw"
-            ],
-            "bioavailability": "High",
-            "notes": null,
-            "references": [
-                "USDA FoodData Central"
-            ]
-        },
-        {
-            "id": "FB000045",
-            "food": "FD010",
-            "bioactive": "PP007",
-            "strength": 3,
-            "confidence": "High",
-            "part": "Kernel",
-            "preparation": [
-                "Raw"
-            ],
-            "bioavailability": "Moderate",
-            "notes": null,
-            "references": [
-                "Phenol-Explorer"
-            ]
-        },
-        {
-            "id": "FB000046",
-            "food": "FD010",
-            "bioactive": "PP011",
-            "strength": 2,
-            "confidence": "Moderate",
-            "part": "Kernel",
-            "preparation": [
-                "Raw"
-            ],
-            "bioavailability": "Moderate",
-            "notes": null,
-            "references": [
-                "Phenol-Explorer"
-            ]
-        },
-        {
-            "id": "FB000047",
-            "food": "FD010",
-            "bioactive": "PS001",
-            "strength": 3,
-            "confidence": "High",
-            "part": "Kernel",
-            "preparation": [
-                "Raw"
-            ],
-            "bioavailability": "Moderate",
-            "notes": null,
-            "references": [
-                "USDA FoodData Central"
-            ]
-        },
-        {
-            "id": "FB000048",
-            "food": "FD010",
-            "bioactive": "FC007",
-            "strength": 2,
-            "confidence": "Moderate",
-            "part": "Kernel",
-            "preparation": [
-                "Raw"
-            ],
-            "bioavailability": "Moderate",
-            "notes": "Walnuts contain naturally occurring melatonin, although concentrations vary by cultivar.",
-            "references": [
-                "Scientific literature"
-            ]
-        },
-        {
-            "id": "FB000049",
-            "food": "FD010",
-            "bioactive": "DF006",
-            "strength": 3,
-            "confidence": "High",
-            "part": "Kernel",
-            "preparation": [
-                "Raw"
-            ],
-            "bioavailability": "High",
-            "notes": null,
-            "references": [
-                "USDA FoodData Central"
-            ]
+          "id": "DF008",
+          "strength": 3,
+          "confidence": 0.87
         }
-    ]
+      ]
+    },
+    {
+      "foodId": "FD002",
+      "bioactives": [
+        {
+          "id": "PP001",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "PP003",
+          "strength": 4,
+          "confidence": 0.94
+        },
+        {
+          "id": "PP009",
+          "strength": 3,
+          "confidence": 0.87
+        }
+      ]
+    },
+    {
+      "foodId": "FD003",
+      "bioactives": [
+        {
+          "id": "PP001",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "PP002",
+          "strength": 4,
+          "confidence": 0.94
+        },
+        {
+          "id": "PP008",
+          "strength": 3,
+          "confidence": 0.87
+        }
+      ]
+    },
+    {
+      "foodId": "FD004",
+      "bioactives": [
+        {
+          "id": "PP001",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "PP029",
+          "strength": 4,
+          "confidence": 0.94
+        },
+        {
+          "id": "CA002",
+          "strength": 3,
+          "confidence": 0.87
+        }
+      ]
+    },
+    {
+      "foodId": "FD005",
+      "bioactives": [
+        {
+          "id": "PP001",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "PP002",
+          "strength": 4,
+          "confidence": 0.94
+        },
+        {
+          "id": "PR005",
+          "strength": 3,
+          "confidence": 0.87
+        }
+      ]
+    },
+    {
+      "foodId": "FD006",
+      "bioactives": [
+        {
+          "id": "CA004",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "CA005",
+          "strength": 4,
+          "confidence": 0.94
+        },
+        {
+          "id": "PP005",
+          "strength": 3,
+          "confidence": 0.87
+        }
+      ]
+    },
+    {
+      "foodId": "FD007",
+      "bioactives": [
+        {
+          "id": "GI001",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "GI002",
+          "strength": 4,
+          "confidence": 0.94
+        },
+        {
+          "id": "CA001",
+          "strength": 3,
+          "confidence": 0.87
+        }
+      ]
+    },
+    {
+      "foodId": "FD008",
+      "bioactives": [
+        {
+          "id": "GI006",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "GI001",
+          "strength": 4,
+          "confidence": 0.94
+        }
+      ]
+    },
+    {
+      "foodId": "FD009",
+      "bioactives": [
+        {
+          "id": "OB006",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "CA002",
+          "strength": 4,
+          "confidence": 0.94
+        }
+      ]
+    },
+    {
+      "foodId": "FD010",
+      "bioactives": [
+        {
+          "id": "GI001",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "GI002",
+          "strength": 4,
+          "confidence": 0.94
+        },
+        {
+          "id": "GI003",
+          "strength": 3,
+          "confidence": 0.87
+        }
+      ]
+    },
+    {
+      "foodId": "FD011",
+      "bioactives": [
+        {
+          "id": "GI001",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "GI003",
+          "strength": 4,
+          "confidence": 0.94
+        }
+      ]
+    },
+    {
+      "foodId": "FD012",
+      "bioactives": [
+        {
+          "id": "GI001",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "GI002",
+          "strength": 4,
+          "confidence": 0.94
+        }
+      ]
+    },
+    {
+      "foodId": "FD013",
+      "bioactives": [
+        {
+          "id": "GI001",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "GI018",
+          "strength": 4,
+          "confidence": 0.94
+        }
+      ]
+    },
+    {
+      "foodId": "FD014",
+      "bioactives": [
+        {
+          "id": "PR005",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "OB015",
+          "strength": 4,
+          "confidence": 0.94
+        },
+        {
+          "id": "PR001",
+          "strength": 3,
+          "confidence": 0.87
+        }
+      ]
+    },
+    {
+      "foodId": "FD015",
+      "bioactives": [
+        {
+          "id": "PR005",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "OB016",
+          "strength": 4,
+          "confidence": 0.94
+        },
+        {
+          "id": "PR001",
+          "strength": 3,
+          "confidence": 0.87
+        }
+      ]
+    },
+    {
+      "foodId": "FD016",
+      "bioactives": [
+        {
+          "id": "PP001",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "OB015",
+          "strength": 4,
+          "confidence": 0.94
+        }
+      ]
+    },
+    {
+      "foodId": "FD017",
+      "bioactives": [
+        {
+          "id": "PR005",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "OB015",
+          "strength": 4,
+          "confidence": 0.94
+        }
+      ]
+    },
+    {
+      "foodId": "FD018",
+      "bioactives": [
+        {
+          "id": "FA001",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "PS001",
+          "strength": 4,
+          "confidence": 0.94
+        },
+        {
+          "id": "PP003",
+          "strength": 3,
+          "confidence": 0.87
+        }
+      ]
+    },
+    {
+      "foodId": "FD019",
+      "bioactives": [
+        {
+          "id": "FA004",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "PS001",
+          "strength": 4,
+          "confidence": 0.94
+        }
+      ]
+    },
+    {
+      "foodId": "FD020",
+      "bioactives": [
+        {
+          "id": "PS001",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "FA017",
+          "strength": 4,
+          "confidence": 0.94
+        }
+      ]
+    },
+    {
+      "foodId": "FD021",
+      "bioactives": [
+        {
+          "id": "FA001",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "PR005",
+          "strength": 4,
+          "confidence": 0.94
+        },
+        {
+          "id": "OB016",
+          "strength": 3,
+          "confidence": 0.87
+        }
+      ]
+    },
+    {
+      "foodId": "FD022",
+      "bioactives": [
+        {
+          "id": "FA001",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "OB016",
+          "strength": 4,
+          "confidence": 0.94
+        },
+        {
+          "id": "PR005",
+          "strength": 3,
+          "confidence": 0.87
+        }
+      ]
+    },
+    {
+      "foodId": "FD023",
+      "bioactives": [
+        {
+          "id": "OB027",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "FA014",
+          "strength": 4,
+          "confidence": 0.94
+        }
+      ]
+    },
+    {
+      "foodId": "FD024",
+      "bioactives": [
+        {
+          "id": "PP017",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "PP018",
+          "strength": 4,
+          "confidence": 0.94
+        },
+        {
+          "id": "FA004",
+          "strength": 3,
+          "confidence": 0.87
+        }
+      ]
+    },
+    {
+      "foodId": "FD025",
+      "bioactives": [
+        {
+          "id": "OS001",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "OS017",
+          "strength": 3,
+          "confidence": 0.87
+        }
+      ]
+    },
+    {
+      "foodId": "FD026",
+      "bioactives": [
+        {
+          "id": "FL001",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "OS009",
+          "strength": 4,
+          "confidence": 0.94
+        },
+        {
+          "id": "PR001",
+          "strength": 3,
+          "confidence": 0.87
+        }
+      ]
+    },
+    {
+      "foodId": "FD027",
+      "bioactives": [
+        {
+          "id": "CA001",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "CA002",
+          "strength": 4,
+          "confidence": 0.94
+        }
+      ]
+    },
+    {
+      "foodId": "FD028",
+      "bioactives": [
+        {
+          "id": "FA004",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "PS001",
+          "strength": 4,
+          "confidence": 0.94
+        }
+      ]
+    },
+    {
+      "foodId": "FD029",
+      "bioactives": [
+        {
+          "id": "OB001",
+          "strength": 5,
+          "confidence": 0.99
+        }
+      ]
+    },
+    {
+      "foodId": "FD030",
+      "bioactives": [
+        {
+          "id": "FA002",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "FA003",
+          "strength": 4,
+          "confidence": 0.94
+        },
+        {
+          "id": "FA015",
+          "strength": 3,
+          "confidence": 0.87
+        }
+      ]
+    },
+    {
+      "foodId": "FD031",
+      "bioactives": [
+        {
+          "id": "FA002",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "FA003",
+          "strength": 4,
+          "confidence": 0.94
+        }
+      ]
+    },
+    {
+      "foodId": "FD032",
+      "bioactives": [
+        {
+          "id": "FA002",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "FA003",
+          "strength": 4,
+          "confidence": 0.94
+        }
+      ]
+    },
+    {
+      "foodId": "FD033",
+      "bioactives": [
+        {
+          "id": "FA002",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "FA003",
+          "strength": 4,
+          "confidence": 0.94
+        }
+      ]
+    },
+    {
+      "foodId": "FD034",
+      "bioactives": [
+        {
+          "id": "PF001",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "PF006",
+          "strength": 4,
+          "confidence": 0.94
+        }
+      ]
+    },
+    {
+      "foodId": "FD035",
+      "bioactives": [
+        {
+          "id": "PF001",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "PF002",
+          "strength": 4,
+          "confidence": 0.94
+        }
+      ]
+    },
+    {
+      "foodId": "FD036",
+      "bioactives": [
+        {
+          "id": "PF003",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "PR009",
+          "strength": 4,
+          "confidence": 0.94
+        }
+      ]
+    },
+    {
+      "foodId": "FD037",
+      "bioactives": [
+        {
+          "id": "PF001",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "PF008",
+          "strength": 4,
+          "confidence": 0.94
+        },
+        {
+          "id": "GI001",
+          "strength": 3,
+          "confidence": 0.87
+        }
+      ]
+    },
+    {
+      "foodId": "FD038",
+      "bioactives": [
+        {
+          "id": "PP016",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "OB022",
+          "strength": 4,
+          "confidence": 0.94
+        }
+      ]
+    },
+    {
+      "foodId": "FD039",
+      "bioactives": [
+        {
+          "id": "OB003",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "OB004",
+          "strength": 4,
+          "confidence": 0.94
+        }
+      ]
+    },
+    {
+      "foodId": "FD040",
+      "bioactives": [
+        {
+          "id": "PP015",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "PP005",
+          "strength": 4,
+          "confidence": 0.94
+        }
+      ]
+    },
+    {
+      "foodId": "FD041",
+      "bioactives": [
+        {
+          "id": "PP020",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "PP021",
+          "strength": 4,
+          "confidence": 0.94
+        }
+      ]
+    },
+    {
+      "foodId": "FD042",
+      "bioactives": [
+        {
+          "id": "PP027",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "PP028",
+          "strength": 4,
+          "confidence": 0.94
+        }
+      ]
+    },
+    {
+      "foodId": "FD043",
+      "bioactives": [
+        {
+          "id": "PP001",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "PP011",
+          "strength": 4,
+          "confidence": 0.94
+        }
+      ]
+    },
+    {
+      "foodId": "FD044",
+      "bioactives": [
+        {
+          "id": "PP002",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "PP012",
+          "strength": 4,
+          "confidence": 0.94
+        }
+      ]
+    },
+    {
+      "foodId": "FD045",
+      "bioactives": [
+        {
+          "id": "PP025",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "PP003",
+          "strength": 4,
+          "confidence": 0.94
+        }
+      ]
+    },
+    {
+      "foodId": "FD046",
+      "bioactives": [
+        {
+          "id": "OB034",
+          "strength": 5,
+          "confidence": 0.99
+        },
+        {
+          "id": "PP016",
+          "strength": 4,
+          "confidence": 0.94
+        }
+      ]
+    }
+  ]
 }

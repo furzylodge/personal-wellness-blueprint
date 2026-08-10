@@ -1,51 +1,125 @@
 {
+  "id": "FD039",
+  "version": "1.1",
+  "identity": {
     "name": "Ginger",
-    "id": "FD039",
-    "version": "1.1",
-    "identity": {
-        "name": "Ginger",
-        "scientificName": "Zingiber officinale",
-        "slug": "ginger",
-        "commonNames": [
-            "Ginger"
-        ]
-    },
-    "classification": {
-        "foodGroup": "FG006",
-        "category": "Herbs & Spices",
-        "plantBased": true,
-        "minimallyProcessed": true
-    },
-    "nutritionHighlights": {
-        "highIn": [
-            "Key nutrients appropriate to this food"
-        ],
-        "contains": [
-            "Characteristic bioactive compounds"
-        ],
-        "claims": [
-            "Whole Food",
-            "Evidence Supported"
-        ]
-    },
-    "knowledge": {
-        "description": "Ginger is recognised as an evidence-supported whole food that contributes beneficial nutrients and bioactive compounds within a balanced dietary pattern."
-    },
-    "metadata": {
-        "schemaVersion": "1.1",
-        "author": "Simon Bradley"
-    },
-    "status": {
-        "draft": false,
-        "approved": true,
-        "published": true
-    },
-    "practical": {
-        "availability": "",
-        "seasonality": "",
-        "typicalCost": "",
-        "storage": "Follow manufacturer guidance.",
-        "preparation": "Prepare appropriately for the food.",
-        "shoppingTips": "Prioritise quality ingredients."
-    }
+    "scientificName": "Zingiber officinale",
+    "slug": "ginger",
+    "commonNames": [
+      "Ginger"
+    ]
+  },
+  "classification": {
+    "foodGroup": "",
+    "category": "Herbs & Spices",
+    "plantBased": true,
+    "minimallyProcessed": true
+  },
+  "images": {
+    "hero": "foods/ginger/hero.jpg",
+    "thumbnail": "foods/ginger/thumb.jpg"
+  },
+  "tags": [],
+  "nutritionHighlights": {
+    "highIn": [
+      "Key nutrients appropriate to this food"
+    ],
+    "contains": [
+      "Characteristic bioactive compounds"
+    ],
+    "claims": [
+      "Whole Food",
+      "Evidence Supported"
+    ]
+  },
+  "knowledge": {
+    "description": "Ginger is recognised as an evidence-supported whole food that contributes beneficial nutrients and bioactive compounds within a balanced dietary pattern.",
+    "activeCompounds": [],
+    "mechanisms": []
+  },
+  "suitability": {
+    "vegetarian": true,
+    "vegan": false,
+    "glutenFree": true,
+    "dairyFree": false,
+    "eggFree": false,
+    "nutFree": false,
+    "soyFree": false,
+    "halal": false,
+    "kosher": false,
+    "pregnancySuitable": false,
+    "childFriendly": false
+  },
+  "allergens": {
+    "contains": [],
+    "mayContain": [],
+    "notes": "Naturally gluten free where applicable."
+  },
+  "contraindications": {
+    "avoidIf": [
+      "Confirmed allergy or intolerance."
+    ],
+    "useWithCaution": [
+      "Follow individual medical advice where appropriate."
+    ]
+  },
+  "personalisation": {
+    "recommendedFor": [
+      "Cardiovascular Health",
+      "Brain & Nervous System",
+      "Digestive Health",
+      "Metabolic Health"
+    ],
+    "avoidFor": [
+      "Confirmed allergy or intolerance."
+    ],
+    "goalsSupported": [
+      "Cardiovascular Health",
+      "Brain & Nervous System",
+      "Digestive Health",
+      "Metabolic Health"
+    ]
+  },
+  "supports": {
+    "bodySystems": [],
+    "recommendationStrength": {}
+  },
+  "relationships": {
+    "relatedFoods": [],
+    "relatedVitamins": [],
+    "relatedMinerals": [],
+    "relatedHabits": [],
+    "relatedArticles": []
+  },
+  "practical": {
+    "availability": "",
+    "seasonality": "",
+    "typicalCost": "",
+    "storage": "Follow manufacturer guidance.",
+    "preparation": "Prepare appropriately for the food.",
+    "shoppingTips": "Prioritise quality ingredients."
+  },
+  "editorial": {
+    "summary": "Ginger contributes distinctive bioactive compounds that complement the existing food knowledge base and support personalised nutrition recommendations.",
+    "didYouKnow": "",
+    "myth": "One food alone determines health.",
+    "fact": "Health outcomes depend on the overall dietary pattern.",
+    "keyTakeaway": "Ginger is a valuable addition to an evidence-based whole-food dietary pattern."
+  },
+  "evidence": {
+    "level": "High",
+    "references": [
+      "NHS Eatwell Guide",
+      "British Dietetic Association"
+    ]
+  },
+  "metadata": {
+    "author": "Simon Bradley",
+    "schemaVersion": "1.1"
+  },
+  "status": {
+    "draft": false,
+    "approved": true,
+    "published": true
+  }
 }

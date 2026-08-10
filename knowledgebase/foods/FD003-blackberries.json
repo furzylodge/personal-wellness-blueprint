@@ -1,57 +1,169 @@
 {
+  "id": "FD003",
+  "version": "1.1",
+  "identity": {
     "name": "Blackberries",
-    "id": "FD003",
-    "version": "1.1",
-    "identity": {
-        "name": "Blackberries",
-        "scientificName": "Rubus fruticosus",
-        "slug": "blackberries",
-        "commonNames": [
-            "Blackberries"
-        ]
-    },
-    "classification": {
-        "foodGroup": "FG002",
-        "category": "Berry",
-        "plantBased": true,
-        "minimallyProcessed": true
-    },
-    "nutritionHighlights": {
-        "highIn": [
-            "Vitamin C",
-            "Vitamin K",
-            "Manganese",
-            "Fibre"
-        ],
-        "contains": [
-            "Anthocyanins",
-            "Ellagic acid",
-            "Flavonoids"
-        ],
-        "claims": [
-            "Whole Food",
-            "High Fibre",
-            "Antioxidant Rich"
-        ]
-    },
-    "knowledge": {
-        "description": "Blackberries are richly pigmented berries providing fibre, vitamin C, vitamin K and manganese. They are among the highest-fibre commonly consumed fruits and are an excellent source of polyphenols.\n\nThey are particularly valuable for digestive health, cardiovascular wellbeing and healthy ageing."
-    },
-    "metadata": {
-        "schemaVersion": "1.1",
-        "author": "Simon Bradley"
-    },
-    "status": {
-        "draft": false,
-        "approved": true,
-        "published": true
-    },
-    "practical": {
-        "availability": "",
-        "seasonality": "",
-        "typicalCost": "",
-        "storage": "Refrigerate and consume within a few days.",
-        "preparation": "Rinse immediately before eating.",
-        "shoppingTips": "Frozen fruit retains most nutritional value."
+    "scientificName": "Rubus fruticosus",
+    "slug": "blackberries",
+    "commonNames": [
+      "Blackberries"
+    ]
+  },
+  "classification": {
+    "foodGroup": "FG002",
+    "category": "Berry",
+    "plantBased": true,
+    "minimallyProcessed": true
+  },
+  "images": {
+    "hero": "foods/blackberries/hero.jpg",
+    "thumbnail": "foods/blackberries/thumb.jpg"
+  },
+  "tags": [
+    "TAG003",
+    "TAG009",
+    "TAG012",
+    "TAG013"
+  ],
+  "nutritionHighlights": {
+    "highIn": [
+      "V010",
+      "V013",
+      "M007",
+      "Fibre"
+    ],
+    "contains": [
+      "Anthocyanins",
+      "Ellagic acid",
+      "Flavonoids"
+    ],
+    "claims": [
+      "Whole Food",
+      "High Fibre",
+      "Antioxidant Rich"
+    ]
+  },
+  "knowledge": {
+    "description": "Blackberries are richly pigmented berries providing fibre, vitamin C, vitamin K and manganese. They are among the highest-fibre commonly consumed fruits and are an excellent source of polyphenols.\n\nThey are particularly valuable for digestive health, cardiovascular wellbeing and healthy ageing.",
+    "activeCompounds": [
+      "Anthocyanins",
+      "Flavonoids"
+    ],
+    "mechanisms": [
+      "Support endothelial function",
+      "Reduce oxidative stress",
+      "Support healthy cognitive ageing",
+      "Support healthy inflammatory balance",
+      "Promote healthy blood vessels"
+    ]
+  },
+  "suitability": {
+    "vegetarian": true,
+    "vegan": true,
+    "glutenFree": true,
+    "dairyFree": true,
+    "eggFree": true,
+    "nutFree": true,
+    "soyFree": true,
+    "halal": true,
+    "kosher": true,
+    "pregnancySuitable": true,
+    "childFriendly": true
+  },
+  "allergens": {
+    "contains": [],
+    "mayContain": [],
+    "notes": "Naturally gluten free."
+  },
+  "contraindications": {
+    "avoidIf": [
+      "Confirmed allergy to Blackberries"
+    ],
+    "useWithCaution": [
+      "None generally recognised."
+    ]
+  },
+  "personalisation": {
+    "recommendedFor": [
+      "Cardiovascular Health",
+      "Brain & Nervous System",
+      "Digestive Health",
+      "Metabolic Health"
+    ],
+    "avoidFor": [
+      "Confirmed allergy to Blackberries"
+    ],
+    "goalsSupported": [
+      "Cardiovascular Health",
+      "Brain & Nervous System",
+      "Digestive Health",
+      "Metabolic Health"
+    ]
+  },
+  "supports": {
+    "bodySystems": [
+      "BS001",
+      "BS002",
+      "BS004",
+      "BS006"
+    ],
+    "recommendationStrength": {
+      "BS001": 5,
+      "BS002": 4,
+      "BS004": 5,
+      "BS006": 4
     }
+  },
+  "relationships": {
+    "relatedFoods": [
+      "FD001",
+      "FD002"
+    ],
+    "relatedVitamins": [
+      "V003",
+      "V007"
+    ],
+    "relatedMinerals": [
+      "M006"
+    ],
+    "relatedHabits": [
+      "H001"
+    ],
+    "relatedArticles": [
+      "A002"
+    ]
+  },
+  "practical": {
+    "availability": "",
+    "seasonality": "",
+    "typicalCost": "",
+    "storage": "Refrigerate and consume within a few days.",
+    "preparation": "Rinse immediately before eating.",
+    "shoppingTips": "Frozen fruit retains most nutritional value."
+  },
+  "editorial": {
+    "summary": "Blackberries are an excellent whole-food choice for supporting cardiovascular health, healthy ageing, gut health and reducing dietary reliance on ultra-processed snacks.",
+    "didYouKnow": "Anthocyanins",
+    "myth": "Fresh berries are always healthier than frozen.",
+    "fact": "Frozen berries retain most vitamins and polyphenols.",
+    "keyTakeaway": "Blackberries are an excellent everyday fruit providing fibre together with a broad spectrum of protective phytochemicals."
+  },
+  "evidence": {
+    "level": "High",
+    "references": [
+      "European Food Safety Authority (EFSA)",
+      "British Dietetic Association",
+      "NHS Eatwell Guide",
+      "Harvard T.H. Chan School of Public Health"
+    ]
+  },
+  "metadata": {
+    "author": "Simon Bradley",
+    "schemaVersion": "1.1"
+  },
+  "status": {
+    "draft": false,
+    "approved": true,
+    "published": true
+  }
 }

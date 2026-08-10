@@ -1,57 +1,173 @@
 {
+  "id": "FD013",
+  "version": "1.1",
+  "identity": {
     "name": "Cabbage",
-    "id": "FD013",
-    "version": "1.1",
-    "identity": {
-        "name": "Cabbage",
-        "scientificName": "Brassica oleracea var. capitata",
-        "slug": "cabbage",
-        "commonNames": [
-            "Cabbage"
-        ]
-    },
-    "classification": {
-        "foodGroup": "FG003",
-        "category": "Cruciferous Vegetable",
-        "plantBased": true,
-        "minimallyProcessed": true
-    },
-    "nutritionHighlights": {
-        "highIn": [
-            "Vitamin C",
-            "Vitamin K",
-            "Fibre",
-            "Folate"
-        ],
-        "contains": [
-            "Glucosinolates",
-            "Sulforaphane (or precursor compounds)",
-            "Isothiocyanates"
-        ],
-        "claims": [
-            "Whole Food",
-            "High Fibre",
-            "Cruciferous Vegetable"
-        ]
-    },
-    "knowledge": {
-        "description": "Cabbage is an economical, nutrient-rich cruciferous vegetable providing vitamin C, vitamin K, fibre and glucosinolates that support overall health."
-    },
-    "metadata": {
-        "schemaVersion": "1.1",
-        "author": "Simon Bradley"
-    },
-    "status": {
-        "draft": false,
-        "approved": true,
-        "published": true
-    },
-    "practical": {
-        "availability": "",
-        "seasonality": "",
-        "typicalCost": "",
-        "storage": "Refrigerate and use within several days.",
-        "preparation": "Light steaming helps preserve texture and nutritional quality.",
-        "shoppingTips": "Frozen varieties remain nutritionally valuable and are convenient."
+    "scientificName": "Brassica oleracea var. capitata",
+    "slug": "cabbage",
+    "commonNames": [
+      "Cabbage"
+    ]
+  },
+  "classification": {
+    "foodGroup": "FG003",
+    "category": "Cruciferous Vegetable",
+    "plantBased": true,
+    "minimallyProcessed": true
+  },
+  "images": {
+    "hero": "foods/cabbage/hero.jpg",
+    "thumbnail": "foods/cabbage/thumb.jpg"
+  },
+  "tags": [
+    "TAG004",
+    "TAG005",
+    "TAG009",
+    "TAG012",
+    "TAG014"
+  ],
+  "nutritionHighlights": {
+    "highIn": [
+      "V010",
+      "V013",
+      "Fibre",
+      "Folate"
+    ],
+    "contains": [
+      "Glucosinolates",
+      "Sulforaphane (or precursor compounds)",
+      "Isothiocyanates"
+    ],
+    "claims": [
+      "Whole Food",
+      "High Fibre",
+      "Cruciferous Vegetable"
+    ]
+  },
+  "knowledge": {
+    "description": "Cabbage is an economical, nutrient-rich cruciferous vegetable providing vitamin C, vitamin K, fibre and glucosinolates that support overall health.",
+    "activeCompounds": [
+      "Glucosinolates",
+      "Sulforaphane"
+    ],
+    "mechanisms": [
+      "Support normal cellular defence mechanisms",
+      "Promote healthy detoxification pathways",
+      "Support healthy inflammatory balance",
+      "Activate antioxidant defence pathways",
+      "Support cellular resilience",
+      "Promote healthy ageing"
+    ]
+  },
+  "suitability": {
+    "vegetarian": true,
+    "vegan": true,
+    "glutenFree": true,
+    "dairyFree": true,
+    "eggFree": true,
+    "nutFree": true,
+    "soyFree": true,
+    "halal": true,
+    "kosher": true,
+    "pregnancySuitable": true,
+    "childFriendly": true
+  },
+  "allergens": {
+    "contains": [],
+    "mayContain": [],
+    "notes": "Naturally gluten free."
+  },
+  "contraindications": {
+    "avoidIf": [
+      "Confirmed allergy."
+    ],
+    "useWithCaution": [
+      "Maintain consistent vitamin K intake if prescribed warfarin."
+    ]
+  },
+  "personalisation": {
+    "recommendedFor": [
+      "Cardiovascular Health",
+      "Digestive Health",
+      "Cellular Health",
+      "Metabolic Health"
+    ],
+    "avoidFor": [
+      "Confirmed allergy."
+    ],
+    "goalsSupported": [
+      "Cardiovascular Health",
+      "Digestive Health",
+      "Cellular Health",
+      "Metabolic Health"
+    ]
+  },
+  "supports": {
+    "bodySystems": [
+      "BS001",
+      "BS003",
+      "BS004",
+      "BS006"
+    ],
+    "recommendationStrength": {
+      "BS001": 4,
+      "BS003": 5,
+      "BS004": 5,
+      "BS006": 4
     }
+  },
+  "relationships": {
+    "relatedFoods": [
+      "FD006",
+      "FD007"
+    ],
+    "relatedVitamins": [
+      "V001",
+      "V003",
+      "V007"
+    ],
+    "relatedMinerals": [
+      "M006",
+      "M010"
+    ],
+    "relatedHabits": [
+      "H001"
+    ],
+    "relatedArticles": [
+      "A003"
+    ]
+  },
+  "practical": {
+    "availability": "",
+    "seasonality": "",
+    "typicalCost": "",
+    "storage": "Refrigerate and use within several days.",
+    "preparation": "Light steaming helps preserve texture and nutritional quality.",
+    "shoppingTips": "Frozen varieties remain nutritionally valuable and are convenient."
+  },
+  "editorial": {
+    "summary": "Cabbage provides an excellent combination of vitamins, fibre and glucosinolate compounds. Regular consumption of cruciferous vegetables is consistently associated with improved long-term health outcomes and forms an important part of evidence-based dietary patterns.",
+    "didYouKnow": "Glucosinolates",
+    "myth": "Raw cruciferous vegetables are always healthier.",
+    "fact": "Light cooking can improve digestibility while retaining most nutritional value.",
+    "keyTakeaway": "Cabbage is an excellent everyday vegetable delivering fibre, vitamins and protective phytochemicals with one of the strongest evidence bases among vegetables."
+  },
+  "evidence": {
+    "level": "High",
+    "references": [
+      "European Food Safety Authority (EFSA)",
+      "British Dietetic Association",
+      "NHS Eatwell Guide",
+      "World Cancer Research Fund"
+    ]
+  },
+  "metadata": {
+    "author": "Simon Bradley",
+    "schemaVersion": "1.1"
+  },
+  "status": {
+    "draft": false,
+    "approved": true,
+    "published": true
+  }
 }

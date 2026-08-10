@@ -1,57 +1,175 @@
 {
+  "id": "FD001",
+  "version": "1.1",
+  "identity": {
     "name": "Oats",
-    "id": "FD001",
-    "version": "1.1",
-    "identity": {
-        "name": "Oats",
-        "scientificName": "Avena sativa",
-        "slug": "oats",
-        "commonNames": [
-            "Rolled Oats",
-            "Porridge Oats",
-            "Steel-cut Oats",
-            "Jumbo"
-        ]
-    },
-    "classification": {
-        "foodGroup": "FG001",
-        "category": "Wholegrain",
-        "plantBased": true,
-        "minimallyProcessed": true
-    },
-    "nutritionHighlights": {
-        "highIn": [
-            "Fibre",
-            "Magnesium",
-            "Vitamin B1"
-        ],
-        "contains": [
-            "Beta-glucan",
-            "Avenanthramides"
-        ],
-        "claims": [
-            "Wholegrain",
-            "High Fibre"
-        ]
-    },
-    "knowledge": {
-        "description": "Oats (*Avena sativa*) are one of the world's most extensively researched\nwholegrains and are recognised as one of the healthiest staple foods\navailable. They are naturally rich in complex carbohydrates, soluble\nfibre, plant protein, vitamins, minerals and unique antioxidant\ncompounds.\n\nUnlike many refined breakfast cereals, whole oats retain their bran and\ngerm, preserving nutrients and bioactive compounds that contribute to\ncardiovascular, digestive and metabolic health.\n\nOats are particularly valued for their high concentration of\n**beta-glucan**, a soluble fibre that has been shown to reduce LDL\n(\"bad\") cholesterol, improve satiety and support healthy blood glucose\nregulation."
-    },
-    "metadata": {
-        "schemaVersion": "1.1",
-        "author": "Simon Bradley"
-    },
-    "status": {
-        "draft": false,
-        "approved": true,
-        "published": true
-    },
-    "practical": {
-        "availability": "",
-        "seasonality": "",
-        "typicalCost": "",
-        "storage": "Store in an airtight container in a cool, dry place.",
-        "preparation": "Suitable for porridge, overnight oats, baking, smoothies, granola and\nenergy balls.",
-        "shoppingTips": ""
+    "scientificName": "Avena sativa",
+    "slug": "oats",
+    "commonNames": [
+      "Rolled Oats",
+      "Porridge Oats",
+      "Steel-cut Oats",
+      "Jumbo"
+    ]
+  },
+  "classification": {
+    "foodGroup": "FG001",
+    "category": "Wholegrain",
+    "plantBased": true,
+    "minimallyProcessed": true
+  },
+  "images": {
+    "hero": "foods/oats/hero.jpg",
+    "thumbnail": "foods/oats/thumb.jpg"
+  },
+  "tags": [
+    "TAG001",
+    "TAG003",
+    "TAG005",
+    "TAG007",
+    "TAG009"
+  ],
+  "nutritionHighlights": {
+    "highIn": [
+      "Fibre",
+      "M006",
+      "Vitamin B1"
+    ],
+    "contains": [
+      "Beta-glucan",
+      "Avenanthramides"
+    ],
+    "claims": [
+      "Wholegrain",
+      "High Fibre"
+    ]
+  },
+  "knowledge": {
+    "description": "Oats (*Avena sativa*) are one of the world's most extensively researched\nwholegrains and are recognised as one of the healthiest staple foods\navailable. They are naturally rich in complex carbohydrates, soluble\nfibre, plant protein, vitamins, minerals and unique antioxidant\ncompounds.\n\nUnlike many refined breakfast cereals, whole oats retain their bran and\ngerm, preserving nutrients and bioactive compounds that contribute to\ncardiovascular, digestive and metabolic health.\n\nOats are particularly valued for their high concentration of\n**beta-glucan**, a soluble fibre that has been shown to reduce LDL\n(\"bad\") cholesterol, improve satiety and support healthy blood glucose\nregulation.",
+    "activeCompounds": [
+      "Beta-glucan",
+      "Avenanthramides"
+    ],
+    "mechanisms": [
+      "Lower LDL cholesterol",
+      "Slow digestion",
+      "Improve satiety",
+      "Reduce post-meal blood glucose spikes",
+      "Feed beneficial gut bacteria",
+      "Reduce inflammation",
+      "Improve blood vessel function",
+      "Help protect against oxidative stress"
+    ]
+  },
+  "suitability": {
+    "vegetarian": true,
+    "vegan": true,
+    "glutenFree": true,
+    "dairyFree": true,
+    "eggFree": true,
+    "nutFree": true,
+    "soyFree": true,
+    "halal": true,
+    "kosher": true,
+    "pregnancySuitable": true,
+    "childFriendly": true
+  },
+  "allergens": {
+    "contains": [],
+    "mayContain": [],
+    "notes": "Oats are naturally gluten-free but are frequently contaminated with wheat, barley or rye during harvesting and processing. Individuals with coeliac disease should choose **certified gluten-free oats**."
+  },
+  "contraindications": {
+    "avoidIf": [],
+    "useWithCaution": []
+  },
+  "personalisation": {
+    "recommendedFor": [
+      "Cardiovascular Health",
+      "Digestive Health",
+      "Blood Sugar Management",
+      "Weight Management"
+    ],
+    "avoidFor": [],
+    "goalsSupported": [
+      "Cardiovascular Health",
+      "Digestive Health",
+      "Blood Sugar Management",
+      "Weight Management"
+    ]
+  },
+  "supports": {
+    "bodySystems": [
+      "BS001",
+      "BS002",
+      "BS004",
+      "BS006"
+    ],
+    "recommendationStrength": {
+      "BS001": 5,
+      "BS002": 5,
+      "BS004": 3,
+      "BS006": 5
     }
+  },
+  "relationships": {
+    "relatedFoods": [
+      "FD005",
+      "FD007",
+      "FD010"
+    ],
+    "relatedVitamins": [
+      "V002",
+      "V004",
+      "V008"
+    ],
+    "relatedMinerals": [
+      "M005",
+      "M006",
+      "M010",
+      "M013"
+    ],
+    "relatedHabits": [
+      "H003",
+      "H008"
+    ],
+    "relatedArticles": [
+      "A001",
+      "A004"
+    ]
+  },
+  "practical": {
+    "availability": "",
+    "seasonality": "",
+    "typicalCost": "",
+    "storage": "Store in an airtight container in a cool, dry place.",
+    "preparation": "Suitable for porridge, overnight oats, baking, smoothies, granola and\nenergy balls.",
+    "shoppingTips": ""
+  },
+  "editorial": {
+    "summary": "Oats provide an exceptional combination of nutrition, affordability and\nscientific evidence.\n\nRegular consumption has been associated with:\n\n-   Improved heart health\n-   Reduced LDL cholesterol\n-   Better digestive health\n-   Increased dietary fibre intake\n-   Improved blood sugar control\n-   Greater feelings of fullness after eating\n-   Support for a healthy gut microbiome\n\nBecause they are inexpensive, versatile and widely available, oats are\none of the easiest foods to incorporate into almost any healthy eating\npattern.",
+    "didYouKnow": "Beta-glucan",
+    "myth": "",
+    "fact": "",
+    "keyTakeaway": "Oats are one of the highest-value foods in a healthy diet, combining\nstrong scientific evidence, excellent nutritional quality, low cost and\nexceptional versatility."
+  },
+  "evidence": {
+    "level": "High",
+    "references": [
+      "European Food Safety Authority (EFSA)",
+      "British Dietetic Association",
+      "NHS Eatwell Guide",
+      "Harvard T.H. Chan School of Public Health -- The Nutrition Source",
+      "World Health Organization -- Healthy Diet Guidance"
+    ]
+  },
+  "metadata": {
+    "author": "Simon Bradley",
+    "schemaVersion": "1.1"
+  },
+  "status": {
+    "draft": false,
+    "approved": true,
+    "published": true
+  }
 }

@@ -1,0 +1,156 @@
+{
+  "id": "FD009",
+  "identity": {
+    "name": "Swiss Chard",
+    "scientificName": "Beta vulgaris subsp. vulgaris",
+    "commonNames": [
+      "Swiss Chard"
+    ],
+    "slug": "swiss-chard"
+  },
+  "classification": {
+    "foodGroup": "Vegetables",
+    "foodGroupId": "FG003",
+    "category": "Leafy Green"
+  },
+  "tags": [
+    "TAG004",
+    "TAG005",
+    "TAG009",
+    "TAG012",
+    "TAG013"
+  ],
+  "nutritionHighlights": {
+    "highIn": [
+      "Vitamin K",
+      "Vitamin A",
+      "Magnesium",
+      "Fibre"
+    ],
+    "contains": [
+      "Betalains",
+      "Carotenoids",
+      "Polyphenols"
+    ],
+    "claims": [
+      "Whole Food",
+      "Leafy Green",
+      "High Fibre"
+    ]
+  },
+  "knowledge": {
+    "overview": "Swiss chard provides vitamins K, A and C together with magnesium and colourful betalain pigments that contribute antioxidant activity.",
+    "whyItMatters": "Swiss Chard provides an exceptional concentration of micronutrients and protective plant compounds that support cardiovascular, metabolic and long-term health.",
+    "activeCompounds": [
+      {
+        "name": "Protective Phytochemicals",
+        "description": "Research suggests these compounds may support antioxidant defences, support healthy inflammatory balance and promote vascular health."
+      }
+    ],
+    "healthBenefits": {
+      "cardiovascularHealth": "Supports healthy blood vessels and circulation.",
+      "brainNervousSystem": "Provides nutrients important for normal nervous system function.",
+      "eyeHealth": "Contains carotenoids associated with healthy vision.",
+      "metabolicHealth": "Supports overall nutritional adequacy within a balanced diet."
+    }
+  },
+  "suitability": [
+    "Vegetarian",
+    "Vegan",
+    "Dairy Free",
+    "Egg Free",
+    "Nut Free",
+    "Soy Free",
+    "Halal",
+    "Kosher",
+    "Pregnancy",
+    "Children"
+  ],
+  "allergens": {
+    "gluten": "Naturally gluten free."
+  },
+  "contraindications": {
+    "avoidIf": [
+      "Confirmed allergy."
+    ],
+    "useWithCaution": [
+      "People taking warfarin should maintain a consistent vitamin K intake."
+    ]
+  },
+  "personalisation": {},
+  "supports": {
+    "bodySystems": [
+      "BS001",
+      "BS004",
+      "BS005",
+      "BS006"
+    ],
+    "recommendationStrength": {
+      "BS001": 5,
+      "BS004": 4,
+      "BS005": 5,
+      "BS006": 4
+    }
+  },
+  "relationships": {
+    "relatedFoods": [
+      "F001",
+      "F014"
+    ],
+    "relatedVitamins": [
+      "V001",
+      "V003",
+      "V007"
+    ],
+    "relatedMinerals": [
+      "M006",
+      "M010"
+    ],
+    "relatedHabits": [
+      "H001"
+    ],
+    "relatedArticles": [
+      "A003"
+    ]
+  },
+  "practical": {
+    "buying": "Choose crisp, vibrant leaves.",
+    "storage": "Refrigerate and use within a few days.",
+    "preparation": "Wash thoroughly before eating or cooking.",
+    "shoppingTips": "Avoid wilted or yellowing leaves."
+  },
+  "editorial": {
+    "foodPairings": [
+      "Oats",
+      "Lentils",
+      "Chickpeas",
+      "Olive oil"
+    ],
+    "commonMyth": {
+      "myth": "Cooking destroys all nutrients.",
+      "fact": "Cooking reduces some nutrients while increasing the availability of others."
+    },
+    "keyTakeaway": "Swiss Chard is an excellent everyday vegetable that delivers a high nutrient density with minimal calories."
+  },
+  "evidence": {
+    "overallRating": "High",
+    "supportedBy": [
+      "Systematic reviews",
+      "EFSA",
+      "NHS"
+    ],
+    "references": [
+      "European Food Safety Authority (EFSA)",
+      "British Dietetic Association",
+      "NHS Eatwell Guide"
+    ]
+  },
+  "metadata": {
+    "status": "Approved"
+  },
+  "status": {
+    "draft": false,
+    "approved": true,
+    "published": true
+  }
+}

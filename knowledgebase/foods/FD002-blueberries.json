@@ -1,57 +1,171 @@
 {
+  "id": "FD002",
+  "version": "1.1",
+  "identity": {
     "name": "Blueberries",
-    "id": "FD002",
-    "version": "1.1",
-    "identity": {
-        "name": "Blueberries",
-        "scientificName": "Vaccinium corymbosum",
-        "slug": "blueberries",
-        "commonNames": [
-            "Blueberries",
-            "Highbush Blueberries"
-        ]
-    },
-    "classification": {
-        "foodGroup": "FG002",
-        "category": "Berry",
-        "plantBased": true,
-        "minimallyProcessed": true
-    },
-    "nutritionHighlights": {
-        "highIn": [
-            "Vitamin C",
-            "Vitamin K",
-            "Manganese",
-            "Fibre"
-        ],
-        "contains": [
-            "Anthocyanins",
-            "Flavonoids",
-            "Polyphenols"
-        ],
-        "claims": [
-            "Whole Food",
-            "Antioxidant Rich"
-        ]
-    },
-    "knowledge": {
-        "description": "Blueberries are small, nutrient-dense berries recognised for their exceptionally high concentration of polyphenols, particularly anthocyanins. They provide fibre, vitamin C, vitamin K and manganese while contributing relatively few calories."
-    },
-    "metadata": {
-        "schemaVersion": "1.1",
-        "author": "Simon Bradley"
-    },
-    "status": {
-        "draft": false,
-        "approved": true,
-        "published": true
-    },
-    "practical": {
-        "availability": "",
-        "seasonality": "",
-        "typicalCost": "",
-        "storage": "Keep refrigerated and consume within one week.",
-        "preparation": "Rinse immediately before eating.",
-        "shoppingTips": "Fresh and frozen blueberries provide similar nutritional value."
+    "scientificName": "Vaccinium corymbosum",
+    "slug": "blueberries",
+    "commonNames": [
+      "Blueberries",
+      "Highbush Blueberries"
+    ]
+  },
+  "classification": {
+    "foodGroup": "FG002",
+    "category": "Berry",
+    "plantBased": true,
+    "minimallyProcessed": true
+  },
+  "images": {
+    "hero": "foods/blueberries/hero.jpg",
+    "thumbnail": "foods/blueberries/thumb.jpg"
+  },
+  "tags": [
+    "TAG003",
+    "TAG004",
+    "TAG009",
+    "TAG012",
+    "TAG013"
+  ],
+  "nutritionHighlights": {
+    "highIn": [
+      "V010",
+      "V013",
+      "M007",
+      "Fibre"
+    ],
+    "contains": [
+      "Anthocyanins",
+      "Flavonoids",
+      "Polyphenols"
+    ],
+    "claims": [
+      "Whole Food",
+      "Antioxidant Rich"
+    ]
+  },
+  "knowledge": {
+    "description": "Blueberries are small, nutrient-dense berries recognised for their exceptionally high concentration of polyphenols, particularly anthocyanins. They provide fibre, vitamin C, vitamin K and manganese while contributing relatively few calories.",
+    "activeCompounds": [
+      "Anthocyanins",
+      "Flavonoids"
+    ],
+    "mechanisms": [
+      "Support endothelial function",
+      "Reduce oxidative stress",
+      "Support healthy cognitive ageing",
+      "Support healthy blood vessels",
+      "Help maintain normal inflammatory responses"
+    ]
+  },
+  "suitability": {
+    "vegetarian": true,
+    "vegan": true,
+    "glutenFree": true,
+    "dairyFree": true,
+    "eggFree": true,
+    "nutFree": true,
+    "soyFree": true,
+    "halal": true,
+    "kosher": true,
+    "pregnancySuitable": true,
+    "childFriendly": true
+  },
+  "allergens": {
+    "contains": [],
+    "mayContain": [],
+    "notes": "Naturally gluten free."
+  },
+  "contraindications": {
+    "avoidIf": [
+      "Confirmed blueberry allergy"
+    ],
+    "useWithCaution": [
+      "Follow medical advice if taking warfarin due to vitamin K intake."
+    ]
+  },
+  "personalisation": {
+    "recommendedFor": [
+      "Cardiovascular Health",
+      "Brain & Nervous System",
+      "Digestive Health",
+      "Metabolic Health"
+    ],
+    "avoidFor": [
+      "Confirmed blueberry allergy"
+    ],
+    "goalsSupported": [
+      "Cardiovascular Health",
+      "Brain & Nervous System",
+      "Digestive Health",
+      "Metabolic Health"
+    ]
+  },
+  "supports": {
+    "bodySystems": [
+      "BS001",
+      "BS002",
+      "BS004",
+      "BS006"
+    ],
+    "recommendationStrength": {
+      "BS001": 5,
+      "BS002": 4,
+      "BS004": 5,
+      "BS006": 4
     }
+  },
+  "relationships": {
+    "relatedFoods": [
+      "FD001",
+      "FD018",
+      "FD021"
+    ],
+    "relatedVitamins": [
+      "V003",
+      "V007"
+    ],
+    "relatedMinerals": [
+      "M006"
+    ],
+    "relatedHabits": [
+      "H001"
+    ],
+    "relatedArticles": [
+      "A002"
+    ]
+  },
+  "practical": {
+    "availability": "",
+    "seasonality": "",
+    "typicalCost": "",
+    "storage": "Keep refrigerated and consume within one week.",
+    "preparation": "Rinse immediately before eating.",
+    "shoppingTips": "Fresh and frozen blueberries provide similar nutritional value."
+  },
+  "editorial": {
+    "summary": "Blueberries have one of the strongest evidence bases among fruits for supporting cardiovascular health, healthy ageing and cognitive function. Their combination of fibre and phytochemicals also contributes to gut microbiome diversity and healthy metabolic function.",
+    "didYouKnow": "Anthocyanins",
+    "myth": "Only fresh blueberries are healthy.",
+    "fact": "Frozen blueberries retain most nutrients and polyphenols.",
+    "keyTakeaway": "Blueberries are among the most evidence-supported fruits for promoting long-term cardiovascular, cognitive and metabolic health."
+  },
+  "evidence": {
+    "level": "High",
+    "references": [
+      "European Food Safety Authority (EFSA)",
+      "British Dietetic Association",
+      "NHS Eatwell Guide",
+      "Harvard T.H. Chan School of Public Health"
+    ]
+  },
+  "metadata": {
+    "author": "Simon Bradley",
+    "schemaVersion": "1.1"
+  },
+  "status": {
+    "draft": false,
+    "approved": true,
+    "published": true
+  }
 }

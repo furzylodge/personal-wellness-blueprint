@@ -1,57 +1,169 @@
 {
+  "id": "FD005",
+  "version": "1.1",
+  "identity": {
     "name": "Raspberries",
-    "id": "FD005",
-    "version": "1.1",
-    "identity": {
-        "name": "Raspberries",
-        "scientificName": "Rubus idaeus",
-        "slug": "raspberries",
-        "commonNames": [
-            "Raspberries"
-        ]
-    },
-    "classification": {
-        "foodGroup": "FG002",
-        "category": "Berry",
-        "plantBased": true,
-        "minimallyProcessed": true
-    },
-    "nutritionHighlights": {
-        "highIn": [
-            "Fibre",
-            "Vitamin C",
-            "Manganese",
-            "Vitamin K"
-        ],
-        "contains": [
-            "Anthocyanins",
-            "Ellagitannins",
-            "Flavonoids"
-        ],
-        "claims": [
-            "Whole Food",
-            "High Fibre",
-            "Antioxidant Rich"
-        ]
-    },
-    "knowledge": {
-        "description": "Raspberries are exceptionally high in dietary fibre and contain a wide range of protective phytochemicals including anthocyanins and ellagitannins.\n\nTheir fibre content makes them particularly valuable for digestive and metabolic health."
-    },
-    "metadata": {
-        "schemaVersion": "1.1",
-        "author": "Simon Bradley"
-    },
-    "status": {
-        "draft": false,
-        "approved": true,
-        "published": true
-    },
-    "practical": {
-        "availability": "",
-        "seasonality": "",
-        "typicalCost": "",
-        "storage": "Refrigerate and consume within a few days.",
-        "preparation": "Rinse immediately before eating.",
-        "shoppingTips": "Frozen fruit retains most nutritional value."
+    "scientificName": "Rubus idaeus",
+    "slug": "raspberries",
+    "commonNames": [
+      "Raspberries"
+    ]
+  },
+  "classification": {
+    "foodGroup": "FG002",
+    "category": "Berry",
+    "plantBased": true,
+    "minimallyProcessed": true
+  },
+  "images": {
+    "hero": "foods/raspberries/hero.jpg",
+    "thumbnail": "foods/raspberries/thumb.jpg"
+  },
+  "tags": [
+    "TAG003",
+    "TAG009",
+    "TAG012",
+    "TAG013"
+  ],
+  "nutritionHighlights": {
+    "highIn": [
+      "Fibre",
+      "V010",
+      "M007",
+      "V013"
+    ],
+    "contains": [
+      "Anthocyanins",
+      "Ellagitannins",
+      "Flavonoids"
+    ],
+    "claims": [
+      "Whole Food",
+      "High Fibre",
+      "Antioxidant Rich"
+    ]
+  },
+  "knowledge": {
+    "description": "Raspberries are exceptionally high in dietary fibre and contain a wide range of protective phytochemicals including anthocyanins and ellagitannins.\n\nTheir fibre content makes them particularly valuable for digestive and metabolic health.",
+    "activeCompounds": [
+      "Anthocyanins",
+      "Flavonoids"
+    ],
+    "mechanisms": [
+      "Support endothelial function",
+      "Reduce oxidative stress",
+      "Support healthy cognitive ageing",
+      "Support healthy inflammatory balance",
+      "Promote healthy blood vessels"
+    ]
+  },
+  "suitability": {
+    "vegetarian": true,
+    "vegan": true,
+    "glutenFree": true,
+    "dairyFree": true,
+    "eggFree": true,
+    "nutFree": true,
+    "soyFree": true,
+    "halal": true,
+    "kosher": true,
+    "pregnancySuitable": true,
+    "childFriendly": true
+  },
+  "allergens": {
+    "contains": [],
+    "mayContain": [],
+    "notes": "Naturally gluten free."
+  },
+  "contraindications": {
+    "avoidIf": [
+      "Confirmed allergy to Raspberries"
+    ],
+    "useWithCaution": [
+      "None generally recognised."
+    ]
+  },
+  "personalisation": {
+    "recommendedFor": [
+      "Cardiovascular Health",
+      "Brain & Nervous System",
+      "Digestive Health",
+      "Metabolic Health"
+    ],
+    "avoidFor": [
+      "Confirmed allergy to Raspberries"
+    ],
+    "goalsSupported": [
+      "Cardiovascular Health",
+      "Brain & Nervous System",
+      "Digestive Health",
+      "Metabolic Health"
+    ]
+  },
+  "supports": {
+    "bodySystems": [
+      "BS001",
+      "BS002",
+      "BS004",
+      "BS006"
+    ],
+    "recommendationStrength": {
+      "BS001": 5,
+      "BS002": 4,
+      "BS004": 5,
+      "BS006": 4
     }
+  },
+  "relationships": {
+    "relatedFoods": [
+      "FD001",
+      "FD002"
+    ],
+    "relatedVitamins": [
+      "V003",
+      "V007"
+    ],
+    "relatedMinerals": [
+      "M006"
+    ],
+    "relatedHabits": [
+      "H001"
+    ],
+    "relatedArticles": [
+      "A002"
+    ]
+  },
+  "practical": {
+    "availability": "",
+    "seasonality": "",
+    "typicalCost": "",
+    "storage": "Refrigerate and consume within a few days.",
+    "preparation": "Rinse immediately before eating.",
+    "shoppingTips": "Frozen fruit retains most nutritional value."
+  },
+  "editorial": {
+    "summary": "Raspberries are an excellent whole-food choice for supporting cardiovascular health, healthy ageing, gut health and reducing dietary reliance on ultra-processed snacks.",
+    "didYouKnow": "Anthocyanins",
+    "myth": "Fresh berries are always healthier than frozen.",
+    "fact": "Frozen berries retain most vitamins and polyphenols.",
+    "keyTakeaway": "Raspberries are an excellent everyday fruit providing fibre together with a broad spectrum of protective phytochemicals."
+  },
+  "evidence": {
+    "level": "High",
+    "references": [
+      "European Food Safety Authority (EFSA)",
+      "British Dietetic Association",
+      "NHS Eatwell Guide",
+      "Harvard T.H. Chan School of Public Health"
+    ]
+  },
+  "metadata": {
+    "author": "Simon Bradley",
+    "schemaVersion": "1.1"
+  },
+  "status": {
+    "draft": false,
+    "approved": true,
+    "published": true
+  }
 }

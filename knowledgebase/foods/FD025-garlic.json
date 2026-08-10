@@ -1,53 +1,155 @@
 {
+  "id": "FD025",
+  "version": "1.1",
+  "identity": {
     "name": "Garlic",
-    "id": "FD025",
-    "version": "1.1",
-    "identity": {
-        "name": "Garlic",
-        "scientificName": "Allium sativum",
-        "slug": "garlic",
-        "commonNames": [
-            "Garlic"
-        ]
-    },
-    "classification": {
-        "foodGroup": "FG006",
-        "category": "Functional Food",
-        "plantBased": true,
-        "minimallyProcessed": true
-    },
-    "nutritionHighlights": {
-        "highIn": [
-            "Vitamin B6",
-            "Manganese"
-        ],
-        "contains": [
-            "Allicin",
-            "Organosulphur compounds"
-        ],
-        "claims": [
-            "Whole Food",
-            "Functional Food"
-        ]
-    },
-    "knowledge": {
-        "description": "Garlic contains organosulphur compounds, particularly allicin, and has one of the strongest evidence bases among culinary herbs for cardiovascular support."
-    },
-    "metadata": {
-        "schemaVersion": "1.1",
-        "author": "Simon Bradley"
-    },
-    "status": {
-        "draft": false,
-        "approved": true,
-        "published": true
-    },
-    "practical": {
-        "availability": "",
-        "seasonality": "",
-        "typicalCost": "",
-        "storage": "Store according to product recommendations.",
-        "preparation": "Use as part of varied meals.",
-        "shoppingTips": "Prioritise quality over heavily processed alternatives."
+    "scientificName": "Allium sativum",
+    "slug": "garlic",
+    "commonNames": [
+      "Garlic"
+    ]
+  },
+  "classification": {
+    "foodGroup": "FG006",
+    "category": "Functional Food",
+    "plantBased": true,
+    "minimallyProcessed": true
+  },
+  "images": {
+    "hero": "foods/garlic/hero.jpg",
+    "thumbnail": "foods/garlic/thumb.jpg"
+  },
+  "tags": [
+    "TAG004",
+    "TAG009",
+    "TAG011",
+    "TAG013"
+  ],
+  "nutritionHighlights": {
+    "highIn": [
+      "V006",
+      "M007"
+    ],
+    "contains": [
+      "Allicin",
+      "Organosulphur compounds"
+    ],
+    "claims": [
+      "Whole Food",
+      "Functional Food"
+    ]
+  },
+  "knowledge": {
+    "description": "Garlic contains organosulphur compounds, particularly allicin, and has one of the strongest evidence bases among culinary herbs for cardiovascular support.",
+    "activeCompounds": [],
+    "mechanisms": []
+  },
+  "suitability": {
+    "vegetarian": true,
+    "vegan": true,
+    "glutenFree": true,
+    "dairyFree": true,
+    "eggFree": true,
+    "nutFree": true,
+    "soyFree": true,
+    "halal": true,
+    "kosher": true,
+    "pregnancySuitable": false,
+    "childFriendly": false
+  },
+  "allergens": {
+    "contains": [],
+    "mayContain": [],
+    "notes": "Naturally gluten free."
+  },
+  "contraindications": {
+    "avoidIf": [
+      "Confirmed allergy."
+    ],
+    "useWithCaution": [
+      "Follow individual medical advice where appropriate."
+    ]
+  },
+  "personalisation": {
+    "recommendedFor": [
+      "Cardiovascular Health",
+      "Metabolic Health",
+      "Immune Function"
+    ],
+    "avoidFor": [
+      "Confirmed allergy."
+    ],
+    "goalsSupported": [
+      "Cardiovascular Health",
+      "Metabolic Health",
+      "Immune Function"
+    ]
+  },
+  "supports": {
+    "bodySystems": [
+      "BS001",
+      "BS002",
+      "BS004",
+      "BS006"
+    ],
+    "recommendationStrength": {
+      "BS001": 5,
+      "BS002": 4,
+      "BS004": 4,
+      "BS006": 5
     }
+  },
+  "relationships": {
+    "relatedFoods": [
+      "FD001",
+      "FD006",
+      "FD014"
+    ],
+    "relatedVitamins": [
+      "V002",
+      "V007"
+    ],
+    "relatedMinerals": [
+      "M006",
+      "M010"
+    ],
+    "relatedHabits": [
+      "H001"
+    ],
+    "relatedArticles": [
+      "A006"
+    ]
+  },
+  "practical": {
+    "availability": "",
+    "seasonality": "",
+    "typicalCost": "",
+    "storage": "Store according to product recommendations.",
+    "preparation": "Use as part of varied meals.",
+    "shoppingTips": "Prioritise quality over heavily processed alternatives."
+  },
+  "editorial": {
+    "summary": "Garlic is recognised as an evidence-supported whole food that contributes important nutrients and bioactive compounds to a healthy dietary pattern.",
+    "didYouKnow": "",
+    "myth": "Superfoods can replace a healthy diet.",
+    "fact": "Health benefits come from an overall dietary pattern rather than a single food.",
+    "keyTakeaway": "Garlic is a valuable component of an evidence-based whole-food dietary pattern."
+  },
+  "evidence": {
+    "level": "High",
+    "references": [
+      "EFSA",
+      "NHS Eatwell Guide",
+      "Harvard T.H. Chan School of Public Health"
+    ]
+  },
+  "metadata": {
+    "author": "Simon Bradley",
+    "schemaVersion": "1.1"
+  },
+  "status": {
+    "draft": false,
+    "approved": true,
+    "published": true
+  }
 }

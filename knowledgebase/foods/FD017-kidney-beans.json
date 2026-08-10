@@ -1,57 +1,172 @@
 {
+  "id": "FD017",
+  "version": "1.1",
+  "identity": {
     "name": "Kidney Beans",
-    "id": "FD017",
-    "version": "1.1",
-    "identity": {
-        "name": "Kidney Beans",
-        "scientificName": "Phaseolus vulgaris",
-        "slug": "kidney-beans",
-        "commonNames": [
-            "Kidney Beans"
-        ]
-    },
-    "classification": {
-        "foodGroup": "FG004",
-        "category": "Legume",
-        "plantBased": true,
-        "minimallyProcessed": true
-    },
-    "nutritionHighlights": {
-        "highIn": [
-            "Iron",
-            "Folate",
-            "Fibre",
-            "Plant Protein"
-        ],
-        "contains": [
-            "Resistant starch",
-            "Polyphenols",
-            "Lectins (destroyed by cooking)"
-        ],
-        "claims": [
-            "Whole Food",
-            "High Fibre",
-            "Plant Protein"
-        ]
-    },
-    "knowledge": {
-        "description": "Kidney beans are an excellent source of fibre, plant protein and minerals, supporting healthy blood sugar regulation and digestive health."
-    },
-    "metadata": {
-        "schemaVersion": "1.1",
-        "author": "Simon Bradley"
-    },
-    "status": {
-        "draft": false,
-        "approved": true,
-        "published": true
-    },
-    "practical": {
-        "availability": "",
-        "seasonality": "",
-        "typicalCost": "",
-        "storage": "Store dried legumes in airtight containers.",
-        "preparation": "Soak dried beans where appropriate and cook thoroughly.",
-        "shoppingTips": "Choose products with no added salt where possible."
+    "scientificName": "Phaseolus vulgaris",
+    "slug": "kidney-beans",
+    "commonNames": [
+      "Kidney Beans"
+    ]
+  },
+  "classification": {
+    "foodGroup": "FG004",
+    "category": "Legume",
+    "plantBased": true,
+    "minimallyProcessed": true
+  },
+  "images": {
+    "hero": "foods/kidney-beans/hero.jpg",
+    "thumbnail": "foods/kidney-beans/thumb.jpg"
+  },
+  "tags": [
+    "TAG005",
+    "TAG007",
+    "TAG009",
+    "TAG011",
+    "TAG013"
+  ],
+  "nutritionHighlights": {
+    "highIn": [
+      "M005",
+      "Folate",
+      "Fibre",
+      "Plant Protein"
+    ],
+    "contains": [
+      "Resistant starch",
+      "Polyphenols",
+      "Lectins (destroyed by cooking)"
+    ],
+    "claims": [
+      "Whole Food",
+      "High Fibre",
+      "Plant Protein"
+    ]
+  },
+  "knowledge": {
+    "description": "Kidney beans are an excellent source of fibre, plant protein and minerals, supporting healthy blood sugar regulation and digestive health.",
+    "activeCompounds": [
+      "Resistant Starch",
+      "Polyphenols"
+    ],
+    "mechanisms": [
+      "Feed beneficial gut bacteria",
+      "Increase short-chain fatty acid production",
+      "Support healthy glucose metabolism",
+      "Reduce oxidative stress",
+      "Support cardiovascular health",
+      "Promote a healthy gut microbiome"
+    ]
+  },
+  "suitability": {
+    "vegetarian": true,
+    "vegan": true,
+    "glutenFree": true,
+    "dairyFree": true,
+    "eggFree": true,
+    "nutFree": true,
+    "soyFree": true,
+    "halal": true,
+    "kosher": true,
+    "pregnancySuitable": true,
+    "childFriendly": true
+  },
+  "allergens": {
+    "contains": [],
+    "mayContain": [],
+    "notes": "Naturally gluten free."
+  },
+  "contraindications": {
+    "avoidIf": [
+      "Confirmed allergy."
+    ],
+    "useWithCaution": [
+      "Dried beans must be cooked thoroughly before consumption."
+    ]
+  },
+  "personalisation": {
+    "recommendedFor": [
+      "Cardiovascular Health",
+      "Digestive Health",
+      "Metabolic Health",
+      "Musculoskeletal Health"
+    ],
+    "avoidFor": [
+      "Confirmed allergy."
+    ],
+    "goalsSupported": [
+      "Cardiovascular Health",
+      "Digestive Health",
+      "Metabolic Health",
+      "Musculoskeletal Health"
+    ]
+  },
+  "supports": {
+    "bodySystems": [
+      "BS001",
+      "BS002",
+      "BS004",
+      "BS006"
+    ],
+    "recommendationStrength": {
+      "BS001": 5,
+      "BS002": 5,
+      "BS004": 5,
+      "BS006": 4
     }
+  },
+  "relationships": {
+    "relatedFoods": [
+      "FD001",
+      "FD006"
+    ],
+    "relatedVitamins": [
+      "V002",
+      "V007"
+    ],
+    "relatedMinerals": [
+      "M005",
+      "M006",
+      "M010"
+    ],
+    "relatedHabits": [
+      "H001"
+    ],
+    "relatedArticles": [
+      "A004"
+    ]
+  },
+  "practical": {
+    "availability": "",
+    "seasonality": "",
+    "typicalCost": "",
+    "storage": "Store dried legumes in airtight containers.",
+    "preparation": "Soak dried beans where appropriate and cook thoroughly.",
+    "shoppingTips": "Choose products with no added salt where possible."
+  },
+  "editorial": {
+    "summary": "Kidney Beans are excellent whole foods that combine high-quality plant nutrition with fibre and slowly digested carbohydrate. Regular consumption is associated with improved cardiovascular, metabolic and digestive health.",
+    "didYouKnow": "Resistant Starch",
+    "myth": "Plant protein is inferior.",
+    "fact": "Legumes are excellent protein sources when eaten as part of a varied diet.",
+    "keyTakeaway": "Kidney Beans are among the healthiest staple foods available, combining plant protein, fibre and beneficial phytochemicals."
+  },
+  "evidence": {
+    "level": "High",
+    "references": [
+      "NHS Eatwell Guide",
+      "British Dietetic Association",
+      "Harvard T.H. Chan School of Public Health"
+    ]
+  },
+  "metadata": {
+    "author": "Simon Bradley",
+    "schemaVersion": "1.1"
+  },
+  "status": {
+    "draft": false,
+    "approved": true,
+    "published": true
+  }
 }

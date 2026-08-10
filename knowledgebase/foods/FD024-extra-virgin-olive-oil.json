@@ -1,54 +1,156 @@
 {
+  "id": "FD024",
+  "version": "1.1",
+  "identity": {
     "name": "Extra Virgin Olive Oil",
-    "id": "FD024",
-    "version": "1.1",
-    "identity": {
-        "name": "Extra Virgin Olive Oil",
-        "scientificName": "Olea europaea",
-        "slug": "extra-virgin-olive-oil",
-        "commonNames": [
-            "Extra Virgin Olive Oil"
-        ]
-    },
-    "classification": {
-        "foodGroup": "FG006",
-        "category": "Functional Food",
-        "plantBased": true,
-        "minimallyProcessed": true
-    },
-    "nutritionHighlights": {
-        "highIn": [
-            "Vitamin E",
-            "Monounsaturated Fats"
-        ],
-        "contains": [
-            "Oleocanthal",
-            "Hydroxytyrosol",
-            "Polyphenols"
-        ],
-        "claims": [
-            "Mediterranean Staple",
-            "Healthy Fat"
-        ]
-    },
-    "knowledge": {
-        "description": "Extra virgin olive oil is the cornerstone of the Mediterranean diet and is rich in monounsaturated fats and polyphenols including oleocanthal and hydroxytyrosol."
-    },
-    "metadata": {
-        "schemaVersion": "1.1",
-        "author": "Simon Bradley"
-    },
-    "status": {
-        "draft": false,
-        "approved": true,
-        "published": true
-    },
-    "practical": {
-        "availability": "",
-        "seasonality": "",
-        "typicalCost": "",
-        "storage": "Store according to product recommendations.",
-        "preparation": "Use as part of varied meals.",
-        "shoppingTips": "Prioritise quality over heavily processed alternatives."
+    "scientificName": "Olea europaea",
+    "slug": "extra-virgin-olive-oil",
+    "commonNames": [
+      "Extra Virgin Olive Oil"
+    ]
+  },
+  "classification": {
+    "foodGroup": "FG006",
+    "category": "Functional Food",
+    "plantBased": true,
+    "minimallyProcessed": true
+  },
+  "images": {
+    "hero": "foods/extra-virgin-olive-oil/hero.jpg",
+    "thumbnail": "foods/extra-virgin-olive-oil/thumb.jpg"
+  },
+  "tags": [
+    "TAG004",
+    "TAG009",
+    "TAG011",
+    "TAG013"
+  ],
+  "nutritionHighlights": {
+    "highIn": [
+      "V012",
+      "Monounsaturated Fats"
+    ],
+    "contains": [
+      "Oleocanthal",
+      "Hydroxytyrosol",
+      "Polyphenols"
+    ],
+    "claims": [
+      "Mediterranean Staple",
+      "Healthy Fat"
+    ]
+  },
+  "knowledge": {
+    "description": "Extra virgin olive oil is the cornerstone of the Mediterranean diet and is rich in monounsaturated fats and polyphenols including oleocanthal and hydroxytyrosol.",
+    "activeCompounds": [],
+    "mechanisms": []
+  },
+  "suitability": {
+    "vegetarian": true,
+    "vegan": true,
+    "glutenFree": true,
+    "dairyFree": true,
+    "eggFree": true,
+    "nutFree": true,
+    "soyFree": true,
+    "halal": true,
+    "kosher": true,
+    "pregnancySuitable": false,
+    "childFriendly": false
+  },
+  "allergens": {
+    "contains": [],
+    "mayContain": [],
+    "notes": "Naturally gluten free."
+  },
+  "contraindications": {
+    "avoidIf": [
+      "Confirmed allergy."
+    ],
+    "useWithCaution": [
+      "Follow individual medical advice where appropriate."
+    ]
+  },
+  "personalisation": {
+    "recommendedFor": [
+      "Cardiovascular Health",
+      "Metabolic Health",
+      "Immune Function"
+    ],
+    "avoidFor": [
+      "Confirmed allergy."
+    ],
+    "goalsSupported": [
+      "Cardiovascular Health",
+      "Metabolic Health",
+      "Immune Function"
+    ]
+  },
+  "supports": {
+    "bodySystems": [
+      "BS001",
+      "BS002",
+      "BS004",
+      "BS006"
+    ],
+    "recommendationStrength": {
+      "BS001": 5,
+      "BS002": 4,
+      "BS004": 4,
+      "BS006": 5
     }
+  },
+  "relationships": {
+    "relatedFoods": [
+      "FD001",
+      "FD006",
+      "FD014"
+    ],
+    "relatedVitamins": [
+      "V002",
+      "V007"
+    ],
+    "relatedMinerals": [
+      "M006",
+      "M010"
+    ],
+    "relatedHabits": [
+      "H001"
+    ],
+    "relatedArticles": [
+      "A006"
+    ]
+  },
+  "practical": {
+    "availability": "",
+    "seasonality": "",
+    "typicalCost": "",
+    "storage": "Store according to product recommendations.",
+    "preparation": "Use as part of varied meals.",
+    "shoppingTips": "Prioritise quality over heavily processed alternatives."
+  },
+  "editorial": {
+    "summary": "Extra Virgin Olive Oil is recognised as an evidence-supported whole food that contributes important nutrients and bioactive compounds to a healthy dietary pattern.",
+    "didYouKnow": "",
+    "myth": "Superfoods can replace a healthy diet.",
+    "fact": "Health benefits come from an overall dietary pattern rather than a single food.",
+    "keyTakeaway": "Extra Virgin Olive Oil is a valuable component of an evidence-based whole-food dietary pattern."
+  },
+  "evidence": {
+    "level": "High",
+    "references": [
+      "EFSA",
+      "NHS Eatwell Guide",
+      "Harvard T.H. Chan School of Public Health"
+    ]
+  },
+  "metadata": {
+    "author": "Simon Bradley",
+    "schemaVersion": "1.1"
+  },
+  "status": {
+    "draft": false,
+    "approved": true,
+    "published": true
+  }
 }

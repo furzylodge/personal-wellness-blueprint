@@ -1,57 +1,168 @@
 {
+  "id": "FD006",
+  "version": "1.1",
+  "identity": {
     "name": "Spinach",
-    "id": "FD006",
-    "version": "1.1",
-    "identity": {
-        "name": "Spinach",
-        "scientificName": "Spinacia oleracea",
-        "slug": "spinach",
-        "commonNames": [
-            "Spinach"
-        ]
-    },
-    "classification": {
-        "foodGroup": "FG003",
-        "category": "Leafy Green",
-        "plantBased": true,
-        "minimallyProcessed": true
-    },
-    "nutritionHighlights": {
-        "highIn": [
-            "Vitamin K",
-            "Folate",
-            "Vitamin A",
-            "Magnesium"
-        ],
-        "contains": [
-            "Lutein",
-            "Zeaxanthin",
-            "Nitrates"
-        ],
-        "claims": [
-            "Whole Food",
-            "Leafy Green",
-            "Nutrient Dense"
-        ]
-    },
-    "knowledge": {
-        "description": "Spinach is a nutrient-dense leafy green rich in folate, vitamin K, vitamin A, magnesium and lutein. It provides exceptional nutritional value with very few calories."
-    },
-    "metadata": {
-        "schemaVersion": "1.1",
-        "author": "Simon Bradley"
-    },
-    "status": {
-        "draft": false,
-        "approved": true,
-        "published": true
-    },
-    "practical": {
-        "availability": "",
-        "seasonality": "",
-        "typicalCost": "",
-        "storage": "Refrigerate and use within a few days.",
-        "preparation": "Wash thoroughly before eating or cooking.",
-        "shoppingTips": "Avoid wilted or yellowing leaves."
+    "scientificName": "Spinacia oleracea",
+    "slug": "spinach",
+    "commonNames": [
+      "Spinach"
+    ]
+  },
+  "classification": {
+    "foodGroup": "FG003",
+    "category": "Leafy Green",
+    "plantBased": true,
+    "minimallyProcessed": true
+  },
+  "images": {
+    "hero": "foods/spinach/hero.jpg",
+    "thumbnail": "foods/spinach/thumb.jpg"
+  },
+  "tags": [
+    "TAG004",
+    "TAG005",
+    "TAG009",
+    "TAG012",
+    "TAG013"
+  ],
+  "nutritionHighlights": {
+    "highIn": [
+      "V013",
+      "Folate",
+      "V001",
+      "M006"
+    ],
+    "contains": [
+      "Lutein",
+      "Zeaxanthin",
+      "Nitrates"
+    ],
+    "claims": [
+      "Whole Food",
+      "Leafy Green",
+      "Nutrient Dense"
+    ]
+  },
+  "knowledge": {
+    "description": "Spinach is a nutrient-dense leafy green rich in folate, vitamin K, vitamin A, magnesium and lutein. It provides exceptional nutritional value with very few calories.",
+    "activeCompounds": [
+      "Protective Phytochemicals"
+    ],
+    "mechanisms": [
+      "Support antioxidant defences",
+      "Support healthy inflammatory balance",
+      "Promote vascular health"
+    ]
+  },
+  "suitability": {
+    "vegetarian": true,
+    "vegan": true,
+    "glutenFree": true,
+    "dairyFree": true,
+    "eggFree": true,
+    "nutFree": true,
+    "soyFree": true,
+    "halal": true,
+    "kosher": true,
+    "pregnancySuitable": true,
+    "childFriendly": true
+  },
+  "allergens": {
+    "contains": [],
+    "mayContain": [],
+    "notes": "Naturally gluten free."
+  },
+  "contraindications": {
+    "avoidIf": [
+      "Confirmed allergy."
+    ],
+    "useWithCaution": [
+      "People taking warfarin should maintain a consistent vitamin K intake."
+    ]
+  },
+  "personalisation": {
+    "recommendedFor": [
+      "Cardiovascular Health",
+      "Brain & Nervous System",
+      "Eye Health",
+      "Metabolic Health"
+    ],
+    "avoidFor": [
+      "Confirmed allergy."
+    ],
+    "goalsSupported": [
+      "Cardiovascular Health",
+      "Brain & Nervous System",
+      "Eye Health",
+      "Metabolic Health"
+    ]
+  },
+  "supports": {
+    "bodySystems": [
+      "BS001",
+      "BS004",
+      "BS005",
+      "BS006"
+    ],
+    "recommendationStrength": {
+      "BS001": 5,
+      "BS004": 4,
+      "BS005": 5,
+      "BS006": 4
     }
+  },
+  "relationships": {
+    "relatedFoods": [
+      "FD001",
+      "FD014"
+    ],
+    "relatedVitamins": [
+      "V001",
+      "V003",
+      "V007"
+    ],
+    "relatedMinerals": [
+      "M006",
+      "M010"
+    ],
+    "relatedHabits": [
+      "H001"
+    ],
+    "relatedArticles": [
+      "A003"
+    ]
+  },
+  "practical": {
+    "availability": "",
+    "seasonality": "",
+    "typicalCost": "",
+    "storage": "Refrigerate and use within a few days.",
+    "preparation": "Wash thoroughly before eating or cooking.",
+    "shoppingTips": "Avoid wilted or yellowing leaves."
+  },
+  "editorial": {
+    "summary": "Spinach provides an exceptional concentration of micronutrients and protective plant compounds that support cardiovascular, metabolic and long-term health.",
+    "didYouKnow": "Protective Phytochemicals",
+    "myth": "Cooking destroys all nutrients.",
+    "fact": "Cooking reduces some nutrients while increasing the availability of others.",
+    "keyTakeaway": "Spinach is an excellent everyday vegetable that delivers a high nutrient density with minimal calories."
+  },
+  "evidence": {
+    "level": "High",
+    "references": [
+      "European Food Safety Authority (EFSA)",
+      "British Dietetic Association",
+      "NHS Eatwell Guide"
+    ]
+  },
+  "metadata": {
+    "author": "Simon Bradley",
+    "schemaVersion": "1.1"
+  },
+  "status": {
+    "draft": false,
+    "approved": true,
+    "published": true
+  }
 }
