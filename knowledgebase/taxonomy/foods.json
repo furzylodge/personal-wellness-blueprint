@@ -1,75 +1,479 @@
 {
-  "version": "1.0",
+  "version": "2.0",
+  "generated": "2026-08-10T00:00:00+00:00",
+  "count": 46,
   "foods": [
     {
       "id": "FD001",
       "name": "Oats",
+      "scientificName": "Avena sativa",
       "slug": "oats",
       "foodGroup": "FG001",
-      "status": "Planned"
+      "foodGroupName": "Wholegrains",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD001-oats.md"
     },
     {
       "id": "FD002",
-      "name": "Brown Rice",
-      "slug": "brown-rice",
-      "foodGroup": "FG001",
-      "status": "Planned"
+      "name": "Blueberries",
+      "scientificName": "Vaccinium corymbosum",
+      "slug": "blueberries",
+      "foodGroup": "FG002",
+      "foodGroupName": "Fruit",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD002-blueberries.md"
     },
     {
       "id": "FD003",
-      "name": "Quinoa",
-      "slug": "quinoa",
-      "foodGroup": "FG001",
-      "status": "Planned"
+      "name": "Blackberries",
+      "scientificName": "Rubus fruticosus",
+      "slug": "blackberries",
+      "foodGroup": "FG002",
+      "foodGroupName": "Fruit",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD003-blackberries.md"
     },
     {
       "id": "FD004",
-      "name": "Broccoli",
-      "slug": "broccoli",
+      "name": "Strawberries",
+      "scientificName": "Fragaria × ananassa",
+      "slug": "strawberries",
       "foodGroup": "FG002",
-      "status": "Planned"
+      "foodGroupName": "Fruit",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD004-strawberries.md"
     },
     {
       "id": "FD005",
-      "name": "Blueberries",
-      "slug": "blueberries",
-      "foodGroup": "FG003",
-      "status": "Planned"
+      "name": "Raspberries",
+      "scientificName": "Rubus idaeus",
+      "slug": "raspberries",
+      "foodGroup": "FG002",
+      "foodGroupName": "Fruit",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD005-raspberries.md"
     },
     {
       "id": "FD006",
       "name": "Spinach",
+      "scientificName": "Spinacia oleracea",
       "slug": "spinach",
-      "foodGroup": "FG002",
-      "status": "Planned"
+      "foodGroup": "FG003",
+      "foodGroupName": "Vegetables",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD006-spinach.md"
     },
     {
       "id": "FD007",
-      "name": "Lentils",
-      "slug": "lentils",
-      "foodGroup": "FG004",
-      "status": "Planned"
+      "name": "Kale",
+      "scientificName": "Brassica oleracea var. sabellica",
+      "slug": "kale",
+      "foodGroup": "FG003",
+      "foodGroupName": "Vegetables",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD007-kale.md"
     },
     {
       "id": "FD008",
-      "name": "Chickpeas",
-      "slug": "chickpeas",
-      "foodGroup": "FG004",
-      "status": "Planned"
+      "name": "Watercress",
+      "scientificName": "Nasturtium officinale",
+      "slug": "watercress",
+      "foodGroup": "FG003",
+      "foodGroupName": "Vegetables",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD008-watercress.md"
     },
     {
       "id": "FD009",
-      "name": "Salmon",
-      "slug": "salmon",
-      "foodGroup": "FG007",
-      "status": "Planned"
+      "name": "Swiss Chard",
+      "scientificName": "Beta vulgaris subsp. vulgaris",
+      "slug": "swiss-chard",
+      "foodGroup": "FG003",
+      "foodGroupName": "Vegetables",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD009-swiss-chard.md"
     },
     {
       "id": "FD010",
+      "name": "Broccoli",
+      "scientificName": "Brassica oleracea var. italica",
+      "slug": "broccoli",
+      "foodGroup": "FG003",
+      "foodGroupName": "Vegetables",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD010-broccoli.md"
+    },
+    {
+      "id": "FD011",
+      "name": "Brussels Sprouts",
+      "scientificName": "Brassica oleracea var. gemmifera",
+      "slug": "brussels-sprouts",
+      "foodGroup": "FG003",
+      "foodGroupName": "Vegetables",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD011-brussels-sprouts.md"
+    },
+    {
+      "id": "FD012",
+      "name": "Cauliflower",
+      "scientificName": "Brassica oleracea var. botrytis",
+      "slug": "cauliflower",
+      "foodGroup": "FG003",
+      "foodGroupName": "Vegetables",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD012-cauliflower.md"
+    },
+    {
+      "id": "FD013",
+      "name": "Cabbage",
+      "scientificName": "Brassica oleracea var. capitata",
+      "slug": "cabbage",
+      "foodGroup": "FG003",
+      "foodGroupName": "Vegetables",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD013-cabbage.md"
+    },
+    {
+      "id": "FD014",
+      "name": "Lentils",
+      "scientificName": "Lens culinaris",
+      "slug": "lentils",
+      "foodGroup": "FG004",
+      "foodGroupName": "Legumes",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD014-lentils.md"
+    },
+    {
+      "id": "FD015",
+      "name": "Chickpeas",
+      "scientificName": "Cicer arietinum",
+      "slug": "chickpeas",
+      "foodGroup": "FG004",
+      "foodGroupName": "Legumes",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD015-chickpeas.md"
+    },
+    {
+      "id": "FD016",
+      "name": "Black Beans",
+      "scientificName": "Phaseolus vulgaris",
+      "slug": "black-beans",
+      "foodGroup": "FG004",
+      "foodGroupName": "Legumes",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD016-black-beans.md"
+    },
+    {
+      "id": "FD017",
+      "name": "Kidney Beans",
+      "scientificName": "Phaseolus vulgaris",
+      "slug": "kidney-beans",
+      "foodGroup": "FG004",
+      "foodGroupName": "Legumes",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD017-kidney-beans.md"
+    },
+    {
+      "id": "FD018",
       "name": "Walnuts",
+      "scientificName": "Juglans regia",
       "slug": "walnuts",
       "foodGroup": "FG005",
-      "status": "Planned"
+      "foodGroupName": "Nuts & Seeds",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD018-walnuts.md"
+    },
+    {
+      "id": "FD019",
+      "name": "Almonds",
+      "scientificName": "Prunus dulcis",
+      "slug": "almonds",
+      "foodGroup": "FG005",
+      "foodGroupName": "Nuts & Seeds",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD019-almonds.md"
+    },
+    {
+      "id": "FD020",
+      "name": "Pumpkin Seeds",
+      "scientificName": "Cucurbita pepo",
+      "slug": "pumpkin-seeds",
+      "foodGroup": "FG005",
+      "foodGroupName": "Nuts & Seeds",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD020-pumpkin-seeds.md"
+    },
+    {
+      "id": "FD021",
+      "name": "Chia Seeds",
+      "scientificName": "Salvia hispanica",
+      "slug": "chia-seeds",
+      "foodGroup": "FG005",
+      "foodGroupName": "Nuts & Seeds",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD021-chia-seeds.md"
+    },
+    {
+      "id": "FD022",
+      "name": "Flaxseed",
+      "scientificName": "Linum usitatissimum",
+      "slug": "flaxseed",
+      "foodGroup": "FG005",
+      "foodGroupName": "Nuts & Seeds",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD022-flaxseed.md"
+    },
+    {
+      "id": "FD023",
+      "name": "Brazil Nuts",
+      "scientificName": "Bertholletia excelsa",
+      "slug": "brazil-nuts",
+      "foodGroup": "FG005",
+      "foodGroupName": "Nuts & Seeds",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD023-brazil-nuts.md"
+    },
+    {
+      "id": "FD024",
+      "name": "Extra Virgin Olive Oil",
+      "scientificName": "Olea europaea",
+      "slug": "extra-virgin-olive-oil",
+      "foodGroup": "FG006",
+      "foodGroupName": "Whole Foods",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD024-extra-virgin-olive-oil.md"
+    },
+    {
+      "id": "FD025",
+      "name": "Garlic",
+      "scientificName": "Allium sativum",
+      "slug": "garlic",
+      "foodGroup": "FG006",
+      "foodGroupName": "Whole Foods",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD025-garlic.md"
+    },
+    {
+      "id": "FD026",
+      "name": "Onions",
+      "scientificName": "Allium cepa",
+      "slug": "onions",
+      "foodGroup": "FG006",
+      "foodGroupName": "Whole Foods",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD026-onions.md"
+    },
+    {
+      "id": "FD027",
+      "name": "Tomatoes",
+      "scientificName": "Solanum lycopersicum",
+      "slug": "tomatoes",
+      "foodGroup": "FG006",
+      "foodGroupName": "Whole Foods",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD027-tomatoes.md"
+    },
+    {
+      "id": "FD028",
+      "name": "Avocados",
+      "scientificName": "Persea americana",
+      "slug": "avocados",
+      "foodGroup": "FG006",
+      "foodGroupName": "Whole Foods",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD028-avocados.md"
+    },
+    {
+      "id": "FD029",
+      "name": "Mushrooms",
+      "scientificName": "Agaricus bisporus",
+      "slug": "mushrooms",
+      "foodGroup": "FG006",
+      "foodGroupName": "Whole Foods",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD029-mushrooms.md"
+    },
+    {
+      "id": "FD030",
+      "name": "Salmon",
+      "scientificName": "Salmo salar",
+      "slug": "salmon",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD030-salmon.md"
+    },
+    {
+      "id": "FD031",
+      "name": "Sardines",
+      "scientificName": null,
+      "slug": "sardines",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD031-sardines.md"
+    },
+    {
+      "id": "FD032",
+      "name": "Mackerel",
+      "scientificName": null,
+      "slug": "mackerel",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD032-mackerel.md"
+    },
+    {
+      "id": "FD033",
+      "name": "Herring",
+      "scientificName": null,
+      "slug": "herring",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD033-herring.md"
+    },
+    {
+      "id": "FD034",
+      "name": "Kefir",
+      "scientificName": null,
+      "slug": "kefir",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD034-kefir.md"
+    },
+    {
+      "id": "FD035",
+      "name": "Live Yoghurt",
+      "scientificName": null,
+      "slug": "live-yoghurt",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD035-live-yoghurt.md"
+    },
+    {
+      "id": "FD036",
+      "name": "Sauerkraut",
+      "scientificName": null,
+      "slug": "sauerkraut",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD036-sauerkraut.md"
+    },
+    {
+      "id": "FD037",
+      "name": "Kimchi",
+      "scientificName": null,
+      "slug": "kimchi",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD037-kimchi.md"
+    },
+    {
+      "id": "FD038",
+      "name": "Turmeric",
+      "scientificName": null,
+      "slug": "turmeric",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD038-turmeric.md"
+    },
+    {
+      "id": "FD039",
+      "name": "Ginger",
+      "scientificName": null,
+      "slug": "ginger",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD039-ginger.md"
+    },
+    {
+      "id": "FD040",
+      "name": "Cinnamon",
+      "scientificName": null,
+      "slug": "cinnamon",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD040-cinnamon.md"
+    },
+    {
+      "id": "FD041",
+      "name": "Rosemary",
+      "scientificName": null,
+      "slug": "rosemary",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD041-rosemary.md"
+    },
+    {
+      "id": "FD042",
+      "name": "Oregano",
+      "scientificName": null,
+      "slug": "oregano",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD042-oregano.md"
+    },
+    {
+      "id": "FD043",
+      "name": "Green Tea",
+      "scientificName": null,
+      "slug": "green-tea",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD043-green-tea.md"
+    },
+    {
+      "id": "FD044",
+      "name": "Black Tea",
+      "scientificName": null,
+      "slug": "black-tea",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD044-black-tea.md"
+    },
+    {
+      "id": "FD045",
+      "name": "Coffee",
+      "scientificName": null,
+      "slug": "coffee",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD045-coffee.md"
+    },
+    {
+      "id": "FD046",
+      "name": "Cocoa",
+      "scientificName": null,
+      "slug": "cocoa",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD046-cocoa.md"
     }
   ]
 }
