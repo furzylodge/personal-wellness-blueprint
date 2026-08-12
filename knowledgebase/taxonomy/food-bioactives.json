@@ -1,8 +1,8 @@
 {
-  "version": "1.2",
-  "generated": "2026-08-12T00:00:00+00:00",
+  "version": "1.4",
+  "generated": "2026-08-12",
   "source": "Derived from food-bioactives(8).json with the current canonical food and bioactive catalogues.",
-  "count": 82,
+  "count": 167,
   "relationships": [
     {
       "foodId": "FD001",
@@ -26,6 +26,31 @@
           "id": "PP012",
           "strength": 4,
           "confidence": 0.94
+        },
+        {
+          "id": "DF005",
+          "strength": 3,
+          "confidence": 0.85
+        },
+        {
+          "id": "DF007",
+          "strength": 3,
+          "confidence": 0.85
+        },
+        {
+          "id": "DF008",
+          "strength": 3,
+          "confidence": 0.85
+        },
+        {
+          "id": "PS002",
+          "strength": 4,
+          "confidence": 0.9
+        },
+        {
+          "id": "FC007",
+          "strength": 3,
+          "confidence": 0.85
         }
       ]
     },
@@ -116,6 +141,16 @@
           "id": "CA003",
           "strength": 4,
           "confidence": 0.94
+        },
+        {
+          "id": "DF007",
+          "strength": 3,
+          "confidence": 0.85
+        },
+        {
+          "id": "PP005",
+          "strength": 3,
+          "confidence": 0.85
         }
       ]
     },
@@ -136,6 +171,16 @@
           "id": "OS003",
           "strength": 4,
           "confidence": 0.94
+        },
+        {
+          "id": "DF007",
+          "strength": 3,
+          "confidence": 0.85
+        },
+        {
+          "id": "PP005",
+          "strength": 3,
+          "confidence": 0.85
         }
       ]
     },
@@ -146,6 +191,11 @@
           "id": "OS002",
           "strength": 4,
           "confidence": 0.94
+        },
+        {
+          "id": "DF007",
+          "strength": 3,
+          "confidence": 0.85
         }
       ]
     },
@@ -156,6 +206,11 @@
           "id": "CA004",
           "strength": 4,
           "confidence": 0.94
+        },
+        {
+          "id": "DF007",
+          "strength": 3,
+          "confidence": 0.85
         }
       ]
     },
@@ -171,6 +226,16 @@
           "id": "OS003",
           "strength": 4,
           "confidence": 0.94
+        },
+        {
+          "id": "DF007",
+          "strength": 3,
+          "confidence": 0.85
+        },
+        {
+          "id": "PP005",
+          "strength": 3,
+          "confidence": 0.85
         }
       ]
     },
@@ -181,6 +246,11 @@
           "id": "OS002",
           "strength": 5,
           "confidence": 0.99
+        },
+        {
+          "id": "DF007",
+          "strength": 3,
+          "confidence": 0.85
         }
       ]
     },
@@ -196,6 +266,11 @@
           "id": "OS003",
           "strength": 4,
           "confidence": 0.94
+        },
+        {
+          "id": "DF007",
+          "strength": 3,
+          "confidence": 0.85
         }
       ]
     },
@@ -206,6 +281,16 @@
           "id": "OS002",
           "strength": 5,
           "confidence": 0.99
+        },
+        {
+          "id": "DF007",
+          "strength": 3,
+          "confidence": 0.85
+        },
+        {
+          "id": "OS005",
+          "strength": 3,
+          "confidence": 0.85
         }
       ]
     },
@@ -226,6 +311,26 @@
           "id": "PP011",
           "strength": 4,
           "confidence": 0.94
+        },
+        {
+          "id": "DF007",
+          "strength": 3,
+          "confidence": 0.85
+        },
+        {
+          "id": "PP005",
+          "strength": 3,
+          "confidence": 0.85
+        },
+        {
+          "id": "PS002",
+          "strength": 4,
+          "confidence": 0.9
+        },
+        {
+          "id": "PS003",
+          "strength": 3,
+          "confidence": 0.85
         }
       ]
     },
@@ -241,6 +346,26 @@
           "id": "DF004",
           "strength": 5,
           "confidence": 0.99
+        },
+        {
+          "id": "DF007",
+          "strength": 3,
+          "confidence": 0.85
+        },
+        {
+          "id": "PP005",
+          "strength": 3,
+          "confidence": 0.85
+        },
+        {
+          "id": "PS002",
+          "strength": 4,
+          "confidence": 0.9
+        },
+        {
+          "id": "PS003",
+          "strength": 3,
+          "confidence": 0.85
         }
       ]
     },
@@ -256,6 +381,26 @@
           "id": "PP011",
           "strength": 4,
           "confidence": 0.94
+        },
+        {
+          "id": "DF007",
+          "strength": 3,
+          "confidence": 0.85
+        },
+        {
+          "id": "PP005",
+          "strength": 3,
+          "confidence": 0.85
+        },
+        {
+          "id": "PS002",
+          "strength": 4,
+          "confidence": 0.9
+        },
+        {
+          "id": "PS003",
+          "strength": 3,
+          "confidence": 0.85
         }
       ]
     },
@@ -271,6 +416,26 @@
           "id": "PP011",
           "strength": 4,
           "confidence": 0.94
+        },
+        {
+          "id": "DF007",
+          "strength": 3,
+          "confidence": 0.85
+        },
+        {
+          "id": "PP005",
+          "strength": 3,
+          "confidence": 0.85
+        },
+        {
+          "id": "PS002",
+          "strength": 4,
+          "confidence": 0.9
+        },
+        {
+          "id": "PS003",
+          "strength": 3,
+          "confidence": 0.85
         }
       ]
     },
@@ -291,6 +456,31 @@
           "id": "PS001",
           "strength": 4,
           "confidence": 0.94
+        },
+        {
+          "id": "DF008",
+          "strength": 3,
+          "confidence": 0.85
+        },
+        {
+          "id": "FA005",
+          "strength": 4,
+          "confidence": 0.9
+        },
+        {
+          "id": "PS002",
+          "strength": 4,
+          "confidence": 0.9
+        },
+        {
+          "id": "PS003",
+          "strength": 3,
+          "confidence": 0.85
+        },
+        {
+          "id": "FC007",
+          "strength": 3,
+          "confidence": 0.85
         }
       ]
     },
@@ -306,6 +496,26 @@
           "id": "PS001",
           "strength": 4,
           "confidence": 0.94
+        },
+        {
+          "id": "DF008",
+          "strength": 3,
+          "confidence": 0.85
+        },
+        {
+          "id": "FA005",
+          "strength": 4,
+          "confidence": 0.9
+        },
+        {
+          "id": "PS002",
+          "strength": 4,
+          "confidence": 0.9
+        },
+        {
+          "id": "PS003",
+          "strength": 3,
+          "confidence": 0.85
         }
       ]
     },
@@ -316,6 +526,26 @@
           "id": "PS001",
           "strength": 5,
           "confidence": 0.99
+        },
+        {
+          "id": "DF008",
+          "strength": 3,
+          "confidence": 0.85
+        },
+        {
+          "id": "FA005",
+          "strength": 4,
+          "confidence": 0.9
+        },
+        {
+          "id": "PS002",
+          "strength": 4,
+          "confidence": 0.9
+        },
+        {
+          "id": "PS003",
+          "strength": 3,
+          "confidence": 0.85
         }
       ]
     },
@@ -331,6 +561,26 @@
           "id": "FA001",
           "strength": 5,
           "confidence": 0.99
+        },
+        {
+          "id": "DF008",
+          "strength": 3,
+          "confidence": 0.85
+        },
+        {
+          "id": "FA005",
+          "strength": 4,
+          "confidence": 0.9
+        },
+        {
+          "id": "PS002",
+          "strength": 4,
+          "confidence": 0.9
+        },
+        {
+          "id": "PS003",
+          "strength": 3,
+          "confidence": 0.85
         }
       ]
     },
@@ -346,6 +596,26 @@
           "id": "FA001",
           "strength": 5,
           "confidence": 0.99
+        },
+        {
+          "id": "DF008",
+          "strength": 3,
+          "confidence": 0.85
+        },
+        {
+          "id": "FA005",
+          "strength": 4,
+          "confidence": 0.9
+        },
+        {
+          "id": "PS002",
+          "strength": 4,
+          "confidence": 0.9
+        },
+        {
+          "id": "PS003",
+          "strength": 3,
+          "confidence": 0.85
         }
       ]
     },
@@ -361,6 +631,21 @@
           "id": "PP015",
           "strength": 5,
           "confidence": 0.99
+        },
+        {
+          "id": "FA005",
+          "strength": 4,
+          "confidence": 0.9
+        },
+        {
+          "id": "PS002",
+          "strength": 4,
+          "confidence": 0.9
+        },
+        {
+          "id": "PS003",
+          "strength": 3,
+          "confidence": 0.85
         }
       ]
     },
@@ -371,6 +656,11 @@
           "id": "OS001",
           "strength": 5,
           "confidence": 0.99
+        },
+        {
+          "id": "OS004",
+          "strength": 3,
+          "confidence": 0.85
         }
       ]
     },
@@ -386,6 +676,11 @@
           "id": "PP002",
           "strength": 5,
           "confidence": 0.99
+        },
+        {
+          "id": "OS005",
+          "strength": 3,
+          "confidence": 0.85
         }
       ]
     },
@@ -431,6 +726,21 @@
           "id": "FA003",
           "strength": 4,
           "confidence": 0.94
+        },
+        {
+          "id": "CA006",
+          "strength": 3,
+          "confidence": 0.85
+        },
+        {
+          "id": "FC009",
+          "strength": 4,
+          "confidence": 0.9
+        },
+        {
+          "id": "FC010",
+          "strength": 4,
+          "confidence": 0.9
         }
       ]
     },
@@ -446,6 +756,16 @@
           "id": "FA003",
           "strength": 4,
           "confidence": 0.94
+        },
+        {
+          "id": "FC009",
+          "strength": 4,
+          "confidence": 0.9
+        },
+        {
+          "id": "FC010",
+          "strength": 4,
+          "confidence": 0.9
         }
       ]
     },
@@ -461,6 +781,16 @@
           "id": "FA003",
           "strength": 4,
           "confidence": 0.94
+        },
+        {
+          "id": "FC009",
+          "strength": 4,
+          "confidence": 0.9
+        },
+        {
+          "id": "FC010",
+          "strength": 4,
+          "confidence": 0.9
         }
       ]
     },
@@ -476,6 +806,16 @@
           "id": "FA003",
           "strength": 4,
           "confidence": 0.94
+        },
+        {
+          "id": "FC009",
+          "strength": 4,
+          "confidence": 0.9
+        },
+        {
+          "id": "FC010",
+          "strength": 4,
+          "confidence": 0.9
         }
       ]
     },
@@ -521,6 +861,11 @@
           "id": "PP001",
           "strength": 5,
           "confidence": 0.99
+        },
+        {
+          "id": "PP005",
+          "strength": 3,
+          "confidence": 0.85
         }
       ]
     },
@@ -531,6 +876,11 @@
           "id": "PP007",
           "strength": 5,
           "confidence": 0.99
+        },
+        {
+          "id": "PP005",
+          "strength": 3,
+          "confidence": 0.85
         }
       ]
     },
@@ -631,6 +981,126 @@
           "id": "FC019",
           "strength": 5,
           "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "foodId": "FD023",
+      "bioactives": [
+        {
+          "id": "DF008",
+          "strength": 3,
+          "confidence": 0.85
+        },
+        {
+          "id": "FA005",
+          "strength": 4,
+          "confidence": 0.9
+        },
+        {
+          "id": "PS002",
+          "strength": 4,
+          "confidence": 0.9
+        },
+        {
+          "id": "PS003",
+          "strength": 3,
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "foodId": "FD034",
+      "bioactives": [
+        {
+          "id": "FC009",
+          "strength": 4,
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "foodId": "FD035",
+      "bioactives": [
+        {
+          "id": "FC009",
+          "strength": 4,
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "foodId": "FD040",
+      "bioactives": [
+        {
+          "id": "FC006",
+          "strength": 3,
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "foodId": "FD053",
+      "bioactives": [
+        {
+          "id": "CA005",
+          "strength": 5,
+          "confidence": 0.97
+        }
+      ]
+    },
+    {
+      "foodId": "FD054",
+      "bioactives": [
+        {
+          "id": "PP010",
+          "strength": 4,
+          "confidence": 0.95
+        },
+        {
+          "id": "TP001",
+          "strength": 3,
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "foodId": "FD055",
+      "bioactives": [
+        {
+          "id": "FC002",
+          "strength": 5,
+          "confidence": 0.99
+        }
+      ]
+    },
+    {
+      "foodId": "FD056",
+      "bioactives": [
+        {
+          "id": "FC003",
+          "strength": 5,
+          "confidence": 0.99
+        }
+      ]
+    },
+    {
+      "foodId": "FD057",
+      "bioactives": [
+        {
+          "id": "PP013",
+          "strength": 5,
+          "confidence": 0.97
+        },
+        {
+          "id": "PP006",
+          "strength": 4,
+          "confidence": 0.95
+        },
+        {
+          "id": "PP001",
+          "strength": 3,
+          "confidence": 0.9
         }
       ]
     }

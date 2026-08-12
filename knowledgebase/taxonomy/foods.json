@@ -1,7 +1,7 @@
 {
-  "version": "2.1",
+  "version": "2.0",
   "generated": "2026-08-10T00:00:00+00:00",
-  "count": 52,
+  "count": 57,
   "foods": [
     {
       "id": "FD001",
@@ -574,6 +574,61 @@
       "evidence": "Moderate",
       "status": "Approved",
       "monograph": "FD052-rhodiola-root.md"
+    },
+    {
+      "id": "FD053",
+      "name": "Carrots",
+      "scientificName": "Daucus carota subsp. sativus",
+      "slug": "carrots",
+      "foodGroup": "FG002",
+      "foodGroupName": "Vegetables",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD053-carrots.md"
+    },
+    {
+      "id": "FD054",
+      "name": "Grapefruit",
+      "scientificName": "Citrus × paradisi",
+      "slug": "grapefruit",
+      "foodGroup": "FG003",
+      "foodGroupName": "Fruit",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD054-grapefruit.md"
+    },
+    {
+      "id": "FD055",
+      "name": "Black Pepper",
+      "scientificName": "Piper nigrum",
+      "slug": "black-pepper",
+      "foodGroup": "FG006",
+      "foodGroupName": "Herbs & Spices",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD055-black-pepper.md"
+    },
+    {
+      "id": "FD056",
+      "name": "Chilli Peppers",
+      "scientificName": "Capsicum annuum",
+      "slug": "chilli-peppers",
+      "foodGroup": "FG006",
+      "foodGroupName": "Herbs & Spices",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD056-chilli-peppers.md"
+    },
+    {
+      "id": "FD057",
+      "name": "Grapes",
+      "scientificName": "Vitis vinifera",
+      "slug": "grapes",
+      "foodGroup": "FG003",
+      "foodGroupName": "Fruit",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD057-grapes.md"
     }
   ]
 }

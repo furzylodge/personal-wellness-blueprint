@@ -1,5 +1,5 @@
 {
-  "version": "2.0",
+  "version": "1.4",
   "description": "Weighted relationships between foods and biological mechanisms.",
   "strengthScale": {
     "5": "Primary evidence-supported food for this mechanism",
@@ -8,7 +8,7 @@
     "2": "Minor contributor",
     "1": "Incidental contributor"
   },
-  "confidenceScale": "0.0-1.0 reflects confidence in the food\u2192mechanism relationship.",
+  "confidenceScale": "0.0-1.0 reflects confidence in the food→mechanism relationship.",
   "relationships": [
     {
       "foodId": "FD001",
@@ -989,6 +989,112 @@
           "confidence": 0.93
         }
       ]
+    },
+    {
+      "id": "FM000001",
+      "foodId": "FD053",
+      "mechanisms": [
+        {
+          "id": "MEC020",
+          "strength": 3,
+          "confidence": 0.85
+        },
+        {
+          "id": "MEC021",
+          "strength": 3,
+          "confidence": 0.85
+        },
+        {
+          "id": "MEC052",
+          "strength": 3,
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "id": "FM000002",
+      "foodId": "FD054",
+      "mechanisms": [
+        {
+          "id": "MEC020",
+          "strength": 3,
+          "confidence": 0.85
+        },
+        {
+          "id": "MEC021",
+          "strength": 3,
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "id": "FM000003",
+      "foodId": "FD055",
+      "mechanisms": [
+        {
+          "id": "MEC020",
+          "strength": 3,
+          "confidence": 0.85
+        },
+        {
+          "id": "MEC021",
+          "strength": 3,
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "id": "FM000004",
+      "foodId": "FD056",
+      "mechanisms": [
+        {
+          "id": "MEC020",
+          "strength": 3,
+          "confidence": 0.85
+        },
+        {
+          "id": "MEC021",
+          "strength": 3,
+          "confidence": 0.85
+        },
+        {
+          "id": "MEC043",
+          "strength": 3,
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "id": "FM000005",
+      "foodId": "FD057",
+      "mechanisms": [
+        {
+          "id": "MEC010",
+          "strength": 3,
+          "confidence": 0.85
+        },
+        {
+          "id": "MEC018",
+          "strength": 3,
+          "confidence": 0.85
+        },
+        {
+          "id": "MEC020",
+          "strength": 3,
+          "confidence": 0.85
+        },
+        {
+          "id": "MEC021",
+          "strength": 3,
+          "confidence": 0.85
+        },
+        {
+          "id": "MEC060",
+          "strength": 3,
+          "confidence": 0.85
+        }
+      ]
     }
-  ]
+  ],
+  "count": 165
 }
