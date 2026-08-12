@@ -2,7 +2,7 @@
   "schema": "bioactive-mechanisms-schema.json",
   "version": "1.0",
   "generated": "2026-08-12T15:00:00+01:00",
-  "count": 356,
+  "count": 360,
   "relationships": [
     {
       "id": "BM000001",
@@ -3916,6 +3916,50 @@
       "strength": 4,
       "confidence": "Moderate",
       "notes": "Antioxidant and cellular stress-response activity supports cellular protection.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000357",
+      "bioactive": "FC020",
+      "mechanism": "MEC011",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Dietary nitrate is converted through the nitrate-nitrite-nitric oxide pathway and increases nitric oxide availability.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000358",
+      "bioactive": "FC020",
+      "mechanism": "MEC010",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Nitrate-derived nitric oxide supports normal endothelial function.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000359",
+      "bioactive": "FC020",
+      "mechanism": "MEC018",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Improved nitric oxide availability supports vasodilation and healthy blood flow.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000360",
+      "bioactive": "FC020",
+      "mechanism": "MEC013",
+      "strength": 4,
+      "confidence": "High",
+      "notes": "Nitrate-derived nitric oxide can contribute to normal vascular tone and blood-pressure regulation.",
       "references": [
         "Scientific Literature"
       ]

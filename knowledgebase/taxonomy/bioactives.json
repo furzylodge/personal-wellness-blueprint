@@ -1,7 +1,7 @@
 {
-  "version": "2.1",
+  "version": "2.2",
   "generated": "2026-08-05T15:26:45+00:00",
-  "count": 69,
+  "count": 70,
   "bioactives": [
     {
       "id": "DF001",
@@ -1697,6 +1697,35 @@
         "rhodiola",
         "rhodioloside",
         "tyrosol"
+      ]
+    },
+    {
+      "id": "FC020",
+      "name": "Dietary Nitrate",
+      "canonicalName": "dietary nitrate",
+      "aliases": [
+        "Nitrate",
+        "Nitrate (NO3-)"
+      ],
+      "category": "Functional Compounds",
+      "subcategory": "Nitrogen Compounds",
+      "plainEnglish": "A naturally occurring dietary nitrate that can contribute to nitric oxide production and healthy vascular function.",
+      "primaryAction": "Supports nitric oxide availability, endothelial function and healthy blood flow.",
+      "description": "Dietary nitrate is naturally concentrated in vegetables such as beetroot and leafy greens. Oral nitrate can be reduced to nitrite and subsequently contribute to nitric oxide availability, supporting normal endothelial function and healthy blood flow.",
+      "scientificSummary": "Inorganic nitrate (NO3-) that participates in the enterosalivary nitrate-nitrite-nitric oxide pathway, providing a non-enzymatic route to nitric oxide bioavailability and influencing vascular tone.",
+      "evidence": "High",
+      "clinicalImportance": 5,
+      "maturity": "Established",
+      "status": "Active",
+      "keywords": [
+        "dietary nitrate",
+        "nitrate",
+        "beetroot",
+        "leafy greens",
+        "nitrite",
+        "nitric oxide",
+        "vascular",
+        "blood flow"
       ]
     }
   ]
