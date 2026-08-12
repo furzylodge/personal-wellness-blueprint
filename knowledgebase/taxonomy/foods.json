@@ -1,7 +1,7 @@
 {
-  "version": "2.0",
+  "version": "2.1",
   "generated": "2026-08-10T00:00:00+00:00",
-  "count": 46,
+  "count": 52,
   "foods": [
     {
       "id": "FD001",
@@ -508,6 +508,72 @@
       "monograph": "FD046-cocoa.md",
       "foodGroup": "FG015",
       "foodGroupName": "Beverages"
+    },
+    {
+      "id": "FD047",
+      "name": "Olives",
+      "scientificName": "Olea europaea",
+      "slug": "olives",
+      "foodGroup": "FG009",
+      "foodGroupName": "Fruits",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD047-olives.md"
+    },
+    {
+      "id": "FD048",
+      "name": "Chicory Root",
+      "scientificName": "Cichorium intybus",
+      "slug": "chicory-root",
+      "foodGroup": "FG002",
+      "foodGroupName": "Vegetables",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD048-chicory-root.md"
+    },
+    {
+      "id": "FD049",
+      "name": "Spirulina",
+      "scientificName": "Arthrospira platensis",
+      "slug": "spirulina",
+      "foodGroup": "FG012",
+      "foodGroupName": "Other",
+      "evidence": "Moderate",
+      "status": "Approved",
+      "monograph": "FD049-spirulina.md"
+    },
+    {
+      "id": "FD050",
+      "name": "Beetroot",
+      "scientificName": "Beta vulgaris",
+      "slug": "beetroot",
+      "foodGroup": "FG002",
+      "foodGroupName": "Vegetables",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD050-beetroot.md"
+    },
+    {
+      "id": "FD051",
+      "name": "Schisandra",
+      "scientificName": "Schisandra chinensis",
+      "slug": "schisandra",
+      "foodGroup": "FG006",
+      "foodGroupName": "Herbs & Spices",
+      "evidence": "Moderate",
+      "status": "Approved",
+      "monograph": "FD051-schisandra.md"
+    },
+    {
+      "id": "FD052",
+      "name": "Rhodiola Root",
+      "scientificName": "Rhodiola rosea",
+      "slug": "rhodiola-root",
+      "foodGroup": "FG006",
+      "foodGroupName": "Herbs & Spices",
+      "evidence": "Moderate",
+      "status": "Approved",
+      "monograph": "FD052-rhodiola-root.md"
     }
   ]
 }

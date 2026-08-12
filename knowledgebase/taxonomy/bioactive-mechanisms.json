@@ -1,8 +1,8 @@
 {
   "schema": "bioactive-mechanisms-schema.json",
   "version": "1.0",
-  "generated": "2026-08-10T09:36:00+01:00",
-  "count": 297,
+  "generated": "2026-08-12T15:00:00+01:00",
+  "count": 356,
   "relationships": [
     {
       "id": "BM000001",
@@ -3267,6 +3267,655 @@
       "strength": 3,
       "confidence": "Moderate",
       "notes": "Healthy cell membrane structure is an explicit biological role.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000298",
+      "bioactive": "DF011",
+      "mechanism": "MEC002",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Supports healthy cholesterol metabolism through the established effects of viscous soluble fibre.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000299",
+      "bioactive": "DF011",
+      "mechanism": "MEC006",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Viscous soluble fibre is associated with reduced LDL cholesterol.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000300",
+      "bioactive": "DF011",
+      "mechanism": "MEC032",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Gel formation and fibre fermentation can support intestinal barrier function.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000301",
+      "bioactive": "DF011",
+      "mechanism": "MEC033",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Primary physiological effect of psyllium is improved bowel regularity.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000302",
+      "bioactive": "DF011",
+      "mechanism": "MEC037",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "The viscous gel influences intestinal transit and nutrient absorption.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000303",
+      "bioactive": "DF011",
+      "mechanism": "MEC040",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Viscosity can slow glucose absorption in the intestine.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000304",
+      "bioactive": "DF011",
+      "mechanism": "MEC042",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Reduced glucose absorption can reduce the post-meal glucose response.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000305",
+      "bioactive": "DF011",
+      "mechanism": "MEC043",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Viscous fibre contributes to satiety.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000306",
+      "bioactive": "DF012",
+      "mechanism": "MEC030",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Resistant dextrin reaches the colon and supports beneficial microbial fermentation.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000307",
+      "bioactive": "DF012",
+      "mechanism": "MEC031",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Colonic fermentation produces beneficial microbial metabolites including SCFAs.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000308",
+      "bioactive": "DF012",
+      "mechanism": "MEC032",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Microbial fermentation may contribute to intestinal barrier support.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000309",
+      "bioactive": "DF012",
+      "mechanism": "MEC035",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Fermentation supports a diverse and active gut microbiome.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000310",
+      "bioactive": "DF012",
+      "mechanism": "MEC036",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Fermentation can contribute to a healthy colonic pH.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000311",
+      "bioactive": "PP013",
+      "mechanism": "MEC020",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Antioxidant activity supports reduction of oxidative stress.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000312",
+      "bioactive": "PP013",
+      "mechanism": "MEC021",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Flavan-3-ol oligomers and polymers have free-radical-scavenging activity.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000313",
+      "bioactive": "PP013",
+      "mechanism": "MEC010",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Proanthocyanidins are associated with healthy endothelial function.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000314",
+      "bioactive": "PP013",
+      "mechanism": "MEC011",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Vascular activity includes effects on nitric oxide bioavailability.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000315",
+      "bioactive": "PP013",
+      "mechanism": "MEC018",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Vascular effects support healthy blood flow.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000316",
+      "bioactive": "PP013",
+      "mechanism": "MEC060",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Polyphenol signalling can support healthy inflammatory balance.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000317",
+      "bioactive": "PP014",
+      "mechanism": "MEC020",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Oleuropein contributes to antioxidant protection.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000318",
+      "bioactive": "PP014",
+      "mechanism": "MEC021",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Oleuropein and its phenolic metabolites have radical-scavenging activity.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000319",
+      "bioactive": "PP014",
+      "mechanism": "MEC010",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "The canonical description identifies cardiovascular and vascular support.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000320",
+      "bioactive": "PP014",
+      "mechanism": "MEC018",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Cardiovascular support is consistent with healthy blood flow.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000321",
+      "bioactive": "PP014",
+      "mechanism": "MEC060",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Olive phenolics can support healthy inflammatory balance.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000322",
+      "bioactive": "PP015",
+      "mechanism": "MEC020",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Hydroxytyrosol has strong radical-scavenging activity and supports antioxidant protection.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000323",
+      "bioactive": "PP015",
+      "mechanism": "MEC021",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Strong radical-scavenging activity is a defining property.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000324",
+      "bioactive": "PP015",
+      "mechanism": "MEC010",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Hydroxytyrosol is associated with healthy cardiovascular and endothelial function.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000325",
+      "bioactive": "PP015",
+      "mechanism": "MEC018",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Cardiovascular support includes healthy blood flow.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000326",
+      "bioactive": "PP015",
+      "mechanism": "MEC060",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Olive phenolics can support healthy inflammatory balance.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000327",
+      "bioactive": "FC011",
+      "mechanism": "MEC011",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "L-arginine is a direct substrate for nitric oxide synthases.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000328",
+      "bioactive": "FC011",
+      "mechanism": "MEC010",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Nitric oxide availability supports endothelial function.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000329",
+      "bioactive": "FC011",
+      "mechanism": "MEC018",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Nitric oxide-mediated vascular effects support healthy blood flow.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000330",
+      "bioactive": "FC012",
+      "mechanism": "MEC011",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "L-citrulline is converted through the citrulline-arginine cycle and supports nitric oxide production.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000331",
+      "bioactive": "FC012",
+      "mechanism": "MEC010",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Improved nitric oxide availability supports endothelial function.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000332",
+      "bioactive": "FC012",
+      "mechanism": "MEC018",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "The nitric oxide pathway supports healthy blood flow.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000333",
+      "bioactive": "FC013",
+      "mechanism": "MEC032",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "L-glutamine contributes to intestinal cellular function and gut barrier support.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000334",
+      "bioactive": "FC013",
+      "mechanism": "MEC038",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "L-glutamine is an important metabolic substrate for intestinal cells and supports mucosal health.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000335",
+      "bioactive": "FC013",
+      "mechanism": "MEC037",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Intestinal cellular function contributes to normal nutrient handling.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000336",
+      "bioactive": "FC013",
+      "mechanism": "MEC072",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "L-glutamine contributes to glutathione synthesis.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000337",
+      "bioactive": "FC013",
+      "mechanism": "MEC102",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "L-glutamine is a metabolic substrate involved in cellular energy metabolism.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000338",
+      "bioactive": "FC014",
+      "mechanism": "MEC102",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "D-ribose forms the ribose backbone of nucleotides and participates in cellular energy metabolism.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000339",
+      "bioactive": "FC015",
+      "mechanism": "MEC020",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Supports antioxidant protection and reduction of oxidative stress; supported by phycocyanin/phycocyanobilin literature.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000340",
+      "bioactive": "FC015",
+      "mechanism": "MEC060",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Preclinical literature reports anti-inflammatory activity through modulation of inflammatory signalling.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000341",
+      "bioactive": "FC015",
+      "mechanism": "MEC071",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Literature identifies NRF2/HO-1 signalling as an important antioxidant and cytoprotective pathway.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000342",
+      "bioactive": "FC015",
+      "mechanism": "MEC023",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Antioxidant activity is associated with protection of cellular structures from oxidative damage.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000343",
+      "bioactive": "FC016",
+      "mechanism": "MEC020",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Antioxidant activity and enhancement of endogenous antioxidant responses are consistently described.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000344",
+      "bioactive": "FC016",
+      "mechanism": "MEC060",
+      "strength": 4,
+      "confidence": "High",
+      "notes": "Evidence supports modulation of NF-kB and inflammatory mediators including TNF-alpha, IL-6, COX-2 and iNOS.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000345",
+      "bioactive": "FC016",
+      "mechanism": "MEC071",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Reviews describe modulation of Nrf2-related antioxidant responses.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000346",
+      "bioactive": "FC016",
+      "mechanism": "MEC023",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Reduction of oxidative stress provides a plausible cellular-protective effect.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000347",
+      "bioactive": "FC017",
+      "mechanism": "MEC020",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Schisandrin is reported to activate NRF2/HO-1 antioxidant defence and reduce oxidative stress.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000348",
+      "bioactive": "FC017",
+      "mechanism": "MEC060",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Schisandrin suppresses NF-kB/MAPK and other pro-inflammatory signalling pathways.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000349",
+      "bioactive": "FC017",
+      "mechanism": "MEC071",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "NRF2 activation is directly reported in the literature and contributes to the antioxidant response.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000350",
+      "bioactive": "FC017",
+      "mechanism": "MEC023",
+      "strength": 4,
+      "confidence": "High",
+      "notes": "Antioxidant and stress-response activity supports protection of cellular structures.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000351",
+      "bioactive": "FC018",
+      "mechanism": "MEC020",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Rosavins are characteristic Rhodiola constituents associated with antioxidant and cellular stress-response activity.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000352",
+      "bioactive": "FC018",
+      "mechanism": "MEC023",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "The repository describes rosavins in terms of cellular resilience; the mapping is therefore kept conservative.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000353",
+      "bioactive": "FC019",
+      "mechanism": "MEC020",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Salidroside is associated with antioxidant defence and cellular stress-response signalling.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000354",
+      "bioactive": "FC019",
+      "mechanism": "MEC060",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Preclinical literature reports anti-inflammatory effects through modulation of inflammatory signalling.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000355",
+      "bioactive": "FC019",
+      "mechanism": "MEC071",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "NRF2-related antioxidant signalling is reported for salidroside.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000356",
+      "bioactive": "FC019",
+      "mechanism": "MEC023",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Antioxidant and cellular stress-response activity supports cellular protection.",
       "references": [
         "Scientific Literature"
       ]

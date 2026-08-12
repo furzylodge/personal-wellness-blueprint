@@ -1,5 +1,5 @@
 {
-  "version": "2.0",
+  "version": "2.1",
   "description": "Mechanisms aligned to the nine Personal Wellness Blueprint body systems",
   "mechanisms": [
     {
@@ -1822,6 +1822,130 @@
       ],
       "primaryBodySystemNames": [
         "Structural"
+      ]
+    },
+    {
+      "id": "MEC100",
+      "name": "Supports Neurotrophic Signalling",
+      "category": "Brain Function",
+      "description": "Supports neurotrophic signalling pathways involved in neuronal maintenance, adaptation and plasticity.",
+      "plainEnglish": "Supports Neurotrophic Signalling.",
+      "evidence": "Moderate",
+      "primaryBodySystems": [
+        "BS004"
+      ],
+      "bioactiveCompounds": [],
+      "keywords": [
+        "supports neurotrophic signalling",
+        "neurotrophic signalling",
+        "BDNF"
+      ]
+    },
+    {
+      "id": "MEC101",
+      "name": "Supports Blood-Brain Barrier Integrity",
+      "category": "Brain Function",
+      "description": "Supports the integrity and protective function of the blood-brain barrier, helping maintain controlled exchange between the circulation and nervous tissue.",
+      "plainEnglish": "Supports Blood-Brain Barrier Integrity.",
+      "evidence": "Moderate",
+      "primaryBodySystems": [
+        "BS004"
+      ],
+      "bioactiveCompounds": [],
+      "keywords": [
+        "supports blood-brain barrier integrity",
+        "blood-brain barrier",
+        "BBB"
+      ]
+    },
+    {
+      "id": "MEC102",
+      "name": "Supports Cellular Energy Metabolism",
+      "category": "Energy Metabolism",
+      "description": "Supports cellular processes involved in energy production and utilisation, including mitochondrial activity and ATP generation. This is a cross-system mechanism that may apply to multiple body systems where evidence supports a role for cellular energy metabolism.",
+      "plainEnglish": "Supports Cellular Energy Metabolism.",
+      "evidence": "Moderate",
+      "primaryBodySystems": [
+        "BS004",
+        "BS008",
+        "BS009"
+      ],
+      "bioactiveCompounds": [],
+      "keywords": [
+        "supports cellular energy metabolism",
+        "energy metabolism",
+        "ATP",
+        "mitochondrial activity",
+        "cellular energy"
+      ]
+    },
+    {
+      "id": "MEC103",
+      "name": "Supports Healthy Airway Inflammatory Balance",
+      "category": "Respiratory Function",
+      "description": "Supports healthy regulation of inflammatory activity within the airways and respiratory tissues.",
+      "plainEnglish": "Supports Healthy Airway Inflammatory Balance.",
+      "evidence": "Moderate",
+      "primaryBodySystems": [
+        "BS006"
+      ],
+      "bioactiveCompounds": [],
+      "keywords": [
+        "supports healthy airway inflammatory balance",
+        "airway inflammation",
+        "respiratory inflammation"
+      ]
+    },
+    {
+      "id": "MEC104",
+      "name": "Supports Healthy Airway Reactivity",
+      "category": "Respiratory Function",
+      "description": "Supports healthy regulation of airway responsiveness, including physiological control of bronchial reactivity.",
+      "plainEnglish": "Supports Healthy Airway Reactivity.",
+      "evidence": "Moderate",
+      "primaryBodySystems": [
+        "BS006"
+      ],
+      "bioactiveCompounds": [],
+      "keywords": [
+        "supports healthy airway reactivity",
+        "airway reactivity",
+        "bronchial reactivity",
+        "airway responsiveness"
+      ]
+    },
+    {
+      "id": "MEC105",
+      "name": "Supports Airway Barrier Integrity",
+      "category": "Respiratory Function",
+      "description": "Supports the integrity and protective function of the respiratory epithelial barrier.",
+      "plainEnglish": "Supports Airway Barrier Integrity.",
+      "evidence": "Moderate",
+      "primaryBodySystems": [
+        "BS006"
+      ],
+      "bioactiveCompounds": [],
+      "keywords": [
+        "supports airway barrier integrity",
+        "airway barrier",
+        "respiratory epithelial barrier"
+      ]
+    },
+    {
+      "id": "MEC106",
+      "name": "Supports Renal Cellular Protection",
+      "category": "Renal Function",
+      "description": "Supports protection of renal cells and tissues against cellular stress, including oxidative, inflammatory and metabolic stress.",
+      "plainEnglish": "Supports Renal Cellular Protection.",
+      "evidence": "Moderate",
+      "primaryBodySystems": [
+        "BS007"
+      ],
+      "bioactiveCompounds": [],
+      "keywords": [
+        "supports renal cellular protection",
+        "renal protection",
+        "kidney cellular protection"
       ]
     }
   ]

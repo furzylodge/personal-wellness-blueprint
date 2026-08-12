@@ -1,8 +1,8 @@
 {
-  "version": "1.0",
-  "generated": "2026-08-10T00:00:00+00:00",
-  "source": "Derived from food-bioactives(5).json using the current canonical 55-entry bioactives catalogue.",
-  "count": 71,
+  "version": "1.1",
+  "generated": "2026-08-12T00:00:00+00:00",
+  "source": "Derived from food-bioactives(8).json with the current canonical food and bioactive catalogues.",
+  "count": 81,
   "relationships": [
     {
       "foodId": "FD001",
@@ -356,6 +356,11 @@
           "id": "FA004",
           "strength": 3,
           "confidence": 0.87
+        },
+        {
+          "id": "PP015",
+          "strength": 5,
+          "confidence": 0.99
         }
       ]
     },
@@ -546,6 +551,81 @@
           "id": "FC001",
           "strength": 4,
           "confidence": 0.94
+        }
+      ]
+    },
+    {
+      "foodId": "FD047",
+      "bioactives": [
+        {
+          "id": "PP014",
+          "strength": 5,
+          "confidence": 0.95
+        },
+        {
+          "id": "PP015",
+          "strength": 5,
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "foodId": "FD048",
+      "bioactives": [
+        {
+          "id": "DF003",
+          "strength": 5,
+          "confidence": 0.99
+        }
+      ]
+    },
+    {
+      "foodId": "FD049",
+      "bioactives": [
+        {
+          "id": "FC015",
+          "strength": 5,
+          "confidence": 0.95
+        },
+        {
+          "id": "CA004",
+          "strength": 3,
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "foodId": "FD050",
+      "bioactives": [
+        {
+          "id": "FC016",
+          "strength": 5,
+          "confidence": 0.99
+        }
+      ]
+    },
+    {
+      "foodId": "FD051",
+      "bioactives": [
+        {
+          "id": "FC017",
+          "strength": 5,
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "foodId": "FD052",
+      "bioactives": [
+        {
+          "id": "FC018",
+          "strength": 5,
+          "confidence": 0.95
+        },
+        {
+          "id": "FC019",
+          "strength": 5,
+          "confidence": 0.95
         }
       ]
     }
