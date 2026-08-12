@@ -1,7 +1,7 @@
 {
-  "version": "1.0",
+  "version": "1.1",
   "description": "Proposed product-to-canonical-bioactive relationships for the current PWB product set. Status distinguishes direct formulation evidence from product-specific confirmation and source-defined constituents.",
-  "count": 30,
+  "count": 46,
   "products": [
     {
       "id": "PRD001",
@@ -188,6 +188,122 @@
           "status": "SOURCE_DEFINED"
         }
       ]
+    },
+    {
+      "id": "PRD012",
+      "name": "Synergy Collagen+",
+      "bioactives": [
+        {
+          "id": "FC022",
+          "status": "DIRECT"
+        },
+        {
+          "id": "FC023",
+          "status": "DIRECT"
+        }
+      ]
+    },
+    {
+      "id": "PRD013",
+      "name": "Synergy Collagen+ Beauty",
+      "bioactives": [
+        {
+          "id": "FC022",
+          "status": "DIRECT"
+        },
+        {
+          "id": "FC023",
+          "status": "DIRECT"
+        },
+        {
+          "id": "PP006",
+          "status": "DIRECT"
+        }
+      ]
+    },
+    {
+      "id": "PRD014",
+      "name": "Synergy FL-3X",
+      "bioactives": [
+        {
+          "id": "FC024",
+          "status": "DIRECT"
+        },
+        {
+          "id": "FC025",
+          "status": "DIRECT"
+        },
+        {
+          "id": "FC026",
+          "status": "DIRECT"
+        }
+      ]
+    },
+    {
+      "id": "PRD015",
+      "name": "Synergy Vitamin D3",
+      "bioactives": []
+    },
+    {
+      "id": "PRD016",
+      "name": "Synergy Omega-3",
+      "bioactives": [
+        {
+          "id": "FA002",
+          "status": "DIRECT"
+        },
+        {
+          "id": "FA003",
+          "status": "DIRECT"
+        }
+      ]
+    },
+    {
+      "id": "PRD017",
+      "name": "Synergy CoQ10",
+      "bioactives": [
+        {
+          "id": "FC008",
+          "status": "DIRECT"
+        }
+      ]
+    },
+    {
+      "id": "PRD018",
+      "name": "Synergy Liver Health",
+      "bioactives": [
+        {
+          "id": "FC001",
+          "status": "SOURCE_DEFINED"
+        },
+        {
+          "id": "FC015",
+          "status": "SOURCE_DEFINED"
+        }
+      ]
+    },
+    {
+      "id": "PRD019",
+      "name": "Synergy Zinc Protect",
+      "bioactives": [
+        {
+          "id": "TP001",
+          "status": "SOURCE_DEFINED"
+        },
+        {
+          "id": "TP003",
+          "status": "SOURCE_DEFINED"
+        },
+        {
+          "id": "TP004",
+          "status": "SOURCE_DEFINED"
+        }
+      ]
+    },
+    {
+      "id": "PRD020",
+      "name": "Synergy SleepWell",
+      "bioactives": []
     }
   ]
 }

@@ -1,0 +1,3401 @@
+{
+  "version": "1.1",
+  "description": "Derived product-to-mechanism relationships from the current product-bioactives and canonical bioactive-mechanisms files. Vitamin/mineral relationships remain in the separate nutrient layer.",
+  "productCount": 20,
+  "productMechanismRelationshipCount": 154,
+  "unmappedProductBioactives": [],
+  "products": [
+    {
+      "productId": "PRD001",
+      "productName": "Synergy ProArgi-9+",
+      "mechanismCount": 9,
+      "mechanisms": [
+        {
+          "id": "MEC010",
+          "name": "Supports Endothelial Function",
+          "primaryBodySystems": [
+            "BS003"
+          ],
+          "primaryBodySystemNames": [
+            "Circulatory"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FC011",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "Moderate"
+            },
+            {
+              "bioactiveId": "FC012",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC011",
+          "name": "Supports Nitric Oxide Production",
+          "primaryBodySystems": [
+            "BS003"
+          ],
+          "primaryBodySystemNames": [
+            "Circulatory"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FC011",
+              "bioactiveStatus": "DIRECT",
+              "strength": 5,
+              "confidence": "High"
+            },
+            {
+              "bioactiveId": "FC012",
+              "bioactiveStatus": "DIRECT",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC018",
+          "name": "Supports Healthy Blood Flow",
+          "primaryBodySystems": [
+            "BS003"
+          ],
+          "primaryBodySystemNames": [
+            "Circulatory"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FC011",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "Moderate"
+            },
+            {
+              "bioactiveId": "FC012",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC030",
+          "name": "Feeds Beneficial Gut Bacteria",
+          "primaryBodySystems": [
+            "BS001",
+            "BS002"
+          ],
+          "primaryBodySystemNames": [
+            "Digestive",
+            "Intestinal"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "PP006",
+              "bioactiveStatus": "CONFIRMED_PRODUCT_SPECIFIC",
+              "strength": 2,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC035",
+          "name": "Supports Microbiome Diversity",
+          "primaryBodySystems": [
+            "BS001",
+            "BS002"
+          ],
+          "primaryBodySystemNames": [
+            "Digestive",
+            "Intestinal"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "PP006",
+              "bioactiveStatus": "CONFIRMED_PRODUCT_SPECIFIC",
+              "strength": 2,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC040",
+          "name": "Slows Glucose Absorption",
+          "primaryBodySystems": [
+            "BS008"
+          ],
+          "primaryBodySystemNames": [
+            "Glandular"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "PP006",
+              "bioactiveStatus": "CONFIRMED_PRODUCT_SPECIFIC",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC041",
+          "name": "Improves Insulin Sensitivity",
+          "primaryBodySystems": [
+            "BS008"
+          ],
+          "primaryBodySystemNames": [
+            "Glandular"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "PP006",
+              "bioactiveStatus": "CONFIRMED_PRODUCT_SPECIFIC",
+              "strength": 4,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC044",
+          "name": "Supports Healthy Energy Regulation",
+          "primaryBodySystems": [
+            "BS008"
+          ],
+          "primaryBodySystemNames": [
+            "Glandular"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "PP006",
+              "bioactiveStatus": "CONFIRMED_PRODUCT_SPECIFIC",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC102",
+          "name": "Supports Cellular Energy Metabolism",
+          "primaryBodySystems": [
+            "BS004",
+            "BS008",
+            "BS009"
+          ],
+          "primaryBodySystemNames": [],
+          "contributors": [
+            {
+              "bioactiveId": "FC014",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "Moderate"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "productId": "PRD002",
+      "productName": "Synergy e9",
+      "mechanismCount": 3,
+      "mechanisms": [
+        {
+          "id": "MEC010",
+          "name": "Supports Endothelial Function",
+          "primaryBodySystems": [
+            "BS003"
+          ],
+          "primaryBodySystemNames": [
+            "Circulatory"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FC011",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC011",
+          "name": "Supports Nitric Oxide Production",
+          "primaryBodySystems": [
+            "BS003"
+          ],
+          "primaryBodySystemNames": [
+            "Circulatory"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FC011",
+              "bioactiveStatus": "DIRECT",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC018",
+          "name": "Supports Healthy Blood Flow",
+          "primaryBodySystems": [
+            "BS003"
+          ],
+          "primaryBodySystemNames": [
+            "Circulatory"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FC011",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "Moderate"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "productId": "PRD003",
+      "productName": "Synergy Immune Booster",
+      "mechanismCount": 11,
+      "mechanisms": [
+        {
+          "id": "MEC001",
+          "name": "Bile Acid Binding",
+          "primaryBodySystems": [
+            "BS003"
+          ],
+          "primaryBodySystemNames": [
+            "Circulatory"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "DF001",
+              "bioactiveStatus": "DIRECT",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC002",
+          "name": "Supports Healthy Cholesterol Metabolism",
+          "primaryBodySystems": [
+            "BS003"
+          ],
+          "primaryBodySystemNames": [
+            "Circulatory"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "DF001",
+              "bioactiveStatus": "DIRECT",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC006",
+          "name": "Supports LDL Reduction",
+          "primaryBodySystems": [
+            "BS003"
+          ],
+          "primaryBodySystemNames": [
+            "Circulatory"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "DF001",
+              "bioactiveStatus": "DIRECT",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC030",
+          "name": "Feeds Beneficial Gut Bacteria",
+          "primaryBodySystems": [
+            "BS001",
+            "BS002"
+          ],
+          "primaryBodySystemNames": [
+            "Digestive",
+            "Intestinal"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "DF001",
+              "bioactiveStatus": "DIRECT",
+              "strength": 5,
+              "confidence": "High"
+            },
+            {
+              "bioactiveId": "DF009",
+              "bioactiveStatus": "DIRECT",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC031",
+          "name": "Increases Short-Chain Fatty Acid Production",
+          "primaryBodySystems": [
+            "BS001",
+            "BS002"
+          ],
+          "primaryBodySystemNames": [
+            "Digestive",
+            "Intestinal"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "DF001",
+              "bioactiveStatus": "DIRECT",
+              "strength": 5,
+              "confidence": "High"
+            },
+            {
+              "bioactiveId": "DF009",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC032",
+          "name": "Supports Gut Barrier Integrity",
+          "primaryBodySystems": [
+            "BS001",
+            "BS002"
+          ],
+          "primaryBodySystemNames": [
+            "Digestive",
+            "Intestinal"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "DF001",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "Moderate"
+            },
+            {
+              "bioactiveId": "DF009",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC033",
+          "name": "Improves Bowel Regularity",
+          "primaryBodySystems": [
+            "BS001",
+            "BS002"
+          ],
+          "primaryBodySystemNames": [
+            "Digestive",
+            "Intestinal"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "DF001",
+              "bioactiveStatus": "DIRECT",
+              "strength": 5,
+              "confidence": "High"
+            },
+            {
+              "bioactiveId": "DF009",
+              "bioactiveStatus": "DIRECT",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC036",
+          "name": "Supports Healthy Gut pH",
+          "primaryBodySystems": [
+            "BS001",
+            "BS002"
+          ],
+          "primaryBodySystemNames": [
+            "Digestive",
+            "Intestinal"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "DF001",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC037",
+          "name": "Supports Nutrient Absorption",
+          "primaryBodySystems": [
+            "BS001",
+            "BS002"
+          ],
+          "primaryBodySystemNames": [
+            "Digestive",
+            "Intestinal"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "DF001",
+              "bioactiveStatus": "DIRECT",
+              "strength": 3,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC038",
+          "name": "Supports Mucosal Health",
+          "primaryBodySystems": [
+            "BS001",
+            "BS002"
+          ],
+          "primaryBodySystemNames": [
+            "Digestive",
+            "Intestinal"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "DF001",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "Moderate"
+            },
+            {
+              "bioactiveId": "DF009",
+              "bioactiveStatus": "DIRECT",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC039",
+          "name": "Reduces Digestive Discomfort",
+          "primaryBodySystems": [
+            "BS001",
+            "BS002"
+          ],
+          "primaryBodySystemNames": [
+            "Digestive",
+            "Intestinal"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "DF009",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "Moderate"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "productId": "PRD004",
+      "productName": "Synergy Pro360 Wholefood Greens",
+      "mechanismCount": 17,
+      "mechanisms": [
+        {
+          "id": "MEC030",
+          "name": "Feeds Beneficial Gut Bacteria",
+          "primaryBodySystems": [
+            "BS001",
+            "BS002"
+          ],
+          "primaryBodySystemNames": [
+            "Digestive",
+            "Intestinal"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "DF012",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "Moderate"
+            },
+            {
+              "bioactiveId": "DF009",
+              "bioactiveStatus": "DIRECT",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC031",
+          "name": "Increases Short-Chain Fatty Acid Production",
+          "primaryBodySystems": [
+            "BS001",
+            "BS002"
+          ],
+          "primaryBodySystemNames": [
+            "Digestive",
+            "Intestinal"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "DF012",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "Moderate"
+            },
+            {
+              "bioactiveId": "DF009",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC032",
+          "name": "Supports Gut Barrier Integrity",
+          "primaryBodySystems": [
+            "BS001",
+            "BS002"
+          ],
+          "primaryBodySystemNames": [
+            "Digestive",
+            "Intestinal"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "DF012",
+              "bioactiveStatus": "DIRECT",
+              "strength": 3,
+              "confidence": "Moderate"
+            },
+            {
+              "bioactiveId": "DF009",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC033",
+          "name": "Improves Bowel Regularity",
+          "primaryBodySystems": [
+            "BS001",
+            "BS002"
+          ],
+          "primaryBodySystemNames": [
+            "Digestive",
+            "Intestinal"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "DF009",
+              "bioactiveStatus": "DIRECT",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC035",
+          "name": "Supports Microbiome Diversity",
+          "primaryBodySystems": [
+            "BS001",
+            "BS002"
+          ],
+          "primaryBodySystemNames": [
+            "Digestive",
+            "Intestinal"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "DF012",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC036",
+          "name": "Supports Healthy Gut pH",
+          "primaryBodySystems": [
+            "BS001",
+            "BS002"
+          ],
+          "primaryBodySystemNames": [
+            "Digestive",
+            "Intestinal"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "DF012",
+              "bioactiveStatus": "DIRECT",
+              "strength": 3,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC038",
+          "name": "Supports Mucosal Health",
+          "primaryBodySystems": [
+            "BS001",
+            "BS002"
+          ],
+          "primaryBodySystemNames": [
+            "Digestive",
+            "Intestinal"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "DF009",
+              "bioactiveStatus": "DIRECT",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC039",
+          "name": "Reduces Digestive Discomfort",
+          "primaryBodySystems": [
+            "BS001",
+            "BS002"
+          ],
+          "primaryBodySystemNames": [
+            "Digestive",
+            "Intestinal"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "DF009",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC040",
+          "name": "Slows Glucose Absorption",
+          "primaryBodySystems": [
+            "BS008"
+          ],
+          "primaryBodySystemNames": [
+            "Glandular"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "PP011",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 5,
+              "confidence": "High"
+            },
+            {
+              "bioactiveId": "PP003",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 5,
+              "confidence": "High"
+            },
+            {
+              "bioactiveId": "PP008",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 5,
+              "confidence": "High"
+            },
+            {
+              "bioactiveId": "PP004",
+              "bioactiveStatus": "DIRECT",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC041",
+          "name": "Improves Insulin Sensitivity",
+          "primaryBodySystems": [
+            "BS008"
+          ],
+          "primaryBodySystemNames": [
+            "Glandular"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FA001",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 5,
+              "confidence": "High"
+            },
+            {
+              "bioactiveId": "PP011",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 4,
+              "confidence": "High"
+            },
+            {
+              "bioactiveId": "PP003",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 3,
+              "confidence": "Moderate"
+            },
+            {
+              "bioactiveId": "PP008",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 5,
+              "confidence": "High"
+            },
+            {
+              "bioactiveId": "PP004",
+              "bioactiveStatus": "DIRECT",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC042",
+          "name": "Reduces Post-Meal Glucose Response",
+          "primaryBodySystems": [
+            "BS008"
+          ],
+          "primaryBodySystemNames": [
+            "Glandular"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FA001",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 5,
+              "confidence": "High"
+            },
+            {
+              "bioactiveId": "PP003",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC043",
+          "name": "Improves Satiety",
+          "primaryBodySystems": [
+            "BS008"
+          ],
+          "primaryBodySystemNames": [
+            "Glandular"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FA001",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 4,
+              "confidence": "Moderate"
+            },
+            {
+              "bioactiveId": "PP011",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 3,
+              "confidence": "Moderate"
+            },
+            {
+              "bioactiveId": "PP008",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 4,
+              "confidence": "Moderate"
+            },
+            {
+              "bioactiveId": "PP004",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC044",
+          "name": "Supports Healthy Energy Regulation",
+          "primaryBodySystems": [
+            "BS008"
+          ],
+          "primaryBodySystemNames": [
+            "Glandular"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FA001",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 4,
+              "confidence": "High"
+            },
+            {
+              "bioactiveId": "PP011",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 5,
+              "confidence": "High"
+            },
+            {
+              "bioactiveId": "PP003",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 4,
+              "confidence": "High"
+            },
+            {
+              "bioactiveId": "PP008",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 5,
+              "confidence": "High"
+            },
+            {
+              "bioactiveId": "PP004",
+              "bioactiveStatus": "DIRECT",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC045",
+          "name": "Supports Glycaemic Stability",
+          "primaryBodySystems": [
+            "BS008"
+          ],
+          "primaryBodySystemNames": [
+            "Glandular"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FA001",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 4,
+              "confidence": "High"
+            },
+            {
+              "bioactiveId": "PP003",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC046",
+          "name": "Supports Pancreatic Function",
+          "primaryBodySystems": [
+            "BS008"
+          ],
+          "primaryBodySystemNames": [
+            "Glandular"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "PP004",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC047",
+          "name": "Supports Glucose Uptake",
+          "primaryBodySystems": [
+            "BS008"
+          ],
+          "primaryBodySystemNames": [
+            "Glandular"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "PP004",
+              "bioactiveStatus": "DIRECT",
+              "strength": 3,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC049",
+          "name": "Reduces Glycaemic Variability",
+          "primaryBodySystems": [
+            "BS008"
+          ],
+          "primaryBodySystemNames": [
+            "Glandular"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FA001",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 4,
+              "confidence": "Moderate"
+            },
+            {
+              "bioactiveId": "PP011",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 4,
+              "confidence": "Moderate"
+            },
+            {
+              "bioactiveId": "PP008",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 4,
+              "confidence": "Moderate"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "productId": "PRD005",
+      "productName": "Synergy Pro360 Superfood Performance Beets",
+      "mechanismCount": 8,
+      "mechanisms": [
+        {
+          "id": "MEC010",
+          "name": "Supports Endothelial Function",
+          "primaryBodySystems": [
+            "BS003"
+          ],
+          "primaryBodySystemNames": [
+            "Circulatory"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FC020",
+              "bioactiveStatus": "CONFIRMED",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC011",
+          "name": "Supports Nitric Oxide Production",
+          "primaryBodySystems": [
+            "BS003"
+          ],
+          "primaryBodySystemNames": [
+            "Circulatory"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FC020",
+              "bioactiveStatus": "CONFIRMED",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC013",
+          "name": "Supports Healthy Blood Pressure Regulation",
+          "primaryBodySystems": [
+            "BS003"
+          ],
+          "primaryBodySystemNames": [
+            "Circulatory"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FC020",
+              "bioactiveStatus": "CONFIRMED",
+              "strength": 4,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC018",
+          "name": "Supports Healthy Blood Flow",
+          "primaryBodySystems": [
+            "BS003"
+          ],
+          "primaryBodySystemNames": [
+            "Circulatory"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FC020",
+              "bioactiveStatus": "CONFIRMED",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC020",
+          "name": "Reduces Oxidative Stress",
+          "primaryBodySystems": [
+            "BS005",
+            "BS006"
+          ],
+          "primaryBodySystemNames": [
+            "Immune",
+            "Respiratory"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FC016",
+              "bioactiveStatus": "CONFIRMED",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC023",
+          "name": "Protects Cellular Membranes",
+          "primaryBodySystems": [
+            "BS005",
+            "BS006"
+          ],
+          "primaryBodySystemNames": [
+            "Immune",
+            "Respiratory"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FC016",
+              "bioactiveStatus": "CONFIRMED",
+              "strength": 3,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC060",
+          "name": "Supports Healthy Inflammatory Balance",
+          "primaryBodySystems": [
+            "BS005"
+          ],
+          "primaryBodySystemNames": [
+            "Immune"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FC016",
+              "bioactiveStatus": "CONFIRMED",
+              "strength": 4,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC071",
+          "name": "Activates Nrf2 Pathways",
+          "primaryBodySystems": [
+            "BS007"
+          ],
+          "primaryBodySystemNames": [
+            "Urinary"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FC016",
+              "bioactiveStatus": "CONFIRMED",
+              "strength": 3,
+              "confidence": "Moderate"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "productId": "PRD006",
+      "productName": "Synergy Biome Actives",
+      "mechanismCount": 6,
+      "mechanisms": [
+        {
+          "id": "MEC030",
+          "name": "Feeds Beneficial Gut Bacteria",
+          "primaryBodySystems": [
+            "BS001",
+            "BS002"
+          ],
+          "primaryBodySystemNames": [
+            "Digestive",
+            "Intestinal"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "DF003",
+              "bioactiveStatus": "DIRECT",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC031",
+          "name": "Increases Short-Chain Fatty Acid Production",
+          "primaryBodySystems": [
+            "BS001",
+            "BS002"
+          ],
+          "primaryBodySystemNames": [
+            "Digestive",
+            "Intestinal"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "DF003",
+              "bioactiveStatus": "DIRECT",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC032",
+          "name": "Supports Gut Barrier Integrity",
+          "primaryBodySystems": [
+            "BS001",
+            "BS002"
+          ],
+          "primaryBodySystemNames": [
+            "Digestive",
+            "Intestinal"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "DF003",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC035",
+          "name": "Supports Microbiome Diversity",
+          "primaryBodySystems": [
+            "BS001",
+            "BS002"
+          ],
+          "primaryBodySystemNames": [
+            "Digestive",
+            "Intestinal"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "DF003",
+              "bioactiveStatus": "DIRECT",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC036",
+          "name": "Supports Healthy Gut pH",
+          "primaryBodySystems": [
+            "BS001",
+            "BS002"
+          ],
+          "primaryBodySystemNames": [
+            "Digestive",
+            "Intestinal"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "DF003",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC039",
+          "name": "Reduces Digestive Discomfort",
+          "primaryBodySystems": [
+            "BS001",
+            "BS002"
+          ],
+          "primaryBodySystemNames": [
+            "Digestive",
+            "Intestinal"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "DF003",
+              "bioactiveStatus": "DIRECT",
+              "strength": 3,
+              "confidence": "Moderate"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "productId": "PRD007",
+      "productName": "Synergy Biome DT",
+      "mechanismCount": 19,
+      "mechanisms": [
+        {
+          "id": "MEC002",
+          "name": "Supports Healthy Cholesterol Metabolism",
+          "primaryBodySystems": [
+            "BS003"
+          ],
+          "primaryBodySystemNames": [
+            "Circulatory"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "DF011",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC006",
+          "name": "Supports LDL Reduction",
+          "primaryBodySystems": [
+            "BS003"
+          ],
+          "primaryBodySystemNames": [
+            "Circulatory"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "DF011",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC020",
+          "name": "Reduces Oxidative Stress",
+          "primaryBodySystems": [
+            "BS005",
+            "BS006"
+          ],
+          "primaryBodySystemNames": [
+            "Immune",
+            "Respiratory"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FC021",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC030",
+          "name": "Feeds Beneficial Gut Bacteria",
+          "primaryBodySystems": [
+            "BS001",
+            "BS002"
+          ],
+          "primaryBodySystemNames": [
+            "Digestive",
+            "Intestinal"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "DF003",
+              "bioactiveStatus": "DIRECT",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC031",
+          "name": "Increases Short-Chain Fatty Acid Production",
+          "primaryBodySystems": [
+            "BS001",
+            "BS002"
+          ],
+          "primaryBodySystemNames": [
+            "Digestive",
+            "Intestinal"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "DF003",
+              "bioactiveStatus": "DIRECT",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC032",
+          "name": "Supports Gut Barrier Integrity",
+          "primaryBodySystems": [
+            "BS001",
+            "BS002"
+          ],
+          "primaryBodySystemNames": [
+            "Digestive",
+            "Intestinal"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "DF011",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "Moderate"
+            },
+            {
+              "bioactiveId": "FC013",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "Moderate"
+            },
+            {
+              "bioactiveId": "DF003",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC033",
+          "name": "Improves Bowel Regularity",
+          "primaryBodySystems": [
+            "BS001",
+            "BS002"
+          ],
+          "primaryBodySystemNames": [
+            "Digestive",
+            "Intestinal"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "DF011",
+              "bioactiveStatus": "DIRECT",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC035",
+          "name": "Supports Microbiome Diversity",
+          "primaryBodySystems": [
+            "BS001",
+            "BS002"
+          ],
+          "primaryBodySystemNames": [
+            "Digestive",
+            "Intestinal"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "DF003",
+              "bioactiveStatus": "DIRECT",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC036",
+          "name": "Supports Healthy Gut pH",
+          "primaryBodySystems": [
+            "BS001",
+            "BS002"
+          ],
+          "primaryBodySystemNames": [
+            "Digestive",
+            "Intestinal"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "DF003",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC037",
+          "name": "Supports Nutrient Absorption",
+          "primaryBodySystems": [
+            "BS001",
+            "BS002"
+          ],
+          "primaryBodySystemNames": [
+            "Digestive",
+            "Intestinal"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "DF011",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "Moderate"
+            },
+            {
+              "bioactiveId": "FC013",
+              "bioactiveStatus": "DIRECT",
+              "strength": 3,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC038",
+          "name": "Supports Mucosal Health",
+          "primaryBodySystems": [
+            "BS001",
+            "BS002"
+          ],
+          "primaryBodySystemNames": [
+            "Digestive",
+            "Intestinal"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FC013",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC039",
+          "name": "Reduces Digestive Discomfort",
+          "primaryBodySystems": [
+            "BS001",
+            "BS002"
+          ],
+          "primaryBodySystemNames": [
+            "Digestive",
+            "Intestinal"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "DF003",
+              "bioactiveStatus": "DIRECT",
+              "strength": 3,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC040",
+          "name": "Slows Glucose Absorption",
+          "primaryBodySystems": [
+            "BS008"
+          ],
+          "primaryBodySystemNames": [
+            "Glandular"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "DF011",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC042",
+          "name": "Reduces Post-Meal Glucose Response",
+          "primaryBodySystems": [
+            "BS008"
+          ],
+          "primaryBodySystemNames": [
+            "Glandular"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "DF011",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC043",
+          "name": "Improves Satiety",
+          "primaryBodySystems": [
+            "BS008"
+          ],
+          "primaryBodySystemNames": [
+            "Glandular"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "DF011",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC060",
+          "name": "Supports Healthy Inflammatory Balance",
+          "primaryBodySystems": [
+            "BS005"
+          ],
+          "primaryBodySystemNames": [
+            "Immune"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FC021",
+              "bioactiveStatus": "DIRECT",
+              "strength": 3,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC071",
+          "name": "Activates Nrf2 Pathways",
+          "primaryBodySystems": [
+            "BS007"
+          ],
+          "primaryBodySystemNames": [
+            "Urinary"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FC021",
+              "bioactiveStatus": "DIRECT",
+              "strength": 3,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC072",
+          "name": "Supports Glutathione Production",
+          "primaryBodySystems": [
+            "BS007"
+          ],
+          "primaryBodySystemNames": [
+            "Urinary"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FC013",
+              "bioactiveStatus": "DIRECT",
+              "strength": 3,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC102",
+          "name": "Supports Cellular Energy Metabolism",
+          "primaryBodySystems": [
+            "BS004",
+            "BS008",
+            "BS009"
+          ],
+          "primaryBodySystemNames": [],
+          "contributors": [
+            {
+              "bioactiveId": "FC013",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "Moderate"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "productId": "PRD008",
+      "productName": "Synergy Biome Shake",
+      "mechanismCount": 17,
+      "mechanisms": [
+        {
+          "id": "MEC030",
+          "name": "Feeds Beneficial Gut Bacteria",
+          "primaryBodySystems": [
+            "BS001",
+            "BS002"
+          ],
+          "primaryBodySystemNames": [
+            "Digestive",
+            "Intestinal"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "DF012",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "Moderate"
+            },
+            {
+              "bioactiveId": "DF009",
+              "bioactiveStatus": "DIRECT",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC031",
+          "name": "Increases Short-Chain Fatty Acid Production",
+          "primaryBodySystems": [
+            "BS001",
+            "BS002"
+          ],
+          "primaryBodySystemNames": [
+            "Digestive",
+            "Intestinal"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "DF012",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "Moderate"
+            },
+            {
+              "bioactiveId": "DF009",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC032",
+          "name": "Supports Gut Barrier Integrity",
+          "primaryBodySystems": [
+            "BS001",
+            "BS002"
+          ],
+          "primaryBodySystemNames": [
+            "Digestive",
+            "Intestinal"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "DF012",
+              "bioactiveStatus": "DIRECT",
+              "strength": 3,
+              "confidence": "Moderate"
+            },
+            {
+              "bioactiveId": "DF009",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC033",
+          "name": "Improves Bowel Regularity",
+          "primaryBodySystems": [
+            "BS001",
+            "BS002"
+          ],
+          "primaryBodySystemNames": [
+            "Digestive",
+            "Intestinal"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "DF009",
+              "bioactiveStatus": "DIRECT",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC035",
+          "name": "Supports Microbiome Diversity",
+          "primaryBodySystems": [
+            "BS001",
+            "BS002"
+          ],
+          "primaryBodySystemNames": [
+            "Digestive",
+            "Intestinal"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "DF012",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC036",
+          "name": "Supports Healthy Gut pH",
+          "primaryBodySystems": [
+            "BS001",
+            "BS002"
+          ],
+          "primaryBodySystemNames": [
+            "Digestive",
+            "Intestinal"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "DF012",
+              "bioactiveStatus": "DIRECT",
+              "strength": 3,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC038",
+          "name": "Supports Mucosal Health",
+          "primaryBodySystems": [
+            "BS001",
+            "BS002"
+          ],
+          "primaryBodySystemNames": [
+            "Digestive",
+            "Intestinal"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "DF009",
+              "bioactiveStatus": "DIRECT",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC039",
+          "name": "Reduces Digestive Discomfort",
+          "primaryBodySystems": [
+            "BS001",
+            "BS002"
+          ],
+          "primaryBodySystemNames": [
+            "Digestive",
+            "Intestinal"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "DF009",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC040",
+          "name": "Slows Glucose Absorption",
+          "primaryBodySystems": [
+            "BS008"
+          ],
+          "primaryBodySystemNames": [
+            "Glandular"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "PP003",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 5,
+              "confidence": "High"
+            },
+            {
+              "bioactiveId": "PP008",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 5,
+              "confidence": "High"
+            },
+            {
+              "bioactiveId": "PP004",
+              "bioactiveStatus": "DIRECT",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC041",
+          "name": "Improves Insulin Sensitivity",
+          "primaryBodySystems": [
+            "BS008"
+          ],
+          "primaryBodySystemNames": [
+            "Glandular"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "PP003",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 3,
+              "confidence": "Moderate"
+            },
+            {
+              "bioactiveId": "PP008",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 5,
+              "confidence": "High"
+            },
+            {
+              "bioactiveId": "PP004",
+              "bioactiveStatus": "DIRECT",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC042",
+          "name": "Reduces Post-Meal Glucose Response",
+          "primaryBodySystems": [
+            "BS008"
+          ],
+          "primaryBodySystemNames": [
+            "Glandular"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "PP003",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC043",
+          "name": "Improves Satiety",
+          "primaryBodySystems": [
+            "BS008"
+          ],
+          "primaryBodySystemNames": [
+            "Glandular"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "PP008",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 4,
+              "confidence": "Moderate"
+            },
+            {
+              "bioactiveId": "PP004",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC044",
+          "name": "Supports Healthy Energy Regulation",
+          "primaryBodySystems": [
+            "BS008"
+          ],
+          "primaryBodySystemNames": [
+            "Glandular"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "PP003",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 4,
+              "confidence": "High"
+            },
+            {
+              "bioactiveId": "PP008",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 5,
+              "confidence": "High"
+            },
+            {
+              "bioactiveId": "PP004",
+              "bioactiveStatus": "DIRECT",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC045",
+          "name": "Supports Glycaemic Stability",
+          "primaryBodySystems": [
+            "BS008"
+          ],
+          "primaryBodySystemNames": [
+            "Glandular"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "PP003",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC046",
+          "name": "Supports Pancreatic Function",
+          "primaryBodySystems": [
+            "BS008"
+          ],
+          "primaryBodySystemNames": [
+            "Glandular"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "PP004",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC047",
+          "name": "Supports Glucose Uptake",
+          "primaryBodySystems": [
+            "BS008"
+          ],
+          "primaryBodySystemNames": [
+            "Glandular"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "PP004",
+              "bioactiveStatus": "DIRECT",
+              "strength": 3,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC049",
+          "name": "Reduces Glycaemic Variability",
+          "primaryBodySystems": [
+            "BS008"
+          ],
+          "primaryBodySystemNames": [
+            "Glandular"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "PP008",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 4,
+              "confidence": "Moderate"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "productId": "PRD009",
+      "productName": "Synergy Body Prime",
+      "mechanismCount": 9,
+      "mechanisms": [
+        {
+          "id": "MEC001",
+          "name": "Bile Acid Binding",
+          "primaryBodySystems": [
+            "BS003"
+          ],
+          "primaryBodySystemNames": [
+            "Circulatory"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "DF002",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC002",
+          "name": "Supports Healthy Cholesterol Metabolism",
+          "primaryBodySystems": [
+            "BS003"
+          ],
+          "primaryBodySystemNames": [
+            "Circulatory"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "DF002",
+              "bioactiveStatus": "DIRECT",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC006",
+          "name": "Supports LDL Reduction",
+          "primaryBodySystems": [
+            "BS003"
+          ],
+          "primaryBodySystemNames": [
+            "Circulatory"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "DF002",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC030",
+          "name": "Feeds Beneficial Gut Bacteria",
+          "primaryBodySystems": [
+            "BS001",
+            "BS002"
+          ],
+          "primaryBodySystemNames": [
+            "Digestive",
+            "Intestinal"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "DF002",
+              "bioactiveStatus": "DIRECT",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC031",
+          "name": "Increases Short-Chain Fatty Acid Production",
+          "primaryBodySystems": [
+            "BS001",
+            "BS002"
+          ],
+          "primaryBodySystemNames": [
+            "Digestive",
+            "Intestinal"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "DF002",
+              "bioactiveStatus": "DIRECT",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC032",
+          "name": "Supports Gut Barrier Integrity",
+          "primaryBodySystems": [
+            "BS001",
+            "BS002"
+          ],
+          "primaryBodySystemNames": [
+            "Digestive",
+            "Intestinal"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "DF002",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC033",
+          "name": "Improves Bowel Regularity",
+          "primaryBodySystems": [
+            "BS001",
+            "BS002"
+          ],
+          "primaryBodySystemNames": [
+            "Digestive",
+            "Intestinal"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "DF002",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC035",
+          "name": "Supports Microbiome Diversity",
+          "primaryBodySystems": [
+            "BS001",
+            "BS002"
+          ],
+          "primaryBodySystemNames": [
+            "Digestive",
+            "Intestinal"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "DF002",
+              "bioactiveStatus": "DIRECT",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC036",
+          "name": "Supports Healthy Gut pH",
+          "primaryBodySystems": [
+            "BS001",
+            "BS002"
+          ],
+          "primaryBodySystemNames": [
+            "Digestive",
+            "Intestinal"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "DF002",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "Moderate"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "productId": "PRD010",
+      "productName": "PhytoLife",
+      "mechanismCount": 3,
+      "mechanisms": [
+        {
+          "id": "MEC020",
+          "name": "Reduces Oxidative Stress",
+          "primaryBodySystems": [
+            "BS005",
+            "BS006"
+          ],
+          "primaryBodySystemNames": [
+            "Immune",
+            "Respiratory"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FC021",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC060",
+          "name": "Supports Healthy Inflammatory Balance",
+          "primaryBodySystems": [
+            "BS005"
+          ],
+          "primaryBodySystemNames": [
+            "Immune"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FC021",
+              "bioactiveStatus": "DIRECT",
+              "strength": 3,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC071",
+          "name": "Activates Nrf2 Pathways",
+          "primaryBodySystems": [
+            "BS007"
+          ],
+          "primaryBodySystemNames": [
+            "Urinary"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FC021",
+              "bioactiveStatus": "DIRECT",
+              "strength": 3,
+              "confidence": "Moderate"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "productId": "PRD011",
+      "productName": "Mistify",
+      "mechanismCount": 6,
+      "mechanisms": [
+        {
+          "id": "MEC040",
+          "name": "Slows Glucose Absorption",
+          "primaryBodySystems": [
+            "BS008"
+          ],
+          "primaryBodySystemNames": [
+            "Glandular"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "PP001",
+              "bioactiveStatus": "CONFIRMED_PRODUCT_PROFILE",
+              "strength": 5,
+              "confidence": "High"
+            },
+            {
+              "bioactiveId": "PP003",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC041",
+          "name": "Improves Insulin Sensitivity",
+          "primaryBodySystems": [
+            "BS008"
+          ],
+          "primaryBodySystemNames": [
+            "Glandular"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "PP001",
+              "bioactiveStatus": "CONFIRMED_PRODUCT_PROFILE",
+              "strength": 5,
+              "confidence": "High"
+            },
+            {
+              "bioactiveId": "PP003",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 3,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC042",
+          "name": "Reduces Post-Meal Glucose Response",
+          "primaryBodySystems": [
+            "BS008"
+          ],
+          "primaryBodySystemNames": [
+            "Glandular"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "PP001",
+              "bioactiveStatus": "CONFIRMED_PRODUCT_PROFILE",
+              "strength": 5,
+              "confidence": "High"
+            },
+            {
+              "bioactiveId": "PP003",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC043",
+          "name": "Improves Satiety",
+          "primaryBodySystems": [
+            "BS008"
+          ],
+          "primaryBodySystemNames": [
+            "Glandular"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "PP001",
+              "bioactiveStatus": "CONFIRMED_PRODUCT_PROFILE",
+              "strength": 4,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC044",
+          "name": "Supports Healthy Energy Regulation",
+          "primaryBodySystems": [
+            "BS008"
+          ],
+          "primaryBodySystemNames": [
+            "Glandular"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "PP001",
+              "bioactiveStatus": "CONFIRMED_PRODUCT_PROFILE",
+              "strength": 4,
+              "confidence": "Moderate"
+            },
+            {
+              "bioactiveId": "PP003",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 4,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC045",
+          "name": "Supports Glycaemic Stability",
+          "primaryBodySystems": [
+            "BS008"
+          ],
+          "primaryBodySystemNames": [
+            "Glandular"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "PP003",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "productId": "PRD012",
+      "productName": "Synergy Collagen+",
+      "mechanismCount": 4,
+      "mechanisms": [
+        {
+          "id": "MEC090",
+          "name": "Supports Collagen Formation",
+          "primaryBodySystems": [
+            "BS009"
+          ],
+          "primaryBodySystemNames": [
+            "Structural"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FC022",
+              "bioactiveStatus": "DIRECT",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC091",
+          "name": "Supports Bone Mineralisation",
+          "primaryBodySystems": [
+            "BS009"
+          ],
+          "primaryBodySystemNames": [
+            "Structural"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FC022",
+              "bioactiveStatus": "DIRECT",
+              "strength": 3,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC092",
+          "name": "Supports Muscle Protein Synthesis",
+          "primaryBodySystems": [
+            "BS009"
+          ],
+          "primaryBodySystemNames": [
+            "Structural"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FC022",
+              "bioactiveStatus": "DIRECT",
+              "strength": 3,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC094",
+          "name": "Supports Joint Health",
+          "primaryBodySystems": [
+            "BS009"
+          ],
+          "primaryBodySystemNames": [
+            "Structural"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FC022",
+              "bioactiveStatus": "DIRECT",
+              "strength": 3,
+              "confidence": "Moderate"
+            },
+            {
+              "bioactiveId": "FC023",
+              "bioactiveStatus": "DIRECT",
+              "strength": 3,
+              "confidence": "Moderate"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "productId": "PRD013",
+      "productName": "Synergy Collagen+ Beauty",
+      "mechanismCount": 9,
+      "mechanisms": [
+        {
+          "id": "MEC030",
+          "name": "Feeds Beneficial Gut Bacteria",
+          "primaryBodySystems": [
+            "BS001",
+            "BS002"
+          ],
+          "primaryBodySystemNames": [
+            "Digestive",
+            "Intestinal"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "PP006",
+              "bioactiveStatus": "DIRECT",
+              "strength": 2,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC035",
+          "name": "Supports Microbiome Diversity",
+          "primaryBodySystems": [
+            "BS001",
+            "BS002"
+          ],
+          "primaryBodySystemNames": [
+            "Digestive",
+            "Intestinal"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "PP006",
+              "bioactiveStatus": "DIRECT",
+              "strength": 2,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC040",
+          "name": "Slows Glucose Absorption",
+          "primaryBodySystems": [
+            "BS008"
+          ],
+          "primaryBodySystemNames": [
+            "Glandular"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "PP006",
+              "bioactiveStatus": "DIRECT",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC041",
+          "name": "Improves Insulin Sensitivity",
+          "primaryBodySystems": [
+            "BS008"
+          ],
+          "primaryBodySystemNames": [
+            "Glandular"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "PP006",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC044",
+          "name": "Supports Healthy Energy Regulation",
+          "primaryBodySystems": [
+            "BS008"
+          ],
+          "primaryBodySystemNames": [
+            "Glandular"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "PP006",
+              "bioactiveStatus": "DIRECT",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC090",
+          "name": "Supports Collagen Formation",
+          "primaryBodySystems": [
+            "BS009"
+          ],
+          "primaryBodySystemNames": [
+            "Structural"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FC022",
+              "bioactiveStatus": "DIRECT",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC091",
+          "name": "Supports Bone Mineralisation",
+          "primaryBodySystems": [
+            "BS009"
+          ],
+          "primaryBodySystemNames": [
+            "Structural"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FC022",
+              "bioactiveStatus": "DIRECT",
+              "strength": 3,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC092",
+          "name": "Supports Muscle Protein Synthesis",
+          "primaryBodySystems": [
+            "BS009"
+          ],
+          "primaryBodySystemNames": [
+            "Structural"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FC022",
+              "bioactiveStatus": "DIRECT",
+              "strength": 3,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC094",
+          "name": "Supports Joint Health",
+          "primaryBodySystems": [
+            "BS009"
+          ],
+          "primaryBodySystemNames": [
+            "Structural"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FC022",
+              "bioactiveStatus": "DIRECT",
+              "strength": 3,
+              "confidence": "Moderate"
+            },
+            {
+              "bioactiveId": "FC023",
+              "bioactiveStatus": "DIRECT",
+              "strength": 3,
+              "confidence": "Moderate"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "productId": "PRD014",
+      "productName": "Synergy FL-3X",
+      "mechanismCount": 1,
+      "mechanisms": [
+        {
+          "id": "MEC094",
+          "name": "Supports Joint Health",
+          "primaryBodySystems": [
+            "BS009"
+          ],
+          "primaryBodySystemNames": [
+            "Structural"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FC024",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "Moderate"
+            },
+            {
+              "bioactiveId": "FC025",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "Moderate"
+            },
+            {
+              "bioactiveId": "FC026",
+              "bioactiveStatus": "DIRECT",
+              "strength": 3,
+              "confidence": "Moderate"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "productId": "PRD015",
+      "productName": "Synergy Vitamin D3",
+      "mechanismCount": 0,
+      "mechanisms": []
+    },
+    {
+      "productId": "PRD016",
+      "productName": "Synergy Omega-3",
+      "mechanismCount": 8,
+      "mechanisms": [
+        {
+          "id": "MEC041",
+          "name": "Improves Insulin Sensitivity",
+          "primaryBodySystems": [
+            "BS008"
+          ],
+          "primaryBodySystemNames": [
+            "Glandular"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FA002",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "High"
+            },
+            {
+              "bioactiveId": "FA003",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC042",
+          "name": "Reduces Post-Meal Glucose Response",
+          "primaryBodySystems": [
+            "BS008"
+          ],
+          "primaryBodySystemNames": [
+            "Glandular"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FA003",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC043",
+          "name": "Improves Satiety",
+          "primaryBodySystems": [
+            "BS008"
+          ],
+          "primaryBodySystemNames": [
+            "Glandular"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FA002",
+              "bioactiveStatus": "DIRECT",
+              "strength": 3,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC044",
+          "name": "Supports Healthy Energy Regulation",
+          "primaryBodySystems": [
+            "BS008"
+          ],
+          "primaryBodySystemNames": [
+            "Glandular"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FA002",
+              "bioactiveStatus": "DIRECT",
+              "strength": 5,
+              "confidence": "High"
+            },
+            {
+              "bioactiveId": "FA003",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC045",
+          "name": "Supports Glycaemic Stability",
+          "primaryBodySystems": [
+            "BS008"
+          ],
+          "primaryBodySystemNames": [
+            "Glandular"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FA003",
+              "bioactiveStatus": "DIRECT",
+              "strength": 3,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC047",
+          "name": "Supports Glucose Uptake",
+          "primaryBodySystems": [
+            "BS008"
+          ],
+          "primaryBodySystemNames": [
+            "Glandular"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FA003",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC049",
+          "name": "Reduces Glycaemic Variability",
+          "primaryBodySystems": [
+            "BS008"
+          ],
+          "primaryBodySystemNames": [
+            "Glandular"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FA002",
+              "bioactiveStatus": "DIRECT",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC053",
+          "name": "Supports Neurotransmitter Synthesis",
+          "primaryBodySystems": [
+            "BS004"
+          ],
+          "primaryBodySystemNames": [
+            "Nervous"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FA002",
+              "bioactiveStatus": "DIRECT",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "productId": "PRD017",
+      "productName": "Synergy CoQ10",
+      "mechanismCount": 5,
+      "mechanisms": [
+        {
+          "id": "MEC032",
+          "name": "Supports Gut Barrier Integrity",
+          "primaryBodySystems": [
+            "BS001",
+            "BS002"
+          ],
+          "primaryBodySystemNames": [
+            "Digestive",
+            "Intestinal"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FC008",
+              "bioactiveStatus": "DIRECT",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC035",
+          "name": "Supports Microbiome Diversity",
+          "primaryBodySystems": [
+            "BS001",
+            "BS002"
+          ],
+          "primaryBodySystemNames": [
+            "Digestive",
+            "Intestinal"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FC008",
+              "bioactiveStatus": "DIRECT",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC038",
+          "name": "Supports Mucosal Health",
+          "primaryBodySystems": [
+            "BS001",
+            "BS002"
+          ],
+          "primaryBodySystemNames": [
+            "Digestive",
+            "Intestinal"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FC008",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC041",
+          "name": "Improves Insulin Sensitivity",
+          "primaryBodySystems": [
+            "BS008"
+          ],
+          "primaryBodySystemNames": [
+            "Glandular"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FC008",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC043",
+          "name": "Improves Satiety",
+          "primaryBodySystems": [
+            "BS008"
+          ],
+          "primaryBodySystemNames": [
+            "Glandular"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FC008",
+              "bioactiveStatus": "DIRECT",
+              "strength": 4,
+              "confidence": "High"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "productId": "PRD018",
+      "productName": "Synergy Liver Health",
+      "mechanismCount": 10,
+      "mechanisms": [
+        {
+          "id": "MEC020",
+          "name": "Reduces Oxidative Stress",
+          "primaryBodySystems": [
+            "BS005",
+            "BS006"
+          ],
+          "primaryBodySystemNames": [
+            "Immune",
+            "Respiratory"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FC015",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 4,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC023",
+          "name": "Protects Cellular Membranes",
+          "primaryBodySystems": [
+            "BS005",
+            "BS006"
+          ],
+          "primaryBodySystemNames": [
+            "Immune",
+            "Respiratory"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FC015",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 3,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC030",
+          "name": "Feeds Beneficial Gut Bacteria",
+          "primaryBodySystems": [
+            "BS001",
+            "BS002"
+          ],
+          "primaryBodySystemNames": [
+            "Digestive",
+            "Intestinal"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FC001",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC031",
+          "name": "Increases Short-Chain Fatty Acid Production",
+          "primaryBodySystems": [
+            "BS001",
+            "BS002"
+          ],
+          "primaryBodySystemNames": [
+            "Digestive",
+            "Intestinal"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FC001",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC032",
+          "name": "Supports Gut Barrier Integrity",
+          "primaryBodySystems": [
+            "BS001",
+            "BS002"
+          ],
+          "primaryBodySystemNames": [
+            "Digestive",
+            "Intestinal"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FC001",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC035",
+          "name": "Supports Microbiome Diversity",
+          "primaryBodySystems": [
+            "BS001",
+            "BS002"
+          ],
+          "primaryBodySystemNames": [
+            "Digestive",
+            "Intestinal"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FC001",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC036",
+          "name": "Supports Healthy Gut pH",
+          "primaryBodySystems": [
+            "BS001",
+            "BS002"
+          ],
+          "primaryBodySystemNames": [
+            "Digestive",
+            "Intestinal"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FC001",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 4,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC043",
+          "name": "Improves Satiety",
+          "primaryBodySystems": [
+            "BS008"
+          ],
+          "primaryBodySystemNames": [
+            "Glandular"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FC001",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 4,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC060",
+          "name": "Supports Healthy Inflammatory Balance",
+          "primaryBodySystems": [
+            "BS005"
+          ],
+          "primaryBodySystemNames": [
+            "Immune"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FC015",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 4,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC071",
+          "name": "Activates Nrf2 Pathways",
+          "primaryBodySystems": [
+            "BS007"
+          ],
+          "primaryBodySystemNames": [
+            "Urinary"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "FC015",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 4,
+              "confidence": "Moderate"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "productId": "PRD019",
+      "productName": "Synergy Zinc Protect",
+      "mechanismCount": 9,
+      "mechanisms": [
+        {
+          "id": "MEC039",
+          "name": "Reduces Digestive Discomfort",
+          "primaryBodySystems": [
+            "BS001",
+            "BS002"
+          ],
+          "primaryBodySystemNames": [
+            "Digestive",
+            "Intestinal"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "TP001",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 3,
+              "confidence": "Moderate"
+            },
+            {
+              "bioactiveId": "TP003",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 3,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC040",
+          "name": "Slows Glucose Absorption",
+          "primaryBodySystems": [
+            "BS008"
+          ],
+          "primaryBodySystemNames": [
+            "Glandular"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "TP001",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 4,
+              "confidence": "High"
+            },
+            {
+              "bioactiveId": "TP003",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 4,
+              "confidence": "Moderate"
+            },
+            {
+              "bioactiveId": "TP004",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC041",
+          "name": "Improves Insulin Sensitivity",
+          "primaryBodySystems": [
+            "BS008"
+          ],
+          "primaryBodySystemNames": [
+            "Glandular"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "TP001",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 4,
+              "confidence": "High"
+            },
+            {
+              "bioactiveId": "TP003",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 4,
+              "confidence": "High"
+            },
+            {
+              "bioactiveId": "TP004",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC043",
+          "name": "Improves Satiety",
+          "primaryBodySystems": [
+            "BS008"
+          ],
+          "primaryBodySystemNames": [
+            "Glandular"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "TP003",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 4,
+              "confidence": "Moderate"
+            },
+            {
+              "bioactiveId": "TP004",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 4,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC044",
+          "name": "Supports Healthy Energy Regulation",
+          "primaryBodySystems": [
+            "BS008"
+          ],
+          "primaryBodySystemNames": [
+            "Glandular"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "TP001",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 4,
+              "confidence": "Moderate"
+            },
+            {
+              "bioactiveId": "TP004",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC049",
+          "name": "Reduces Glycaemic Variability",
+          "primaryBodySystems": [
+            "BS008"
+          ],
+          "primaryBodySystemNames": [
+            "Glandular"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "TP004",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 3,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC050",
+          "name": "Supports Synaptic Plasticity",
+          "primaryBodySystems": [
+            "BS004"
+          ],
+          "primaryBodySystemNames": [
+            "Nervous"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "TP003",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 5,
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "MEC052",
+          "name": "Supports Neuronal Antioxidant Defence",
+          "primaryBodySystems": [
+            "BS004"
+          ],
+          "primaryBodySystemNames": [
+            "Nervous"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "TP001",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 4,
+              "confidence": "Moderate"
+            }
+          ]
+        },
+        {
+          "id": "MEC056",
+          "name": "Supports Mental Performance",
+          "primaryBodySystems": [
+            "BS004"
+          ],
+          "primaryBodySystemNames": [
+            "Nervous"
+          ],
+          "contributors": [
+            {
+              "bioactiveId": "TP003",
+              "bioactiveStatus": "SOURCE_DEFINED",
+              "strength": 4,
+              "confidence": "Moderate"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "productId": "PRD020",
+      "productName": "Synergy SleepWell",
+      "mechanismCount": 0,
+      "mechanisms": []
+    }
+  ]
+}

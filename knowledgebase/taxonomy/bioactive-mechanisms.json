@@ -1,8 +1,8 @@
 {
   "schema": "bioactive-mechanisms-schema.json",
-  "version": "2.4",
+  "version": "2.5",
   "generated": "2026-08-12T15:00:00+01:00",
-  "count": 363,
+  "count": 371,
   "relationships": [
     {
       "id": "BM000001",
@@ -3995,6 +3995,94 @@
       "notes": "Preclinical evidence supports activation/modulation of endogenous antioxidant defence pathways.",
       "references": [
         "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000364",
+      "bioactive": "FC022",
+      "mechanism": "MEC090",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "The supplied Collagen+ and Collagen+ Beauty factsheets explicitly identify collagen peptides and support collagen production.",
+      "references": [
+        "Supplied Synergy product factsheets"
+      ]
+    },
+    {
+      "id": "BM000365",
+      "bioactive": "FC022",
+      "mechanism": "MEC091",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "The supplied Collagen+ factsheet explicitly associates collagen with bone tissue support.",
+      "references": [
+        "Supplied Synergy product factsheets"
+      ]
+    },
+    {
+      "id": "BM000366",
+      "bioactive": "FC022",
+      "mechanism": "MEC092",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "The supplied Collagen+ factsheet explicitly refers to normal protein synthesis and muscle tissue.",
+      "references": [
+        "Supplied Synergy product factsheets"
+      ]
+    },
+    {
+      "id": "BM000367",
+      "bioactive": "FC022",
+      "mechanism": "MEC094",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "The supplied collagen factsheets explicitly associate collagen with cartilage/connective tissue support.",
+      "references": [
+        "Supplied Synergy product factsheets"
+      ]
+    },
+    {
+      "id": "BM000368",
+      "bioactive": "FC023",
+      "mechanism": "MEC094",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "The supplied collagen factsheets explicitly identify hyaluronic acid and associate the formulation with cartilage/joint hydration.",
+      "references": [
+        "Supplied Synergy product factsheets"
+      ]
+    },
+    {
+      "id": "BM000369",
+      "bioactive": "FC024",
+      "mechanism": "MEC094",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "The supplied FL-3X factsheet identifies glucosamine sulphate and states that glucosamine is a fundamental component of joint tissue.",
+      "references": [
+        "Supplied Synergy product factsheets"
+      ]
+    },
+    {
+      "id": "BM000370",
+      "bioactive": "FC025",
+      "mechanism": "MEC094",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "The supplied FL-3X factsheet identifies chondroitin sulphate and states that chondroitin is a fundamental component of joint tissue.",
+      "references": [
+        "Supplied Synergy product factsheets"
+      ]
+    },
+    {
+      "id": "BM000371",
+      "bioactive": "FC026",
+      "mechanism": "MEC094",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "The supplied FL-3X factsheet identifies MSM and positions the formulation for mobility, range of motion and flexibility.",
+      "references": [
+        "Supplied Synergy product factsheets"
       ]
     }
   ]

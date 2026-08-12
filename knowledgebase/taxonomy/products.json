@@ -1,0 +1,107 @@
+{
+  "version": "1.0",
+  "description": "Canonical product registry for the PWB product relationship layer. PRD codes are stable internal identifiers used by product-bioactives and product-mechanisms.",
+  "count": 20,
+  "products": [
+    {
+      "id": "PRD001",
+      "name": "Synergy ProArgi-9+",
+      "status": "Active"
+    },
+    {
+      "id": "PRD002",
+      "name": "Synergy e9",
+      "status": "Active"
+    },
+    {
+      "id": "PRD003",
+      "name": "Synergy Immune Booster",
+      "status": "Active"
+    },
+    {
+      "id": "PRD004",
+      "name": "Synergy Pro360 Wholefood Greens",
+      "status": "Active"
+    },
+    {
+      "id": "PRD005",
+      "name": "Synergy Pro360 Superfood Performance Beets",
+      "status": "Active"
+    },
+    {
+      "id": "PRD006",
+      "name": "Synergy Biome Actives",
+      "status": "Active"
+    },
+    {
+      "id": "PRD007",
+      "name": "Synergy Biome DT",
+      "status": "Active"
+    },
+    {
+      "id": "PRD008",
+      "name": "Synergy Biome Shake",
+      "status": "Active"
+    },
+    {
+      "id": "PRD009",
+      "name": "Synergy Body Prime",
+      "status": "Active"
+    },
+    {
+      "id": "PRD010",
+      "name": "PhytoLife",
+      "status": "Active"
+    },
+    {
+      "id": "PRD011",
+      "name": "Mistify",
+      "status": "Active"
+    },
+    {
+      "id": "PRD012",
+      "name": "Synergy Collagen+",
+      "status": "Active"
+    },
+    {
+      "id": "PRD013",
+      "name": "Synergy Collagen+ Beauty",
+      "status": "Active"
+    },
+    {
+      "id": "PRD014",
+      "name": "Synergy FL-3X",
+      "status": "Active"
+    },
+    {
+      "id": "PRD015",
+      "name": "Synergy Vitamin D3",
+      "status": "Active"
+    },
+    {
+      "id": "PRD016",
+      "name": "Synergy Omega-3",
+      "status": "Active"
+    },
+    {
+      "id": "PRD017",
+      "name": "Synergy CoQ10",
+      "status": "Active"
+    },
+    {
+      "id": "PRD018",
+      "name": "Synergy Liver Health",
+      "status": "Active"
+    },
+    {
+      "id": "PRD019",
+      "name": "Synergy Zinc Protect",
+      "status": "Active"
+    },
+    {
+      "id": "PRD020",
+      "name": "Synergy SleepWell",
+      "status": "Active"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "version": "1.0",
+  "description": "Proposed product-to-vitamin/mineral relationships for newly supplied Synergy products. Vitamins and minerals remain outside the bioactive model.",
+  "products": [
+    {
+      "productId": "PRD012",
+      "productName": "Synergy Collagen+",
+      "vitamins": [
+        {
+          "id": "V010",
+          "name": "Vitamin C",
+          "status": "DIRECT"
+        }
+      ],
+      "minerals": [
+        {
+          "id": "M013",
+          "name": "Zinc",
+          "status": "DIRECT"
+        }
+      ]
+    },
+    {
+      "productId": "PRD013",
+      "productName": "Synergy Collagen+ Beauty",
+      "vitamins": [
+        {
+          "id": "V010",
+          "name": "Vitamin C",
+          "status": "DIRECT"
+        }
+      ],
+      "minerals": [
+        {
+          "id": "M013",
+          "name": "Zinc",
+          "status": "DIRECT"
+        }
+      ]
+    },
+    {
+      "productId": "PRD014",
+      "productName": "Synergy FL-3X",
+      "vitamins": [
+        {
+          "id": "V010",
+          "name": "Vitamin C",
+          "status": "DIRECT"
+        }
+      ],
+      "minerals": []
+    },
+    {
+      "productId": "PRD015",
+      "productName": "Synergy Vitamin D3",
+      "vitamins": [
+        {
+          "id": "V011",
+          "name": "Vitamin D",
+          "status": "DIRECT"
+        }
+      ],
+      "minerals": []
+    },
+    {
+      "productId": "PRD019",
+      "productName": "Synergy Zinc Protect",
+      "vitamins": [],
+      "minerals": [
+        {
+          "id": "M013",
+          "name": "Zinc",
+          "status": "DIRECT"
+        }
+      ]
+    }
+  ],
+  "note": "SleepWell and Liver Health contain botanicals whose specific canonical constituents have not been established from the supplied factsheets alone."
+}
