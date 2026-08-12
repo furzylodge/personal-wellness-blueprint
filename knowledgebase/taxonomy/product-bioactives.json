@@ -1,0 +1,193 @@
+{
+  "version": "1.0",
+  "description": "Proposed product-to-canonical-bioactive relationships for the current PWB product set. Status distinguishes direct formulation evidence from product-specific confirmation and source-defined constituents.",
+  "count": 30,
+  "products": [
+    {
+      "id": "PRD001",
+      "name": "Synergy ProArgi-9+",
+      "bioactives": [
+        {
+          "id": "FC011",
+          "status": "DIRECT"
+        },
+        {
+          "id": "FC012",
+          "status": "DIRECT"
+        },
+        {
+          "id": "FC014",
+          "status": "DIRECT"
+        },
+        {
+          "id": "PP006",
+          "status": "CONFIRMED_PRODUCT_SPECIFIC"
+        }
+      ]
+    },
+    {
+      "id": "PRD002",
+      "name": "Synergy e9",
+      "bioactives": [
+        {
+          "id": "FC011",
+          "status": "DIRECT"
+        }
+      ]
+    },
+    {
+      "id": "PRD003",
+      "name": "Synergy Immune Booster",
+      "bioactives": [
+        {
+          "id": "DF001",
+          "status": "DIRECT"
+        },
+        {
+          "id": "DF009",
+          "status": "DIRECT"
+        }
+      ]
+    },
+    {
+      "id": "PRD004",
+      "name": "Synergy Pro360 Wholefood Greens",
+      "bioactives": [
+        {
+          "id": "DF012",
+          "status": "DIRECT"
+        },
+        {
+          "id": "DF009",
+          "status": "DIRECT"
+        },
+        {
+          "id": "FA001",
+          "status": "SOURCE_DEFINED"
+        },
+        {
+          "id": "PP011",
+          "status": "SOURCE_DEFINED"
+        },
+        {
+          "id": "PP003",
+          "status": "SOURCE_DEFINED"
+        },
+        {
+          "id": "PP008",
+          "status": "SOURCE_DEFINED"
+        },
+        {
+          "id": "PP004",
+          "status": "DIRECT"
+        }
+      ]
+    },
+    {
+      "id": "PRD005",
+      "name": "Synergy Pro360 Superfood Performance Beets",
+      "bioactives": [
+        {
+          "id": "FC020",
+          "status": "CONFIRMED"
+        },
+        {
+          "id": "FC016",
+          "status": "CONFIRMED"
+        }
+      ]
+    },
+    {
+      "id": "PRD006",
+      "name": "Synergy Biome Actives",
+      "bioactives": [
+        {
+          "id": "DF003",
+          "status": "DIRECT"
+        }
+      ]
+    },
+    {
+      "id": "PRD007",
+      "name": "Synergy Biome DT",
+      "bioactives": [
+        {
+          "id": "DF011",
+          "status": "DIRECT"
+        },
+        {
+          "id": "FC013",
+          "status": "DIRECT"
+        },
+        {
+          "id": "DF003",
+          "status": "DIRECT"
+        },
+        {
+          "id": "FC021",
+          "status": "DIRECT"
+        }
+      ]
+    },
+    {
+      "id": "PRD008",
+      "name": "Synergy Biome Shake",
+      "bioactives": [
+        {
+          "id": "DF012",
+          "status": "DIRECT"
+        },
+        {
+          "id": "DF009",
+          "status": "DIRECT"
+        },
+        {
+          "id": "PP003",
+          "status": "SOURCE_DEFINED"
+        },
+        {
+          "id": "PP008",
+          "status": "SOURCE_DEFINED"
+        },
+        {
+          "id": "PP004",
+          "status": "DIRECT"
+        }
+      ]
+    },
+    {
+      "id": "PRD009",
+      "name": "Synergy Body Prime",
+      "bioactives": [
+        {
+          "id": "DF002",
+          "status": "DIRECT"
+        }
+      ]
+    },
+    {
+      "id": "PRD010",
+      "name": "PhytoLife",
+      "bioactives": [
+        {
+          "id": "FC021",
+          "status": "DIRECT"
+        }
+      ]
+    },
+    {
+      "id": "PRD011",
+      "name": "Mistify",
+      "bioactives": [
+        {
+          "id": "PP001",
+          "status": "CONFIRMED_PRODUCT_PROFILE"
+        },
+        {
+          "id": "PP003",
+          "status": "SOURCE_DEFINED"
+        }
+      ]
+    }
+  ]
+}

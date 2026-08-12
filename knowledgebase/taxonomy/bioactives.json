@@ -1,7 +1,7 @@
 {
-  "version": "2.2",
+  "version": "2.3",
   "generated": "2026-08-05T15:26:45+00:00",
-  "count": 70,
+  "count": 71,
   "bioactives": [
     {
       "id": "DF001",
@@ -1726,6 +1726,32 @@
         "nitric oxide",
         "vascular",
         "blood flow"
+      ]
+    },
+    {
+      "id": "FC021",
+      "name": "Chlorophyllin",
+      "canonicalName": "chlorophyllin",
+      "aliases": [
+        "Sodium Copper Chlorophyllin",
+        "Sodium Copper Chlorophylline"
+      ],
+      "category": "Functional Compounds",
+      "subcategory": "Plant Pigments",
+      "plainEnglish": "A water-soluble chlorophyll derivative used in foods and nutritional formulations.",
+      "primaryAction": "Supports antioxidant and cellular protection pathways.",
+      "description": "Chlorophyllin is a water-soluble, semi-synthetic derivative of chlorophyll. Sodium copper chlorophyllin is used in nutritional and food formulations and has documented antioxidant and cellular-protective activity.",
+      "scientificSummary": "A water-soluble chlorophyll derivative in which the central magnesium is replaced by copper and the phytol group is removed; studied for antioxidant, antigenotoxic and cellular-protective activity.",
+      "evidence": "Moderate",
+      "clinicalImportance": 3,
+      "maturity": "Growing",
+      "status": "Active",
+      "keywords": [
+        "chlorophyllin",
+        "sodium copper chlorophyllin",
+        "chlorophyll",
+        "antioxidant",
+        "cellular protection"
       ]
     }
   ]

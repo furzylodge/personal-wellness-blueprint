@@ -1,8 +1,8 @@
 {
   "schema": "bioactive-mechanisms-schema.json",
-  "version": "1.0",
+  "version": "2.4",
   "generated": "2026-08-12T15:00:00+01:00",
-  "count": 360,
+  "count": 363,
   "relationships": [
     {
       "id": "BM000001",
@@ -3960,6 +3960,39 @@
       "strength": 4,
       "confidence": "High",
       "notes": "Nitrate-derived nitric oxide can contribute to normal vascular tone and blood-pressure regulation.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000361",
+      "bioactive": "FC021",
+      "mechanism": "MEC020",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Experimental evidence supports antioxidant activity and protection against oxidative damage.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000362",
+      "bioactive": "FC021",
+      "mechanism": "MEC060",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Experimental literature reports modulation of inflammatory signalling; kept at a conservative strength.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM000363",
+      "bioactive": "FC021",
+      "mechanism": "MEC071",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Preclinical evidence supports activation/modulation of endogenous antioxidant defence pathways.",
       "references": [
         "Scientific Literature"
       ]
