@@ -1,8 +1,8 @@
 {
-  "version": "1.4",
+  "version": "1.6",
   "generated": "2026-08-12",
   "source": "Derived from food-bioactives(8).json with the current canonical food and bioactive catalogues.",
-  "count": 167,
+  "count": 173,
   "relationships": [
     {
       "foodId": "FD001",
@@ -1099,6 +1099,51 @@
         },
         {
           "id": "PP001",
+          "strength": 3,
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "foodId": "FD058",
+      "bioactives": [
+        {
+          "id": "PP009",
+          "strength": 5,
+          "confidence": 0.95
+        },
+        {
+          "id": "TP001",
+          "strength": 3,
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "foodId": "FD059",
+      "bioactives": [
+        {
+          "id": "PP009",
+          "strength": 5,
+          "confidence": 0.95
+        },
+        {
+          "id": "TP001",
+          "strength": 3,
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "foodId": "FD060",
+      "bioactives": [
+        {
+          "id": "PP009",
+          "strength": 5,
+          "confidence": 0.95
+        },
+        {
+          "id": "TP001",
           "strength": 3,
           "confidence": 0.9
         }

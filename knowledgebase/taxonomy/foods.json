@@ -1,7 +1,7 @@
 {
-  "version": "2.0",
+  "version": "2.2",
   "generated": "2026-08-10T00:00:00+00:00",
-  "count": 57,
+  "count": 64,
   "foods": [
     {
       "id": "FD001",
@@ -629,6 +629,83 @@
       "evidence": "High",
       "status": "Approved",
       "monograph": "FD057-grapes.md"
+    },
+    {
+      "id": "FD058",
+      "name": "Oranges",
+      "scientificName": "Citrus sinensis",
+      "slug": "oranges",
+      "foodGroup": "FG003",
+      "foodGroupName": "Fruit",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD058-oranges.md"
+    },
+    {
+      "id": "FD059",
+      "name": "Lemons",
+      "scientificName": "Citrus limon",
+      "slug": "lemons",
+      "foodGroup": "FG003",
+      "foodGroupName": "Fruit",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD059-lemons.md"
+    },
+    {
+      "id": "FD060",
+      "name": "Mandarins",
+      "scientificName": "Citrus reticulata",
+      "slug": "mandarins",
+      "foodGroup": "FG003",
+      "foodGroupName": "Fruit",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD060-mandarins.md"
+    },
+    {
+      "id": "FD061",
+      "name": "Eggs",
+      "scientificName": "Gallus gallus domesticus",
+      "slug": "eggs",
+      "foodGroup": "FG005",
+      "foodGroupName": "Animal Foods",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD061-eggs.md"
+    },
+    {
+      "id": "FD062",
+      "name": "Pomegranate",
+      "scientificName": "Punica granatum",
+      "slug": "pomegranate",
+      "foodGroup": "FG003",
+      "foodGroupName": "Fruit",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD062-pomegranate.md"
+    },
+    {
+      "id": "FD063",
+      "name": "Seaweed",
+      "scientificName": "Marine macroalgae",
+      "slug": "seaweed",
+      "foodGroup": "FG007",
+      "foodGroupName": "Other Functional Foods",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD063-seaweed.md"
+    },
+    {
+      "id": "FD064",
+      "name": "Artichoke",
+      "scientificName": "Cynara cardunculus var. scolymus",
+      "slug": "artichoke",
+      "foodGroup": "FG002",
+      "foodGroupName": "Vegetables",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD064-artichoke.md"
     }
   ]
 }
