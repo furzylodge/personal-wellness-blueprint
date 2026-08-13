@@ -1,5 +1,5 @@
 {
-  "version": "2.1",
+  "version": "11.0",
   "description": "Mechanisms aligned to the nine Personal Wellness Blueprint body systems",
   "mechanisms": [
     {
@@ -1947,6 +1947,34 @@
         "renal protection",
         "kidney cellular protection"
       ]
+    },
+    {
+      "id": "MEC107",
+      "name": "Supports Menopausal Transition Resilience",
+      "category": "Glandular",
+      "description": "Supports physiological resilience and adaptation during the hormonal transition associated with perimenopause and menopause.",
+      "plainEnglish": "Supports physiological adaptation during the menopausal transition.",
+      "evidence": "Strong",
+      "primaryBodySystems": [
+        "BS008"
+      ],
+      "bioactiveCompounds": [],
+      "keywords": [
+        "menopause",
+        "perimenopause",
+        "menopausal transition",
+        "postmenopause",
+        "hormonal transition",
+        "women's health"
+      ],
+      "primaryBodySystemNames": [
+        "Glandular"
+      ],
+      "tier": "Tier 1",
+      "maturity": "Proposed",
+      "status": "Active",
+      "guardrail": "This mechanism represents physiological adaptation during the menopausal transition. It is not a claim to treat menopause, replace hormone therapy, or normalise hormone concentrations."
     }
-  ]
+  ],
+  "count": 107
 }

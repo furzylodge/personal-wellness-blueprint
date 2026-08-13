@@ -1,5 +1,5 @@
 {
-  "version": "1.0",
+  "version": "9.0",
   "bodySystems": [
     {
       "id": "BS001",
@@ -700,6 +700,12 @@
           "priority": 1,
           "weight": 35,
           "evidence": "Emerging"
+        },
+        {
+          "id": "MEC107",
+          "name": "Supports Menopausal Transition Resilience",
+          "priority": "Tier 1",
+          "evidence": "Strong"
         }
       ]
     },
