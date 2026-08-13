@@ -1,5 +1,5 @@
 {
-  "version": "11.0",
+  "version": "12.0",
   "description": "Mechanisms aligned to the nine Personal Wellness Blueprint body systems",
   "mechanisms": [
     {
@@ -1974,7 +1974,39 @@
       "maturity": "Proposed",
       "status": "Active",
       "guardrail": "This mechanism represents physiological adaptation during the menopausal transition. It is not a claim to treat menopause, replace hormone therapy, or normalise hormone concentrations."
+    },
+    {
+      "id": "MEC108",
+      "name": "Supports Phytoestrogen Metabolism",
+      "category": "Glandular",
+      "description": "Supports microbial and host processing of dietary phytoestrogens into bioactive metabolites and influences their bioavailability and biological activity.",
+      "plainEnglish": "Supports the gut-mediated processing of plant compounds with oestrogen-like activity.",
+      "evidence": "Moderate",
+      "primaryBodySystems": [
+        "BS008"
+      ],
+      "bioactiveCompounds": [
+        "PP011"
+      ],
+      "keywords": [
+        "phytoestrogen",
+        "lignans",
+        "enterolactone",
+        "enterodiol",
+        "isoflavones",
+        "equol",
+        "gut microbiome",
+        "estrogen metabolism",
+        "menopause"
+      ],
+      "primaryBodySystemNames": [
+        "Glandular"
+      ],
+      "tier": "Tier 1",
+      "maturity": "Proposed",
+      "status": "Active",
+      "guardrail": "This mechanism represents metabolism and bioavailability of dietary phytoestrogens. It is not a claim that phytoestrogens replace endogenous oestrogen, treat menopause, or normalise hormone concentrations."
     }
   ],
-  "count": 107
+  "count": 108
 }

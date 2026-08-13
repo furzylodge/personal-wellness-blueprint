@@ -1,5 +1,5 @@
 {
-  "version": "9.0",
+  "version": "10.0",
   "bodySystems": [
     {
       "id": "BS001",
@@ -706,6 +706,12 @@
           "name": "Supports Menopausal Transition Resilience",
           "priority": "Tier 1",
           "evidence": "Strong"
+        },
+        {
+          "id": "MEC108",
+          "name": "Supports Phytoestrogen Metabolism",
+          "priority": "Tier 1",
+          "evidence": "Moderate"
         }
       ]
     },

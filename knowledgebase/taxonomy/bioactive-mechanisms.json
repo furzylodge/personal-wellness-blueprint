@@ -1,8 +1,8 @@
 {
   "schema": "bioactive-mechanisms-schema.json",
-  "version": "1.5",
+  "version": "1.6",
   "generated": "2026-08-12T15:00:00+01:00",
-  "count": 374,
+  "count": 375,
   "relationships": [
     {
       "id": "BM000001",
@@ -4105,6 +4105,13 @@
       "strength": 3,
       "confidence": "Moderate",
       "evidence": "Artichoke extracts containing caffeoylquinic acids have demonstrated choleretic activity, including increased bile secretion in a placebo-controlled human pilot study. Evidence does not establish that any single caffeoylquinic acid is solely responsible."
+    },
+    {
+      "bioactive": "PP011",
+      "mechanism": "MEC108",
+      "strength": 4,
+      "confidence": "Moderate",
+      "evidence": "Dietary lignans are converted by gut bacteria into enterolignans such as enterolactone and enterodiol. A 2026 randomized controlled trial in perimenopausal women reported increased serum estradiol alongside increased fecal enterolactone, enterodiol and beta-glucuronidase after one month of lignan supplementation, supporting a microbiome-dependent phytoestrogen metabolism pathway. The evidence is still limited to a small clinical literature and does not establish a menopause treatment effect."
     }
   ]
 }
