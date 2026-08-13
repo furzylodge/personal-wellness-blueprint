@@ -1,7 +1,7 @@
 {
-  "version": "2.2",
+  "version": "6.0",
   "generated": "2026-08-10T00:00:00+00:00",
-  "count": 64,
+  "count": 66,
   "foods": [
     {
       "id": "FD001",
@@ -706,6 +706,28 @@
       "evidence": "High",
       "status": "Approved",
       "monograph": "FD064-artichoke.md"
+    },
+    {
+      "id": "FD065",
+      "name": "Sesame Seeds",
+      "scientificName": "Sesamum indicum",
+      "slug": "sesame-seeds",
+      "foodGroup": "FG005",
+      "foodGroupName": "Nuts & Seeds",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD065-sesame-seeds.md"
+    },
+    {
+      "id": "FD066",
+      "name": "Sesame Oil",
+      "scientificName": "Sesamum indicum",
+      "slug": "sesame-oil",
+      "foodGroup": "FG012",
+      "foodGroupName": "Oils & Fats",
+      "evidence": "Moderate",
+      "status": "Approved",
+      "monograph": "FD066-sesame-oil.md"
     }
   ]
 }
