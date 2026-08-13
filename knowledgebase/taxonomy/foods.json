@@ -1,7 +1,7 @@
 {
-  "version": "6.0",
+  "version": "7.0",
   "generated": "2026-08-10T00:00:00+00:00",
-  "count": 66,
+  "count": 69,
   "foods": [
     {
       "id": "FD001",
@@ -728,6 +728,39 @@
       "evidence": "Moderate",
       "status": "Approved",
       "monograph": "FD066-sesame-oil.md"
+    },
+    {
+      "id": "FD067",
+      "name": "Soybeans",
+      "scientificName": "Glycine max",
+      "slug": "soybeans",
+      "foodGroup": "FG004",
+      "foodGroupName": "Beans & Legumes",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD067-soybeans.md"
+    },
+    {
+      "id": "FD068",
+      "name": "Tofu",
+      "scientificName": "Glycine max",
+      "slug": "tofu",
+      "foodGroup": "FG004",
+      "foodGroupName": "Beans & Legumes",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD068-tofu.md"
+    },
+    {
+      "id": "FD069",
+      "name": "Tempeh",
+      "scientificName": "Glycine max",
+      "slug": "tempeh",
+      "foodGroup": "FG004",
+      "foodGroupName": "Beans & Legumes",
+      "evidence": "High",
+      "status": "Approved",
+      "monograph": "FD069-tempeh.md"
     }
   ]
 }

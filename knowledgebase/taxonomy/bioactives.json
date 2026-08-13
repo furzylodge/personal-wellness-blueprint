@@ -1,7 +1,7 @@
 {
-  "version": "2.5",
+  "version": "2.6",
   "generated": "2026-08-05T15:26:45+00:00",
-  "count": 77,
+  "count": 78,
   "bioactives": [
     {
       "id": "DF001",
@@ -1916,6 +1916,39 @@
         "bile",
         "hepatobiliary",
         "phenolic acids"
+      ]
+    },
+    {
+      "id": "PP017",
+      "name": "Soy Isoflavones",
+      "canonicalName": "soy-isoflavones",
+      "aliases": [
+        "soy isoflavones",
+        "isoflavones",
+        "daidzein",
+        "genistein",
+        "glycitein"
+      ],
+      "category": "Polyphenols",
+      "subcategory": "Phytoestrogens",
+      "plainEnglish": "Plant compounds in soy that can be metabolised by gut bacteria, including conversion of daidzein to equol in people with equol-producing microbiota.",
+      "primaryAction": "Provides dietary phytoestrogens for microbiome-dependent metabolism.",
+      "description": "Soy isoflavones include daidzein, genistein and glycitein. Intestinal bacteria can convert daidzein to equol, a metabolite with greater estrogen-receptor activity than its precursor. Only a subset of people produce equol, reflecting inter-individual microbiome variation.",
+      "scientificSummary": "Dietary isoflavones are metabolised by host and microbial pathways. Microbial conversion of daidzein to S-equol is a key pathway and is dependent on the presence of equol-producing bacteria. Clinical evidence does not support treating soy isoflavones as replacement oestrogen; the most defensible PWB relationship is phytoestrogen metabolism.",
+      "evidence": "High",
+      "clinicalImportance": 4,
+      "maturity": "Proposed",
+      "status": "Active",
+      "keywords": [
+        "soy",
+        "isoflavones",
+        "daidzein",
+        "genistein",
+        "glycitein",
+        "equol",
+        "phytoestrogen",
+        "microbiome",
+        "menopause"
       ]
     }
   ]

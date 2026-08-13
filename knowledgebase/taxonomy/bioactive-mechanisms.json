@@ -1,8 +1,8 @@
 {
   "schema": "bioactive-mechanisms-schema.json",
-  "version": "1.6",
+  "version": "1.7",
   "generated": "2026-08-12T15:00:00+01:00",
-  "count": 375,
+  "count": 376,
   "relationships": [
     {
       "id": "BM000001",
@@ -4112,6 +4112,13 @@
       "strength": 4,
       "confidence": "Moderate",
       "evidence": "Dietary lignans are converted by gut bacteria into enterolignans such as enterolactone and enterodiol. A 2026 randomized controlled trial in perimenopausal women reported increased serum estradiol alongside increased fecal enterolactone, enterodiol and beta-glucuronidase after one month of lignan supplementation, supporting a microbiome-dependent phytoestrogen metabolism pathway. The evidence is still limited to a small clinical literature and does not establish a menopause treatment effect."
+    },
+    {
+      "bioactive": "PP017",
+      "mechanism": "MEC108",
+      "strength": 5,
+      "confidence": "High",
+      "evidence": "Soy isoflavones are dietary phytoestrogens and daidzein can be converted by intestinal bacteria to equol. Equol production varies substantially between individuals because it depends on the presence of equol-producing gut bacteria. The relationship is therefore directly relevant to phytoestrogen metabolism, but does not imply that soy isoflavones raise endogenous oestrogen."
     }
   ]
 }
