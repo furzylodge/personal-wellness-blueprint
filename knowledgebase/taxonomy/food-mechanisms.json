@@ -1,5 +1,5 @@
 {
-  "version": "1.4",
+  "version": "1.7",
   "description": "Weighted relationships between foods and biological mechanisms.",
   "strengthScale": {
     "5": "Primary evidence-supported food for this mechanism",
@@ -47,6 +47,11 @@
           "id": "MEC043",
           "strength": 3,
           "confidence": 0.86
+        },
+        {
+          "id": "MEC048",
+          "strength": 3,
+          "confidence": 0.75
         }
       ]
     },
@@ -182,6 +187,11 @@
           "id": "MEC021",
           "strength": 3,
           "confidence": 0.86
+        },
+        {
+          "id": "MEC048",
+          "strength": 3,
+          "confidence": 0.85
         }
       ]
     },
@@ -207,6 +217,11 @@
           "id": "MEC070",
           "strength": 3,
           "confidence": 0.86
+        },
+        {
+          "id": "MEC048",
+          "strength": 3,
+          "confidence": 0.85
         }
       ]
     },
@@ -272,6 +287,11 @@
           "id": "MEC070",
           "strength": 3,
           "confidence": 0.86
+        },
+        {
+          "id": "MEC048",
+          "strength": 3,
+          "confidence": 0.85
         }
       ]
     },
@@ -367,6 +387,11 @@
           "id": "MEC043",
           "strength": 3,
           "confidence": 0.86
+        },
+        {
+          "id": "MEC048",
+          "strength": 3,
+          "confidence": 0.85
         }
       ]
     },
@@ -392,6 +417,11 @@
           "id": "MEC043",
           "strength": 3,
           "confidence": 0.86
+        },
+        {
+          "id": "MEC048",
+          "strength": 3,
+          "confidence": 0.85
         }
       ]
     },
@@ -417,6 +447,11 @@
           "id": "MEC041",
           "strength": 3,
           "confidence": 0.86
+        },
+        {
+          "id": "MEC048",
+          "strength": 3,
+          "confidence": 0.85
         }
       ]
     },
@@ -442,6 +477,11 @@
           "id": "MEC043",
           "strength": 3,
           "confidence": 0.86
+        },
+        {
+          "id": "MEC048",
+          "strength": 3,
+          "confidence": 0.85
         }
       ]
     },
@@ -467,6 +507,11 @@
           "id": "MEC060",
           "strength": 4,
           "confidence": 0.93
+        },
+        {
+          "id": "MEC055",
+          "strength": 3,
+          "confidence": 0.85
         }
       ]
     },
@@ -487,6 +532,11 @@
           "id": "MEC043",
           "strength": 3,
           "confidence": 0.86
+        },
+        {
+          "id": "MEC055",
+          "strength": 3,
+          "confidence": 0.85
         }
       ]
     },
@@ -502,6 +552,11 @@
           "id": "MEC060",
           "strength": 4,
           "confidence": 0.93
+        },
+        {
+          "id": "MEC055",
+          "strength": 3,
+          "confidence": 0.85
         }
       ]
     },
@@ -532,6 +587,11 @@
           "id": "MEC060",
           "strength": 4,
           "confidence": 0.93
+        },
+        {
+          "id": "MEC055",
+          "strength": 3,
+          "confidence": 0.85
         }
       ]
     },
@@ -557,6 +617,11 @@
           "id": "MEC060",
           "strength": 4,
           "confidence": 0.93
+        },
+        {
+          "id": "MEC055",
+          "strength": 3,
+          "confidence": 0.85
         }
       ]
     },
@@ -572,6 +637,11 @@
           "id": "MEC060",
           "strength": 4,
           "confidence": 0.93
+        },
+        {
+          "id": "MEC055",
+          "strength": 3,
+          "confidence": 0.85
         }
       ]
     },
@@ -597,6 +667,11 @@
           "id": "MEC060",
           "strength": 4,
           "confidence": 0.93
+        },
+        {
+          "id": "MEC055",
+          "strength": 3,
+          "confidence": 0.85
         }
       ]
     },
@@ -932,6 +1007,11 @@
           "id": "MEC052",
           "strength": 3,
           "confidence": 0.86
+        },
+        {
+          "id": "MEC048",
+          "strength": 3,
+          "confidence": 0.85
         }
       ]
     },
@@ -947,6 +1027,11 @@
           "id": "MEC021",
           "strength": 4,
           "confidence": 0.93
+        },
+        {
+          "id": "MEC048",
+          "strength": 3,
+          "confidence": 0.85
         }
       ]
     },
@@ -1024,6 +1109,11 @@
           "id": "MEC021",
           "strength": 3,
           "confidence": 0.85
+        },
+        {
+          "id": "MEC048",
+          "strength": 3,
+          "confidence": 0.75
         }
       ]
     },
@@ -1094,7 +1184,177 @@
           "confidence": 0.85
         }
       ]
+    },
+    {
+      "foodId": "FD058",
+      "mechanisms": [
+        {
+          "id": "MEC040",
+          "strength": 3,
+          "confidence": 0.85
+        },
+        {
+          "id": "MEC041",
+          "strength": 3,
+          "confidence": 0.85
+        },
+        {
+          "id": "MEC042",
+          "strength": 3,
+          "confidence": 0.85
+        },
+        {
+          "id": "MEC045",
+          "strength": 3,
+          "confidence": 0.85
+        },
+        {
+          "id": "MEC044",
+          "strength": 3,
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "foodId": "FD059",
+      "mechanisms": [
+        {
+          "id": "MEC040",
+          "strength": 3,
+          "confidence": 0.85
+        },
+        {
+          "id": "MEC041",
+          "strength": 3,
+          "confidence": 0.85
+        },
+        {
+          "id": "MEC042",
+          "strength": 3,
+          "confidence": 0.85
+        },
+        {
+          "id": "MEC045",
+          "strength": 3,
+          "confidence": 0.85
+        },
+        {
+          "id": "MEC044",
+          "strength": 3,
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "foodId": "FD060",
+      "mechanisms": [
+        {
+          "id": "MEC040",
+          "strength": 3,
+          "confidence": 0.85
+        },
+        {
+          "id": "MEC041",
+          "strength": 3,
+          "confidence": 0.85
+        },
+        {
+          "id": "MEC042",
+          "strength": 3,
+          "confidence": 0.85
+        },
+        {
+          "id": "MEC045",
+          "strength": 3,
+          "confidence": 0.85
+        },
+        {
+          "id": "MEC044",
+          "strength": 3,
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "foodId": "FD061",
+      "mechanisms": [
+        {
+          "id": "MEC053",
+          "strength": 3,
+          "confidence": 0.85
+        },
+        {
+          "id": "MEC054",
+          "strength": 3,
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "foodId": "FD062",
+      "mechanisms": [
+        {
+          "id": "MEC010",
+          "strength": 3,
+          "confidence": 0.85
+        },
+        {
+          "id": "MEC011",
+          "strength": 3,
+          "confidence": 0.85
+        },
+        {
+          "id": "MEC018",
+          "strength": 3,
+          "confidence": 0.85
+        },
+        {
+          "id": "MEC020",
+          "strength": 3,
+          "confidence": 0.85
+        },
+        {
+          "id": "MEC021",
+          "strength": 3,
+          "confidence": 0.85
+        },
+        {
+          "id": "MEC060",
+          "strength": 3,
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "foodId": "FD064",
+      "mechanisms": [
+        {
+          "id": "MEC040",
+          "strength": 3,
+          "confidence": 0.85
+        },
+        {
+          "id": "MEC041",
+          "strength": 3,
+          "confidence": 0.85
+        },
+        {
+          "id": "MEC043",
+          "strength": 3,
+          "confidence": 0.85
+        },
+        {
+          "id": "MEC044",
+          "strength": 3,
+          "confidence": 0.85
+        },
+        {
+          "id": "MEC049",
+          "strength": 3,
+          "confidence": 0.85
+        }
+      ]
     }
   ],
-  "count": 165
+  "count": 211
 }

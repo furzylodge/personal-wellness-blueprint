@@ -1,8 +1,8 @@
 {
   "schema": "bioactive-mechanisms-schema.json",
-  "version": "2.5",
+  "version": "1.5",
   "generated": "2026-08-12T15:00:00+01:00",
-  "count": 371,
+  "count": 374,
   "relationships": [
     {
       "id": "BM000001",
@@ -4084,6 +4084,27 @@
       "references": [
         "Supplied Synergy product factsheets"
       ]
+    },
+    {
+      "bioactive": "OS002",
+      "mechanism": "MEC073",
+      "strength": 4,
+      "confidence": "High",
+      "evidence": "Sulforaphane activates Nrf2-mediated cytoprotective and antioxidant pathways and has liver-focused evidence for reducing oxidative stress and liver injury."
+    },
+    {
+      "bioactive": "OS002",
+      "mechanism": "MEC066",
+      "strength": 3,
+      "confidence": "Moderate",
+      "evidence": "Preclinical studies report antiviral activity of sulforaphane against multiple viruses; evidence remains predominantly cellular/animal rather than clinical."
+    },
+    {
+      "bioactive": "PP016",
+      "mechanism": "MEC074",
+      "strength": 3,
+      "confidence": "Moderate",
+      "evidence": "Artichoke extracts containing caffeoylquinic acids have demonstrated choleretic activity, including increased bile secretion in a placebo-controlled human pilot study. Evidence does not establish that any single caffeoylquinic acid is solely responsible."
     }
   ]
 }

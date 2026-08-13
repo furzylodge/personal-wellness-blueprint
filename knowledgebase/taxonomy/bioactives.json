@@ -1,7 +1,7 @@
 {
-  "version": "2.4",
+  "version": "2.5",
   "generated": "2026-08-05T15:26:45+00:00",
-  "count": 76,
+  "count": 77,
   "bioactives": [
     {
       "id": "DF001",
@@ -1886,6 +1886,36 @@
         "joint",
         "mobility",
         "sulphur"
+      ]
+    },
+    {
+      "id": "PP016",
+      "name": "Caffeoylquinic Acids",
+      "canonicalName": "caffeoylquinic-acids",
+      "aliases": [
+        "CQA",
+        "caffeoylquinic acid derivatives",
+        "dicaffeoylquinic acids"
+      ],
+      "category": "Polyphenols",
+      "subcategory": "Phenolic Acids",
+      "plainEnglish": "A family of phenolic acids found prominently in artichoke, including chlorogenic acid and dicaffeoylquinic acids such as cynarin.",
+      "primaryAction": "Supports hepatobiliary function and antioxidant protection.",
+      "description": "Caffeoylquinic acids are a family of phenolic compounds found in artichoke and other plants. Artichoke contains multiple caffeoylquinic and dicaffeoylquinic acids, including chlorogenic acid and cynarin. The family is retained as a broader constituent category because artichoke's hepatobiliary activity cannot be attributed confidently to cynarin alone.",
+      "scientificSummary": "Phenolic esters formed from caffeic acid and quinic acid, including mono-caffeoylquinic acids such as chlorogenic acid and dicaffeoylquinic acids such as cynarin. Artichoke extracts containing these compounds exhibit choleretic and hepatoprotective activity, although individual constituent contributions vary.",
+      "evidence": "Moderate",
+      "clinicalImportance": 4,
+      "maturity": "Proposed",
+      "status": "Active",
+      "keywords": [
+        "artichoke",
+        "cynarin",
+        "chlorogenic acid",
+        "caffeoylquinic acid",
+        "dicaffeoylquinic acids",
+        "bile",
+        "hepatobiliary",
+        "phenolic acids"
       ]
     }
   ]

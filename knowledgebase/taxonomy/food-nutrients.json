@@ -1,0 +1,641 @@
+{
+  "version": "1.0",
+  "status": "PROPOSED_NO_REPOSITORY_CHANGES",
+  "description": "Proposed food-to-nutrient relationships for the eight priority nutrients. No quantities are encoded. Relationships are intended to support pathway coverage, not dietary adequacy claims.",
+  "nutrients": {
+    "V010": "Vitamin C",
+    "V011": "Vitamin D",
+    "V013": "Vitamin K",
+    "M001": "Calcium",
+    "M004": "Iodine",
+    "M006": "Magnesium",
+    "M011": "Selenium",
+    "M013": "Zinc"
+  },
+  "count": 89,
+  "relationships": [
+    {
+      "foodId": "FD001",
+      "nutrients": [
+        {
+          "id": "M006",
+          "confidence": "High"
+        },
+        {
+          "id": "M013",
+          "confidence": "High"
+        }
+      ]
+    },
+    {
+      "foodId": "FD002",
+      "nutrients": [
+        {
+          "id": "V010",
+          "confidence": "High"
+        }
+      ]
+    },
+    {
+      "foodId": "FD003",
+      "nutrients": [
+        {
+          "id": "V010",
+          "confidence": "High"
+        }
+      ]
+    },
+    {
+      "foodId": "FD004",
+      "nutrients": [
+        {
+          "id": "V010",
+          "confidence": "High"
+        }
+      ]
+    },
+    {
+      "foodId": "FD005",
+      "nutrients": [
+        {
+          "id": "V010",
+          "confidence": "High"
+        }
+      ]
+    },
+    {
+      "foodId": "FD006",
+      "nutrients": [
+        {
+          "id": "V010",
+          "confidence": "High"
+        },
+        {
+          "id": "V013",
+          "confidence": "High"
+        },
+        {
+          "id": "M006",
+          "confidence": "High"
+        }
+      ]
+    },
+    {
+      "foodId": "FD007",
+      "nutrients": [
+        {
+          "id": "V010",
+          "confidence": "High"
+        },
+        {
+          "id": "V013",
+          "confidence": "High"
+        },
+        {
+          "id": "M006",
+          "confidence": "High"
+        }
+      ]
+    },
+    {
+      "foodId": "FD008",
+      "nutrients": [
+        {
+          "id": "V010",
+          "confidence": "High"
+        },
+        {
+          "id": "V013",
+          "confidence": "High"
+        },
+        {
+          "id": "M006",
+          "confidence": "High"
+        }
+      ]
+    },
+    {
+      "foodId": "FD009",
+      "nutrients": [
+        {
+          "id": "V010",
+          "confidence": "High"
+        },
+        {
+          "id": "V013",
+          "confidence": "High"
+        },
+        {
+          "id": "M006",
+          "confidence": "High"
+        }
+      ]
+    },
+    {
+      "foodId": "FD010",
+      "nutrients": [
+        {
+          "id": "V010",
+          "confidence": "High"
+        },
+        {
+          "id": "V013",
+          "confidence": "High"
+        }
+      ]
+    },
+    {
+      "foodId": "FD011",
+      "nutrients": [
+        {
+          "id": "V010",
+          "confidence": "High"
+        },
+        {
+          "id": "V013",
+          "confidence": "High"
+        }
+      ]
+    },
+    {
+      "foodId": "FD012",
+      "nutrients": [
+        {
+          "id": "V010",
+          "confidence": "High"
+        },
+        {
+          "id": "V013",
+          "confidence": "High"
+        }
+      ]
+    },
+    {
+      "foodId": "FD013",
+      "nutrients": [
+        {
+          "id": "V010",
+          "confidence": "High"
+        },
+        {
+          "id": "V013",
+          "confidence": "High"
+        }
+      ]
+    },
+    {
+      "foodId": "FD014",
+      "nutrients": [
+        {
+          "id": "M006",
+          "confidence": "High"
+        },
+        {
+          "id": "M013",
+          "confidence": "High"
+        }
+      ]
+    },
+    {
+      "foodId": "FD015",
+      "nutrients": [
+        {
+          "id": "M006",
+          "confidence": "High"
+        },
+        {
+          "id": "M013",
+          "confidence": "High"
+        }
+      ]
+    },
+    {
+      "foodId": "FD016",
+      "nutrients": [
+        {
+          "id": "M006",
+          "confidence": "High"
+        },
+        {
+          "id": "M013",
+          "confidence": "High"
+        }
+      ]
+    },
+    {
+      "foodId": "FD017",
+      "nutrients": [
+        {
+          "id": "M006",
+          "confidence": "High"
+        },
+        {
+          "id": "M013",
+          "confidence": "High"
+        }
+      ]
+    },
+    {
+      "foodId": "FD018",
+      "nutrients": [
+        {
+          "id": "M006",
+          "confidence": "High"
+        },
+        {
+          "id": "M013",
+          "confidence": "High"
+        }
+      ]
+    },
+    {
+      "foodId": "FD019",
+      "nutrients": [
+        {
+          "id": "M006",
+          "confidence": "High"
+        },
+        {
+          "id": "M013",
+          "confidence": "High"
+        }
+      ]
+    },
+    {
+      "foodId": "FD020",
+      "nutrients": [
+        {
+          "id": "M006",
+          "confidence": "High"
+        },
+        {
+          "id": "M013",
+          "confidence": "High"
+        }
+      ]
+    },
+    {
+      "foodId": "FD021",
+      "nutrients": [
+        {
+          "id": "M006",
+          "confidence": "High"
+        },
+        {
+          "id": "M013",
+          "confidence": "High"
+        },
+        {
+          "id": "M001",
+          "confidence": "High"
+        }
+      ]
+    },
+    {
+      "foodId": "FD022",
+      "nutrients": [
+        {
+          "id": "M006",
+          "confidence": "High"
+        },
+        {
+          "id": "M013",
+          "confidence": "High"
+        },
+        {
+          "id": "M001",
+          "confidence": "High"
+        }
+      ]
+    },
+    {
+      "foodId": "FD023",
+      "nutrients": [
+        {
+          "id": "M011",
+          "confidence": "High"
+        },
+        {
+          "id": "M006",
+          "confidence": "High"
+        }
+      ]
+    },
+    {
+      "foodId": "FD024",
+      "nutrients": []
+    },
+    {
+      "foodId": "FD025",
+      "nutrients": [
+        {
+          "id": "V010",
+          "confidence": "Moderate"
+        }
+      ]
+    },
+    {
+      "foodId": "FD026",
+      "nutrients": [
+        {
+          "id": "V010",
+          "confidence": "Moderate"
+        }
+      ]
+    },
+    {
+      "foodId": "FD027",
+      "nutrients": [
+        {
+          "id": "V010",
+          "confidence": "Moderate"
+        }
+      ]
+    },
+    {
+      "foodId": "FD028",
+      "nutrients": [
+        {
+          "id": "V010",
+          "confidence": "Moderate"
+        }
+      ]
+    },
+    {
+      "foodId": "FD029",
+      "nutrients": [
+        {
+          "id": "V011",
+          "confidence": "Moderate"
+        }
+      ]
+    },
+    {
+      "foodId": "FD030",
+      "nutrients": [
+        {
+          "id": "V011",
+          "confidence": "High"
+        },
+        {
+          "id": "M011",
+          "confidence": "High"
+        }
+      ]
+    },
+    {
+      "foodId": "FD031",
+      "nutrients": [
+        {
+          "id": "V011",
+          "confidence": "High"
+        },
+        {
+          "id": "M011",
+          "confidence": "High"
+        },
+        {
+          "id": "M001",
+          "confidence": "High"
+        }
+      ]
+    },
+    {
+      "foodId": "FD032",
+      "nutrients": [
+        {
+          "id": "V011",
+          "confidence": "High"
+        },
+        {
+          "id": "M011",
+          "confidence": "High"
+        }
+      ]
+    },
+    {
+      "foodId": "FD033",
+      "nutrients": [
+        {
+          "id": "V011",
+          "confidence": "High"
+        },
+        {
+          "id": "M011",
+          "confidence": "High"
+        }
+      ]
+    },
+    {
+      "foodId": "FD034",
+      "nutrients": [
+        {
+          "id": "M001",
+          "confidence": "High"
+        },
+        {
+          "id": "M013",
+          "confidence": "Moderate"
+        }
+      ]
+    },
+    {
+      "foodId": "FD035",
+      "nutrients": [
+        {
+          "id": "M001",
+          "confidence": "High"
+        },
+        {
+          "id": "M013",
+          "confidence": "Moderate"
+        }
+      ]
+    },
+    {
+      "foodId": "FD036",
+      "nutrients": [
+        {
+          "id": "V010",
+          "confidence": "Moderate"
+        }
+      ]
+    },
+    {
+      "foodId": "FD037",
+      "nutrients": [
+        {
+          "id": "V010",
+          "confidence": "Moderate"
+        }
+      ]
+    },
+    {
+      "foodId": "FD043",
+      "nutrients": [
+        {
+          "id": "M006",
+          "confidence": "Moderate"
+        }
+      ]
+    },
+    {
+      "foodId": "FD044",
+      "nutrients": [
+        {
+          "id": "M006",
+          "confidence": "Moderate"
+        }
+      ]
+    },
+    {
+      "foodId": "FD046",
+      "nutrients": [
+        {
+          "id": "M006",
+          "confidence": "Moderate"
+        }
+      ]
+    },
+    {
+      "foodId": "FD049",
+      "nutrients": [
+        {
+          "id": "M006",
+          "confidence": "Moderate"
+        },
+        {
+          "id": "M004",
+          "confidence": "Moderate"
+        }
+      ]
+    },
+    {
+      "foodId": "FD050",
+      "nutrients": [
+        {
+          "id": "V010",
+          "confidence": "Moderate"
+        }
+      ]
+    },
+    {
+      "foodId": "FD053",
+      "nutrients": [
+        {
+          "id": "V010",
+          "confidence": "Moderate"
+        }
+      ]
+    },
+    {
+      "foodId": "FD054",
+      "nutrients": [
+        {
+          "id": "V010",
+          "confidence": "High"
+        }
+      ]
+    },
+    {
+      "foodId": "FD057",
+      "nutrients": [
+        {
+          "id": "V010",
+          "confidence": "Moderate"
+        }
+      ]
+    },
+    {
+      "foodId": "FD058",
+      "nutrients": [
+        {
+          "id": "V010",
+          "confidence": "High"
+        }
+      ]
+    },
+    {
+      "foodId": "FD059",
+      "nutrients": [
+        {
+          "id": "V010",
+          "confidence": "High"
+        }
+      ]
+    },
+    {
+      "foodId": "FD060",
+      "nutrients": [
+        {
+          "id": "V010",
+          "confidence": "High"
+        }
+      ]
+    },
+    {
+      "foodId": "FD061",
+      "nutrients": [
+        {
+          "id": "V011",
+          "confidence": "Moderate"
+        },
+        {
+          "id": "M011",
+          "confidence": "High"
+        },
+        {
+          "id": "M004",
+          "confidence": "Moderate"
+        },
+        {
+          "id": "M013",
+          "confidence": "Moderate"
+        }
+      ]
+    },
+    {
+      "foodId": "FD062",
+      "nutrients": [
+        {
+          "id": "V010",
+          "confidence": "Moderate"
+        }
+      ]
+    },
+    {
+      "foodId": "FD063",
+      "nutrients": [
+        {
+          "id": "M004",
+          "confidence": "High"
+        },
+        {
+          "id": "M001",
+          "confidence": "Moderate"
+        },
+        {
+          "id": "M006",
+          "confidence": "Moderate"
+        }
+      ]
+    },
+    {
+      "foodId": "FD064",
+      "nutrients": [
+        {
+          "id": "M006",
+          "confidence": "Moderate"
+        }
+      ]
+    }
+  ],
+  "scope": "Only the eight priority nutrients from nutrient-mechanisms-v1 are included. Other vitamins/minerals remain outside this first pass.",
+  "guardrails": [
+    "Food nutrient content varies by cultivar, species, soil, processing, fortification and preparation.",
+    "Presence of a nutrient does not imply that a food provides a clinically meaningful dose.",
+    "Seaweed iodine content is particularly variable and should be treated as species/product dependent.",
+    "Vitamin D mappings for mushrooms depend strongly on UV exposure and processing.",
+    "No quantities, RDA/NRV values or adequacy claims are encoded."
+  ]
+}

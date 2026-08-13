@@ -1,0 +1,208 @@
+{
+  "version": "1.0",
+  "status": "ACTIVE",
+  "description": "Canonical nutrient-to-mechanism relationships for vitamins and minerals. Nutrients remain a separate layer from bioactives.",
+  "count": 20,
+  "relationships": [
+    {
+      "nutrientId": "M004",
+      "nutrient": "Iodine",
+      "mechanismId": "MEC081",
+      "mechanism": "Supports Thyroid Function",
+      "strength": 5,
+      "confidence": "High",
+      "basis": "Iodine is required for synthesis of thyroid hormones T3 and T4.",
+      "tier1Target": true
+    },
+    {
+      "nutrientId": "M004",
+      "nutrient": "Iodine",
+      "mechanismId": "MEC080",
+      "mechanism": "Supports Hormone Synthesis",
+      "strength": 4,
+      "confidence": "High",
+      "basis": "Iodine is required for thyroid hormone synthesis; this is a narrower application of the general hormone-synthesis mechanism.",
+      "tier1Target": true
+    },
+    {
+      "nutrientId": "M011",
+      "nutrient": "Selenium",
+      "mechanismId": "MEC061",
+      "mechanism": "Supports Innate Immune Function",
+      "strength": 4,
+      "confidence": "High",
+      "basis": "Selenium supports innate immune function, including natural killer cell activity.",
+      "tier1Target": true
+    },
+    {
+      "nutrientId": "M011",
+      "nutrient": "Selenium",
+      "mechanismId": "MEC062",
+      "mechanism": "Supports Adaptive Immune Function",
+      "strength": 4,
+      "confidence": "High",
+      "basis": "Selenium supports adaptive immune function and T-cell maturation/function.",
+      "tier1Target": true
+    },
+    {
+      "nutrientId": "M011",
+      "nutrient": "Selenium",
+      "mechanismId": "MEC069",
+      "mechanism": "Supports Immune Resilience",
+      "strength": 4,
+      "confidence": "High",
+      "basis": "Selenium status is associated with immune competence and infection response.",
+      "tier1Target": true
+    },
+    {
+      "nutrientId": "M011",
+      "nutrient": "Selenium",
+      "mechanismId": "MEC064",
+      "mechanism": "Supports Resolution of Inflammation",
+      "strength": 3,
+      "confidence": "Moderate",
+      "basis": "Selenium is a component of antioxidant enzymes and may reduce systemic inflammatory responses. This is not equivalent to a direct clinical anti-inflammatory effect.",
+      "tier1Target": true
+    },
+    {
+      "nutrientId": "M013",
+      "nutrient": "Zinc",
+      "mechanismId": "MEC061",
+      "mechanism": "Supports Innate Immune Function",
+      "strength": 5,
+      "confidence": "High",
+      "basis": "Zinc is essential for normal immune-system function.",
+      "tier1Target": true
+    },
+    {
+      "nutrientId": "M013",
+      "nutrient": "Zinc",
+      "mechanismId": "MEC062",
+      "mechanism": "Supports Adaptive Immune Function",
+      "strength": 5,
+      "confidence": "High",
+      "basis": "Zinc is required for normal immune development and function.",
+      "tier1Target": true
+    },
+    {
+      "nutrientId": "M013",
+      "nutrient": "Zinc",
+      "mechanismId": "MEC069",
+      "mechanism": "Supports Immune Resilience",
+      "strength": 4,
+      "confidence": "High",
+      "basis": "Zinc deficiency impairs immune function and adequate zinc supports normal immune response.",
+      "tier1Target": true
+    },
+    {
+      "nutrientId": "V011",
+      "nutrient": "Vitamin D",
+      "mechanismId": "MEC061",
+      "mechanism": "Supports Innate Immune Function",
+      "strength": 4,
+      "confidence": "High",
+      "basis": "Vitamin D contributes to normal immune function, including innate immune responses.",
+      "tier1Target": true
+    },
+    {
+      "nutrientId": "V011",
+      "nutrient": "Vitamin D",
+      "mechanismId": "MEC062",
+      "mechanism": "Supports Adaptive Immune Function",
+      "strength": 3,
+      "confidence": "Moderate",
+      "basis": "Vitamin D modulates adaptive immune responses; evidence for clinical outcomes varies.",
+      "tier1Target": true
+    },
+    {
+      "nutrientId": "V011",
+      "nutrient": "Vitamin D",
+      "mechanismId": "MEC069",
+      "mechanism": "Supports Immune Resilience",
+      "strength": 4,
+      "confidence": "High",
+      "basis": "Vitamin D is required for normal immune function.",
+      "tier1Target": true
+    },
+    {
+      "nutrientId": "V011",
+      "nutrient": "Vitamin D",
+      "mechanismId": "MEC096",
+      "mechanism": "Supports Bone Remodelling",
+      "strength": 5,
+      "confidence": "High",
+      "basis": "Vitamin D supports calcium absorption and normal bone health.",
+      "tier1Target": true
+    },
+    {
+      "nutrientId": "V013",
+      "nutrient": "Vitamin K",
+      "mechanismId": "MEC096",
+      "mechanism": "Supports Bone Remodelling",
+      "strength": 4,
+      "confidence": "High",
+      "basis": "Vitamin K-dependent proteins are involved in bone metabolism and mineralisation/turnover.",
+      "tier1Target": true
+    },
+    {
+      "nutrientId": "M006",
+      "nutrient": "Magnesium",
+      "mechanismId": "MEC024",
+      "mechanism": "Supports Mitochondrial Resilience",
+      "strength": 4,
+      "confidence": "High",
+      "basis": "Magnesium is required for energy production and oxidative phosphorylation.",
+      "tier1Target": true
+    },
+    {
+      "nutrientId": "M006",
+      "nutrient": "Magnesium",
+      "mechanismId": "MEC082",
+      "mechanism": "Supports Insulin Signalling",
+      "strength": 3,
+      "confidence": "Moderate",
+      "basis": "Magnesium is involved in blood-glucose regulation and cellular biochemical processes relevant to insulin action.",
+      "tier1Target": true
+    },
+    {
+      "nutrientId": "M006",
+      "nutrient": "Magnesium",
+      "mechanismId": "MEC096",
+      "mechanism": "Supports Bone Remodelling",
+      "strength": 3,
+      "confidence": "Moderate",
+      "basis": "Magnesium contributes to structural bone development.",
+      "tier1Target": true
+    },
+    {
+      "nutrientId": "M001",
+      "nutrient": "Calcium",
+      "mechanismId": "MEC096",
+      "mechanism": "Supports Bone Remodelling",
+      "strength": 5,
+      "confidence": "High",
+      "basis": "Calcium is the major mineral component of bone and is essential for skeletal structure.",
+      "tier1Target": true
+    },
+    {
+      "nutrientId": "V010",
+      "nutrient": "Vitamin C",
+      "mechanismId": "MEC093",
+      "mechanism": "Supports Connective Tissue Integrity",
+      "strength": 5,
+      "confidence": "High",
+      "basis": "Vitamin C is required for collagen biosynthesis, and collagen is a major component of connective tissue.",
+      "tier1Target": true
+    },
+    {
+      "nutrientId": "V010",
+      "nutrient": "Vitamin C",
+      "mechanismId": "MEC097",
+      "mechanism": "Supports Tendon Health",
+      "strength": 4,
+      "confidence": "Moderate",
+      "basis": "Tendons are collagen-rich connective tissue; vitamin C is required for collagen biosynthesis. This is a mechanistic relationship, not a claim that supplementation improves tendon outcomes in all circumstances.",
+      "tier1Target": true
+    }
+  ]
+}

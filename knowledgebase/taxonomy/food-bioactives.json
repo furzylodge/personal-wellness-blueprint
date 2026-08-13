@@ -1,8 +1,8 @@
 {
-  "version": "1.6",
+  "version": "1.7",
   "generated": "2026-08-12",
   "source": "Derived from food-bioactives(8).json with the current canonical food and bioactive catalogues.",
-  "count": 173,
+  "count": 174,
   "relationships": [
     {
       "foodId": "FD001",
@@ -1146,6 +1146,16 @@
           "id": "TP001",
           "strength": 3,
           "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "foodId": "FD064",
+      "bioactives": [
+        {
+          "id": "PP016",
+          "strength": 4,
+          "confidence": 0.95
         }
       ]
     }
