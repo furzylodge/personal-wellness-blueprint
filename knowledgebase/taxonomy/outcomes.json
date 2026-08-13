@@ -1,0 +1,333 @@
+{
+  "version": "1.0",
+  "status": "Draft",
+  "description": "Structured desired states used by PWB to translate user goals and assessment signals into relevant body systems and mechanisms. Outcomes are not diagnoses and do not themselves represent treatment claims.",
+  "designPrinciples": [
+    "Goals represent what the user wants to improve; outcomes represent the structured PWB target.",
+    "An outcome can receive signals from direct questionnaire answers, body-system scores, demographics and lifestyle goals.",
+    "Outcomes should not directly recommend foods or products. They connect the user profile to the existing mechanism taxonomy.",
+    "Demographic information modifies relevance and evidence applicability; it should not independently create a physiological need.",
+    "Direct questionnaire signals can supplement the nine body-system scores rather than being discarded after score calculation.",
+    "Outcome mappings should be evidence-graded and should not imply causality where the source evidence is only associative."
+  ],
+  "outcomes": [
+    {
+      "id": "OUT001",
+      "name": "Better Sleep",
+      "description": "Support better sleep quality and restorative recovery.",
+      "goals": [
+        "GOAL002"
+      ],
+      "primaryBodySystems": [
+        "BS004",
+        "BS008"
+      ],
+      "secondaryBodySystems": [
+        "BS009"
+      ],
+      "directQuestionSignals": [
+        "Q20"
+      ],
+      "supportingQuestionSignals": [
+        "Q21",
+        "Q22",
+        "Q23"
+      ],
+      "candidateMechanisms": [
+        "MEC050",
+        "MEC051",
+        "MEC054",
+        "MEC055"
+      ],
+      "status": "Active"
+    },
+    {
+      "id": "OUT002",
+      "name": "More Energy",
+      "description": "Support energy, vitality and physical stamina.",
+      "goals": [
+        "GOAL001"
+      ],
+      "primaryBodySystems": [
+        "BS008",
+        "BS004"
+      ],
+      "secondaryBodySystems": [
+        "BS002",
+        "BS003"
+      ],
+      "directQuestionSignals": [
+        "Q1",
+        "Q26"
+      ],
+      "supportingQuestionSignals": [
+        "Q2",
+        "Q3",
+        "Q6",
+        "Q35"
+      ],
+      "candidateMechanisms": [
+        "MEC044",
+        "MEC102"
+      ],
+      "status": "Active"
+    },
+    {
+      "id": "OUT003",
+      "name": "Healthy Weight Management",
+      "description": "Support healthy weight and body composition.",
+      "goals": [
+        "GOAL003"
+      ],
+      "primaryBodySystems": [
+        "BS008",
+        "BS002"
+      ],
+      "secondaryBodySystems": [
+        "BS004",
+        "BS003"
+      ],
+      "directQuestionSignals": [
+        "Q25"
+      ],
+      "supportingQuestionSignals": [
+        "Q1",
+        "Q26",
+        "Q27",
+        "Q28"
+      ],
+      "candidateMechanisms": [
+        "MEC040",
+        "MEC041",
+        "MEC043",
+        "MEC044"
+      ],
+      "status": "Active"
+    },
+    {
+      "id": "OUT004",
+      "name": "Better Fitness & Physical Performance",
+      "description": "Support physical fitness, strength, stamina and exercise performance.",
+      "goals": [
+        "GOAL004"
+      ],
+      "primaryBodySystems": [
+        "BS009",
+        "BS003",
+        "BS004"
+      ],
+      "secondaryBodySystems": [
+        "BS008"
+      ],
+      "directQuestionSignals": [
+        "Q26",
+        "Q32",
+        "Q41"
+      ],
+      "supportingQuestionSignals": [
+        "Q35",
+        "Q36",
+        "Q37"
+      ],
+      "candidateMechanisms": [
+        "MEC092",
+        "MEC102"
+      ],
+      "status": "Active"
+    },
+    {
+      "id": "OUT005",
+      "name": "Digestive & Gut Health",
+      "description": "Support digestive comfort, regularity and healthy gut function.",
+      "goals": [
+        "GOAL005"
+      ],
+      "primaryBodySystems": [
+        "BS001",
+        "BS002"
+      ],
+      "secondaryBodySystems": [
+        "BS005"
+      ],
+      "directQuestionSignals": [
+        "Q4",
+        "Q14",
+        "Q27",
+        "Q29"
+      ],
+      "supportingQuestionSignals": [
+        "Q5",
+        "Q15",
+        "Q16",
+        "Q17",
+        "Q18"
+      ],
+      "candidateMechanisms": [
+        "MEC030",
+        "MEC031",
+        "MEC032",
+        "MEC033",
+        "MEC035",
+        "MEC036"
+      ],
+      "status": "Active"
+    },
+    {
+      "id": "OUT006",
+      "name": "Mental Clarity & Cognitive Performance",
+      "description": "Support concentration, focus, memory and cognitive performance.",
+      "goals": [
+        "GOAL006"
+      ],
+      "primaryBodySystems": [
+        "BS004",
+        "BS003"
+      ],
+      "secondaryBodySystems": [
+        "BS008"
+      ],
+      "directQuestionSignals": [
+        "Q12"
+      ],
+      "supportingQuestionSignals": [
+        "Q13",
+        "Q19",
+        "Q20",
+        "Q21"
+      ],
+      "candidateMechanisms": [
+        "MEC050",
+        "MEC051",
+        "MEC102"
+      ],
+      "status": "Active"
+    },
+    {
+      "id": "OUT007",
+      "name": "Mobility & Joint Health",
+      "description": "Support mobility, joint function and comfortable movement.",
+      "goals": [
+        "GOAL007"
+      ],
+      "primaryBodySystems": [
+        "BS009"
+      ],
+      "secondaryBodySystems": [
+        "BS003",
+        "BS004"
+      ],
+      "directQuestionSignals": [
+        "Q32",
+        "Q41"
+      ],
+      "supportingQuestionSignals": [
+        "Q34",
+        "Q35",
+        "Q36",
+        "Q37"
+      ],
+      "candidateMechanisms": [
+        "MEC090",
+        "MEC094"
+      ],
+      "status": "Active"
+    },
+    {
+      "id": "OUT008",
+      "name": "Healthy Ageing & Resilience",
+      "description": "Support resilience, function and wellbeing across ageing.",
+      "goals": [
+        "GOAL008",
+        "GOAL009"
+      ],
+      "primaryBodySystems": [
+        "BS003",
+        "BS004",
+        "BS005",
+        "BS008",
+        "BS009"
+      ],
+      "secondaryBodySystems": [
+        "BS001",
+        "BS002",
+        "BS007"
+      ],
+      "directQuestionSignals": [
+        "Q48"
+      ],
+      "supportingQuestionSignals": [
+        "Q26",
+        "Q32",
+        "Q35",
+        "Q41"
+      ],
+      "candidateMechanisms": [
+        "MEC040",
+        "MEC044",
+        "MEC051",
+        "MEC060",
+        "MEC090",
+        "MEC102"
+      ],
+      "demographicModifiers": {
+        "ageRanges": [
+          "51-64",
+          "65+"
+        ]
+      },
+      "status": "Active"
+    },
+    {
+      "id": "OUT009",
+      "name": "Menopause Transition Resilience",
+      "description": "Support wellbeing and resilience during the menopause transition.",
+      "goals": [
+        "GOAL010"
+      ],
+      "primaryBodySystems": [
+        "BS008",
+        "BS004",
+        "BS009",
+        "BS002"
+      ],
+      "secondaryBodySystems": [
+        "BS003",
+        "BS005"
+      ],
+      "directQuestionSignals": [
+        "Q46",
+        "Q47"
+      ],
+      "supportingQuestionSignals": [
+        "Q20",
+        "Q25",
+        "Q26",
+        "Q41"
+      ],
+      "candidateMechanisms": [
+        "MEC083",
+        "MEC085",
+        "MEC107",
+        "MEC108"
+      ],
+      "demographicModifiers": {
+        "gender": [
+          "Female"
+        ],
+        "ageRanges": [
+          "40-50",
+          "51-64",
+          "65+"
+        ]
+      },
+      "status": "Active"
+    }
+  ],
+  "proposedScoringInputs": {
+    "quizSystemNeed": "Derived from the existing doctor-designed questionnaire and nine body-system scores.",
+    "directQuestionSignals": "Selected questionnaire answers that have an explicit or particularly strong relationship to an outcome.",
+    "goalIntent": "One to three goals selected by the user.",
+    "demographicContext": "Age range and gender used as modifiers, including conditional menopause questions.",
+    "weighting": "Not fixed in this version. Test cases should be used before production weights are chosen."
+  }
+}

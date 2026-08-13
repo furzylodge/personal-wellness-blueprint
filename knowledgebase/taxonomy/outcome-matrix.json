@@ -1,0 +1,387 @@
+{
+  "version": "1.0",
+  "status": "Draft",
+  "description": "Outcome signal matrix derived from the canonical PWB questionnaire. Direct signals are questions whose wording explicitly expresses the desired outcome or a close outcome-specific concern. Supporting signals are relevant but non-specific questions. Body-system mappings remain independently defined in questions.json.",
+  "rules": {
+    "directSignal": "A response is a direct signal when the question explicitly asks about the outcome or a closely equivalent user concern.",
+    "supportingSignal": "A response is a supporting signal when it is plausibly relevant to the outcome but is not itself an explicit outcome statement.",
+    "positiveResponseAssumption": "The matrix does not define answer scoring or whether Yes/No/scale responses increase or decrease need. That belongs in scoring.json.",
+    "demographicRule": "Gender and age modify outcome applicability/relevance; they do not replace questionnaire evidence.",
+    "menopauseRule": "Q46 and Q47 are female-specific in the source questionnaire and must remain conditionally presented."
+  },
+  "outcomes": [
+    {
+      "id": "OUT001",
+      "name": "Better Sleep",
+      "goalIds": [
+        "GOAL002"
+      ],
+      "directQuestions": [
+        "Q20"
+      ],
+      "supportingQuestions": [
+        "Q07",
+        "Q08",
+        "Q12",
+        "Q19",
+        "Q30",
+        "Q35",
+        "Q37",
+        "Q42",
+        "Q43"
+      ],
+      "primarySystems": [
+        "Nervous",
+        "Glandular"
+      ],
+      "secondarySystems": [
+        "Structural"
+      ],
+      "status": "Active"
+    },
+    {
+      "id": "OUT002",
+      "name": "More Energy",
+      "goalIds": [
+        "GOAL001"
+      ],
+      "directQuestions": [
+        "Q01",
+        "Q26",
+        "Q35"
+      ],
+      "supportingQuestions": [
+        "Q19",
+        "Q20",
+        "Q25",
+        "Q28",
+        "Q36",
+        "Q44"
+      ],
+      "primarySystems": [
+        "Circulatory",
+        "Glandular",
+        "Nervous"
+      ],
+      "secondarySystems": [
+        "Digestive",
+        "Intestinal",
+        "Immune"
+      ],
+      "status": "Active"
+    },
+    {
+      "id": "OUT003",
+      "name": "Healthy Weight Management",
+      "goalIds": [
+        "GOAL003"
+      ],
+      "directQuestions": [
+        "Q25"
+      ],
+      "supportingQuestions": [
+        "Q01",
+        "Q05",
+        "Q07",
+        "Q17",
+        "Q18",
+        "Q24",
+        "Q27",
+        "Q31",
+        "Q37",
+        "Q44"
+      ],
+      "primarySystems": [
+        "Glandular",
+        "Nervous"
+      ],
+      "secondarySystems": [
+        "Digestive",
+        "Intestinal",
+        "Circulatory",
+        "Immune",
+        "Respiratory"
+      ],
+      "status": "Active"
+    },
+    {
+      "id": "OUT004",
+      "name": "Better Fitness & Physical Performance",
+      "goalIds": [
+        "GOAL004"
+      ],
+      "directQuestions": [
+        "Q26",
+        "Q32",
+        "Q41",
+        "Q44"
+      ],
+      "supportingQuestions": [
+        "Q15",
+        "Q20",
+        "Q28",
+        "Q35"
+      ],
+      "primarySystems": [
+        "Circulatory",
+        "Structural",
+        "Nervous"
+      ],
+      "secondarySystems": [
+        "Glandular",
+        "Intestinal",
+        "Immune",
+        "Respiratory"
+      ],
+      "status": "Active"
+    },
+    {
+      "id": "OUT005",
+      "name": "Digestive & Gut Health",
+      "goalIds": [
+        "GOAL005"
+      ],
+      "directQuestions": [
+        "Q03",
+        "Q04",
+        "Q14",
+        "Q27",
+        "Q29",
+        "Q39",
+        "Q40",
+        "Q45"
+      ],
+      "supportingQuestions": [
+        "Q05",
+        "Q06",
+        "Q09",
+        "Q13",
+        "Q15",
+        "Q16",
+        "Q18",
+        "Q24",
+        "Q31",
+        "Q41"
+      ],
+      "primarySystems": [
+        "Digestive",
+        "Intestinal"
+      ],
+      "secondarySystems": [
+        "Immune",
+        "Glandular",
+        "Nervous",
+        "Structural"
+      ],
+      "status": "Active"
+    },
+    {
+      "id": "OUT006",
+      "name": "Mental Clarity & Cognitive Performance",
+      "goalIds": [
+        "GOAL006"
+      ],
+      "directQuestions": [
+        "Q12"
+      ],
+      "supportingQuestions": [
+        "Q01",
+        "Q07",
+        "Q08",
+        "Q10",
+        "Q11",
+        "Q17",
+        "Q19",
+        "Q20",
+        "Q23",
+        "Q30",
+        "Q35",
+        "Q37",
+        "Q38",
+        "Q42",
+        "Q43"
+      ],
+      "primarySystems": [
+        "Nervous",
+        "Circulatory"
+      ],
+      "secondarySystems": [
+        "Glandular",
+        "Intestinal",
+        "Structural"
+      ],
+      "status": "Active"
+    },
+    {
+      "id": "OUT007",
+      "name": "Mobility & Joint Health",
+      "goalIds": [
+        "GOAL007"
+      ],
+      "directQuestions": [
+        "Q32",
+        "Q41"
+      ],
+      "supportingQuestions": [
+        "Q15",
+        "Q20",
+        "Q22",
+        "Q24",
+        "Q31",
+        "Q36",
+        "Q44",
+        "Q48"
+      ],
+      "primarySystems": [
+        "Structural"
+      ],
+      "secondarySystems": [
+        "Circulatory",
+        "Nervous",
+        "Digestive",
+        "Intestinal",
+        "Immune",
+        "Glandular"
+      ],
+      "status": "Active"
+    },
+    {
+      "id": "OUT008",
+      "name": "Healthy Ageing & Resilience",
+      "goalIds": [
+        "GOAL009"
+      ],
+      "directQuestions": [
+        "Q48"
+      ],
+      "supportingQuestions": [
+        "Q02",
+        "Q06",
+        "Q12",
+        "Q15",
+        "Q20",
+        "Q25",
+        "Q26",
+        "Q28",
+        "Q32",
+        "Q34",
+        "Q35",
+        "Q38",
+        "Q41",
+        "Q44"
+      ],
+      "primarySystems": [
+        "Circulatory",
+        "Nervous",
+        "Immune",
+        "Glandular",
+        "Structural"
+      ],
+      "secondarySystems": [
+        "Digestive",
+        "Intestinal",
+        "Respiratory",
+        "Urinary"
+      ],
+      "demographicModifiers": {
+        "ageRanges": [
+          "51-64",
+          "65+"
+        ]
+      },
+      "status": "Active"
+    },
+    {
+      "id": "OUT009",
+      "name": "Menopause Transition Resilience",
+      "goalIds": [
+        "GOAL010"
+      ],
+      "directQuestions": [
+        "Q46",
+        "Q47"
+      ],
+      "supportingQuestions": [
+        "Q08",
+        "Q12",
+        "Q19",
+        "Q20",
+        "Q25",
+        "Q26",
+        "Q29",
+        "Q32",
+        "Q41",
+        "Q42",
+        "Q43"
+      ],
+      "primarySystems": [
+        "Glandular",
+        "Nervous"
+      ],
+      "secondarySystems": [
+        "Intestinal",
+        "Structural",
+        "Circulatory",
+        "Urinary"
+      ],
+      "demographicModifiers": {
+        "gender": [
+          "Female"
+        ],
+        "ageRanges": [
+          "40-50",
+          "51-64",
+          "65+"
+        ]
+      },
+      "status": "Active"
+    },
+    {
+      "id": "OUT010",
+      "name": "Stress Resilience",
+      "goalIds": [
+        "GOAL008"
+      ],
+      "directQuestions": [
+        "Q15",
+        "Q30",
+        "Q38",
+        "Q42",
+        "Q43"
+      ],
+      "supportingQuestions": [
+        "Q07",
+        "Q08",
+        "Q12",
+        "Q17",
+        "Q19",
+        "Q20",
+        "Q37",
+        "Q44"
+      ],
+      "primarySystems": [
+        "Nervous"
+      ],
+      "secondarySystems": [
+        "Glandular",
+        "Intestinal",
+        "Immune",
+        "Structural",
+        "Digestive"
+      ],
+      "status": "Active"
+    }
+  ],
+  "notYetMappedGoals": [
+    {
+      "goalId": "GOAL011",
+      "name": "Heart & cardiovascular health",
+      "reason": "A dedicated cardiovascular outcome has not yet been defined. Existing Circulatory signals are not sufficient reason to silently create one."
+    },
+    {
+      "goalId": "GOAL012",
+      "name": "Immune resilience",
+      "reason": "A dedicated immune outcome has not yet been defined. Existing Immune signals are not sufficient reason to silently create one."
+    }
+  ]
+}

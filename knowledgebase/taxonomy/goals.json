@@ -1,0 +1,165 @@
+{
+  "version": "1.0",
+  "status": "Draft",
+  "description": "User-selected lifestyle goals used as explicit intent within the PWB recommendation model. Goals are deliberately separated from outcomes, which represent the structured physiological targets used by the scoring engine.",
+  "selection": {
+    "maximum": 3,
+    "minimum": 0,
+    "uiInstruction": "Select up to 3 areas that are most important to you right now.",
+    "selectionWeighting": "Not yet defined. Initial scoring tests should determine whether selected goals are equal-weighted or ordered by priority."
+  },
+  "goals": [
+    {
+      "id": "GOAL001",
+      "name": "More Energy",
+      "displayText": "More energy",
+      "description": "Improve energy and vitality.",
+      "category": "Energy & Vitality",
+      "outcomes": [
+        "OUT002"
+      ],
+      "status": "Active",
+      "sortOrder": 1
+    },
+    {
+      "id": "GOAL002",
+      "name": "Better Sleep",
+      "displayText": "Better sleep",
+      "description": "Improve sleep quality and restorative recovery.",
+      "category": "Sleep & Recovery",
+      "outcomes": [
+        "OUT001"
+      ],
+      "status": "Active",
+      "sortOrder": 2
+    },
+    {
+      "id": "GOAL003",
+      "name": "Weight Management",
+      "displayText": "Weight management",
+      "description": "Support healthy weight and body composition.",
+      "category": "Metabolic Health",
+      "outcomes": [
+        "OUT003"
+      ],
+      "status": "Active",
+      "sortOrder": 3
+    },
+    {
+      "id": "GOAL004",
+      "name": "Better Fitness",
+      "displayText": "Better fitness & physical performance",
+      "description": "Improve physical fitness, strength, stamina and exercise performance.",
+      "category": "Fitness & Physical Performance",
+      "outcomes": [
+        "OUT004"
+      ],
+      "status": "Active",
+      "sortOrder": 4
+    },
+    {
+      "id": "GOAL005",
+      "name": "Better Digestion",
+      "displayText": "Better digestion & gut health",
+      "description": "Support digestive comfort, regularity and gut health.",
+      "category": "Digestive & Gut Health",
+      "outcomes": [
+        "OUT005"
+      ],
+      "status": "Active",
+      "sortOrder": 5
+    },
+    {
+      "id": "GOAL006",
+      "name": "Mental Clarity",
+      "displayText": "Mental clarity & focus",
+      "description": "Support concentration, focus and cognitive performance.",
+      "category": "Cognition",
+      "outcomes": [
+        "OUT006"
+      ],
+      "status": "Active",
+      "sortOrder": 6
+    },
+    {
+      "id": "GOAL007",
+      "name": "Mobility & Joints",
+      "displayText": "Mobility & joint health",
+      "description": "Support mobility, joint function and comfortable movement.",
+      "category": "Mobility & Structural Health",
+      "outcomes": [
+        "OUT007"
+      ],
+      "status": "Active",
+      "sortOrder": 7
+    },
+    {
+      "id": "GOAL008",
+      "name": "Stress Resilience",
+      "displayText": "Stress resilience",
+      "description": "Support resilience and the ability to cope with everyday stress.",
+      "category": "Resilience",
+      "outcomes": [
+        "OUT008"
+      ],
+      "status": "Active",
+      "sortOrder": 8
+    },
+    {
+      "id": "GOAL009",
+      "name": "Healthy Ageing",
+      "displayText": "Healthy ageing",
+      "description": "Support resilience, function and wellbeing as you age.",
+      "category": "Healthy Ageing",
+      "outcomes": [
+        "OUT008"
+      ],
+      "status": "Active",
+      "sortOrder": 9
+    },
+    {
+      "id": "GOAL010",
+      "name": "Menopause Support",
+      "displayText": "Menopause support",
+      "description": "Support wellbeing and resilience during the menopause transition.",
+      "category": "Hormonal & Life Stage",
+      "outcomes": [
+        "OUT009"
+      ],
+      "applicability": {
+        "gender": [
+          "Female"
+        ],
+        "ageRange": [
+          "40-50",
+          "51-64",
+          "65+"
+        ]
+      },
+      "status": "Active",
+      "sortOrder": 10
+    },
+    {
+      "id": "GOAL011",
+      "name": "Heart Health",
+      "displayText": "Heart & cardiovascular health",
+      "description": "Support cardiovascular function and resilience.",
+      "category": "Cardiovascular Health",
+      "outcomes": [],
+      "status": "Proposed",
+      "sortOrder": 11,
+      "note": "No dedicated outcome is created yet. This goal should not enter scoring until an appropriate outcome has been defined."
+    },
+    {
+      "id": "GOAL012",
+      "name": "Immune Resilience",
+      "displayText": "Immune resilience",
+      "description": "Support healthy immune function and resilience.",
+      "category": "Immune Health",
+      "outcomes": [],
+      "status": "Proposed",
+      "sortOrder": 12,
+      "note": "No dedicated outcome is created yet. This goal should not enter scoring until an appropriate outcome has been defined."
+    }
+  ]
+}

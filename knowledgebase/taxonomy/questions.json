@@ -1,0 +1,1433 @@
+{
+  "version": "1.0",
+  "status": "Draft",
+  "source": {
+    "file": "PWB - Questions(1).xlsx",
+    "sheet": "Questions - Before",
+    "description": "Canonical question wording and body-system associations transcribed from the supplied questionnaire spreadsheet."
+  },
+  "questionCount": 48,
+  "bodySystems": [
+    "Digestive",
+    "Intestinal",
+    "Circulatory",
+    "Nervous",
+    "Immune",
+    "Respiratory",
+    "Urinary",
+    "Glandular",
+    "Structural"
+  ],
+  "scoringNote": "The spreadsheet uses T to indicate a question/body-system association. This file preserves that source flag. Individual numeric weights are intentionally left null because the supplied question sheet does not define numeric weights.",
+  "questionnaireLogic": {
+    "baseQuestions": "Q01-Q45 and Q48",
+    "femaleSpecificQuestions": [
+      "Q46",
+      "Q47"
+    ],
+    "conditionalRule": "Q46 and Q47 are marked female in the source questionnaire and should only be presented when the questionnaire flow is applicable to Female respondents.",
+    "ageQuestion": "Q48 asks whether the respondent is over age 50. Age range is also collected separately at the start of the questionnaire."
+  },
+  "questions": [
+    {
+      "id": "Q01",
+      "number": 1,
+      "text": "Would you like more energy?",
+      "applicability": {},
+      "bodySystemMappings": [
+        {
+          "bodySystem": "Digestive",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Circulatory",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Nervous",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Immune",
+          "sourceFlag": "T",
+          "weight": null
+        }
+      ],
+      "outcomeSignals": [],
+      "scoring": {
+        "responseWeighting": null,
+        "notes": null
+      },
+      "status": "Active"
+    },
+    {
+      "id": "Q02",
+      "number": 2,
+      "text": "Frequent ill health (once/twice yearly)",
+      "applicability": {},
+      "bodySystemMappings": [
+        {
+          "bodySystem": "Immune",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Respiratory",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Urinary",
+          "sourceFlag": "T",
+          "weight": null
+        }
+      ],
+      "outcomeSignals": [],
+      "scoring": {
+        "responseWeighting": null,
+        "notes": null
+      },
+      "status": "Active"
+    },
+    {
+      "id": "Q03",
+      "number": 3,
+      "text": "Body odour and/or bad breath",
+      "applicability": {},
+      "bodySystemMappings": [
+        {
+          "bodySystem": "Digestive",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Intestinal",
+          "sourceFlag": "T",
+          "weight": null
+        }
+      ],
+      "outcomeSignals": [],
+      "scoring": {
+        "responseWeighting": null,
+        "notes": null
+      },
+      "status": "Active"
+    },
+    {
+      "id": "Q04",
+      "number": 4,
+      "text": "Difficulty digesting certain foods",
+      "applicability": {},
+      "bodySystemMappings": [
+        {
+          "bodySystem": "Digestive",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Immune",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Respiratory",
+          "sourceFlag": "T",
+          "weight": null
+        }
+      ],
+      "outcomeSignals": [],
+      "scoring": {
+        "responseWeighting": null,
+        "notes": null
+      },
+      "status": "Active"
+    },
+    {
+      "id": "Q05",
+      "number": 5,
+      "text": "Eat red meat at least twice weekly",
+      "applicability": {},
+      "bodySystemMappings": [
+        {
+          "bodySystem": "Intestinal",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Circulatory",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Urinary",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Glandular",
+          "sourceFlag": "T",
+          "weight": null
+        }
+      ],
+      "outcomeSignals": [],
+      "scoring": {
+        "responseWeighting": null,
+        "notes": null
+      },
+      "status": "Active"
+    },
+    {
+      "id": "Q06",
+      "number": 6,
+      "text": "Use of antibiotic/medication (last 3 years)",
+      "applicability": {},
+      "bodySystemMappings": [
+        {
+          "bodySystem": "Intestinal",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Immune",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Glandular",
+          "sourceFlag": "T",
+          "weight": null
+        }
+      ],
+      "outcomeSignals": [],
+      "scoring": {
+        "responseWeighting": null,
+        "notes": null
+      },
+      "status": "Active"
+    },
+    {
+      "id": "Q07",
+      "number": 7,
+      "text": "Regular alcohol consumption",
+      "applicability": {},
+      "bodySystemMappings": [
+        {
+          "bodySystem": "Nervous",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Glandular",
+          "sourceFlag": "T",
+          "weight": null
+        }
+      ],
+      "outcomeSignals": [],
+      "scoring": {
+        "responseWeighting": null,
+        "notes": null
+      },
+      "status": "Active"
+    },
+    {
+      "id": "Q08",
+      "number": 8,
+      "text": "Mood swings",
+      "applicability": {},
+      "bodySystemMappings": [
+        {
+          "bodySystem": "Nervous",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Respiratory",
+          "sourceFlag": "T",
+          "weight": null
+        }
+      ],
+      "outcomeSignals": [],
+      "scoring": {
+        "responseWeighting": null,
+        "notes": null
+      },
+      "status": "Active"
+    },
+    {
+      "id": "Q09",
+      "number": 9,
+      "text": "Food allergies",
+      "applicability": {},
+      "bodySystemMappings": [
+        {
+          "bodySystem": "Digestive",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Immune",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Urinary",
+          "sourceFlag": "T",
+          "weight": null
+        }
+      ],
+      "outcomeSignals": [],
+      "scoring": {
+        "responseWeighting": null,
+        "notes": null
+      },
+      "status": "Active"
+    },
+    {
+      "id": "Q10",
+      "number": 10,
+      "text": "Dark circles under eyes",
+      "applicability": {},
+      "bodySystemMappings": [
+        {
+          "bodySystem": "Circulatory",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Nervous",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Respiratory",
+          "sourceFlag": "T",
+          "weight": null
+        }
+      ],
+      "outcomeSignals": [],
+      "scoring": {
+        "responseWeighting": null,
+        "notes": null
+      },
+      "status": "Active"
+    },
+    {
+      "id": "Q11",
+      "number": 11,
+      "text": "Smoking (including passive)",
+      "applicability": {},
+      "bodySystemMappings": [
+        {
+          "bodySystem": "Circulatory",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Nervous",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Glandular",
+          "sourceFlag": "T",
+          "weight": null
+        }
+      ],
+      "outcomeSignals": [],
+      "scoring": {
+        "responseWeighting": null,
+        "notes": null
+      },
+      "status": "Active"
+    },
+    {
+      "id": "Q12",
+      "number": 12,
+      "text": "Poor concentration or memory",
+      "applicability": {},
+      "bodySystemMappings": [
+        {
+          "bodySystem": "Circulatory",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Nervous",
+          "sourceFlag": "T",
+          "weight": null
+        }
+      ],
+      "outcomeSignals": [],
+      "scoring": {
+        "responseWeighting": null,
+        "notes": null
+      },
+      "status": "Active"
+    },
+    {
+      "id": "Q13",
+      "number": 13,
+      "text": "Poor resistance to unhealthy conditions",
+      "applicability": {},
+      "bodySystemMappings": [
+        {
+          "bodySystem": "Digestive",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Immune",
+          "sourceFlag": "T",
+          "weight": null
+        }
+      ],
+      "outcomeSignals": [],
+      "scoring": {
+        "responseWeighting": null,
+        "notes": null
+      },
+      "status": "Active"
+    },
+    {
+      "id": "Q14",
+      "number": 14,
+      "text": "Discomfort after eating",
+      "applicability": {},
+      "bodySystemMappings": [
+        {
+          "bodySystem": "Digestive",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Immune",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Glandular",
+          "sourceFlag": "T",
+          "weight": null
+        }
+      ],
+      "outcomeSignals": [],
+      "scoring": {
+        "responseWeighting": null,
+        "notes": null
+      },
+      "status": "Active"
+    },
+    {
+      "id": "Q15",
+      "number": 15,
+      "text": "Stressful lifestyle",
+      "applicability": {},
+      "bodySystemMappings": [
+        {
+          "bodySystem": "Intestinal",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Circulatory",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Nervous",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Urinary",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Glandular",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Structural",
+          "sourceFlag": "T",
+          "weight": null
+        }
+      ],
+      "outcomeSignals": [],
+      "scoring": {
+        "responseWeighting": null,
+        "notes": null
+      },
+      "status": "Active"
+    },
+    {
+      "id": "Q16",
+      "number": 16,
+      "text": "Skin problems",
+      "applicability": {},
+      "bodySystemMappings": [
+        {
+          "bodySystem": "Digestive",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Intestinal",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Glandular",
+          "sourceFlag": "T",
+          "weight": null
+        }
+      ],
+      "outcomeSignals": [],
+      "scoring": {
+        "responseWeighting": null,
+        "notes": null
+      },
+      "status": "Active"
+    },
+    {
+      "id": "Q17",
+      "number": 17,
+      "text": "Crave sweets/processed foods",
+      "applicability": {},
+      "bodySystemMappings": [
+        {
+          "bodySystem": "Nervous",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Respiratory",
+          "sourceFlag": "T",
+          "weight": null
+        }
+      ],
+      "outcomeSignals": [],
+      "scoring": {
+        "responseWeighting": null,
+        "notes": null
+      },
+      "status": "Active"
+    },
+    {
+      "id": "Q18",
+      "number": 18,
+      "text": "Consume dairy products",
+      "applicability": {},
+      "bodySystemMappings": [
+        {
+          "bodySystem": "Intestinal",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Glandular",
+          "sourceFlag": "T",
+          "weight": null
+        }
+      ],
+      "outcomeSignals": [],
+      "scoring": {
+        "responseWeighting": null,
+        "notes": null
+      },
+      "status": "Active"
+    },
+    {
+      "id": "Q19",
+      "number": 19,
+      "text": "Feeling low, or apathy",
+      "applicability": {},
+      "bodySystemMappings": [
+        {
+          "bodySystem": "Intestinal",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Nervous",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Glandular",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Structural",
+          "sourceFlag": "T",
+          "weight": null
+        }
+      ],
+      "outcomeSignals": [],
+      "scoring": {
+        "responseWeighting": null,
+        "notes": null
+      },
+      "status": "Active"
+    },
+    {
+      "id": "Q20",
+      "number": 20,
+      "text": "Inadequate/restless sleep",
+      "applicability": {},
+      "bodySystemMappings": [
+        {
+          "bodySystem": "Nervous",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Glandular",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Structural",
+          "sourceFlag": "T",
+          "weight": null
+        }
+      ],
+      "outcomeSignals": [],
+      "scoring": {
+        "responseWeighting": null,
+        "notes": null
+      },
+      "status": "Active"
+    },
+    {
+      "id": "Q21",
+      "number": 21,
+      "text": "Urination problems",
+      "applicability": {},
+      "bodySystemMappings": [
+        {
+          "bodySystem": "Structural",
+          "sourceFlag": "T",
+          "weight": null
+        }
+      ],
+      "outcomeSignals": [],
+      "scoring": {
+        "responseWeighting": null,
+        "notes": null
+      },
+      "status": "Active"
+    },
+    {
+      "id": "Q22",
+      "number": 22,
+      "text": "Brittle fingernails",
+      "applicability": {},
+      "bodySystemMappings": [
+        {
+          "bodySystem": "Digestive",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Glandular",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Structural",
+          "sourceFlag": "T",
+          "weight": null
+        }
+      ],
+      "outcomeSignals": [],
+      "scoring": {
+        "responseWeighting": null,
+        "notes": null
+      },
+      "status": "Active"
+    },
+    {
+      "id": "Q23",
+      "number": 23,
+      "text": "Hair loss",
+      "applicability": {},
+      "bodySystemMappings": [
+        {
+          "bodySystem": "Circulatory",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Nervous",
+          "sourceFlag": "T",
+          "weight": null
+        }
+      ],
+      "outcomeSignals": [],
+      "scoring": {
+        "responseWeighting": null,
+        "notes": null
+      },
+      "status": "Active"
+    },
+    {
+      "id": "Q24",
+      "number": 24,
+      "text": "Bad fats/Cholesterol issues",
+      "applicability": {},
+      "bodySystemMappings": [
+        {
+          "bodySystem": "Digestive",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Intestinal",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Circulatory",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Glandular",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Structural",
+          "sourceFlag": "T",
+          "weight": null
+        }
+      ],
+      "outcomeSignals": [],
+      "scoring": {
+        "responseWeighting": null,
+        "notes": null
+      },
+      "status": "Active"
+    },
+    {
+      "id": "Q25",
+      "number": 25,
+      "text": "Difficulty in maintaining ideal weight",
+      "applicability": {},
+      "bodySystemMappings": [
+        {
+          "bodySystem": "Nervous",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Immune",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Respiratory",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Glandular",
+          "sourceFlag": "T",
+          "weight": null
+        }
+      ],
+      "outcomeSignals": [],
+      "scoring": {
+        "responseWeighting": null,
+        "notes": null
+      },
+      "status": "Active"
+    },
+    {
+      "id": "Q26",
+      "number": 26,
+      "text": "Lack of stamina",
+      "applicability": {},
+      "bodySystemMappings": [
+        {
+          "bodySystem": "Circulatory",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Glandular",
+          "sourceFlag": "T",
+          "weight": null
+        }
+      ],
+      "outcomeSignals": [],
+      "scoring": {
+        "responseWeighting": null,
+        "notes": null
+      },
+      "status": "Active"
+    },
+    {
+      "id": "Q27",
+      "number": 27,
+      "text": "Poor eating habits",
+      "applicability": {},
+      "bodySystemMappings": [
+        {
+          "bodySystem": "Digestive",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Intestinal",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Glandular",
+          "sourceFlag": "T",
+          "weight": null
+        }
+      ],
+      "outcomeSignals": [],
+      "scoring": {
+        "responseWeighting": null,
+        "notes": null
+      },
+      "status": "Active"
+    },
+    {
+      "id": "Q28",
+      "number": 28,
+      "text": "Slow recovery from poor health",
+      "applicability": {},
+      "bodySystemMappings": [
+        {
+          "bodySystem": "Intestinal",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Circulatory",
+          "sourceFlag": "T",
+          "weight": null
+        }
+      ],
+      "outcomeSignals": [],
+      "scoring": {
+        "responseWeighting": null,
+        "notes": null
+      },
+      "status": "Active"
+    },
+    {
+      "id": "Q29",
+      "number": 29,
+      "text": "Irregular/infrequent bowel activity",
+      "applicability": {},
+      "bodySystemMappings": [
+        {
+          "bodySystem": "Digestive",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Intestinal",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Nervous",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Glandular",
+          "sourceFlag": "T",
+          "weight": null
+        }
+      ],
+      "outcomeSignals": [],
+      "scoring": {
+        "responseWeighting": null,
+        "notes": null
+      },
+      "status": "Active"
+    },
+    {
+      "id": "Q30",
+      "number": 30,
+      "text": "Edgy/unable to relax/tension",
+      "applicability": {},
+      "bodySystemMappings": [
+        {
+          "bodySystem": "Nervous",
+          "sourceFlag": "T",
+          "weight": null
+        }
+      ],
+      "outcomeSignals": [],
+      "scoring": {
+        "responseWeighting": null,
+        "notes": null
+      },
+      "status": "Active"
+    },
+    {
+      "id": "Q31",
+      "number": 31,
+      "text": "Low fibre diet (less than 30grams/daily)",
+      "applicability": {},
+      "bodySystemMappings": [
+        {
+          "bodySystem": "Intestinal",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Circulatory",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Structural",
+          "sourceFlag": "T",
+          "weight": null
+        }
+      ],
+      "outcomeSignals": [],
+      "scoring": {
+        "responseWeighting": null,
+        "notes": null
+      },
+      "status": "Active"
+    },
+    {
+      "id": "Q32",
+      "number": 32,
+      "text": "Muscle discomfort",
+      "applicability": {},
+      "bodySystemMappings": [
+        {
+          "bodySystem": "Circulatory",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Nervous",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Urinary",
+          "sourceFlag": "T",
+          "weight": null
+        }
+      ],
+      "outcomeSignals": [],
+      "scoring": {
+        "responseWeighting": null,
+        "notes": null
+      },
+      "status": "Active"
+    },
+    {
+      "id": "Q33",
+      "number": 33,
+      "text": "Dry/damaged/dull hair",
+      "applicability": {},
+      "bodySystemMappings": [
+        {
+          "bodySystem": "Digestive",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Respiratory",
+          "sourceFlag": "T",
+          "weight": null
+        }
+      ],
+      "outcomeSignals": [],
+      "scoring": {
+        "responseWeighting": null,
+        "notes": null
+      },
+      "status": "Active"
+    },
+    {
+      "id": "Q34",
+      "number": 34,
+      "text": "Exposure to air pollution",
+      "applicability": {},
+      "bodySystemMappings": [
+        {
+          "bodySystem": "Immune",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Glandular",
+          "sourceFlag": "T",
+          "weight": null
+        }
+      ],
+      "outcomeSignals": [],
+      "scoring": {
+        "responseWeighting": null,
+        "notes": null
+      },
+      "status": "Active"
+    },
+    {
+      "id": "Q35",
+      "number": 35,
+      "text": "Sleepiness when sitting",
+      "applicability": {},
+      "bodySystemMappings": [
+        {
+          "bodySystem": "Circulatory",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Glandular",
+          "sourceFlag": "T",
+          "weight": null
+        }
+      ],
+      "outcomeSignals": [],
+      "scoring": {
+        "responseWeighting": null,
+        "notes": null
+      },
+      "status": "Active"
+    },
+    {
+      "id": "Q36",
+      "number": 36,
+      "text": "Lack of appetite",
+      "applicability": {},
+      "bodySystemMappings": [
+        {
+          "bodySystem": "Digestive",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Nervous",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Glandular",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Structural",
+          "sourceFlag": "T",
+          "weight": null
+        }
+      ],
+      "outcomeSignals": [],
+      "scoring": {
+        "responseWeighting": null,
+        "notes": null
+      },
+      "status": "Active"
+    },
+    {
+      "id": "Q37",
+      "number": 37,
+      "text": "Drink 2+ cups of tea, coffee, cola per day",
+      "applicability": {},
+      "bodySystemMappings": [
+        {
+          "bodySystem": "Nervous",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Glandular",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Structural",
+          "sourceFlag": "T",
+          "weight": null
+        }
+      ],
+      "outcomeSignals": [],
+      "scoring": {
+        "responseWeighting": null,
+        "notes": null
+      },
+      "status": "Active"
+    },
+    {
+      "id": "Q38",
+      "number": 38,
+      "text": "Feeling out of control",
+      "applicability": {},
+      "bodySystemMappings": [
+        {
+          "bodySystem": "Nervous",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Immune",
+          "sourceFlag": "T",
+          "weight": null
+        }
+      ],
+      "outcomeSignals": [],
+      "scoring": {
+        "responseWeighting": null,
+        "notes": null
+      },
+      "status": "Active"
+    },
+    {
+      "id": "Q39",
+      "number": 39,
+      "text": "Food/chemical sensitivities",
+      "applicability": {},
+      "bodySystemMappings": [
+        {
+          "bodySystem": "Digestive",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Intestinal",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Immune",
+          "sourceFlag": "T",
+          "weight": null
+        }
+      ],
+      "outcomeSignals": [],
+      "scoring": {
+        "responseWeighting": null,
+        "notes": null
+      },
+      "status": "Active"
+    },
+    {
+      "id": "Q40",
+      "number": 40,
+      "text": "Problems with yeast/fungus",
+      "applicability": {},
+      "bodySystemMappings": [
+        {
+          "bodySystem": "Digestive",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Intestinal",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Immune",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Structural",
+          "sourceFlag": "T",
+          "weight": null
+        }
+      ],
+      "outcomeSignals": [],
+      "scoring": {
+        "responseWeighting": null,
+        "notes": null
+      },
+      "status": "Active"
+    },
+    {
+      "id": "Q41",
+      "number": 41,
+      "text": "Muscle/joint discomfort or weakness",
+      "applicability": {},
+      "bodySystemMappings": [
+        {
+          "bodySystem": "Digestive",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Intestinal",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Circulatory",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Nervous",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Immune",
+          "sourceFlag": "T",
+          "weight": null
+        }
+      ],
+      "outcomeSignals": [],
+      "scoring": {
+        "responseWeighting": null,
+        "notes": null
+      },
+      "status": "Active"
+    },
+    {
+      "id": "Q42",
+      "number": 42,
+      "text": "Excessive worry",
+      "applicability": {},
+      "bodySystemMappings": [
+        {
+          "bodySystem": "Digestive",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Nervous",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Glandular",
+          "sourceFlag": "T",
+          "weight": null
+        }
+      ],
+      "outcomeSignals": [],
+      "scoring": {
+        "responseWeighting": null,
+        "notes": null
+      },
+      "status": "Active"
+    },
+    {
+      "id": "Q43",
+      "number": 43,
+      "text": "Easily irritated/angered",
+      "applicability": {},
+      "bodySystemMappings": [
+        {
+          "bodySystem": "Intestinal",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Nervous",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Glandular",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Structural",
+          "sourceFlag": "T",
+          "weight": null
+        }
+      ],
+      "outcomeSignals": [],
+      "scoring": {
+        "responseWeighting": null,
+        "notes": null
+      },
+      "status": "Active"
+    },
+    {
+      "id": "Q44",
+      "number": 44,
+      "text": "Insufficient exercise",
+      "applicability": {},
+      "bodySystemMappings": [
+        {
+          "bodySystem": "Intestinal",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Circulatory",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Nervous",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Immune",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Respiratory",
+          "sourceFlag": "T",
+          "weight": null
+        }
+      ],
+      "outcomeSignals": [],
+      "scoring": {
+        "responseWeighting": null,
+        "notes": null
+      },
+      "status": "Active"
+    },
+    {
+      "id": "Q45",
+      "number": 45,
+      "text": "Problems with congestion/mucus",
+      "applicability": {},
+      "bodySystemMappings": [
+        {
+          "bodySystem": "Intestinal",
+          "sourceFlag": "T",
+          "weight": null
+        }
+      ],
+      "outcomeSignals": [],
+      "scoring": {
+        "responseWeighting": null,
+        "notes": null
+      },
+      "status": "Active"
+    },
+    {
+      "id": "Q46",
+      "number": 46,
+      "text": "Problems with monthly cycles (female)",
+      "applicability": {
+        "gender": [
+          "Female"
+        ]
+      },
+      "bodySystemMappings": [
+        {
+          "bodySystem": "Intestinal",
+          "sourceFlag": "T",
+          "weight": null
+        }
+      ],
+      "outcomeSignals": [],
+      "scoring": {
+        "responseWeighting": null,
+        "notes": null
+      },
+      "status": "Active"
+    },
+    {
+      "id": "Q47",
+      "number": 47,
+      "text": "Menopausal concerns (female)",
+      "applicability": {
+        "gender": [
+          "Female"
+        ]
+      },
+      "bodySystemMappings": [
+        {
+          "bodySystem": "Nervous",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Urinary",
+          "sourceFlag": "T",
+          "weight": null
+        }
+      ],
+      "outcomeSignals": [],
+      "scoring": {
+        "responseWeighting": null,
+        "notes": null
+      },
+      "status": "Active"
+    },
+    {
+      "id": "Q48",
+      "number": 48,
+      "text": "Are you over the age of 50",
+      "applicability": {},
+      "bodySystemMappings": [
+        {
+          "bodySystem": "Digestive",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Intestinal",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Circulatory",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Nervous",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Immune",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Respiratory",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Urinary",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Glandular",
+          "sourceFlag": "T",
+          "weight": null
+        },
+        {
+          "bodySystem": "Structural",
+          "sourceFlag": "T",
+          "weight": null
+        }
+      ],
+      "outcomeSignals": [],
+      "scoring": {
+        "responseWeighting": null,
+        "notes": null
+      },
+      "status": "Active"
+    }
+  ]
+}
