@@ -1,13 +1,18 @@
 {
-  "version": "1.0",
+  "version": "1.1",
   "status": "Draft",
-  "description": "Outcome signal matrix derived from the canonical PWB questionnaire. Direct signals are questions whose wording explicitly expresses the desired outcome or a close outcome-specific concern. Supporting signals are relevant but non-specific questions. Body-system mappings remain independently defined in questions.json.",
+  "sourceBasis": [
+    "questions-v1.2.json",
+    "Newer Form Elements.txt",
+    "text-codes.php",
+    "existing PWB outcome model"
+  ],
+  "importantNote": "The body-system associations come from the questionnaire/scoring definition. The outcome mappings in this file are PWB model design decisions and should be validated through the 20 real questionnaires before production use.",
   "rules": {
-    "directSignal": "A response is a direct signal when the question explicitly asks about the outcome or a closely equivalent user concern.",
-    "supportingSignal": "A response is a supporting signal when it is plausibly relevant to the outcome but is not itself an explicit outcome statement.",
-    "positiveResponseAssumption": "The matrix does not define answer scoring or whether Yes/No/scale responses increase or decrease need. That belongs in scoring.json.",
-    "demographicRule": "Gender and age modify outcome applicability/relevance; they do not replace questionnaire evidence.",
-    "menopauseRule": "Q46 and Q47 are female-specific in the source questionnaire and must remain conditionally presented."
+    "direct": "Explicitly expresses the user's concern/desired state and may carry more weight.",
+    "supporting": "Relevant contextual signal but not itself an explicit outcome statement.",
+    "bodySystem": "Continues to contribute to the established nine-system assessment independently.",
+    "medicalSafety": "Q48 is context only. It does not increase a health outcome or recommendation score."
   },
   "outcomes": [
     {
@@ -16,47 +21,19 @@
       "goalIds": [
         "GOAL002"
       ],
-      "directQuestions": [
-        "Q20"
-      ],
-      "supportingQuestions": [
-        "Q07",
-        "Q08",
-        "Q12",
-        "Q19",
-        "Q30",
-        "Q35",
-        "Q37",
-        "Q42",
-        "Q43"
-      ],
       "primarySystems": [
         "Nervous",
         "Glandular"
       ],
       "secondarySystems": [
         "Structural"
-      ],
-      "status": "Active"
+      ]
     },
     {
       "id": "OUT002",
       "name": "More Energy",
       "goalIds": [
         "GOAL001"
-      ],
-      "directQuestions": [
-        "Q01",
-        "Q26",
-        "Q35"
-      ],
-      "supportingQuestions": [
-        "Q19",
-        "Q20",
-        "Q25",
-        "Q28",
-        "Q36",
-        "Q44"
       ],
       "primarySystems": [
         "Circulatory",
@@ -67,29 +44,13 @@
         "Digestive",
         "Intestinal",
         "Immune"
-      ],
-      "status": "Active"
+      ]
     },
     {
       "id": "OUT003",
       "name": "Healthy Weight Management",
       "goalIds": [
         "GOAL003"
-      ],
-      "directQuestions": [
-        "Q25"
-      ],
-      "supportingQuestions": [
-        "Q01",
-        "Q05",
-        "Q07",
-        "Q17",
-        "Q18",
-        "Q24",
-        "Q27",
-        "Q31",
-        "Q37",
-        "Q44"
       ],
       "primarySystems": [
         "Glandular",
@@ -101,26 +62,13 @@
         "Circulatory",
         "Immune",
         "Respiratory"
-      ],
-      "status": "Active"
+      ]
     },
     {
       "id": "OUT004",
       "name": "Better Fitness & Physical Performance",
       "goalIds": [
         "GOAL004"
-      ],
-      "directQuestions": [
-        "Q26",
-        "Q32",
-        "Q41",
-        "Q44"
-      ],
-      "supportingQuestions": [
-        "Q15",
-        "Q20",
-        "Q28",
-        "Q35"
       ],
       "primarySystems": [
         "Circulatory",
@@ -132,36 +80,13 @@
         "Intestinal",
         "Immune",
         "Respiratory"
-      ],
-      "status": "Active"
+      ]
     },
     {
       "id": "OUT005",
       "name": "Digestive & Gut Health",
       "goalIds": [
         "GOAL005"
-      ],
-      "directQuestions": [
-        "Q03",
-        "Q04",
-        "Q14",
-        "Q27",
-        "Q29",
-        "Q39",
-        "Q40",
-        "Q45"
-      ],
-      "supportingQuestions": [
-        "Q05",
-        "Q06",
-        "Q09",
-        "Q13",
-        "Q15",
-        "Q16",
-        "Q18",
-        "Q24",
-        "Q31",
-        "Q41"
       ],
       "primarySystems": [
         "Digestive",
@@ -172,34 +97,13 @@
         "Glandular",
         "Nervous",
         "Structural"
-      ],
-      "status": "Active"
+      ]
     },
     {
       "id": "OUT006",
       "name": "Mental Clarity & Cognitive Performance",
       "goalIds": [
         "GOAL006"
-      ],
-      "directQuestions": [
-        "Q12"
-      ],
-      "supportingQuestions": [
-        "Q01",
-        "Q07",
-        "Q08",
-        "Q10",
-        "Q11",
-        "Q17",
-        "Q19",
-        "Q20",
-        "Q23",
-        "Q30",
-        "Q35",
-        "Q37",
-        "Q38",
-        "Q42",
-        "Q43"
       ],
       "primarySystems": [
         "Nervous",
@@ -209,28 +113,13 @@
         "Glandular",
         "Intestinal",
         "Structural"
-      ],
-      "status": "Active"
+      ]
     },
     {
       "id": "OUT007",
       "name": "Mobility & Joint Health",
       "goalIds": [
         "GOAL007"
-      ],
-      "directQuestions": [
-        "Q32",
-        "Q41"
-      ],
-      "supportingQuestions": [
-        "Q15",
-        "Q20",
-        "Q22",
-        "Q24",
-        "Q31",
-        "Q36",
-        "Q44",
-        "Q48"
       ],
       "primarySystems": [
         "Structural"
@@ -242,33 +131,13 @@
         "Intestinal",
         "Immune",
         "Glandular"
-      ],
-      "status": "Active"
+      ]
     },
     {
       "id": "OUT008",
       "name": "Healthy Ageing & Resilience",
       "goalIds": [
         "GOAL009"
-      ],
-      "directQuestions": [
-        "Q48"
-      ],
-      "supportingQuestions": [
-        "Q02",
-        "Q06",
-        "Q12",
-        "Q15",
-        "Q20",
-        "Q25",
-        "Q26",
-        "Q28",
-        "Q32",
-        "Q34",
-        "Q35",
-        "Q38",
-        "Q41",
-        "Q44"
       ],
       "primarySystems": [
         "Circulatory",
@@ -282,37 +151,13 @@
         "Intestinal",
         "Respiratory",
         "Urinary"
-      ],
-      "demographicModifiers": {
-        "ageRanges": [
-          "51-64",
-          "65+"
-        ]
-      },
-      "status": "Active"
+      ]
     },
     {
       "id": "OUT009",
       "name": "Menopause Transition Resilience",
       "goalIds": [
         "GOAL010"
-      ],
-      "directQuestions": [
-        "Q46",
-        "Q47"
-      ],
-      "supportingQuestions": [
-        "Q08",
-        "Q12",
-        "Q19",
-        "Q20",
-        "Q25",
-        "Q26",
-        "Q29",
-        "Q32",
-        "Q41",
-        "Q42",
-        "Q43"
       ],
       "primarySystems": [
         "Glandular",
@@ -333,31 +178,13 @@
           "51-64",
           "65+"
         ]
-      },
-      "status": "Active"
+      }
     },
     {
       "id": "OUT010",
       "name": "Stress Resilience",
       "goalIds": [
         "GOAL008"
-      ],
-      "directQuestions": [
-        "Q15",
-        "Q30",
-        "Q38",
-        "Q42",
-        "Q43"
-      ],
-      "supportingQuestions": [
-        "Q07",
-        "Q08",
-        "Q12",
-        "Q17",
-        "Q19",
-        "Q20",
-        "Q37",
-        "Q44"
       ],
       "primarySystems": [
         "Nervous"
@@ -368,20 +195,790 @@
         "Immune",
         "Structural",
         "Digestive"
+      ]
+    }
+  ],
+  "questionMatrix": [
+    {
+      "questionId": "Q01",
+      "question": "I would like more energy",
+      "bodySystemMappings": [
+        "Digestive",
+        "Circulatory",
+        "Nervous",
+        "Immune",
+        "Urinary"
       ],
+      "directOutcomeSignals": [
+        "OUT002"
+      ],
+      "supportingOutcomeSignals": [],
+      "contextType": "body_system_and_outcome",
+      "status": "Active"
+    },
+    {
+      "questionId": "Q02",
+      "question": "I have frequent ill health (once or twice annually)",
+      "bodySystemMappings": [
+        "Immune"
+      ],
+      "directOutcomeSignals": [],
+      "supportingOutcomeSignals": [
+        "OUT008"
+      ],
+      "contextType": "body_system_and_outcome",
+      "status": "Active"
+    },
+    {
+      "questionId": "Q03",
+      "question": "I have bad breath and/or body odour",
+      "bodySystemMappings": [
+        "Digestive",
+        "Intestinal",
+        "Respiratory",
+        "Urinary"
+      ],
+      "directOutcomeSignals": [],
+      "supportingOutcomeSignals": [
+        "OUT005"
+      ],
+      "contextType": "body_system_and_outcome",
+      "status": "Active"
+    },
+    {
+      "questionId": "Q04",
+      "question": "I have difficulty digesting certain foods",
+      "bodySystemMappings": [
+        "Digestive",
+        "Immune"
+      ],
+      "directOutcomeSignals": [
+        "OUT005"
+      ],
+      "supportingOutcomeSignals": [],
+      "contextType": "body_system_and_outcome",
+      "status": "Active"
+    },
+    {
+      "questionId": "Q05",
+      "question": "I usually eat red meat at least twice per week",
+      "bodySystemMappings": [
+        "Intestinal",
+        "Circulatory",
+        "Respiratory"
+      ],
+      "directOutcomeSignals": [],
+      "supportingOutcomeSignals": [
+        "OUT003",
+        "OUT005"
+      ],
+      "contextType": "body_system_and_outcome",
+      "status": "Active"
+    },
+    {
+      "questionId": "Q06",
+      "question": "I have had antibiotics or medication in the last 3 years",
+      "bodySystemMappings": [
+        "Intestinal",
+        "Immune"
+      ],
+      "directOutcomeSignals": [],
+      "supportingOutcomeSignals": [
+        "OUT005",
+        "OUT008"
+      ],
+      "contextType": "body_system_and_outcome",
+      "status": "Active"
+    },
+    {
+      "questionId": "Q07",
+      "question": "I regularly consume alcohol",
+      "bodySystemMappings": [
+        "Nervous",
+        "Glandular"
+      ],
+      "directOutcomeSignals": [],
+      "supportingOutcomeSignals": [
+        "OUT001",
+        "OUT006",
+        "OUT010",
+        "OUT008"
+      ],
+      "contextType": "body_system_and_outcome",
+      "status": "Active"
+    },
+    {
+      "questionId": "Q08",
+      "question": "I experience mood swings",
+      "bodySystemMappings": [
+        "Nervous",
+        "Glandular"
+      ],
+      "directOutcomeSignals": [],
+      "supportingOutcomeSignals": [
+        "OUT001",
+        "OUT006",
+        "OUT009",
+        "OUT010"
+      ],
+      "contextType": "body_system_and_outcome",
+      "status": "Active"
+    },
+    {
+      "questionId": "Q09",
+      "question": "I have food allergies",
+      "bodySystemMappings": [
+        "Digestive",
+        "Immune",
+        "Respiratory"
+      ],
+      "directOutcomeSignals": [],
+      "supportingOutcomeSignals": [
+        "OUT005"
+      ],
+      "contextType": "body_system_and_outcome",
+      "status": "Active"
+    },
+    {
+      "questionId": "Q10",
+      "question": "I can get dark circles under my eyes",
+      "bodySystemMappings": [
+        "Circulatory",
+        "Nervous",
+        "Urinary"
+      ],
+      "directOutcomeSignals": [],
+      "supportingOutcomeSignals": [
+        "OUT006",
+        "OUT008"
+      ],
+      "contextType": "body_system_and_outcome",
+      "status": "Active"
+    },
+    {
+      "questionId": "Q11",
+      "question": "I smoke, or am exposed to passive smoking",
+      "bodySystemMappings": [
+        "Circulatory",
+        "Nervous",
+        "Respiratory"
+      ],
+      "directOutcomeSignals": [],
+      "supportingOutcomeSignals": [
+        "OUT006",
+        "OUT008"
+      ],
+      "contextType": "body_system_and_outcome",
+      "status": "Active"
+    },
+    {
+      "questionId": "Q12",
+      "question": "I find it hard to concentrate, or have a poor memory for certain things",
+      "bodySystemMappings": [
+        "Circulatory",
+        "Nervous",
+        "Glandular"
+      ],
+      "directOutcomeSignals": [
+        "OUT006"
+      ],
+      "supportingOutcomeSignals": [
+        "OUT001",
+        "OUT009"
+      ],
+      "contextType": "body_system_and_outcome",
+      "status": "Active"
+    },
+    {
+      "questionId": "Q13",
+      "question": "I have a poor resistance to unhealthy conditions",
+      "bodySystemMappings": [
+        "Digestive",
+        "Immune"
+      ],
+      "directOutcomeSignals": [],
+      "supportingOutcomeSignals": [
+        "OUT005",
+        "OUT006"
+      ],
+      "contextType": "body_system_and_outcome",
+      "status": "Active"
+    },
+    {
+      "questionId": "Q14",
+      "question": "I sometimes experience discomfort after eating",
+      "bodySystemMappings": [
+        "Digestive",
+        "Immune"
+      ],
+      "directOutcomeSignals": [],
+      "supportingOutcomeSignals": [
+        "OUT005"
+      ],
+      "contextType": "body_system_and_outcome",
+      "status": "Active"
+    },
+    {
+      "questionId": "Q15",
+      "question": "I live a stressful lifestyle",
+      "bodySystemMappings": [
+        "Intestinal",
+        "Circulatory",
+        "Nervous",
+        "Glandular"
+      ],
+      "directOutcomeSignals": [],
+      "supportingOutcomeSignals": [
+        "OUT005",
+        "OUT004",
+        "OUT010",
+        "OUT008"
+      ],
+      "contextType": "body_system_and_outcome",
+      "status": "Active"
+    },
+    {
+      "questionId": "Q16",
+      "question": "I suffer from skin problems",
+      "bodySystemMappings": [
+        "Digestive",
+        "Intestinal",
+        "Urinary",
+        "Glandular",
+        "Structural"
+      ],
+      "directOutcomeSignals": [],
+      "supportingOutcomeSignals": [
+        "OUT005"
+      ],
+      "contextType": "body_system_and_outcome",
+      "status": "Active"
+    },
+    {
+      "questionId": "Q17",
+      "question": "I sometimes crave sweets and/or processed foods",
+      "bodySystemMappings": [
+        "Nervous",
+        "Glandular"
+      ],
+      "directOutcomeSignals": [],
+      "supportingOutcomeSignals": [
+        "OUT003",
+        "OUT005",
+        "OUT010"
+      ],
+      "contextType": "body_system_and_outcome",
+      "status": "Active"
+    },
+    {
+      "questionId": "Q18",
+      "question": "I consume dairy products",
+      "bodySystemMappings": [
+        "Intestinal",
+        "Respiratory"
+      ],
+      "directOutcomeSignals": [],
+      "supportingOutcomeSignals": [
+        "OUT003",
+        "OUT005"
+      ],
+      "contextType": "body_system_and_outcome",
+      "status": "Active"
+    },
+    {
+      "questionId": "Q19",
+      "question": "Sometimes I feel low and/or apathetic",
+      "bodySystemMappings": [
+        "Intestinal",
+        "Nervous",
+        "Glandular"
+      ],
+      "directOutcomeSignals": [],
+      "supportingOutcomeSignals": [
+        "OUT001",
+        "OUT006",
+        "OUT009",
+        "OUT010"
+      ],
+      "contextType": "body_system_and_outcome",
+      "status": "Active"
+    },
+    {
+      "questionId": "Q20",
+      "question": "I can suffer from inadequate or restless sleep",
+      "bodySystemMappings": [
+        "Nervous",
+        "Glandular",
+        "Structural"
+      ],
+      "directOutcomeSignals": [
+        "OUT001"
+      ],
+      "supportingOutcomeSignals": [
+        "OUT006",
+        "OUT009",
+        "OUT010"
+      ],
+      "contextType": "body_system_and_outcome",
+      "status": "Active"
+    },
+    {
+      "questionId": "Q21",
+      "question": "I can suffer from urinary problems",
+      "bodySystemMappings": [
+        "Urinary"
+      ],
+      "directOutcomeSignals": [],
+      "supportingOutcomeSignals": [
+        "OUT001",
+        "OUT006",
+        "OUT009"
+      ],
+      "contextType": "body_system_and_outcome",
+      "status": "Active"
+    },
+    {
+      "questionId": "Q22",
+      "question": "I can have brittle fingernails",
+      "bodySystemMappings": [
+        "Digestive",
+        "Structural"
+      ],
+      "directOutcomeSignals": [],
+      "supportingOutcomeSignals": [
+        "OUT001",
+        "OUT007"
+      ],
+      "contextType": "body_system_and_outcome",
+      "status": "Active"
+    },
+    {
+      "questionId": "Q23",
+      "question": "I have had issues with hair loss",
+      "bodySystemMappings": [
+        "Circulatory",
+        "Nervous",
+        "Glandular",
+        "Structural"
+      ],
+      "directOutcomeSignals": [],
+      "supportingOutcomeSignals": [
+        "OUT001",
+        "OUT006"
+      ],
+      "contextType": "body_system_and_outcome",
+      "status": "Active"
+    },
+    {
+      "questionId": "Q24",
+      "question": "I have bad fat and/or cholesterol issues",
+      "bodySystemMappings": [
+        "Digestive",
+        "Intestinal",
+        "Circulatory"
+      ],
+      "directOutcomeSignals": [],
+      "supportingOutcomeSignals": [
+        "OUT003",
+        "OUT005",
+        "OUT007"
+      ],
+      "contextType": "body_system_and_outcome",
+      "status": "Active"
+    },
+    {
+      "questionId": "Q25",
+      "question": "I have difficulty maintaining my ideal weight",
+      "bodySystemMappings": [
+        "Nervous",
+        "Immune",
+        "Glandular",
+        "Structural"
+      ],
+      "directOutcomeSignals": [
+        "OUT003"
+      ],
+      "supportingOutcomeSignals": [
+        "OUT002",
+        "OUT009"
+      ],
+      "contextType": "body_system_and_outcome",
+      "status": "Active"
+    },
+    {
+      "questionId": "Q26",
+      "question": "I have a lack of stamina",
+      "bodySystemMappings": [
+        "Circulatory",
+        "Respiratory",
+        "Glandular"
+      ],
+      "directOutcomeSignals": [
+        "OUT002",
+        "OUT004"
+      ],
+      "supportingOutcomeSignals": [
+        "OUT009"
+      ],
+      "contextType": "body_system_and_outcome",
+      "status": "Active"
+    },
+    {
+      "questionId": "Q27",
+      "question": "I can have poor eating habits",
+      "bodySystemMappings": [
+        "Digestive",
+        "Intestinal",
+        "Glandular"
+      ],
+      "directOutcomeSignals": [
+        "OUT005"
+      ],
+      "supportingOutcomeSignals": [
+        "OUT003"
+      ],
+      "contextType": "body_system_and_outcome",
+      "status": "Active"
+    },
+    {
+      "questionId": "Q28",
+      "question": "I recover slowly from poor health",
+      "bodySystemMappings": [
+        "Intestinal",
+        "Circulatory",
+        "Glandular"
+      ],
+      "directOutcomeSignals": [],
+      "supportingOutcomeSignals": [
+        "OUT002",
+        "OUT003",
+        "OUT008"
+      ],
+      "contextType": "body_system_and_outcome",
+      "status": "Active"
+    },
+    {
+      "questionId": "Q29",
+      "question": "I sometimes have infrequent or irregular bowel activity",
+      "bodySystemMappings": [
+        "Digestive",
+        "Intestinal",
+        "Nervous"
+      ],
+      "directOutcomeSignals": [
+        "OUT005"
+      ],
+      "supportingOutcomeSignals": [
+        "OUT009"
+      ],
+      "contextType": "body_system_and_outcome",
+      "status": "Active"
+    },
+    {
+      "questionId": "Q30",
+      "question": "I am sometimes edgy or unable to relax, or experience tension",
+      "bodySystemMappings": [
+        "Nervous",
+        "Glandular"
+      ],
+      "directOutcomeSignals": [],
+      "supportingOutcomeSignals": [
+        "OUT001",
+        "OUT010"
+      ],
+      "contextType": "body_system_and_outcome",
+      "status": "Active"
+    },
+    {
+      "questionId": "Q31",
+      "question": "I have a low-fibre diet",
+      "bodySystemMappings": [
+        "Intestinal",
+        "Circulatory"
+      ],
+      "directOutcomeSignals": [],
+      "supportingOutcomeSignals": [
+        "OUT003",
+        "OUT005",
+        "OUT007"
+      ],
+      "contextType": "body_system_and_outcome",
+      "status": "Active"
+    },
+    {
+      "questionId": "Q32",
+      "question": "I sometimes get muscle discomfort",
+      "bodySystemMappings": [
+        "Circulatory",
+        "Nervous",
+        "Structural"
+      ],
+      "directOutcomeSignals": [
+        "OUT007",
+        "OUT004"
+      ],
+      "supportingOutcomeSignals": [
+        "OUT009"
+      ],
+      "contextType": "body_system_and_outcome",
+      "status": "Active"
+    },
+    {
+      "questionId": "Q33",
+      "question": "I can suffer from dry, damaged or dull hair",
+      "bodySystemMappings": [
+        "Digestive",
+        "Urinary"
+      ],
+      "directOutcomeSignals": [],
+      "supportingOutcomeSignals": [
+        "OUT005"
+      ],
+      "contextType": "body_system_and_outcome",
+      "status": "Active"
+    },
+    {
+      "questionId": "Q34",
+      "question": "I am exposed to air pollution",
+      "bodySystemMappings": [
+        "Immune",
+        "Respiratory"
+      ],
+      "directOutcomeSignals": [],
+      "supportingOutcomeSignals": [
+        "OUT007",
+        "OUT008"
+      ],
+      "contextType": "body_system_and_outcome",
+      "status": "Active"
+    },
+    {
+      "questionId": "Q35",
+      "question": "I sometimes get sleepy whilst sitting",
+      "bodySystemMappings": [
+        "Circulatory",
+        "Glandular"
+      ],
+      "directOutcomeSignals": [
+        "OUT002"
+      ],
+      "supportingOutcomeSignals": [
+        "OUT001",
+        "OUT004",
+        "OUT006",
+        "OUT008"
+      ],
+      "contextType": "body_system_and_outcome",
+      "status": "Active"
+    },
+    {
+      "questionId": "Q36",
+      "question": "I sometimes lose my appetite",
+      "bodySystemMappings": [
+        "Digestive",
+        "Nervous",
+        "Glandular"
+      ],
+      "directOutcomeSignals": [],
+      "supportingOutcomeSignals": [
+        "OUT002",
+        "OUT004"
+      ],
+      "contextType": "body_system_and_outcome",
+      "status": "Active"
+    },
+    {
+      "questionId": "Q37",
+      "question": "I drink more than 2 cups of tea, coffee or caffeinated drinks per day",
+      "bodySystemMappings": [
+        "Nervous",
+        "Glandular",
+        "Structural"
+      ],
+      "directOutcomeSignals": [],
+      "supportingOutcomeSignals": [
+        "OUT001",
+        "OUT004",
+        "OUT006",
+        "OUT010"
+      ],
+      "contextType": "body_system_and_outcome",
+      "status": "Active"
+    },
+    {
+      "questionId": "Q38",
+      "question": "I sometimes feel out of control",
+      "bodySystemMappings": [
+        "Nervous",
+        "Immune",
+        "Glandular",
+        "Structural"
+      ],
+      "directOutcomeSignals": [],
+      "supportingOutcomeSignals": [
+        "OUT006",
+        "OUT010"
+      ],
+      "contextType": "body_system_and_outcome",
+      "status": "Active"
+    },
+    {
+      "questionId": "Q39",
+      "question": "I have food or chemical sensitivities",
+      "bodySystemMappings": [
+        "Digestive",
+        "Intestinal",
+        "Immune"
+      ],
+      "directOutcomeSignals": [],
+      "supportingOutcomeSignals": [
+        "OUT005"
+      ],
+      "contextType": "body_system_and_outcome",
+      "status": "Active"
+    },
+    {
+      "questionId": "Q40",
+      "question": "I can suffer from yeast/fungus issues",
+      "bodySystemMappings": [
+        "Digestive",
+        "Intestinal",
+        "Immune"
+      ],
+      "directOutcomeSignals": [],
+      "supportingOutcomeSignals": [
+        "OUT005"
+      ],
+      "contextType": "body_system_and_outcome",
+      "status": "Active"
+    },
+    {
+      "questionId": "Q41",
+      "question": "I sometimes have joint discomfort/weakness",
+      "bodySystemMappings": [
+        "Digestive",
+        "Intestinal",
+        "Circulatory",
+        "Nervous",
+        "Immune",
+        "Structural"
+      ],
+      "directOutcomeSignals": [
+        "OUT007",
+        "OUT004"
+      ],
+      "supportingOutcomeSignals": [
+        "OUT009"
+      ],
+      "contextType": "body_system_and_outcome",
+      "status": "Active"
+    },
+    {
+      "questionId": "Q42",
+      "question": "I find myself worrying excessively sometimes",
+      "bodySystemMappings": [
+        "Digestive",
+        "Nervous"
+      ],
+      "directOutcomeSignals": [],
+      "supportingOutcomeSignals": [
+        "OUT001",
+        "OUT006",
+        "OUT009",
+        "OUT010"
+      ],
+      "contextType": "body_system_and_outcome",
+      "status": "Active"
+    },
+    {
+      "questionId": "Q43",
+      "question": "I can be easily irritated or angered",
+      "bodySystemMappings": [
+        "Intestinal",
+        "Nervous",
+        "Glandular"
+      ],
+      "directOutcomeSignals": [],
+      "supportingOutcomeSignals": [
+        "OUT001",
+        "OUT006",
+        "OUT009",
+        "OUT010"
+      ],
+      "contextType": "body_system_and_outcome",
+      "status": "Active"
+    },
+    {
+      "questionId": "Q44",
+      "question": "I do insufficient exercise",
+      "bodySystemMappings": [
+        "Intestinal",
+        "Circulatory",
+        "Nervous",
+        "Immune",
+        "Glandular",
+        "Structural"
+      ],
+      "directOutcomeSignals": [],
+      "supportingOutcomeSignals": [
+        "OUT002",
+        "OUT004",
+        "OUT008"
+      ],
+      "contextType": "body_system_and_outcome",
+      "status": "Active"
+    },
+    {
+      "questionId": "Q45",
+      "question": "I can suffer from problems with congestion or mucus",
+      "bodySystemMappings": [
+        "Intestinal",
+        "Respiratory"
+      ],
+      "directOutcomeSignals": [],
+      "supportingOutcomeSignals": [
+        "OUT005",
+        "OUT008"
+      ],
+      "contextType": "body_system_and_outcome",
+      "status": "Active"
+    },
+    {
+      "questionId": "Q46",
+      "question": "I have menopause worries or concerns",
+      "bodySystemMappings": [],
+      "directOutcomeSignals": [
+        "OUT009"
+      ],
+      "supportingOutcomeSignals": [],
+      "contextType": "assessment_outcome_signal",
+      "status": "Active"
+    },
+    {
+      "questionId": "Q47",
+      "question": "I have concerns about my menstrual cycle or menopause-related symptoms",
+      "bodySystemMappings": [],
+      "directOutcomeSignals": [
+        "OUT009"
+      ],
+      "supportingOutcomeSignals": [],
+      "contextType": "assessment_outcome_signal",
+      "status": "Active"
+    },
+    {
+      "questionId": "Q48",
+      "question": "I am under treatment or have a chronic condition",
+      "bodySystemMappings": [],
+      "directOutcomeSignals": [],
+      "supportingOutcomeSignals": [],
+      "contextType": "medical_safety",
       "status": "Active"
     }
   ],
-  "notYetMappedGoals": [
-    {
-      "goalId": "GOAL011",
-      "name": "Heart & cardiovascular health",
-      "reason": "A dedicated cardiovascular outcome has not yet been defined. Existing Circulatory signals are not sufficient reason to silently create one."
-    },
-    {
-      "goalId": "GOAL012",
-      "name": "Immune resilience",
-      "reason": "A dedicated immune outcome has not yet been defined. Existing Immune signals are not sufficient reason to silently create one."
-    }
-  ]
+  "q48": {
+    "role": "medical_safety",
+    "bodySystemMappings": [],
+    "outcomeMappings": [],
+    "effect": "Apply recommendation safety/context rules after relevance scoring. Do not use as evidence of a specific health need."
+  }
 }

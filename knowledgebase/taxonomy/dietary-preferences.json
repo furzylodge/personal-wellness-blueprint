@@ -1,69 +1,139 @@
 {
-  "version": "1.1",
+  "version": "1.2",
   "dietaryPreferences": [
     {
       "id": "DP001",
-      "name": "Vegetarian"
+      "name": "Vegetarian",
+      "role": "exclusion",
+      "recommendationRule": "Exclude foods that conflict with this preference."
     },
     {
       "id": "DP002",
-      "name": "Vegan"
+      "name": "Vegan",
+      "role": "exclusion",
+      "recommendationRule": "Exclude foods that conflict with this preference."
     },
     {
       "id": "DP003",
-      "name": "Gluten Free"
+      "name": "Gluten Free",
+      "role": "exclusion",
+      "recommendationRule": "Exclude foods that conflict with this preference."
     },
     {
       "id": "DP004",
-      "name": "Dairy Free"
+      "name": "Dairy Free",
+      "role": "exclusion",
+      "recommendationRule": "Exclude foods that conflict with this preference."
     },
     {
       "id": "DP005",
-      "name": "Egg Free"
+      "name": "Egg Free",
+      "role": "exclusion",
+      "recommendationRule": "Exclude foods that conflict with this preference."
     },
     {
       "id": "DP006",
-      "name": "Nut Free"
+      "name": "Nut Free",
+      "role": "exclusion",
+      "recommendationRule": "Exclude foods that conflict with this preference."
     },
     {
       "id": "DP007",
-      "name": "Soy Free"
+      "name": "Soy Free",
+      "role": "exclusion",
+      "recommendationRule": "Exclude foods that conflict with this preference."
     },
     {
       "id": "DP008",
-      "name": "Halal"
+      "name": "Halal",
+      "role": "eligibility",
+      "recommendationRule": "Only include foods meeting the relevant dietary eligibility requirement."
     },
     {
       "id": "DP009",
-      "name": "Kosher"
+      "name": "Kosher",
+      "role": "eligibility",
+      "recommendationRule": "Only include foods meeting the relevant dietary eligibility requirement."
     },
     {
       "id": "DP010",
-      "name": "Pregnancy Suitable"
+      "name": "Pregnancy Suitable",
+      "role": "safety_context",
+      "recommendationRule": "Apply the relevant eligibility/safety rule before presenting recommendations."
     },
     {
       "id": "DP011",
-      "name": "Child Friendly"
+      "name": "Child Friendly",
+      "role": "safety_context",
+      "recommendationRule": "Apply the relevant eligibility/safety rule before presenting recommendations."
     },
     {
       "id": "DP012",
-      "name": "Plant Based"
+      "name": "Plant Based",
+      "role": "preference",
+      "recommendationRule": "Use as a preference signal when ranking otherwise suitable foods."
     },
     {
       "id": "DP013",
-      "name": "High Fibre"
+      "name": "High Fibre",
+      "role": "preference",
+      "recommendationRule": "Use as a preference signal when ranking otherwise suitable foods."
     },
     {
       "id": "DP014",
-      "name": "High Protein"
+      "name": "High Protein",
+      "role": "preference",
+      "recommendationRule": "Use as a preference signal when ranking otherwise suitable foods."
     },
     {
       "id": "DP015",
-      "name": "Low FODMAP"
+      "name": "Low FODMAP",
+      "role": "preference",
+      "recommendationRule": "Use as a preference signal when ranking otherwise suitable foods."
     },
     {
       "id": "DP016",
-      "name": "Paleo"
+      "name": "Paleo",
+      "role": "preference",
+      "recommendationRule": "Use as a preference signal when ranking otherwise suitable foods."
     }
-  ]
+  ],
+  "status": "Draft",
+  "ui": {
+    "questionId": "DP",
+    "label": "Dietary preferences",
+    "instruction": "Tick any dietary preferences or restrictions you would like us to consider when making food recommendations.",
+    "inputType": "checkbox",
+    "maximumSelections": null,
+    "allowNone": true
+  },
+  "roles": {
+    "exclusion": "Hard filter. Conflicting foods should not be recommended.",
+    "eligibility": "Eligibility filter. Only suitable foods should be presented.",
+    "preference": "Soft ranking preference. It should influence ranking without overriding stronger health relevance unless configured to do so.",
+    "safety_context": "Context flag. Apply appropriate eligibility/safety rules rather than treating it as a health score."
+  },
+  "recommendationRules": [
+    "Dietary preferences must be applied after health relevance has been calculated but before the final food recommendation list is presented.",
+    "A dietary exclusion should remove a conflicting food rather than merely reduce its score.",
+    "Preference-style selections such as High Fibre or High Protein should influence ranking rather than act as exclusions.",
+    "Dietary preferences must not alter the nine body-system health scores.",
+    "Dietary preferences must not create health outcomes.",
+    "The same preference framework should be available to food recommendations and, where product ingredient data supports it, product filtering."
+  ],
+  "futureExpansion": {
+    "note": "New preferences can be added without changing the questionnaire architecture.",
+    "recommendedFields": [
+      "id",
+      "name",
+      "role",
+      "recommendationRule",
+      "status"
+    ],
+    "statusValues": [
+      "Active",
+      "Proposed",
+      "Deprecated"
+    ]
+  }
 }

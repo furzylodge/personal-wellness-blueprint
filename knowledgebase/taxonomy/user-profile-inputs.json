@@ -1,0 +1,39 @@
+{
+  "version": "0.1",
+  "status": "Draft",
+  "description": "User-profile inputs collected before the Personal Wellness Blueprint assessment.",
+  "inputs": [
+    {
+      "id": "gender",
+      "type": "single_select",
+      "source": "assessment",
+      "role": "demographic_context"
+    },
+    {
+      "id": "ageRange",
+      "type": "single_select",
+      "source": "assessment",
+      "role": "demographic_context"
+    },
+    {
+      "id": "dietaryPreferences",
+      "type": "multi_select",
+      "source": "dietary-preferences.json",
+      "role": "recommendation_constraint",
+      "maximumSelections": null
+    },
+    {
+      "id": "goals",
+      "type": "multi_select",
+      "source": "goals.json",
+      "role": "explicit_user_intent",
+      "maximumSelections": 3
+    }
+  ],
+  "uiOrder": [
+    "gender",
+    "ageRange",
+    "dietaryPreferences",
+    "goals"
+  ]
+}

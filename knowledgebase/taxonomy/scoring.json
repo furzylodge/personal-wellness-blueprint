@@ -1,0 +1,116 @@
+{
+  "version": "0.1",
+  "status": "Experimental",
+  "description": "Initial configurable scoring rules for testing the PWB outcome model. Values are experimental, not production weights.",
+  "principles": [
+    "Keep knowledge data separate from scoring rules.",
+    "Direct questionnaire signals should be stronger than supporting signals.",
+    "Demographic context modifies relevance rather than creating physiological need by itself.",
+    "Outcome priorities are calculated before foods and products are ranked.",
+    "Final recommendations remain subject to evidence, relationship strength and safety rules."
+  ],
+  "outcomePriority": {
+    "components": {
+      "goalIntent": 0.35,
+      "quizBodySystemNeed": 0.45,
+      "directQuestionSignals": 0.15,
+      "demographicContext": 0.05
+    },
+    "normalisation": "0_to_100",
+    "note": "Experimental weights only. They should be calibrated through test personas."
+  },
+  "questionSignals": {
+    "direct": {
+      "weight": 1.0
+    },
+    "supporting": {
+      "weight": 0.35
+    },
+    "responseScoring": {
+      "type": "Pending",
+      "note": "questions.json preserves the source questionnaire and T body-system associations. The complete numeric response-weighting specification still needs verification before production."
+    }
+  },
+  "bodySystemNeed": {
+    "source": "Nine body-system scores from the existing questionnaire scoring model.",
+    "normalisation": "Use each system's authoritative maximum and thresholds.",
+    "priorityLevels": {
+      "Normal": 0.0,
+      "SupportRecommended": 0.5,
+      "PrioritySupportRequired": 1.0
+    },
+    "note": "Continuous raw-score normalisation should be verified against the authoritative scoring specification."
+  },
+  "goalIntent": {
+    "maximumSelections": 3,
+    "selectedGoalWeight": 1.0,
+    "orderedRanking": false,
+    "noGoalValue": 0.0
+  },
+  "demographicContext": {
+    "ageRange": {
+      "role": "Modifier",
+      "default": 0.0
+    },
+    "gender": {
+      "role": "Modifier",
+      "default": 0.0
+    },
+    "menopause": {
+      "femaleOnly": true,
+      "directQuestions": [
+        "Q46",
+        "Q47"
+      ],
+      "note": "Do not create a menopause score from age/gender alone."
+    }
+  },
+  "mechanismRanking": {
+    "outcomeCoverage": 0.5,
+    "bodySystemRelevance": 0.15,
+    "evidenceStrength": 0.2,
+    "relationshipStrength": 0.15
+  },
+  "foodProductRanking": {
+    "mechanismCoverage": 0.45,
+    "relationshipStrength": 0.2,
+    "evidenceStrength": 0.2,
+    "outcomeSpecificity": 0.15
+  },
+  "antiBiasRules": {
+    "broadCoveragePenalty": true,
+    "duplicateMechanismCap": true,
+    "evidenceFloor": "Exclude or heavily penalise insufficient-evidence items.",
+    "broadCoverageDescription": "Do not let foods/products win merely because they have many generic relationships."
+  },
+  "testMode": {
+    "enabled": true,
+    "personas": [
+      "Female 51-64: sleep + energy + weight management",
+      "Male 51-64: energy + fitness",
+      "Female 40-50: menopause + sleep",
+      "Male 35-50: fitness + weight management",
+      "Female 65+: healthy ageing + mobility",
+      "No goals: assessment-driven"
+    ],
+    "evaluationCriteria": [
+      "Goal alignment",
+      "Body-system need alignment",
+      "Sensible age/gender influence",
+      "Direct-question behaviour",
+      "No broad-product bias",
+      "Explainable mechanism pathways",
+      "Sensible ranking changes when goals change"
+    ]
+  },
+  "productionReadiness": {
+    "ready": false,
+    "blockingItems": [
+      "Verify authoritative numeric response scoring for all 48 questions.",
+      "Run synthetic personas.",
+      "Calibrate outcome weights.",
+      "Define numeric evidence and relationship-strength scales.",
+      "Define safety and exclusion gates."
+    ]
+  }
+}
