@@ -1,0 +1,9 @@
+legacy_system,new_outcome,legacy_mean,new_mean,pearson_r,legacy_zero_pct,new_zero_pct
+Digestive System,Digestive & Gut Health,0.104,0.233,0.329,6.4,19.6
+Intestinal System,Digestive & Gut Health,0.029,0.233,0.246,53.6,19.6
+Circulatory System,Circulation & Cardiovascular Fitness,0.083,0.407,0.257,8.1,45.7
+Nervous System,"Mood, Stress & Emotional Balance",0.078,0.334,0.436,6.4,8.7
+Immune System,Immune Resilience,0.098,0.109,0.207,7.1,50.6
+Respiratory System,Respiratory Health,0.022,0.158,0.099,82.2,67.9
+Glandular System,Hormonal & Life-Stage Balance,0.053,0.299,0.69,30.4,42.2
+Structural System,"Mobility, Joints & Physical Function",0.055,0.287,0.1,52.7,29.5

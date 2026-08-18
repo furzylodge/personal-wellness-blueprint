@@ -1,0 +1,273 @@
+{
+  "version": "2026-pwb-signal-spec-v0.2",
+  "status": "design baseline for model and provenance testing",
+  "purpose": "Define the nine user-facing PWB outcomes and qualitative evidence rules before numerical calibration.",
+  "important_boundary": "Signals are interpretations of questionnaire response patterns. They are not diagnoses, disease scores, medical assessments, or determinations of health status.",
+  "taxonomy": {
+    "user_facing_outcomes": [
+      "Energy & Vitality",
+      "Sleep & Recovery",
+      "Digestive & Gut Health",
+      "Healthy Weight & Metabolic Balance",
+      "Mood, Stress & Emotional Balance",
+      "Immune Resilience",
+      "Hormonal & Life-Stage Balance",
+      "Mobility, Joints & Physical Function",
+      "Respiratory Health",
+      "Circulation & Cardiovascular Fitness"
+    ],
+    "legacy_outcomes_removed": [
+      "General Health & Resilience",
+      "Sports Performance & Physical Capacity"
+    ],
+    "legacy_body_system_scores": "Retained only as internal provenance/evidence relationships; not user-facing results.",
+    "signal_terms": [
+      "No significant signal",
+      "Weak signal",
+      "Moderate signal",
+      "Strong signal"
+    ],
+    "outcome_count": 10
+  },
+  "evidence_roles": {
+    "primary": "Direct experiential or construct evidence for the outcome.",
+    "supporting": "Relevant evidence that strengthens or corroborates a pattern.",
+    "context": "Information useful to interpretation, personalisation or safety, but which does not increase signal strength.",
+    "excluded": "Information that must not be converted into a wellness signal."
+  },
+  "outcomes": [
+    {
+      "id": "energy_vitality",
+      "name": "Energy & Vitality",
+      "primary": [
+        "Q12",
+        "Q26"
+      ],
+      "supporting": [
+        "Q35"
+      ],
+      "context": [
+        "Q01"
+      ],
+      "rule": "Do not create a negative signal from Q01 alone. Prefer convergence of energy/fatigue experience with sleep/recovery or physical-capacity evidence.",
+      "rationale": "Q01 is treated as a user goal/priority rather than evidence of a health problem."
+    },
+    {
+      "id": "sleep_recovery",
+      "name": "Sleep & Recovery",
+      "primary": [
+        "Q20",
+        "Q35"
+      ],
+      "supporting": [
+        "Q21",
+        "Q37"
+      ],
+      "context": [],
+      "rule": "A primary sleep/recovery response can create a candidate signal; two independent primary/supporting responses should normally be required for a stronger signal.",
+      "rationale": "The current mapping already gives Q20/Q35 primary status and Q21/Q37 supporting status."
+    },
+    {
+      "id": "digestive_gut",
+      "name": "Digestive & Gut Health",
+      "primary": [
+        "Q04",
+        "Q14",
+        "Q29"
+      ],
+      "supporting": [
+        "Q03",
+        "Q24a",
+        "Q27",
+        "Q31"
+      ],
+      "context": [
+        "Q24b",
+        "Q39",
+        "Q40"
+      ],
+      "rule": "Use symptom/dietary convergence. Medical history, treatment and sensitivity context never increase signal strength.",
+      "rationale": "Consolidates the working 'Digestion & Gut Health' label into the agreed 'Digestive & Gut Health'."
+    },
+    {
+      "id": "metabolic_weight",
+      "name": "Healthy Weight & Metabolic Balance",
+      "primary": [
+        "Q25"
+      ],
+      "supporting": [
+        "Q17",
+        "Q24a",
+        "Q27",
+        "Q44"
+      ],
+      "context": [
+        "Q24b"
+      ],
+      "rule": "Avoid inferring metabolic problems from a single dietary behaviour. Stronger signals require convergent behavioural/experience evidence.",
+      "rationale": "Keeps Q24b as context and avoids treating dietary exposure as diagnosis."
+    },
+    {
+      "id": "mood_stress",
+      "name": "Mood, Stress & Emotional Balance",
+      "primary": [
+        "Q08",
+        "Q15",
+        "Q19",
+        "Q30",
+        "Q38",
+        "Q42",
+        "Q43"
+      ],
+      "supporting": [],
+      "context": [],
+      "rule": "Multiple direct experiential responses can legitimately form a strong signal. Do not convert the signal into a mental-health diagnosis.",
+      "rationale": "The current mapping gives this outcome the strongest direct-question coverage."
+    },
+    {
+      "id": "immune_resilience",
+      "name": "Immune Resilience",
+      "primary": [
+        "Q02",
+        "Q13",
+        "Q28"
+      ],
+      "supporting": [
+        "Q04",
+        "Q14",
+        "Q34"
+      ],
+      "context": [
+        "Q06",
+        "Q09",
+        "Q39",
+        "Q40"
+      ],
+      "rule": "Prefer convergence of recurring illness/resilience/recovery responses. Medical treatment, allergy and sensitivity information remains context.",
+      "rationale": "Retains the clearest historical/current immune evidence while separating safety context."
+    },
+    {
+      "id": "hormonal_lifestage",
+      "name": "Hormonal & Life-Stage Balance",
+      "primary": [
+        "Q47"
+      ],
+      "supporting": [
+        "Q23",
+        "Q33"
+      ],
+      "context": [
+        "Q46"
+      ],
+      "rule": "Conditional output only where relevant. Use cautious wording and never imply a hormonal diagnosis.",
+      "rationale": "Q46-Q48 are taken from the current questions.json structure; Q48 is medical context, not a signal."
+    },
+    {
+      "id": "mobility_function",
+      "name": "Mobility, Joints & Physical Function",
+      "primary": [
+        "Q32",
+        "Q41"
+      ],
+      "supporting": [
+        "Q44"
+      ],
+      "context": [],
+      "rule": "Use physical-function experience plus activity context. Avoid implying structural disease.",
+      "rationale": "Aligns the historical Structural evidence with the new user-facing outcome."
+    },
+    {
+      "id": "respiratory_health",
+      "name": "Respiratory Health",
+      "primary": [
+        "Q45"
+      ],
+      "supporting": [
+        "Q11",
+        "Q26",
+        "Q34"
+      ],
+      "context": [
+        "Q09"
+      ],
+      "rule": "Q45 is the clearest direct symptom evidence. Exposure/context can corroborate but must not be described as a diagnosis or cause.",
+      "rationale": "Preserves the strong historical/current Respiratory relationships without exposing a respiratory body-system score."
+    },
+    {
+      "id": "circulation_cardiovascular",
+      "name": "Circulation & Cardiovascular Fitness",
+      "primary": [],
+      "supporting": [
+        "Q05",
+        "Q11",
+        "Q24a",
+        "Q26",
+        "Q44"
+      ],
+      "context": [
+        "Q24b"
+      ],
+      "rule": "Convergence-based outcome. Do not create a strong signal from a single indirect exposure. Require multiple independent relevant inputs before surfacing a stronger signal.",
+      "rationale": "Retains the historical/current Circulatory evidence while keeping the outcome distinct because it is a required PWB outcome and a downstream recommendation pathway."
+    }
+  ],
+  "signal_generation": {
+    "stage_1": "Determine whether there is coherent evidence for an outcome.",
+    "stage_2": "Estimate signal strength from the quality and convergence of evidence.",
+    "stage_3": "Prioritise signals for the report.",
+    "principles": [
+      "A single weak association does not automatically become a weak signal.",
+      "Two or more independent relevant responses provide stronger evidence than several broad historical associations.",
+      "Exposure/context is not equivalent to a symptom.",
+      "Medical treatment, known conditions, allergies and sensitivities do not increase wellness signal strength.",
+      "Where an outcome has no agreed direct question, use convergence rather than inventing a direct score.",
+      "Numerical weights and thresholds remain intentionally undefined in v0.1."
+    ]
+  },
+  "commercial_separation": {
+    "principle": "The questionnaire and signal engine are independent of commercial recommendations.",
+    "rules": [
+      "Product catalogue, availability, commission, commercial priority and sales objectives must never influence questionnaire scoring or signal generation.",
+      "Every surfaced signal must be traceable to specific questionnaire answers and evidence rules.",
+      "Every recommendation must be traceable to a surfaced signal, an explicit recommendation rule and an approved product/claim set.",
+      "A product recommendation must never strengthen, justify or manufacture a wellness signal.",
+      "The questionnaire does not recommend products. A separate recommendation layer evaluates eligible signals against recommendation rules.",
+      "Recommendation presentation must not imply diagnosis, treatment, prevention or disease risk unless separately supported by an approved claim set and permitted for the relevant jurisdiction."
+    ],
+    "provenance_chain": [
+      "question",
+      "answer",
+      "evidence",
+      "body-system relationship",
+      "PWB signal",
+      "signal strength",
+      "interpretation",
+      "recommendation eligibility",
+      "recommendation rule",
+      "product/action"
+    ]
+  },
+  "auditability": {
+    "required": true,
+    "signal_record": {
+      "question_id": "required",
+      "answer": "required",
+      "evidence_id": "required",
+      "body_system_relationships": "record applicable relationships",
+      "outcome": "required",
+      "evidence_role": "primary/supporting/context/excluded",
+      "signal_strength": "required once surfaced",
+      "rule_version": "required"
+    },
+    "recommendation_record": {
+      "recommendation_rule_id": "required",
+      "trigger_signal": "required",
+      "required_signal_strength": "required",
+      "supporting_evidence_ids": "required",
+      "excluded_conditions": "required where applicable",
+      "approved_claim_set": "required",
+      "product_or_action": "required",
+      "rule_version": "required"
+    }
+  }
+}

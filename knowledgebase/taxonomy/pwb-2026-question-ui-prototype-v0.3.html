@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PWB 2026 Questionnaire UI Prototype v0.1</title>
+<style>
+:root {
+  --bg:#f5f6f4; --card:#fff; --text:#202522; --muted:#69716c;
+  --line:#dfe4e0; --selected:#e8eeea; --accent:#31463a; --soft:#eef2ef;
+}
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--text); font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; line-height:1.45; }
+header { max-width:1050px; margin:0 auto; padding:42px 24px 22px; }
+.kicker { font-size:12px; letter-spacing:.14em; font-weight:700; color:var(--muted); }
+h1 { font-size:34px; line-height:1.1; margin:9px 0 10px; font-weight:650; }
+.intro { max-width:720px; color:var(--muted); margin:0; }
+main { max-width:1050px; margin:0 auto; padding:10px 24px 70px; }
+.card { background:var(--card); border:1px solid var(--line); border-radius:18px; padding:28px; margin:0 0 18px; box-shadow:0 2px 10px rgba(20,30,24,.035); }
+.eyebrow,.conditional-label { font-size:11px; letter-spacing:.14em; font-weight:750; color:var(--muted); margin-bottom:10px; }
+h2 { font-size:21px; line-height:1.3; font-weight:620; margin:0 0 20px; max-width:850px; }
+.info { display:inline-grid; place-items:center; width:20px; height:20px; border:1px solid #b9c2bc; background:#fff; border-radius:50%; font-size:12px; color:var(--muted); vertical-align:3px; cursor:pointer; }
+.options { display:grid; gap:10px; }
+.options.single { grid-template-columns:repeat(2,minmax(0,1fr)); }
+.options.scale { grid-template-columns:repeat(5,minmax(0,1fr)); }
+.options.multi { grid-template-columns:repeat(2,minmax(0,1fr)); }
+.option { position:relative; min-height:58px; border:1px solid var(--line); border-radius:12px; display:flex; align-items:center; gap:12px; padding:14px 15px; cursor:pointer; background:#fff; transition:.12s ease; }
+.option:hover { border-color:#aeb8b1; background:#fafbfa; }
+.option:has(input:checked) { border-color:var(--accent); background:var(--selected); box-shadow:inset 0 0 0 1px var(--accent); }
+.option input { position:absolute; opacity:0; pointer-events:none; }
+.mark { width:18px; height:18px; border:1.5px solid #aeb7b1; flex:0 0 18px; border-radius:50%; }
+.multi .mark { border-radius:4px; }
+.option:has(input:checked) .mark { border-color:var(--accent); background:var(--accent); box-shadow:inset 0 0 0 4px #fff; }
+.multi .option:has(input:checked) .mark { box-shadow:inset 0 0 0 3px #fff; }
+.option-text { font-size:14px; }
+.why { margin-top:18px; padding-top:14px; border-top:1px solid #edf0ed; color:var(--muted); font-size:13px; }
+.conditional { margin-top:20px; padding:20px; border-radius:14px; background:var(--soft); border:1px solid var(--line); }
+.conditional .question { font-size:17px; font-weight:600; margin-bottom:14px; }
+.conditional .options { background:transparent; }
+.progress { position:sticky; top:0; z-index:3; background:rgba(245,246,244,.94); backdrop-filter:blur(8px); border-bottom:1px solid var(--line); }
+.progress-inner { max-width:1050px; margin:auto; padding:10px 24px; display:flex; align-items:center; justify-content:space-between; font-size:12px; color:var(--muted); }
+.bar { height:4px; background:#dfe4e0; border-radius:99px; overflow:hidden; margin:0 24px 8px; }
+.bar span { display:block; width:16.6%; height:100%; background:var(--accent); }
+footer { max-width:1050px; margin:auto; padding:0 24px 60px; color:var(--muted); font-size:12px; }
+@media(max-width:760px) {
+  header,main,footer { padding-left:16px; padding-right:16px; }
+  .options.scale,.options.single,.options.multi { grid-template-columns:1fr; }
+  .card { padding:21px; border-radius:14px; }
+  h1 { font-size:28px; }
+}
+</style>
+</head>
+<body>
+<div class="progress">
+  <div class="progress-inner"><span>QUESTIONNAIRE PROTOTYPE</span><span>1 of 6 examples</span></div>
+  <div class="bar"><span></span></div>
+</div>
+<header>
+  <div class="kicker">PERSONAL WELLNESS BLUEPRINT · 2026</div>
+  <h1>A calmer way to answer the questions</h1>
+  <p class="intro">These six examples exercise the reusable question components: goal, frequency, multi-select with conditional follow-up, quality, activity, and medical context.</p>
+</header>
+<main>
+
+      <article class="card" data-q="Q01">
+        <div class="eyebrow">YOUR GOAL</div>
+        <h2>Would you like to have more energy during the day? <button class="info" aria-label="Why are we asking?">i</button></h2>
+        <div class="options single" role="group" aria-label="Would you like to have more energy during the day?">
+        <label class="option" data-index="0">
+          <input type="radio" name="Q01" value="0">
+          <span class="mark"></span>
+          <span class="option-text">Yes</span>
+        </label>
+        <label class="option" data-index="1">
+          <input type="radio" name="Q01" value="1">
+          <span class="mark"></span>
+          <span class="option-text">No</span>
+        </label></div>
+        
+        <div class="why">This records your stated priority. It does not itself indicate poor health.</div>
+      </article>
+    
+      <article class="card" data-q="Q04">
+        <div class="eyebrow">DIGESTIVE &amp; GUT HEALTH</div>
+        <h2>How often do you have difficulty digesting certain foods? <button class="info" aria-label="Why are we asking?">i</button></h2>
+        <div class="options scale" role="group" aria-label="How often do you have difficulty digesting certain foods?">
+        <label class="option" data-index="0">
+          <input type="radio" name="Q04" value="0">
+          <span class="mark"></span>
+          <span class="option-text">Never</span>
+        </label>
+        <label class="option" data-index="1">
+          <input type="radio" name="Q04" value="1">
+          <span class="mark"></span>
+          <span class="option-text">Occasionally</span>
+        </label>
+        <label class="option" data-index="2">
+          <input type="radio" name="Q04" value="2">
+          <span class="mark"></span>
+          <span class="option-text">Sometimes</span>
+        </label>
+        <label class="option" data-index="3">
+          <input type="radio" name="Q04" value="3">
+          <span class="mark"></span>
+          <span class="option-text">Often</span>
+        </label>
+        <label class="option" data-index="4">
+          <input type="radio" name="Q04" value="4">
+          <span class="mark"></span>
+          <span class="option-text">Very often</span>
+        </label></div>
+        
+        <div class="why">A higher response contributes to the Digestive &amp; Gut Health signal.</div>
+      </article>
+    
+      <article class="card" data-q="Q16">
+        <div class="eyebrow">HEALTH CONTEXT</div>
+        <h2>Do you currently have, or have you previously been diagnosed with, any of the following skin conditions? <button class="info" aria-label="Why are we asking?">i</button></h2>
+        <div class="options multi" role="group" aria-label="Do you currently have, or have you previously been diagnosed with, any of the following skin conditions?">
+        <label class="option" data-index="0">
+          <input type="checkbox" name="Q16_0" value="0">
+          <span class="mark"></span>
+          <span class="option-text">Eczema / atopic dermatitis</span>
+        </label>
+        <label class="option" data-index="1">
+          <input type="checkbox" name="Q16_1" value="1">
+          <span class="mark"></span>
+          <span class="option-text">Psoriasis</span>
+        </label>
+        <label class="option" data-index="2">
+          <input type="checkbox" name="Q16_2" value="2">
+          <span class="mark"></span>
+          <span class="option-text">Rosacea</span>
+        </label>
+        <label class="option" data-index="3">
+          <input type="checkbox" name="Q16_3" value="3">
+          <span class="mark"></span>
+          <span class="option-text">Another diagnosed skin condition</span>
+        </label>
+        <label class="option" data-index="4" data-none="true">
+          <input type="checkbox" name="Q16_4" value="4">
+          <span class="mark"></span>
+          <span class="option-text">None of these</span>
+        </label></div>
+        
+        <div class="conditional" id="Q16b" hidden>
+          <div class="conditional-label">FOLLOW-UP</div>
+          <div class="question">How much does this skin condition currently affect your day-to-day life? <button class="info" aria-label="Why are we asking?">i</button></div>
+          <div class="options scale" role="group" aria-label="How much does this skin condition currently affect your day-to-day life?">
+            <label class="option"><input type="radio" name="Q16b" value="0"><span class="mark"></span><span class="option-text">Not at all</span></label><label class="option"><input type="radio" name="Q16b" value="1"><span class="mark"></span><span class="option-text">A little</span></label><label class="option"><input type="radio" name="Q16b" value="2"><span class="mark"></span><span class="option-text">Moderately</span></label><label class="option"><input type="radio" name="Q16b" value="3"><span class="mark"></span><span class="option-text">A lot</span></label><label class="option"><input type="radio" name="Q16b" value="4"><span class="mark"></span><span class="option-text">Severely</span></label>
+          </div>
+        </div>
+        <div class="why">This is context only. A diagnosed skin condition is not treated as a general health deficit.</div>
+      </article>
+    
+      <article class="card" data-q="Q20">
+        <div class="eyebrow">SLEEP &amp; RECOVERY</div>
+        <h2>How would you describe the quality of your sleep? <button class="info" aria-label="Why are we asking?">i</button></h2>
+        <div class="options scale" role="group" aria-label="How would you describe the quality of your sleep?">
+        <label class="option" data-index="0">
+          <input type="radio" name="Q20" value="0">
+          <span class="mark"></span>
+          <span class="option-text">Very good</span>
+        </label>
+        <label class="option" data-index="1">
+          <input type="radio" name="Q20" value="1">
+          <span class="mark"></span>
+          <span class="option-text">Generally good</span>
+        </label>
+        <label class="option" data-index="2">
+          <input type="radio" name="Q20" value="2">
+          <span class="mark"></span>
+          <span class="option-text">Variable</span>
+        </label>
+        <label class="option" data-index="3">
+          <input type="radio" name="Q20" value="3">
+          <span class="mark"></span>
+          <span class="option-text">Often poor</span>
+        </label>
+        <label class="option" data-index="4">
+          <input type="radio" name="Q20" value="4">
+          <span class="mark"></span>
+          <span class="option-text">Consistently poor</span>
+        </label></div>
+        
+        <div class="why">This contributes directly to Sleep &amp; Recovery.</div>
+      </article>
+    
+      <article class="card" data-q="Q44">
+        <div class="eyebrow">ACTIVITY</div>
+        <h2>On how many days in a typical week do you do around 30 minutes or more of moderate or vigorous activity? <button class="info" aria-label="Why are we asking?">i</button></h2>
+        <p class="intro" style="margin:0 0 18px;font-size:13px;color:var(--muted);">Think about activities such as brisk walking, cycling, swimming, running or sport. It does not have to be one continuous session.</p>
+        <div class="options scale" role="group" aria-label="On how many days in a typical week do you do around 30 minutes or more of moderate or vigorous activity?">
+        <label class="option" data-index="0"><input type="radio" name="Q44" value="0"><span class="mark"></span><span class="option-text">0 days</span></label>
+        <label class="option" data-index="1"><input type="radio" name="Q44" value="1"><span class="mark"></span><span class="option-text">1–2 days</span></label>
+        <label class="option" data-index="2"><input type="radio" name="Q44" value="2"><span class="mark"></span><span class="option-text">3–4 days</span></label>
+        <label class="option" data-index="3"><input type="radio" name="Q44" value="3"><span class="mark"></span><span class="option-text">5–6 days</span></label>
+        <label class="option" data-index="4"><input type="radio" name="Q44" value="4"><span class="mark"></span><span class="option-text">Every day</span></label></div>
+        <div class="why">The UK Chief Medical Officers recommend adults aim for at least 150 minutes of moderate activity each week, or 75 minutes of vigorous activity, or a combination. Activity can be spread across the week and shorter bouts count. This question uses days as a simpler way to describe a typical pattern.</div>
+      </article>
+    
+      <article class="card" data-q="Q46">
+        <div class="eyebrow">PERSONAL CONTEXT</div>
+        <h2>Is there any diagnosed health condition or ongoing treatment that you would like your practitioner to be aware of? <button class="info" aria-label="Why are we asking?">i</button></h2>
+        <p class="intro" style="margin:0 0 18px;font-size:13px;color:var(--muted);">This is optional. It gives your practitioner useful context when discussing your results. It does not form part of your wellness signals.</p>
+        <div class="options single" role="group" aria-label="Is there any diagnosed health condition or ongoing treatment that you would like your practitioner to be aware of?">
+        <label class="option" data-index="0"><input type="radio" name="Q46" value="0"><span class="mark"></span><span class="option-text">No</span></label>
+        <label class="option" data-index="1"><input type="radio" name="Q46" value="1"><span class="mark"></span><span class="option-text">Yes</span></label>
+        <label class="option" data-index="2"><input type="radio" name="Q46" value="2"><span class="mark"></span><span class="option-text">Prefer not to say</span></label>
+        </div>
+
+        <div class="conditional" id="Q46b" hidden>
+          <div class="conditional-label">OPTIONAL CONTEXT</div>
+          <div class="question">Which areas would you like your practitioner to be aware of?</div>
+          <p class="intro" style="margin:0 0 14px;font-size:13px;color:var(--muted);">Select any that apply. These broad categories are for context only. You do not need to provide a diagnosis or detailed medical history.</p>
+          <div class="options multi" role="group" aria-label="Which areas would you like your practitioner to be aware of?">
+            <label class="option"><input type="checkbox" name="Q46b_0" value="0"><span class="mark"></span><span class="option-text">Cardiovascular</span></label>
+            <label class="option"><input type="checkbox" name="Q46b_1" value="1"><span class="mark"></span><span class="option-text">Digestive or gut</span></label>
+            <label class="option"><input type="checkbox" name="Q46b_2" value="2"><span class="mark"></span><span class="option-text">Respiratory</span></label>
+            <label class="option"><input type="checkbox" name="Q46b_3" value="3"><span class="mark"></span><span class="option-text">Musculoskeletal or joints</span></label>
+            <label class="option"><input type="checkbox" name="Q46b_4" value="4"><span class="mark"></span><span class="option-text">Hormonal or metabolic</span></label>
+            <label class="option"><input type="checkbox" name="Q46b_5" value="5"><span class="mark"></span><span class="option-text">Immune or inflammatory</span></label>
+            <label class="option"><input type="checkbox" name="Q46b_6" value="6"><span class="mark"></span><span class="option-text">Neurological</span></label>
+            <label class="option"><input type="checkbox" name="Q46b_7" value="7"><span class="mark"></span><span class="option-text">Mental or emotional wellbeing</span></label>
+            <label class="option"><input type="checkbox" name="Q46b_8" value="8"><span class="mark"></span><span class="option-text">Other</span></label>
+            <label class="option"><input type="checkbox" name="Q46b_9" value="9"><span class="mark"></span><span class="option-text">Prefer not to say</span></label>
+          </div>
+          <div class="why">This information is optional and is provided as context for your practitioner. It does not form part of your wellness signals and does not constitute a medical assessment.</div>
+        </div>
+        <div class="why">Existing health conditions and treatment are kept separate from the PWB wellness signals. The purpose is to give the practitioner relevant context when discussing the report.</div>
+      </article>
+    
+</main>
+<footer>
+  Prototype only. The questionnaire collects self-reported wellness information and does not diagnose conditions, establish disease risk, or recommend treatment.
+</footer>
+<script>
+document.querySelectorAll('input[name="Q46"]').forEach(input => {
+  input.addEventListener('change', () => {
+    const follow = document.getElementById('Q46b');
+    const show = input.value === '1' && input.checked;
+    follow.hidden = !show;
+    if (!show) follow.querySelectorAll('input').forEach(x => x.checked = false);
+  });
+});
+document.querySelectorAll('input[name^="Q46b_"]').forEach(input => {
+  input.addEventListener('change', () => {
+    if (input.value === '9' && input.checked) {
+      document.querySelectorAll('input[name^="Q46b_"]:not([value="9"])').forEach(x => x.checked = false);
+    } else if (input.value !== '9' && input.checked) {
+      const prefer = document.querySelector('input[name="Q46b_9"]');
+      if (prefer) prefer.checked = false;
+    }
+  });
+});
+
+document.querySelectorAll('.option input').forEach(input => {
+  input.addEventListener('change', () => {
+    const q = input.closest('[data-q]');
+    if (!q) return;
+    if (q.dataset.q === 'Q16') {
+      const checked = [...q.querySelectorAll('input:checked')].map(x => Number(x.value));
+      const show = checked.some(i => i < 4);
+      const follow = document.getElementById('Q16b');
+      follow.hidden = !show;
+      if (!show) follow.querySelectorAll('input').forEach(x => x.checked=false);
+    }
+  });
+});
+document.querySelectorAll('.info').forEach(btn => {
+  btn.addEventListener('click', e => {
+    e.preventDefault();
+    const card = btn.closest('.card') || btn.closest('.conditional');
+    const why = card.querySelector('.why');
+    if (why) why.scrollIntoView({behavior:'smooth',block:'nearest'});
+  });
+});
+document.querySelectorAll('[data-none="true"] input').forEach(none => {
+  none.addEventListener('change', () => {
+    if (none.checked) {
+      const parent = none.closest('.options');
+      parent.querySelectorAll('input:not([data-none])').forEach(x => x.checked=false);
+      const follow = document.getElementById('Q16b');
+      if (follow) { follow.hidden=true; follow.querySelectorAll('input').forEach(x => x.checked=false); }
+    }
+  });
+});
+</script>
+</body>
+</html>

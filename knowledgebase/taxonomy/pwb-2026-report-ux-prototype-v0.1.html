@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PWB report UX prototype</title>
+<style>
+:root{--bg:#f4f6f3;--card:#fff;--ink:#202621;--muted:#6b746d;--line:#dfe5e0;--accent:#334a3b;--soft:#edf2ee;--strong:#294936;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.5}
+.page{max-width:900px;margin:32px auto 70px;background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 6px 30px rgba(20,30,24,.05)}
+.report-top{display:flex;justify-content:space-between;padding:17px 28px;border-bottom:1px solid var(--line);font-size:11px;letter-spacing:.1em;color:var(--muted);font-weight:700}
+.hero{padding:52px 54px 42px;background:linear-gradient(180deg,#f8faf8 0%,#fff 100%)}
+.eyebrow{font-size:11px;letter-spacing:.14em;font-weight:800;color:var(--muted)}
+h1{font-size:39px;line-height:1.08;margin:10px 0 15px;font-weight:650}
+.lede{font-size:18px;max-width:700px;color:#515b54;margin:0}
+.section-title{display:flex;justify-content:space-between;align-items:center;padding:26px 54px 12px;color:var(--muted);font-size:11px;font-weight:800;letter-spacing:.14em}
+.section-title small{font-size:10px;font-weight:500;letter-spacing:0;text-transform:none}
+.signal{margin:0 54px 13px;padding:24px 25px;border:1px solid var(--line);border-radius:16px}
+.signal.first{border-color:#bdcabe;background:#fbfcfb}
+.signal-head{display:flex;gap:20px;align-items:flex-start;justify-content:space-between}
+h2{font-size:20px;line-height:1.25;margin:7px 0 8px;font-weight:630}
+.signal p,.context p,.next p{margin:8px 0;color:#5b645e}
+.strength{white-space:nowrap;padding:7px 11px;border-radius:999px;background:var(--soft);color:var(--strong);font-size:12px;font-weight:750}
+.why{border:0;background:transparent;padding:0;color:#4e6255;font-size:13px;text-decoration:underline;cursor:pointer;margin-top:7px}
+.context{margin:32px 54px 0;padding:24px 25px;background:#f7f8f7;border-radius:16px}
+.next{margin:18px 54px 50px;padding:28px 25px;background:var(--soft);border-radius:16px}
+@media(max-width:700px){.page{margin:0 0 35px;border-radius:0}.report-top,.hero,.section-title{padding-left:20px;padding-right:20px}.signal,.context,.next{margin-left:20px;margin-right:20px}h1{font-size:31px}.signal-head{display:block}.strength{display:inline-block;margin-top:4px}}
+</style>
+</head>
+<body>
+
+    <article class="page">
+      <div class="report-top">
+        <span>PERSONAL WELLNESS BLUEPRINT</span>
+        <span>Example report · P01</span>
+      </div>
+      <div class="hero">
+        <div class="eyebrow">YOUR WELLNESS PATTERN</div>
+        <h1>What your responses are telling us</h1>
+        <p class="lede">No single area is presented as a dominant signal.</p>
+      </div>
+      <div class="section-title">
+        <span>YOUR SIGNALS</span>
+        <small>Illustrative UX state</small>
+      </div>
+      
+    <section class="signal first">
+      <div class="signal-head">
+        <div>
+          <div class="eyebrow">WELLNESS SIGNAL</div>
+          <h2>Sleep & Recovery</h2>
+        </div>
+        <div class="strength">No significant signal</div>
+      </div>
+      <p>Your responses do not show a particularly strong pattern in this area.</p>
+      <button class="why">Why are we seeing this?</button>
+    </section>
+    
+    <section class="signal">
+      <div class="signal-head">
+        <div>
+          <div class="eyebrow">WELLNESS SIGNAL</div>
+          <h2>Energy & Vitality</h2>
+        </div>
+        <div class="strength">Moderate signal</div>
+      </div>
+      <p>A few responses provide useful context around everyday energy and activity.</p>
+      <button class="why">Why are we seeing this?</button>
+    </section>
+    
+    <section class="signal">
+      <div class="signal-head">
+        <div>
+          <div class="eyebrow">WELLNESS SIGNAL</div>
+          <h2>Mood & Emotional Wellbeing</h2>
+        </div>
+        <div class="strength">No significant signal</div>
+      </div>
+      <p>Your responses do not show a particularly strong pattern in this area.</p>
+      <button class="why">Why are we seeing this?</button>
+    </section>
+    
+    <section class="signal">
+      <div class="signal-head">
+        <div>
+          <div class="eyebrow">WELLNESS SIGNAL</div>
+          <h2>Digestive & Gut Health</h2>
+        </div>
+        <div class="strength">Weak signal</div>
+      </div>
+      <p>There are a few responses worth keeping in mind, but they do not form a strong pattern.</p>
+      <button class="why">Why are we seeing this?</button>
+    </section>
+    
+      <section class="context">
+        <div class="eyebrow">PRACTITIONER CONTEXT</div>
+        <h2>Information kept separate from your signals</h2>
+        <p>No significant practitioner context is shown in this example.</p>
+      </section>
+      <section class="next">
+        <div class="eyebrow">WHERE TO EXPLORE NEXT</div>
+        <h2>A conversation, not a diagnosis</h2>
+        <p>Focus on what you want to maintain and any area you personally want to explore further.</p>
+      </section>
+    </article>
+    
+    <article class="page">
+      <div class="report-top">
+        <span>PERSONAL WELLNESS BLUEPRINT</span>
+        <span>Example report · P02</span>
+      </div>
+      <div class="hero">
+        <div class="eyebrow">YOUR WELLNESS PATTERN</div>
+        <h1>What your responses are telling us</h1>
+        <p class="lede">Several answers point towards sleep and recovery being the clearest area to explore.</p>
+      </div>
+      <div class="section-title">
+        <span>YOUR SIGNALS</span>
+        <small>Illustrative UX state</small>
+      </div>
+      
+    <section class="signal first">
+      <div class="signal-head">
+        <div>
+          <div class="eyebrow">WELLNESS SIGNAL</div>
+          <h2>Sleep & Recovery</h2>
+        </div>
+        <div class="strength">Strong signal</div>
+      </div>
+      <p>Several of your responses point in the same direction, including sleep quality, sleep duration, night waking and daytime tiredness.</p>
+      <button class="why">Why are we seeing this?</button>
+    </section>
+    
+    <section class="signal">
+      <div class="signal-head">
+        <div>
+          <div class="eyebrow">WELLNESS SIGNAL</div>
+          <h2>Energy & Vitality</h2>
+        </div>
+        <div class="strength">Moderate signal</div>
+      </div>
+      <p>Some of your responses suggest that daytime energy may be connected with the wider recovery pattern.</p>
+      <button class="why">Why are we seeing this?</button>
+    </section>
+    
+    <section class="signal">
+      <div class="signal-head">
+        <div>
+          <div class="eyebrow">WELLNESS SIGNAL</div>
+          <h2>Mood & Emotional Wellbeing</h2>
+        </div>
+        <div class="strength">Weak signal</div>
+      </div>
+      <p>There is limited supporting evidence in your responses for this area.</p>
+      <button class="why">Why are we seeing this?</button>
+    </section>
+    
+      <section class="context">
+        <div class="eyebrow">PRACTITIONER CONTEXT</div>
+        <h2>Information kept separate from your signals</h2>
+        <p>No diagnosis is inferred from the sleep-related responses.</p>
+      </section>
+      <section class="next">
+        <div class="eyebrow">WHERE TO EXPLORE NEXT</div>
+        <h2>A conversation, not a diagnosis</h2>
+        <p>Explore your sleep routine, recovery pattern and the factors that may be affecting how rested you feel.</p>
+      </section>
+    </article>
+    
+    <article class="page">
+      <div class="report-top">
+        <span>PERSONAL WELLNESS BLUEPRINT</span>
+        <span>Example report · P06</span>
+      </div>
+      <div class="hero">
+        <div class="eyebrow">YOUR WELLNESS PATTERN</div>
+        <h1>What your responses are telling us</h1>
+        <p class="lede">Several areas show stronger patterns, so the report needs to help prioritise rather than present a long list.</p>
+      </div>
+      <div class="section-title">
+        <span>YOUR SIGNALS</span>
+        <small>Illustrative UX state</small>
+      </div>
+      
+    <section class="signal first">
+      <div class="signal-head">
+        <div>
+          <div class="eyebrow">WELLNESS SIGNAL</div>
+          <h2>Sleep & Recovery</h2>
+        </div>
+        <div class="strength">Strong signal</div>
+      </div>
+      <p>Several related responses form a consistent pattern around sleep and recovery.</p>
+      <button class="why">Why are we seeing this?</button>
+    </section>
+    
+    <section class="signal">
+      <div class="signal-head">
+        <div>
+          <div class="eyebrow">WELLNESS SIGNAL</div>
+          <h2>Mood & Emotional Wellbeing</h2>
+        </div>
+        <div class="strength">Strong signal</div>
+      </div>
+      <p>Your responses contain several consistent indicators in this area.</p>
+      <button class="why">Why are we seeing this?</button>
+    </section>
+    
+    <section class="signal">
+      <div class="signal-head">
+        <div>
+          <div class="eyebrow">WELLNESS SIGNAL</div>
+          <h2>Digestive & Gut Health</h2>
+        </div>
+        <div class="strength">Strong signal</div>
+      </div>
+      <p>Several responses point towards this area being worth exploring.</p>
+      <button class="why">Why are we seeing this?</button>
+    </section>
+    
+    <section class="signal">
+      <div class="signal-head">
+        <div>
+          <div class="eyebrow">WELLNESS SIGNAL</div>
+          <h2>Energy & Vitality</h2>
+        </div>
+        <div class="strength">Moderate signal</div>
+      </div>
+      <p>There is supporting evidence for an energy-related pattern.</p>
+      <button class="why">Why are we seeing this?</button>
+    </section>
+    
+    <section class="signal">
+      <div class="signal-head">
+        <div>
+          <div class="eyebrow">WELLNESS SIGNAL</div>
+          <h2>Physical Activity & Mobility</h2>
+        </div>
+        <div class="strength">Moderate signal</div>
+      </div>
+      <p>Your activity responses provide useful context for this area.</p>
+      <button class="why">Why are we seeing this?</button>
+    </section>
+    
+      <section class="context">
+        <div class="eyebrow">PRACTITIONER CONTEXT</div>
+        <h2>Information kept separate from your signals</h2>
+        <p>The report should distinguish these wellness signals from any separately supplied practitioner context.</p>
+      </section>
+      <section class="next">
+        <div class="eyebrow">WHERE TO EXPLORE NEXT</div>
+        <h2>A conversation, not a diagnosis</h2>
+        <p>Start with the strongest signals, then look at the relationships between them rather than treating each area as an isolated problem.</p>
+      </section>
+    </article>
+    
+<div style="max-width:900px;margin:0 auto 50px;padding:0 20px;color:#6b746d;font-size:12px;">
+<strong>Prototype note:</strong> Signal strengths and explanatory text in these three pages are illustrative presentation states only. The current PWB question definition does not yet contain the final scoring transformation, so these are not calculated results.
+</div>
+</body>
+</html>
