@@ -1,0 +1,161 @@
+{
+  "version": "Q11-Q15-v0.1",
+  "status": "provisional_locked_for_prototyping",
+  "questions": [
+    {
+      "id": "Q11",
+      "question": "Which best describes your tobacco smoke exposure?",
+      "ui": "single_select",
+      "options": [
+        "I do not smoke and am not regularly exposed to smoke",
+        "I used to smoke",
+        "I currently smoke occasionally",
+        "I currently smoke regularly",
+        "I am regularly exposed to other people's smoke"
+      ],
+      "stored_values": [
+        "none",
+        "former",
+        "occasional_current",
+        "regular_current",
+        "passive"
+      ],
+      "effects": {
+        "outcomes": {
+          "Circulation & Cardiovascular Fitness": "supporting",
+          "Respiratory body-system": "supporting"
+        },
+        "modifiers": [
+          "Lifestyle exposure"
+        ],
+        "safety": "No diagnosis; current exposure is a lifestyle/environmental modifier.",
+        "report": "Can be described as a tobacco-smoke exposure factor. Current and passive exposure should not be conflated with former smoking."
+      },
+      "logic": "One answer only. If former and passive exposure both need to be captured, this should become a multi-select in a later implementation pass.",
+      "status": "provisional_locked_for_prototyping"
+    },
+    {
+      "id": "Q12",
+      "question": "How often do you have difficulty concentrating or remembering things?",
+      "ui": "frequency_5",
+      "options": [
+        "Never",
+        "Occasionally",
+        "Sometimes",
+        "Often",
+        "Very often"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {
+          "Energy & Vitality": "supporting",
+          "Mood, Stress & Emotional Balance": "supporting"
+        },
+        "modifiers": [
+          "Cognitive context"
+        ],
+        "safety": "Non-diagnostic.",
+        "report": "A frequent response may be mentioned as a cognitive/mental-performance context, particularly alongside sleep or stress responses."
+      },
+      "status": "provisional_locked_for_prototyping"
+    },
+    {
+      "id": "Q13",
+      "question": "How often do you feel that you are unusually susceptible to infections or take longer than expected to recover from them?",
+      "ui": "frequency_5",
+      "options": [
+        "Never",
+        "Occasionally",
+        "Sometimes",
+        "Often",
+        "Very often"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {
+          "Immune Resilience": "direct"
+        },
+        "modifiers": [
+          "Energy & Vitality"
+        ],
+        "safety": "Non-diagnostic; should not imply immune deficiency.",
+        "report": "Higher frequency contributes to the Immune Resilience signal and should be interpreted with Q02 and Q28."
+      },
+      "status": "provisional_locked_for_prototyping"
+    },
+    {
+      "id": "Q14",
+      "question": "How often do you experience discomfort, bloating, reflux or other symptoms after eating?",
+      "ui": "frequency_5",
+      "options": [
+        "Never",
+        "Occasionally",
+        "Sometimes",
+        "Often",
+        "Very often"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {
+          "Digestive & Gut Health": "direct"
+        },
+        "modifiers": [
+          "Energy & Vitality"
+        ],
+        "safety": "Persistent or severe symptoms should not be interpreted diagnostically from the quiz.",
+        "report": "Higher frequency contributes to Digestive & Gut Health. This is deliberately focused on effects after eating, complementing Q04's while-eating construct."
+      },
+      "status": "provisional_locked_for_prototyping"
+    },
+    {
+      "id": "Q15",
+      "question": "How often do you feel stressed or under pressure?",
+      "ui": "frequency_5",
+      "options": [
+        "Never",
+        "Occasionally",
+        "Sometimes",
+        "Often",
+        "Very often"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {
+          "Mood, Stress & Emotional Balance": "direct"
+        },
+        "modifiers": [
+          "Energy & Vitality",
+          "Sleep & Recovery"
+        ],
+        "safety": "Non-diagnostic.",
+        "report": "Higher frequency contributes to Mood, Stress & Emotional Balance and can be used to contextualise sleep and energy."
+      },
+      "status": "provisional_locked_for_prototyping"
+    }
+  ],
+  "design_note": "Q11 is an exposure question. Q12 is supporting cognitive context. Q13 and Q14 are direct graded signals. Q15 is a direct stress signal. Q14 deliberately preserves the previously agreed distinction between symptoms while eating (Q04) and effects after eating (Q14)."
+}

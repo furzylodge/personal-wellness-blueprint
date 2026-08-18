@@ -1,0 +1,112 @@
+{
+  "version": "2026-pwb-question-ui-spec-v0.1",
+  "status": "design specification, not production code",
+  "principles": [
+    "Question presentation is driven by question type, not by page position.",
+    "Images reinforce the subject of a question or section; they are not required for every question.",
+    "Question wording, supporting text, image references and translations remain data-driven.",
+    "The UI never communicates a medical diagnosis, health score or disease risk.",
+    "The underlying numeric stored value is invisible to the user.",
+    "Signal strength belongs to the report layer, not the questionnaire answer control.",
+    "Conditional follow-ups appear inside the same interaction context as the parent question.",
+    "Accessibility must not depend on colour, imagery or iconography."
+  ],
+  "journey": [
+    {
+      "step": 1,
+      "label": "About you",
+      "purpose": "Basic details, profile context and goals."
+    },
+    {
+      "step": 2,
+      "label": "Your wellbeing",
+      "purpose": "Core wellbeing signals."
+    },
+    {
+      "step": 3,
+      "label": "Your lifestyle",
+      "purpose": "Food, activity, sleep and exposure context."
+    },
+    {
+      "step": 4,
+      "label": "Your body",
+      "purpose": "Body-system and life-stage context where relevant."
+    },
+    {
+      "step": 5,
+      "label": "Finish",
+      "purpose": "Review, completion and report generation."
+    }
+  ],
+  "components": {
+    "single_select": {
+      "layout": "choice_list",
+      "desktop": "Horizontal choices when 2-5 options fit comfortably; otherwise stacked choice cards.",
+      "mobile": "Stacked full-width choices.",
+      "selection": "Single selected state with clear border/fill change.",
+      "keyboard": "Arrow-key navigation plus Enter/Space."
+    },
+    "frequency_4": {
+      "layout": "segmented_scale",
+      "desktop": "Four equal-width response cards.",
+      "mobile": "Two-column grid or vertical stack depending on label length.",
+      "selection": "Single selected card.",
+      "helper": "Optional short recall-period line below question."
+    },
+    "frequency_5": {
+      "layout": "segmented_scale",
+      "desktop": "Five equal-width response cards.",
+      "mobile": "Scrollable horizontal row only if necessary; prefer stacked/2-column cards for long labels.",
+      "selection": "Single selected card.",
+      "helper": "Use only when the five labels are semantically ordered."
+    },
+    "quality_5": {
+      "layout": "ordered_choice_cards",
+      "desktop": "Five equal-width cards with the semantic endpoints visually clear.",
+      "mobile": "Stacked cards.",
+      "selection": "Single selected card.",
+      "helper": "Do not use colour alone to imply good/bad health."
+    },
+    "multi_select": {
+      "layout": "checkbox_cards",
+      "desktop": "2-column cards for 4+ options; compact list for 2-3.",
+      "mobile": "Single-column cards.",
+      "selection": "Checkbox plus selected-card state.",
+      "logic": "Mutual-exclusion rules must be encoded in question logic, not assumed by UI."
+    }
+  },
+  "question_card": {
+    "anatomy": [
+      "Optional section label",
+      "Question title",
+      "Optional supporting/recall-period text",
+      "Optional why-ask information control",
+      "Answer control",
+      "Conditional follow-up region",
+      "Optional validation/helper text"
+    ],
+    "desktop": "Prefer one or two cards per row depending on question type; never force five-option scales into four-column cards.",
+    "mobile": "Single-column layout with full-width controls.",
+    "navigation": "Back and Next fixed at the bottom of the question area; do not advance until required response is valid."
+  },
+  "evidence_panel": {
+    "trigger": "Why are we asking?",
+    "content": "Plain-English reason for inclusion, followed by optional evidence/source disclosure.",
+    "boundary": "Must explain the question without implying diagnosis, causation or treatment."
+  },
+  "image_system": {
+    "section_images": "Large, calm hero illustrations for section introductions.",
+    "question_images": "Optional small subject illustration or icon. Use only when it improves comprehension.",
+    "profile_variants": "Use gender/profile-specific imagery only when genuinely relevant. Prefer subject-based imagery.",
+    "accessibility": "Decorative images receive empty alt text; informative images receive meaningful alt text."
+  },
+  "response_rules": {
+    "yes_no": "Use large choice cards, not tiny radio buttons.",
+    "frequency": "Use ordered response cards with consistent left-to-right semantics on desktop.",
+    "quality": "Use semantic labels, not green-to-red health grading.",
+    "multi_select": "Use checkboxes and explicit mutual-exclusion logic.",
+    "single_select": "Use radio semantics and full-card click target.",
+    "free_text": "Use contextual follow-up inside the parent card."
+  },
+  "report_boundary": "The questionnaire collects self-reported wellness information. It does not diagnose conditions, establish disease risk, or recommend treatment."
+}

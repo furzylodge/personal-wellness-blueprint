@@ -1,0 +1,156 @@
+{
+  "version": "Q31-Q35-v0.1",
+  "status": "provisional_locked_for_prototyping",
+  "questions": [
+    {
+      "id": "Q31",
+      "question": "How often do you eat foods that are naturally high in fibre, such as vegetables, fruit, beans, lentils, wholegrains, nuts or seeds?",
+      "ui": "frequency_5",
+      "options": [
+        "Rarely or never",
+        "Occasionally",
+        "Some days",
+        "Most days",
+        "Every day"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {
+          "Digestive & Gut Health": "supporting",
+          "Healthy Weight & Metabolic Balance": "supporting"
+        },
+        "modifiers": [
+          "Dietary intake"
+        ],
+        "safety": "Non-diagnostic.",
+        "report": "Provides a positive dietary-behaviour signal and should be interpreted alongside N04 and the broader dietary questions."
+      },
+      "status": "provisional_locked_for_prototyping"
+    },
+    {
+      "id": "Q32",
+      "question": "How often do you experience muscle aches, stiffness, weakness or discomfort that affects your normal activities?",
+      "ui": "frequency_5",
+      "options": [
+        "Never",
+        "Occasionally",
+        "Sometimes",
+        "Often",
+        "Very often"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {
+          "Mobility, Joints & Physical Function": "direct"
+        },
+        "modifiers": [
+          "Energy & Vitality"
+        ],
+        "safety": "Non-diagnostic. Persistent or severe symptoms should not be interpreted by the quiz as a specific musculoskeletal diagnosis.",
+        "report": "Higher frequency contributes to Mobility, Joints & Physical Function."
+      },
+      "status": "provisional_locked_for_prototyping"
+    },
+    {
+      "id": "Q33",
+      "question": "How would you describe the condition of your hair?",
+      "ui": "quality_5",
+      "options": [
+        "Very healthy",
+        "Generally healthy",
+        "Variable",
+        "Often dry or damaged",
+        "Consistently dry or damaged"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {},
+        "modifiers": [],
+        "safety": "None.",
+        "report": "No core report effect in the current model."
+      },
+      "decision": "REMOVE FROM FINAL 52",
+      "reason": "Generic hair-condition assessment is low-specificity and adds little beyond Q23 hair shedding/thinning.",
+      "status": "removed_from_prototype"
+    },
+    {
+      "id": "Q34",
+      "question": "How much time do you typically spend in areas with noticeable traffic, industrial or other air pollution?",
+      "ui": "single_select",
+      "options": [
+        "Very little",
+        "Less than 1 hour a day",
+        "1–2 hours a day",
+        "2–4 hours a day",
+        "More than 4 hours a day"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {},
+        "modifiers": [
+          "Respiratory exposure",
+          "Environmental exposure"
+        ],
+        "safety": "Exposure context only. Do not convert exposure directly into disease or poor respiratory health.",
+        "report": "Can appear as an environmental/respiratory lifestyle factor, particularly if Q45 also indicates respiratory symptoms."
+      },
+      "status": "provisional_locked_for_prototyping"
+    },
+    {
+      "id": "Q35",
+      "question": "How often do you feel excessively sleepy or tired during the day?",
+      "ui": "frequency_5",
+      "options": [
+        "Never",
+        "Occasionally",
+        "Sometimes",
+        "Often",
+        "Very often"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {
+          "Sleep & Recovery": "direct",
+          "Energy & Vitality": "supporting"
+        },
+        "modifiers": [
+          "Daytime sleepiness"
+        ],
+        "safety": "Non-diagnostic.",
+        "report": "Higher frequency contributes directly to Sleep & Recovery and provides supporting context for Energy & Vitality."
+      },
+      "status": "provisional_locked_for_prototyping"
+    }
+  ],
+  "design_note": "Q31 captures fibre-rich food frequency as a positive dietary behaviour. Q32 is the direct musculoskeletal symptom question. Q33 is removed. Q34 is an exposure modifier rather than a respiratory score. Q35 is a direct sleep/recovery signal with supporting energy relevance."
+}

@@ -1,0 +1,527 @@
+{
+  "version": "0.1",
+  "status": "Whole-model review after first 48-question scientific pass",
+  "source_basis": "Historical question/system calculator mappings from the supplied newer form, supplied question/evidence audits, historical questionnaire explanation material and the five scientific review batches completed in this project.",
+  "important_source_reconciliation": "The supplied newer-form text currently exposes Q46/Q47 differently from the user's later stated Q46/Q47/Q48 mapping. The user-defined mapping should be treated as the intended target, but the form/text-code artefacts need reconciliation before implementation.",
+  "headline_conclusion": "The nine historical systems should be retained as a continuity layer, but questions should no longer be forced to act only as binary inputs to those nine scores.",
+  "question_count_recommendation": "Do not force 50 or 52 yet. First rebuild the construct set, remove/split weak or double-barrelled items, then count the resulting instrument. A 52-question design is acceptable if it emerges naturally and adds measurement value.",
+  "architecture": [
+    {
+      "layer": "Layer 1",
+      "name": "Profile",
+      "purpose": "Age range, gender/context, dietary restrictions/preferences"
+    },
+    {
+      "layer": "Layer 2",
+      "name": "Goals / Outcomes",
+      "purpose": "Top lifestyle outcomes such as sleep, energy, fitness, healthy weight and other validated goals"
+    },
+    {
+      "layer": "Layer 3",
+      "name": "Symptoms & behaviours",
+      "purpose": "The questionnaire answers, with explicit construct type"
+    },
+    {
+      "layer": "Layer 4",
+      "name": "Nine functional domains",
+      "purpose": "Modernised versions of the historical nine body-system domains"
+    },
+    {
+      "layer": "Layer 5",
+      "name": "Cross-domain signals",
+      "purpose": "Sleep, stress, energy, diet quality, activity, resilience and other constructs that legitimately cross systems"
+    },
+    {
+      "layer": "Layer 6",
+      "name": "Safety / constraints",
+      "purpose": "Medical treatment, chronic conditions, allergies, sensitivities and other recommendation restrictions"
+    },
+    {
+      "layer": "Layer 7",
+      "name": "Recommendation matching",
+      "purpose": "Foods, bioactives and products matched to goals + signals + constraints + evidence"
+    }
+  ],
+  "system_assessment": [
+    {
+      "historical_system": "Digestive",
+      "proposed_2026_name": "Retain as functional domain",
+      "assessment": "Strong domain, but reduce broad proxy mappings and separate eating-time from post-meal responses."
+    },
+    {
+      "historical_system": "Intestinal",
+      "proposed_2026_name": "Retain, clarify boundary",
+      "assessment": "Useful gut/intestinal domain. Avoid equating yeast/fungus or generic symptoms with microbiome imbalance."
+    },
+    {
+      "historical_system": "Circulatory",
+      "proposed_2026_name": "Retain, modernise",
+      "assessment": "Strong domain. Lifestyle exposures and symptoms need different treatment from disease claims."
+    },
+    {
+      "historical_system": "Nervous",
+      "proposed_2026_name": "Rename/reframe as Mind, Stress & Cognitive Function",
+      "assessment": "Historical construct is coherent, but current terminology is dated and mixes cognition, sleep and stress."
+    },
+    {
+      "historical_system": "Immune",
+      "proposed_2026_name": "Retain as Immune & Resilience",
+      "assessment": "Use illness frequency, susceptibility and recovery as distinct constructs. Do not infer immune deficiency."
+    },
+    {
+      "historical_system": "Respiratory",
+      "proposed_2026_name": "Retain",
+      "assessment": "Good fit, with persistent/recurrent symptom and environmental exposure distinctions."
+    },
+    {
+      "historical_system": "Urinary",
+      "proposed_2026_name": "Retain provisionally",
+      "assessment": "Needs tighter question membership, especially around nocturia and Q46/Q47/Q48 numbering reconciliation."
+    },
+    {
+      "historical_system": "Glandular",
+      "proposed_2026_name": "Reframe as Endocrine & Hormonal Regulation",
+      "assessment": "Credible working interpretation, but not a measure of hormone levels or endocrine disease."
+    },
+    {
+      "historical_system": "Structural",
+      "proposed_2026_name": "Reframe as Musculoskeletal & Physical Function",
+      "assessment": "Strong modern fit; separate muscle symptoms, joint symptoms, mobility and activity."
+    }
+  ],
+  "question_matrix": [
+    {
+      "question": "Q01",
+      "historical_systems": "Digestive; Circulatory; Nervous; Immune; Urinary",
+      "question_construct": "More energy",
+      "proposed_role": "outcome/context",
+      "proposed_disposition": "Retain, move primarily to Outcomes",
+      "system_count": 5,
+      "score_in_new_model": "Review; do not assume every historical mapping survives"
+    },
+    {
+      "question": "Q02",
+      "historical_systems": "Immune",
+      "question_construct": "Frequent ill health",
+      "proposed_role": "symptom",
+      "proposed_disposition": "Retain, add recall period",
+      "system_count": 1,
+      "score_in_new_model": "Review; do not assume every historical mapping survives"
+    },
+    {
+      "question": "Q03",
+      "historical_systems": "Digestive; Intestinal; Respiratory; Urinary",
+      "question_construct": "Bad breath and/or body odour",
+      "proposed_role": "symptom",
+      "proposed_disposition": "Split",
+      "system_count": 4,
+      "score_in_new_model": "Review; do not assume every historical mapping survives"
+    },
+    {
+      "question": "Q04",
+      "historical_systems": "Digestive; Immune",
+      "question_construct": "Difficulty digesting certain foods",
+      "proposed_role": "symptom",
+      "proposed_disposition": "Retain, clarify during/with eating",
+      "system_count": 2,
+      "score_in_new_model": "Review; do not assume every historical mapping survives"
+    },
+    {
+      "question": "Q05",
+      "historical_systems": "Intestinal; Circulatory; Respiratory",
+      "question_construct": "Red meat at least twice per week",
+      "proposed_role": "lifestyle_exposure",
+      "proposed_disposition": "Rewrite as dietary pattern, distinguish processed/unprocessed",
+      "system_count": 3,
+      "score_in_new_model": "Review; do not assume every historical mapping survives"
+    },
+    {
+      "question": "Q06",
+      "historical_systems": "Intestinal; Immune",
+      "question_construct": "Antibiotics or medication in last 3 years",
+      "proposed_role": "medical/lifestyle_context",
+      "proposed_disposition": "Split antibiotics from medication; shorten recall",
+      "system_count": 2,
+      "score_in_new_model": "Review; do not assume every historical mapping survives"
+    },
+    {
+      "question": "Q07",
+      "historical_systems": "Nervous; Glandular",
+      "question_construct": "Regular alcohol consumption",
+      "proposed_role": "lifestyle_exposure",
+      "proposed_disposition": "Retain, quantify",
+      "system_count": 2,
+      "score_in_new_model": "Review; do not assume every historical mapping survives"
+    },
+    {
+      "question": "Q08",
+      "historical_systems": "Nervous; Glandular",
+      "question_construct": "Mood swings",
+      "proposed_role": "symptom",
+      "proposed_disposition": "Retain, grade frequency",
+      "system_count": 2,
+      "score_in_new_model": "Review; do not assume every historical mapping survives"
+    },
+    {
+      "question": "Q09",
+      "historical_systems": "Digestive; Immune; Respiratory",
+      "question_construct": "Food allergies",
+      "proposed_role": "safety_constraint",
+      "proposed_disposition": "Retain as diagnosed-allergy/profile field, not score",
+      "system_count": 3,
+      "score_in_new_model": "Review; do not assume every historical mapping survives"
+    },
+    {
+      "question": "Q10",
+      "historical_systems": "Circulatory; Nervous; Urinary",
+      "question_construct": "Dark circles under eyes",
+      "proposed_role": "physical_observation",
+      "proposed_disposition": "Demote/remove from core scoring",
+      "system_count": 3,
+      "score_in_new_model": "Review; do not assume every historical mapping survives"
+    },
+    {
+      "question": "Q11",
+      "historical_systems": "Circulatory; Nervous; Respiratory",
+      "question_construct": "Smoking/passive smoking",
+      "proposed_role": "lifestyle_exposure",
+      "proposed_disposition": "Retain, distinguish current/former/passive",
+      "system_count": 3,
+      "score_in_new_model": "Review; do not assume every historical mapping survives"
+    },
+    {
+      "question": "Q12",
+      "historical_systems": "Circulatory; Nervous; Glandular",
+      "question_construct": "Concentration/memory difficulty",
+      "proposed_role": "symptom",
+      "proposed_disposition": "Retain, consider separating concentration and memory",
+      "system_count": 3,
+      "score_in_new_model": "Review; do not assume every historical mapping survives"
+    },
+    {
+      "question": "Q13",
+      "historical_systems": "Digestive; Immune",
+      "question_construct": "Poor resistance to illness",
+      "proposed_role": "symptom/context",
+      "proposed_disposition": "Retain as susceptibility dimension",
+      "system_count": 2,
+      "score_in_new_model": "Review; do not assume every historical mapping survives"
+    },
+    {
+      "question": "Q14",
+      "historical_systems": "Digestive; Immune",
+      "question_construct": "Discomfort after eating",
+      "proposed_role": "symptom",
+      "proposed_disposition": "Retain, post-meal dimension",
+      "system_count": 2,
+      "score_in_new_model": "Review; do not assume every historical mapping survives"
+    },
+    {
+      "question": "Q15",
+      "historical_systems": "Intestinal; Circulatory; Nervous; Glandular",
+      "question_construct": "Stress in life/job",
+      "proposed_role": "symptom/context",
+      "proposed_disposition": "Retain, graded",
+      "system_count": 4,
+      "score_in_new_model": "Review; do not assume every historical mapping survives"
+    },
+    {
+      "question": "Q16",
+      "historical_systems": "Digestive; Intestinal; Urinary; Glandular; Structural",
+      "question_construct": "Skin problems",
+      "proposed_role": "symptom",
+      "proposed_disposition": "Narrow or replace",
+      "system_count": 5,
+      "score_in_new_model": "Review; do not assume every historical mapping survives"
+    },
+    {
+      "question": "Q17",
+      "historical_systems": "Nervous; Glandular",
+      "question_construct": "Craving sweet/processed foods",
+      "proposed_role": "behaviour",
+      "proposed_disposition": "Retain, separate craving from intake",
+      "system_count": 2,
+      "score_in_new_model": "Review; do not assume every historical mapping survives"
+    },
+    {
+      "question": "Q18",
+      "historical_systems": "Intestinal; Respiratory",
+      "question_construct": "Dairy consumption",
+      "proposed_role": "dietary_profile",
+      "proposed_disposition": "Move to dietary profile/recommendation constraints",
+      "system_count": 2,
+      "score_in_new_model": "Review; do not assume every historical mapping survives"
+    },
+    {
+      "question": "Q19",
+      "historical_systems": "Intestinal; Nervous; Glandular",
+      "question_construct": "Low mood/apathy",
+      "proposed_role": "symptom",
+      "proposed_disposition": "Retain, graded and non-diagnostic",
+      "system_count": 3,
+      "score_in_new_model": "Review; do not assume every historical mapping survives"
+    },
+    {
+      "question": "Q20",
+      "historical_systems": "Nervous; Glandular; Structural",
+      "question_construct": "Inadequate/restless sleep",
+      "proposed_role": "symptom",
+      "proposed_disposition": "Retain, modern graded sleep measure",
+      "system_count": 3,
+      "score_in_new_model": "Review; do not assume every historical mapping survives"
+    },
+    {
+      "question": "Q21",
+      "historical_systems": "Urinary",
+      "question_construct": "Urinary/nocturnal symptoms",
+      "proposed_role": "symptom",
+      "proposed_disposition": "Retain, clarify nocturia/urinary symptoms",
+      "system_count": 1,
+      "score_in_new_model": "Review; do not assume every historical mapping survives"
+    },
+    {
+      "question": "Q22",
+      "historical_systems": "Digestive; Structural",
+      "question_construct": "Brittle fingernails",
+      "proposed_role": "physical_observation",
+      "proposed_disposition": "Retain only as weak contextual signal",
+      "system_count": 2,
+      "score_in_new_model": "Review; do not assume every historical mapping survives"
+    },
+    {
+      "question": "Q23",
+      "historical_systems": "Circulatory; Nervous; Glandular; Structural",
+      "question_construct": "Hair loss",
+      "proposed_role": "symptom",
+      "proposed_disposition": "Retain, distinguish shedding/thinning from hair condition",
+      "system_count": 4,
+      "score_in_new_model": "Review; do not assume every historical mapping survives"
+    },
+    {
+      "question": "Q24",
+      "historical_systems": "Digestive; Intestinal; Circulatory",
+      "question_construct": "Fried/ready meals or cholesterol issue",
+      "proposed_role": "mixed",
+      "proposed_disposition": "Split dietary exposure from medical context",
+      "system_count": 3,
+      "score_in_new_model": "Review; do not assume every historical mapping survives"
+    },
+    {
+      "question": "Q25",
+      "historical_systems": "Nervous; Immune; Glandular; Structural",
+      "question_construct": "Difficulty managing weight",
+      "proposed_role": "outcome/context",
+      "proposed_disposition": "Retain, move to Healthy Weight outcome",
+      "system_count": 4,
+      "score_in_new_model": "Review; do not assume every historical mapping survives"
+    },
+    {
+      "question": "Q26",
+      "historical_systems": "Circulatory; Respiratory; Glandular",
+      "question_construct": "Stamina/lack of breath",
+      "proposed_role": "mixed_symptom",
+      "proposed_disposition": "Separate physical capacity from breathlessness",
+      "system_count": 3,
+      "score_in_new_model": "Review; do not assume every historical mapping survives"
+    },
+    {
+      "question": "Q27",
+      "historical_systems": "Digestive; Intestinal; Glandular",
+      "question_construct": "Poor eating habits",
+      "proposed_role": "behaviour",
+      "proposed_disposition": "Replace with specific actionable behaviours",
+      "system_count": 3,
+      "score_in_new_model": "Review; do not assume every historical mapping survives"
+    },
+    {
+      "question": "Q28",
+      "historical_systems": "Intestinal; Circulatory; Glandular",
+      "question_construct": "Slow recovery from ill health",
+      "proposed_role": "symptom/context",
+      "proposed_disposition": "Retain as recovery dimension",
+      "system_count": 3,
+      "score_in_new_model": "Review; do not assume every historical mapping survives"
+    },
+    {
+      "question": "Q29",
+      "historical_systems": "Digestive; Intestinal; Nervous",
+      "question_construct": "Irregular/infrequent bowel activity",
+      "proposed_role": "symptom",
+      "proposed_disposition": "Retain, avoid implying daily bowel movement is required",
+      "system_count": 3,
+      "score_in_new_model": "Review; do not assume every historical mapping survives"
+    },
+    {
+      "question": "Q30",
+      "historical_systems": "Nervous; Glandular",
+      "question_construct": "Tension/difficulty relaxing",
+      "proposed_role": "symptom",
+      "proposed_disposition": "Retain, graded",
+      "system_count": 2,
+      "score_in_new_model": "Review; do not assume every historical mapping survives"
+    },
+    {
+      "question": "Q31",
+      "historical_systems": "Intestinal; Circulatory",
+      "question_construct": "Low-fibre diet",
+      "proposed_role": "dietary_exposure",
+      "proposed_disposition": "Retain, ask about fibre-rich foods",
+      "system_count": 2,
+      "score_in_new_model": "Review; do not assume every historical mapping survives"
+    },
+    {
+      "question": "Q32",
+      "historical_systems": "Circulatory; Nervous; Structural",
+      "question_construct": "Muscle discomfort",
+      "proposed_role": "symptom",
+      "proposed_disposition": "Retain, distinguish from joints",
+      "system_count": 3,
+      "score_in_new_model": "Review; do not assume every historical mapping survives"
+    },
+    {
+      "question": "Q33",
+      "historical_systems": "Digestive; Urinary",
+      "question_construct": "Dry/damaged/dull hair",
+      "proposed_role": "physical_observation",
+      "proposed_disposition": "Retain only if it adds information beyond Q23",
+      "system_count": 2,
+      "score_in_new_model": "Review; do not assume every historical mapping survives"
+    },
+    {
+      "question": "Q34",
+      "historical_systems": "Immune; Respiratory",
+      "question_construct": "Air pollution exposure",
+      "proposed_role": "environmental_exposure",
+      "proposed_disposition": "Retain, quantify meaningful exposure",
+      "system_count": 2,
+      "score_in_new_model": "Review; do not assume every historical mapping survives"
+    },
+    {
+      "question": "Q35",
+      "historical_systems": "Circulatory; Glandular",
+      "question_construct": "Daytime sleepiness",
+      "proposed_role": "symptom",
+      "proposed_disposition": "Retain, distinct from Q20",
+      "system_count": 2,
+      "score_in_new_model": "Review; do not assume every historical mapping survives"
+    },
+    {
+      "question": "Q36",
+      "historical_systems": "Digestive; Nervous; Glandular",
+      "question_construct": "Loss of appetite",
+      "proposed_role": "symptom",
+      "proposed_disposition": "Retain only with safety handling",
+      "system_count": 3,
+      "score_in_new_model": "Review; do not assume every historical mapping survives"
+    },
+    {
+      "question": "Q37",
+      "historical_systems": "Nervous; Glandular; Structural",
+      "question_construct": "Caffeine exposure",
+      "proposed_role": "lifestyle_exposure",
+      "proposed_disposition": "Retain, quantify amount and timing",
+      "system_count": 3,
+      "score_in_new_model": "Review; do not assume every historical mapping survives"
+    },
+    {
+      "question": "Q38",
+      "historical_systems": "Nervous; Immune; Glandular; Structural",
+      "question_construct": "Feeling out of control",
+      "proposed_role": "symptom",
+      "proposed_disposition": "Rewrite neutrally around overwhelm/emotional regulation",
+      "system_count": 4,
+      "score_in_new_model": "Review; do not assume every historical mapping survives"
+    },
+    {
+      "question": "Q39",
+      "historical_systems": "Digestive; Intestinal; Immune",
+      "question_construct": "Food/chemical sensitivities",
+      "proposed_role": "safety/profile",
+      "proposed_disposition": "Clarify allergy vs intolerance vs other sensitivity",
+      "system_count": 3,
+      "score_in_new_model": "Review; do not assume every historical mapping survives"
+    },
+    {
+      "question": "Q40",
+      "historical_systems": "Digestive; Intestinal; Immune",
+      "question_construct": "Yeast/fungus issues",
+      "proposed_role": "medical_context",
+      "proposed_disposition": "Rewrite or remove from core scoring",
+      "system_count": 3,
+      "score_in_new_model": "Review; do not assume every historical mapping survives"
+    },
+    {
+      "question": "Q41",
+      "historical_systems": "Digestive; Intestinal; Circulatory; Nervous; Immune; Structural",
+      "question_construct": "Joint discomfort/weakness",
+      "proposed_role": "symptom",
+      "proposed_disposition": "Retain, distinguish joints from muscle",
+      "system_count": 6,
+      "score_in_new_model": "Review; do not assume every historical mapping survives"
+    },
+    {
+      "question": "Q42",
+      "historical_systems": "Digestive; Nervous",
+      "question_construct": "Excessive worry",
+      "proposed_role": "symptom",
+      "proposed_disposition": "Retain, graded and non-diagnostic",
+      "system_count": 2,
+      "score_in_new_model": "Review; do not assume every historical mapping survives"
+    },
+    {
+      "question": "Q43",
+      "historical_systems": "Intestinal; Nervous; Glandular",
+      "question_construct": "Irritability/anger",
+      "proposed_role": "symptom",
+      "proposed_disposition": "Retain, neutral wording",
+      "system_count": 3,
+      "score_in_new_model": "Review; do not assume every historical mapping survives"
+    },
+    {
+      "question": "Q44",
+      "historical_systems": "Intestinal; Circulatory; Nervous; Immune; Glandular; Structural",
+      "question_construct": "Insufficient exercise",
+      "proposed_role": "lifestyle_exposure",
+      "proposed_disposition": "Retain, quantify activity and strength work",
+      "system_count": 6,
+      "score_in_new_model": "Review; do not assume every historical mapping survives"
+    },
+    {
+      "question": "Q45",
+      "historical_systems": "Intestinal; Respiratory",
+      "question_construct": "Congestion/mucus",
+      "proposed_role": "symptom",
+      "proposed_disposition": "Retain, focus on persistent/recurrent symptoms",
+      "system_count": 2,
+      "score_in_new_model": "Review; do not assume every historical mapping survives"
+    },
+    {
+      "question": "Q46",
+      "historical_systems": "Intestinal; Urinary; Glandular",
+      "question_construct": "Menopause/menstrual concern context",
+      "proposed_role": "conditional_context",
+      "proposed_disposition": "Retain conditionally, exact current numbering needs final reconciliation",
+      "system_count": 3,
+      "score_in_new_model": "Review; do not assume every historical mapping survives"
+    },
+    {
+      "question": "Q47",
+      "historical_systems": "Nervous; Glandular; Structural",
+      "question_construct": "Menopause/menstrual symptom context",
+      "proposed_role": "conditional_context",
+      "proposed_disposition": "Retain conditionally, distinguish concern from symptoms",
+      "system_count": 3,
+      "score_in_new_model": "Review; do not assume every historical mapping survives"
+    },
+    {
+      "question": "Q48",
+      "historical_systems": "",
+      "question_construct": "Medical treatment/chronic condition",
+      "proposed_role": "safety_constraint",
+      "proposed_disposition": "Restore as separate safety/context field; no body-system score",
+      "system_count": 0,
+      "score_in_new_model": "Review; do not assume every historical mapping survives"
+    }
+  ],
+  "next_step": "Build the Outcome model and then run historical response/test data through the proposed construct architecture before finalising new questions and scoring."
+}

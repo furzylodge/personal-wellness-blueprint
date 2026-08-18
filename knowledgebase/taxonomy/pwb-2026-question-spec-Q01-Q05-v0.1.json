@@ -1,0 +1,148 @@
+{
+  "version": "Q01-Q05-v0.1",
+  "status": "provisional_locked_for_prototyping",
+  "principles": [
+    "Question answers have explicit stored values rather than implicit Yes=1/No=0 only.",
+    "Goal questions record preference separately from health evidence.",
+    "Contextual questions need not create a headline outcome.",
+    "Supporting effects are weaker than direct effects and will be calibrated later.",
+    "Report text must not imply diagnosis from a questionnaire response."
+  ],
+  "questions": [
+    {
+      "id": "Q01",
+      "question": "Would you like to have more energy during the day?",
+      "ui": "single_select",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "values": [
+        1,
+        0
+      ],
+      "effects": {
+        "outcomes": [],
+        "modifiers": [],
+        "goal": "Energy & Vitality",
+        "report": "Records the user's stated priority. Does not itself indicate poor health."
+      },
+      "status": "provisional_locked"
+    },
+    {
+      "id": "Q02",
+      "question": "How often do you find yourself becoming unwell?",
+      "ui": "frequency_4",
+      "options": [
+        "Rarely",
+        "Occasionally",
+        "Several times a year",
+        "Frequently"
+      ],
+      "values": [
+        0,
+        0.33,
+        0.67,
+        1
+      ],
+      "effects": {
+        "outcomes": {
+          "Immune Resilience": "direct"
+        },
+        "modifiers": [
+          "Energy & Vitality"
+        ],
+        "goal": null,
+        "report": "Higher frequency may support an Immune Resilience concern; interpret alongside Q13 and Q28."
+      },
+      "status": "provisional_locked"
+    },
+    {
+      "id": "Q03",
+      "question": "Which of the following have you noticed recently or repeatedly? Select any that apply.",
+      "ui": "multi_select",
+      "options": [
+        "Bad breath",
+        "Unusual body odour",
+        "Neither"
+      ],
+      "values": {
+        "Bad breath": 1,
+        "Unusual body odour": 1,
+        "Neither": 0
+      },
+      "effects": {
+        "outcomes": {
+          "Digestive & Gut Health": "supporting"
+        },
+        "modifiers": [
+          "Context"
+        ],
+        "goal": null,
+        "report": "A positive response is a contextual observation, not a diagnosis."
+      },
+      "status": "provisional_locked"
+    },
+    {
+      "id": "Q04",
+      "question": "How often do you have difficulty digesting certain foods?",
+      "ui": "frequency_5",
+      "options": [
+        "Never",
+        "Occasionally",
+        "Sometimes",
+        "Often",
+        "Very often"
+      ],
+      "values": [
+        0,
+        0.25,
+        0.5,
+        0.75,
+        1
+      ],
+      "effects": {
+        "outcomes": {
+          "Digestive & Gut Health": "direct"
+        },
+        "modifiers": [
+          "Energy & Vitality"
+        ],
+        "goal": null,
+        "report": "Higher frequency increases the Digestive & Gut Health signal."
+      },
+      "status": "provisional_locked"
+    },
+    {
+      "id": "Q05",
+      "question": "How often do you eat red meat, such as beef, lamb or pork?",
+      "ui": "frequency_5",
+      "options": [
+        "Never",
+        "Less than once a week",
+        "1–2 times a week",
+        "3–4 times a week",
+        "5 or more times a week"
+      ],
+      "values": [
+        0,
+        0.25,
+        0.5,
+        0.75,
+        1
+      ],
+      "effects": {
+        "outcomes": {
+          "Healthy Weight & Metabolic Balance": "supporting",
+          "Circulation & Cardiovascular Fitness": "supporting"
+        },
+        "modifiers": [
+          "Dietary pattern"
+        ],
+        "goal": null,
+        "report": "Frequency is shown as dietary context. It should not be presented as a direct measure of cardiovascular health."
+      },
+      "status": "provisional_locked"
+    }
+  ]
+}

@@ -1,0 +1,1723 @@
+{
+  "schema_version": "0.1",
+  "questionnaire_version": "2026-provisional",
+  "status": "canonical working specification",
+  "source_basis": {
+    "blueprint": "pwb-2026-question-blueprint-v0.1.csv",
+    "audit": "pwb-2026-canonical-question-audit-v0.1.csv",
+    "candidate_decisions": "pwb-2026-candidate-decision-v0.1.csv"
+  },
+  "design_rules": {
+    "not_every_question_scores": true,
+    "goal_is_separate_from_health_evidence": true,
+    "safety_and_profile_fields_do_not_lower_wellness_scores": true,
+    "body_system_signals_can_exist_without_headline_outcome": true,
+    "final_wording_is_not_yet_assumed": true,
+    "evidence_references_must_be_added_before_production": true
+  },
+  "core_outcomes": [
+    "Energy & Vitality",
+    "Sleep & Recovery",
+    "Digestive & Gut Health",
+    "Healthy Weight & Metabolic Balance",
+    "Mood, Stress & Emotional Balance",
+    "Mobility, Joints & Physical Function",
+    "Circulation & Cardiovascular Fitness",
+    "Immune Resilience",
+    "Hormonal & Life-Stage Balance"
+  ],
+  "questions": [
+    {
+      "id": "Q01",
+      "status": "provisional",
+      "historical_construct": "More energy",
+      "decision": "KEEP / REFRAME",
+      "question_type": "Outcome",
+      "wording": null,
+      "wording_status": "pending_final_2026_wording",
+      "response": {
+        "type": null,
+        "options": [],
+        "scale_key": null
+      },
+      "model": {
+        "scoring_role": "No health score",
+        "primary_layer": "Goal",
+        "primary_outcome": "Energy & Vitality",
+        "core_outcomes": [],
+        "supporting_outcomes": [],
+        "body_systems": [],
+        "modifier": false,
+        "safety_gate": false,
+        "conditional": false
+      },
+      "evidence": {
+        "why_asked": null,
+        "references": []
+      },
+      "implementation_note": "User-selected priority; should never manufacture a deficit."
+    },
+    {
+      "id": "Q02",
+      "status": "provisional",
+      "historical_construct": "Frequent ill health",
+      "decision": "KEEP / REWRITE",
+      "question_type": "Symptom",
+      "wording": null,
+      "wording_status": "pending_final_2026_wording",
+      "response": {
+        "type": null,
+        "options": [],
+        "scale_key": null
+      },
+      "model": {
+        "scoring_role": "Direct",
+        "primary_layer": "Immune",
+        "primary_outcome": "Immune Resilience",
+        "core_outcomes": [
+          "Immune Resilience"
+        ],
+        "supporting_outcomes": [],
+        "body_systems": [],
+        "modifier": false,
+        "safety_gate": false,
+        "conditional": false
+      },
+      "evidence": {
+        "why_asked": null,
+        "references": []
+      },
+      "implementation_note": "Add recall period and graded frequency."
+    },
+    {
+      "id": "Q03",
+      "status": "provisional",
+      "historical_construct": "Bad breath / body odour",
+      "decision": "SPLIT",
+      "question_type": "Symptom",
+      "wording": null,
+      "wording_status": "pending_final_2026_wording",
+      "response": {
+        "type": null,
+        "options": [],
+        "scale_key": null
+      },
+      "model": {
+        "scoring_role": "Context only",
+        "primary_layer": "Physical/digestive",
+        "primary_outcome": "Digestive / Physical context",
+        "core_outcomes": [],
+        "supporting_outcomes": [],
+        "body_systems": [],
+        "modifier": false,
+        "safety_gate": false,
+        "conditional": false
+      },
+      "evidence": {
+        "why_asked": null,
+        "references": []
+      },
+      "implementation_note": "Separate oral/breath issue from unusual body odour rather than forcing both into digestion."
+    },
+    {
+      "id": "Q04",
+      "status": "provisional",
+      "historical_construct": "Difficulty digesting foods",
+      "decision": "KEEP / REWRITE",
+      "question_type": "Symptom",
+      "wording": null,
+      "wording_status": "pending_final_2026_wording",
+      "response": {
+        "type": null,
+        "options": [],
+        "scale_key": null
+      },
+      "model": {
+        "scoring_role": "Direct",
+        "primary_layer": "Digestive",
+        "primary_outcome": "Digestion & Gut Health",
+        "core_outcomes": [
+          "Digestive & Gut Health"
+        ],
+        "supporting_outcomes": [],
+        "body_systems": [],
+        "modifier": false,
+        "safety_gate": false,
+        "conditional": false
+      },
+      "evidence": {
+        "why_asked": null,
+        "references": []
+      },
+      "implementation_note": "Capture symptoms while eating."
+    },
+    {
+      "id": "Q05",
+      "status": "provisional",
+      "historical_construct": "Red meat frequency",
+      "decision": "REWRITE",
+      "question_type": "Dietary exposure",
+      "wording": null,
+      "wording_status": "pending_final_2026_wording",
+      "response": {
+        "type": null,
+        "options": [],
+        "scale_key": null
+      },
+      "model": {
+        "scoring_role": "Modifier/supporting",
+        "primary_layer": "Dietary exposure",
+        "primary_outcome": "Circulation / Diet",
+        "core_outcomes": [],
+        "supporting_outcomes": [],
+        "body_systems": [],
+        "modifier": true,
+        "safety_gate": false,
+        "conditional": false
+      },
+      "evidence": {
+        "why_asked": null,
+        "references": []
+      },
+      "implementation_note": "Separate processed from unprocessed red meat and use frequency rather than a fixed threshold."
+    },
+    {
+      "id": "Q06",
+      "status": "provisional",
+      "historical_construct": "Antibiotics / medication",
+      "decision": "SPLIT",
+      "question_type": "Medical exposure",
+      "wording": null,
+      "wording_status": "pending_final_2026_wording",
+      "response": {
+        "type": null,
+        "options": [],
+        "scale_key": null
+      },
+      "model": {
+        "scoring_role": "Modifier only",
+        "primary_layer": "Medication",
+        "primary_outcome": "Gut / Safety",
+        "core_outcomes": [],
+        "supporting_outcomes": [],
+        "body_systems": [],
+        "modifier": true,
+        "safety_gate": false,
+        "conditional": false
+      },
+      "evidence": {
+        "why_asked": null,
+        "references": []
+      },
+      "implementation_note": "Separate antibiotics from general medication. Neither is a wellness deficit."
+    },
+    {
+      "id": "Q07",
+      "status": "provisional",
+      "historical_construct": "Alcohol",
+      "decision": "REWRITE",
+      "question_type": "Lifestyle exposure",
+      "wording": null,
+      "wording_status": "pending_final_2026_wording",
+      "response": {
+        "type": null,
+        "options": [],
+        "scale_key": null
+      },
+      "model": {
+        "scoring_role": "Modifier only",
+        "primary_layer": "Lifestyle exposure",
+        "primary_outcome": "General / Sleep / Circulation",
+        "core_outcomes": [],
+        "supporting_outcomes": [],
+        "body_systems": [],
+        "modifier": true,
+        "safety_gate": false,
+        "conditional": false
+      },
+      "evidence": {
+        "why_asked": null,
+        "references": []
+      },
+      "implementation_note": "Quantify UK units and pattern."
+    },
+    {
+      "id": "Q08",
+      "status": "provisional",
+      "historical_construct": "Mood swings",
+      "decision": "KEEP / REWRITE",
+      "question_type": "Symptom",
+      "wording": null,
+      "wording_status": "pending_final_2026_wording",
+      "response": {
+        "type": null,
+        "options": [],
+        "scale_key": null
+      },
+      "model": {
+        "scoring_role": "Direct",
+        "primary_layer": "Mood",
+        "primary_outcome": "Mood, Stress & Emotional Balance",
+        "core_outcomes": [
+          "Mood, Stress & Emotional Balance"
+        ],
+        "supporting_outcomes": [],
+        "body_systems": [],
+        "modifier": false,
+        "safety_gate": false,
+        "conditional": false
+      },
+      "evidence": {
+        "why_asked": null,
+        "references": []
+      },
+      "implementation_note": "Graded frequency, non-diagnostic."
+    },
+    {
+      "id": "Q09",
+      "status": "provisional",
+      "historical_construct": "Food allergy",
+      "decision": "MOVE TO PROFILE / SAFETY",
+      "question_type": "Safety constraint",
+      "wording": null,
+      "wording_status": "pending_final_2026_wording",
+      "response": {
+        "type": null,
+        "options": [],
+        "scale_key": null
+      },
+      "model": {
+        "scoring_role": "Safety gate",
+        "primary_layer": "Safety",
+        "primary_outcome": "Recommendation filtering",
+        "core_outcomes": [],
+        "supporting_outcomes": [],
+        "body_systems": [],
+        "modifier": false,
+        "safety_gate": true,
+        "conditional": false
+      },
+      "evidence": {
+        "why_asked": null,
+        "references": []
+      },
+      "implementation_note": "Food allergy filters recommendations; no wellness score."
+    },
+    {
+      "id": "Q10",
+      "status": "provisional",
+      "historical_construct": "Dark circles",
+      "decision": "REMOVE / REPLACE",
+      "question_type": "Physical observation",
+      "wording": null,
+      "wording_status": "pending_final_2026_wording",
+      "response": {
+        "type": null,
+        "options": [],
+        "scale_key": null
+      },
+      "model": {
+        "scoring_role": "nan",
+        "primary_layer": "Physical observation",
+        "primary_outcome": null,
+        "core_outcomes": [],
+        "supporting_outcomes": [],
+        "body_systems": [],
+        "modifier": false,
+        "safety_gate": false,
+        "conditional": false
+      },
+      "evidence": {
+        "why_asked": null,
+        "references": []
+      },
+      "implementation_note": "Too non-specific."
+    },
+    {
+      "id": "Q11",
+      "status": "provisional",
+      "historical_construct": "Smoking / passive smoke",
+      "decision": "REWRITE",
+      "question_type": "Lifestyle exposure",
+      "wording": null,
+      "wording_status": "pending_final_2026_wording",
+      "response": {
+        "type": null,
+        "options": [],
+        "scale_key": null
+      },
+      "model": {
+        "scoring_role": "Modifier/supporting",
+        "primary_layer": "Lifestyle exposure",
+        "primary_outcome": "Circulation / Respiratory",
+        "core_outcomes": [],
+        "supporting_outcomes": [],
+        "body_systems": [],
+        "modifier": true,
+        "safety_gate": false,
+        "conditional": false
+      },
+      "evidence": {
+        "why_asked": null,
+        "references": []
+      },
+      "implementation_note": "Separate current, former and passive tobacco exposure."
+    },
+    {
+      "id": "Q12",
+      "status": "provisional",
+      "historical_construct": "Concentration / memory",
+      "decision": "KEEP / POSSIBLY SPLIT",
+      "question_type": "Symptom",
+      "wording": null,
+      "wording_status": "pending_final_2026_wording",
+      "response": {
+        "type": null,
+        "options": [],
+        "scale_key": null
+      },
+      "model": {
+        "scoring_role": "Supporting",
+        "primary_layer": "Cognitive",
+        "primary_outcome": "Cognitive / Energy",
+        "core_outcomes": [],
+        "supporting_outcomes": [],
+        "body_systems": [],
+        "modifier": false,
+        "safety_gate": false,
+        "conditional": false
+      },
+      "evidence": {
+        "why_asked": null,
+        "references": []
+      },
+      "implementation_note": "Concentration and memory may be distinct constructs. Avoid over-interpreting either."
+    },
+    {
+      "id": "Q13",
+      "status": "provisional",
+      "historical_construct": "Resistance to illness",
+      "decision": "KEEP / REWRITE",
+      "question_type": "Symptom/context",
+      "wording": null,
+      "wording_status": "pending_final_2026_wording",
+      "response": {
+        "type": null,
+        "options": [],
+        "scale_key": null
+      },
+      "model": {
+        "scoring_role": "Direct",
+        "primary_layer": "Immune",
+        "primary_outcome": "Immune Resilience",
+        "core_outcomes": [
+          "Immune Resilience"
+        ],
+        "supporting_outcomes": [],
+        "body_systems": [],
+        "modifier": false,
+        "safety_gate": false,
+        "conditional": false
+      },
+      "evidence": {
+        "why_asked": null,
+        "references": []
+      },
+      "implementation_note": "Susceptibility signal distinct from Q02/Q28."
+    },
+    {
+      "id": "Q14",
+      "status": "provisional",
+      "historical_construct": "After-eating discomfort",
+      "decision": "KEEP / REWRITE",
+      "question_type": "Symptom",
+      "wording": null,
+      "wording_status": "pending_final_2026_wording",
+      "response": {
+        "type": null,
+        "options": [],
+        "scale_key": null
+      },
+      "model": {
+        "scoring_role": "Direct",
+        "primary_layer": "Digestive",
+        "primary_outcome": "Digestion & Gut Health",
+        "core_outcomes": [
+          "Digestive & Gut Health"
+        ],
+        "supporting_outcomes": [],
+        "body_systems": [],
+        "modifier": false,
+        "safety_gate": false,
+        "conditional": false
+      },
+      "evidence": {
+        "why_asked": null,
+        "references": []
+      },
+      "implementation_note": "Explicit post-meal construct."
+    },
+    {
+      "id": "Q15",
+      "status": "provisional",
+      "historical_construct": "Stress",
+      "decision": "KEEP / REWRITE",
+      "question_type": "Symptom/context",
+      "wording": null,
+      "wording_status": "pending_final_2026_wording",
+      "response": {
+        "type": null,
+        "options": [],
+        "scale_key": null
+      },
+      "model": {
+        "scoring_role": "Direct",
+        "primary_layer": "Stress",
+        "primary_outcome": "Mood, Stress & Emotional Balance",
+        "core_outcomes": [
+          "Mood, Stress & Emotional Balance"
+        ],
+        "supporting_outcomes": [],
+        "body_systems": [],
+        "modifier": false,
+        "safety_gate": false,
+        "conditional": false
+      },
+      "evidence": {
+        "why_asked": null,
+        "references": []
+      },
+      "implementation_note": "Graded frequency."
+    },
+    {
+      "id": "Q16",
+      "status": "provisional",
+      "historical_construct": "Skin problems",
+      "decision": "REPLACE / NARROW",
+      "question_type": "Symptom",
+      "wording": null,
+      "wording_status": "pending_final_2026_wording",
+      "response": {
+        "type": null,
+        "options": [],
+        "scale_key": null
+      },
+      "model": {
+        "scoring_role": "Context only",
+        "primary_layer": "Skin",
+        "primary_outcome": "Physical context",
+        "core_outcomes": [],
+        "supporting_outcomes": [],
+        "body_systems": [],
+        "modifier": false,
+        "safety_gate": false,
+        "conditional": false
+      },
+      "evidence": {
+        "why_asked": null,
+        "references": []
+      },
+      "implementation_note": "Broad skin-problem question is too heterogeneous for scoring."
+    },
+    {
+      "id": "Q17",
+      "status": "provisional",
+      "historical_construct": "Sweet / processed-food cravings",
+      "decision": "KEEP / REWRITE",
+      "question_type": "Behaviour",
+      "wording": null,
+      "wording_status": "pending_final_2026_wording",
+      "response": {
+        "type": null,
+        "options": [],
+        "scale_key": null
+      },
+      "model": {
+        "scoring_role": "Supporting",
+        "primary_layer": "Diet behaviour",
+        "primary_outcome": "Weight / Diet",
+        "core_outcomes": [],
+        "supporting_outcomes": [],
+        "body_systems": [],
+        "modifier": false,
+        "safety_gate": false,
+        "conditional": false
+      },
+      "evidence": {
+        "why_asked": null,
+        "references": []
+      },
+      "implementation_note": "Craving is not the same as actual intake."
+    },
+    {
+      "id": "Q18",
+      "status": "provisional",
+      "historical_construct": "Dairy consumption",
+      "decision": "MOVE TO PROFILE",
+      "question_type": "Dietary profile",
+      "wording": null,
+      "wording_status": "pending_final_2026_wording",
+      "response": {
+        "type": null,
+        "options": [],
+        "scale_key": null
+      },
+      "model": {
+        "scoring_role": "Recommendation filter",
+        "primary_layer": "Dietary profile",
+        "primary_outcome": "Recommendation filtering",
+        "core_outcomes": [],
+        "supporting_outcomes": [],
+        "body_systems": [],
+        "modifier": false,
+        "safety_gate": false,
+        "conditional": false
+      },
+      "evidence": {
+        "why_asked": null,
+        "references": []
+      },
+      "implementation_note": "Dairy consumption itself is not a negative health signal."
+    },
+    {
+      "id": "Q19",
+      "status": "provisional",
+      "historical_construct": "Low mood / apathy",
+      "decision": "KEEP / REWRITE",
+      "question_type": "Symptom",
+      "wording": null,
+      "wording_status": "pending_final_2026_wording",
+      "response": {
+        "type": null,
+        "options": [],
+        "scale_key": null
+      },
+      "model": {
+        "scoring_role": "Direct",
+        "primary_layer": "Mood",
+        "primary_outcome": "Mood, Stress & Emotional Balance",
+        "core_outcomes": [
+          "Mood, Stress & Emotional Balance"
+        ],
+        "supporting_outcomes": [],
+        "body_systems": [],
+        "modifier": false,
+        "safety_gate": false,
+        "conditional": false
+      },
+      "evidence": {
+        "why_asked": null,
+        "references": []
+      },
+      "implementation_note": "Neutral, graded wording."
+    },
+    {
+      "id": "Q20",
+      "status": "provisional",
+      "historical_construct": "Poor / restless sleep",
+      "decision": "KEEP / REDESIGN",
+      "question_type": "Symptom",
+      "wording": null,
+      "wording_status": "pending_final_2026_wording",
+      "response": {
+        "type": null,
+        "options": [],
+        "scale_key": null
+      },
+      "model": {
+        "scoring_role": "Direct",
+        "primary_layer": "Sleep",
+        "primary_outcome": "Sleep & Recovery",
+        "core_outcomes": [
+          "Sleep & Recovery"
+        ],
+        "supporting_outcomes": [],
+        "body_systems": [],
+        "modifier": false,
+        "safety_gate": false,
+        "conditional": false
+      },
+      "evidence": {
+        "why_asked": null,
+        "references": []
+      },
+      "implementation_note": "Use modern visual response scale."
+    },
+    {
+      "id": "Q21",
+      "status": "provisional",
+      "historical_construct": "Night-time urination",
+      "decision": "KEEP / CLARIFY",
+      "question_type": "Symptom",
+      "wording": null,
+      "wording_status": "pending_final_2026_wording",
+      "response": {
+        "type": null,
+        "options": [],
+        "scale_key": null
+      },
+      "model": {
+        "scoring_role": "Supporting",
+        "primary_layer": "Urinary/sleep",
+        "primary_outcome": "Sleep / Urinary",
+        "core_outcomes": [],
+        "supporting_outcomes": [],
+        "body_systems": [],
+        "modifier": false,
+        "safety_gate": false,
+        "conditional": false
+      },
+      "evidence": {
+        "why_asked": null,
+        "references": []
+      },
+      "implementation_note": "Clarify nocturia."
+    },
+    {
+      "id": "Q22",
+      "status": "provisional",
+      "historical_construct": "Brittle nails",
+      "decision": "KEEP PROVISIONALLY",
+      "question_type": "Physical observation",
+      "wording": null,
+      "wording_status": "pending_final_2026_wording",
+      "response": {
+        "type": null,
+        "options": [],
+        "scale_key": null
+      },
+      "model": {
+        "scoring_role": "Weak contextual signal",
+        "primary_layer": "Physical observation",
+        "primary_outcome": "Physical / Nutritional context",
+        "core_outcomes": [],
+        "supporting_outcomes": [],
+        "body_systems": [],
+        "modifier": false,
+        "safety_gate": false,
+        "conditional": false
+      },
+      "evidence": {
+        "why_asked": null,
+        "references": []
+      },
+      "implementation_note": "Retain only weakly pending evidence review; do not assign cardiovascular scoring."
+    },
+    {
+      "id": "Q23",
+      "status": "provisional",
+      "historical_construct": "Hair loss",
+      "decision": "KEEP / REWRITE",
+      "question_type": "Symptom",
+      "wording": null,
+      "wording_status": "pending_final_2026_wording",
+      "response": {
+        "type": null,
+        "options": [],
+        "scale_key": null
+      },
+      "model": {
+        "scoring_role": "Supporting",
+        "primary_layer": "Hair/life stage",
+        "primary_outcome": "Physical / Hormonal context",
+        "core_outcomes": [],
+        "supporting_outcomes": [],
+        "body_systems": [],
+        "modifier": false,
+        "safety_gate": false,
+        "conditional": false
+      },
+      "evidence": {
+        "why_asked": null,
+        "references": []
+      },
+      "implementation_note": "Secondary signal only; universal wording must remain gender-neutral."
+    },
+    {
+      "id": "Q24",
+      "status": "provisional",
+      "historical_construct": "Fried/ready meals + cholesterol",
+      "decision": "SPLIT",
+      "question_type": "Mixed",
+      "wording": null,
+      "wording_status": "pending_final_2026_wording",
+      "response": {
+        "type": null,
+        "options": [],
+        "scale_key": null
+      },
+      "model": {
+        "scoring_role": "Modifier + safety/context",
+        "primary_layer": "Diet/medical",
+        "primary_outcome": "Circulation / Safety",
+        "core_outcomes": [],
+        "supporting_outcomes": [],
+        "body_systems": [],
+        "modifier": true,
+        "safety_gate": true,
+        "conditional": false
+      },
+      "evidence": {
+        "why_asked": null,
+        "references": []
+      },
+      "implementation_note": "Separate dietary exposure from diagnosed cholesterol/lipid context."
+    },
+    {
+      "id": "Q25",
+      "status": "provisional",
+      "historical_construct": "Weight management",
+      "decision": "KEEP / REFRAME",
+      "question_type": "Outcome",
+      "wording": null,
+      "wording_status": "pending_final_2026_wording",
+      "response": {
+        "type": null,
+        "options": [],
+        "scale_key": null
+      },
+      "model": {
+        "scoring_role": "Direct outcome/goal",
+        "primary_layer": "Outcome",
+        "primary_outcome": "Healthy Weight & Metabolic Balance",
+        "core_outcomes": [
+          "Healthy Weight & Metabolic Balance"
+        ],
+        "supporting_outcomes": [],
+        "body_systems": [],
+        "modifier": false,
+        "safety_gate": false,
+        "conditional": false
+      },
+      "evidence": {
+        "why_asked": null,
+        "references": []
+      },
+      "implementation_note": "Neutral language; no ideal-weight judgement."
+    },
+    {
+      "id": "Q26",
+      "status": "provisional",
+      "historical_construct": "Stamina / breathlessness",
+      "decision": "SPLIT",
+      "question_type": "Mixed symptom",
+      "wording": null,
+      "wording_status": "pending_final_2026_wording",
+      "response": {
+        "type": null,
+        "options": [],
+        "scale_key": null
+      },
+      "model": {
+        "scoring_role": "Direct + safety",
+        "primary_layer": "Fitness/respiratory",
+        "primary_outcome": "Fitness / Respiratory / Circulation",
+        "core_outcomes": [],
+        "supporting_outcomes": [],
+        "body_systems": [],
+        "modifier": false,
+        "safety_gate": true,
+        "conditional": false
+      },
+      "evidence": {
+        "why_asked": null,
+        "references": []
+      },
+      "implementation_note": "Separate physical capacity from unusual breathlessness."
+    },
+    {
+      "id": "Q27",
+      "status": "provisional",
+      "historical_construct": "Poor eating habits",
+      "decision": "REPLACE",
+      "question_type": "Behaviour",
+      "wording": null,
+      "wording_status": "pending_final_2026_wording",
+      "response": {
+        "type": null,
+        "options": [],
+        "scale_key": null
+      },
+      "model": {
+        "scoring_role": "Supporting",
+        "primary_layer": "Diet behaviour",
+        "primary_outcome": "Diet / Weight / Gut",
+        "core_outcomes": [],
+        "supporting_outcomes": [],
+        "body_systems": [],
+        "modifier": false,
+        "safety_gate": false,
+        "conditional": false
+      },
+      "evidence": {
+        "why_asked": null,
+        "references": []
+      },
+      "implementation_note": "Replace judgemental umbrella with specific behaviours."
+    },
+    {
+      "id": "Q28",
+      "status": "provisional",
+      "historical_construct": "Slow recovery",
+      "decision": "KEEP / REWRITE",
+      "question_type": "Symptom/context",
+      "wording": null,
+      "wording_status": "pending_final_2026_wording",
+      "response": {
+        "type": null,
+        "options": [],
+        "scale_key": null
+      },
+      "model": {
+        "scoring_role": "Direct",
+        "primary_layer": "Immune/recovery",
+        "primary_outcome": "Immune Resilience",
+        "core_outcomes": [
+          "Immune Resilience"
+        ],
+        "supporting_outcomes": [],
+        "body_systems": [],
+        "modifier": false,
+        "safety_gate": false,
+        "conditional": false
+      },
+      "evidence": {
+        "why_asked": null,
+        "references": []
+      },
+      "implementation_note": "Recovery dimension of immune-resilience triad."
+    },
+    {
+      "id": "Q29",
+      "status": "provisional",
+      "historical_construct": "Bowel regularity",
+      "decision": "KEEP / REDESIGN",
+      "question_type": "Symptom",
+      "wording": null,
+      "wording_status": "pending_final_2026_wording",
+      "response": {
+        "type": null,
+        "options": [],
+        "scale_key": null
+      },
+      "model": {
+        "scoring_role": "Direct",
+        "primary_layer": "Digestive",
+        "primary_outcome": "Digestion & Gut Health",
+        "core_outcomes": [
+          "Digestive & Gut Health"
+        ],
+        "supporting_outcomes": [],
+        "body_systems": [],
+        "modifier": false,
+        "safety_gate": false,
+        "conditional": false
+      },
+      "evidence": {
+        "why_asked": null,
+        "references": []
+      },
+      "implementation_note": "Do not imply daily bowel movement is required."
+    },
+    {
+      "id": "Q30",
+      "status": "provisional",
+      "historical_construct": "Difficulty relaxing",
+      "decision": "KEEP / REWRITE",
+      "question_type": "Symptom",
+      "wording": null,
+      "wording_status": "pending_final_2026_wording",
+      "response": {
+        "type": null,
+        "options": [],
+        "scale_key": null
+      },
+      "model": {
+        "scoring_role": "Direct",
+        "primary_layer": "Stress",
+        "primary_outcome": "Mood, Stress & Emotional Balance",
+        "core_outcomes": [
+          "Mood, Stress & Emotional Balance"
+        ],
+        "supporting_outcomes": [],
+        "body_systems": [],
+        "modifier": false,
+        "safety_gate": false,
+        "conditional": false
+      },
+      "evidence": {
+        "why_asked": null,
+        "references": []
+      },
+      "implementation_note": "Modern 'switch off' wording."
+    },
+    {
+      "id": "Q31",
+      "status": "provisional",
+      "historical_construct": "Low fibre",
+      "decision": "REWRITE",
+      "question_type": "Dietary exposure",
+      "wording": null,
+      "wording_status": "pending_final_2026_wording",
+      "response": {
+        "type": null,
+        "options": [],
+        "scale_key": null
+      },
+      "model": {
+        "scoring_role": "Supporting",
+        "primary_layer": "Dietary exposure",
+        "primary_outcome": "Gut / Diet",
+        "core_outcomes": [],
+        "supporting_outcomes": [],
+        "body_systems": [],
+        "modifier": false,
+        "safety_gate": false,
+        "conditional": false
+      },
+      "evidence": {
+        "why_asked": null,
+        "references": []
+      },
+      "implementation_note": "Ask about fibre-rich foods rather than self-diagnosed low fibre."
+    },
+    {
+      "id": "Q32",
+      "status": "provisional",
+      "historical_construct": "Muscle discomfort",
+      "decision": "KEEP / REWRITE",
+      "question_type": "Symptom",
+      "wording": null,
+      "wording_status": "pending_final_2026_wording",
+      "response": {
+        "type": null,
+        "options": [],
+        "scale_key": null
+      },
+      "model": {
+        "scoring_role": "Direct",
+        "primary_layer": "Musculoskeletal",
+        "primary_outcome": "Mobility & Physical Function",
+        "core_outcomes": [
+          "Mobility, Joints & Physical Function"
+        ],
+        "supporting_outcomes": [],
+        "body_systems": [],
+        "modifier": false,
+        "safety_gate": false,
+        "conditional": false
+      },
+      "evidence": {
+        "why_asked": null,
+        "references": []
+      },
+      "implementation_note": "Muscle symptoms."
+    },
+    {
+      "id": "Q33",
+      "status": "provisional",
+      "historical_construct": "Hair condition",
+      "decision": "REMOVE / REPLACE CANDIDATE",
+      "question_type": "Physical observation",
+      "wording": null,
+      "wording_status": "pending_final_2026_wording",
+      "response": {
+        "type": null,
+        "options": [],
+        "scale_key": null
+      },
+      "model": {
+        "scoring_role": "nan",
+        "primary_layer": "Hair observation",
+        "primary_outcome": "None / weak",
+        "core_outcomes": [],
+        "supporting_outcomes": [],
+        "body_systems": [],
+        "modifier": false,
+        "safety_gate": false,
+        "conditional": false
+      },
+      "evidence": {
+        "why_asked": null,
+        "references": []
+      },
+      "implementation_note": "Only retain if data shows incremental value over Q23."
+    },
+    {
+      "id": "Q34",
+      "status": "provisional",
+      "historical_construct": "Air pollution",
+      "decision": "KEEP / REWRITE",
+      "question_type": "Environmental exposure",
+      "wording": null,
+      "wording_status": "pending_final_2026_wording",
+      "response": {
+        "type": null,
+        "options": [],
+        "scale_key": null
+      },
+      "model": {
+        "scoring_role": "Body-system modifier",
+        "primary_layer": "Environmental exposure",
+        "primary_outcome": "Respiratory / Circulation",
+        "core_outcomes": [],
+        "supporting_outcomes": [],
+        "body_systems": [],
+        "modifier": true,
+        "safety_gate": false,
+        "conditional": false
+      },
+      "evidence": {
+        "why_asked": null,
+        "references": []
+      },
+      "implementation_note": "Useful without creating a tenth headline outcome."
+    },
+    {
+      "id": "Q35",
+      "status": "provisional",
+      "historical_construct": "Daytime sleepiness",
+      "decision": "KEEP / REWRITE",
+      "question_type": "Symptom",
+      "wording": null,
+      "wording_status": "pending_final_2026_wording",
+      "response": {
+        "type": null,
+        "options": [],
+        "scale_key": null
+      },
+      "model": {
+        "scoring_role": "Direct",
+        "primary_layer": "Sleep",
+        "primary_outcome": "Sleep & Recovery",
+        "core_outcomes": [
+          "Sleep & Recovery"
+        ],
+        "supporting_outcomes": [],
+        "body_systems": [],
+        "modifier": false,
+        "safety_gate": false,
+        "conditional": false
+      },
+      "evidence": {
+        "why_asked": null,
+        "references": []
+      },
+      "implementation_note": "Daytime sleepiness complements sleep-quality question."
+    },
+    {
+      "id": "Q36",
+      "status": "provisional",
+      "historical_construct": "Loss of appetite",
+      "decision": "KEEP WITH SAFETY",
+      "question_type": "Symptom / safety",
+      "wording": null,
+      "wording_status": "pending_final_2026_wording",
+      "response": {
+        "type": null,
+        "options": [],
+        "scale_key": null
+      },
+      "model": {
+        "scoring_role": "Safety flag",
+        "primary_layer": "Safety/symptom",
+        "primary_outcome": "General / Digestive",
+        "core_outcomes": [],
+        "supporting_outcomes": [],
+        "body_systems": [],
+        "modifier": false,
+        "safety_gate": true,
+        "conditional": false
+      },
+      "evidence": {
+        "why_asked": null,
+        "references": []
+      },
+      "implementation_note": "Persistent unexplained appetite loss should trigger caution, not simply lower a score."
+    },
+    {
+      "id": "Q37",
+      "status": "provisional",
+      "historical_construct": "Caffeine",
+      "decision": "KEEP / REWRITE",
+      "question_type": "Lifestyle exposure",
+      "wording": null,
+      "wording_status": "pending_final_2026_wording",
+      "response": {
+        "type": null,
+        "options": [],
+        "scale_key": null
+      },
+      "model": {
+        "scoring_role": "Supporting",
+        "primary_layer": "Lifestyle exposure",
+        "primary_outcome": "Sleep / Stress / Energy",
+        "core_outcomes": [],
+        "supporting_outcomes": [],
+        "body_systems": [],
+        "modifier": false,
+        "safety_gate": false,
+        "conditional": false
+      },
+      "evidence": {
+        "why_asked": null,
+        "references": []
+      },
+      "implementation_note": "Amount and timing matter more than cup count."
+    },
+    {
+      "id": "Q38",
+      "status": "provisional",
+      "historical_construct": "Feeling out of control",
+      "decision": "REWRITE",
+      "question_type": "Symptom",
+      "wording": null,
+      "wording_status": "pending_final_2026_wording",
+      "response": {
+        "type": null,
+        "options": [],
+        "scale_key": null
+      },
+      "model": {
+        "scoring_role": "Direct",
+        "primary_layer": "Emotional regulation",
+        "primary_outcome": "Mood, Stress & Emotional Balance",
+        "core_outcomes": [
+          "Mood, Stress & Emotional Balance"
+        ],
+        "supporting_outcomes": [],
+        "body_systems": [],
+        "modifier": false,
+        "safety_gate": false,
+        "conditional": false
+      },
+      "evidence": {
+        "why_asked": null,
+        "references": []
+      },
+      "implementation_note": "Neutralise historical judgemental wording."
+    },
+    {
+      "id": "Q39",
+      "status": "provisional",
+      "historical_construct": "Food / chemical sensitivities",
+      "decision": "MOVE TO PROFILE / SAFETY",
+      "question_type": "Safety/profile",
+      "wording": null,
+      "wording_status": "pending_final_2026_wording",
+      "response": {
+        "type": null,
+        "options": [],
+        "scale_key": null
+      },
+      "model": {
+        "scoring_role": "Safety/recommendation filter",
+        "primary_layer": "Safety/profile",
+        "primary_outcome": "Recommendation filtering",
+        "core_outcomes": [],
+        "supporting_outcomes": [],
+        "body_systems": [],
+        "modifier": false,
+        "safety_gate": true,
+        "conditional": false
+      },
+      "evidence": {
+        "why_asked": null,
+        "references": []
+      },
+      "implementation_note": "Clarify allergy, intolerance and sensitivity."
+    },
+    {
+      "id": "Q40",
+      "status": "provisional",
+      "historical_construct": "Yeast / fungal issues",
+      "decision": "REMOVE FROM CORE / MEDICAL CONTEXT",
+      "question_type": "Medical context",
+      "wording": null,
+      "wording_status": "pending_final_2026_wording",
+      "response": {
+        "type": null,
+        "options": [],
+        "scale_key": null
+      },
+      "model": {
+        "scoring_role": "Safety/context only",
+        "primary_layer": "Medical context",
+        "primary_outcome": "Safety",
+        "core_outcomes": [],
+        "supporting_outcomes": [],
+        "body_systems": [],
+        "modifier": false,
+        "safety_gate": true,
+        "conditional": false
+      },
+      "evidence": {
+        "why_asked": null,
+        "references": []
+      },
+      "implementation_note": "Do not infer microbiome or immune imbalance."
+    },
+    {
+      "id": "Q41",
+      "status": "provisional",
+      "historical_construct": "Joint discomfort / weakness",
+      "decision": "KEEP / REWRITE",
+      "question_type": "Symptom",
+      "wording": null,
+      "wording_status": "pending_final_2026_wording",
+      "response": {
+        "type": null,
+        "options": [],
+        "scale_key": null
+      },
+      "model": {
+        "scoring_role": "Direct",
+        "primary_layer": "Musculoskeletal",
+        "primary_outcome": "Mobility & Physical Function",
+        "core_outcomes": [
+          "Mobility, Joints & Physical Function"
+        ],
+        "supporting_outcomes": [],
+        "body_systems": [],
+        "modifier": false,
+        "safety_gate": false,
+        "conditional": false
+      },
+      "evidence": {
+        "why_asked": null,
+        "references": []
+      },
+      "implementation_note": "Joint pain, stiffness, reduced mobility and weakness need clear wording."
+    },
+    {
+      "id": "Q42",
+      "status": "provisional",
+      "historical_construct": "Excessive worry",
+      "decision": "KEEP / REWRITE",
+      "question_type": "Symptom",
+      "wording": null,
+      "wording_status": "pending_final_2026_wording",
+      "response": {
+        "type": null,
+        "options": [],
+        "scale_key": null
+      },
+      "model": {
+        "scoring_role": "Direct",
+        "primary_layer": "Stress",
+        "primary_outcome": "Mood, Stress & Emotional Balance",
+        "core_outcomes": [
+          "Mood, Stress & Emotional Balance"
+        ],
+        "supporting_outcomes": [],
+        "body_systems": [],
+        "modifier": false,
+        "safety_gate": false,
+        "conditional": false
+      },
+      "evidence": {
+        "why_asked": null,
+        "references": []
+      },
+      "implementation_note": "Graded, non-diagnostic."
+    },
+    {
+      "id": "Q43",
+      "status": "provisional",
+      "historical_construct": "Irritability / anger",
+      "decision": "KEEP / REWRITE",
+      "question_type": "Symptom",
+      "wording": null,
+      "wording_status": "pending_final_2026_wording",
+      "response": {
+        "type": null,
+        "options": [],
+        "scale_key": null
+      },
+      "model": {
+        "scoring_role": "Direct",
+        "primary_layer": "Emotional regulation",
+        "primary_outcome": "Mood, Stress & Emotional Balance",
+        "core_outcomes": [
+          "Mood, Stress & Emotional Balance"
+        ],
+        "supporting_outcomes": [],
+        "body_systems": [],
+        "modifier": false,
+        "safety_gate": false,
+        "conditional": false
+      },
+      "evidence": {
+        "why_asked": null,
+        "references": []
+      },
+      "implementation_note": "Neutral wording."
+    },
+    {
+      "id": "Q44",
+      "status": "provisional",
+      "historical_construct": "Exercise",
+      "decision": "REWRITE",
+      "question_type": "Lifestyle exposure",
+      "wording": null,
+      "wording_status": "pending_final_2026_wording",
+      "response": {
+        "type": null,
+        "options": [],
+        "scale_key": null
+      },
+      "model": {
+        "scoring_role": "Supporting/modifier",
+        "primary_layer": "Lifestyle exposure",
+        "primary_outcome": "Fitness / Physical Capacity",
+        "core_outcomes": [],
+        "supporting_outcomes": [],
+        "body_systems": [],
+        "modifier": true,
+        "safety_gate": false,
+        "conditional": false
+      },
+      "evidence": {
+        "why_asked": null,
+        "references": []
+      },
+      "implementation_note": "Quantify moderate/vigorous activity and strength work."
+    },
+    {
+      "id": "Q45",
+      "status": "provisional",
+      "historical_construct": "Congestion / mucus",
+      "decision": "KEEP / REWRITE",
+      "question_type": "Symptom",
+      "wording": null,
+      "wording_status": "pending_final_2026_wording",
+      "response": {
+        "type": null,
+        "options": [],
+        "scale_key": null
+      },
+      "model": {
+        "scoring_role": "Body-system signal",
+        "primary_layer": "Respiratory",
+        "primary_outcome": "Respiratory",
+        "core_outcomes": [],
+        "supporting_outcomes": [],
+        "body_systems": [],
+        "modifier": false,
+        "safety_gate": false,
+        "conditional": false
+      },
+      "evidence": {
+        "why_asked": null,
+        "references": []
+      },
+      "implementation_note": "Persistent/recurrent symptom; no artificial tenth outcome."
+    },
+    {
+      "id": "Q46",
+      "status": "provisional",
+      "historical_construct": "Medical treatment / chronic condition",
+      "decision": "RESTORE AS SAFETY",
+      "question_type": "Medical context",
+      "wording": null,
+      "wording_status": "pending_final_2026_wording",
+      "response": {
+        "type": null,
+        "options": [],
+        "scale_key": null
+      },
+      "model": {
+        "scoring_role": "Safety gate",
+        "primary_layer": "Safety",
+        "primary_outcome": "Recommendation safety",
+        "core_outcomes": [],
+        "supporting_outcomes": [],
+        "body_systems": [],
+        "modifier": false,
+        "safety_gate": true,
+        "conditional": false
+      },
+      "evidence": {
+        "why_asked": null,
+        "references": []
+      },
+      "implementation_note": "Medical treatment/long-term condition affects recommendation safety, not wellness score."
+    },
+    {
+      "id": "Q47",
+      "status": "provisional",
+      "historical_construct": "Menstrual cycle issues",
+      "decision": "KEEP CONDITIONAL",
+      "question_type": "Conditional symptom",
+      "wording": null,
+      "wording_status": "pending_final_2026_wording",
+      "response": {
+        "type": null,
+        "options": [],
+        "scale_key": null
+      },
+      "model": {
+        "scoring_role": "Conditional direct",
+        "primary_layer": "Life stage",
+        "primary_outcome": "Hormonal & Life-Stage Balance",
+        "core_outcomes": [
+          "Hormonal & Life-Stage Balance"
+        ],
+        "supporting_outcomes": [],
+        "body_systems": [],
+        "modifier": false,
+        "safety_gate": false,
+        "conditional": true
+      },
+      "evidence": {
+        "why_asked": null,
+        "references": []
+      },
+      "implementation_note": "Only shown where relevant; universal explanatory text stays neutral."
+    },
+    {
+      "id": "Q48",
+      "status": "provisional",
+      "historical_construct": "Menopause concerns",
+      "decision": "KEEP CONDITIONAL",
+      "question_type": "Conditional outcome/context",
+      "wording": null,
+      "wording_status": "pending_final_2026_wording",
+      "response": {
+        "type": null,
+        "options": [],
+        "scale_key": null
+      },
+      "model": {
+        "scoring_role": "Conditional context/direct",
+        "primary_layer": "Life stage",
+        "primary_outcome": "Hormonal & Life-Stage Balance",
+        "core_outcomes": [
+          "Hormonal & Life-Stage Balance"
+        ],
+        "supporting_outcomes": [],
+        "body_systems": [],
+        "modifier": false,
+        "safety_gate": false,
+        "conditional": true
+      },
+      "evidence": {
+        "why_asked": null,
+        "references": []
+      },
+      "implementation_note": "Separate concern/context from diagnosis."
+    }
+  ],
+  "candidate_additions": [
+    {
+      "id": "N01",
+      "status": "candidate",
+      "historical_construct": null,
+      "decision": "ADD",
+      "question_type": "Physical/Metabolic modifier",
+      "wording": null,
+      "wording_status": "pending_final_2026_wording",
+      "response": {
+        "type": null,
+        "options": [],
+        "scale_key": null
+      },
+      "model": {
+        "scoring_role": "Physical/Metabolic modifier",
+        "primary_layer": "Physical/Metabolic modifier",
+        "primary_outcome": null,
+        "core_outcomes": [],
+        "supporting_outcomes": [],
+        "body_systems": [],
+        "modifier": true,
+        "safety_gate": false,
+        "conditional": false
+      },
+      "evidence": {
+        "why_asked": "Distinct from exercise; modern exposure.",
+        "references": []
+      },
+      "implementation_note": "Candidate addition. Final wording, response scale, mappings and evidence require approval."
+    },
+    {
+      "id": "N03",
+      "status": "candidate",
+      "historical_construct": null,
+      "decision": "ADD",
+      "question_type": "Dietary modifier/supporting",
+      "wording": null,
+      "wording_status": "pending_final_2026_wording",
+      "response": {
+        "type": null,
+        "options": [],
+        "scale_key": null
+      },
+      "model": {
+        "scoring_role": "Dietary modifier/supporting",
+        "primary_layer": "Dietary modifier/supporting",
+        "primary_outcome": null,
+        "core_outcomes": [],
+        "supporting_outcomes": [],
+        "body_systems": [],
+        "modifier": true,
+        "safety_gate": false,
+        "conditional": false
+      },
+      "evidence": {
+        "why_asked": "More actionable than the old 'poor eating habits' umbrella.",
+        "references": []
+      },
+      "implementation_note": "Candidate addition. Final wording, response scale, mappings and evidence require approval."
+    },
+    {
+      "id": "N04",
+      "status": "candidate",
+      "historical_construct": null,
+      "decision": "ADD",
+      "question_type": "Dietary modifier/supporting",
+      "wording": null,
+      "wording_status": "pending_final_2026_wording",
+      "response": {
+        "type": null,
+        "options": [],
+        "scale_key": null
+      },
+      "model": {
+        "scoring_role": "Dietary modifier/supporting",
+        "primary_layer": "Dietary modifier/supporting",
+        "primary_outcome": null,
+        "core_outcomes": [],
+        "supporting_outcomes": [],
+        "body_systems": [],
+        "modifier": true,
+        "safety_gate": false,
+        "conditional": false
+      },
+      "evidence": {
+        "why_asked": "Complements fibre and improves actionable dietary profiling.",
+        "references": []
+      },
+      "implementation_note": "Candidate addition. Final wording, response scale, mappings and evidence require approval."
+    },
+    {
+      "id": "N06",
+      "status": "candidate",
+      "historical_construct": null,
+      "decision": "ADD",
+      "question_type": "Sleep & Recovery supporting",
+      "wording": null,
+      "wording_status": "pending_final_2026_wording",
+      "response": {
+        "type": null,
+        "options": [],
+        "scale_key": null
+      },
+      "model": {
+        "scoring_role": "Sleep & Recovery supporting",
+        "primary_layer": "Sleep & Recovery supporting",
+        "primary_outcome": null,
+        "core_outcomes": [],
+        "supporting_outcomes": [],
+        "body_systems": [],
+        "modifier": true,
+        "safety_gate": false,
+        "conditional": false
+      },
+      "evidence": {
+        "why_asked": "Adds duration to Q20's quality/restfulness construct.",
+        "references": []
+      },
+      "implementation_note": "Candidate addition. Final wording, response scale, mappings and evidence require approval."
+    }
+  ],
+  "target_question_count": 52,
+  "count_note": "52 is a design target. Final displayed-question count must be calculated after split/replacement wording is approved.",
+  "display_inventory": {
+    "target_count": 52,
+    "base_ids_included": 46,
+    "removed_ids": [
+      "Q10",
+      "Q33"
+    ],
+    "additional_display_questions": [
+      "Q16b",
+      "Q37b"
+    ],
+    "modern_additions": [
+      "N01",
+      "N03",
+      "N04",
+      "N06"
+    ],
+    "count_check": "46 + 2 + 4 = 52"
+  },
+  "additional_display_questions": [
+    {
+      "id": "Q16b",
+      "status": "provisional",
+      "display_logic": "show if Q16 selects any diagnosed skin condition",
+      "wording": "How much does this skin condition currently affect your day-to-day life?",
+      "response": {
+        "type": "quality_5",
+        "options": [
+          "Not at all",
+          "A little",
+          "Moderately",
+          "A lot",
+          "Severely"
+        ],
+        "scale_key": "context_burden"
+      },
+      "model": {
+        "scoring_role": "context severity",
+        "primary_layer": "Inflammatory skin context",
+        "core_outcomes": [],
+        "supporting_outcomes": [],
+        "body_systems": [
+          "Immune"
+        ],
+        "modifier": false,
+        "safety_gate": false,
+        "conditional": true
+      },
+      "evidence": {
+        "why_asked": "Distinguishes a historical or mild diagnosis from a currently significant condition without converting the condition into a disease score."
+      }
+    },
+    {
+      "id": "Q37b",
+      "status": "provisional",
+      "wording": "How late in the day do you usually have your last caffeinated drink?",
+      "response": {
+        "type": "single_select",
+        "options": [
+          "I do not have caffeinated drinks",
+          "Before midday",
+          "Between midday and 3 pm",
+          "Between 3 pm and 6 pm",
+          "After 6 pm"
+        ],
+        "scale_key": "sleep_modifier_timing"
+      },
+      "model": {
+        "scoring_role": "Sleep & Recovery modifier",
+        "primary_layer": "Lifestyle exposure",
+        "core_outcomes": [
+          "Sleep & Recovery"
+        ],
+        "supporting_outcomes": [],
+        "body_systems": [
+          "Nervous / Cognitive"
+        ],
+        "modifier": true,
+        "safety_gate": false,
+        "conditional": false
+      },
+      "evidence": {
+        "why_asked": "Separates caffeine timing from caffeine quantity so timing can be interpreted alongside reported sleep rather than treated as a health deficit by itself."
+      }
+    }
+  ],
+  "review_status": "v0.3 architecture/count pass",
+  "count_rationale": "The 52 target is reached by removing two low-value historical questions, adding a conditional skin-burden follow-up, splitting caffeine timing from quantity, and adding four modern constructs. This remains a design target, not a validated final questionnaire."
+}

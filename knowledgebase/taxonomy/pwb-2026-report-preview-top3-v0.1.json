@@ -1,0 +1,295 @@
+{
+  "version": "2026-pwb-report-preview-top3-v0.1",
+  "purpose": "User-facing report structure preview using the current qualitative signal engine.",
+  "display_limit": 3,
+  "sections": [
+    "Your Top 3 Signals",
+    "What your responses suggest",
+    "Why these signals appeared",
+    "What you may want to explore next"
+  ],
+  "boundary": "This report describes patterns in questionnaire responses. It does not diagnose, assess disease, or determine medical status. Product recommendations are outside this report layer.",
+  "reports": [
+    {
+      "Profile": "P01_balanced_baseline",
+      "top3": []
+    },
+    {
+      "Profile": "P02_sleep_led",
+      "top3": [
+        {
+          "rank": 1,
+          "outcome": "Sleep & Recovery",
+          "signal": "Strong signal",
+          "headline": "Sleep & Recovery",
+          "strength_text": "Several relevant responses point in the same direction.",
+          "summary": "Your responses suggest that sleep quality, rest or recovery may be an area worth paying attention to.",
+          "evidence": "Q20:primary:strong; Q35:primary:strong"
+        },
+        {
+          "rank": 2,
+          "outcome": "Energy & Vitality",
+          "signal": "Weak signal",
+          "headline": "Energy & Vitality",
+          "strength_text": "There is some relevant evidence, but the pattern is limited.",
+          "summary": "Your responses suggest that energy and day-to-day vitality may be an area worth paying attention to.",
+          "evidence": "Q35:supporting:strong"
+        }
+      ]
+    },
+    {
+      "Profile": "P03_stress_led",
+      "top3": [
+        {
+          "rank": 1,
+          "outcome": "Mood, Stress & Emotional Balance",
+          "signal": "Strong signal",
+          "headline": "Mood, Stress & Emotional Balance",
+          "strength_text": "Several relevant responses point in the same direction.",
+          "summary": "Your responses suggest that stress, mood or emotional balance may be an area worth paying attention to.",
+          "evidence": "Q08:primary:strong; Q15:primary:strong; Q19:primary:strong; Q30:primary:strong; Q38:primary:strong; Q42:primary:strong; Q43:primary:strong"
+        }
+      ]
+    },
+    {
+      "Profile": "P04_digestive_led",
+      "top3": [
+        {
+          "rank": 1,
+          "outcome": "Digestive & Gut Health",
+          "signal": "Strong signal",
+          "headline": "Digestive & Gut Health",
+          "strength_text": "Several relevant responses point in the same direction.",
+          "summary": "Your responses suggest that digestion and gut comfort may be an area worth paying attention to.",
+          "evidence": "Q04:primary:strong; Q14:primary:strong; Q29:primary:strong"
+        },
+        {
+          "rank": 2,
+          "outcome": "Immune Resilience",
+          "signal": "Moderate signal",
+          "headline": "Immune Resilience",
+          "strength_text": "There are relevant responses pointing in this direction, although the pattern is less pronounced.",
+          "summary": "Your responses suggest that resilience, recovery or resistance to everyday illness may be an area worth paying attention to.",
+          "evidence": "Q04:supporting:strong; Q14:supporting:strong"
+        }
+      ]
+    },
+    {
+      "Profile": "P05_lifestyle_led",
+      "top3": [
+        {
+          "rank": 1,
+          "outcome": "Healthy Weight & Metabolic Balance",
+          "signal": "Moderate signal",
+          "headline": "Healthy Weight & Metabolic Balance",
+          "strength_text": "There are relevant responses pointing in this direction, although the pattern is less pronounced.",
+          "summary": "Your responses suggest that everyday metabolic and weight-related habits may be an area worth paying attention to.",
+          "evidence": "Q17:supporting:strong; Q27:supporting:strong; Q44:supporting:strong"
+        },
+        {
+          "rank": 2,
+          "outcome": "Digestive & Gut Health",
+          "signal": "Weak signal",
+          "headline": "Digestive & Gut Health",
+          "strength_text": "There is some relevant evidence, but the pattern is limited.",
+          "summary": "Your responses suggest that digestion and gut comfort may be an area worth paying attention to.",
+          "evidence": "Q27:supporting:strong"
+        },
+        {
+          "rank": 3,
+          "outcome": "Mobility, Joints & Physical Function",
+          "signal": "Weak signal",
+          "headline": "Mobility, Joints & Physical Function",
+          "strength_text": "There is some relevant evidence, but the pattern is limited.",
+          "summary": "Your responses suggest that mobility, joint comfort or physical function may be an area worth paying attention to.",
+          "evidence": "Q44:supporting:strong"
+        }
+      ]
+    },
+    {
+      "Profile": "P06_multi_signal",
+      "top3": [
+        {
+          "rank": 1,
+          "outcome": "Digestive & Gut Health",
+          "signal": "Strong signal",
+          "headline": "Digestive & Gut Health",
+          "strength_text": "Several relevant responses point in the same direction.",
+          "summary": "Your responses suggest that digestion and gut comfort may be an area worth paying attention to.",
+          "evidence": "Q04:primary:strong; Q14:primary:strong; Q29:primary:strong"
+        },
+        {
+          "rank": 2,
+          "outcome": "Sleep & Recovery",
+          "signal": "Strong signal",
+          "headline": "Sleep & Recovery",
+          "strength_text": "Several relevant responses point in the same direction.",
+          "summary": "Your responses suggest that sleep quality, rest or recovery may be an area worth paying attention to.",
+          "evidence": "Q20:primary:strong; Q35:primary:strong"
+        },
+        {
+          "rank": 3,
+          "outcome": "Mood, Stress & Emotional Balance",
+          "signal": "Strong signal",
+          "headline": "Mood, Stress & Emotional Balance",
+          "strength_text": "Several relevant responses point in the same direction.",
+          "summary": "Your responses suggest that stress, mood or emotional balance may be an area worth paying attention to.",
+          "evidence": "Q15:primary:strong; Q30:primary:strong"
+        }
+      ]
+    },
+    {
+      "Profile": "P07_context_heavy",
+      "top3": []
+    },
+    {
+      "Profile": "P08_respiratory_led",
+      "top3": [
+        {
+          "rank": 1,
+          "outcome": "Respiratory Health",
+          "signal": "Strong signal",
+          "headline": "Respiratory Health",
+          "strength_text": "Several relevant responses point in the same direction.",
+          "summary": "Your responses suggest that breathing, congestion or respiratory wellbeing may be an area worth paying attention to.",
+          "evidence": "Q45:primary:strong; Q11:supporting:strong; Q34:supporting:strong"
+        },
+        {
+          "rank": 2,
+          "outcome": "Immune Resilience",
+          "signal": "Weak signal",
+          "headline": "Immune Resilience",
+          "strength_text": "There is some relevant evidence, but the pattern is limited.",
+          "summary": "Your responses suggest that resilience, recovery or resistance to everyday illness may be an area worth paying attention to.",
+          "evidence": "Q34:supporting:strong"
+        },
+        {
+          "rank": 3,
+          "outcome": "Circulation & Cardiovascular Fitness",
+          "signal": "Weak signal",
+          "headline": "Circulation & Cardiovascular Fitness",
+          "strength_text": "There is some relevant evidence, but the pattern is limited.",
+          "summary": "Your responses suggest that circulation and cardiovascular fitness may be an area worth paying attention to.",
+          "evidence": "Q11:supporting:strong"
+        }
+      ]
+    },
+    {
+      "Profile": "P09_goal_led",
+      "top3": []
+    },
+    {
+      "Profile": "P10_minimal_signal",
+      "top3": []
+    },
+    {
+      "Profile": "P11_hormonal_lifestage",
+      "top3": [
+        {
+          "rank": 1,
+          "outcome": "Hormonal & Life-Stage Balance",
+          "signal": "Moderate signal",
+          "headline": "Hormonal & Life-Stage Balance",
+          "strength_text": "There are relevant responses pointing in this direction, although the pattern is less pronounced.",
+          "summary": "Your responses suggest that hormonal or life-stage changes may be an area worth paying attention to.",
+          "evidence": "Q47:primary:strong"
+        }
+      ]
+    },
+    {
+      "Profile": "P12_immune_resilience",
+      "top3": [
+        {
+          "rank": 1,
+          "outcome": "Immune Resilience",
+          "signal": "Strong signal",
+          "headline": "Immune Resilience",
+          "strength_text": "Several relevant responses point in the same direction.",
+          "summary": "Your responses suggest that resilience, recovery or resistance to everyday illness may be an area worth paying attention to.",
+          "evidence": "Q02:primary:strong; Q13:primary:strong; Q28:primary:strong"
+        }
+      ]
+    },
+    {
+      "Profile": "P13_metabolic_weight",
+      "top3": [
+        {
+          "rank": 1,
+          "outcome": "Healthy Weight & Metabolic Balance",
+          "signal": "Strong signal",
+          "headline": "Healthy Weight & Metabolic Balance",
+          "strength_text": "Several relevant responses point in the same direction.",
+          "summary": "Your responses suggest that everyday metabolic and weight-related habits may be an area worth paying attention to.",
+          "evidence": "Q25:primary:strong; Q17:supporting:strong; Q27:supporting:strong"
+        },
+        {
+          "rank": 2,
+          "outcome": "Digestive & Gut Health",
+          "signal": "Weak signal",
+          "headline": "Digestive & Gut Health",
+          "strength_text": "There is some relevant evidence, but the pattern is limited.",
+          "summary": "Your responses suggest that digestion and gut comfort may be an area worth paying attention to.",
+          "evidence": "Q27:supporting:strong"
+        }
+      ]
+    },
+    {
+      "Profile": "P14_mobility_joints",
+      "top3": [
+        {
+          "rank": 1,
+          "outcome": "Mobility, Joints & Physical Function",
+          "signal": "Strong signal",
+          "headline": "Mobility, Joints & Physical Function",
+          "strength_text": "Several relevant responses point in the same direction.",
+          "summary": "Your responses suggest that mobility, joint comfort or physical function may be an area worth paying attention to.",
+          "evidence": "Q32:primary:strong; Q41:primary:strong"
+        }
+      ]
+    },
+    {
+      "Profile": "P15_cardiovascular",
+      "top3": [
+        {
+          "rank": 1,
+          "outcome": "Circulation & Cardiovascular Fitness",
+          "signal": "Strong signal",
+          "headline": "Circulation & Cardiovascular Fitness",
+          "strength_text": "Several relevant responses point in the same direction.",
+          "summary": "Your responses suggest that circulation and cardiovascular fitness may be an area worth paying attention to.",
+          "evidence": "Q11:supporting:strong; Q26:supporting:strong; Q44:supporting:strong"
+        },
+        {
+          "rank": 2,
+          "outcome": "Respiratory Health",
+          "signal": "Moderate signal",
+          "headline": "Respiratory Health",
+          "strength_text": "There are relevant responses pointing in this direction, although the pattern is less pronounced.",
+          "summary": "Your responses suggest that breathing, congestion or respiratory wellbeing may be an area worth paying attention to.",
+          "evidence": "Q11:supporting:strong; Q26:supporting:strong"
+        },
+        {
+          "rank": 3,
+          "outcome": "Energy & Vitality",
+          "signal": "Moderate signal",
+          "headline": "Energy & Vitality",
+          "strength_text": "There are relevant responses pointing in this direction, although the pattern is less pronounced.",
+          "summary": "Your responses suggest that energy and day-to-day vitality may be an area worth paying attention to.",
+          "evidence": "Q26:primary:strong"
+        }
+      ]
+    },
+    {
+      "Profile": "P16_positive_high_wellness",
+      "top3": []
+    },
+    {
+      "Profile": "P17_many_weak_no_strong",
+      "top3": []
+    },
+    {
+      "Profile": "P18_context_strong_signal_low",
+      "top3": []
+    }
+  ]
+}

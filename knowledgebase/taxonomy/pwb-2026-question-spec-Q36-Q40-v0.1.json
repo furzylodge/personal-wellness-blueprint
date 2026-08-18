@@ -1,0 +1,166 @@
+{
+  "version": "Q36-Q40-v0.1",
+  "status": "provisional_locked_for_prototyping",
+  "questions": [
+    {
+      "id": "Q36",
+      "question": "Have you experienced an unexplained loss of appetite recently?",
+      "ui": "single_select",
+      "options": [
+        "No",
+        "Yes"
+      ],
+      "stored_values": [
+        0,
+        1
+      ],
+      "effects": {
+        "outcomes": {},
+        "modifiers": [
+          "Digestive / general health context"
+        ],
+        "safety": "Context only. An unexplained persistent loss of appetite can warrant appropriate medical attention; the quiz should not infer a cause.",
+        "report": "Normally no headline score. May be flagged as a contextual symptom if relevant to other responses."
+      },
+      "status": "provisional_locked_for_prototyping"
+    },
+    {
+      "id": "Q37",
+      "question": "How much caffeine do you typically consume on a normal day?",
+      "ui": "single_select",
+      "options": [
+        "None",
+        "1 caffeinated drink",
+        "2 caffeinated drinks",
+        "3–4 caffeinated drinks",
+        "5 or more caffeinated drinks"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {
+          "Sleep & Recovery": "supporting"
+        },
+        "modifiers": [
+          "Caffeine exposure"
+        ],
+        "safety": "Do not treat caffeine quantity alone as evidence of poor health.",
+        "report": "Provides a caffeine-exposure context that can be interpreted with sleep quality, daytime sleepiness and caffeine timing."
+      },
+      "status": "provisional_locked_for_prototyping"
+    },
+    {
+      "id": "Q37b",
+      "question": "How late in the day do you usually have your last caffeinated drink?",
+      "ui": "single_select",
+      "options": [
+        "I do not have caffeinated drinks",
+        "Before midday",
+        "Between midday and 3 pm",
+        "Between 3 pm and 6 pm",
+        "After 6 pm"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {
+          "Sleep & Recovery": "supporting"
+        },
+        "modifiers": [
+          "Caffeine timing"
+        ],
+        "safety": "Do not treat timing alone as evidence of a sleep disorder.",
+        "report": "Can strengthen a Sleep & Recovery interpretation when later caffeine is combined with poor sleep or daytime sleepiness."
+      },
+      "status": "provisional_locked_for_prototyping"
+    },
+    {
+      "id": "Q38",
+      "question": "How often do you feel irritable, impatient or easily frustrated?",
+      "ui": "frequency_5",
+      "options": [
+        "Never",
+        "Occasionally",
+        "Sometimes",
+        "Often",
+        "Very often"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {
+          "Mood, Stress & Emotional Balance": "direct"
+        },
+        "modifiers": [],
+        "safety": "Non-diagnostic.",
+        "report": "Higher frequency contributes to Mood, Stress & Emotional Balance."
+      },
+      "status": "provisional_locked_for_prototyping"
+    },
+    {
+      "id": "Q39",
+      "question": "Do you have any food, chemical or environmental sensitivities or intolerances that we should take into account?",
+      "ui": "multi_select",
+      "options": [
+        "None",
+        "Food intolerance or sensitivity",
+        "Chemical or environmental sensitivity",
+        "Other relevant sensitivity"
+      ],
+      "stored_values": [
+        "none",
+        "food",
+        "chemical_environmental",
+        "other"
+      ],
+      "effects": {
+        "outcomes": {},
+        "modifiers": [
+          "Recommendation profile"
+        ],
+        "safety": "Recommendation filter. Sensitivity/intolerance should not be presented as an allergy or diagnosis.",
+        "report": "Used primarily to personalise recommendations and contextualise relevant responses."
+      },
+      "logic": "None is mutually exclusive with all other choices.",
+      "status": "provisional_locked_for_prototyping"
+    },
+    {
+      "id": "Q40",
+      "question": "Have you experienced recurring yeast or fungal problems that you are concerned about?",
+      "ui": "single_select",
+      "options": [
+        "No",
+        "Yes"
+      ],
+      "stored_values": [
+        0,
+        1
+      ],
+      "effects": {
+        "outcomes": {},
+        "modifiers": [
+          "Medical context"
+        ],
+        "safety": "Medical context only. Do not score as evidence of poor immune function, gut health or microbiome imbalance.",
+        "report": "Normally no headline report effect; may be retained for contextual/recommendation handling."
+      },
+      "status": "provisional_locked_for_prototyping"
+    }
+  ],
+  "design_note": "Q37 is now quantity only, with Q37b separately capturing timing. Q36, Q39 and Q40 are context/safety questions rather than outcome scores. Q38 is a direct mood/stress signal."
+}

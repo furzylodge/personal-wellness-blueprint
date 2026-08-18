@@ -1,0 +1,488 @@
+{
+  "version": "0.1",
+  "status": "Design specification",
+  "purpose": "Define the meaning and direction of responses before assigning numeric scoring weights.",
+  "critical_constraint": "Do not convert response bands directly into assumed weights until historical regression tests and evidence review have been used to calibrate them.",
+  "historical_model": {
+    "response_model": "The current SuperForms configuration uses Yes=1 and No=0 and direct sums for the nine body-system calculators.",
+    "2026_change": "The proposed questionnaire will support ordinal and categorical responses, so scoring must become response-aware rather than treating every non-zero answer as equivalent."
+  },
+  "scoring_layers": [
+    {
+      "layer": "Profile",
+      "purpose": "Age range, gender/applicability and dietary preferences/restrictions.",
+      "scoring": "Filtering/applicability and recommendation context; does not independently create a physiological need."
+    },
+    {
+      "layer": "Safety/context",
+      "purpose": "Food allergy, medication/medical supervision and clinically sensitive symptoms.",
+      "scoring": "Flags, exclusions or cautions; normally no positive/negative wellness score."
+    },
+    {
+      "layer": "Exposure",
+      "purpose": "Smoking, alcohol, caffeine, red/processed meat, air pollution, sedentary behaviour, UPF and similar behaviours.",
+      "scoring": "Potentially ordinal exposure signal, with direction and magnitude evidence-calibrated."
+    },
+    {
+      "layer": "Symptom",
+      "purpose": "Sleep, digestive discomfort, pain, worry, fatigue and similar self-reported experiences.",
+      "scoring": "Frequency/severity indicates signal strength but does not establish diagnosis or cause."
+    },
+    {
+      "layer": "Outcome intent",
+      "purpose": "What the person wants to improve.",
+      "scoring": "Prioritises outcomes; does not manufacture a body-system deficit."
+    }
+  ],
+  "response_rules": [
+    {
+      "type": "ordinal",
+      "rule": "Higher-frequency/severity responses generally produce stronger signals where a monotonic relationship is evidence-supported."
+    },
+    {
+      "type": "exposure",
+      "rule": "Higher exposure may produce stronger relevance signals where supported by evidence; do not assume linearity or universal thresholds."
+    },
+    {
+      "type": "categorical",
+      "rule": "Distinct categories should map to distinct rules rather than automatically becoming 0/1."
+    },
+    {
+      "type": "multi_select",
+      "rule": "Selected items may create separate signals, but closely related selections must not be double-counted."
+    },
+    {
+      "type": "applicability",
+      "rule": "Not applicable must be distinct from No/None, especially for sex-specific questions."
+    }
+  ],
+  "proposed_calibration_sequence": [
+    "Finalise question constructs and response options.",
+    "Map each response to evidence-backed signals.",
+    "Assign provisional direction only before assigning numeric magnitude.",
+    "Compare proposed mappings with historical question-to-system mappings.",
+    "Use the 19 usable scored historical records as regression tests; exclude the record without nine-system scores.",
+    "Introduce numeric weights only where evidence and model behaviour justify them.",
+    "Validate score distributions, question sensitivity and outcome ranking.",
+    "Freeze a versioned scoring specification."
+  ],
+  "validation_warning": "The existing validation shows systematic mismatches between recorded historical scores and simple question-to-system Yes/No sums, especially for Glandular, Respiratory and Urinary. The old direct-sum model therefore should not be assumed to be the complete authoritative specification.",
+  "questionRules": [
+    {
+      "id": "Q01",
+      "interactionType": "Single choice / 5-point scale",
+      "scoringShape": "Ordinal",
+      "historicalMappings": "Preserve as provenance only for existing questions; none for new questions.",
+      "responseSemantics": "Response-aware; numeric weights not yet calibrated.",
+      "numericWeightStatus": "Not yet calibrated"
+    },
+    {
+      "id": "Q02",
+      "interactionType": "Single choice / frequency",
+      "scoringShape": "Ordinal",
+      "historicalMappings": "Preserve as provenance only for existing questions; none for new questions.",
+      "responseSemantics": "Response-aware; numeric weights not yet calibrated.",
+      "numericWeightStatus": "Not yet calibrated"
+    },
+    {
+      "id": "Q03",
+      "interactionType": "Single choice / frequency",
+      "scoringShape": "Ordinal",
+      "historicalMappings": "Preserve as provenance only for existing questions; none for new questions.",
+      "responseSemantics": "Response-aware; numeric weights not yet calibrated.",
+      "numericWeightStatus": "Not yet calibrated"
+    },
+    {
+      "id": "Q04",
+      "interactionType": "Single choice / frequency",
+      "scoringShape": "Ordinal",
+      "historicalMappings": "Preserve as provenance only for existing questions; none for new questions.",
+      "responseSemantics": "Response-aware; numeric weights not yet calibrated.",
+      "numericWeightStatus": "Not yet calibrated"
+    },
+    {
+      "id": "Q05",
+      "interactionType": "Single choice / frequency",
+      "scoringShape": "Ordinal",
+      "historicalMappings": "Preserve as provenance only for existing questions; none for new questions.",
+      "responseSemantics": "Response-aware; numeric weights not yet calibrated.",
+      "numericWeightStatus": "Not yet calibrated"
+    },
+    {
+      "id": "Q06",
+      "interactionType": "Multi-select + timeframe",
+      "scoringShape": "Categorical",
+      "historicalMappings": "Preserve as provenance only for existing questions; none for new questions.",
+      "responseSemantics": "Response-aware; numeric weights not yet calibrated.",
+      "numericWeightStatus": "Not yet calibrated"
+    },
+    {
+      "id": "Q07",
+      "interactionType": "Single choice / frequency",
+      "scoringShape": "Ordinal",
+      "historicalMappings": "Preserve as provenance only for existing questions; none for new questions.",
+      "responseSemantics": "Response-aware; numeric weights not yet calibrated.",
+      "numericWeightStatus": "Not yet calibrated"
+    },
+    {
+      "id": "Q08",
+      "interactionType": "Single choice / frequency",
+      "scoringShape": "Ordinal",
+      "historicalMappings": "Preserve as provenance only for existing questions; none for new questions.",
+      "responseSemantics": "Response-aware; numeric weights not yet calibrated.",
+      "numericWeightStatus": "Not yet calibrated"
+    },
+    {
+      "id": "Q09",
+      "interactionType": "Multi-select / safety profile",
+      "scoringShape": "Categorical",
+      "historicalMappings": "Preserve as provenance only for existing questions; none for new questions.",
+      "responseSemantics": "Response-aware; numeric weights not yet calibrated.",
+      "numericWeightStatus": "Not yet calibrated"
+    },
+    {
+      "id": "Q10",
+      "interactionType": "Single choice / frequency",
+      "scoringShape": "Ordinal",
+      "historicalMappings": "Preserve as provenance only for existing questions; none for new questions.",
+      "responseSemantics": "Response-aware; numeric weights not yet calibrated.",
+      "numericWeightStatus": "Not yet calibrated"
+    },
+    {
+      "id": "Q11",
+      "interactionType": "Multi-select + frequency",
+      "scoringShape": "Categorical",
+      "historicalMappings": "Preserve as provenance only for existing questions; none for new questions.",
+      "responseSemantics": "Response-aware; numeric weights not yet calibrated.",
+      "numericWeightStatus": "Not yet calibrated"
+    },
+    {
+      "id": "Q12",
+      "interactionType": "Single choice / 5-point scale",
+      "scoringShape": "Ordinal",
+      "historicalMappings": "Preserve as provenance only for existing questions; none for new questions.",
+      "responseSemantics": "Response-aware; numeric weights not yet calibrated.",
+      "numericWeightStatus": "Not yet calibrated"
+    },
+    {
+      "id": "Q13",
+      "interactionType": "Single choice / frequency",
+      "scoringShape": "Ordinal",
+      "historicalMappings": "Preserve as provenance only for existing questions; none for new questions.",
+      "responseSemantics": "Response-aware; numeric weights not yet calibrated.",
+      "numericWeightStatus": "Not yet calibrated"
+    },
+    {
+      "id": "Q14",
+      "interactionType": "Single choice / frequency",
+      "scoringShape": "Ordinal",
+      "historicalMappings": "Preserve as provenance only for existing questions; none for new questions.",
+      "responseSemantics": "Response-aware; numeric weights not yet calibrated.",
+      "numericWeightStatus": "Not yet calibrated"
+    },
+    {
+      "id": "Q15",
+      "interactionType": "Single choice / 5-point scale",
+      "scoringShape": "Ordinal",
+      "historicalMappings": "Preserve as provenance only for existing questions; none for new questions.",
+      "responseSemantics": "Response-aware; numeric weights not yet calibrated.",
+      "numericWeightStatus": "Not yet calibrated"
+    },
+    {
+      "id": "Q16",
+      "interactionType": "Single choice / frequency",
+      "scoringShape": "Ordinal",
+      "historicalMappings": "Preserve as provenance only for existing questions; none for new questions.",
+      "responseSemantics": "Response-aware; numeric weights not yet calibrated.",
+      "numericWeightStatus": "Not yet calibrated"
+    },
+    {
+      "id": "Q17",
+      "interactionType": "Single choice / frequency",
+      "scoringShape": "Ordinal",
+      "historicalMappings": "Preserve as provenance only for existing questions; none for new questions.",
+      "responseSemantics": "Response-aware; numeric weights not yet calibrated.",
+      "numericWeightStatus": "Not yet calibrated"
+    },
+    {
+      "id": "Q18",
+      "interactionType": "Single choice / frequency",
+      "scoringShape": "Ordinal",
+      "historicalMappings": "Preserve as provenance only for existing questions; none for new questions.",
+      "responseSemantics": "Response-aware; numeric weights not yet calibrated.",
+      "numericWeightStatus": "Not yet calibrated"
+    },
+    {
+      "id": "Q19",
+      "interactionType": "Single choice / frequency",
+      "scoringShape": "Ordinal",
+      "historicalMappings": "Preserve as provenance only for existing questions; none for new questions.",
+      "responseSemantics": "Response-aware; numeric weights not yet calibrated.",
+      "numericWeightStatus": "Not yet calibrated"
+    },
+    {
+      "id": "Q20",
+      "interactionType": "Single choice / 5-point scale",
+      "scoringShape": "Ordinal",
+      "historicalMappings": "Preserve as provenance only for existing questions; none for new questions.",
+      "responseSemantics": "Response-aware; numeric weights not yet calibrated.",
+      "numericWeightStatus": "Not yet calibrated"
+    },
+    {
+      "id": "Q21",
+      "interactionType": "Single choice / frequency",
+      "scoringShape": "Ordinal",
+      "historicalMappings": "Preserve as provenance only for existing questions; none for new questions.",
+      "responseSemantics": "Response-aware; numeric weights not yet calibrated.",
+      "numericWeightStatus": "Not yet calibrated"
+    },
+    {
+      "id": "Q22",
+      "interactionType": "Single choice / frequency",
+      "scoringShape": "Ordinal",
+      "historicalMappings": "Preserve as provenance only for existing questions; none for new questions.",
+      "responseSemantics": "Response-aware; numeric weights not yet calibrated.",
+      "numericWeightStatus": "Not yet calibrated"
+    },
+    {
+      "id": "Q23",
+      "interactionType": "Single choice / frequency",
+      "scoringShape": "Ordinal",
+      "historicalMappings": "Preserve as provenance only for existing questions; none for new questions.",
+      "responseSemantics": "Response-aware; numeric weights not yet calibrated.",
+      "numericWeightStatus": "Not yet calibrated"
+    },
+    {
+      "id": "Q24",
+      "interactionType": "Multi-part: dietary exposure + medical context",
+      "scoringShape": "Categorical",
+      "historicalMappings": "Preserve as provenance only for existing questions; none for new questions.",
+      "responseSemantics": "Response-aware; numeric weights not yet calibrated.",
+      "numericWeightStatus": "Not yet calibrated"
+    },
+    {
+      "id": "Q25",
+      "interactionType": "Single choice / 5-point scale",
+      "scoringShape": "Ordinal",
+      "historicalMappings": "Preserve as provenance only for existing questions; none for new questions.",
+      "responseSemantics": "Response-aware; numeric weights not yet calibrated.",
+      "numericWeightStatus": "Not yet calibrated"
+    },
+    {
+      "id": "Q26",
+      "interactionType": "Single choice / frequency",
+      "scoringShape": "Ordinal",
+      "historicalMappings": "Preserve as provenance only for existing questions; none for new questions.",
+      "responseSemantics": "Response-aware; numeric weights not yet calibrated.",
+      "numericWeightStatus": "Not yet calibrated"
+    },
+    {
+      "id": "Q27",
+      "interactionType": "Multi-select behaviour checklist",
+      "scoringShape": "Categorical",
+      "historicalMappings": "Preserve as provenance only for existing questions; none for new questions.",
+      "responseSemantics": "Response-aware; numeric weights not yet calibrated.",
+      "numericWeightStatus": "Not yet calibrated"
+    },
+    {
+      "id": "Q28",
+      "interactionType": "Single choice / recovery frequency",
+      "scoringShape": "Ordinal",
+      "historicalMappings": "Preserve as provenance only for existing questions; none for new questions.",
+      "responseSemantics": "Response-aware; numeric weights not yet calibrated.",
+      "numericWeightStatus": "Not yet calibrated"
+    },
+    {
+      "id": "Q29",
+      "interactionType": "Single choice / frequency",
+      "scoringShape": "Ordinal",
+      "historicalMappings": "Preserve as provenance only for existing questions; none for new questions.",
+      "responseSemantics": "Response-aware; numeric weights not yet calibrated.",
+      "numericWeightStatus": "Not yet calibrated"
+    },
+    {
+      "id": "Q30",
+      "interactionType": "Single choice / 5-point scale",
+      "scoringShape": "Ordinal",
+      "historicalMappings": "Preserve as provenance only for existing questions; none for new questions.",
+      "responseSemantics": "Response-aware; numeric weights not yet calibrated.",
+      "numericWeightStatus": "Not yet calibrated"
+    },
+    {
+      "id": "Q31",
+      "interactionType": "Single choice / frequency estimate",
+      "scoringShape": "Ordinal",
+      "historicalMappings": "Preserve as provenance only for existing questions; none for new questions.",
+      "responseSemantics": "Response-aware; numeric weights not yet calibrated.",
+      "numericWeightStatus": "Not yet calibrated"
+    },
+    {
+      "id": "Q32",
+      "interactionType": "Single choice / frequency",
+      "scoringShape": "Ordinal",
+      "historicalMappings": "Preserve as provenance only for existing questions; none for new questions.",
+      "responseSemantics": "Response-aware; numeric weights not yet calibrated.",
+      "numericWeightStatus": "Not yet calibrated"
+    },
+    {
+      "id": "Q33",
+      "interactionType": "Single choice / frequency",
+      "scoringShape": "Ordinal",
+      "historicalMappings": "Preserve as provenance only for existing questions; none for new questions.",
+      "responseSemantics": "Response-aware; numeric weights not yet calibrated.",
+      "numericWeightStatus": "Not yet calibrated"
+    },
+    {
+      "id": "Q34",
+      "interactionType": "Single choice / exposure",
+      "scoringShape": "Ordinal",
+      "historicalMappings": "Preserve as provenance only for existing questions; none for new questions.",
+      "responseSemantics": "Response-aware; numeric weights not yet calibrated.",
+      "numericWeightStatus": "Not yet calibrated"
+    },
+    {
+      "id": "Q35",
+      "interactionType": "Single choice / frequency",
+      "scoringShape": "Ordinal",
+      "historicalMappings": "Preserve as provenance only for existing questions; none for new questions.",
+      "responseSemantics": "Response-aware; numeric weights not yet calibrated.",
+      "numericWeightStatus": "Not yet calibrated"
+    },
+    {
+      "id": "Q36",
+      "interactionType": "Single choice / frequency",
+      "scoringShape": "Ordinal",
+      "historicalMappings": "Preserve as provenance only for existing questions; none for new questions.",
+      "responseSemantics": "Response-aware; numeric weights not yet calibrated.",
+      "numericWeightStatus": "Not yet calibrated"
+    },
+    {
+      "id": "Q37",
+      "interactionType": "Two-stage: frequency + timing",
+      "scoringShape": "Ordinal",
+      "historicalMappings": "Preserve as provenance only for existing questions; none for new questions.",
+      "responseSemantics": "Response-aware; numeric weights not yet calibrated.",
+      "numericWeightStatus": "Not yet calibrated"
+    },
+    {
+      "id": "Q38",
+      "interactionType": "Single choice / 5-point scale",
+      "scoringShape": "Ordinal",
+      "historicalMappings": "Preserve as provenance only for existing questions; none for new questions.",
+      "responseSemantics": "Response-aware; numeric weights not yet calibrated.",
+      "numericWeightStatus": "Not yet calibrated"
+    },
+    {
+      "id": "Q39",
+      "interactionType": "Multi-select profile",
+      "scoringShape": "Categorical",
+      "historicalMappings": "Preserve as provenance only for existing questions; none for new questions.",
+      "responseSemantics": "Response-aware; numeric weights not yet calibrated.",
+      "numericWeightStatus": "Not yet calibrated"
+    },
+    {
+      "id": "Q40",
+      "interactionType": "Single choice / frequency + context",
+      "scoringShape": "Ordinal",
+      "historicalMappings": "Preserve as provenance only for existing questions; none for new questions.",
+      "responseSemantics": "Response-aware; numeric weights not yet calibrated.",
+      "numericWeightStatus": "Not yet calibrated"
+    },
+    {
+      "id": "Q41",
+      "interactionType": "Single choice / frequency",
+      "scoringShape": "Ordinal",
+      "historicalMappings": "Preserve as provenance only for existing questions; none for new questions.",
+      "responseSemantics": "Response-aware; numeric weights not yet calibrated.",
+      "numericWeightStatus": "Not yet calibrated"
+    },
+    {
+      "id": "Q42",
+      "interactionType": "Single choice / 5-point scale",
+      "scoringShape": "Ordinal",
+      "historicalMappings": "Preserve as provenance only for existing questions; none for new questions.",
+      "responseSemantics": "Response-aware; numeric weights not yet calibrated.",
+      "numericWeightStatus": "Not yet calibrated"
+    },
+    {
+      "id": "Q43",
+      "interactionType": "Single choice / frequency",
+      "scoringShape": "Ordinal",
+      "historicalMappings": "Preserve as provenance only for existing questions; none for new questions.",
+      "responseSemantics": "Response-aware; numeric weights not yet calibrated.",
+      "numericWeightStatus": "Not yet calibrated"
+    },
+    {
+      "id": "Q44",
+      "interactionType": "Single choice / frequency",
+      "scoringShape": "Ordinal",
+      "historicalMappings": "Preserve as provenance only for existing questions; none for new questions.",
+      "responseSemantics": "Response-aware; numeric weights not yet calibrated.",
+      "numericWeightStatus": "Not yet calibrated"
+    },
+    {
+      "id": "Q45",
+      "interactionType": "Single choice / frequency",
+      "scoringShape": "Ordinal",
+      "historicalMappings": "Preserve as provenance only for existing questions; none for new questions.",
+      "responseSemantics": "Response-aware; numeric weights not yet calibrated.",
+      "numericWeightStatus": "Not yet calibrated"
+    },
+    {
+      "id": "Q46",
+      "interactionType": "Single choice / frequency",
+      "scoringShape": "Ordinal",
+      "historicalMappings": "Preserve as provenance only for existing questions; none for new questions.",
+      "responseSemantics": "Response-aware; numeric weights not yet calibrated.",
+      "numericWeightStatus": "Not yet calibrated"
+    },
+    {
+      "id": "Q47",
+      "interactionType": "Single choice / concern level",
+      "scoringShape": "Ordinal",
+      "historicalMappings": "Preserve as provenance only for existing questions; none for new questions.",
+      "responseSemantics": "Response-aware; numeric weights not yet calibrated.",
+      "numericWeightStatus": "Not yet calibrated"
+    },
+    {
+      "id": "Q48",
+      "interactionType": "Multi-select safety/context",
+      "scoringShape": "Categorical",
+      "historicalMappings": "Preserve as provenance only for existing questions; none for new questions.",
+      "responseSemantics": "Response-aware; numeric weights not yet calibrated.",
+      "numericWeightStatus": "Not yet calibrated"
+    },
+    {
+      "id": "N01",
+      "interactionType": "Single choice / frequency",
+      "scoringShape": "Ordinal",
+      "historicalMappings": "Preserve as provenance only for existing questions; none for new questions.",
+      "responseSemantics": "Response-aware; numeric weights not yet calibrated.",
+      "numericWeightStatus": "Not yet calibrated"
+    },
+    {
+      "id": "N02",
+      "interactionType": "Single choice / duration range",
+      "scoringShape": "Ordinal",
+      "historicalMappings": "Preserve as provenance only for existing questions; none for new questions.",
+      "responseSemantics": "Response-aware; numeric weights not yet calibrated.",
+      "numericWeightStatus": "Not yet calibrated"
+    },
+    {
+      "id": "N03",
+      "interactionType": "Single choice / frequency",
+      "scoringShape": "Ordinal",
+      "historicalMappings": "Preserve as provenance only for existing questions; none for new questions.",
+      "responseSemantics": "Response-aware; numeric weights not yet calibrated.",
+      "numericWeightStatus": "Not yet calibrated"
+    },
+    {
+      "id": "N04",
+      "interactionType": "Single choice / routine consistency",
+      "scoringShape": "Ordinal",
+      "historicalMappings": "Preserve as provenance only for existing questions; none for new questions.",
+      "responseSemantics": "Response-aware; numeric weights not yet calibrated.",
+      "numericWeightStatus": "Not yet calibrated"
+    }
+  ]
+}

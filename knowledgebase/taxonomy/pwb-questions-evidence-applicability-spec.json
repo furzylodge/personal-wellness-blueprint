@@ -1,0 +1,102 @@
+{
+  "version": "0.1",
+  "status": "Design specification",
+  "purpose": "Define how question applicability, evidence, contextual evidence and gender-neutral wording should be represented in questions.json.",
+  "principles": [
+    "Gender-neutral questions must have gender-neutral default evidence text.",
+    "Gender-specific evidence must only be shown when its applicability condition is satisfied.",
+    "Question applicability, evidence applicability and recommendation applicability are separate concepts.",
+    "A question being relevant to everyone does not mean every supporting evidence source applies identically to every person.",
+    "Do not silently convert biological-sex-specific evidence into generic claims.",
+    "Evidence records should preserve source, review date and evidence scope.",
+    "Historical rationale and modern evidence must remain distinguishable."
+  ],
+  "applicability_model": {
+    "question_applicability": {
+      "all": "Question is applicable to the general questionnaire population.",
+      "female_context": "Question is applicable only where the person's selected context makes female reproductive/menopause information relevant.",
+      "male_context": "Question is applicable only where male-specific context is relevant.",
+      "conditional": "Applicability depends on another profile answer or questionnaire response."
+    },
+    "evidence_applicability": "Each evidence source may specify whether it is universal or context-specific.",
+    "recommendation_applicability": "Recommendation rules are maintained separately from question applicability and evidence applicability."
+  },
+  "evidence_schema": {
+    "default": {
+      "summary": "Short, user-facing, gender-neutral explanation where the question is universal.",
+      "sources": [
+        {
+          "title": "Source title",
+          "url": "https://...",
+          "evidence_scope": "universal",
+          "evidence_level": "to_be_assessed",
+          "reviewed": "YYYY-MM-DD"
+        }
+      ]
+    },
+    "contextual": [
+      {
+        "condition": "machine-readable profile/context condition",
+        "summary": "Additional context-specific explanation.",
+        "sources": []
+      }
+    ]
+  },
+  "validation_rules": [
+    {
+      "id": "EVIDENCE-001",
+      "rule": "If question applicability is all, evidence.default.summary must not contain gender-specific terms unless the statement is explicitly universal.",
+      "examples_to_flag": [
+        "women",
+        "men",
+        "female",
+        "male",
+        "she",
+        "he",
+        "her",
+        "his"
+      ]
+    },
+    {
+      "id": "EVIDENCE-002",
+      "rule": "Gender-specific evidence must be stored under contextual evidence with an explicit condition."
+    },
+    {
+      "id": "EVIDENCE-003",
+      "rule": "Every source must have a title, URL, evidence scope and review date before publication."
+    },
+    {
+      "id": "EVIDENCE-004",
+      "rule": "Historical rationale must not be presented as modern scientific evidence."
+    },
+    {
+      "id": "EVIDENCE-005",
+      "rule": "A source supporting why a question is relevant does not automatically support a numerical scoring relationship."
+    },
+    {
+      "id": "EVIDENCE-006",
+      "rule": "Q46 and Q47 remain conditionally applicable and must not be presented to respondents for whom the menopause context is not applicable."
+    }
+  ],
+  "example": {
+    "id": "Q20",
+    "text": "How would you describe your sleep?",
+    "applicability": {
+      "gender": "all"
+    },
+    "evidence": {
+      "default": {
+        "summary": "Sleep quality can influence daytime energy, cognitive function and emotional wellbeing.",
+        "sources": []
+      },
+      "contextual": [
+        {
+          "condition": "menopause_relevant",
+          "summary": "Sleep can also change during the menopausal transition as hormonal changes occur.",
+          "sources": []
+        }
+      ]
+    }
+  },
+  "implementation_note": "The example intentionally contains no invented source URLs. Evidence sources should be populated during the question-by-question scientific review."
+}

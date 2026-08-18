@@ -1,0 +1,184 @@
+{
+  "version": "0.1",
+  "status": "Provisional design matrix",
+  "source": "Existing outcomes-v1.0 plus the provisional 52-question signal map.",
+  "warning": "This matrix is not an evidence-grade causal model and contains proposed relationships requiring review before scoring.",
+  "outcomes": [
+    {
+      "id": "OUT001",
+      "name": "Better Sleep",
+      "directQuestionSignals": [
+        "Q20"
+      ],
+      "supportingQuestionSignals": [
+        "Q21",
+        "Q22",
+        "Q23"
+      ],
+      "candidateModernSignals": [
+        "N01",
+        "N04"
+      ]
+    },
+    {
+      "id": "OUT002",
+      "name": "More Energy",
+      "directQuestionSignals": [
+        "Q01",
+        "Q26"
+      ],
+      "supportingQuestionSignals": [
+        "Q02",
+        "Q03",
+        "Q06",
+        "Q35"
+      ],
+      "candidateModernSignals": [
+        "N02",
+        "N04"
+      ]
+    },
+    {
+      "id": "OUT003",
+      "name": "Healthy Weight Management",
+      "directQuestionSignals": [
+        "Q25"
+      ],
+      "supportingQuestionSignals": [
+        "Q01",
+        "Q26",
+        "Q27",
+        "Q28"
+      ],
+      "candidateModernSignals": [
+        "N02",
+        "N03"
+      ]
+    },
+    {
+      "id": "OUT004",
+      "name": "Better Fitness & Physical Performance",
+      "directQuestionSignals": [
+        "Q26",
+        "Q44"
+      ],
+      "supportingQuestionSignals": [
+        "Q32",
+        "Q41",
+        "Q45"
+      ],
+      "candidateModernSignals": [
+        "N02"
+      ]
+    },
+    {
+      "id": "OUT005",
+      "name": "Digestive & Gut Health",
+      "directQuestionSignals": [
+        "Q04",
+        "Q14",
+        "Q29",
+        "Q31"
+      ],
+      "supportingQuestionSignals": [
+        "Q03",
+        "Q06",
+        "Q27",
+        "Q36",
+        "Q40"
+      ],
+      "candidateModernSignals": [
+        "N03"
+      ]
+    },
+    {
+      "id": "OUT006",
+      "name": "Mental Clarity & Cognitive Performance",
+      "directQuestionSignals": [
+        "Q12"
+      ],
+      "supportingQuestionSignals": [
+        "Q01",
+        "Q19",
+        "Q20",
+        "Q26",
+        "Q35"
+      ],
+      "candidateModernSignals": [
+        "N01",
+        "N04"
+      ]
+    },
+    {
+      "id": "OUT007",
+      "name": "Mobility & Joint Health",
+      "directQuestionSignals": [
+        "Q41"
+      ],
+      "supportingQuestionSignals": [
+        "Q32",
+        "Q44"
+      ],
+      "candidateModernSignals": [
+        "N02"
+      ]
+    },
+    {
+      "id": "OUT008",
+      "name": "Healthy Ageing & Resilience",
+      "directQuestionSignals": [
+        "Q02",
+        "Q13",
+        "Q28"
+      ],
+      "supportingQuestionSignals": [
+        "Q11",
+        "Q31",
+        "Q34",
+        "Q44"
+      ],
+      "candidateModernSignals": [
+        "N03"
+      ]
+    },
+    {
+      "id": "OUT009",
+      "name": "Menopause Transition Resilience",
+      "directQuestionSignals": [
+        "Q47"
+      ],
+      "supportingQuestionSignals": [
+        "Q46",
+        "Q08",
+        "Q20",
+        "Q25",
+        "Q30"
+      ],
+      "candidateModernSignals": [
+        "N04"
+      ]
+    },
+    {
+      "id": "OUT010",
+      "name": "Stress Resilience",
+      "directQuestionSignals": [
+        "Q15",
+        "Q30",
+        "Q42"
+      ],
+      "supportingQuestionSignals": [
+        "Q08",
+        "Q19",
+        "Q20",
+        "Q35",
+        "Q38",
+        "Q43"
+      ],
+      "candidateModernSignals": [
+        "N01",
+        "N04"
+      ]
+    }
+  ],
+  "designPrinciple": "An outcome can combine goal intent, body-system need, direct questionnaire signals and demographic context. Do not double-count the same construct through multiple paths."
+}

@@ -1,0 +1,8 @@
+layer,name,purpose
+Layer 1,Profile,"Age range, gender/context, dietary restrictions/preferences"
+Layer 2,Goals / Outcomes,"Top lifestyle outcomes such as sleep, energy, fitness, healthy weight and other validated goals"
+Layer 3,Symptoms & behaviours,"The questionnaire answers, with explicit construct type"
+Layer 4,Nine functional domains,Modernised versions of the historical nine body-system domains
+Layer 5,Cross-domain signals,"Sleep, stress, energy, diet quality, activity, resilience and other constructs that legitimately cross systems"
+Layer 6,Safety / constraints,"Medical treatment, chronic conditions, allergies, sensitivities and other recommendation restrictions"
+Layer 7,Recommendation matching,"Foods, bioactives and products matched to goals + signals + constraints + evidence"

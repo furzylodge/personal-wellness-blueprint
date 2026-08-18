@@ -1,0 +1,230 @@
+{
+  "version": "Q41-Q48-v0.1",
+  "status": "provisional_locked_for_prototyping",
+  "questions": [
+    {
+      "id": "Q41",
+      "question": "How often do you experience joint pain, stiffness, reduced mobility or weakness that affects your normal activities?",
+      "ui": "frequency_5",
+      "options": [
+        "Never",
+        "Occasionally",
+        "Sometimes",
+        "Often",
+        "Very often"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {
+          "Mobility, Joints & Physical Function": "direct"
+        },
+        "modifiers": [
+          "Energy & Vitality"
+        ],
+        "safety": "Non-diagnostic. Do not infer a specific joint condition from the response.",
+        "report": "Higher frequency contributes to Mobility, Joints & Physical Function."
+      },
+      "status": "provisional_locked_for_prototyping"
+    },
+    {
+      "id": "Q42",
+      "question": "How often do you find yourself worrying excessively or unable to stop worrying?",
+      "ui": "frequency_5",
+      "options": [
+        "Never",
+        "Occasionally",
+        "Sometimes",
+        "Often",
+        "Very often"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {
+          "Mood, Stress & Emotional Balance": "direct"
+        },
+        "modifiers": [
+          "Sleep & Recovery"
+        ],
+        "safety": "Non-diagnostic.",
+        "report": "Higher frequency contributes to Mood, Stress & Emotional Balance and may contextualise sleep/recovery responses."
+      },
+      "status": "provisional_locked_for_prototyping"
+    },
+    {
+      "id": "Q43",
+      "question": "How often do you feel unusually irritable, impatient or easily frustrated?",
+      "ui": "frequency_5",
+      "options": [
+        "Never",
+        "Occasionally",
+        "Sometimes",
+        "Often",
+        "Very often"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {
+          "Mood, Stress & Emotional Balance": "direct"
+        },
+        "modifiers": [
+          "Stress context"
+        ],
+        "safety": "Non-diagnostic.",
+        "report": "Higher frequency contributes to Mood, Stress & Emotional Balance."
+      },
+      "status": "provisional_locked_for_prototyping"
+    },
+    {
+      "id": "Q44",
+      "question": "How much physical activity do you typically do in a normal week?",
+      "ui": "single_select",
+      "options": [
+        "Very little",
+        "Less than 60 minutes",
+        "60–149 minutes",
+        "150–299 minutes",
+        "300 minutes or more"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {
+          "Energy & Vitality": "supporting",
+          "Mobility, Joints & Physical Function": "supporting",
+          "Healthy Weight & Metabolic Balance": "supporting",
+          "Circulation & Cardiovascular Fitness": "supporting"
+        },
+        "modifiers": [
+          "Physical activity"
+        ],
+        "safety": "Self-reported activity only; does not diagnose fitness or cardiovascular health.",
+        "report": "Provides a positive/negative activity context and should be interpreted alongside Q26 and other lifestyle responses."
+      },
+      "status": "provisional_locked_for_prototyping"
+    },
+    {
+      "id": "Q45",
+      "question": "How often do you experience persistent or recurring congestion, excess mucus, wheezing or similar breathing symptoms?",
+      "ui": "frequency_5",
+      "options": [
+        "Never",
+        "Occasionally",
+        "Sometimes",
+        "Often",
+        "Very often"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {},
+        "modifiers": [
+          "Respiratory body-system"
+        ],
+        "safety": "Persistent, severe or worsening breathing symptoms should not be interpreted diagnostically by the quiz and may warrant appropriate medical attention.",
+        "report": "Can contribute to respiratory-system context, especially alongside Q34 pollution exposure and Q26 stamina."
+      },
+      "status": "provisional_locked_for_prototyping"
+    },
+    {
+      "id": "Q46",
+      "question": "Do you currently take regular medication or receive treatment for a long-term health condition?",
+      "ui": "single_select",
+      "options": [
+        "No",
+        "Yes"
+      ],
+      "stored_values": [
+        0,
+        1
+      ],
+      "effects": {
+        "outcomes": {},
+        "modifiers": [
+          "Medical context"
+        ],
+        "safety": "Safety gate. Do not score treatment or long-term conditions as poor wellness.",
+        "report": "Used to qualify recommendations and report language."
+      },
+      "status": "provisional_locked_for_prototyping"
+    },
+    {
+      "id": "Q47",
+      "question": "Do you currently experience menstrual or cycle-related changes or symptoms that you would like to take into account?",
+      "ui": "single_select",
+      "options": [
+        "No",
+        "Yes"
+      ],
+      "stored_values": [
+        0,
+        1
+      ],
+      "effects": {
+        "outcomes": {
+          "Hormonal & Life-Stage Balance": "supporting"
+        },
+        "modifiers": [
+          "Menstrual/cycle context"
+        ],
+        "safety": "Conditional question. Display only where relevant based on the user's profile. Non-diagnostic.",
+        "report": "Can personalise the Hormonal & Life-Stage Balance section and recommendations."
+      },
+      "logic": "Conditionally displayed based on relevant user profile/sex/life-stage information; avoid gender-specific wording outside that context.",
+      "status": "provisional_locked_for_prototyping"
+    },
+    {
+      "id": "Q48",
+      "question": "Are you experiencing perimenopause, menopause or related life-stage changes that you would like to take into account?",
+      "ui": "single_select",
+      "options": [
+        "No",
+        "Yes"
+      ],
+      "stored_values": [
+        0,
+        1
+      ],
+      "effects": {
+        "outcomes": {
+          "Hormonal & Life-Stage Balance": "direct"
+        },
+        "modifiers": [
+          "Life-stage context"
+        ],
+        "safety": "Conditional question. Display only where relevant. Non-diagnostic and must not imply menopause/perimenopause from symptoms alone.",
+        "report": "Can personalise the Hormonal & Life-Stage Balance section and recommendations."
+      },
+      "logic": "Conditionally displayed based on relevant user profile/life-stage information.",
+      "status": "provisional_locked_for_prototyping"
+    }
+  ],
+  "design_note": "Q41 closes the physical/mobility construct. Q42 and Q43 preserve distinct worry and irritability constructs. Q44 is a lifestyle/activity modifier across several outcomes. Q45 remains a respiratory body-system signal rather than a tenth headline outcome. Q46 is a safety/medical-context gate. Q47 and Q48 are conditional, gender-neutral outside their display context, and contribute only when relevant."
+}

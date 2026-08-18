@@ -1,0 +1,134 @@
+{
+  "version": "modern-additions-v0.1",
+  "status": "provisional_locked_for_prototyping",
+  "questions": [
+    {
+      "id": "N01",
+      "question": "How much time do you typically spend sitting or being physically inactive during a normal day?",
+      "ui": "single_select",
+      "options": [
+        "Less than 2 hours",
+        "2–4 hours",
+        "4–6 hours",
+        "6–8 hours",
+        "More than 8 hours"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {
+          "Energy & Vitality": "supporting",
+          "Mobility, Joints & Physical Function": "supporting",
+          "Healthy Weight & Metabolic Balance": "supporting",
+          "Circulation & Cardiovascular Fitness": "supporting"
+        },
+        "modifiers": [
+          "Sedentary behaviour"
+        ],
+        "safety": "Self-reported behaviour only.",
+        "report": "Provides a sedentary-behaviour context and should be interpreted alongside Q44 physical activity rather than treated as its inverse."
+      },
+      "status": "provisional_locked_for_prototyping"
+    },
+    {
+      "id": "N03",
+      "question": "How often do you eat ultra-processed or highly processed foods?",
+      "ui": "frequency_5",
+      "options": [
+        "Rarely or never",
+        "Occasionally",
+        "Some days",
+        "Most days",
+        "Every day"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {
+          "Healthy Weight & Metabolic Balance": "supporting",
+          "Digestive & Gut Health": "supporting",
+          "Circulation & Cardiovascular Fitness": "supporting"
+        },
+        "modifiers": [
+          "Dietary exposure"
+        ],
+        "safety": "Dietary context only. Do not infer disease risk from this answer alone.",
+        "report": "Provides a dietary-pattern signal and should be interpreted alongside Q27, Q31 and N04 to avoid double-counting."
+      },
+      "status": "provisional_locked_for_prototyping"
+    },
+    {
+      "id": "N04",
+      "question": "On a typical day, how many portions of fruit and vegetables do you eat?",
+      "ui": "single_select",
+      "options": [
+        "None",
+        "1–2 portions",
+        "3–4 portions",
+        "5–6 portions",
+        "7 or more portions"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {
+          "Digestive & Gut Health": "supporting",
+          "Healthy Weight & Metabolic Balance": "supporting",
+          "Circulation & Cardiovascular Fitness": "supporting"
+        },
+        "modifiers": [
+          "Dietary intake"
+        ],
+        "safety": "Self-reported dietary intake only.",
+        "report": "Provides a positive dietary-intake signal. The scoring should recognise this as a positive behaviour rather than simply removing a negative score."
+      },
+      "status": "provisional_locked_for_prototyping"
+    },
+    {
+      "id": "N06",
+      "question": "How many hours of sleep do you typically get on a normal night?",
+      "ui": "single_select",
+      "options": [
+        "Less than 5 hours",
+        "5–5.9 hours",
+        "6–6.9 hours",
+        "7–8 hours",
+        "More than 8 hours"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {
+          "Sleep & Recovery": "direct"
+        },
+        "modifiers": [
+          "Sleep duration"
+        ],
+        "safety": "Self-reported duration only. Sleep need varies between individuals.",
+        "report": "Provides a sleep-duration signal to interpret alongside Q20 sleep quality, Q21 night waking, Q35 daytime sleepiness and Q37b caffeine timing."
+      },
+      "status": "provisional_locked_for_prototyping"
+    }
+  ],
+  "design_note": "These four additions complete the 52-question potential inventory. They are deliberately kept as distinct constructs: sedentary behaviour, ultra-processed food exposure, fruit/vegetable intake and sleep duration."
+}

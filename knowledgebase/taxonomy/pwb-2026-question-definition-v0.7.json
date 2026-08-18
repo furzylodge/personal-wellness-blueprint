@@ -1,0 +1,1724 @@
+{
+  "version": "2026-question-definition-v0.7",
+  "status": "prototype_ready",
+  "potential_question_count": 52,
+  "removed": [
+    "Q10",
+    "Q33",
+    "Q40"
+  ],
+  "conditional": [
+    "Q24b",
+    "Q46"
+  ],
+  "additional": [
+    "N01",
+    "N03",
+    "N04",
+    "N06",
+    "Q24a",
+    "Q24b",
+    "Q37b"
+  ],
+  "questions": [
+    {
+      "id": "Q01",
+      "question": "Would you like to have more energy during the day?",
+      "ui": "single_select",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "values": [
+        1,
+        0
+      ],
+      "effects": {
+        "outcomes": {},
+        "modifiers": [
+          "Goal / personalisation"
+        ],
+        "safety": "Goal information only. It does not indicate poor health.",
+        "report": "Use to personalise emphasis in the report; do not treat as evidence of a health deficit."
+      },
+      "status": "provisional_locked",
+      "role": "goal"
+    },
+    {
+      "id": "Q02",
+      "question": "How often do you find yourself becoming unwell?",
+      "ui": "frequency_4",
+      "options": [
+        "Rarely",
+        "Occasionally",
+        "Several times a year",
+        "Frequently"
+      ],
+      "values": [
+        0,
+        0.33,
+        0.67,
+        1
+      ],
+      "effects": {
+        "outcomes": {
+          "Immune Resilience": "direct"
+        },
+        "modifiers": [
+          "Energy & Vitality"
+        ],
+        "goal": null,
+        "report": "Higher frequency may support an Immune Resilience concern; interpret alongside Q13 and Q28."
+      },
+      "status": "provisional_locked",
+      "role": "signal"
+    },
+    {
+      "id": "Q03",
+      "question": "Which of the following have you noticed recently or repeatedly? Select any that apply.",
+      "ui": "multi_select",
+      "options": [
+        "Bad breath",
+        "Unusual body odour",
+        "Neither"
+      ],
+      "values": {
+        "Bad breath": 1,
+        "Unusual body odour": 1,
+        "Neither": 0
+      },
+      "effects": {
+        "outcomes": {
+          "Digestive & Gut Health": "supporting"
+        },
+        "modifiers": [
+          "Context"
+        ],
+        "goal": null,
+        "report": "A positive response is a contextual observation, not a diagnosis."
+      },
+      "status": "provisional_locked",
+      "role": "signal"
+    },
+    {
+      "id": "Q04",
+      "question": "How often do you have difficulty digesting certain foods?",
+      "ui": "frequency_5",
+      "options": [
+        "Never",
+        "Occasionally",
+        "Sometimes",
+        "Often",
+        "Very often"
+      ],
+      "values": [
+        0,
+        0.25,
+        0.5,
+        0.75,
+        1
+      ],
+      "effects": {
+        "outcomes": {
+          "Digestive & Gut Health": "direct"
+        },
+        "modifiers": [
+          "Energy & Vitality"
+        ],
+        "goal": null,
+        "report": "Higher frequency increases the Digestive & Gut Health signal."
+      },
+      "status": "provisional_locked",
+      "role": "signal"
+    },
+    {
+      "id": "Q05",
+      "question": "How often do you eat red meat, such as beef, lamb or pork?",
+      "ui": "frequency_5",
+      "options": [
+        "Never",
+        "Less than once a week",
+        "1–2 times a week",
+        "3–4 times a week",
+        "5 or more times a week"
+      ],
+      "values": [
+        0,
+        0.25,
+        0.5,
+        0.75,
+        1
+      ],
+      "effects": {
+        "outcomes": {
+          "Healthy Weight & Metabolic Balance": "supporting",
+          "Circulation & Cardiovascular Fitness": "supporting"
+        },
+        "modifiers": [
+          "Dietary pattern"
+        ],
+        "goal": null,
+        "report": "Frequency is shown as dietary context. It should not be presented as a direct measure of cardiovascular health."
+      },
+      "status": "provisional_locked",
+      "role": "signal"
+    },
+    {
+      "id": "Q06",
+      "question": "Which of the following applies to your health history?",
+      "ui": "multi_select",
+      "options": [
+        "I have taken antibiotics in the last 3 months",
+        "I take regular prescription medication",
+        "Neither of these"
+      ],
+      "stored_values": {
+        "I have taken antibiotics in the last 3 months": 1,
+        "I take regular prescription medication": 1,
+        "Neither": 0
+      },
+      "effects": {
+        "outcomes": {},
+        "modifiers": [
+          "Digestive & Gut Health"
+        ],
+        "safety": "Context only; does not lower a wellness score.",
+        "report": "May be used to tailor context and recommendations. A positive medication response should not be interpreted as a health deficit."
+      },
+      "logic": "Neither of these is mutually exclusive with the other two choices.",
+      "status": "provisional_locked_for_prototyping",
+      "role": "context"
+    },
+    {
+      "id": "Q07",
+      "question": "How much alcohol do you typically drink in an average week?",
+      "ui": "single_select",
+      "options": [
+        "None",
+        "1–5 UK units",
+        "6–10 UK units",
+        "11–20 UK units",
+        "More than 20 UK units"
+      ],
+      "stored_values": [
+        0,
+        0.25,
+        0.5,
+        0.75,
+        1
+      ],
+      "effects": {
+        "outcomes": {
+          "Sleep & Recovery": "supporting",
+          "Circulation & Cardiovascular Fitness": "supporting",
+          "Healthy Weight & Metabolic Balance": "supporting"
+        },
+        "modifiers": [
+          "Lifestyle exposure"
+        ],
+        "safety": "Not a diagnosis or direct cardiovascular score.",
+        "report": "Can be described as a lifestyle exposure and interpreted alongside sleep, weight/metabolic and cardiovascular-related answers."
+      },
+      "status": "provisional_locked_for_prototyping",
+      "role": "signal"
+    },
+    {
+      "id": "Q08",
+      "question": "How often do you experience noticeable changes in your mood or emotional state?",
+      "ui": "frequency_5",
+      "options": [
+        "Never",
+        "Occasionally",
+        "Sometimes",
+        "Often",
+        "Very often"
+      ],
+      "stored_values": [
+        0,
+        0.25,
+        0.5,
+        0.75,
+        1
+      ],
+      "effects": {
+        "outcomes": {
+          "Mood, Stress & Emotional Balance": "direct"
+        },
+        "modifiers": [
+          "Energy & Vitality"
+        ],
+        "safety": "Non-diagnostic.",
+        "report": "Higher frequency contributes to the Mood, Stress & Emotional Balance signal."
+      },
+      "status": "provisional_locked_for_prototyping",
+      "role": "signal"
+    },
+    {
+      "id": "Q09",
+      "question": "Do you have any diagnosed food allergies?",
+      "ui": "single_select",
+      "options": [
+        "No",
+        "Yes"
+      ],
+      "stored_values": [
+        0,
+        1
+      ],
+      "effects": {
+        "outcomes": {},
+        "modifiers": [],
+        "safety": "Safety gate / recommendation filter. No wellness-score penalty.",
+        "report": "Used to filter or qualify recommendations. The answer should never be presented as evidence of poor health."
+      },
+      "status": "provisional_locked_for_prototyping",
+      "role": "safety"
+    },
+    {
+      "id": "Q11",
+      "question": "Which best describes your tobacco smoke exposure?",
+      "ui": "single_select",
+      "options": [
+        "I do not smoke and am not regularly exposed to smoke",
+        "I used to smoke",
+        "I currently smoke occasionally",
+        "I currently smoke regularly",
+        "I am regularly exposed to other people's smoke"
+      ],
+      "stored_values": [
+        "none",
+        "former",
+        "occasional_current",
+        "regular_current",
+        "passive"
+      ],
+      "effects": {
+        "outcomes": {
+          "Circulation & Cardiovascular Fitness": "supporting",
+          "Respiratory body-system": "supporting"
+        },
+        "modifiers": [
+          "Lifestyle exposure"
+        ],
+        "safety": "No diagnosis; current exposure is a lifestyle/environmental modifier.",
+        "report": "Can be described as a tobacco-smoke exposure factor. Current and passive exposure should not be conflated with former smoking."
+      },
+      "logic": "One answer only. If former and passive exposure both need to be captured, this should become a multi-select in a later implementation pass.",
+      "status": "provisional_locked_for_prototyping",
+      "role": "signal"
+    },
+    {
+      "id": "Q12",
+      "question": "How often do you have difficulty concentrating or remembering things?",
+      "ui": "frequency_5",
+      "options": [
+        "Never",
+        "Occasionally",
+        "Sometimes",
+        "Often",
+        "Very often"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {
+          "Energy & Vitality": "supporting",
+          "Mood, Stress & Emotional Balance": "supporting"
+        },
+        "modifiers": [
+          "Cognitive context"
+        ],
+        "safety": "Non-diagnostic.",
+        "report": "A frequent response may be mentioned as a cognitive/mental-performance context, particularly alongside sleep or stress responses."
+      },
+      "status": "provisional_locked_for_prototyping",
+      "role": "signal"
+    },
+    {
+      "id": "Q13",
+      "question": "How often do you feel that you are unusually susceptible to infections or take longer than expected to recover from them?",
+      "ui": "frequency_5",
+      "options": [
+        "Never",
+        "Occasionally",
+        "Sometimes",
+        "Often",
+        "Very often"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {
+          "Immune Resilience": "direct"
+        },
+        "modifiers": [
+          "Energy & Vitality"
+        ],
+        "safety": "Non-diagnostic; should not imply immune deficiency.",
+        "report": "Higher frequency contributes to the Immune Resilience signal and should be interpreted with Q02 and Q28."
+      },
+      "status": "provisional_locked_for_prototyping",
+      "role": "signal"
+    },
+    {
+      "id": "Q14",
+      "question": "How often do you experience discomfort, bloating, reflux or other symptoms after eating?",
+      "ui": "frequency_5",
+      "options": [
+        "Never",
+        "Occasionally",
+        "Sometimes",
+        "Often",
+        "Very often"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {
+          "Digestive & Gut Health": "direct"
+        },
+        "modifiers": [
+          "Energy & Vitality"
+        ],
+        "safety": "Persistent or severe symptoms should not be interpreted diagnostically from the quiz.",
+        "report": "Higher frequency contributes to Digestive & Gut Health. This is deliberately focused on effects after eating, complementing Q04's while-eating construct."
+      },
+      "status": "provisional_locked_for_prototyping",
+      "role": "signal"
+    },
+    {
+      "id": "Q15",
+      "question": "How often do you feel stressed or under pressure?",
+      "ui": "frequency_5",
+      "options": [
+        "Never",
+        "Occasionally",
+        "Sometimes",
+        "Often",
+        "Very often"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {
+          "Mood, Stress & Emotional Balance": "direct"
+        },
+        "modifiers": [
+          "Energy & Vitality",
+          "Sleep & Recovery"
+        ],
+        "safety": "Non-diagnostic.",
+        "report": "Higher frequency contributes to Mood, Stress & Emotional Balance and can be used to contextualise sleep and energy."
+      },
+      "status": "provisional_locked_for_prototyping",
+      "role": "signal"
+    },
+    {
+      "id": "Q16",
+      "question": "Do you currently have, or have you previously been diagnosed with, any of the following skin conditions? Select any that apply.",
+      "ui": "multi_select",
+      "options": [
+        "Eczema / atopic dermatitis",
+        "Psoriasis",
+        "Rosacea",
+        "Another diagnosed skin condition",
+        "None of these"
+      ],
+      "stored_values": [
+        "eczema",
+        "psoriasis",
+        "rosacea",
+        "other",
+        "none"
+      ],
+      "effects": {
+        "outcomes": {},
+        "modifiers": [
+          "Inflammatory / Immune context"
+        ],
+        "safety": "Context only. Do not score a diagnosed skin condition as cardiovascular disease or as a general health deficit.",
+        "report": "If selected, can provide condition-specific context and, where appropriate, an impact follow-up."
+      },
+      "logic": "None of these is mutually exclusive with all other choices. Selecting a condition reveals Q16b.",
+      "status": "provisional_locked_for_prototyping",
+      "role": "context"
+    },
+    {
+      "id": "Q16b",
+      "question": "How much does this skin condition currently affect your day-to-day life?",
+      "ui": "quality_5",
+      "options": [
+        "Not at all",
+        "A little",
+        "Moderately",
+        "A lot",
+        "Severely"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {},
+        "modifiers": [
+          "Inflammatory / Immune context"
+        ],
+        "safety": "Context severity only; no direct wellness-score deduction.",
+        "report": "Distinguishes a historical/minor diagnosis from a currently significant condition."
+      },
+      "logic": "Only shown when Q16 is not 'None of these'.",
+      "status": "provisional_locked_for_prototyping",
+      "role": "context"
+    },
+    {
+      "id": "Q17",
+      "question": "How often do you find yourself craving sweet or highly processed foods?",
+      "ui": "frequency_5",
+      "options": [
+        "Never",
+        "Occasionally",
+        "Sometimes",
+        "Often",
+        "Very often"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {
+          "Healthy Weight & Metabolic Balance": "supporting"
+        },
+        "modifiers": [
+          "Dietary behaviour"
+        ],
+        "safety": "Non-diagnostic. A craving is not treated as evidence of excessive intake.",
+        "report": "Can be used as a supporting dietary-behaviour signal, particularly alongside actual dietary intake questions."
+      },
+      "status": "provisional_locked_for_prototyping",
+      "role": "signal"
+    },
+    {
+      "id": "Q18",
+      "question": "Which of the following best describes your relationship with dairy products?",
+      "ui": "single_select",
+      "options": [
+        "I regularly consume dairy",
+        "I occasionally consume dairy",
+        "I avoid dairy by choice",
+        "I avoid dairy because it causes symptoms",
+        "I have a diagnosed dairy allergy"
+      ],
+      "stored_values": [
+        "regular",
+        "occasional",
+        "avoid_choice",
+        "avoid_symptoms",
+        "allergy"
+      ],
+      "effects": {
+        "outcomes": {},
+        "modifiers": [
+          "Dietary profile"
+        ],
+        "safety": "Recommendation filter. Dairy consumption itself is not a health deficit; diagnosed allergy is a safety constraint.",
+        "report": "Normally used to personalise recommendations rather than create an outcome score."
+      },
+      "status": "provisional_locked_for_prototyping",
+      "role": "context"
+    },
+    {
+      "id": "Q19",
+      "question": "How often do you feel unusually low, flat or lacking motivation?",
+      "ui": "frequency_5",
+      "options": [
+        "Never",
+        "Occasionally",
+        "Sometimes",
+        "Often",
+        "Very often"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {
+          "Mood, Stress & Emotional Balance": "direct"
+        },
+        "modifiers": [
+          "Energy & Vitality"
+        ],
+        "safety": "Non-diagnostic.",
+        "report": "Higher frequency contributes to the Mood, Stress & Emotional Balance signal and may provide context for low energy."
+      },
+      "status": "provisional_locked_for_prototyping",
+      "role": "signal"
+    },
+    {
+      "id": "Q20",
+      "question": "How would you describe the quality of your sleep?",
+      "ui": "quality_5",
+      "options": [
+        "Very good",
+        "Generally good",
+        "Variable",
+        "Often poor",
+        "Consistently poor"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {
+          "Sleep & Recovery": "direct"
+        },
+        "modifiers": [
+          "Energy & Vitality",
+          "Mood, Stress & Emotional Balance"
+        ],
+        "safety": "Non-diagnostic.",
+        "report": "Higher frequency/poorer quality contributes directly to Sleep & Recovery. Can be interpreted with Q21, Q30, Q35, Q37 and N06."
+      },
+      "status": "provisional_locked_for_prototyping",
+      "role": "signal"
+    },
+    {
+      "id": "Q21",
+      "question": "How often do you wake during the night to urinate?",
+      "ui": "frequency_5",
+      "options": [
+        "Never",
+        "Occasionally",
+        "Sometimes",
+        "Often",
+        "Very often"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {
+          "Sleep & Recovery": "supporting"
+        },
+        "modifiers": [
+          "Urinary context"
+        ],
+        "safety": "Persistent or new frequent night-time urination should not be interpreted diagnostically.",
+        "report": "Can support the Sleep & Recovery interpretation, particularly when combined with poor sleep quality."
+      },
+      "status": "provisional_locked_for_prototyping",
+      "role": "signal"
+    },
+    {
+      "id": "Q22",
+      "question": "How often do you notice that your nails are unusually brittle or prone to splitting?",
+      "ui": "frequency_5",
+      "options": [
+        "Never",
+        "Occasionally",
+        "Sometimes",
+        "Often",
+        "Very often"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {},
+        "modifiers": [
+          "Nutritional / endocrine context"
+        ],
+        "safety": "Weak contextual observation. Do not score as cardiovascular risk or diagnose nutritional/endocrine deficiency.",
+        "report": "Normally no headline report effect. May become relevant when corroborated by other independent responses."
+      },
+      "status": "provisional_locked_for_prototyping",
+      "role": "context"
+    },
+    {
+      "id": "Q23",
+      "question": "Have you noticed increased hair shedding or thinning compared with your usual pattern?",
+      "ui": "single_select",
+      "options": [
+        "No",
+        "Yes"
+      ],
+      "stored_values": [
+        0,
+        1
+      ],
+      "effects": {
+        "outcomes": {
+          "Hormonal & Life-Stage Balance": "supporting"
+        },
+        "modifiers": [
+          "Nutritional / stress context"
+        ],
+        "safety": "Non-diagnostic. Do not imply a specific deficiency or hormonal disorder.",
+        "report": "A positive response can provide supporting context, particularly alongside other relevant responses."
+      },
+      "status": "provisional_locked_for_prototyping",
+      "role": "signal"
+    },
+    {
+      "id": "Q24a",
+      "question": "How often do you eat foods that are high in saturated fat?",
+      "ui": "frequency_5",
+      "options": [
+        {
+          "label": "Never or rarely",
+          "value": 0
+        },
+        {
+          "label": "Occasionally",
+          "value": 1
+        },
+        {
+          "label": "Sometimes",
+          "value": 2
+        },
+        {
+          "label": "Often",
+          "value": 3
+        },
+        {
+          "label": "Very often",
+          "value": 4
+        }
+      ],
+      "supporting_text": "Think about foods such as fatty or processed meats, butter, cheese, cream, pastries and foods cooked with a lot of saturated fat.",
+      "role": "signal",
+      "effects": {
+        "outcomes": {
+          "Healthy Weight & Metabolic Balance": "supporting",
+          "Energy & Vitality": "supporting"
+        },
+        "modifiers": [],
+        "safety": "Behavioural question. Do not infer cholesterol status or diagnose a condition from this response.",
+        "report": "Contributes as a supporting dietary pattern signal. It must not be presented as evidence that the person has raised cholesterol or a lipid disorder."
+      },
+      "report": "Supporting dietary pattern signal only."
+    },
+    {
+      "id": "Q24b",
+      "question": "Has a healthcare professional ever told you that you have raised cholesterol or another lipid-related issue?",
+      "ui": "single_select",
+      "options": [
+        {
+          "label": "No",
+          "value": "no"
+        },
+        {
+          "label": "Yes",
+          "value": "yes"
+        },
+        {
+          "label": "Not sure",
+          "value": "not_sure"
+        },
+        {
+          "label": "Prefer not to say",
+          "value": "prefer_not_to_say"
+        }
+      ],
+      "role": "context",
+      "effects": {
+        "outcomes": {},
+        "modifiers": [
+          "Medical context"
+        ],
+        "safety": "Context only. Do not infer a lipid disorder from Q24a. Do not score the existence of a diagnosis or known health issue as poor wellness.",
+        "report": "Practitioner context only."
+      },
+      "conditional": {
+        "trigger": {
+          "field": "Q24b",
+          "operator": "equals",
+          "value": "yes"
+        },
+        "question_id": "Q24b_more",
+        "question": "If you would like to, you can tell your practitioner a little more.",
+        "ui": "free_text_optional",
+        "placeholder": "Optional",
+        "role": "context"
+      },
+      "report": "Optional practitioner context. This information does not form part of the wellness signals or constitute a medical assessment."
+    },
+    {
+      "id": "Q25",
+      "question": "How difficult is it for you to maintain a healthy weight for your body and lifestyle?",
+      "ui": "quality_5",
+      "options": [
+        "Not difficult",
+        "Slightly difficult",
+        "Moderately difficult",
+        "Very difficult",
+        "Extremely difficult"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {
+          "Healthy Weight & Metabolic Balance": "direct"
+        },
+        "modifiers": [
+          "Energy & Vitality"
+        ],
+        "safety": "Do not imply that difficulty maintaining weight means a specific medical condition.",
+        "report": "Higher difficulty contributes to Healthy Weight & Metabolic Balance and may identify weight-management as an area for support."
+      },
+      "status": "provisional_locked_for_prototyping",
+      "role": "signal"
+    },
+    {
+      "id": "Q26",
+      "question": "How would you describe your physical stamina in everyday activities?",
+      "ui": "quality_5",
+      "options": [
+        "Very good",
+        "Good",
+        "Variable",
+        "Often limited",
+        "Very limited"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {
+          "Energy & Vitality": "direct",
+          "Mobility, Joints & Physical Function": "supporting"
+        },
+        "modifiers": [
+          "Physical capacity"
+        ],
+        "safety": "Non-diagnostic. Do not infer a cardiopulmonary diagnosis from low stamina alone.",
+        "report": "Higher limitation contributes to Energy & Vitality and can be interpreted with activity and respiratory answers."
+      },
+      "status": "provisional_locked_for_prototyping",
+      "role": "signal"
+    },
+    {
+      "id": "Q27",
+      "question": "Which best describes your usual eating pattern?",
+      "ui": "single_select",
+      "options": [
+        "Mostly whole and minimally processed foods",
+        "A mixture of whole and processed foods",
+        "Mostly processed or convenience foods",
+        "Highly irregular or difficult to describe"
+      ],
+      "stored_values": [
+        "whole",
+        "mixed",
+        "processed",
+        "irregular"
+      ],
+      "effects": {
+        "outcomes": {
+          "Healthy Weight & Metabolic Balance": "supporting",
+          "Digestive & Gut Health": "supporting"
+        },
+        "modifiers": [
+          "Dietary pattern"
+        ],
+        "safety": "Non-diagnostic. This is a broad dietary-pattern question and should not duplicate specific intake questions in scoring.",
+        "report": "Provides overall dietary context and may help explain more specific food-intake responses."
+      },
+      "status": "provisional_locked_for_prototyping",
+      "role": "signal"
+    },
+    {
+      "id": "Q28",
+      "question": "When you do become unwell, how quickly do you usually recover?",
+      "ui": "quality_5",
+      "options": [
+        "Very quickly",
+        "Quite quickly",
+        "About as expected",
+        "Slower than expected",
+        "Much slower than expected"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {
+          "Immune Resilience": "direct"
+        },
+        "modifiers": [
+          "Energy & Vitality"
+        ],
+        "safety": "Non-diagnostic. Slower recovery can have many causes.",
+        "report": "Higher values strengthen the Immune Resilience signal, particularly alongside Q02 and Q13."
+      },
+      "status": "provisional_locked_for_prototyping",
+      "role": "signal"
+    },
+    {
+      "id": "Q29",
+      "question": "How often do you experience constipation, diarrhoea or other noticeable changes in bowel regularity?",
+      "ui": "frequency_5",
+      "options": [
+        "Never",
+        "Occasionally",
+        "Sometimes",
+        "Often",
+        "Very often"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {
+          "Digestive & Gut Health": "direct"
+        },
+        "modifiers": [],
+        "safety": "Persistent, severe or concerning bowel changes should not be interpreted diagnostically by the quiz.",
+        "report": "Higher frequency contributes to Digestive & Gut Health."
+      },
+      "status": "provisional_locked_for_prototyping",
+      "role": "signal"
+    },
+    {
+      "id": "Q30",
+      "question": "How often do you find it difficult to switch off or relax, even when you have the opportunity to do so?",
+      "ui": "frequency_5",
+      "options": [
+        "Never",
+        "Occasionally",
+        "Sometimes",
+        "Often",
+        "Very often"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {
+          "Mood, Stress & Emotional Balance": "direct",
+          "Sleep & Recovery": "supporting"
+        },
+        "modifiers": [
+          "Stress / recovery"
+        ],
+        "safety": "Non-diagnostic.",
+        "report": "Higher frequency contributes to Mood, Stress & Emotional Balance and can support interpretation of sleep difficulty."
+      },
+      "status": "provisional_locked_for_prototyping",
+      "role": "signal"
+    },
+    {
+      "id": "Q31",
+      "question": "How often do you eat foods that are naturally high in fibre, such as vegetables, fruit, beans, lentils, wholegrains, nuts or seeds?",
+      "ui": "frequency_5",
+      "options": [
+        "Rarely or never",
+        "Occasionally",
+        "Some days",
+        "Most days",
+        "Every day"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {
+          "Digestive & Gut Health": "supporting",
+          "Healthy Weight & Metabolic Balance": "supporting"
+        },
+        "modifiers": [
+          "Dietary intake"
+        ],
+        "safety": "Non-diagnostic.",
+        "report": "Provides a positive dietary-behaviour signal and should be interpreted alongside N04 and the broader dietary questions."
+      },
+      "status": "provisional_locked_for_prototyping",
+      "role": "signal"
+    },
+    {
+      "id": "Q32",
+      "question": "How often do you experience muscle aches, stiffness, weakness or discomfort that affects your normal activities?",
+      "ui": "frequency_5",
+      "options": [
+        "Never",
+        "Occasionally",
+        "Sometimes",
+        "Often",
+        "Very often"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {
+          "Mobility, Joints & Physical Function": "direct"
+        },
+        "modifiers": [
+          "Energy & Vitality"
+        ],
+        "safety": "Non-diagnostic. Persistent or severe symptoms should not be interpreted by the quiz as a specific musculoskeletal diagnosis.",
+        "report": "Higher frequency contributes to Mobility, Joints & Physical Function."
+      },
+      "status": "provisional_locked_for_prototyping",
+      "role": "signal"
+    },
+    {
+      "id": "Q34",
+      "question": "How much time do you typically spend in areas with noticeable traffic, industrial or other air pollution?",
+      "ui": "single_select",
+      "options": [
+        "Very little",
+        "Less than 1 hour a day",
+        "1–2 hours a day",
+        "2–4 hours a day",
+        "More than 4 hours a day"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {},
+        "modifiers": [
+          "Respiratory exposure",
+          "Environmental exposure"
+        ],
+        "safety": "Exposure context only. Do not convert exposure directly into disease or poor respiratory health.",
+        "report": "Can appear as an environmental/respiratory lifestyle factor, particularly if Q45 also indicates respiratory symptoms."
+      },
+      "status": "provisional_locked_for_prototyping",
+      "role": "context"
+    },
+    {
+      "id": "Q35",
+      "question": "How often do you feel excessively sleepy or tired during the day?",
+      "ui": "frequency_5",
+      "options": [
+        "Never",
+        "Occasionally",
+        "Sometimes",
+        "Often",
+        "Very often"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {
+          "Sleep & Recovery": "direct",
+          "Energy & Vitality": "supporting"
+        },
+        "modifiers": [
+          "Daytime sleepiness"
+        ],
+        "safety": "Non-diagnostic.",
+        "report": "Higher frequency contributes directly to Sleep & Recovery and provides supporting context for Energy & Vitality."
+      },
+      "status": "provisional_locked_for_prototyping",
+      "role": "signal"
+    },
+    {
+      "id": "Q36",
+      "question": "Have you experienced an unexplained loss of appetite recently?",
+      "ui": "single_select",
+      "options": [
+        "No",
+        "Yes"
+      ],
+      "stored_values": [
+        0,
+        1
+      ],
+      "effects": {
+        "outcomes": {},
+        "modifiers": [
+          "Digestive / general health context"
+        ],
+        "safety": "Context only. An unexplained persistent loss of appetite can warrant appropriate medical attention; the quiz should not infer a cause.",
+        "report": "Normally no headline score. May be flagged as a contextual symptom if relevant to other responses."
+      },
+      "status": "provisional_locked_for_prototyping",
+      "role": "context"
+    },
+    {
+      "id": "Q37",
+      "question": "How much caffeine do you typically consume on a normal day?",
+      "ui": "single_select",
+      "options": [
+        "None",
+        "1 caffeinated drink",
+        "2 caffeinated drinks",
+        "3–4 caffeinated drinks",
+        "5 or more caffeinated drinks"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {
+          "Sleep & Recovery": "supporting"
+        },
+        "modifiers": [
+          "Caffeine exposure"
+        ],
+        "safety": "Do not treat caffeine quantity alone as evidence of poor health.",
+        "report": "Provides a caffeine-exposure context that can be interpreted with sleep quality, daytime sleepiness and caffeine timing."
+      },
+      "status": "provisional_locked_for_prototyping",
+      "role": "signal"
+    },
+    {
+      "id": "Q37b",
+      "question": "How late in the day do you usually have your last caffeinated drink?",
+      "ui": "single_select",
+      "options": [
+        "I do not have caffeinated drinks",
+        "Before midday",
+        "Between midday and 3 pm",
+        "Between 3 pm and 6 pm",
+        "After 6 pm"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {
+          "Sleep & Recovery": "supporting"
+        },
+        "modifiers": [
+          "Caffeine timing"
+        ],
+        "safety": "Do not treat timing alone as evidence of a sleep disorder.",
+        "report": "Can strengthen a Sleep & Recovery interpretation when later caffeine is combined with poor sleep or daytime sleepiness."
+      },
+      "status": "provisional_locked_for_prototyping",
+      "role": "signal"
+    },
+    {
+      "id": "Q38",
+      "question": "How often do you feel irritable, impatient or easily frustrated?",
+      "ui": "frequency_5",
+      "options": [
+        "Never",
+        "Occasionally",
+        "Sometimes",
+        "Often",
+        "Very often"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {
+          "Mood, Stress & Emotional Balance": "direct"
+        },
+        "modifiers": [],
+        "safety": "Non-diagnostic.",
+        "report": "Higher frequency contributes to Mood, Stress & Emotional Balance."
+      },
+      "status": "provisional_locked_for_prototyping",
+      "role": "signal"
+    },
+    {
+      "id": "Q39",
+      "question": "Do you have any food, chemical or environmental sensitivities or intolerances that we should take into account?",
+      "ui": "multi_select",
+      "options": [
+        "None",
+        "Food intolerance or sensitivity",
+        "Chemical or environmental sensitivity",
+        "Other relevant sensitivity"
+      ],
+      "stored_values": [
+        "none",
+        "food",
+        "chemical_environmental",
+        "other"
+      ],
+      "effects": {
+        "outcomes": {},
+        "modifiers": [
+          "Recommendation profile"
+        ],
+        "safety": "Recommendation filter. Sensitivity/intolerance should not be presented as an allergy or diagnosis.",
+        "report": "Used primarily to personalise recommendations and contextualise relevant responses."
+      },
+      "logic": "None is mutually exclusive with all other choices.",
+      "status": "provisional_locked_for_prototyping",
+      "role": "context"
+    },
+    {
+      "id": "Q41",
+      "question": "How often do you experience joint pain, stiffness, reduced mobility or weakness that affects your normal activities?",
+      "ui": "frequency_5",
+      "options": [
+        "Never",
+        "Occasionally",
+        "Sometimes",
+        "Often",
+        "Very often"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {
+          "Mobility, Joints & Physical Function": "direct"
+        },
+        "modifiers": [
+          "Energy & Vitality"
+        ],
+        "safety": "Non-diagnostic. Do not infer a specific joint condition from the response.",
+        "report": "Higher frequency contributes to Mobility, Joints & Physical Function."
+      },
+      "status": "provisional_locked_for_prototyping",
+      "role": "signal"
+    },
+    {
+      "id": "Q42",
+      "question": "How often do you find yourself worrying excessively or unable to stop worrying?",
+      "ui": "frequency_5",
+      "options": [
+        "Never",
+        "Occasionally",
+        "Sometimes",
+        "Often",
+        "Very often"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {
+          "Mood, Stress & Emotional Balance": "direct"
+        },
+        "modifiers": [
+          "Sleep & Recovery"
+        ],
+        "safety": "Non-diagnostic.",
+        "report": "Higher frequency contributes to Mood, Stress & Emotional Balance and may contextualise sleep/recovery responses."
+      },
+      "status": "provisional_locked_for_prototyping",
+      "role": "signal"
+    },
+    {
+      "id": "Q43",
+      "question": "How well do you usually cope when things don't go as planned?",
+      "ui": "quality_5",
+      "options": [
+        "Very well",
+        "Quite well",
+        "It varies",
+        "Not very well",
+        "Very poorly"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {
+          "Mood, Stress & Emotional Balance": "supporting"
+        },
+        "modifiers": [
+          "Emotional resilience",
+          "Energy & Vitality"
+        ],
+        "safety": "Non-diagnostic.",
+        "report": "Provides a supporting resilience signal. It should not dominate the Mood, Stress & Emotional Balance score."
+      },
+      "status": "provisional_locked_for_prototyping",
+      "decision": "Replaced duplicate irritability question with emotional resilience construct.",
+      "role": "signal"
+    },
+    {
+      "id": "Q44",
+      "question": "How much physical activity do you typically do in a normal week?",
+      "ui": "single_select",
+      "options": [
+        "Very little",
+        "Less than 60 minutes",
+        "60–149 minutes",
+        "150–299 minutes",
+        "300 minutes or more"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {
+          "Energy & Vitality": "supporting",
+          "Mobility, Joints & Physical Function": "supporting",
+          "Healthy Weight & Metabolic Balance": "supporting",
+          "Circulation & Cardiovascular Fitness": "supporting"
+        },
+        "modifiers": [
+          "Physical activity"
+        ],
+        "safety": "Self-reported activity only; does not diagnose fitness or cardiovascular health.",
+        "report": "Provides a positive/negative activity context and should be interpreted alongside Q26 and other lifestyle responses."
+      },
+      "status": "provisional_locked_for_prototyping",
+      "role": "signal"
+    },
+    {
+      "id": "Q45",
+      "question": "How often do you experience persistent or recurring congestion, excess mucus, wheezing or similar breathing symptoms?",
+      "ui": "frequency_5",
+      "options": [
+        "Never",
+        "Occasionally",
+        "Sometimes",
+        "Often",
+        "Very often"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {
+          "Respiratory Health": "direct"
+        },
+        "modifiers": [],
+        "safety": "A reported symptom is not a diagnosis. The questionnaire does not determine the cause of breathing symptoms.",
+        "report": "Contributes directly to the Respiratory Health signal. Do not describe the result as a diagnosis or imply a cause."
+      },
+      "status": "provisional_locked_for_prototyping",
+      "role": "signal"
+    },
+    {
+      "id": "Q46",
+      "question": "Is there any diagnosed health condition or ongoing treatment that you would like your practitioner to be aware of?",
+      "ui": "single_select",
+      "options": [
+        {
+          "label": "No",
+          "value": "no"
+        },
+        {
+          "label": "Yes",
+          "value": "yes"
+        },
+        {
+          "label": "Prefer not to say",
+          "value": "prefer_not_to_say"
+        }
+      ],
+      "role": "safety",
+      "supporting_text": "This is optional. It gives your practitioner useful context when discussing your results. It does not form part of your wellness signals.",
+      "conditional": {
+        "trigger": {
+          "field": "Q46",
+          "operator": "equals",
+          "value": "yes"
+        },
+        "question_id": "Q46b",
+        "question": "Which areas would you like your practitioner to be aware of?",
+        "ui": "multi_select",
+        "options": [
+          {
+            "label": "Cardiovascular",
+            "value": "cardiovascular"
+          },
+          {
+            "label": "Digestive or gut",
+            "value": "digestive"
+          },
+          {
+            "label": "Respiratory",
+            "value": "respiratory"
+          },
+          {
+            "label": "Musculoskeletal or joints",
+            "value": "musculoskeletal"
+          },
+          {
+            "label": "Hormonal or metabolic",
+            "value": "hormonal_metabolic"
+          },
+          {
+            "label": "Immune or inflammatory",
+            "value": "immune_inflammatory"
+          },
+          {
+            "label": "Neurological",
+            "value": "neurological"
+          },
+          {
+            "label": "Mental or emotional wellbeing",
+            "value": "mental_emotional"
+          },
+          {
+            "label": "Other",
+            "value": "other"
+          },
+          {
+            "label": "Prefer not to say",
+            "value": "prefer_not_to_say"
+          }
+        ],
+        "mutually_exclusive": [
+          "prefer_not_to_say"
+        ],
+        "supporting_text": "Select any that apply. These broad categories are for context only. You do not need to provide a diagnosis or detailed medical history.",
+        "role": "safety"
+      },
+      "effects": {
+        "outcomes": {},
+        "modifiers": [
+          "Medical context"
+        ],
+        "safety": "Optional practitioner context. Do not score the existence of a diagnosis, medication or treatment as poor wellness. Do not infer a diagnosis from questionnaire responses.",
+        "report": "Show only as practitioner context where appropriate. Keep separate from wellness signals."
+      },
+      "report": "Optional practitioner context. This information does not form part of the wellness signals or constitute a medical assessment."
+    },
+    {
+      "id": "Q47",
+      "question": "Do you currently experience menstrual or cycle-related changes or symptoms that you would like to take into account?",
+      "ui": "single_select",
+      "options": [
+        "No",
+        "Yes"
+      ],
+      "stored_values": [
+        0,
+        1
+      ],
+      "effects": {
+        "outcomes": {
+          "Hormonal & Life-Stage Balance": "supporting"
+        },
+        "modifiers": [
+          "Menstrual/cycle context"
+        ],
+        "safety": "Conditional question. Display only where relevant based on the user's profile. Non-diagnostic.",
+        "report": "Can personalise the Hormonal & Life-Stage Balance section and recommendations."
+      },
+      "logic": "Conditionally displayed based on relevant user profile/sex/life-stage information; avoid gender-specific wording outside that context.",
+      "status": "provisional_locked_for_prototyping",
+      "role": "context"
+    },
+    {
+      "id": "Q48",
+      "question": "Are you experiencing perimenopause, menopause or related life-stage changes that you would like to take into account?",
+      "ui": "single_select",
+      "options": [
+        "No",
+        "Yes"
+      ],
+      "stored_values": [
+        0,
+        1
+      ],
+      "effects": {
+        "outcomes": {
+          "Hormonal & Life-Stage Balance": "direct"
+        },
+        "modifiers": [
+          "Life-stage context"
+        ],
+        "safety": "Conditional question. Display only where relevant. Non-diagnostic and must not imply menopause/perimenopause from symptoms alone.",
+        "report": "Can personalise the Hormonal & Life-Stage Balance section and recommendations."
+      },
+      "logic": "Conditionally displayed based on relevant user profile/life-stage information.",
+      "status": "provisional_locked_for_prototyping",
+      "role": "context"
+    },
+    {
+      "id": "N01",
+      "question": "How much time do you typically spend sitting or being physically inactive during a normal day?",
+      "ui": "single_select",
+      "options": [
+        "Less than 2 hours",
+        "2–4 hours",
+        "4–6 hours",
+        "6–8 hours",
+        "More than 8 hours"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {
+          "Energy & Vitality": "supporting",
+          "Mobility, Joints & Physical Function": "supporting",
+          "Healthy Weight & Metabolic Balance": "supporting",
+          "Circulation & Cardiovascular Fitness": "supporting"
+        },
+        "modifiers": [
+          "Sedentary behaviour"
+        ],
+        "safety": "Self-reported behaviour only.",
+        "report": "Provides a sedentary-behaviour context and should be interpreted alongside Q44 physical activity rather than treated as its inverse."
+      },
+      "status": "provisional_locked_for_prototyping",
+      "role": "signal"
+    },
+    {
+      "id": "N03",
+      "question": "How often do you eat ultra-processed or highly processed foods?",
+      "ui": "frequency_5",
+      "options": [
+        "Rarely or never",
+        "Occasionally",
+        "Some days",
+        "Most days",
+        "Every day"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {
+          "Healthy Weight & Metabolic Balance": "supporting",
+          "Digestive & Gut Health": "supporting",
+          "Circulation & Cardiovascular Fitness": "supporting"
+        },
+        "modifiers": [
+          "Dietary exposure"
+        ],
+        "safety": "Dietary context only. Do not infer disease risk from this answer alone.",
+        "report": "Provides a dietary-pattern signal and should be interpreted alongside Q27, Q31 and N04 to avoid double-counting."
+      },
+      "status": "provisional_locked_for_prototyping",
+      "role": "signal"
+    },
+    {
+      "id": "N04",
+      "question": "On a typical day, how many portions of fruit and vegetables do you eat?",
+      "ui": "single_select",
+      "options": [
+        "None",
+        "1–2 portions",
+        "3–4 portions",
+        "5–6 portions",
+        "7 or more portions"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {
+          "Digestive & Gut Health": "supporting",
+          "Healthy Weight & Metabolic Balance": "supporting",
+          "Circulation & Cardiovascular Fitness": "supporting"
+        },
+        "modifiers": [
+          "Dietary intake"
+        ],
+        "safety": "Self-reported dietary intake only.",
+        "report": "Provides a positive dietary-intake signal. The scoring should recognise this as a positive behaviour rather than simply removing a negative score."
+      },
+      "status": "provisional_locked_for_prototyping",
+      "role": "signal"
+    },
+    {
+      "id": "N06",
+      "question": "How many hours of sleep do you typically get on a normal night?",
+      "ui": "single_select",
+      "options": [
+        "Less than 5 hours",
+        "5–5.9 hours",
+        "6–6.9 hours",
+        "7–8 hours",
+        "More than 8 hours"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {
+          "Sleep & Recovery": "direct"
+        },
+        "modifiers": [
+          "Sleep duration"
+        ],
+        "safety": "Self-reported duration only. Sleep need varies between individuals.",
+        "report": "Provides a sleep-duration signal to interpret alongside Q20 sleep quality, Q21 night waking, Q35 daytime sleepiness and Q37b caffeine timing."
+      },
+      "status": "provisional_locked_for_prototyping",
+      "role": "signal"
+    }
+  ],
+  "prototype_review_flags": [
+    {
+      "type": "wording_overlap",
+      "items": "Q06,Q24",
+      "severity": "resolved",
+      "note": "Distinct lead-in wording and UI grouping now make the different constructs clear."
+    },
+    {
+      "type": "construct_overlap",
+      "items": "Q38,Q43",
+      "severity": "resolved",
+      "note": "Q43 measures coping/resilience rather than irritability."
+    },
+    {
+      "type": "scoring_status",
+      "items": "all",
+      "severity": "prototype",
+      "note": "Weights remain provisional and are for model-behaviour testing, not clinical validation."
+    }
+  ],
+  "review_status": "prototype_ready",
+  "notes": [
+    "Q40 removed. Q24 split into Q24a (dietary saturated-fat behaviour, signal) and Q24b (known raised cholesterol/lipid context, non-scored)."
+  ],
+  "taxonomy": {
+    "goal": "The person's stated priority. Does not itself indicate poor health.",
+    "signal": "Self-reported behaviour, experience or pattern that contributes to one or more wellness signals.",
+    "context": "Information that may help interpret or personalise the report but does not itself create a wellness signal.",
+    "safety": "Information used to constrain interpretation, recommendations or practitioner handling. It is not scored as poor wellness.",
+    "user_facing_signal_strength": [
+      "Weak signal",
+      "Moderate signal",
+      "Strong signal"
+    ]
+  },
+  "report_language": {
+    "preferred_terms": [
+      "wellness signal",
+      "stronger signal",
+      "area to explore",
+      "wellness pattern",
+      "practitioner context"
+    ],
+    "avoid_terms": [
+      "diagnosis",
+      "diagnose",
+      "disease risk",
+      "medical assessment",
+      "condition detected",
+      "poor health",
+      "health score",
+      "risk score"
+    ],
+    "boundary": "PWB provides a structured interpretation of self-reported wellness information. It does not diagnose conditions, establish disease risk, determine prognosis, or recommend medical treatment."
+  }
+}

@@ -1,0 +1,111 @@
+Profile,Outcome,Provisional intensity,Signal,Evidence questions
+P01_balanced_baseline,Energy & Vitality,0.286,Weak signal,Q26
+P01_balanced_baseline,Digestive & Gut Health,0.182,No significant signal,Q31; N04
+P01_balanced_baseline,Healthy Weight & Metabolic Balance,0.167,No significant signal,Q31; N04
+P01_balanced_baseline,Sleep & Recovery,0.164,No significant signal,N06
+P01_balanced_baseline,Circulation & Cardiovascular Fitness,0.143,No significant signal,N04
+P01_balanced_baseline,"Mobility, Joints & Physical Function",0.143,No significant signal,Q26
+P01_balanced_baseline,"Mood, Stress & Emotional Balance",0.071,No significant signal,Q43
+P01_balanced_baseline,Immune Resilience,0.0,No significant signal,
+P01_balanced_baseline,Respiratory body-system,0.0,No significant signal,
+P01_balanced_baseline,Hormonal & Life-Stage Balance,0.0,No significant signal,
+P01_balanced_baseline,Respiratory Health,0.0,No significant signal,
+P02_sleep_led,Sleep & Recovery,0.777,Strong signal,Q20; Q21; Q35; Q37b
+P02_sleep_led,Energy & Vitality,0.429,Weak signal,Q26; Q35
+P02_sleep_led,Digestive & Gut Health,0.182,No significant signal,Q31; N04
+P02_sleep_led,Healthy Weight & Metabolic Balance,0.167,No significant signal,Q31; N04
+P02_sleep_led,Circulation & Cardiovascular Fitness,0.143,No significant signal,N04
+P02_sleep_led,"Mobility, Joints & Physical Function",0.143,No significant signal,Q26
+P02_sleep_led,"Mood, Stress & Emotional Balance",0.071,No significant signal,Q43
+P02_sleep_led,Immune Resilience,0.0,No significant signal,
+P02_sleep_led,Respiratory body-system,0.0,No significant signal,
+P02_sleep_led,Hormonal & Life-Stage Balance,0.0,No significant signal,
+P02_sleep_led,Respiratory Health,0.0,No significant signal,
+P03_stress_led,"Mood, Stress & Emotional Balance",0.929,Strong signal,Q08; Q15; Q19; Q30
+P03_stress_led,Energy & Vitality,0.286,Weak signal,Q26
+P03_stress_led,Sleep & Recovery,0.255,Weak signal,Q30; N06
+P03_stress_led,Digestive & Gut Health,0.182,No significant signal,Q31; N04
+P03_stress_led,Healthy Weight & Metabolic Balance,0.167,No significant signal,Q31; N04
+P03_stress_led,Circulation & Cardiovascular Fitness,0.143,No significant signal,N04
+P03_stress_led,"Mobility, Joints & Physical Function",0.143,No significant signal,Q26
+P03_stress_led,Immune Resilience,0.0,No significant signal,
+P03_stress_led,Respiratory body-system,0.0,No significant signal,
+P03_stress_led,Hormonal & Life-Stage Balance,0.0,No significant signal,
+P03_stress_led,Respiratory Health,0.0,No significant signal,
+P04_digestive_led,Digestive & Gut Health,0.788,Strong signal,Q04; Q14; Q29; Q31
+P04_digestive_led,Energy & Vitality,0.286,Weak signal,Q26
+P04_digestive_led,Healthy Weight & Metabolic Balance,0.222,No significant signal,Q31; N04; Q27
+P04_digestive_led,Sleep & Recovery,0.164,No significant signal,N06
+P04_digestive_led,Circulation & Cardiovascular Fitness,0.143,No significant signal,N04
+P04_digestive_led,"Mobility, Joints & Physical Function",0.143,No significant signal,Q26
+P04_digestive_led,"Mood, Stress & Emotional Balance",0.071,No significant signal,Q43
+P04_digestive_led,Immune Resilience,0.0,No significant signal,
+P04_digestive_led,Respiratory body-system,0.0,No significant signal,
+P04_digestive_led,Hormonal & Life-Stage Balance,0.0,No significant signal,
+P04_digestive_led,Respiratory Health,0.0,No significant signal,
+P05_lifestyle_led,Circulation & Cardiovascular Fitness,0.571,Moderate signal,Q05; N01; N03; N04
+P05_lifestyle_led,Energy & Vitality,0.429,Weak signal,Q26; N01
+P05_lifestyle_led,Healthy Weight & Metabolic Balance,0.417,Weak signal,Q05; Q31; N01; N03
+P05_lifestyle_led,Sleep & Recovery,0.345,Weak signal,Q37; Q37b; N06
+P05_lifestyle_led,"Mobility, Joints & Physical Function",0.286,Weak signal,Q26; N01
+P05_lifestyle_led,Digestive & Gut Health,0.273,Weak signal,Q31; N03; N04
+P05_lifestyle_led,"Mood, Stress & Emotional Balance",0.071,No significant signal,Q43
+P05_lifestyle_led,Immune Resilience,0.0,No significant signal,
+P05_lifestyle_led,Respiratory body-system,0.0,No significant signal,
+P05_lifestyle_led,Hormonal & Life-Stage Balance,0.0,No significant signal,
+P05_lifestyle_led,Respiratory Health,0.0,No significant signal,
+P06_multi_signal,Digestive & Gut Health,0.727,Strong signal,Q04; Q14; Q29; Q31
+P06_multi_signal,Sleep & Recovery,0.618,Moderate signal,Q20; Q30; Q35; N06
+P06_multi_signal,Energy & Vitality,0.571,Moderate signal,Q26; Q35; N01
+P06_multi_signal,"Mood, Stress & Emotional Balance",0.5,Moderate signal,Q15; Q30; Q42; Q43
+P06_multi_signal,Circulation & Cardiovascular Fitness,0.286,Weak signal,N01; N04
+P06_multi_signal,"Mobility, Joints & Physical Function",0.286,Weak signal,Q26; N01
+P06_multi_signal,Healthy Weight & Metabolic Balance,0.25,Weak signal,Q31; N01; N04
+P06_multi_signal,Immune Resilience,0.0,No significant signal,
+P06_multi_signal,Respiratory body-system,0.0,No significant signal,
+P06_multi_signal,Hormonal & Life-Stage Balance,0.0,No significant signal,
+P06_multi_signal,Respiratory Health,0.0,No significant signal,
+P07_context_heavy,Energy & Vitality,0.286,Weak signal,Q26
+P07_context_heavy,Digestive & Gut Health,0.182,No significant signal,Q31; N04
+P07_context_heavy,Healthy Weight & Metabolic Balance,0.167,No significant signal,Q31; N04
+P07_context_heavy,Sleep & Recovery,0.164,No significant signal,N06
+P07_context_heavy,Circulation & Cardiovascular Fitness,0.143,No significant signal,N04
+P07_context_heavy,"Mobility, Joints & Physical Function",0.143,No significant signal,Q26
+P07_context_heavy,"Mood, Stress & Emotional Balance",0.071,No significant signal,Q43
+P07_context_heavy,Immune Resilience,0.0,No significant signal,
+P07_context_heavy,Respiratory body-system,0.0,No significant signal,
+P07_context_heavy,Hormonal & Life-Stage Balance,0.0,No significant signal,
+P07_context_heavy,Respiratory Health,0.0,No significant signal,
+P08_respiratory_led,Respiratory Health,1.0,Strong signal,Q45
+P08_respiratory_led,Respiratory body-system,0.65,Strong signal,Q11
+P08_respiratory_led,Energy & Vitality,0.286,Weak signal,Q26
+P08_respiratory_led,Circulation & Cardiovascular Fitness,0.236,No significant signal,N04; Q11
+P08_respiratory_led,Digestive & Gut Health,0.182,No significant signal,Q31; N04
+P08_respiratory_led,Healthy Weight & Metabolic Balance,0.167,No significant signal,Q31; N04
+P08_respiratory_led,Sleep & Recovery,0.164,No significant signal,N06
+P08_respiratory_led,"Mobility, Joints & Physical Function",0.143,No significant signal,Q26
+P08_respiratory_led,"Mood, Stress & Emotional Balance",0.071,No significant signal,Q43
+P08_respiratory_led,Immune Resilience,0.0,No significant signal,
+P08_respiratory_led,Hormonal & Life-Stage Balance,0.0,No significant signal,
+P09_goal_led,Energy & Vitality,0.286,Weak signal,Q26
+P09_goal_led,Digestive & Gut Health,0.182,No significant signal,Q31; N04
+P09_goal_led,Healthy Weight & Metabolic Balance,0.167,No significant signal,Q31; N04
+P09_goal_led,Sleep & Recovery,0.164,No significant signal,N06
+P09_goal_led,Circulation & Cardiovascular Fitness,0.143,No significant signal,N04
+P09_goal_led,"Mobility, Joints & Physical Function",0.143,No significant signal,Q26
+P09_goal_led,"Mood, Stress & Emotional Balance",0.071,No significant signal,Q43
+P09_goal_led,Immune Resilience,0.0,No significant signal,
+P09_goal_led,Respiratory body-system,0.0,No significant signal,
+P09_goal_led,Hormonal & Life-Stage Balance,0.0,No significant signal,
+P09_goal_led,Respiratory Health,0.0,No significant signal,
+P10_minimal_signal,Energy & Vitality,0.286,Weak signal,Q26
+P10_minimal_signal,Digestive & Gut Health,0.182,No significant signal,Q31; N04
+P10_minimal_signal,Healthy Weight & Metabolic Balance,0.167,No significant signal,Q31; N04
+P10_minimal_signal,Sleep & Recovery,0.164,No significant signal,N06
+P10_minimal_signal,Circulation & Cardiovascular Fitness,0.143,No significant signal,N04
+P10_minimal_signal,"Mobility, Joints & Physical Function",0.143,No significant signal,Q26
+P10_minimal_signal,"Mood, Stress & Emotional Balance",0.071,No significant signal,Q43
+P10_minimal_signal,Immune Resilience,0.0,No significant signal,
+P10_minimal_signal,Respiratory body-system,0.0,No significant signal,
+P10_minimal_signal,Hormonal & Life-Stage Balance,0.0,No significant signal,
+P10_minimal_signal,Respiratory Health,0.0,No significant signal,

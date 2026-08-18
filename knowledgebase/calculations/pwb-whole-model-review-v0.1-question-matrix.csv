@@ -1,0 +1,49 @@
+question,historical_systems,question_construct,proposed_role,proposed_disposition,system_count,score_in_new_model
+Q01,Digestive; Circulatory; Nervous; Immune; Urinary,More energy,outcome/context,"Retain, move primarily to Outcomes",5,Review; do not assume every historical mapping survives
+Q02,Immune,Frequent ill health,symptom,"Retain, add recall period",1,Review; do not assume every historical mapping survives
+Q03,Digestive; Intestinal; Respiratory; Urinary,Bad breath and/or body odour,symptom,Split,4,Review; do not assume every historical mapping survives
+Q04,Digestive; Immune,Difficulty digesting certain foods,symptom,"Retain, clarify during/with eating",2,Review; do not assume every historical mapping survives
+Q05,Intestinal; Circulatory; Respiratory,Red meat at least twice per week,lifestyle_exposure,"Rewrite as dietary pattern, distinguish processed/unprocessed",3,Review; do not assume every historical mapping survives
+Q06,Intestinal; Immune,Antibiotics or medication in last 3 years,medical/lifestyle_context,Split antibiotics from medication; shorten recall,2,Review; do not assume every historical mapping survives
+Q07,Nervous; Glandular,Regular alcohol consumption,lifestyle_exposure,"Retain, quantify",2,Review; do not assume every historical mapping survives
+Q08,Nervous; Glandular,Mood swings,symptom,"Retain, grade frequency",2,Review; do not assume every historical mapping survives
+Q09,Digestive; Immune; Respiratory,Food allergies,safety_constraint,"Retain as diagnosed-allergy/profile field, not score",3,Review; do not assume every historical mapping survives
+Q10,Circulatory; Nervous; Urinary,Dark circles under eyes,physical_observation,Demote/remove from core scoring,3,Review; do not assume every historical mapping survives
+Q11,Circulatory; Nervous; Respiratory,Smoking/passive smoking,lifestyle_exposure,"Retain, distinguish current/former/passive",3,Review; do not assume every historical mapping survives
+Q12,Circulatory; Nervous; Glandular,Concentration/memory difficulty,symptom,"Retain, consider separating concentration and memory",3,Review; do not assume every historical mapping survives
+Q13,Digestive; Immune,Poor resistance to illness,symptom/context,Retain as susceptibility dimension,2,Review; do not assume every historical mapping survives
+Q14,Digestive; Immune,Discomfort after eating,symptom,"Retain, post-meal dimension",2,Review; do not assume every historical mapping survives
+Q15,Intestinal; Circulatory; Nervous; Glandular,Stress in life/job,symptom/context,"Retain, graded",4,Review; do not assume every historical mapping survives
+Q16,Digestive; Intestinal; Urinary; Glandular; Structural,Skin problems,symptom,Narrow or replace,5,Review; do not assume every historical mapping survives
+Q17,Nervous; Glandular,Craving sweet/processed foods,behaviour,"Retain, separate craving from intake",2,Review; do not assume every historical mapping survives
+Q18,Intestinal; Respiratory,Dairy consumption,dietary_profile,Move to dietary profile/recommendation constraints,2,Review; do not assume every historical mapping survives
+Q19,Intestinal; Nervous; Glandular,Low mood/apathy,symptom,"Retain, graded and non-diagnostic",3,Review; do not assume every historical mapping survives
+Q20,Nervous; Glandular; Structural,Inadequate/restless sleep,symptom,"Retain, modern graded sleep measure",3,Review; do not assume every historical mapping survives
+Q21,Urinary,Urinary/nocturnal symptoms,symptom,"Retain, clarify nocturia/urinary symptoms",1,Review; do not assume every historical mapping survives
+Q22,Digestive; Structural,Brittle fingernails,physical_observation,Retain only as weak contextual signal,2,Review; do not assume every historical mapping survives
+Q23,Circulatory; Nervous; Glandular; Structural,Hair loss,symptom,"Retain, distinguish shedding/thinning from hair condition",4,Review; do not assume every historical mapping survives
+Q24,Digestive; Intestinal; Circulatory,Fried/ready meals or cholesterol issue,mixed,Split dietary exposure from medical context,3,Review; do not assume every historical mapping survives
+Q25,Nervous; Immune; Glandular; Structural,Difficulty managing weight,outcome/context,"Retain, move to Healthy Weight outcome",4,Review; do not assume every historical mapping survives
+Q26,Circulatory; Respiratory; Glandular,Stamina/lack of breath,mixed_symptom,Separate physical capacity from breathlessness,3,Review; do not assume every historical mapping survives
+Q27,Digestive; Intestinal; Glandular,Poor eating habits,behaviour,Replace with specific actionable behaviours,3,Review; do not assume every historical mapping survives
+Q28,Intestinal; Circulatory; Glandular,Slow recovery from ill health,symptom/context,Retain as recovery dimension,3,Review; do not assume every historical mapping survives
+Q29,Digestive; Intestinal; Nervous,Irregular/infrequent bowel activity,symptom,"Retain, avoid implying daily bowel movement is required",3,Review; do not assume every historical mapping survives
+Q30,Nervous; Glandular,Tension/difficulty relaxing,symptom,"Retain, graded",2,Review; do not assume every historical mapping survives
+Q31,Intestinal; Circulatory,Low-fibre diet,dietary_exposure,"Retain, ask about fibre-rich foods",2,Review; do not assume every historical mapping survives
+Q32,Circulatory; Nervous; Structural,Muscle discomfort,symptom,"Retain, distinguish from joints",3,Review; do not assume every historical mapping survives
+Q33,Digestive; Urinary,Dry/damaged/dull hair,physical_observation,Retain only if it adds information beyond Q23,2,Review; do not assume every historical mapping survives
+Q34,Immune; Respiratory,Air pollution exposure,environmental_exposure,"Retain, quantify meaningful exposure",2,Review; do not assume every historical mapping survives
+Q35,Circulatory; Glandular,Daytime sleepiness,symptom,"Retain, distinct from Q20",2,Review; do not assume every historical mapping survives
+Q36,Digestive; Nervous; Glandular,Loss of appetite,symptom,Retain only with safety handling,3,Review; do not assume every historical mapping survives
+Q37,Nervous; Glandular; Structural,Caffeine exposure,lifestyle_exposure,"Retain, quantify amount and timing",3,Review; do not assume every historical mapping survives
+Q38,Nervous; Immune; Glandular; Structural,Feeling out of control,symptom,Rewrite neutrally around overwhelm/emotional regulation,4,Review; do not assume every historical mapping survives
+Q39,Digestive; Intestinal; Immune,Food/chemical sensitivities,safety/profile,Clarify allergy vs intolerance vs other sensitivity,3,Review; do not assume every historical mapping survives
+Q40,Digestive; Intestinal; Immune,Yeast/fungus issues,medical_context,Rewrite or remove from core scoring,3,Review; do not assume every historical mapping survives
+Q41,Digestive; Intestinal; Circulatory; Nervous; Immune; Structural,Joint discomfort/weakness,symptom,"Retain, distinguish joints from muscle",6,Review; do not assume every historical mapping survives
+Q42,Digestive; Nervous,Excessive worry,symptom,"Retain, graded and non-diagnostic",2,Review; do not assume every historical mapping survives
+Q43,Intestinal; Nervous; Glandular,Irritability/anger,symptom,"Retain, neutral wording",3,Review; do not assume every historical mapping survives
+Q44,Intestinal; Circulatory; Nervous; Immune; Glandular; Structural,Insufficient exercise,lifestyle_exposure,"Retain, quantify activity and strength work",6,Review; do not assume every historical mapping survives
+Q45,Intestinal; Respiratory,Congestion/mucus,symptom,"Retain, focus on persistent/recurrent symptoms",2,Review; do not assume every historical mapping survives
+Q46,Intestinal; Urinary; Glandular,Menopause/menstrual concern context,conditional_context,"Retain conditionally, exact current numbering needs final reconciliation",3,Review; do not assume every historical mapping survives
+Q47,Nervous; Glandular; Structural,Menopause/menstrual symptom context,conditional_context,"Retain conditionally, distinguish concern from symptoms",3,Review; do not assume every historical mapping survives
+Q48,,Medical treatment/chronic condition,safety_constraint,Restore as separate safety/context field; no body-system score,0,Review; do not assume every historical mapping survives

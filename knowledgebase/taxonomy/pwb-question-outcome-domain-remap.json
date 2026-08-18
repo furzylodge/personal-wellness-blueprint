@@ -1,0 +1,700 @@
+{
+  "version": "0.1",
+  "status": "Complete 48-question remapping draft",
+  "purpose": "Map each historical question simultaneously to historical body-system provenance, proposed construct role and proposed outcome. This is a design layer, not a final scoring specification.",
+  "question_matrix": [
+    {
+      "question": "Q01",
+      "construct": "More energy",
+      "historical_systems": "Digestive; Circulatory; Nervous; Immune; Urinary",
+      "historical_system_count": 5,
+      "primary_outcome": "Energy & Vitality",
+      "outcome_role": "direct",
+      "proposed_role": "outcome",
+      "proposed_disposition": "retain/reframe"
+    },
+    {
+      "question": "Q02",
+      "construct": "Frequent ill health",
+      "historical_systems": "Immune",
+      "historical_system_count": 1,
+      "primary_outcome": "Immune Resilience",
+      "outcome_role": "direct",
+      "proposed_role": "symptom",
+      "proposed_disposition": "retain + recall period"
+    },
+    {
+      "question": "Q03",
+      "construct": "Bad breath/body odour",
+      "historical_systems": "Digestive; Intestinal; Respiratory; Urinary",
+      "historical_system_count": 4,
+      "primary_outcome": "Digestion & Gut Health",
+      "outcome_role": "supporting",
+      "proposed_role": "symptom",
+      "proposed_disposition": "split/clarify"
+    },
+    {
+      "question": "Q04",
+      "construct": "Difficulty digesting foods",
+      "historical_systems": "Digestive; Immune",
+      "historical_system_count": 2,
+      "primary_outcome": "Digestion & Gut Health",
+      "outcome_role": "direct",
+      "proposed_role": "symptom",
+      "proposed_disposition": "retain"
+    },
+    {
+      "question": "Q05",
+      "construct": "Red meat frequency",
+      "historical_systems": "Intestinal; Circulatory; Respiratory",
+      "historical_system_count": 3,
+      "primary_outcome": "Circulation & Cardiovascular Fitness",
+      "outcome_role": "supporting",
+      "proposed_role": "dietary exposure",
+      "proposed_disposition": "rewrite/quantify"
+    },
+    {
+      "question": "Q06",
+      "construct": "Antibiotics/medication",
+      "historical_systems": "Intestinal; Immune",
+      "historical_system_count": 2,
+      "primary_outcome": "General Health & Resilience",
+      "outcome_role": "constraint",
+      "proposed_role": "medical context",
+      "proposed_disposition": "split"
+    },
+    {
+      "question": "Q07",
+      "construct": "Alcohol",
+      "historical_systems": "Nervous; Glandular",
+      "historical_system_count": 2,
+      "primary_outcome": "General Health & Resilience",
+      "outcome_role": "supporting",
+      "proposed_role": "lifestyle exposure",
+      "proposed_disposition": "quantify"
+    },
+    {
+      "question": "Q08",
+      "construct": "Mood swings",
+      "historical_systems": "Nervous; Glandular",
+      "historical_system_count": 2,
+      "primary_outcome": "Mood, Stress & Emotional Balance",
+      "outcome_role": "supporting",
+      "proposed_role": "symptom",
+      "proposed_disposition": "retain/grade"
+    },
+    {
+      "question": "Q09",
+      "construct": "Food allergy",
+      "historical_systems": "Digestive; Immune; Respiratory",
+      "historical_system_count": 3,
+      "primary_outcome": "General Health & Resilience",
+      "outcome_role": "constraint",
+      "proposed_role": "safety/profile",
+      "proposed_disposition": "retain, no score"
+    },
+    {
+      "question": "Q10",
+      "construct": "Dark circles under eyes",
+      "historical_systems": "Circulatory; Nervous; Urinary",
+      "historical_system_count": 3,
+      "primary_outcome": "General Health & Resilience",
+      "outcome_role": "weak",
+      "proposed_role": "physical observation",
+      "proposed_disposition": "demote/remove candidate"
+    },
+    {
+      "question": "Q11",
+      "construct": "Smoking/passive smoke",
+      "historical_systems": "Circulatory; Nervous; Respiratory",
+      "historical_system_count": 3,
+      "primary_outcome": "Circulation & Cardiovascular Fitness",
+      "outcome_role": "supporting",
+      "proposed_role": "lifestyle exposure",
+      "proposed_disposition": "retain/distinguish"
+    },
+    {
+      "question": "Q12",
+      "construct": "Concentration/memory",
+      "historical_systems": "Circulatory; Nervous; Glandular",
+      "historical_system_count": 3,
+      "primary_outcome": "Energy & Vitality",
+      "outcome_role": "supporting",
+      "proposed_role": "symptom",
+      "proposed_disposition": "retain/possibly split"
+    },
+    {
+      "question": "Q13",
+      "construct": "Resistance to illness",
+      "historical_systems": "Digestive; Immune",
+      "historical_system_count": 2,
+      "primary_outcome": "Immune Resilience",
+      "outcome_role": "direct",
+      "proposed_role": "symptom",
+      "proposed_disposition": "retain"
+    },
+    {
+      "question": "Q14",
+      "construct": "Post-meal discomfort",
+      "historical_systems": "Digestive; Immune",
+      "historical_system_count": 2,
+      "primary_outcome": "Digestion & Gut Health",
+      "outcome_role": "direct",
+      "proposed_role": "symptom",
+      "proposed_disposition": "retain"
+    },
+    {
+      "question": "Q15",
+      "construct": "Stress",
+      "historical_systems": "Intestinal; Circulatory; Nervous; Glandular",
+      "historical_system_count": 4,
+      "primary_outcome": "Mood, Stress & Emotional Balance",
+      "outcome_role": "direct",
+      "proposed_role": "symptom",
+      "proposed_disposition": "retain/grade"
+    },
+    {
+      "question": "Q16",
+      "construct": "Skin problems",
+      "historical_systems": "Digestive; Intestinal; Urinary; Glandular; Structural",
+      "historical_system_count": 5,
+      "primary_outcome": "General Health & Resilience",
+      "outcome_role": "weak",
+      "proposed_role": "symptom",
+      "proposed_disposition": "narrow or replace"
+    },
+    {
+      "question": "Q17",
+      "construct": "Sweet/processed-food cravings",
+      "historical_systems": "Nervous; Glandular",
+      "historical_system_count": 2,
+      "primary_outcome": "Healthy Weight & Metabolic Balance",
+      "outcome_role": "supporting",
+      "proposed_role": "behaviour",
+      "proposed_disposition": "retain; separate intake"
+    },
+    {
+      "question": "Q18",
+      "construct": "Dairy consumption",
+      "historical_systems": "Intestinal; Respiratory",
+      "historical_system_count": 2,
+      "primary_outcome": "Digestion & Gut Health",
+      "outcome_role": "constraint",
+      "proposed_role": "dietary profile",
+      "proposed_disposition": "move to profile"
+    },
+    {
+      "question": "Q19",
+      "construct": "Low mood/apathy",
+      "historical_systems": "Intestinal; Nervous; Glandular",
+      "historical_system_count": 3,
+      "primary_outcome": "Mood, Stress & Emotional Balance",
+      "outcome_role": "direct",
+      "proposed_role": "symptom",
+      "proposed_disposition": "retain/grade"
+    },
+    {
+      "question": "Q20",
+      "construct": "Poor/restless sleep",
+      "historical_systems": "Nervous; Glandular; Structural",
+      "historical_system_count": 3,
+      "primary_outcome": "Sleep & Recovery",
+      "outcome_role": "direct",
+      "proposed_role": "symptom",
+      "proposed_disposition": "retain/modernise"
+    },
+    {
+      "question": "Q21",
+      "construct": "Nocturnal urinary symptoms",
+      "historical_systems": "Urinary",
+      "historical_system_count": 1,
+      "primary_outcome": "Sleep & Recovery",
+      "outcome_role": "supporting",
+      "proposed_role": "symptom",
+      "proposed_disposition": "clarify"
+    },
+    {
+      "question": "Q22",
+      "construct": "Brittle nails",
+      "historical_systems": "Digestive; Structural",
+      "historical_system_count": 2,
+      "primary_outcome": "General Health & Resilience",
+      "outcome_role": "weak",
+      "proposed_role": "physical observation",
+      "proposed_disposition": "retain only weakly"
+    },
+    {
+      "question": "Q23",
+      "construct": "Hair loss",
+      "historical_systems": "Circulatory; Nervous; Glandular; Structural",
+      "historical_system_count": 4,
+      "primary_outcome": "Hormonal & Life-Stage Balance",
+      "outcome_role": "supporting",
+      "proposed_role": "symptom",
+      "proposed_disposition": "retain/distinguish from Q33"
+    },
+    {
+      "question": "Q24",
+      "construct": "Fried/ready meals or cholesterol",
+      "historical_systems": "Digestive; Intestinal; Circulatory",
+      "historical_system_count": 3,
+      "primary_outcome": "Circulation & Cardiovascular Fitness",
+      "outcome_role": "direct + constraint",
+      "proposed_role": "mixed",
+      "proposed_disposition": "split"
+    },
+    {
+      "question": "Q25",
+      "construct": "Weight-management difficulty",
+      "historical_systems": "Nervous; Immune; Glandular; Structural",
+      "historical_system_count": 4,
+      "primary_outcome": "Healthy Weight & Metabolic Balance",
+      "outcome_role": "direct",
+      "proposed_role": "outcome",
+      "proposed_disposition": "retain"
+    },
+    {
+      "question": "Q26",
+      "construct": "Stamina/breathlessness",
+      "historical_systems": "Circulatory; Respiratory; Glandular",
+      "historical_system_count": 3,
+      "primary_outcome": "Energy & Vitality",
+      "outcome_role": "direct + safety",
+      "proposed_role": "mixed symptom",
+      "proposed_disposition": "split"
+    },
+    {
+      "question": "Q27",
+      "construct": "Poor eating habits",
+      "historical_systems": "Digestive; Intestinal; Glandular",
+      "historical_system_count": 3,
+      "primary_outcome": "Healthy Weight & Metabolic Balance",
+      "outcome_role": "supporting",
+      "proposed_role": "behaviour",
+      "proposed_disposition": "replace with specific behaviours"
+    },
+    {
+      "question": "Q28",
+      "construct": "Slow recovery",
+      "historical_systems": "Intestinal; Circulatory; Glandular",
+      "historical_system_count": 3,
+      "primary_outcome": "Immune Resilience",
+      "outcome_role": "direct",
+      "proposed_role": "symptom",
+      "proposed_disposition": "retain"
+    },
+    {
+      "question": "Q29",
+      "construct": "Irregular bowel activity",
+      "historical_systems": "Digestive; Intestinal; Nervous",
+      "historical_system_count": 3,
+      "primary_outcome": "Digestion & Gut Health",
+      "outcome_role": "direct",
+      "proposed_role": "symptom",
+      "proposed_disposition": "retain/modernise"
+    },
+    {
+      "question": "Q30",
+      "construct": "Tension/difficulty relaxing",
+      "historical_systems": "Nervous; Glandular",
+      "historical_system_count": 2,
+      "primary_outcome": "Mood, Stress & Emotional Balance",
+      "outcome_role": "direct",
+      "proposed_role": "symptom",
+      "proposed_disposition": "retain"
+    },
+    {
+      "question": "Q31",
+      "construct": "Low fibre",
+      "historical_systems": "Intestinal; Circulatory",
+      "historical_system_count": 2,
+      "primary_outcome": "Digestion & Gut Health",
+      "outcome_role": "supporting",
+      "proposed_role": "dietary exposure",
+      "proposed_disposition": "modernise"
+    },
+    {
+      "question": "Q32",
+      "construct": "Muscle discomfort",
+      "historical_systems": "Circulatory; Nervous; Structural",
+      "historical_system_count": 3,
+      "primary_outcome": "Mobility, Joints & Physical Function",
+      "outcome_role": "direct",
+      "proposed_role": "symptom",
+      "proposed_disposition": "retain"
+    },
+    {
+      "question": "Q33",
+      "construct": "Dry/damaged/dull hair",
+      "historical_systems": "Digestive; Urinary",
+      "historical_system_count": 2,
+      "primary_outcome": "Hormonal & Life-Stage Balance",
+      "outcome_role": "weak",
+      "proposed_role": "physical observation",
+      "proposed_disposition": "retain only if incremental"
+    },
+    {
+      "question": "Q34",
+      "construct": "Air pollution",
+      "historical_systems": "Immune; Respiratory",
+      "historical_system_count": 2,
+      "primary_outcome": "Respiratory Health",
+      "outcome_role": "supporting",
+      "proposed_role": "environmental exposure",
+      "proposed_disposition": "retain/quantify"
+    },
+    {
+      "question": "Q35",
+      "construct": "Daytime sleepiness",
+      "historical_systems": "Circulatory; Glandular",
+      "historical_system_count": 2,
+      "primary_outcome": "Sleep & Recovery",
+      "outcome_role": "direct",
+      "proposed_role": "symptom",
+      "proposed_disposition": "retain"
+    },
+    {
+      "question": "Q36",
+      "construct": "Loss of appetite",
+      "historical_systems": "Digestive; Nervous; Glandular",
+      "historical_system_count": 3,
+      "primary_outcome": "General Health & Resilience",
+      "outcome_role": "constraint",
+      "proposed_role": "symptom",
+      "proposed_disposition": "retain only with safety"
+    },
+    {
+      "question": "Q37",
+      "construct": "Caffeine",
+      "historical_systems": "Nervous; Glandular; Structural",
+      "historical_system_count": 3,
+      "primary_outcome": "Sleep & Recovery",
+      "outcome_role": "supporting",
+      "proposed_role": "lifestyle exposure",
+      "proposed_disposition": "quantify amount/timing"
+    },
+    {
+      "question": "Q38",
+      "construct": "Feeling out of control/overwhelmed",
+      "historical_systems": "Nervous; Immune; Glandular; Structural",
+      "historical_system_count": 4,
+      "primary_outcome": "Mood, Stress & Emotional Balance",
+      "outcome_role": "direct",
+      "proposed_role": "symptom",
+      "proposed_disposition": "rewrite"
+    },
+    {
+      "question": "Q39",
+      "construct": "Food/chemical sensitivities",
+      "historical_systems": "Digestive; Intestinal; Immune",
+      "historical_system_count": 3,
+      "primary_outcome": "Digestion & Gut Health",
+      "outcome_role": "constraint",
+      "proposed_role": "safety/profile",
+      "proposed_disposition": "separate allergy/intolerance"
+    },
+    {
+      "question": "Q40",
+      "construct": "Yeast/fungus issues",
+      "historical_systems": "Digestive; Intestinal; Immune",
+      "historical_system_count": 3,
+      "primary_outcome": "General Health & Resilience",
+      "outcome_role": "constraint",
+      "proposed_role": "medical context",
+      "proposed_disposition": "remove from core or rewrite"
+    },
+    {
+      "question": "Q41",
+      "construct": "Joint discomfort/weakness",
+      "historical_systems": "Digestive; Intestinal; Circulatory; Nervous; Immune; Structural",
+      "historical_system_count": 6,
+      "primary_outcome": "Mobility, Joints & Physical Function",
+      "outcome_role": "direct",
+      "proposed_role": "symptom",
+      "proposed_disposition": "retain"
+    },
+    {
+      "question": "Q42",
+      "construct": "Excessive worry",
+      "historical_systems": "Digestive; Nervous",
+      "historical_system_count": 2,
+      "primary_outcome": "Mood, Stress & Emotional Balance",
+      "outcome_role": "direct",
+      "proposed_role": "symptom",
+      "proposed_disposition": "retain"
+    },
+    {
+      "question": "Q43",
+      "construct": "Irritability/anger",
+      "historical_systems": "Intestinal; Nervous; Glandular",
+      "historical_system_count": 3,
+      "primary_outcome": "Mood, Stress & Emotional Balance",
+      "outcome_role": "direct",
+      "proposed_role": "symptom",
+      "proposed_disposition": "retain"
+    },
+    {
+      "question": "Q44",
+      "construct": "Exercise level",
+      "historical_systems": "Intestinal; Circulatory; Nervous; Immune; Glandular; Structural",
+      "historical_system_count": 6,
+      "primary_outcome": "Sports Performance & Physical Capacity",
+      "outcome_role": "direct",
+      "proposed_role": "lifestyle exposure",
+      "proposed_disposition": "modernise/quantify"
+    },
+    {
+      "question": "Q45",
+      "construct": "Congestion/mucus",
+      "historical_systems": "Intestinal; Respiratory",
+      "historical_system_count": 2,
+      "primary_outcome": "Respiratory Health",
+      "outcome_role": "direct",
+      "proposed_role": "symptom",
+      "proposed_disposition": "retain/recurrent"
+    },
+    {
+      "question": "Q46",
+      "construct": "Medical treatment",
+      "historical_systems": "Intestinal; Urinary; Glandular",
+      "historical_system_count": 3,
+      "primary_outcome": "General Health & Resilience",
+      "outcome_role": "constraint",
+      "proposed_role": "medical context",
+      "proposed_disposition": "restore safety field"
+    },
+    {
+      "question": "Q47",
+      "construct": "Menstruation issues",
+      "historical_systems": "Nervous; Glandular; Structural",
+      "historical_system_count": 3,
+      "primary_outcome": "Hormonal & Life-Stage Balance",
+      "outcome_role": "direct",
+      "proposed_role": "conditional symptom",
+      "proposed_disposition": "conditional"
+    },
+    {
+      "question": "Q48",
+      "construct": "Menopause concerns",
+      "historical_systems": "",
+      "historical_system_count": 0,
+      "primary_outcome": "Hormonal & Life-Stage Balance",
+      "outcome_role": "context",
+      "proposed_role": "conditional context",
+      "proposed_disposition": "conditional"
+    }
+  ],
+  "outcome_coverage": [
+    {
+      "primary_outcome": "Circulation & Cardiovascular Fitness",
+      "question_count": 3,
+      "questions": "Q05, Q11, Q24"
+    },
+    {
+      "primary_outcome": "Digestion & Gut Health",
+      "question_count": 7,
+      "questions": "Q03, Q04, Q14, Q18, Q29, Q31, Q39"
+    },
+    {
+      "primary_outcome": "Energy & Vitality",
+      "question_count": 3,
+      "questions": "Q01, Q12, Q26"
+    },
+    {
+      "primary_outcome": "General Health & Resilience",
+      "question_count": 9,
+      "questions": "Q06, Q07, Q09, Q10, Q16, Q22, Q36, Q40, Q46"
+    },
+    {
+      "primary_outcome": "Healthy Weight & Metabolic Balance",
+      "question_count": 3,
+      "questions": "Q17, Q25, Q27"
+    },
+    {
+      "primary_outcome": "Hormonal & Life-Stage Balance",
+      "question_count": 4,
+      "questions": "Q23, Q33, Q47, Q48"
+    },
+    {
+      "primary_outcome": "Immune Resilience",
+      "question_count": 3,
+      "questions": "Q02, Q13, Q28"
+    },
+    {
+      "primary_outcome": "Mobility, Joints & Physical Function",
+      "question_count": 2,
+      "questions": "Q32, Q41"
+    },
+    {
+      "primary_outcome": "Mood, Stress & Emotional Balance",
+      "question_count": 7,
+      "questions": "Q08, Q15, Q19, Q30, Q38, Q42, Q43"
+    },
+    {
+      "primary_outcome": "Respiratory Health",
+      "question_count": 2,
+      "questions": "Q34, Q45"
+    },
+    {
+      "primary_outcome": "Sleep & Recovery",
+      "question_count": 4,
+      "questions": "Q20, Q21, Q35, Q37"
+    },
+    {
+      "primary_outcome": "Sports Performance & Physical Capacity",
+      "question_count": 1,
+      "questions": "Q44"
+    }
+  ],
+  "broad_historical_mappings": [
+    {
+      "question": "Q48",
+      "construct": "Menopause concerns",
+      "historical_systems": "",
+      "historical_system_count": 0,
+      "primary_outcome": "Hormonal & Life-Stage Balance",
+      "outcome_role": "context",
+      "proposed_role": "conditional context",
+      "proposed_disposition": "conditional"
+    },
+    {
+      "question": "Q02",
+      "construct": "Frequent ill health",
+      "historical_systems": "Immune",
+      "historical_system_count": 1,
+      "primary_outcome": "Immune Resilience",
+      "outcome_role": "direct",
+      "proposed_role": "symptom",
+      "proposed_disposition": "retain + recall period"
+    },
+    {
+      "question": "Q21",
+      "construct": "Nocturnal urinary symptoms",
+      "historical_systems": "Urinary",
+      "historical_system_count": 1,
+      "primary_outcome": "Sleep & Recovery",
+      "outcome_role": "supporting",
+      "proposed_role": "symptom",
+      "proposed_disposition": "clarify"
+    },
+    {
+      "question": "Q04",
+      "construct": "Difficulty digesting foods",
+      "historical_systems": "Digestive; Immune",
+      "historical_system_count": 2,
+      "primary_outcome": "Digestion & Gut Health",
+      "outcome_role": "direct",
+      "proposed_role": "symptom",
+      "proposed_disposition": "retain"
+    },
+    {
+      "question": "Q06",
+      "construct": "Antibiotics/medication",
+      "historical_systems": "Intestinal; Immune",
+      "historical_system_count": 2,
+      "primary_outcome": "General Health & Resilience",
+      "outcome_role": "constraint",
+      "proposed_role": "medical context",
+      "proposed_disposition": "split"
+    },
+    {
+      "question": "Q07",
+      "construct": "Alcohol",
+      "historical_systems": "Nervous; Glandular",
+      "historical_system_count": 2,
+      "primary_outcome": "General Health & Resilience",
+      "outcome_role": "supporting",
+      "proposed_role": "lifestyle exposure",
+      "proposed_disposition": "quantify"
+    },
+    {
+      "question": "Q08",
+      "construct": "Mood swings",
+      "historical_systems": "Nervous; Glandular",
+      "historical_system_count": 2,
+      "primary_outcome": "Mood, Stress & Emotional Balance",
+      "outcome_role": "supporting",
+      "proposed_role": "symptom",
+      "proposed_disposition": "retain/grade"
+    },
+    {
+      "question": "Q13",
+      "construct": "Resistance to illness",
+      "historical_systems": "Digestive; Immune",
+      "historical_system_count": 2,
+      "primary_outcome": "Immune Resilience",
+      "outcome_role": "direct",
+      "proposed_role": "symptom",
+      "proposed_disposition": "retain"
+    },
+    {
+      "question": "Q14",
+      "construct": "Post-meal discomfort",
+      "historical_systems": "Digestive; Immune",
+      "historical_system_count": 2,
+      "primary_outcome": "Digestion & Gut Health",
+      "outcome_role": "direct",
+      "proposed_role": "symptom",
+      "proposed_disposition": "retain"
+    },
+    {
+      "question": "Q17",
+      "construct": "Sweet/processed-food cravings",
+      "historical_systems": "Nervous; Glandular",
+      "historical_system_count": 2,
+      "primary_outcome": "Healthy Weight & Metabolic Balance",
+      "outcome_role": "supporting",
+      "proposed_role": "behaviour",
+      "proposed_disposition": "retain; separate intake"
+    },
+    {
+      "question": "Q18",
+      "construct": "Dairy consumption",
+      "historical_systems": "Intestinal; Respiratory",
+      "historical_system_count": 2,
+      "primary_outcome": "Digestion & Gut Health",
+      "outcome_role": "constraint",
+      "proposed_role": "dietary profile",
+      "proposed_disposition": "move to profile"
+    },
+    {
+      "question": "Q22",
+      "construct": "Brittle nails",
+      "historical_systems": "Digestive; Structural",
+      "historical_system_count": 2,
+      "primary_outcome": "General Health & Resilience",
+      "outcome_role": "weak",
+      "proposed_role": "physical observation",
+      "proposed_disposition": "retain only weakly"
+    }
+  ],
+  "decision_groups": [
+    {
+      "decision_group": "Keep essentially intact",
+      "questions": "Q02,Q04,Q08,Q13,Q14,Q15,Q19,Q20,Q28,Q29,Q30,Q32,Q35,Q41,Q42,Q43,Q45",
+      "principle": "Modernise response scale/recall where appropriate."
+    },
+    {
+      "decision_group": "Keep but redesign",
+      "questions": "Q05,Q06,Q07,Q11,Q12,Q17,Q21,Q24,Q26,Q27,Q31,Q34,Q37,Q38,Q44,Q47,Q48",
+      "principle": "Change construct handling, quantify exposure, split double-barrelled items or add safety logic."
+    },
+    {
+      "decision_group": "Profile / constraint rather than score",
+      "questions": "Q09,Q18,Q39,Q46",
+      "principle": "Influence recommendations and interpretation, not wellness severity."
+    },
+    {
+      "decision_group": "Weak / replacement candidates",
+      "questions": "Q10,Q16,Q22,Q33,Q40",
+      "principle": "Require stronger evidence or incremental value before retaining in core instrument."
+    },
+    {
+      "decision_group": "Outcome/context rather than system score",
+      "questions": "Q01,Q25",
+      "principle": "Express goals or outcomes rather than a body-system problem."
+    }
+  ],
+  "key_conclusion": "The 48-question historical instrument can support the proposed outcome model, but it should not be converted directly into 48 binary score contributions. Several questions are constraints, profiles, outcomes, exposures or weak candidates.",
+  "next_step": "Build a proposed 2026 question blueprint, including candidate replacements/new questions, before defining score weights."
+}

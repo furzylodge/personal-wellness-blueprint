@@ -1,0 +1,549 @@
+{
+  "version": "0.1",
+  "status": "Draft outcome model",
+  "basis": "Supplied Health Check text-codes, supplied newer-form question structure, supplied Gut Reset PDF and supplied bioactive/mechanism registry material.",
+  "important_boundary": "The outcome entities below are a proposed architecture. They are not presented as existing implemented outcomes unless the source explicitly establishes them.",
+  "existing_explicit_goal_categories": [
+    "General health",
+    "Digestion / Weight Management",
+    "Mobility / Aches & Pains",
+    "Circulation / Cardio",
+    "Sports Performance"
+  ],
+  "proposed_outcomes": [
+    {
+      "id": "OUT001",
+      "name": "General Health & Resilience",
+      "status": "proposed",
+      "source_basis": [
+        "Existing Health Check result category: General health",
+        "Existing immune/resilience result language"
+      ],
+      "purpose": "Broad wellbeing and resilience outcome when the user does not have a single dominant goal.",
+      "primary_signals": [
+        "overall lifestyle load",
+        "recovery",
+        "immune/resilience",
+        "energy"
+      ],
+      "secondary_signals": [
+        "sleep",
+        "stress",
+        "nutrition",
+        "activity"
+      ],
+      "body_domains": [
+        "Immune Function & Resilience",
+        "Mind, Stress & Cognitive Function",
+        "Digestive Function",
+        "Circulatory & Cardiovascular Function"
+      ],
+      "notes": "Keep broad enough to be useful, but do not allow it to become a dumping ground for every question."
+    },
+    {
+      "id": "OUT002",
+      "name": "Energy & Vitality",
+      "status": "proposed",
+      "source_basis": [
+        "Existing Q1 wording: more energy",
+        "Gut Reset material: Energy levels soar",
+        "Existing result language concerning energy stability"
+      ],
+      "purpose": "Support a person's stated goal of having more energy and vitality.",
+      "primary_signals": [
+        "energy",
+        "stamina",
+        "daytime sleepiness",
+        "sleep",
+        "activity",
+        "nutrition"
+      ],
+      "secondary_signals": [
+        "stress",
+        "recovery",
+        "caffeine"
+      ],
+      "body_domains": [
+        "Mind, Stress & Cognitive Function",
+        "Circulatory & Cardiovascular Function",
+        "Digestive Function",
+        "Endocrine & Hormonal Regulation"
+      ],
+      "notes": "Energy should be an explicit outcome, not simply a proxy for one body-system score."
+    },
+    {
+      "id": "OUT003",
+      "name": "Sleep & Recovery",
+      "status": "proposed",
+      "source_basis": [
+        "Gut Reset material: Sleep improves",
+        "Q20 inadequate/restless sleep",
+        "Q35 daytime sleepiness",
+        "existing nervous-system result language"
+      ],
+      "purpose": "Support better sleep quality and recovery.",
+      "primary_signals": [
+        "sleep quality",
+        "daytime sleepiness",
+        "stress",
+        "worry",
+        "caffeine"
+      ],
+      "secondary_signals": [
+        "energy",
+        "recovery",
+        "hormonal context"
+      ],
+      "body_domains": [
+        "Mind, Stress & Cognitive Function",
+        "Endocrine & Hormonal Regulation"
+      ],
+      "notes": "Sleep is sufficiently represented in the source material to warrant a dedicated outcome."
+    },
+    {
+      "id": "OUT004",
+      "name": "Digestion & Gut Health",
+      "status": "proposed",
+      "source_basis": [
+        "Existing result category: Digestion / Weight Management",
+        "Gut Reset material: Digestion is improved",
+        "Existing Digestive and Intestinal system results"
+      ],
+      "purpose": "Support digestive comfort, regularity and gut/intestinal resilience.",
+      "primary_signals": [
+        "post-meal discomfort",
+        "bowel regularity",
+        "fibre",
+        "diet quality",
+        "gut symptoms"
+      ],
+      "secondary_signals": [
+        "stress",
+        "hydration",
+        "food sensitivities"
+      ],
+      "body_domains": [
+        "Digestive Function",
+        "Gut & Intestinal Health"
+      ],
+      "notes": "Separate digestion from weight management in the new model even though the historical result category combined them."
+    },
+    {
+      "id": "OUT005",
+      "name": "Healthy Weight & Metabolic Balance",
+      "status": "proposed",
+      "source_basis": [
+        "Existing result category: Digestion / Weight Management",
+        "Q25 difficulty maintaining ideal weight",
+        "Gut Reset material: Weight control is easier",
+        "Q17 cravings and Q24 dietary/cholesterol context"
+      ],
+      "purpose": "Support healthy weight-management behaviours and metabolic wellbeing.",
+      "primary_signals": [
+        "weight-management difficulty",
+        "food cravings",
+        "diet quality",
+        "activity",
+        "sleep"
+      ],
+      "secondary_signals": [
+        "stress",
+        "energy",
+        "digestive function"
+      ],
+      "body_domains": [
+        "Digestive Function",
+        "Endocrine & Hormonal Regulation",
+        "Circulatory & Cardiovascular Function"
+      ],
+      "notes": "Do not turn this into a diagnostic metabolic score."
+    },
+    {
+      "id": "OUT006",
+      "name": "Mobility, Joints & Physical Function",
+      "status": "proposed",
+      "source_basis": [
+        "Existing result category: Mobility / Aches & Pains",
+        "Gut Reset material: Aches & pains reduce",
+        "Q32 muscle discomfort",
+        "Q41 joint discomfort/weakness",
+        "FL-3X factsheet positioning around mobility, range of motion and flexibility"
+      ],
+      "purpose": "Support movement, mobility, comfort and physical function.",
+      "primary_signals": [
+        "joint discomfort",
+        "muscle discomfort",
+        "mobility",
+        "activity"
+      ],
+      "secondary_signals": [
+        "recovery",
+        "physical load"
+      ],
+      "body_domains": [
+        "Musculoskeletal & Physical Function"
+      ],
+      "notes": "This should distinguish joint and muscle constructs rather than treating all aches and pains as one signal."
+    },
+    {
+      "id": "OUT007",
+      "name": "Circulation & Cardiovascular Fitness",
+      "status": "proposed",
+      "source_basis": [
+        "Existing result category: Circulation / Cardio",
+        "Existing Circulatory system result language",
+        "Current bioactive evidence containing vascular/circulatory mechanisms"
+      ],
+      "purpose": "Support healthy circulation and cardiovascular fitness.",
+      "primary_signals": [
+        "activity",
+        "stamina",
+        "circulatory lifestyle factors"
+      ],
+      "secondary_signals": [
+        "diet quality",
+        "smoking",
+        "stress"
+      ],
+      "body_domains": [
+        "Circulatory & Cardiovascular Function"
+      ],
+      "notes": "Keep lifestyle-support framing and avoid diagnosing cardiovascular disease."
+    },
+    {
+      "id": "OUT008",
+      "name": "Sports Performance & Physical Capacity",
+      "status": "proposed",
+      "source_basis": [
+        "Existing result category: Sports Performance",
+        "Current bioactive registry includes creatine with muscle/brain energy and performance keywords"
+      ],
+      "purpose": "Support exercise capacity, training, recovery and performance.",
+      "primary_signals": [
+        "exercise frequency",
+        "stamina",
+        "recovery",
+        "muscle function"
+      ],
+      "secondary_signals": [
+        "sleep",
+        "energy",
+        "nutrition"
+      ],
+      "body_domains": [
+        "Musculoskeletal & Physical Function",
+        "Circulatory & Cardiovascular Function"
+      ],
+      "notes": "This is a distinct goal from general mobility. Someone can have good mobility but want better performance."
+    },
+    {
+      "id": "OUT009",
+      "name": "Mood, Stress & Emotional Balance",
+      "status": "proposed",
+      "source_basis": [
+        "Gut Reset material: Happiness goes up",
+        "Q15 stress",
+        "Q19 low mood/apathy",
+        "Q30 tension",
+        "Q38 feeling out of control",
+        "Q42 worry",
+        "Q43 irritability/anger",
+        "existing nervous-system result language"
+      ],
+      "purpose": "Support healthy stress management, emotional balance and recovery.",
+      "primary_signals": [
+        "stress",
+        "worry",
+        "tension",
+        "low mood",
+        "irritability",
+        "overwhelm"
+      ],
+      "secondary_signals": [
+        "sleep",
+        "caffeine",
+        "recovery"
+      ],
+      "body_domains": [
+        "Mind, Stress & Cognitive Function"
+      ],
+      "notes": "Use neutral, non-diagnostic language. This is a wellbeing outcome, not a mental-health diagnosis."
+    },
+    {
+      "id": "OUT010",
+      "name": "Immune Resilience",
+      "status": "proposed",
+      "source_basis": [
+        "Gut Reset material: Immunity is boosted",
+        "Q2 frequent ill health",
+        "Q13 resistance to illness",
+        "Q28 slow recovery",
+        "existing Immune system result language"
+      ],
+      "purpose": "Support normal resilience and recovery from everyday health challenges.",
+      "primary_signals": [
+        "illness frequency",
+        "recovery",
+        "sleep",
+        "nutrition",
+        "stress"
+      ],
+      "secondary_signals": [
+        "activity",
+        "environmental exposure"
+      ],
+      "body_domains": [
+        "Immune Function & Resilience"
+      ],
+      "notes": "Use 'resilience' rather than implying the questionnaire measures immune competence or deficiency."
+    },
+    {
+      "id": "OUT011",
+      "name": "Hormonal & Life-Stage Balance",
+      "status": "proposed",
+      "source_basis": [
+        "Gut Reset material: Hormones balance",
+        "Q47 menstruation issues and Q48 menopausal concerns in text-codes",
+        "Existing Glandular system construct"
+      ],
+      "purpose": "Provide appropriate lifestyle context for hormonal and life-stage concerns.",
+      "primary_signals": [
+        "menstrual/menopausal context",
+        "sleep",
+        "stress",
+        "energy"
+      ],
+      "secondary_signals": [
+        "weight",
+        "mood",
+        "diet"
+      ],
+      "body_domains": [
+        "Endocrine & Hormonal Regulation"
+      ],
+      "notes": "This must be conditional and must not imply measurement of hormone levels."
+    },
+    {
+      "id": "OUT012",
+      "name": "Healthy Ageing & Cellular Resilience",
+      "status": "proposed",
+      "source_basis": [
+        "Gut Reset material: You look more youthful",
+        "Current bioactive registry includes healthy-ageing/cellular-resilience terminology"
+      ],
+      "purpose": "Support long-term healthy ageing and cellular resilience as a broad wellbeing goal.",
+      "primary_signals": [
+        "activity",
+        "diet quality",
+        "circulation",
+        "energy",
+        "recovery"
+      ],
+      "secondary_signals": [
+        "sleep",
+        "oxidative-stress-related mechanisms"
+      ],
+      "body_domains": [
+        "Circulatory & Cardiovascular Function",
+        "Mind, Stress & Cognitive Function",
+        "Immune Function & Resilience"
+      ],
+      "notes": "This is a candidate outcome and needs stronger definition before it is allowed to drive recommendations."
+    }
+  ],
+  "question_outcome_seed_mapping": [
+    {
+      "question": "Q01",
+      "outcome": "Energy & Vitality",
+      "role": "direct"
+    },
+    {
+      "question": "Q02",
+      "outcome": "Immune Resilience",
+      "role": "direct"
+    },
+    {
+      "question": "Q03",
+      "outcome": "Digestion & Gut Health",
+      "role": "supporting"
+    },
+    {
+      "question": "Q04",
+      "outcome": "Digestion & Gut Health",
+      "role": "direct"
+    },
+    {
+      "question": "Q08",
+      "outcome": "Mood, Stress & Emotional Balance",
+      "role": "supporting"
+    },
+    {
+      "question": "Q12",
+      "outcome": "Energy & Vitality",
+      "role": "supporting"
+    },
+    {
+      "question": "Q13",
+      "outcome": "Immune Resilience",
+      "role": "direct"
+    },
+    {
+      "question": "Q14",
+      "outcome": "Digestion & Gut Health",
+      "role": "direct"
+    },
+    {
+      "question": "Q15",
+      "outcome": "Mood, Stress & Emotional Balance",
+      "role": "direct"
+    },
+    {
+      "question": "Q17",
+      "outcome": "Healthy Weight & Metabolic Balance",
+      "role": "supporting"
+    },
+    {
+      "question": "Q19",
+      "outcome": "Mood, Stress & Emotional Balance",
+      "role": "direct"
+    },
+    {
+      "question": "Q20",
+      "outcome": "Sleep & Recovery",
+      "role": "direct"
+    },
+    {
+      "question": "Q25",
+      "outcome": "Healthy Weight & Metabolic Balance",
+      "role": "direct"
+    },
+    {
+      "question": "Q26",
+      "outcome": "Energy & Vitality",
+      "role": "supporting"
+    },
+    {
+      "question": "Q28",
+      "outcome": "Immune Resilience",
+      "role": "supporting"
+    },
+    {
+      "question": "Q29",
+      "outcome": "Digestion & Gut Health",
+      "role": "direct"
+    },
+    {
+      "question": "Q30",
+      "outcome": "Mood, Stress & Emotional Balance",
+      "role": "direct"
+    },
+    {
+      "question": "Q31",
+      "outcome": "Digestion & Gut Health",
+      "role": "supporting"
+    },
+    {
+      "question": "Q32",
+      "outcome": "Mobility, Joints & Physical Function",
+      "role": "direct"
+    },
+    {
+      "question": "Q35",
+      "outcome": "Sleep & Recovery",
+      "role": "direct"
+    },
+    {
+      "question": "Q37",
+      "outcome": "Sleep & Recovery",
+      "role": "supporting"
+    },
+    {
+      "question": "Q38",
+      "outcome": "Mood, Stress & Emotional Balance",
+      "role": "direct"
+    },
+    {
+      "question": "Q41",
+      "outcome": "Mobility, Joints & Physical Function",
+      "role": "direct"
+    },
+    {
+      "question": "Q42",
+      "outcome": "Mood, Stress & Emotional Balance",
+      "role": "direct"
+    },
+    {
+      "question": "Q43",
+      "outcome": "Mood, Stress & Emotional Balance",
+      "role": "direct"
+    },
+    {
+      "question": "Q44",
+      "outcome": "Sports Performance & Physical Capacity",
+      "role": "direct"
+    },
+    {
+      "question": "Q45",
+      "outcome": "Respiratory Health",
+      "role": "supporting"
+    },
+    {
+      "question": "Q46",
+      "outcome": "Safety / Life-stage context",
+      "role": "constraint"
+    },
+    {
+      "question": "Q47",
+      "outcome": "Hormonal & Life-Stage Balance",
+      "role": "direct"
+    },
+    {
+      "question": "Q48",
+      "outcome": "Safety / Medical context",
+      "role": "constraint"
+    }
+  ],
+  "architecture": [
+    {
+      "layer": "Profile",
+      "purpose": "Who the person is and relevant context",
+      "description": "Age, sex/gender context where appropriate, dietary profile and other non-scored context."
+    },
+    {
+      "layer": "Goals / Outcomes",
+      "purpose": "What the person wants help with",
+      "description": "One or more selected outcomes. These drive prioritisation."
+    },
+    {
+      "layer": "Signals",
+      "purpose": "What the questionnaire tells us",
+      "description": "Symptoms, behaviours, exposures and observations, each tagged by construct."
+    },
+    {
+      "layer": "Functional domains",
+      "purpose": "Where the signals cluster",
+      "description": "The nine historical domains, modernised but retained for continuity."
+    },
+    {
+      "layer": "Cross-domain mechanisms",
+      "purpose": "How signals interact",
+      "description": "Sleep, stress, energy, activity, nutrition, recovery and other legitimate cross-domain constructs."
+    },
+    {
+      "layer": "Constraints",
+      "purpose": "What must not be recommended blindly",
+      "description": "Medical treatment, allergies, sensitivities and other safety/context fields."
+    },
+    {
+      "layer": "Evidence layer",
+      "purpose": "What the knowledge base supports",
+      "description": "Bioactives, mechanisms, foods and products with evidence/confidence metadata."
+    },
+    {
+      "layer": "Recommendation engine",
+      "purpose": "What to show the user",
+      "description": "Ranked recommendations based on selected outcomes, signals, constraints and evidence."
+    }
+  ],
+  "next_step": "Use this outcome layer to remap all questionnaire questions before finalising wording or score formulas."
+}

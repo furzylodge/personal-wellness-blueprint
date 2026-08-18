@@ -1,0 +1,184 @@
+{
+  "version": "Q16-Q20-v0.1",
+  "status": "provisional_locked_for_prototyping",
+  "questions": [
+    {
+      "id": "Q16",
+      "question": "Do you currently have, or have you previously been diagnosed with, any of the following skin conditions? Select any that apply.",
+      "ui": "multi_select",
+      "options": [
+        "Eczema / atopic dermatitis",
+        "Psoriasis",
+        "Rosacea",
+        "Another diagnosed skin condition",
+        "None of these"
+      ],
+      "stored_values": [
+        "eczema",
+        "psoriasis",
+        "rosacea",
+        "other",
+        "none"
+      ],
+      "effects": {
+        "outcomes": {},
+        "modifiers": [
+          "Inflammatory / Immune context"
+        ],
+        "safety": "Context only. Do not score a diagnosed skin condition as cardiovascular disease or as a general health deficit.",
+        "report": "If selected, can provide condition-specific context and, where appropriate, an impact follow-up."
+      },
+      "logic": "None of these is mutually exclusive with all other choices. Selecting a condition reveals Q16b.",
+      "status": "provisional_locked_for_prototyping"
+    },
+    {
+      "id": "Q16b",
+      "question": "How much does this skin condition currently affect your day-to-day life?",
+      "ui": "quality_5",
+      "options": [
+        "Not at all",
+        "A little",
+        "Moderately",
+        "A lot",
+        "Severely"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {},
+        "modifiers": [
+          "Inflammatory / Immune context"
+        ],
+        "safety": "Context severity only; no direct wellness-score deduction.",
+        "report": "Distinguishes a historical/minor diagnosis from a currently significant condition."
+      },
+      "logic": "Only shown when Q16 is not 'None of these'.",
+      "status": "provisional_locked_for_prototyping"
+    },
+    {
+      "id": "Q17",
+      "question": "How often do you find yourself craving sweet or highly processed foods?",
+      "ui": "frequency_5",
+      "options": [
+        "Never",
+        "Occasionally",
+        "Sometimes",
+        "Often",
+        "Very often"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {
+          "Healthy Weight & Metabolic Balance": "supporting"
+        },
+        "modifiers": [
+          "Dietary behaviour"
+        ],
+        "safety": "Non-diagnostic. A craving is not treated as evidence of excessive intake.",
+        "report": "Can be used as a supporting dietary-behaviour signal, particularly alongside actual dietary intake questions."
+      },
+      "status": "provisional_locked_for_prototyping"
+    },
+    {
+      "id": "Q18",
+      "question": "Which of the following best describes your relationship with dairy products?",
+      "ui": "single_select",
+      "options": [
+        "I regularly consume dairy",
+        "I occasionally consume dairy",
+        "I avoid dairy by choice",
+        "I avoid dairy because it causes symptoms",
+        "I have a diagnosed dairy allergy"
+      ],
+      "stored_values": [
+        "regular",
+        "occasional",
+        "avoid_choice",
+        "avoid_symptoms",
+        "allergy"
+      ],
+      "effects": {
+        "outcomes": {},
+        "modifiers": [
+          "Dietary profile"
+        ],
+        "safety": "Recommendation filter. Dairy consumption itself is not a health deficit; diagnosed allergy is a safety constraint.",
+        "report": "Normally used to personalise recommendations rather than create an outcome score."
+      },
+      "status": "provisional_locked_for_prototyping"
+    },
+    {
+      "id": "Q19",
+      "question": "How often do you feel unusually low, flat or lacking motivation?",
+      "ui": "frequency_5",
+      "options": [
+        "Never",
+        "Occasionally",
+        "Sometimes",
+        "Often",
+        "Very often"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {
+          "Mood, Stress & Emotional Balance": "direct"
+        },
+        "modifiers": [
+          "Energy & Vitality"
+        ],
+        "safety": "Non-diagnostic.",
+        "report": "Higher frequency contributes to the Mood, Stress & Emotional Balance signal and may provide context for low energy."
+      },
+      "status": "provisional_locked_for_prototyping"
+    },
+    {
+      "id": "Q20",
+      "question": "How would you describe the quality of your sleep?",
+      "ui": "quality_5",
+      "options": [
+        "Very good",
+        "Generally good",
+        "Variable",
+        "Often poor",
+        "Consistently poor"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {
+          "Sleep & Recovery": "direct"
+        },
+        "modifiers": [
+          "Energy & Vitality",
+          "Mood, Stress & Emotional Balance"
+        ],
+        "safety": "Non-diagnostic.",
+        "report": "Higher frequency/poorer quality contributes directly to Sleep & Recovery. Can be interpreted with Q21, Q30, Q35, Q37 and N06."
+      },
+      "status": "provisional_locked_for_prototyping"
+    }
+  ],
+  "design_note": "Q16 has become a specific diagnosed skin-condition context question with a conditional impact follow-up. Q17 is a supporting dietary-behaviour signal. Q18 is profile/safety information, not a score. Q19 is a direct Mood/Stress signal. Q20 is the first primary Sleep & Recovery question and should carry more weight than supporting sleep modifiers."
+}

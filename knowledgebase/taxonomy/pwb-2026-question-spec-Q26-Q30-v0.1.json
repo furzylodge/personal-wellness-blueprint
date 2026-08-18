@@ -1,0 +1,156 @@
+{
+  "version": "Q26-Q30-v0.1",
+  "status": "provisional_locked_for_prototyping",
+  "questions": [
+    {
+      "id": "Q26",
+      "question": "How would you describe your physical stamina in everyday activities?",
+      "ui": "quality_5",
+      "options": [
+        "Very good",
+        "Good",
+        "Variable",
+        "Often limited",
+        "Very limited"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {
+          "Energy & Vitality": "direct",
+          "Mobility, Joints & Physical Function": "supporting"
+        },
+        "modifiers": [
+          "Physical capacity"
+        ],
+        "safety": "Non-diagnostic. Do not infer a cardiopulmonary diagnosis from low stamina alone.",
+        "report": "Higher limitation contributes to Energy & Vitality and can be interpreted with activity and respiratory answers."
+      },
+      "status": "provisional_locked_for_prototyping"
+    },
+    {
+      "id": "Q27",
+      "question": "Which best describes your usual eating pattern?",
+      "ui": "single_select",
+      "options": [
+        "Mostly whole and minimally processed foods",
+        "A mixture of whole and processed foods",
+        "Mostly processed or convenience foods",
+        "Highly irregular or difficult to describe"
+      ],
+      "stored_values": [
+        "whole",
+        "mixed",
+        "processed",
+        "irregular"
+      ],
+      "effects": {
+        "outcomes": {
+          "Healthy Weight & Metabolic Balance": "supporting",
+          "Digestive & Gut Health": "supporting"
+        },
+        "modifiers": [
+          "Dietary pattern"
+        ],
+        "safety": "Non-diagnostic. This is a broad dietary-pattern question and should not duplicate specific intake questions in scoring.",
+        "report": "Provides overall dietary context and may help explain more specific food-intake responses."
+      },
+      "status": "provisional_locked_for_prototyping"
+    },
+    {
+      "id": "Q28",
+      "question": "When you do become unwell, how quickly do you usually recover?",
+      "ui": "quality_5",
+      "options": [
+        "Very quickly",
+        "Quite quickly",
+        "About as expected",
+        "Slower than expected",
+        "Much slower than expected"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {
+          "Immune Resilience": "direct"
+        },
+        "modifiers": [
+          "Energy & Vitality"
+        ],
+        "safety": "Non-diagnostic. Slower recovery can have many causes.",
+        "report": "Higher values strengthen the Immune Resilience signal, particularly alongside Q02 and Q13."
+      },
+      "status": "provisional_locked_for_prototyping"
+    },
+    {
+      "id": "Q29",
+      "question": "How often do you experience constipation, diarrhoea or other noticeable changes in bowel regularity?",
+      "ui": "frequency_5",
+      "options": [
+        "Never",
+        "Occasionally",
+        "Sometimes",
+        "Often",
+        "Very often"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {
+          "Digestive & Gut Health": "direct"
+        },
+        "modifiers": [],
+        "safety": "Persistent, severe or concerning bowel changes should not be interpreted diagnostically by the quiz.",
+        "report": "Higher frequency contributes to Digestive & Gut Health."
+      },
+      "status": "provisional_locked_for_prototyping"
+    },
+    {
+      "id": "Q30",
+      "question": "How often do you find it difficult to switch off or relax, even when you have the opportunity to do so?",
+      "ui": "frequency_5",
+      "options": [
+        "Never",
+        "Occasionally",
+        "Sometimes",
+        "Often",
+        "Very often"
+      ],
+      "stored_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "effects": {
+        "outcomes": {
+          "Mood, Stress & Emotional Balance": "direct",
+          "Sleep & Recovery": "supporting"
+        },
+        "modifiers": [
+          "Stress / recovery"
+        ],
+        "safety": "Non-diagnostic.",
+        "report": "Higher frequency contributes to Mood, Stress & Emotional Balance and can support interpretation of sleep difficulty."
+      },
+      "status": "provisional_locked_for_prototyping"
+    }
+  ],
+  "design_note": "Q26 is now stamina only; respiratory symptoms are handled separately by Q45. Q27 is broad dietary context and should have limited weight because N03/N04/Q31 capture more specific intake. Q28 is the recovery-speed dimension of Immune Resilience. Q29 is a direct digestive signal. Q30 separates difficulty switching off from the broader stress question Q15."
+}

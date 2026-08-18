@@ -1,0 +1,477 @@
+{
+  "version": "0.1",
+  "status": "Provisional, qualitative only",
+  "warning": "These are not calibrated numeric weights and should not yet drive production scoring.",
+  "basis": "Current question interaction design, historical mappings and the evidence audit.",
+  "principle": "Direct questionnaire signals can supplement body-system scores. Profile and safety questions remain separate.",
+  "signals": [
+    {
+      "ID": "Q01",
+      "Construct": "Low energy / desire for more energy",
+      "Signal type": "symptom",
+      "Primary system / domain": "Energy",
+      "Relationship": "direct",
+      "Provisional strength": "strong",
+      "Rationale": "User-stated energy concern"
+    },
+    {
+      "ID": "Q02",
+      "Construct": "Frequent ill health",
+      "Signal type": "symptom/context",
+      "Primary system / domain": "Immune",
+      "Relationship": "direct",
+      "Provisional strength": "moderate",
+      "Rationale": "Frequency of reported ill health"
+    },
+    {
+      "ID": "Q03",
+      "Construct": "Bad breath / body odour",
+      "Signal type": "symptom",
+      "Primary system / domain": "Digestive",
+      "Relationship": "direct",
+      "Provisional strength": "weak",
+      "Rationale": "Non-specific physical signal"
+    },
+    {
+      "ID": "Q04",
+      "Construct": "Food digestion difficulty",
+      "Signal type": "symptom",
+      "Primary system / domain": "Digestive",
+      "Relationship": "direct",
+      "Provisional strength": "strong",
+      "Rationale": "Direct digestive symptom"
+    },
+    {
+      "ID": "Q05",
+      "Construct": "Red meat exposure",
+      "Signal type": "exposure",
+      "Primary system / domain": "Circulatory",
+      "Relationship": "supporting",
+      "Provisional strength": "moderate",
+      "Rationale": "Dietary exposure; not a diagnosis"
+    },
+    {
+      "ID": "Q06",
+      "Construct": "Antibiotic / medication exposure",
+      "Signal type": "context/exposure",
+      "Primary system / domain": "Intestinal",
+      "Relationship": "supporting",
+      "Provisional strength": "moderate",
+      "Rationale": "Contextual signal; medication and antibiotics should be separated"
+    },
+    {
+      "ID": "Q07",
+      "Construct": "Alcohol exposure",
+      "Signal type": "exposure",
+      "Primary system / domain": "Glandular",
+      "Relationship": "supporting",
+      "Provisional strength": "moderate",
+      "Rationale": "Lifestyle exposure; exact system mapping requires evidence"
+    },
+    {
+      "ID": "Q08",
+      "Construct": "Mood variability",
+      "Signal type": "symptom",
+      "Primary system / domain": "Nervous",
+      "Relationship": "direct",
+      "Provisional strength": "moderate",
+      "Rationale": "Self-reported mood variability"
+    },
+    {
+      "ID": "Q09",
+      "Construct": "Food allergy",
+      "Signal type": "safety",
+      "Primary system / domain": "None",
+      "Relationship": "none",
+      "Provisional strength": "strong",
+      "Rationale": "Safety/exclusion profile, not wellness deficit"
+    },
+    {
+      "ID": "Q10",
+      "Construct": "Dark circles",
+      "Signal type": "symptom",
+      "Primary system / domain": "Circulatory",
+      "Relationship": "supporting",
+      "Provisional strength": "weak",
+      "Rationale": "Non-specific physical sign"
+    },
+    {
+      "ID": "Q11",
+      "Construct": "Smoking / vaping exposure",
+      "Signal type": "exposure",
+      "Primary system / domain": "Respiratory",
+      "Relationship": "direct",
+      "Provisional strength": "strong",
+      "Rationale": "Direct respiratory exposure"
+    },
+    {
+      "ID": "Q12",
+      "Construct": "Concentration / memory difficulty",
+      "Signal type": "symptom",
+      "Primary system / domain": "Nervous",
+      "Relationship": "direct",
+      "Provisional strength": "strong",
+      "Rationale": "Direct cognitive signal"
+    },
+    {
+      "ID": "Q13",
+      "Construct": "Susceptibility to illness",
+      "Signal type": "symptom/context",
+      "Primary system / domain": "Immune",
+      "Relationship": "direct",
+      "Provisional strength": "moderate",
+      "Rationale": "Self-reported resilience signal"
+    },
+    {
+      "ID": "Q14",
+      "Construct": "Post-meal discomfort",
+      "Signal type": "symptom",
+      "Primary system / domain": "Digestive",
+      "Relationship": "direct",
+      "Provisional strength": "strong",
+      "Rationale": "Direct digestive symptom"
+    },
+    {
+      "ID": "Q15",
+      "Construct": "Stress / always-on pressure",
+      "Signal type": "symptom/context",
+      "Primary system / domain": "Nervous",
+      "Relationship": "direct",
+      "Provisional strength": "strong",
+      "Rationale": "Direct stress signal"
+    },
+    {
+      "ID": "Q16",
+      "Construct": "Skin problems",
+      "Signal type": "symptom",
+      "Primary system / domain": "Structural",
+      "Relationship": "direct",
+      "Provisional strength": "moderate",
+      "Rationale": "Physical/structural symptom"
+    },
+    {
+      "ID": "Q17",
+      "Construct": "Sweet / processed-food cravings",
+      "Signal type": "behaviour",
+      "Primary system / domain": "Glandular",
+      "Relationship": "supporting",
+      "Provisional strength": "moderate",
+      "Rationale": "Craving, not actual intake"
+    },
+    {
+      "ID": "Q18",
+      "Construct": "Dairy consumption",
+      "Signal type": "profile",
+      "Primary system / domain": "None",
+      "Relationship": "none",
+      "Provisional strength": "strong",
+      "Rationale": "Dietary profile/filter rather than deficit"
+    },
+    {
+      "ID": "Q19",
+      "Construct": "Low mood / apathy",
+      "Signal type": "symptom",
+      "Primary system / domain": "Nervous",
+      "Relationship": "direct",
+      "Provisional strength": "moderate",
+      "Rationale": "Non-diagnostic wellbeing signal"
+    },
+    {
+      "ID": "Q20",
+      "Construct": "Poor / restless sleep",
+      "Signal type": "symptom",
+      "Primary system / domain": "Nervous",
+      "Relationship": "direct",
+      "Provisional strength": "strong",
+      "Rationale": "Direct sleep signal"
+    },
+    {
+      "ID": "Q21",
+      "Construct": "Urinary problems / nocturia",
+      "Signal type": "symptom",
+      "Primary system / domain": "Urinary",
+      "Relationship": "direct",
+      "Provisional strength": "strong",
+      "Rationale": "Direct urinary symptom"
+    },
+    {
+      "ID": "Q22",
+      "Construct": "Brittle fingernails",
+      "Signal type": "symptom",
+      "Primary system / domain": "Structural",
+      "Relationship": "supporting",
+      "Provisional strength": "weak",
+      "Rationale": "Historical mapping also includes Digestive; rationale unresolved"
+    },
+    {
+      "ID": "Q23",
+      "Construct": "Hair loss",
+      "Signal type": "symptom",
+      "Primary system / domain": "Structural",
+      "Relationship": "direct",
+      "Provisional strength": "weak",
+      "Rationale": "Non-specific physical signal"
+    },
+    {
+      "ID": "Q24",
+      "Construct": "Fried/ready meals or lipid issue",
+      "Signal type": "mixed",
+      "Primary system / domain": "Circulatory",
+      "Relationship": "direct/supporting",
+      "Provisional strength": "moderate",
+      "Rationale": "Two constructs should be separated"
+    },
+    {
+      "ID": "Q25",
+      "Construct": "Weight-management difficulty",
+      "Signal type": "symptom/outcome",
+      "Primary system / domain": "Weight",
+      "Relationship": "direct",
+      "Provisional strength": "strong",
+      "Rationale": "Direct user concern"
+    },
+    {
+      "ID": "Q26",
+      "Construct": "Stamina / breathlessness",
+      "Signal type": "symptom",
+      "Primary system / domain": "Fitness",
+      "Relationship": "direct",
+      "Provisional strength": "strong",
+      "Rationale": "Physical capacity symptom; may also support Respiratory/Circulatory"
+    },
+    {
+      "ID": "Q27",
+      "Construct": "Poor eating habits",
+      "Signal type": "behaviour",
+      "Primary system / domain": "Digestive",
+      "Relationship": "supporting",
+      "Provisional strength": "moderate",
+      "Rationale": "Should become actionable behaviour categories"
+    },
+    {
+      "ID": "Q28",
+      "Construct": "Slow recovery",
+      "Signal type": "symptom/context",
+      "Primary system / domain": "Immune",
+      "Relationship": "direct",
+      "Provisional strength": "moderate",
+      "Rationale": "Recovery/resilience signal"
+    },
+    {
+      "ID": "Q29",
+      "Construct": "Irregular bowel habits",
+      "Signal type": "symptom",
+      "Primary system / domain": "Intestinal",
+      "Relationship": "direct",
+      "Provisional strength": "strong",
+      "Rationale": "Direct gut/intestinal signal"
+    },
+    {
+      "ID": "Q30",
+      "Construct": "Tension / difficulty relaxing",
+      "Signal type": "symptom",
+      "Primary system / domain": "Nervous",
+      "Relationship": "direct",
+      "Provisional strength": "strong",
+      "Rationale": "Direct stress signal"
+    },
+    {
+      "ID": "Q31",
+      "Construct": "Low fibre",
+      "Signal type": "exposure",
+      "Primary system / domain": "Intestinal",
+      "Relationship": "direct",
+      "Provisional strength": "strong",
+      "Rationale": "Dietary fibre exposure"
+    },
+    {
+      "ID": "Q32",
+      "Construct": "Muscle discomfort",
+      "Signal type": "symptom",
+      "Primary system / domain": "Structural",
+      "Relationship": "direct",
+      "Provisional strength": "moderate",
+      "Rationale": "Direct musculoskeletal signal"
+    },
+    {
+      "ID": "Q33",
+      "Construct": "Dry/damaged/dull hair",
+      "Signal type": "symptom",
+      "Primary system / domain": "Structural",
+      "Relationship": "supporting",
+      "Provisional strength": "weak",
+      "Rationale": "Potential overlap with Q23"
+    },
+    {
+      "ID": "Q34",
+      "Construct": "Air-pollution exposure",
+      "Signal type": "exposure",
+      "Primary system / domain": "Respiratory",
+      "Relationship": "direct",
+      "Provisional strength": "moderate",
+      "Rationale": "Environmental exposure"
+    },
+    {
+      "ID": "Q35",
+      "Construct": "Daytime sleepiness",
+      "Signal type": "symptom",
+      "Primary system / domain": "Nervous",
+      "Relationship": "direct",
+      "Provisional strength": "strong",
+      "Rationale": "Sleep/energy signal"
+    },
+    {
+      "ID": "Q36",
+      "Construct": "Loss of appetite",
+      "Signal type": "symptom",
+      "Primary system / domain": "Digestive",
+      "Relationship": "supporting",
+      "Provisional strength": "moderate",
+      "Rationale": "Potential safety/medical-context rule"
+    },
+    {
+      "ID": "Q37",
+      "Construct": "Caffeine amount/timing",
+      "Signal type": "exposure",
+      "Primary system / domain": "Nervous",
+      "Relationship": "direct",
+      "Provisional strength": "moderate",
+      "Rationale": "Especially relevant to sleep; timing matters"
+    },
+    {
+      "ID": "Q38",
+      "Construct": "Feeling out of control",
+      "Signal type": "symptom",
+      "Primary system / domain": "Nervous",
+      "Relationship": "direct",
+      "Provisional strength": "moderate",
+      "Rationale": "Emotional-regulation signal"
+    },
+    {
+      "ID": "Q39",
+      "Construct": "Food/chemical sensitivity",
+      "Signal type": "profile/safety",
+      "Primary system / domain": "None",
+      "Relationship": "none",
+      "Provisional strength": "strong",
+      "Rationale": "Clarify allergy vs intolerance vs sensitivity"
+    },
+    {
+      "ID": "Q40",
+      "Construct": "Yeast/fungus issues",
+      "Signal type": "medical context",
+      "Primary system / domain": "None",
+      "Relationship": "none",
+      "Provisional strength": "weak",
+      "Rationale": "Do not infer microbiome imbalance without evidence"
+    },
+    {
+      "ID": "Q41",
+      "Construct": "Joint discomfort/weakness",
+      "Signal type": "symptom",
+      "Primary system / domain": "Structural",
+      "Relationship": "direct",
+      "Provisional strength": "strong",
+      "Rationale": "Direct mobility/joint signal"
+    },
+    {
+      "ID": "Q42",
+      "Construct": "Excessive worry",
+      "Signal type": "symptom",
+      "Primary system / domain": "Nervous",
+      "Relationship": "direct",
+      "Provisional strength": "strong",
+      "Rationale": "Direct stress signal"
+    },
+    {
+      "ID": "Q43",
+      "Construct": "Irritability/anger",
+      "Signal type": "symptom",
+      "Primary system / domain": "Nervous",
+      "Relationship": "direct",
+      "Provisional strength": "moderate",
+      "Rationale": "Emotional-regulation signal"
+    },
+    {
+      "ID": "Q44",
+      "Construct": "Exercise frequency",
+      "Signal type": "exposure",
+      "Primary system / domain": "Fitness",
+      "Relationship": "direct",
+      "Provisional strength": "strong",
+      "Rationale": "Physical activity exposure"
+    },
+    {
+      "ID": "Q45",
+      "Construct": "Congestion/mucus",
+      "Signal type": "symptom",
+      "Primary system / domain": "Respiratory",
+      "Relationship": "direct",
+      "Provisional strength": "moderate",
+      "Rationale": "Direct respiratory symptom"
+    },
+    {
+      "ID": "Q46",
+      "Construct": "Menstrual problems",
+      "Signal type": "symptom/context",
+      "Primary system / domain": "Glandular",
+      "Relationship": "direct",
+      "Provisional strength": "moderate",
+      "Rationale": "Female-specific reproductive/menopause context"
+    },
+    {
+      "ID": "Q47",
+      "Construct": "Menopause concerns",
+      "Signal type": "outcome intent",
+      "Primary system / domain": "Menopause",
+      "Relationship": "direct",
+      "Provisional strength": "strong",
+      "Rationale": "Direct menopause concern"
+    },
+    {
+      "ID": "Q48",
+      "Construct": "Medical treatment/chronic condition",
+      "Signal type": "safety",
+      "Primary system / domain": "None",
+      "Relationship": "none",
+      "Provisional strength": "strong",
+      "Rationale": "Safety/context only"
+    },
+    {
+      "ID": "N01",
+      "Construct": "Screen exposure before sleep",
+      "Signal type": "exposure",
+      "Primary system / domain": "Nervous",
+      "Relationship": "supporting",
+      "Provisional strength": "moderate",
+      "Rationale": "Modern sleep-related behaviour"
+    },
+    {
+      "ID": "N02",
+      "Construct": "Sedentary time / prolonged sitting",
+      "Signal type": "exposure",
+      "Primary system / domain": "Circulatory",
+      "Relationship": "supporting",
+      "Provisional strength": "moderate",
+      "Rationale": "Distinct from exercise frequency"
+    },
+    {
+      "ID": "N03",
+      "Construct": "Ultra-processed food exposure",
+      "Signal type": "exposure",
+      "Primary system / domain": "Digestive",
+      "Relationship": "supporting",
+      "Provisional strength": "moderate",
+      "Rationale": "Actual intake, distinct from craving"
+    },
+    {
+      "ID": "N04",
+      "Construct": "Sleep/circadian routine",
+      "Signal type": "exposure",
+      "Primary system / domain": "Nervous",
+      "Relationship": "supporting",
+      "Provisional strength": "moderate",
+      "Rationale": "Behavioural sleep signal, distinct from Q20"
+    }
+  ]
+}
