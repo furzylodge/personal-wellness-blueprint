@@ -1,45 +1,16 @@
 <?php
 
-declare(strict_types=1);
-
 namespace PWB\Assessment;
 
 final class Assessment
 {
-    /**
-     * Assessment metadata.
-     */
-    public array $assessment = [];
-
-    /**
-     * Person details.
-     */
-    public array $person = [];
-
-    /**
-     * Questionnaire answers.
-     */
-    public array $answers = [];
-
-    /**
-     * Body System percentages.
-     */
-    public array $bodySystems = [];
-    
-     /**
-     * User preferences.
-     */
-    public array $preferences = [];
-
-    /**
-     * User restrictions.
-     */
-    public array $restrictions = [];
-
-    /**
-     * User goals.
-     */
-    public array $goals = [];
+    public array $assessment;
+    public array $person;
+    public array $answers;
+    public array $bodySystems;
+    public array $preferences;
+    public array $restrictions;
+    public array $goals;
 
     public function __construct(
         array $assessment = [],
@@ -50,13 +21,13 @@ final class Assessment
         array $restrictions = [],
         array $goals = []
     ) {
-        $this->assessment = $assessment;
-        $this->person = $person;
-        $this->answers = $answers;
+        $this->assessment  = $assessment;
+        $this->person      = $person;
+        $this->answers     = $answers;
         $this->bodySystems = $bodySystems;
         $this->preferences = $preferences;
         $this->restrictions = $restrictions;
-        $this->goals = $goals;
+        $this->goals       = $goals;
     }
 
     public function hasAnswers(): bool
@@ -68,7 +39,7 @@ final class Assessment
     {
         return !empty($this->bodySystems);
     }
-    
+
     public function hasPreferences(): bool
     {
         return !empty($this->preferences);

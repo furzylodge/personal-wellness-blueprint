@@ -1,58 +1,47 @@
 <?php
 
-declare(strict_types=1);
-
 namespace PWB\Assessment;
 
-use RuntimeException;
+use PWB\Loader\JsonLoader;
 
 final class AssessmentLoader
 {
-    /**
-     * Load an Assessment from a JSON file.
-     *
-     * @throws RuntimeException
-     */
-    public static function load(string $filename): Assessment
+    private array $questions = [];
+    private array $matrix = [];
+
+    public function __construct(
+        private JsonLoader $loader,
+        private string $knowledgePath
+    ) {}
+
+    public function load(): Assessment
     {
-        if (!file_exists($filename)) {
-            throw new RuntimeException(
-                "Assessment file not found: {$filename}"
-            );
-        }
+        $this->questions = $this->loader->load(
+            $this->knowledgePath . '/assessment/questions.json'
+        );
 
-        $json = file_get_contents($filename);
-
-        if ($json === false) {
-            throw new RuntimeException(
-                "Unable to read assessment file: {$filename}"
-            );
-        }
-
-        $data = json_decode($json, true);
-
-        if (!is_array($data)) {
-            throw new RuntimeException(
-                "Assessment file contains invalid JSON."
-            );
-        }
+        $this->matrix = $this->loader->load(
+            $this->knowledgePath . '/assessment/question-body-system-matrix.json'
+        );
 
         return new Assessment(
-
-            assessment: $data['assessment'] ?? [],
-
-            person: $data['person'] ?? [],
-
-            answers: $data['answers'] ?? [],
-
-            bodySystems: $data['bodySystems'] ?? [],
-
-            preferences: $data['preferences'] ?? [],
-
-            restrictions: $data['restrictions'] ?? [],
-
-            goals: $data['goals'] ?? []
-
+            assessment: [
+                'version'    => '1.0.0',
+                'loaded_at'  => date(DATE_ATOM),
+                'questions'  => count($this->questions),
+            ],
+            answers: [],
+            bodySystems: []
         );
+    }
+
+    public function questions(): array
+    {
+        return $this->questions;
+    }
+
+    public function matrix(): array
+    {
+        return $this->matrix;
     }
 }
