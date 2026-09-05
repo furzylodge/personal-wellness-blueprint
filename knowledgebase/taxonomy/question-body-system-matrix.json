@@ -1,0 +1,534 @@
+[
+  {
+    "question_id": "CTX001",
+    "legacy_id": "Q01",
+    "body_system_scores": {
+      "BS001": "Y",
+      "BS003": "Y",
+      "BS004": "Y",
+      "BS005": "Y"
+    }
+  },
+  {
+    "question_id": "IMM001",
+    "legacy_id": "Q02",
+    "body_system_scores": {
+      "BS005": "Y",
+      "BS006": "Y",
+      "BS007": "Y"
+    }
+  },
+  {
+    "question_id": "DIG001",
+    "legacy_id": "Q03",
+    "body_system_scores": {
+      "BS001": "Y",
+      "BS002": "Y"
+    }
+  },
+  {
+    "question_id": "DIG002",
+    "legacy_id": "Q04",
+    "body_system_scores": {
+      "BS001": "Y",
+      "BS005": "Y",
+      "BS006": "Y"
+    }
+  },
+  {
+    "question_id": "NUT001",
+    "legacy_id": "Q05",
+    "body_system_scores": {
+      "BS002": "Y",
+      "BS003": "Y",
+      "BS007": "Y",
+      "BS008": "Y"
+    }
+  },
+  {
+    "question_id": "SAF001",
+    "legacy_id": "Q06",
+    "body_system_scores": {
+      "BS002": "Y",
+      "BS003": "Y",
+      "BS005": "Y",
+      "BS006": "Y",
+      "BS008": "Y"
+    }
+  },
+  {
+    "question_id": "NUT002",
+    "legacy_id": "Q07",
+    "body_system_scores": {
+      "BS004": "Y",
+      "BS008": "Y"
+    }
+  },
+  {
+    "question_id": "MND001",
+    "legacy_id": "Q08",
+    "body_system_scores": {
+      "BS004": "Y",
+      "BS006": "Y"
+    }
+  },
+  {
+    "question_id": "SAF002",
+    "legacy_id": "Q09",
+    "body_system_scores": {
+      "BS001": "Y",
+      "BS005": "Y",
+      "BS007": "Y"
+    }
+  },
+  {
+    "question_id": "SAF006",
+    "legacy_id": null,
+    "body_system_scores": {}
+  },
+  {
+    "question_id": "SAF007",
+    "legacy_id": null,
+    "body_system_scores": {
+      "BS001": "Y",
+      "BS005": "Y",
+      "BS007": "Y"
+    }
+  },
+  {
+    "question_id": "EXP001",
+    "legacy_id": "Q11",
+    "body_system_scores": {
+      "BS003": "Y",
+      "BS004": "Y",
+      "BS006": "Y",
+      "BS008": "Y"
+    }
+  },
+  {
+    "question_id": "EXP006",
+    "legacy_id": null,
+    "body_system_scores": {
+      "BS003": "Y",
+      "BS004": "Y",
+      "BS006": "Y",
+      "BS008": "Y"
+    }
+  },
+  {
+    "question_id": "COG001",
+    "legacy_id": "Q12",
+    "body_system_scores": {
+      "BS003": "Y",
+      "BS004": "Y"
+    }
+  },
+  {
+    "question_id": "IMM002",
+    "legacy_id": "Q13",
+    "body_system_scores": {
+      "BS001": "Y",
+      "BS005": "Y"
+    }
+  },
+  {
+    "question_id": "DIG003",
+    "legacy_id": "Q14",
+    "body_system_scores": {
+      "BS001": "Y",
+      "BS005": "Y",
+      "BS008": "Y"
+    }
+  },
+  {
+    "question_id": "MND002",
+    "legacy_id": "Q15",
+    "body_system_scores": {
+      "BS002": "Y",
+      "BS003": "Y",
+      "BS004": "Y",
+      "BS007": "Y",
+      "BS008": "Y",
+      "BS009": "Y"
+    }
+  },
+  {
+    "question_id": "PHY001",
+    "legacy_id": "Q16",
+    "body_system_scores": {
+      "BS001": "Y",
+      "BS002": "Y",
+      "BS008": "Y"
+    }
+  },
+  {
+    "question_id": "PHY002",
+    "legacy_id": "Q16b",
+    "body_system_scores": {
+      "BS001": "Y",
+      "BS002": "Y",
+      "BS008": "Y"
+    }
+  },
+  {
+    "question_id": "NUT003",
+    "legacy_id": "Q17",
+    "body_system_scores": {
+      "BS004": "Y",
+      "BS006": "Y"
+    }
+  },
+  {
+    "question_id": "NUT004",
+    "legacy_id": "Q18",
+    "body_system_scores": {
+      "BS002": "Y",
+      "BS008": "Y"
+    }
+  },
+  {
+    "question_id": "MND003",
+    "legacy_id": "Q19",
+    "body_system_scores": {
+      "BS002": "Y",
+      "BS004": "Y",
+      "BS008": "Y",
+      "BS009": "Y"
+    }
+  },
+  {
+    "question_id": "SLP001",
+    "legacy_id": "Q20",
+    "body_system_scores": {
+      "BS004": "Y",
+      "BS008": "Y",
+      "BS009": "Y"
+    }
+  },
+  {
+    "question_id": "SLP002",
+    "legacy_id": "Q21",
+    "body_system_scores": {
+      "BS007": "Y",
+      "BS009": "Y"
+    }
+  },
+  {
+    "question_id": "EXP002",
+    "legacy_id": "Q22",
+    "body_system_scores": {
+      "BS002": "Y",
+      "BS004": "Y"
+    }
+  },
+  {
+    "question_id": "PHY003",
+    "legacy_id": "Q23",
+    "body_system_scores": {
+      "BS003": "Y",
+      "BS004": "Y"
+    }
+  },
+  {
+    "question_id": "NUT005",
+    "legacy_id": "Q24a",
+    "body_system_scores": {
+      "BS001": "Y",
+      "BS002": "Y",
+      "BS003": "Y",
+      "BS008": "Y",
+      "BS009": "Y"
+    }
+  },
+  {
+    "question_id": "SAF003",
+    "legacy_id": "Q24b",
+    "body_system_scores": {
+      "BS001": "Y",
+      "BS003": "Y",
+      "BS005": "Y",
+      "BS006": "Y"
+    }
+  },
+  {
+    "question_id": "NUT006",
+    "legacy_id": "Q25",
+    "body_system_scores": {
+      "BS001": "Y",
+      "BS004": "Y",
+      "BS005": "Y",
+      "BS006": "Y",
+      "BS008": "Y"
+    }
+  },
+  {
+    "question_id": "PHY004",
+    "legacy_id": "Q26",
+    "body_system_scores": {
+      "BS003": "Y",
+      "BS006": "Y",
+      "BS008": "Y"
+    }
+  },
+  {
+    "question_id": "PHY005",
+    "legacy_id": "Q26b",
+    "body_system_scores": {
+      "BS003": "Y",
+      "BS006": "Y",
+      "BS008": "Y"
+    }
+  },
+  {
+    "question_id": "NUT007",
+    "legacy_id": "Q27",
+    "body_system_scores": {
+      "BS001": "Y",
+      "BS002": "Y",
+      "BS008": "Y"
+    }
+  },
+  {
+    "question_id": "IMM003",
+    "legacy_id": "Q28",
+    "body_system_scores": {
+      "BS002": "Y",
+      "BS003": "Y",
+      "BS005": "Y",
+      "BS008": "Y"
+    }
+  },
+  {
+    "question_id": "DIG004",
+    "legacy_id": "Q29",
+    "body_system_scores": {
+      "BS001": "Y",
+      "BS002": "Y",
+      "BS004": "Y",
+      "BS008": "Y"
+    }
+  },
+  {
+    "question_id": "MND004",
+    "legacy_id": "Q30",
+    "body_system_scores": {
+      "BS004": "Y"
+    }
+  },
+  {
+    "question_id": "NUT008",
+    "legacy_id": "Q31",
+    "body_system_scores": {
+      "BS001": "Y",
+      "BS002": "Y",
+      "BS003": "Y",
+      "BS009": "Y"
+    }
+  },
+  {
+    "question_id": "PHY006",
+    "legacy_id": "Q32",
+    "body_system_scores": {
+      "BS003": "Y",
+      "BS004": "Y",
+      "BS007": "Y",
+      "BS009": "Y"
+    }
+  },
+  {
+    "question_id": "EXP003",
+    "legacy_id": "Q34",
+    "body_system_scores": {
+      "BS005": "Y",
+      "BS006": "Y",
+      "BS008": "Y"
+    }
+  },
+  {
+    "question_id": "SLP003",
+    "legacy_id": "Q35",
+    "body_system_scores": {
+      "BS003": "Y",
+      "BS008": "Y"
+    }
+  },
+  {
+    "question_id": "CTX002",
+    "legacy_id": "Q36",
+    "body_system_scores": {
+      "BS001": "Y",
+      "BS004": "Y",
+      "BS008": "Y",
+      "BS009": "Y"
+    }
+  },
+  {
+    "question_id": "SLP004",
+    "legacy_id": "Q37",
+    "body_system_scores": {
+      "BS001": "Y",
+      "BS004": "Y",
+      "BS008": "Y",
+      "BS009": "Y"
+    }
+  },
+  {
+    "question_id": "SLP005",
+    "legacy_id": "Q37b",
+    "body_system_scores": {
+      "BS001": "Y",
+      "BS004": "Y",
+      "BS008": "Y",
+      "BS009": "Y"
+    }
+  },
+  {
+    "question_id": "MND005",
+    "legacy_id": "Q38",
+    "body_system_scores": {
+      "BS004": "Y",
+      "BS005": "Y"
+    }
+  },
+  {
+    "question_id": "SAF004",
+    "legacy_id": "Q39",
+    "body_system_scores": {
+      "BS001": "Y",
+      "BS002": "Y",
+      "BS005": "Y"
+    }
+  },
+  {
+    "question_id": "PHY007",
+    "legacy_id": "Q41",
+    "body_system_scores": {
+      "BS001": "Y",
+      "BS002": "Y",
+      "BS003": "Y",
+      "BS004": "Y",
+      "BS005": "Y"
+    }
+  },
+  {
+    "question_id": "MND006",
+    "legacy_id": "Q42",
+    "body_system_scores": {
+      "BS001": "Y",
+      "BS004": "Y",
+      "BS008": "Y"
+    }
+  },
+  {
+    "question_id": "MND007",
+    "legacy_id": "Q43",
+    "body_system_scores": {
+      "BS002": "Y",
+      "BS004": "Y",
+      "BS008": "Y",
+      "BS009": "Y"
+    }
+  },
+  {
+    "question_id": "PHY008",
+    "legacy_id": "Q44",
+    "body_system_scores": {
+      "BS002": "Y",
+      "BS003": "Y",
+      "BS004": "Y",
+      "BS005": "Y",
+      "BS006": "Y",
+      "BS009": "Y"
+    }
+  },
+  {
+    "question_id": "PHY009",
+    "legacy_id": null,
+    "body_system_scores": {
+      "BS002": "Y",
+      "BS003": "Y",
+      "BS004": "Y",
+      "BS005": "Y",
+      "BS006": "Y",
+      "BS009": "Y"
+    }
+  },
+  {
+    "question_id": "EXP004",
+    "legacy_id": "Q45",
+    "body_system_scores": {
+      "BS002": "Y"
+    }
+  },
+  {
+    "question_id": "LIF001",
+    "legacy_id": "Q46",
+    "body_system_scores": {
+      "BS002": "Y"
+    }
+  },
+  {
+    "question_id": "LIF002",
+    "legacy_id": "Q47",
+    "body_system_scores": {
+      "BS004": "Y",
+      "BS008": "Y"
+    }
+  },
+  {
+    "question_id": "SAF005",
+    "legacy_id": "Q48",
+    "body_system_scores": {}
+  },
+  {
+    "question_id": "EXP005",
+    "legacy_id": "NEW-01",
+    "body_system_scores": {
+      "BS002": "Y",
+      "BS003": "Y",
+      "BS004": "Y",
+      "BS005": "Y",
+      "BS006": "Y",
+      "BS009": "Y"
+    }
+  },
+  {
+    "question_id": "NUT009",
+    "legacy_id": "NEW-02",
+    "body_system_scores": {
+      "BS001": "Y",
+      "BS002": "Y",
+      "BS003": "Y",
+      "BS005": "Y",
+      "BS008": "Y"
+    }
+  },
+  {
+    "question_id": "NUT010",
+    "legacy_id": "NEW-03",
+    "body_system_scores": {
+      "BS001": "Y",
+      "BS002": "Y",
+      "BS003": "Y",
+      "BS005": "Y",
+      "BS008": "Y"
+    }
+  },
+  {
+    "question_id": "SLP006",
+    "legacy_id": "NEW-04",
+    "body_system_scores": {
+      "BS003": "Y",
+      "BS008": "Y",
+      "BS009": "Y"
+    }
+  },
+  {
+    "question_id": "MND008",
+    "legacy_id": "NEW-05",
+    "body_system_scores": {
+      "BS002": "Y",
+      "BS004": "Y"
+    }
+  }
+]

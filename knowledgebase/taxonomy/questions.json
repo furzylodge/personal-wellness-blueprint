@@ -1,1990 +1,1090 @@
-{
-  "version": "1.2",
-  "status": "Draft",
-  "source": {
-    "file": "Form Elements.txt",
-    "description": "Current SuperForms form-element configuration supplied by the user. This is the authoritative source for how the live form currently calculates the nine body-system scores.",
-    "importantFinding": "The SuperForms calculator mappings, not the T markers in the earlier Excel questionnaire sheet, define the current nine-system scoring."
-  },
-  "responseModel": {
-    "yes": 1,
-    "no": 0,
-    "note": "The form's radio fields use numeric values 1 and 0. The calculator expressions are direct sums of question values."
-  },
-  "bodySystems": {
-    "digestive_system": "Digestive",
-    "intestinal_system": "Intestinal",
-    "circulatory_system": "Circulatory",
-    "nervous_system": "Nervous",
-    "immune_system": "Immune",
-    "respiratory_system": "Respiratory",
-    "urinary_system": "Urinary",
-    "glandular_system": "Glandular",
-    "structural_system": "Structural"
-  },
-  "derivedScores": {
-    "medical_conditions": {
-      "label": "Medical Condition score :",
-      "questions": [
-        2,
-        6,
-        21,
-        24,
-        28,
-        48
-      ],
-      "formula": "{question_2}+{question_6}+{question_21}+{question_24}+{question_28}+{question_48}"
-    },
-    "currently_feeling": {
-      "label": "Currently Feeling score :",
-      "questions": [
-        1,
-        8,
-        12,
-        19,
-        26,
-        30,
-        35,
-        36,
-        38,
-        42,
-        43
-      ],
-      "formula": "{question_1}+{question_8}+{question_12}+{question_19}+{question_26}+{question_30}+{question_35}+{question_36}+{question_38}+{question_42}+{question_43}"
-    },
-    "lifestyle_nutrition": {
-      "label": "Lifestyle Nutrition score :",
-      "questions": [
-        4,
-        5,
-        7,
-        9,
-        11,
-        15,
-        17,
-        18,
-        20,
-        25,
-        27,
-        31,
-        34,
-        37,
-        39,
-        44
-      ],
-      "formula": "{question_4}+{question_5}+{question_7}+{question_9}+{question_11}+{question_15}+{question_17}+{question_18}+{question_20}+{question_25}+{question_27}+{question_31}+{question_34}+{question_37}+{question_39}+{question_44}"
-    },
-    "physical_symptoms": {
-      "label": "Physical Symptoms score :",
-      "questions": [
-        3,
-        46,
-        10,
-        13,
-        14,
-        16,
-        47,
-        22,
-        23,
-        29,
-        32,
-        33,
-        40,
-        41,
-        45
-      ],
-      "formula": "{question_3}+{question_46}+{question_10}+{question_13}+{question_14}+{question_16}+{question_47}+{question_22}+{question_23}+{question_29}+{question_32}+{question_33}+{question_40}+{question_41}+{question_45}"
-    },
-    "total_score": {
-      "label": "Total score :",
-      "questions": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        16,
-        17,
-        18,
-        19,
-        20,
-        21,
-        22,
-        23,
-        24,
-        25,
-        26,
-        27,
-        28,
-        29,
-        30,
-        31,
-        32,
-        33,
-        34,
-        35,
-        36,
-        37,
-        38,
-        39,
-        40,
-        41,
-        42,
-        43,
-        44,
-        45,
-        46,
-        47,
-        48
-      ],
-      "formula": "{question_1}+{question_2}+{question_3}+{question_4}+{question_5}+{question_6}+{question_7}+{question_8}+{question_9}+{question_10}+{question_11}+{question_12}+{question_13}+{question_14}+{question_15}+{question_16}+{question_17}+{question_18}+{question_19}+{question_20}+{question_21}+{question_22}+{question_23}+{question_24}+{question_25}+{question_26}+{question_27}+{question_28}+{question_29}+{question_30}+{question_31}+{question_32}+{question_33}+{question_34}+{question_35}+{question_36}+{question_37}+{question_38}+{question_39}+{question_40}+{question_41}+{question_42}+{question_43}+{question_44}+{question_45}+{question_46}+{question_47}+{question_48}"
-    }
-  },
-  "questions": [
-    {
-      "id": "Q01",
-      "number": 1,
-      "text": "I would like more energy",
-      "responseType": "radio",
-      "responses": [
-        {
-          "label": "Yes",
-          "value": 1
-        },
-        {
-          "label": "No",
-          "value": 0
-        }
-      ],
-      "bodySystemMappings": [
-        {
-          "bodySystem": "Digestive",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Circulatory",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Nervous",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Immune",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Urinary",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        }
-      ],
-      "outcomeSignals": [],
-      "scoring": {
-        "responseWeight": 1,
-        "note": "A Yes response contributes 1 to each explicitly mapped calculator; a 0 response contributes 0."
-      },
-      "status": "Active"
-    },
-    {
-      "id": "Q02",
-      "number": 2,
-      "text": "I have frequent ill health (once or twice annually)",
-      "responseType": "radio",
-      "responses": [
-        {
-          "label": "Yes",
-          "value": 1
-        },
-        {
-          "label": "No",
-          "value": 0
-        }
-      ],
-      "bodySystemMappings": [
-        {
-          "bodySystem": "Immune",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        }
-      ],
-      "outcomeSignals": [],
-      "scoring": {
-        "responseWeight": 1,
-        "note": "A Yes response contributes 1 to each explicitly mapped calculator; a 0 response contributes 0."
-      },
-      "status": "Active"
-    },
-    {
-      "id": "Q03",
-      "number": 3,
-      "text": "I have bad breath and/or body odour",
-      "responseType": "radio",
-      "responses": [
-        {
-          "label": "Yes",
-          "value": 1
-        },
-        {
-          "label": "No",
-          "value": 0
-        }
-      ],
-      "bodySystemMappings": [
-        {
-          "bodySystem": "Digestive",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Intestinal",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Respiratory",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Urinary",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        }
-      ],
-      "outcomeSignals": [],
-      "scoring": {
-        "responseWeight": 1,
-        "note": "A Yes response contributes 1 to each explicitly mapped calculator; a 0 response contributes 0."
-      },
-      "status": "Active"
-    },
-    {
-      "id": "Q04",
-      "number": 4,
-      "text": "I have difficulty digesting certain foods",
-      "responseType": "radio",
-      "responses": [
-        {
-          "label": "Yes",
-          "value": 1
-        },
-        {
-          "label": "No",
-          "value": 0
-        }
-      ],
-      "bodySystemMappings": [
-        {
-          "bodySystem": "Digestive",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Immune",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        }
-      ],
-      "outcomeSignals": [],
-      "scoring": {
-        "responseWeight": 1,
-        "note": "A Yes response contributes 1 to each explicitly mapped calculator; a 0 response contributes 0."
-      },
-      "status": "Active"
-    },
-    {
-      "id": "Q05",
-      "number": 5,
-      "text": "I usually eat red meat at least twice per week",
-      "responseType": "radio",
-      "responses": [
-        {
-          "label": "Yes",
-          "value": 1
-        },
-        {
-          "label": "No",
-          "value": 0
-        }
-      ],
-      "bodySystemMappings": [
-        {
-          "bodySystem": "Intestinal",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Circulatory",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Respiratory",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        }
-      ],
-      "outcomeSignals": [],
-      "scoring": {
-        "responseWeight": 1,
-        "note": "A Yes response contributes 1 to each explicitly mapped calculator; a 0 response contributes 0."
-      },
-      "status": "Active"
-    },
-    {
-      "id": "Q06",
-      "number": 6,
-      "text": "I have had antibiotics or medication in the last 3 years",
-      "responseType": "radio",
-      "responses": [
-        {
-          "label": "Yes",
-          "value": 1
-        },
-        {
-          "label": "No",
-          "value": 0
-        }
-      ],
-      "bodySystemMappings": [
-        {
-          "bodySystem": "Intestinal",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Immune",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        }
-      ],
-      "outcomeSignals": [],
-      "scoring": {
-        "responseWeight": 1,
-        "note": "A Yes response contributes 1 to each explicitly mapped calculator; a 0 response contributes 0."
-      },
-      "status": "Active"
-    },
-    {
-      "id": "Q07",
-      "number": 7,
-      "text": "I regularly consume alcohol",
-      "responseType": "radio",
-      "responses": [
-        {
-          "label": "Yes",
-          "value": 1
-        },
-        {
-          "label": "No",
-          "value": 0
-        }
-      ],
-      "bodySystemMappings": [
-        {
-          "bodySystem": "Nervous",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Glandular",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        }
-      ],
-      "outcomeSignals": [],
-      "scoring": {
-        "responseWeight": 1,
-        "note": "A Yes response contributes 1 to each explicitly mapped calculator; a 0 response contributes 0."
-      },
-      "status": "Active"
-    },
-    {
-      "id": "Q08",
-      "number": 8,
-      "text": "I experience mood swings",
-      "responseType": "radio",
-      "responses": [
-        {
-          "label": "Yes",
-          "value": 1
-        },
-        {
-          "label": "No",
-          "value": 0
-        }
-      ],
-      "bodySystemMappings": [
-        {
-          "bodySystem": "Nervous",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Glandular",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        }
-      ],
-      "outcomeSignals": [],
-      "scoring": {
-        "responseWeight": 1,
-        "note": "A Yes response contributes 1 to each explicitly mapped calculator; a 0 response contributes 0."
-      },
-      "status": "Active"
-    },
-    {
-      "id": "Q09",
-      "number": 9,
-      "text": "I have food allergies",
-      "responseType": "radio",
-      "responses": [
-        {
-          "label": "Yes",
-          "value": 1
-        },
-        {
-          "label": "No",
-          "value": 0
-        }
-      ],
-      "bodySystemMappings": [
-        {
-          "bodySystem": "Digestive",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Immune",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Respiratory",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        }
-      ],
-      "outcomeSignals": [],
-      "scoring": {
-        "responseWeight": 1,
-        "note": "A Yes response contributes 1 to each explicitly mapped calculator; a 0 response contributes 0."
-      },
-      "status": "Active"
-    },
-    {
-      "id": "Q10",
-      "number": 10,
-      "text": "I can get dark circles under my eyes",
-      "responseType": "radio",
-      "responses": [
-        {
-          "label": "Yes",
-          "value": 1
-        },
-        {
-          "label": "No",
-          "value": 0
-        }
-      ],
-      "bodySystemMappings": [
-        {
-          "bodySystem": "Circulatory",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Nervous",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Urinary",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        }
-      ],
-      "outcomeSignals": [],
-      "scoring": {
-        "responseWeight": 1,
-        "note": "A Yes response contributes 1 to each explicitly mapped calculator; a 0 response contributes 0."
-      },
-      "status": "Active"
-    },
-    {
-      "id": "Q11",
-      "number": 11,
-      "text": "I smoke, or am exposed to passive smoking",
-      "responseType": "radio",
-      "responses": [
-        {
-          "label": "Yes",
-          "value": 1
-        },
-        {
-          "label": "No",
-          "value": 0
-        }
-      ],
-      "bodySystemMappings": [
-        {
-          "bodySystem": "Circulatory",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Nervous",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Respiratory",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        }
-      ],
-      "outcomeSignals": [],
-      "scoring": {
-        "responseWeight": 1,
-        "note": "A Yes response contributes 1 to each explicitly mapped calculator; a 0 response contributes 0."
-      },
-      "status": "Active"
-    },
-    {
-      "id": "Q12",
-      "number": 12,
-      "text": "I find it hard to concentrate, or have a poor memory for certain things",
-      "responseType": "radio",
-      "responses": [
-        {
-          "label": "Yes",
-          "value": 1
-        },
-        {
-          "label": "No",
-          "value": 0
-        }
-      ],
-      "bodySystemMappings": [
-        {
-          "bodySystem": "Circulatory",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Nervous",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Glandular",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        }
-      ],
-      "outcomeSignals": [],
-      "scoring": {
-        "responseWeight": 1,
-        "note": "A Yes response contributes 1 to each explicitly mapped calculator; a 0 response contributes 0."
-      },
-      "status": "Active"
-    },
-    {
-      "id": "Q13",
-      "number": 13,
-      "text": "I have a poor resistance to unhealthy conditions",
-      "responseType": "radio",
-      "responses": [
-        {
-          "label": "Yes",
-          "value": 1
-        },
-        {
-          "label": "No",
-          "value": 0
-        }
-      ],
-      "bodySystemMappings": [
-        {
-          "bodySystem": "Digestive",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Immune",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        }
-      ],
-      "outcomeSignals": [],
-      "scoring": {
-        "responseWeight": 1,
-        "note": "A Yes response contributes 1 to each explicitly mapped calculator; a 0 response contributes 0."
-      },
-      "status": "Active"
-    },
-    {
-      "id": "Q14",
-      "number": 14,
-      "text": "I sometimes experience discomfort after eating",
-      "responseType": "radio",
-      "responses": [
-        {
-          "label": "Yes",
-          "value": 1
-        },
-        {
-          "label": "No",
-          "value": 0
-        }
-      ],
-      "bodySystemMappings": [
-        {
-          "bodySystem": "Digestive",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Immune",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        }
-      ],
-      "outcomeSignals": [],
-      "scoring": {
-        "responseWeight": 1,
-        "note": "A Yes response contributes 1 to each explicitly mapped calculator; a 0 response contributes 0."
-      },
-      "status": "Active"
-    },
-    {
-      "id": "Q15",
-      "number": 15,
-      "text": "I live a stressful lifestyle",
-      "responseType": "radio",
-      "responses": [
-        {
-          "label": "Yes",
-          "value": 1
-        },
-        {
-          "label": "No",
-          "value": 0
-        }
-      ],
-      "bodySystemMappings": [
-        {
-          "bodySystem": "Intestinal",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Circulatory",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Nervous",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Glandular",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        }
-      ],
-      "outcomeSignals": [],
-      "scoring": {
-        "responseWeight": 1,
-        "note": "A Yes response contributes 1 to each explicitly mapped calculator; a 0 response contributes 0."
-      },
-      "status": "Active"
-    },
-    {
-      "id": "Q16",
-      "number": 16,
-      "text": "I suffer from skin problems",
-      "responseType": "radio",
-      "responses": [
-        {
-          "label": "Yes",
-          "value": 1
-        },
-        {
-          "label": "No",
-          "value": 0
-        }
-      ],
-      "bodySystemMappings": [
-        {
-          "bodySystem": "Digestive",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Intestinal",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Urinary",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Glandular",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Structural",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        }
-      ],
-      "outcomeSignals": [],
-      "scoring": {
-        "responseWeight": 1,
-        "note": "A Yes response contributes 1 to each explicitly mapped calculator; a 0 response contributes 0."
-      },
-      "status": "Active"
-    },
-    {
-      "id": "Q17",
-      "number": 17,
-      "text": "I sometimes crave sweets and/or processed foods",
-      "responseType": "radio",
-      "responses": [
-        {
-          "label": "Yes",
-          "value": 1
-        },
-        {
-          "label": "No",
-          "value": 0
-        }
-      ],
-      "bodySystemMappings": [
-        {
-          "bodySystem": "Nervous",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Glandular",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        }
-      ],
-      "outcomeSignals": [],
-      "scoring": {
-        "responseWeight": 1,
-        "note": "A Yes response contributes 1 to each explicitly mapped calculator; a 0 response contributes 0."
-      },
-      "status": "Active"
-    },
-    {
-      "id": "Q18",
-      "number": 18,
-      "text": "I consume dairy products",
-      "responseType": "radio",
-      "responses": [
-        {
-          "label": "Yes",
-          "value": 1
-        },
-        {
-          "label": "No",
-          "value": 0
-        }
-      ],
-      "bodySystemMappings": [
-        {
-          "bodySystem": "Intestinal",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Respiratory",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        }
-      ],
-      "outcomeSignals": [],
-      "scoring": {
-        "responseWeight": 1,
-        "note": "A Yes response contributes 1 to each explicitly mapped calculator; a 0 response contributes 0."
-      },
-      "status": "Active"
-    },
-    {
-      "id": "Q19",
-      "number": 19,
-      "text": "Sometimes I feel low and/or apathetic",
-      "responseType": "radio",
-      "responses": [
-        {
-          "label": "Yes",
-          "value": 1
-        },
-        {
-          "label": "No",
-          "value": 0
-        }
-      ],
-      "bodySystemMappings": [
-        {
-          "bodySystem": "Intestinal",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Nervous",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Glandular",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        }
-      ],
-      "outcomeSignals": [],
-      "scoring": {
-        "responseWeight": 1,
-        "note": "A Yes response contributes 1 to each explicitly mapped calculator; a 0 response contributes 0."
-      },
-      "status": "Active"
-    },
-    {
-      "id": "Q20",
-      "number": 20,
-      "text": "I can suffer from inadequate or restless sleep",
-      "responseType": "radio",
-      "responses": [
-        {
-          "label": "Yes",
-          "value": 1
-        },
-        {
-          "label": "No",
-          "value": 0
-        }
-      ],
-      "bodySystemMappings": [
-        {
-          "bodySystem": "Nervous",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Glandular",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Structural",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        }
-      ],
-      "outcomeSignals": [],
-      "scoring": {
-        "responseWeight": 1,
-        "note": "A Yes response contributes 1 to each explicitly mapped calculator; a 0 response contributes 0."
-      },
-      "status": "Active"
-    },
-    {
-      "id": "Q21",
-      "number": 21,
-      "text": "I can suffer from urinary problems",
-      "responseType": "radio",
-      "responses": [
-        {
-          "label": "Yes",
-          "value": 1
-        },
-        {
-          "label": "No",
-          "value": 0
-        }
-      ],
-      "bodySystemMappings": [
-        {
-          "bodySystem": "Urinary",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        }
-      ],
-      "outcomeSignals": [],
-      "scoring": {
-        "responseWeight": 1,
-        "note": "A Yes response contributes 1 to each explicitly mapped calculator; a 0 response contributes 0."
-      },
-      "status": "Active"
-    },
-    {
-      "id": "Q22",
-      "number": 22,
-      "text": "I can have brittle fingernails",
-      "responseType": "radio",
-      "responses": [
-        {
-          "label": "Yes",
-          "value": 1
-        },
-        {
-          "label": "No",
-          "value": 0
-        }
-      ],
-      "bodySystemMappings": [
-        {
-          "bodySystem": "Digestive",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Structural",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        }
-      ],
-      "outcomeSignals": [],
-      "scoring": {
-        "responseWeight": 1,
-        "note": "A Yes response contributes 1 to each explicitly mapped calculator; a 0 response contributes 0."
-      },
-      "status": "Active"
-    },
-    {
-      "id": "Q23",
-      "number": 23,
-      "text": "I have had issues with hair loss",
-      "responseType": "radio",
-      "responses": [
-        {
-          "label": "Yes",
-          "value": 1
-        },
-        {
-          "label": "No",
-          "value": 0
-        }
-      ],
-      "bodySystemMappings": [
-        {
-          "bodySystem": "Circulatory",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Nervous",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Glandular",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Structural",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        }
-      ],
-      "outcomeSignals": [],
-      "scoring": {
-        "responseWeight": 1,
-        "note": "A Yes response contributes 1 to each explicitly mapped calculator; a 0 response contributes 0."
-      },
-      "status": "Active"
-    },
-    {
-      "id": "Q24",
-      "number": 24,
-      "text": "I have bad fat and/or cholesterol issues",
-      "responseType": "radio",
-      "responses": [
-        {
-          "label": "Yes",
-          "value": 1
-        },
-        {
-          "label": "No",
-          "value": 0
-        }
-      ],
-      "bodySystemMappings": [
-        {
-          "bodySystem": "Digestive",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Intestinal",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Circulatory",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        }
-      ],
-      "outcomeSignals": [],
-      "scoring": {
-        "responseWeight": 1,
-        "note": "A Yes response contributes 1 to each explicitly mapped calculator; a 0 response contributes 0."
-      },
-      "status": "Active"
-    },
-    {
-      "id": "Q25",
-      "number": 25,
-      "text": "I have difficulty maintaining my ideal weight",
-      "responseType": "radio",
-      "responses": [
-        {
-          "label": "Yes",
-          "value": 1
-        },
-        {
-          "label": "No",
-          "value": 0
-        }
-      ],
-      "bodySystemMappings": [
-        {
-          "bodySystem": "Nervous",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Immune",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Glandular",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Structural",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        }
-      ],
-      "outcomeSignals": [],
-      "scoring": {
-        "responseWeight": 1,
-        "note": "A Yes response contributes 1 to each explicitly mapped calculator; a 0 response contributes 0."
-      },
-      "status": "Active"
-    },
-    {
-      "id": "Q26",
-      "number": 26,
-      "text": "I have a lack of stamina",
-      "responseType": "radio",
-      "responses": [
-        {
-          "label": "Yes",
-          "value": 1
-        },
-        {
-          "label": "No",
-          "value": 0
-        }
-      ],
-      "bodySystemMappings": [
-        {
-          "bodySystem": "Circulatory",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Respiratory",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Glandular",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        }
-      ],
-      "outcomeSignals": [],
-      "scoring": {
-        "responseWeight": 1,
-        "note": "A Yes response contributes 1 to each explicitly mapped calculator; a 0 response contributes 0."
-      },
-      "status": "Active"
-    },
-    {
-      "id": "Q27",
-      "number": 27,
-      "text": "I can have poor eating habits",
-      "responseType": "radio",
-      "responses": [
-        {
-          "label": "Yes",
-          "value": 1
-        },
-        {
-          "label": "No",
-          "value": 0
-        }
-      ],
-      "bodySystemMappings": [
-        {
-          "bodySystem": "Digestive",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Intestinal",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Glandular",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        }
-      ],
-      "outcomeSignals": [],
-      "scoring": {
-        "responseWeight": 1,
-        "note": "A Yes response contributes 1 to each explicitly mapped calculator; a 0 response contributes 0."
-      },
-      "status": "Active"
-    },
-    {
-      "id": "Q28",
-      "number": 28,
-      "text": "I recover slowly from poor health",
-      "responseType": "radio",
-      "responses": [
-        {
-          "label": "Yes",
-          "value": 1
-        },
-        {
-          "label": "No",
-          "value": 0
-        }
-      ],
-      "bodySystemMappings": [
-        {
-          "bodySystem": "Intestinal",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Circulatory",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Glandular",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        }
-      ],
-      "outcomeSignals": [],
-      "scoring": {
-        "responseWeight": 1,
-        "note": "A Yes response contributes 1 to each explicitly mapped calculator; a 0 response contributes 0."
-      },
-      "status": "Active"
-    },
-    {
-      "id": "Q29",
-      "number": 29,
-      "text": "I sometimes have infrequent or irregular bowel activity",
-      "responseType": "radio",
-      "responses": [
-        {
-          "label": "Yes",
-          "value": 1
-        },
-        {
-          "label": "No",
-          "value": 0
-        }
-      ],
-      "bodySystemMappings": [
-        {
-          "bodySystem": "Digestive",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Intestinal",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Nervous",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        }
-      ],
-      "outcomeSignals": [],
-      "scoring": {
-        "responseWeight": 1,
-        "note": "A Yes response contributes 1 to each explicitly mapped calculator; a 0 response contributes 0."
-      },
-      "status": "Active"
-    },
-    {
-      "id": "Q30",
-      "number": 30,
-      "text": "I am sometimes edgy or unable to relax, or experience tension",
-      "responseType": "radio",
-      "responses": [
-        {
-          "label": "Yes",
-          "value": 1
-        },
-        {
-          "label": "No",
-          "value": 0
-        }
-      ],
-      "bodySystemMappings": [
-        {
-          "bodySystem": "Nervous",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Glandular",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        }
-      ],
-      "outcomeSignals": [],
-      "scoring": {
-        "responseWeight": 1,
-        "note": "A Yes response contributes 1 to each explicitly mapped calculator; a 0 response contributes 0."
-      },
-      "status": "Active"
-    },
-    {
-      "id": "Q31",
-      "number": 31,
-      "text": "I have a low-fibre diet",
-      "responseType": "radio",
-      "responses": [
-        {
-          "label": "Yes",
-          "value": 1
-        },
-        {
-          "label": "No",
-          "value": 0
-        }
-      ],
-      "bodySystemMappings": [
-        {
-          "bodySystem": "Intestinal",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Circulatory",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        }
-      ],
-      "outcomeSignals": [],
-      "scoring": {
-        "responseWeight": 1,
-        "note": "A Yes response contributes 1 to each explicitly mapped calculator; a 0 response contributes 0."
-      },
-      "status": "Active"
-    },
-    {
-      "id": "Q32",
-      "number": 32,
-      "text": "I sometimes get muscle discomfort",
-      "responseType": "radio",
-      "responses": [
-        {
-          "label": "Yes",
-          "value": 1
-        },
-        {
-          "label": "No",
-          "value": 0
-        }
-      ],
-      "bodySystemMappings": [
-        {
-          "bodySystem": "Circulatory",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Nervous",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Structural",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        }
-      ],
-      "outcomeSignals": [],
-      "scoring": {
-        "responseWeight": 1,
-        "note": "A Yes response contributes 1 to each explicitly mapped calculator; a 0 response contributes 0."
-      },
-      "status": "Active"
-    },
-    {
-      "id": "Q33",
-      "number": 33,
-      "text": "I can suffer from dry, damaged or dull hair",
-      "responseType": "radio",
-      "responses": [
-        {
-          "label": "Yes",
-          "value": 1
-        },
-        {
-          "label": "No",
-          "value": 0
-        }
-      ],
-      "bodySystemMappings": [
-        {
-          "bodySystem": "Digestive",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Urinary",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        }
-      ],
-      "outcomeSignals": [],
-      "scoring": {
-        "responseWeight": 1,
-        "note": "A Yes response contributes 1 to each explicitly mapped calculator; a 0 response contributes 0."
-      },
-      "status": "Active"
-    },
-    {
-      "id": "Q34",
-      "number": 34,
-      "text": "I am exposed to air pollution",
-      "responseType": "radio",
-      "responses": [
-        {
-          "label": "Yes",
-          "value": 1
-        },
-        {
-          "label": "No",
-          "value": 0
-        }
-      ],
-      "bodySystemMappings": [
-        {
-          "bodySystem": "Immune",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Respiratory",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        }
-      ],
-      "outcomeSignals": [],
-      "scoring": {
-        "responseWeight": 1,
-        "note": "A Yes response contributes 1 to each explicitly mapped calculator; a 0 response contributes 0."
-      },
-      "status": "Active"
-    },
-    {
-      "id": "Q35",
-      "number": 35,
-      "text": "I sometimes get sleepy whilst sitting",
-      "responseType": "radio",
-      "responses": [
-        {
-          "label": "Yes",
-          "value": 1
-        },
-        {
-          "label": "No",
-          "value": 0
-        }
-      ],
-      "bodySystemMappings": [
-        {
-          "bodySystem": "Circulatory",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Glandular",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        }
-      ],
-      "outcomeSignals": [],
-      "scoring": {
-        "responseWeight": 1,
-        "note": "A Yes response contributes 1 to each explicitly mapped calculator; a 0 response contributes 0."
-      },
-      "status": "Active"
-    },
-    {
-      "id": "Q36",
-      "number": 36,
-      "text": "I sometimes lose my appetite",
-      "responseType": "radio",
-      "responses": [
-        {
-          "label": "Yes",
-          "value": 1
-        },
-        {
-          "label": "No",
-          "value": 0
-        }
-      ],
-      "bodySystemMappings": [
-        {
-          "bodySystem": "Digestive",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Nervous",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Glandular",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        }
-      ],
-      "outcomeSignals": [],
-      "scoring": {
-        "responseWeight": 1,
-        "note": "A Yes response contributes 1 to each explicitly mapped calculator; a 0 response contributes 0."
-      },
-      "status": "Active"
-    },
-    {
-      "id": "Q37",
-      "number": 37,
-      "text": "I drink more than 2 cups of tea, coffee or caffeinated drinks per day",
-      "responseType": "radio",
-      "responses": [
-        {
-          "label": "Yes",
-          "value": 1
-        },
-        {
-          "label": "No",
-          "value": 0
-        }
-      ],
-      "bodySystemMappings": [
-        {
-          "bodySystem": "Nervous",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Glandular",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Structural",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        }
-      ],
-      "outcomeSignals": [],
-      "scoring": {
-        "responseWeight": 1,
-        "note": "A Yes response contributes 1 to each explicitly mapped calculator; a 0 response contributes 0."
-      },
-      "status": "Active"
-    },
-    {
-      "id": "Q38",
-      "number": 38,
-      "text": "I sometimes feel out of control",
-      "responseType": "radio",
-      "responses": [
-        {
-          "label": "Yes",
-          "value": 1
-        },
-        {
-          "label": "No",
-          "value": 0
-        }
-      ],
-      "bodySystemMappings": [
-        {
-          "bodySystem": "Nervous",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Immune",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Glandular",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Structural",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        }
-      ],
-      "outcomeSignals": [],
-      "scoring": {
-        "responseWeight": 1,
-        "note": "A Yes response contributes 1 to each explicitly mapped calculator; a 0 response contributes 0."
-      },
-      "status": "Active"
-    },
-    {
-      "id": "Q39",
-      "number": 39,
-      "text": "I have food or chemical sensitivities",
-      "responseType": "radio",
-      "responses": [
-        {
-          "label": "Yes",
-          "value": 1
-        },
-        {
-          "label": "No",
-          "value": 0
-        }
-      ],
-      "bodySystemMappings": [
-        {
-          "bodySystem": "Digestive",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Intestinal",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Immune",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        }
-      ],
-      "outcomeSignals": [],
-      "scoring": {
-        "responseWeight": 1,
-        "note": "A Yes response contributes 1 to each explicitly mapped calculator; a 0 response contributes 0."
-      },
-      "status": "Active"
-    },
-    {
-      "id": "Q40",
-      "number": 40,
-      "text": "I can suffer from yeast/fungus issues",
-      "responseType": "radio",
-      "responses": [
-        {
-          "label": "Yes",
-          "value": 1
-        },
-        {
-          "label": "No",
-          "value": 0
-        }
-      ],
-      "bodySystemMappings": [
-        {
-          "bodySystem": "Digestive",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Intestinal",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Immune",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        }
-      ],
-      "outcomeSignals": [],
-      "scoring": {
-        "responseWeight": 1,
-        "note": "A Yes response contributes 1 to each explicitly mapped calculator; a 0 response contributes 0."
-      },
-      "status": "Active"
-    },
-    {
-      "id": "Q41",
-      "number": 41,
-      "text": "I sometimes have joint discomfort/weakness",
-      "responseType": "radio",
-      "responses": [
-        {
-          "label": "Yes",
-          "value": 1
-        },
-        {
-          "label": "No",
-          "value": 0
-        }
-      ],
-      "bodySystemMappings": [
-        {
-          "bodySystem": "Digestive",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Intestinal",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Circulatory",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Nervous",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Immune",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Structural",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        }
-      ],
-      "outcomeSignals": [],
-      "scoring": {
-        "responseWeight": 1,
-        "note": "A Yes response contributes 1 to each explicitly mapped calculator; a 0 response contributes 0."
-      },
-      "status": "Active"
-    },
-    {
-      "id": "Q42",
-      "number": 42,
-      "text": "I find myself worrying excessively sometimes",
-      "responseType": "radio",
-      "responses": [
-        {
-          "label": "Yes",
-          "value": 1
-        },
-        {
-          "label": "No",
-          "value": 0
-        }
-      ],
-      "bodySystemMappings": [
-        {
-          "bodySystem": "Digestive",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Nervous",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        }
-      ],
-      "outcomeSignals": [],
-      "scoring": {
-        "responseWeight": 1,
-        "note": "A Yes response contributes 1 to each explicitly mapped calculator; a 0 response contributes 0."
-      },
-      "status": "Active"
-    },
-    {
-      "id": "Q43",
-      "number": 43,
-      "text": "I can be easily irritated or angered",
-      "responseType": "radio",
-      "responses": [
-        {
-          "label": "Yes",
-          "value": 1
-        },
-        {
-          "label": "No",
-          "value": 0
-        }
-      ],
-      "bodySystemMappings": [
-        {
-          "bodySystem": "Intestinal",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Nervous",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Glandular",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        }
-      ],
-      "outcomeSignals": [],
-      "scoring": {
-        "responseWeight": 1,
-        "note": "A Yes response contributes 1 to each explicitly mapped calculator; a 0 response contributes 0."
-      },
-      "status": "Active"
-    },
-    {
-      "id": "Q44",
-      "number": 44,
-      "text": "I do insufficient exercise",
-      "responseType": "radio",
-      "responses": [
-        {
-          "label": "Yes",
-          "value": 1
-        },
-        {
-          "label": "No",
-          "value": 0
-        }
-      ],
-      "bodySystemMappings": [
-        {
-          "bodySystem": "Intestinal",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Circulatory",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Nervous",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Immune",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Glandular",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Structural",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        }
-      ],
-      "outcomeSignals": [],
-      "scoring": {
-        "responseWeight": 1,
-        "note": "A Yes response contributes 1 to each explicitly mapped calculator; a 0 response contributes 0."
-      },
-      "status": "Active"
-    },
-    {
-      "id": "Q45",
-      "number": 45,
-      "text": "I can suffer from problems with congestion or mucus",
-      "responseType": "radio",
-      "responses": [
-        {
-          "label": "Yes",
-          "value": 1
-        },
-        {
-          "label": "No",
-          "value": 0
-        }
-      ],
-      "bodySystemMappings": [
-        {
-          "bodySystem": "Intestinal",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        },
-        {
-          "bodySystem": "Respiratory",
-          "source": "SuperForms calculator",
-          "contribution": 1
-        }
-      ],
-      "outcomeSignals": [],
-      "scoring": {
-        "responseWeight": 1,
-        "note": "A Yes response contributes 1 to each explicitly mapped calculator; a 0 response contributes 0."
-      },
-      "status": "Active"
-    },
-    {
-      "id": "Q46",
-      "number": 46,
-      "text": "I have menopause worries or concerns",
-      "responseType": "radio",
-      "responses": [
-        {
-          "label": "Yes",
-          "value": 1
-        },
-        {
-          "label": "No / Not applicable",
-          "value": 0
-        }
-      ],
-      "bodySystemMappings": [],
-      "outcomeSignals": [
-        "OUT009"
-      ],
-      "scoring": {
-        "responseWeighting": null,
-        "includedInBodySystemScores": false
-      },
-      "status": "Active",
-      "applicability": {
-        "gender": [
-          "Female"
-        ]
-      },
-      "contextType": "assessment_outcome_signal"
-    },
-    {
-      "id": "Q47",
-      "number": 47,
-      "text": "I have concerns about my menstrual cycle or menopause-related symptoms",
-      "responseType": "radio",
-      "responses": [
-        {
-          "label": "Yes",
-          "value": 1
-        },
-        {
-          "label": "No / Not applicable",
-          "value": 0
-        }
-      ],
-      "bodySystemMappings": [],
-      "outcomeSignals": [
-        "OUT009"
-      ],
-      "scoring": {
-        "responseWeighting": null,
-        "includedInBodySystemScores": false
-      },
-      "status": "Active",
-      "applicability": {
-        "gender": [
-          "Female"
-        ]
-      },
-      "contextType": "assessment_outcome_signal"
-    },
-    {
-      "id": "Q48",
-      "number": 48,
-      "text": "I am under treatment or have a chronic condition",
-      "responseType": "radio",
-      "responses": [
-        {
-          "label": "Yes",
-          "value": 1
-        },
-        {
-          "label": "No / Not applicable",
-          "value": 0
-        }
-      ],
-      "bodySystemMappings": [],
-      "outcomeSignals": [],
-      "scoring": {
-        "responseWeighting": null,
-        "includedInBodySystemScores": false,
-        "includedInOutcomeScores": false,
-        "notes": "Safety/context signal only. It may constrain recommendation presentation but must not independently create a health outcome or product recommendation."
-      },
-      "status": "Active",
-      "applicability": {},
-      "contextType": "medical_safety"
-    }
-  ],
-  "questionCount": 48,
-  "questionnaireLogic": {
-    "baseQuestions": "Q1-Q45 and Q48",
-    "femaleSpecificQuestions": [
-      "Q46",
-      "Q47"
+[
+  {
+    "id": "CTX001",
+    "legacy_id": "Q01",
+    "question": "Would you like to have more energy during the day?",
+    "answer_type": "single_select",
+    "answer_options": [
+      "Yes",
+      "No"
     ],
-    "conditionalRule": "Q46 and Q47 are female-specific and should only be presented to Female respondents.",
-    "medicalContextQuestion": "Q48 is a general medical-treatment/chronic-condition context question and is not part of the nine body-system scoring model.",
-    "note": "Q48 is retained as a safety/context signal for the food and product recommendation layer."
+    "stored_values": [
+      1,
+      0
+    ]
   },
-  "assessmentContext": {
-    "systemScoring": "Nine body-system scores remain separate from medical-safety context.",
-    "outcomeSignals": "Q46 and Q47 can directly signal the menopause-related outcome where applicable.",
-    "safetyContext": "Q48 is a context flag and must not directly increase an outcome or product score."
+  {
+    "id": "IMM001",
+    "legacy_id": "Q02",
+    "question": "How often do you find yourself becoming unwell?",
+    "answer_type": "frequency_4",
+    "answer_options": [
+      "Rarely",
+      "Occasionally",
+      "Several times a year",
+      "Frequently"
+    ],
+    "stored_values": [
+      0,
+      0.33,
+      0.67,
+      1
+    ]
+  },
+  {
+    "id": "DIG001",
+    "legacy_id": "Q03",
+    "question": "Which of the following have you noticed recently or repeatedly? Select any that apply.",
+    "answer_type": "multi_select",
+    "answer_options": [
+      "Bad breath",
+      "Unusual body odour",
+      "Neither"
+    ],
+    "stored_values": [
+      1,
+      1,
+      0
+    ]
+  },
+  {
+    "id": "DIG002",
+    "legacy_id": "Q04",
+    "question": "How often do you have difficulty digesting certain foods?",
+    "answer_type": "frequency_5",
+    "answer_options": [
+      "Never",
+      "Occasionally",
+      "Sometimes",
+      "Often",
+      "Very often"
+    ],
+    "stored_values": [
+      0,
+      0.25,
+      0.5,
+      0.75,
+      1
+    ]
+  },
+  {
+    "id": "NUT001",
+    "legacy_id": "Q05",
+    "question": "How often do you eat red meat, such as beef, lamb or pork?",
+    "answer_type": "frequency_5",
+    "answer_options": [
+      "Never",
+      "Less than once a week",
+      "1–2 times a week",
+      "3–4 times a week",
+      "5 or more times a week"
+    ],
+    "stored_values": [
+      0,
+      0.25,
+      0.5,
+      0.75,
+      1
+    ]
+  },
+  {
+    "id": "SAF001",
+    "legacy_id": "Q06",
+    "question": "Which of the following applies to your health history? Select any that apply",
+    "answer_type": "multi_select",
+    "answer_options": [
+      "None of these",
+      "High blood pressure",
+      "High cholesterol",
+      "Type 2 diabetes",
+      "Heart disease",
+      "Stroke or TAI",
+      "Asthma or COPD"
+    ],
+    "stored_values": [
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "id": "NUT002",
+    "legacy_id": "Q07",
+    "question": "How often do you drink alcohol?",
+    "answer_type": "frequency_4",
+    "answer_options": [
+      "Never",
+      "Occasionally (1-3 times per week)",
+      "Most days (4-6 times per week)",
+      "Daily"
+    ],
+    "stored_values": [
+      0,
+      0.33,
+      0.67,
+      1
+    ]
+  },
+  {
+    "id": "MND001",
+    "legacy_id": "Q08",
+    "question": "How often do you experience noticeable changes in your mood or emotional state?",
+    "answer_type": "frequency_5",
+    "answer_options": [
+      "Never",
+      "Rarely",
+      "Sometimes",
+      "Often",
+      "Very often"
+    ],
+    "stored_values": [
+      0,
+      0.25,
+      0.5,
+      0.75,
+      1
+    ]
+  },
+  {
+    "id": "SAF002",
+    "legacy_id": "Q09",
+    "question": "Do you have any diagnosed food allergies?",
+    "answer_type": "radio",
+    "answer_options": [
+      "Yes",
+      "No"
+    ],
+    "stored_values": [
+      1,
+      0
+    ]
+  },
+  {
+    "id": "SAF006",
+    "legacy_id": null,
+    "question": "Which food allergies apply to you?",
+    "answer_type": "multi_select",
+    "answer_options": [
+      "Celery",
+      "Cereals containing gluten",
+      "Crustaceans",
+      "Eggs",
+      "Fish",
+      "Lupin",
+      "Milk",
+      "Molluscs",
+      "Mustard",
+      "Peanuts",
+      "Sesame",
+      "Soybeans",
+      "Sulphur dioxide / sulphites",
+      "Tree nuts"
+    ],
+    "stored_values": "None"
+  },
+  {
+    "id": "SAF007",
+    "legacy_id": null,
+    "question": "How would you rate the impact on you?",
+    "answer_type": "frequency_4",
+    "answer_options": [
+      "Unknown",
+      "Mild",
+      "Moderate",
+      "Severe"
+    ],
+    "stored_values": [
+      0.75,
+      0.25,
+      0,
+      0.75,
+      1
+    ]
+  },
+  {
+    "id": "EXP001",
+    "legacy_id": "Q11",
+    "question": "Which best describes your tobacco/vape usage?",
+    "answer_type": "frequency_5",
+    "answer_options": [
+      "I do not smoke/vape",
+      "I used to smoke/vape",
+      "I occasionally smoke/vape",
+      "I smoke/vape regularly",
+      "I smoke/vape heavily"
+    ],
+    "stored_values": [
+      0,
+      0.25,
+      0.5,
+      0.75,
+      1
+    ]
+  },
+  {
+    "id": "EXP006",
+    "legacy_id": null,
+    "question": "Which best describes your tobacco smoke exposure from others?",
+    "answer_type": "frequency_5",
+    "answer_options": [
+      "None",
+      "Occasional",
+      "Sometimes",
+      "Often",
+      "Very often"
+    ],
+    "stored_values": [
+      0,
+      0.25,
+      0.5,
+      0.75,
+      1
+    ]
+  },
+  {
+    "id": "COG001",
+    "legacy_id": "Q12",
+    "question": "How often do you have difficulty concentrating or remembering things?",
+    "answer_type": "frequency_5",
+    "answer_options": [
+      "Never",
+      "Occasionally",
+      "Sometimes",
+      "Often",
+      "Very often"
+    ],
+    "stored_values": [
+      0,
+      0.25,
+      0.5,
+      0.75,
+      1
+    ]
+  },
+  {
+    "id": "IMM002",
+    "legacy_id": "Q13",
+    "question": "How often do you feel that you are unusually susceptible to infections or take longer than expected to recover from them?",
+    "answer_type": "frequency_5",
+    "answer_options": [
+      "Rarely catch things",
+      "Occasionally",
+      "Sometimes",
+      "Often",
+      "Usually when an illness is circulating"
+    ],
+    "stored_values": [
+      0,
+      0.25,
+      0.5,
+      0.75,
+      1
+    ]
+  },
+  {
+    "id": "DIG003",
+    "legacy_id": "Q14",
+    "question": "How often do you experience discomfort, bloating, reflux or other symptoms after eating?",
+    "answer_type": "frequency_5",
+    "answer_options": [
+      "Never",
+      "Occasionally",
+      "Sometimes",
+      "Often",
+      "After most meals"
+    ],
+    "stored_values": [
+      0,
+      0.25,
+      0.5,
+      0.75,
+      1
+    ]
+  },
+  {
+    "id": "MND002",
+    "legacy_id": "Q15",
+    "question": "How often do you feel stressed or under pressure?",
+    "answer_type": "frequency_5",
+    "answer_options": [
+      "Never",
+      "Occasionally",
+      "Sometimes",
+      "Often",
+      "Very often"
+    ],
+    "stored_values": [
+      0,
+      0.25,
+      0.5,
+      0.75,
+      1
+    ]
+  },
+  {
+    "id": "PHY001",
+    "legacy_id": "Q16",
+    "question": "Do you currently have, or have you previously been diagnosed with, any of the following skin conditions? Select any that apply.",
+    "answer_type": "multi_select",
+    "answer_options": [
+      "Eczema / atopic dermatitis",
+      "Psoriasis",
+      "Rosacea",
+      "Another diagnosed skin condition",
+      "None of these"
+    ],
+    "stored_values": [
+      1,
+      1,
+      1,
+      1,
+      0
+    ]
+  },
+  {
+    "id": "PHY002",
+    "legacy_id": "Q16b",
+    "question": "How much does this skin condition currently affect your day-to-day life?",
+    "answer_type": "quality_5",
+    "answer_options": [
+      "Not at all",
+      "A little",
+      "Moderately",
+      "A lot",
+      "Severely"
+    ],
+    "stored_values": [
+      0,
+      0.2,
+      0.5,
+      0.75,
+      1.0
+    ]
+  },
+  {
+    "id": "NUT003",
+    "legacy_id": "Q17",
+    "question": "How often do you find yourself craving sweet or highly processed foods?",
+    "answer_type": "frequency_5",
+    "answer_options": [
+      "Never",
+      "Occasionally",
+      "Sometimes",
+      "Often",
+      "Very often"
+    ],
+    "stored_values": [
+      0,
+      0.2,
+      0.5,
+      0.75,
+      1.0
+    ]
+  },
+  {
+    "id": "NUT004",
+    "legacy_id": "Q18",
+    "question": "Which of the following best describes your relationship with dairy products?",
+    "answer_type": "frequency_5",
+    "answer_options": [
+      "I regularly consume",
+      "I occasionally consume",
+      "I avoid by choice",
+      "I avoid because it causes symptoms",
+      "I have a diagnosed allergy"
+    ],
+    "stored_values": [
+      0.75,
+      0.25,
+      0,
+      0.75,
+      1
+    ]
+  },
+  {
+    "id": "MND003",
+    "legacy_id": "Q19",
+    "question": "How often do you feel unusually low, flat or lacking motivation?",
+    "answer_type": "frequency_5",
+    "answer_options": [
+      "Never",
+      "Occasionally",
+      "Sometimes",
+      "Often",
+      "Very often"
+    ],
+    "stored_values": [
+      0,
+      0.25,
+      0.5,
+      0.75,
+      1
+    ]
+  },
+  {
+    "id": "SLP001",
+    "legacy_id": "Q20",
+    "question": "How would you describe the quality of your sleep?",
+    "answer_type": "frequency_5",
+    "answer_options": [
+      "Very good",
+      "Generally good",
+      "Variable",
+      "Often poor",
+      "Consistently poor"
+    ],
+    "stored_values": [
+      0,
+      0.25,
+      0.5,
+      0.75,
+      1
+    ]
+  },
+  {
+    "id": "SLP002",
+    "legacy_id": "Q21",
+    "question": "How often do you wake during the night to urinate?",
+    "answer_type": "frequency_5",
+    "answer_options": [
+      "Never",
+      "Occasionally",
+      "Sometimes",
+      "Often",
+      "Very often"
+    ],
+    "stored_values": [
+      0,
+      0.25,
+      0.5,
+      0.75,
+      1
+    ]
+  },
+  {
+    "id": "EXP002",
+    "legacy_id": "Q22",
+    "question": "On a typical day, how much time do you spend using social media?",
+    "answer_type": "single_select",
+    "answer_options": [
+      "I don't use social media",
+      "Less than 30 minutes",
+      "30 minutes to 1 hour",
+      "1 to 2 hours",
+      "2 to 3 hours",
+      "More than 3 hours"
+    ],
+    "stored_values": [
+      0,
+      0.2,
+      0.4,
+      0.6,
+      0.8,
+      1.0
+    ]
+  },
+  {
+    "id": "PHY003",
+    "legacy_id": "Q23",
+    "question": "Have you noticed increased hair shedding or thinning compared with your usual pattern?",
+    "answer_type": "radio",
+    "answer_options": [
+      "Yes",
+      "No"
+    ],
+    "stored_values": [
+      1,
+      0
+    ]
+  },
+  {
+    "id": "NUT005",
+    "legacy_id": "Q24a",
+    "question": "How often do you eat foods that are high in saturated fat?",
+    "answer_type": "frequency_5",
+    "answer_options": [
+      "Never",
+      "Occasionally",
+      "Sometimes",
+      "Often",
+      "Very often"
+    ],
+    "stored_values": [
+      0,
+      0.25,
+      0.5,
+      0.75,
+      1
+    ]
+  },
+  {
+    "id": "SAF003",
+    "legacy_id": "Q24b",
+    "question": "Has a healthcare professional ever told you that you have raised cholesterol or another lipid-related issue?",
+    "answer_type": "radio",
+    "answer_options": [
+      "Yes",
+      "No"
+    ],
+    "stored_values": [
+      1,
+      0
+    ]
+  },
+  {
+    "id": "NUT006",
+    "legacy_id": "Q25",
+    "question": "How difficult is it for you to maintain a healthy weight for your body and lifestyle?",
+    "answer_type": "frequency_5",
+    "answer_options": [
+      "Not difficult",
+      "Slightly difficult",
+      "Moderately difficult",
+      "Very difficult",
+      "Extremely difficult"
+    ],
+    "stored_values": [
+      0,
+      0.2,
+      0.5,
+      0.8,
+      1.0
+    ]
+  },
+  {
+    "id": "PHY004",
+    "legacy_id": "Q26",
+    "question": "How would you describe your physical stamina in everyday activities?",
+    "answer_type": "frequency_3",
+    "answer_options": [
+      "Strong",
+      "Normal",
+      "Weak"
+    ],
+    "stored_values": [
+      0,
+      0.5,
+      1
+    ]
+  },
+  {
+    "id": "PHY005",
+    "legacy_id": "Q26b",
+    "question": "How much does the breathlessness limit your daily activities?",
+    "answer_type": "frequency_5",
+    "answer_options": [
+      "Never",
+      "Occasionally",
+      "Sometimes",
+      "Often",
+      "Very often"
+    ],
+    "stored_values": [
+      0,
+      0.25,
+      0.5,
+      0.75,
+      1
+    ]
+  },
+  {
+    "id": "NUT007",
+    "legacy_id": "Q27",
+    "question": "Which best describes your usual eating pattern?",
+    "answer_type": "frequency_4",
+    "answer_options": [
+      "Mostly whole/minimally processed",
+      "Mixed",
+      "Mostly processed/convenience",
+      "Highly irregular"
+    ],
+    "stored_values": [
+      0,
+      0.33,
+      0.67,
+      1
+    ]
+  },
+  {
+    "id": "IMM003",
+    "legacy_id": "Q28",
+    "question": "When you do become unwell, how quickly do you usually recover?",
+    "answer_type": "frequency_4",
+    "answer_options": [
+      "Very quickly",
+      "Somewhat quickly",
+      "Slowly",
+      "Very slowly"
+    ],
+    "stored_values": [
+      0,
+      0.33,
+      0.67,
+      1
+    ]
+  },
+  {
+    "id": "DIG004",
+    "legacy_id": "Q29",
+    "question": "How often do you experience constipation, diarrhoea or other noticeable changes in bowel regularity?",
+    "answer_type": "frequency_3",
+    "answer_options": [
+      "Rarely",
+      "Occasionally",
+      "Frequently"
+    ],
+    "stored_values": [
+      0,
+      0.5,
+      1
+    ]
+  },
+  {
+    "id": "MND004",
+    "legacy_id": "Q30",
+    "question": "How often do you find it difficult to switch off or relax, even when you have the opportunity to do so?",
+    "answer_type": "frequency_3",
+    "answer_options": [
+      "Rarely",
+      "Occasionally",
+      "Frequently"
+    ],
+    "stored_values": [
+      0,
+      0.5,
+      1
+    ]
+  },
+  {
+    "id": "NUT008",
+    "legacy_id": "Q31",
+    "question": "How often do you eat foods that are naturally high in fibre, such as vegetables, fruit, beans, lentils, wholegrains, nuts or seeds?",
+    "answer_type": "frequency_3",
+    "answer_options": [
+      "Rarely",
+      "Occasionally",
+      "Frequently"
+    ],
+    "stored_values": [
+      1,
+      0.5,
+      0
+    ]
+  },
+  {
+    "id": "PHY006",
+    "legacy_id": "Q32",
+    "question": "How often do you experience muscle aches, stiffness, weakness or discomfort that affects your normal activities?",
+    "answer_type": "frequency_5",
+    "answer_options": [
+      "Never",
+      "Less than once a week",
+      "1 day a week",
+      "2 days a week",
+      "3 or more days a week"
+    ],
+    "stored_values": [
+      0,
+      0.2,
+      0.5,
+      0.8,
+      1.0
+    ]
+  },
+  {
+    "id": "EXP003",
+    "legacy_id": "Q34",
+    "question": "How much time per day do you typically spend in areas with noticeable traffic, industrial or other air pollution?",
+    "answer_type": "frequency_4",
+    "answer_options": [
+      "None",
+      "Less than 2 hours",
+      "Between 2 and 4 hours",
+      "Over 4 hours"
+    ],
+    "stored_values": [
+      0,
+      0.33,
+      0.67,
+      1
+    ]
+  },
+  {
+    "id": "SLP003",
+    "legacy_id": "Q35",
+    "question": "How often do you feel excessively sleepy or tired during the day?",
+    "answer_type": "frequency_5",
+    "answer_options": [
+      "Never",
+      "Less than once a week",
+      "1 day a week",
+      "2 days a week",
+      "3 or more days a week"
+    ],
+    "stored_values": [
+      0,
+      0.2,
+      0.5,
+      0.8,
+      1.0
+    ]
+  },
+  {
+    "id": "CTX002",
+    "legacy_id": "Q36",
+    "question": "Have you experienced an unexplained loss of appetite recently?",
+    "answer_type": "radio",
+    "answer_options": [
+      "Yes",
+      "No"
+    ],
+    "stored_values": [
+      1,
+      0
+    ]
+  },
+  {
+    "id": "SLP004",
+    "legacy_id": "Q37",
+    "question": "How many caffeinated drinks do you typically have each day?",
+    "answer_type": "single_select",
+    "answer_options": [
+      "None",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5 or more"
+    ],
+    "stored_values": [
+      0,
+      0.2,
+      0.4,
+      0.6,
+      0.8,
+      1.0
+    ]
+  },
+  {
+    "id": "SLP005",
+    "legacy_id": "Q37b",
+    "question": "When do you usually have your last caffeinated drink of the day?",
+    "answer_type": "single_select",
+    "answer_options": [
+      "Before midday",
+      "12pm to 2pm",
+      "2pm to 4pm",
+      "4pm to 6pm",
+      "After 6pm",
+      "It varies considerably"
+    ],
+    "stored_values": [
+      0,
+      0.2,
+      0.4,
+      0.6,
+      1.0,
+      0.5
+    ]
+  },
+  {
+    "id": "MND005",
+    "legacy_id": "Q38",
+    "question": "How often do you feel irritable, impatient or easily frustrated?",
+    "answer_type": "frequency_5",
+    "answer_options": [
+      "Never",
+      "Less than once a week",
+      "1 day a week",
+      "2 days a week",
+      "3 or more days a week"
+    ],
+    "stored_values": [
+      0,
+      0.2,
+      0.5,
+      0.8,
+      1.0
+    ]
+  },
+  {
+    "id": "SAF004",
+    "legacy_id": "Q39",
+    "question": "Do you have any food, chemical or environmental sensitivities or intolerances that we should take into account?",
+    "answer_type": "radio",
+    "answer_options": [
+      "Yes",
+      "No"
+    ],
+    "stored_values": [
+      1,
+      0
+    ]
+  },
+  {
+    "id": "PHY007",
+    "legacy_id": "Q41",
+    "question": "How often do you experience joint pain, stiffness, reduced mobility or weakness that affects your normal activities?",
+    "answer_type": "frequency_5",
+    "answer_options": [
+      "Never",
+      "Less than once a week",
+      "1 day a week",
+      "2 days a week",
+      "3 or more days a week"
+    ],
+    "stored_values": [
+      0,
+      0.2,
+      0.5,
+      0.8,
+      1.0
+    ]
+  },
+  {
+    "id": "MND006",
+    "legacy_id": "Q42",
+    "question": "How often do you find yourself worrying more than you would like?",
+    "answer_type": "radio",
+    "answer_options": [
+      "Yes",
+      "No"
+    ],
+    "stored_values": [
+      1,
+      0
+    ]
+  },
+  {
+    "id": "MND007",
+    "legacy_id": "Q43",
+    "question": "How well do you usually cope when things don't go as planned?",
+    "answer_type": "radio",
+    "answer_options": [
+      "Yes",
+      "No"
+    ],
+    "stored_values": [
+      1,
+      0
+    ]
+  },
+  {
+    "id": "PHY008",
+    "legacy_id": "Q44",
+    "question": "How much moderate or vigorous physical activity do you typically do each week?",
+    "answer_type": "frequency_5",
+    "answer_options": [
+      "Less than 30 minutes",
+      "30 to 59 minutes",
+      "60 to 149 minutes",
+      "150 to 299 minutes",
+      "300 minutes or more",
+      "I'm not sure"
+    ],
+    "stored_values": [
+      1,
+      0.8,
+      0.5,
+      0.2,
+      0,
+      0.5
+    ]
+  },
+  {
+    "id": "PHY009",
+    "legacy_id": null,
+    "question": "How often do you do activities that strengthen your muscles?",
+    "answer_type": "frequency_5",
+    "answer_options": [
+      "Never",
+      "Less than once a week",
+      "1 day a week",
+      "2 days a week",
+      "3 or more days a week"
+    ],
+    "stored_values": [
+      1,
+      0.8,
+      0.5,
+      0.2,
+      0
+    ]
+  },
+  {
+    "id": "EXP004",
+    "legacy_id": "Q45",
+    "question": "How often do you experience persistent or recurring congestion, excess mucus, wheezing or similar breathing symptoms?",
+    "answer_type": "frequency_4",
+    "answer_options": [
+      "Rarely",
+      "Occasionally",
+      "Several times a year",
+      "Frequently"
+    ],
+    "stored_values": [
+      0,
+      0.33,
+      0.67,
+      1
+    ]
+  },
+  {
+    "id": "LIF001",
+    "legacy_id": "Q46",
+    "question": "Do you currently experience menstrual or cycle-related changes or symptoms that you would like to take into account?",
+    "answer_type": "radio",
+    "answer_options": [
+      "Yes",
+      "No / Not applicable"
+    ],
+    "stored_values": [
+      1,
+      0
+    ]
+  },
+  {
+    "id": "LIF002",
+    "legacy_id": "Q47",
+    "question": "Are you experiencing perimenopause, menopause or related life-stage changes that you would like to take into account?",
+    "answer_type": "radio",
+    "answer_options": [
+      "Yes",
+      "No / Not applicable"
+    ],
+    "stored_values": [
+      1,
+      0
+    ]
+  },
+  {
+    "id": "SAF005",
+    "legacy_id": "Q48",
+    "question": "Are you currently receiving medical treatment or managing a diagnosed long-term health condition?",
+    "answer_type": "radio",
+    "answer_options": [
+      "Yes",
+      "No / Not applicable",
+      "Prefer not to say"
+    ],
+    "stored_values": [
+      1,
+      0,
+      null
+    ]
+  },
+  {
+    "id": "EXP005",
+    "legacy_id": "NEW-01",
+    "question": "On a typical day, how much time do you spend sitting or otherwise inactive while awake?",
+    "answer_type": "single_select",
+    "answer_options": [
+      "Less than 2 hours",
+      "2 to 4 hours",
+      "4 to 6 hours",
+      "6 to 8 hours",
+      "More than 8 hours"
+    ],
+    "stored_values": [
+      0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ]
+  },
+  {
+    "id": "NUT009",
+    "legacy_id": "NEW-02",
+    "question": "In a typical week, how often do you eat highly processed or ultra-processed foods such as packaged snacks, processed meats, ready meals, sweets, biscuits or similar convenience foods?",
+    "answer_type": "single_select",
+    "answer_options": [
+      "Rarely or never",
+      "1–2 times",
+      "3–4 times",
+      "5–7 times",
+      "8–10 times",
+      "More than 10 times",
+      "I'm not sure"
+    ],
+    "stored_values": [
+      0,
+      0.2,
+      0.4,
+      0.6,
+      0.8,
+      1.0,
+      null
+    ]
+  },
+  {
+    "id": "NUT010",
+    "legacy_id": "NEW-03",
+    "question": "On a typical day, how many portions of fruit and vegetables do you eat?",
+    "answer_type": "single_select",
+    "answer_options": [
+      "Less than 1 portion",
+      "1–2 portions",
+      "3–4 portions",
+      "5 portions",
+      "More than 5 portions",
+      "I'm not sure"
+    ],
+    "stored_values": [
+      1,
+      0.8,
+      0.5,
+      0.2,
+      0,
+      0.5
+    ]
+  },
+  {
+    "id": "SLP006",
+    "legacy_id": "NEW-04",
+    "question": "How many hours of sleep do you usually get on a typical night?",
+    "answer_type": "single_select",
+    "answer_options": [
+      "Less than 5 hours",
+      "5–5.9 hours",
+      "6–6.9 hours",
+      "7–8 hours",
+      "More than 8 hours",
+      "It varies considerably",
+      "I'm not sure"
+    ],
+    "stored_values": [
+      0,
+      0.2,
+      0.4,
+      0.6,
+      0.8,
+      1.0,
+      null
+    ]
+  },
+  {
+    "id": "MND008",
+    "legacy_id": "NEW-05",
+    "question": "How often do you feel you have enough meaningful social connection and support in your life?",
+    "answer_type": "frequency_5",
+    "answer_options": [
+      "Always",
+      "Often",
+      "Sometimes",
+      "Rarely",
+      "Never"
+    ],
+    "stored_values": [
+      0,
+      0.2,
+      0.5,
+      0.75,
+      1.0
+    ]
   }
-}
+]
