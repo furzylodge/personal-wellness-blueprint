@@ -1,0 +1,973 @@
+﻿Profile,Production ID,Answer
+P01_balanced_baseline,Q01,Yes
+P01_balanced_baseline,Q02,Rarely
+P01_balanced_baseline,Q03,Bad breath
+P01_balanced_baseline,Q04,Never
+P01_balanced_baseline,Q05,Never
+P01_balanced_baseline,Q06,I have taken antibiotics in the last 3 months
+P01_balanced_baseline,Q07,None
+P01_balanced_baseline,Q08,Never
+P01_balanced_baseline,Q09,No
+P01_balanced_baseline,Q11,I do not smoke and am not regularly exposed to smoke
+P01_balanced_baseline,Q12,Never
+P01_balanced_baseline,Q13,Never
+P01_balanced_baseline,Q14,Never
+P01_balanced_baseline,Q15,Never
+P01_balanced_baseline,Q16,Eczema / atopic dermatitis
+P01_balanced_baseline,Q16b,Not at all
+P01_balanced_baseline,Q17,Never
+P01_balanced_baseline,Q18,I regularly consume dairy
+P01_balanced_baseline,Q19,Never
+P01_balanced_baseline,Q20,Very good
+P01_balanced_baseline,Q21,Never
+P01_balanced_baseline,Q23,No
+P01_balanced_baseline,Q24a,0
+P01_balanced_baseline,Q24b,no
+P01_balanced_baseline,Q25,Not difficult
+P01_balanced_baseline,Q26,Very good
+P01_balanced_baseline,Q27,Mostly whole and minimally processed foods
+P01_balanced_baseline,Q28,Very quickly
+P01_balanced_baseline,Q29,Never
+P01_balanced_baseline,Q30,Never
+P01_balanced_baseline,Q31,Rarely or never
+P01_balanced_baseline,Q32,Never
+P01_balanced_baseline,Q34,Very little
+P01_balanced_baseline,Q35,Never
+P01_balanced_baseline,Q36,No
+P01_balanced_baseline,Q37,None
+P01_balanced_baseline,Q37b,I do not have caffeinated drinks
+P01_balanced_baseline,Q38,Never
+P01_balanced_baseline,Q39,None
+P01_balanced_baseline,Q41,Never
+P01_balanced_baseline,Q42,Never
+P01_balanced_baseline,Q43,Very well
+P01_balanced_baseline,Q44,Very little
+P01_balanced_baseline,Q45,Never
+P01_balanced_baseline,Q46,no
+P01_balanced_baseline,Q47,No
+P01_balanced_baseline,Q48,No
+P01_balanced_baseline,EXP002,Less than 30 minutes
+P01_balanced_baseline,PHY008,"{""activity"": ""Less than 30 minutes"", ""strength"": ""2 days a week""}"
+P01_balanced_baseline,EXP005,Less than 2 hours
+P01_balanced_baseline,NUT009,Rarely or never
+P01_balanced_baseline,NUT010,Less than 1 portion
+P01_balanced_baseline,SLP006,7–8 hours
+P01_balanced_baseline,MND008,Often
+P02_sleep_led,Q01,Yes
+P02_sleep_led,Q02,Rarely
+P02_sleep_led,Q03,Bad breath
+P02_sleep_led,Q04,Never
+P02_sleep_led,Q05,Never
+P02_sleep_led,Q06,I have taken antibiotics in the last 3 months
+P02_sleep_led,Q07,None
+P02_sleep_led,Q08,Never
+P02_sleep_led,Q09,No
+P02_sleep_led,Q11,I do not smoke and am not regularly exposed to smoke
+P02_sleep_led,Q12,Never
+P02_sleep_led,Q13,Never
+P02_sleep_led,Q14,Never
+P02_sleep_led,Q15,Never
+P02_sleep_led,Q16,Eczema / atopic dermatitis
+P02_sleep_led,Q16b,Not at all
+P02_sleep_led,Q17,Never
+P02_sleep_led,Q18,I regularly consume dairy
+P02_sleep_led,Q19,Never
+P02_sleep_led,Q20,Consistently poor
+P02_sleep_led,Q21,Very often
+P02_sleep_led,Q23,No
+P02_sleep_led,Q24a,0
+P02_sleep_led,Q24b,no
+P02_sleep_led,Q25,Not difficult
+P02_sleep_led,Q26,Very good
+P02_sleep_led,Q27,Mostly whole and minimally processed foods
+P02_sleep_led,Q28,Very quickly
+P02_sleep_led,Q29,Never
+P02_sleep_led,Q30,Never
+P02_sleep_led,Q31,Rarely or never
+P02_sleep_led,Q32,Never
+P02_sleep_led,Q34,Very little
+P02_sleep_led,Q35,Very often
+P02_sleep_led,Q36,No
+P02_sleep_led,Q37,3–4 caffeinated drinks
+P02_sleep_led,Q37b,After 6 pm
+P02_sleep_led,Q38,Never
+P02_sleep_led,Q39,None
+P02_sleep_led,Q41,Never
+P02_sleep_led,Q42,Never
+P02_sleep_led,Q43,Very well
+P02_sleep_led,Q44,Very little
+P02_sleep_led,Q45,Never
+P02_sleep_led,Q46,no
+P02_sleep_led,Q47,No
+P02_sleep_led,Q48,No
+P02_sleep_led,EXP002,Less than 30 minutes
+P02_sleep_led,PHY008,"{""activity"": ""Less than 30 minutes"", ""strength"": ""1 day a week""}"
+P02_sleep_led,EXP005,Less than 2 hours
+P02_sleep_led,NUT009,Rarely or never
+P02_sleep_led,NUT010,Less than 1 portion
+P02_sleep_led,SLP006,Less than 5 hours
+P02_sleep_led,MND008,Often
+P03_stress_led,Q01,Yes
+P03_stress_led,Q02,Rarely
+P03_stress_led,Q03,Bad breath
+P03_stress_led,Q04,Never
+P03_stress_led,Q05,Never
+P03_stress_led,Q06,I have taken antibiotics in the last 3 months
+P03_stress_led,Q07,None
+P03_stress_led,Q08,Very often
+P03_stress_led,Q09,No
+P03_stress_led,Q11,I do not smoke and am not regularly exposed to smoke
+P03_stress_led,Q12,Never
+P03_stress_led,Q13,Never
+P03_stress_led,Q14,Never
+P03_stress_led,Q15,Very often
+P03_stress_led,Q16,Eczema / atopic dermatitis
+P03_stress_led,Q16b,Not at all
+P03_stress_led,Q17,Never
+P03_stress_led,Q18,I regularly consume dairy
+P03_stress_led,Q19,Very often
+P03_stress_led,Q20,Very good
+P03_stress_led,Q21,Never
+P03_stress_led,Q23,No
+P03_stress_led,Q24a,0
+P03_stress_led,Q24b,no
+P03_stress_led,Q25,Not difficult
+P03_stress_led,Q26,Very good
+P03_stress_led,Q27,Mostly whole and minimally processed foods
+P03_stress_led,Q28,Very quickly
+P03_stress_led,Q29,Never
+P03_stress_led,Q30,Very often
+P03_stress_led,Q31,Rarely or never
+P03_stress_led,Q32,Never
+P03_stress_led,Q34,Very little
+P03_stress_led,Q35,Never
+P03_stress_led,Q36,No
+P03_stress_led,Q37,None
+P03_stress_led,Q37b,I do not have caffeinated drinks
+P03_stress_led,Q38,Very often
+P03_stress_led,Q39,None
+P03_stress_led,Q41,Never
+P03_stress_led,Q42,Very often
+P03_stress_led,Q43,Very well
+P03_stress_led,Q44,Very little
+P03_stress_led,Q45,Never
+P03_stress_led,Q46,no
+P03_stress_led,Q47,No
+P03_stress_led,Q48,No
+P03_stress_led,EXP002,1 to 2 hours
+P03_stress_led,PHY008,"{""activity"": ""Less than 30 minutes"", ""strength"": ""2 days a week""}"
+P03_stress_led,EXP005,Less than 2 hours
+P03_stress_led,NUT009,Rarely or never
+P03_stress_led,NUT010,Less than 1 portion
+P03_stress_led,SLP006,Less than 5 hours
+P03_stress_led,MND008,Rarely
+P04_digestive_led,Q01,Yes
+P04_digestive_led,Q02,Rarely
+P04_digestive_led,Q03,Bad breath
+P04_digestive_led,Q04,Very often
+P04_digestive_led,Q05,Never
+P04_digestive_led,Q06,I have taken antibiotics in the last 3 months
+P04_digestive_led,Q07,None
+P04_digestive_led,Q08,Never
+P04_digestive_led,Q09,No
+P04_digestive_led,Q11,I do not smoke and am not regularly exposed to smoke
+P04_digestive_led,Q12,Never
+P04_digestive_led,Q13,Never
+P04_digestive_led,Q14,Very often
+P04_digestive_led,Q15,Never
+P04_digestive_led,Q16,Eczema / atopic dermatitis
+P04_digestive_led,Q16b,Not at all
+P04_digestive_led,Q17,Never
+P04_digestive_led,Q18,I regularly consume dairy
+P04_digestive_led,Q19,Never
+P04_digestive_led,Q20,Very good
+P04_digestive_led,Q21,Never
+P04_digestive_led,Q23,No
+P04_digestive_led,Q24a,0
+P04_digestive_led,Q24b,no
+P04_digestive_led,Q25,Not difficult
+P04_digestive_led,Q26,Very good
+P04_digestive_led,Q27,Mostly processed or convenience foods
+P04_digestive_led,Q28,Very quickly
+P04_digestive_led,Q29,Very often
+P04_digestive_led,Q30,Never
+P04_digestive_led,Q31,Rarely or never
+P04_digestive_led,Q32,Never
+P04_digestive_led,Q34,Very little
+P04_digestive_led,Q35,Never
+P04_digestive_led,Q36,No
+P04_digestive_led,Q37,None
+P04_digestive_led,Q37b,I do not have caffeinated drinks
+P04_digestive_led,Q38,Never
+P04_digestive_led,Q39,None
+P04_digestive_led,Q41,Never
+P04_digestive_led,Q42,Never
+P04_digestive_led,Q43,Very well
+P04_digestive_led,Q44,Very little
+P04_digestive_led,Q45,Never
+P04_digestive_led,Q46,no
+P04_digestive_led,Q47,No
+P04_digestive_led,Q48,No
+P04_digestive_led,EXP002,Less than 30 minutes
+P04_digestive_led,PHY008,"{""activity"": ""Less than 30 minutes"", ""strength"": ""2 days a week""}"
+P04_digestive_led,EXP005,Less than 2 hours
+P04_digestive_led,NUT009,Rarely or never
+P04_digestive_led,NUT010,Less than 1 portion
+P04_digestive_led,SLP006,Less than 5 hours
+P04_digestive_led,MND008,Often
+P05_lifestyle_led,Q01,Yes
+P05_lifestyle_led,Q02,Rarely
+P05_lifestyle_led,Q03,Bad breath
+P05_lifestyle_led,Q04,Never
+P05_lifestyle_led,Q05,5 or more times a week
+P05_lifestyle_led,Q06,I have taken antibiotics in the last 3 months
+P05_lifestyle_led,Q07,None
+P05_lifestyle_led,Q08,Never
+P05_lifestyle_led,Q09,No
+P05_lifestyle_led,Q11,I do not smoke and am not regularly exposed to smoke
+P05_lifestyle_led,Q12,Never
+P05_lifestyle_led,Q13,Never
+P05_lifestyle_led,Q14,Never
+P05_lifestyle_led,Q15,Never
+P05_lifestyle_led,Q16,Eczema / atopic dermatitis
+P05_lifestyle_led,Q16b,Not at all
+P05_lifestyle_led,Q17,Never
+P05_lifestyle_led,Q18,I regularly consume dairy
+P05_lifestyle_led,Q19,Never
+P05_lifestyle_led,Q20,Very good
+P05_lifestyle_led,Q21,Never
+P05_lifestyle_led,Q23,No
+P05_lifestyle_led,Q24a,0
+P05_lifestyle_led,Q24b,no
+P05_lifestyle_led,Q25,Not difficult
+P05_lifestyle_led,Q26,Very good
+P05_lifestyle_led,Q27,Mostly whole and minimally processed foods
+P05_lifestyle_led,Q28,Very quickly
+P05_lifestyle_led,Q29,Never
+P05_lifestyle_led,Q30,Never
+P05_lifestyle_led,Q31,Rarely or never
+P05_lifestyle_led,Q32,Never
+P05_lifestyle_led,Q34,Very little
+P05_lifestyle_led,Q35,Never
+P05_lifestyle_led,Q36,No
+P05_lifestyle_led,Q37,5 or more caffeinated drinks
+P05_lifestyle_led,Q37b,After 6 pm
+P05_lifestyle_led,Q38,Never
+P05_lifestyle_led,Q39,None
+P05_lifestyle_led,Q41,Never
+P05_lifestyle_led,Q42,Never
+P05_lifestyle_led,Q43,Very well
+P05_lifestyle_led,Q44,Very little
+P05_lifestyle_led,Q45,Never
+P05_lifestyle_led,Q46,no
+P05_lifestyle_led,Q47,No
+P05_lifestyle_led,Q48,No
+P05_lifestyle_led,EXP002,2 to 3 hours
+P05_lifestyle_led,PHY008,"{""activity"": ""Less than 30 minutes"", ""strength"": ""Never""}"
+P05_lifestyle_led,EXP005,More than 8 hours
+P05_lifestyle_led,NUT009,8–10 times
+P05_lifestyle_led,NUT010,Less than 1 portion
+P05_lifestyle_led,SLP006,Less than 5 hours
+P05_lifestyle_led,MND008,Often
+P06_multi_signal,Q01,Yes
+P06_multi_signal,Q02,Rarely
+P06_multi_signal,Q03,Bad breath
+P06_multi_signal,Q04,Very often
+P06_multi_signal,Q05,Never
+P06_multi_signal,Q06,I have taken antibiotics in the last 3 months
+P06_multi_signal,Q07,None
+P06_multi_signal,Q08,Never
+P06_multi_signal,Q09,No
+P06_multi_signal,Q11,I do not smoke and am not regularly exposed to smoke
+P06_multi_signal,Q12,Never
+P06_multi_signal,Q13,Never
+P06_multi_signal,Q14,Very often
+P06_multi_signal,Q15,Very often
+P06_multi_signal,Q16,Eczema / atopic dermatitis
+P06_multi_signal,Q16b,Not at all
+P06_multi_signal,Q17,Never
+P06_multi_signal,Q18,I regularly consume dairy
+P06_multi_signal,Q19,Never
+P06_multi_signal,Q20,Consistently poor
+P06_multi_signal,Q21,Never
+P06_multi_signal,Q23,No
+P06_multi_signal,Q24a,0
+P06_multi_signal,Q24b,no
+P06_multi_signal,Q25,Not difficult
+P06_multi_signal,Q26,Very good
+P06_multi_signal,Q27,4
+P06_multi_signal,Q28,Very quickly
+P06_multi_signal,Q29,Very often
+P06_multi_signal,Q30,Very often
+P06_multi_signal,Q31,Rarely or never
+P06_multi_signal,Q32,Never
+P06_multi_signal,Q34,Very little
+P06_multi_signal,Q35,Very often
+P06_multi_signal,Q36,No
+P06_multi_signal,Q37,None
+P06_multi_signal,Q37b,I do not have caffeinated drinks
+P06_multi_signal,Q38,Never
+P06_multi_signal,Q39,None
+P06_multi_signal,Q41,Never
+P06_multi_signal,Q42,Very often
+P06_multi_signal,Q43,Very well
+P06_multi_signal,Q44,Very little
+P06_multi_signal,Q45,Never
+P06_multi_signal,Q46,no
+P06_multi_signal,Q47,No
+P06_multi_signal,Q48,No
+P06_multi_signal,EXP002,2 to 3 hours
+P06_multi_signal,PHY008,"{""activity"": ""Less than 30 minutes"", ""strength"": ""Never""}"
+P06_multi_signal,EXP005,More than 8 hours
+P06_multi_signal,NUT009,Rarely or never
+P06_multi_signal,NUT010,Less than 1 portion
+P06_multi_signal,SLP006,Less than 5 hours
+P06_multi_signal,MND008,Sometimes
+P07_context_heavy,Q01,Yes
+P07_context_heavy,Q02,Rarely
+P07_context_heavy,Q03,Bad breath
+P07_context_heavy,Q04,Never
+P07_context_heavy,Q05,Never
+P07_context_heavy,Q06,"[""I have taken antibiotics in the last 3 months"", ""I take regular prescription medication""]"
+P07_context_heavy,Q07,None
+P07_context_heavy,Q08,Never
+P07_context_heavy,Q09,Yes
+P07_context_heavy,Q11,I do not smoke and am not regularly exposed to smoke
+P07_context_heavy,Q12,Never
+P07_context_heavy,Q13,Never
+P07_context_heavy,Q14,Never
+P07_context_heavy,Q15,Never
+P07_context_heavy,Q16,"[""Eczema / atopic dermatitis""]"
+P07_context_heavy,Q16b,A lot
+P07_context_heavy,Q17,Never
+P07_context_heavy,Q18,I regularly consume dairy
+P07_context_heavy,Q19,Never
+P07_context_heavy,Q20,Very good
+P07_context_heavy,Q21,Never
+P07_context_heavy,Q23,No
+P07_context_heavy,Q24a,0
+P07_context_heavy,Q24b,yes
+P07_context_heavy,Q25,Not difficult
+P07_context_heavy,Q26,Very good
+P07_context_heavy,Q27,Mostly whole and minimally processed foods
+P07_context_heavy,Q28,Very quickly
+P07_context_heavy,Q29,Never
+P07_context_heavy,Q30,Never
+P07_context_heavy,Q31,Rarely or never
+P07_context_heavy,Q32,Never
+P07_context_heavy,Q34,Very little
+P07_context_heavy,Q35,Never
+P07_context_heavy,Q36,No
+P07_context_heavy,Q37,None
+P07_context_heavy,Q37b,I do not have caffeinated drinks
+P07_context_heavy,Q38,Never
+P07_context_heavy,Q39,"[""None""]"
+P07_context_heavy,Q41,Never
+P07_context_heavy,Q42,Never
+P07_context_heavy,Q43,Very well
+P07_context_heavy,Q44,Very little
+P07_context_heavy,Q45,Never
+P07_context_heavy,Q46,yes
+P07_context_heavy,Q47,No
+P07_context_heavy,Q48,No
+P07_context_heavy,EXP002,Less than 30 minutes
+P07_context_heavy,PHY008,"{""activity"": ""Less than 30 minutes"", ""strength"": ""2 days a week""}"
+P07_context_heavy,EXP005,Less than 2 hours
+P07_context_heavy,NUT009,Rarely or never
+P07_context_heavy,NUT010,Less than 1 portion
+P07_context_heavy,SLP006,Less than 5 hours
+P07_context_heavy,MND008,Often
+P08_respiratory_led,Q01,Yes
+P08_respiratory_led,Q02,Rarely
+P08_respiratory_led,Q03,Bad breath
+P08_respiratory_led,Q04,Never
+P08_respiratory_led,Q05,Never
+P08_respiratory_led,Q06,I have taken antibiotics in the last 3 months
+P08_respiratory_led,Q07,None
+P08_respiratory_led,Q08,Never
+P08_respiratory_led,Q09,No
+P08_respiratory_led,Q11,I currently smoke occasionally
+P08_respiratory_led,Q12,Never
+P08_respiratory_led,Q13,Never
+P08_respiratory_led,Q14,Never
+P08_respiratory_led,Q15,Never
+P08_respiratory_led,Q16,Eczema / atopic dermatitis
+P08_respiratory_led,Q16b,Not at all
+P08_respiratory_led,Q17,Never
+P08_respiratory_led,Q18,I regularly consume dairy
+P08_respiratory_led,Q19,Never
+P08_respiratory_led,Q20,Very good
+P08_respiratory_led,Q21,Never
+P08_respiratory_led,Q23,No
+P08_respiratory_led,Q24a,0
+P08_respiratory_led,Q24b,no
+P08_respiratory_led,Q25,Not difficult
+P08_respiratory_led,Q26,Very good
+P08_respiratory_led,Q27,Mostly whole and minimally processed foods
+P08_respiratory_led,Q28,Very quickly
+P08_respiratory_led,Q29,Never
+P08_respiratory_led,Q30,Never
+P08_respiratory_led,Q31,Rarely or never
+P08_respiratory_led,Q32,Never
+P08_respiratory_led,Q34,More than 4 hours a day
+P08_respiratory_led,Q35,Never
+P08_respiratory_led,Q36,No
+P08_respiratory_led,Q37,None
+P08_respiratory_led,Q37b,I do not have caffeinated drinks
+P08_respiratory_led,Q38,Never
+P08_respiratory_led,Q39,None
+P08_respiratory_led,Q41,Never
+P08_respiratory_led,Q42,Never
+P08_respiratory_led,Q43,Very well
+P08_respiratory_led,Q44,Very little
+P08_respiratory_led,Q45,Very often
+P08_respiratory_led,Q46,no
+P08_respiratory_led,Q47,No
+P08_respiratory_led,Q48,No
+P08_respiratory_led,EXP002,Less than 30 minutes
+P08_respiratory_led,PHY008,"{""activity"": ""Less than 30 minutes"", ""strength"": ""2 days a week""}"
+P08_respiratory_led,EXP005,Less than 2 hours
+P08_respiratory_led,NUT009,Rarely or never
+P08_respiratory_led,NUT010,Less than 1 portion
+P08_respiratory_led,SLP006,Less than 5 hours
+P08_respiratory_led,MND008,Often
+P09_goal_led,Q01,yes
+P09_goal_led,Q02,Rarely
+P09_goal_led,Q03,Bad breath
+P09_goal_led,Q04,Never
+P09_goal_led,Q05,Never
+P09_goal_led,Q06,I have taken antibiotics in the last 3 months
+P09_goal_led,Q07,None
+P09_goal_led,Q08,Never
+P09_goal_led,Q09,No
+P09_goal_led,Q11,I do not smoke and am not regularly exposed to smoke
+P09_goal_led,Q12,Never
+P09_goal_led,Q13,Never
+P09_goal_led,Q14,Never
+P09_goal_led,Q15,Never
+P09_goal_led,Q16,Eczema / atopic dermatitis
+P09_goal_led,Q16b,Not at all
+P09_goal_led,Q17,Never
+P09_goal_led,Q18,I regularly consume dairy
+P09_goal_led,Q19,Never
+P09_goal_led,Q20,Very good
+P09_goal_led,Q21,Never
+P09_goal_led,Q23,No
+P09_goal_led,Q24a,0
+P09_goal_led,Q24b,no
+P09_goal_led,Q25,Not difficult
+P09_goal_led,Q26,Very good
+P09_goal_led,Q27,Mostly whole and minimally processed foods
+P09_goal_led,Q28,Very quickly
+P09_goal_led,Q29,Never
+P09_goal_led,Q30,Never
+P09_goal_led,Q31,Rarely or never
+P09_goal_led,Q32,Never
+P09_goal_led,Q34,Very little
+P09_goal_led,Q35,Never
+P09_goal_led,Q36,No
+P09_goal_led,Q37,None
+P09_goal_led,Q37b,I do not have caffeinated drinks
+P09_goal_led,Q38,Never
+P09_goal_led,Q39,None
+P09_goal_led,Q41,Never
+P09_goal_led,Q42,Never
+P09_goal_led,Q43,Very well
+P09_goal_led,Q44,Very little
+P09_goal_led,Q45,Never
+P09_goal_led,Q46,no
+P09_goal_led,Q47,No
+P09_goal_led,Q48,No
+P09_goal_led,EXP002,Less than 30 minutes
+P09_goal_led,PHY008,"{""activity"": ""Less than 30 minutes"", ""strength"": ""2 days a week""}"
+P09_goal_led,EXP005,Less than 2 hours
+P09_goal_led,NUT009,Rarely or never
+P09_goal_led,NUT010,Less than 1 portion
+P09_goal_led,SLP006,Less than 5 hours
+P09_goal_led,MND008,Often
+P10_minimal_signal,Q01,Yes
+P10_minimal_signal,Q02,Rarely
+P10_minimal_signal,Q03,Bad breath
+P10_minimal_signal,Q04,Never
+P10_minimal_signal,Q05,Never
+P10_minimal_signal,Q06,I have taken antibiotics in the last 3 months
+P10_minimal_signal,Q07,None
+P10_minimal_signal,Q08,Never
+P10_minimal_signal,Q09,No
+P10_minimal_signal,Q11,I do not smoke and am not regularly exposed to smoke
+P10_minimal_signal,Q12,Never
+P10_minimal_signal,Q13,Never
+P10_minimal_signal,Q14,Never
+P10_minimal_signal,Q15,Never
+P10_minimal_signal,Q16,Eczema / atopic dermatitis
+P10_minimal_signal,Q16b,Not at all
+P10_minimal_signal,Q17,Never
+P10_minimal_signal,Q18,I regularly consume dairy
+P10_minimal_signal,Q19,Never
+P10_minimal_signal,Q20,Very good
+P10_minimal_signal,Q21,Never
+P10_minimal_signal,Q23,No
+P10_minimal_signal,Q24a,0
+P10_minimal_signal,Q24b,no
+P10_minimal_signal,Q25,Not difficult
+P10_minimal_signal,Q26,Very good
+P10_minimal_signal,Q27,Mostly whole and minimally processed foods
+P10_minimal_signal,Q28,Very quickly
+P10_minimal_signal,Q29,Never
+P10_minimal_signal,Q30,Never
+P10_minimal_signal,Q31,Rarely or never
+P10_minimal_signal,Q32,Never
+P10_minimal_signal,Q34,Very little
+P10_minimal_signal,Q35,Never
+P10_minimal_signal,Q36,No
+P10_minimal_signal,Q37,None
+P10_minimal_signal,Q37b,I do not have caffeinated drinks
+P10_minimal_signal,Q38,Never
+P10_minimal_signal,Q39,None
+P10_minimal_signal,Q41,Never
+P10_minimal_signal,Q42,Never
+P10_minimal_signal,Q43,Very well
+P10_minimal_signal,Q44,Very little
+P10_minimal_signal,Q45,Never
+P10_minimal_signal,Q46,no
+P10_minimal_signal,Q47,No
+P10_minimal_signal,Q48,No
+P10_minimal_signal,EXP002,Less than 30 minutes
+P10_minimal_signal,PHY008,"{""activity"": ""Less than 30 minutes"", ""strength"": ""2 days a week""}"
+P10_minimal_signal,EXP005,Less than 2 hours
+P10_minimal_signal,NUT009,Rarely or never
+P10_minimal_signal,NUT010,Less than 1 portion
+P10_minimal_signal,SLP006,7–8 hours
+P10_minimal_signal,MND008,Often
+P11_hormonal_lifestage,Q01,Yes
+P11_hormonal_lifestage,Q02,Rarely
+P11_hormonal_lifestage,Q03,Bad breath
+P11_hormonal_lifestage,Q04,Never
+P11_hormonal_lifestage,Q05,Never
+P11_hormonal_lifestage,Q06,I have taken antibiotics in the last 3 months
+P11_hormonal_lifestage,Q07,None
+P11_hormonal_lifestage,Q08,Never
+P11_hormonal_lifestage,Q09,No
+P11_hormonal_lifestage,Q11,I do not smoke and am not regularly exposed to smoke
+P11_hormonal_lifestage,Q12,Never
+P11_hormonal_lifestage,Q13,Never
+P11_hormonal_lifestage,Q14,Never
+P11_hormonal_lifestage,Q15,Never
+P11_hormonal_lifestage,Q16,Eczema / atopic dermatitis
+P11_hormonal_lifestage,Q16b,Not at all
+P11_hormonal_lifestage,Q17,Never
+P11_hormonal_lifestage,Q18,I regularly consume dairy
+P11_hormonal_lifestage,Q19,Never
+P11_hormonal_lifestage,Q20,Very good
+P11_hormonal_lifestage,Q21,Never
+P11_hormonal_lifestage,Q23,4
+P11_hormonal_lifestage,Q24a,0
+P11_hormonal_lifestage,Q24b,no
+P11_hormonal_lifestage,Q25,Not difficult
+P11_hormonal_lifestage,Q26,Very good
+P11_hormonal_lifestage,Q27,Mostly whole and minimally processed foods
+P11_hormonal_lifestage,Q28,Very quickly
+P11_hormonal_lifestage,Q29,Never
+P11_hormonal_lifestage,Q30,Never
+P11_hormonal_lifestage,Q31,Rarely or never
+P11_hormonal_lifestage,Q32,Never
+P11_hormonal_lifestage,Q34,Very little
+P11_hormonal_lifestage,Q35,Never
+P11_hormonal_lifestage,Q36,No
+P11_hormonal_lifestage,Q37,None
+P11_hormonal_lifestage,Q37b,I do not have caffeinated drinks
+P11_hormonal_lifestage,Q38,Never
+P11_hormonal_lifestage,Q39,None
+P11_hormonal_lifestage,Q41,Never
+P11_hormonal_lifestage,Q42,Never
+P11_hormonal_lifestage,Q43,Very well
+P11_hormonal_lifestage,Q44,Very little
+P11_hormonal_lifestage,Q45,Never
+P11_hormonal_lifestage,Q46,no
+P11_hormonal_lifestage,Q47,2
+P11_hormonal_lifestage,Q48,4
+P11_hormonal_lifestage,EXP002,Less than 30 minutes
+P11_hormonal_lifestage,PHY008,"{""activity"": ""Less than 30 minutes"", ""strength"": ""2 days a week""}"
+P11_hormonal_lifestage,EXP005,Less than 2 hours
+P11_hormonal_lifestage,NUT009,Rarely or never
+P11_hormonal_lifestage,NUT010,Less than 1 portion
+P11_hormonal_lifestage,SLP006,Less than 5 hours
+P11_hormonal_lifestage,MND008,Often
+P12_immune_resilience,Q01,Yes
+P12_immune_resilience,Q02,Rarely
+P12_immune_resilience,Q03,Bad breath
+P12_immune_resilience,Q04,Never
+P12_immune_resilience,Q05,5 or more times a week
+P12_immune_resilience,Q06,I have taken antibiotics in the last 3 months
+P12_immune_resilience,Q07,None
+P12_immune_resilience,Q08,Never
+P12_immune_resilience,Q09,No
+P12_immune_resilience,Q11,I do not smoke and am not regularly exposed to smoke
+P12_immune_resilience,Q12,Very often
+P12_immune_resilience,Q13,Very often
+P12_immune_resilience,Q14,Never
+P12_immune_resilience,Q15,Never
+P12_immune_resilience,Q16,Eczema / atopic dermatitis
+P12_immune_resilience,Q16b,Not at all
+P12_immune_resilience,Q17,Never
+P12_immune_resilience,Q18,I regularly consume dairy
+P12_immune_resilience,Q19,Never
+P12_immune_resilience,Q20,Very good
+P12_immune_resilience,Q21,Never
+P12_immune_resilience,Q23,No
+P12_immune_resilience,Q24a,0
+P12_immune_resilience,Q24b,no
+P12_immune_resilience,Q25,Not difficult
+P12_immune_resilience,Q26,Very good
+P12_immune_resilience,Q27,Mostly whole and minimally processed foods
+P12_immune_resilience,Q28,Very quickly
+P12_immune_resilience,Q29,Never
+P12_immune_resilience,Q30,Never
+P12_immune_resilience,Q31,Rarely or never
+P12_immune_resilience,Q32,Very often
+P12_immune_resilience,Q34,Very little
+P12_immune_resilience,Q35,Never
+P12_immune_resilience,Q36,No
+P12_immune_resilience,Q37,None
+P12_immune_resilience,Q37b,I do not have caffeinated drinks
+P12_immune_resilience,Q38,Never
+P12_immune_resilience,Q39,None
+P12_immune_resilience,Q41,Never
+P12_immune_resilience,Q42,Never
+P12_immune_resilience,Q43,Very well
+P12_immune_resilience,Q44,Very little
+P12_immune_resilience,Q45,Never
+P12_immune_resilience,Q46,no
+P12_immune_resilience,Q47,No
+P12_immune_resilience,Q48,No
+P12_immune_resilience,EXP002,Less than 30 minutes
+P12_immune_resilience,PHY008,"{""activity"": ""Less than 30 minutes"", ""strength"": ""2 days a week""}"
+P12_immune_resilience,EXP005,Less than 2 hours
+P12_immune_resilience,NUT009,Rarely or never
+P12_immune_resilience,NUT010,Less than 1 portion
+P12_immune_resilience,SLP006,Less than 5 hours
+P12_immune_resilience,MND008,Often
+P13_metabolic_weight,Q01,Yes
+P13_metabolic_weight,Q02,Rarely
+P13_metabolic_weight,Q03,Bad breath
+P13_metabolic_weight,Q04,Never
+P13_metabolic_weight,Q05,Never
+P13_metabolic_weight,Q06,I have taken antibiotics in the last 3 months
+P13_metabolic_weight,Q07,None
+P13_metabolic_weight,Q08,Never
+P13_metabolic_weight,Q09,No
+P13_metabolic_weight,Q11,I do not smoke and am not regularly exposed to smoke
+P13_metabolic_weight,Q12,Never
+P13_metabolic_weight,Q13,Never
+P13_metabolic_weight,Q14,Never
+P13_metabolic_weight,Q15,Never
+P13_metabolic_weight,Q16,Eczema / atopic dermatitis
+P13_metabolic_weight,Q16b,Not at all
+P13_metabolic_weight,Q17,Never
+P13_metabolic_weight,Q18,I regularly consume dairy
+P13_metabolic_weight,Q19,Never
+P13_metabolic_weight,Q20,Very good
+P13_metabolic_weight,Q21,Never
+P13_metabolic_weight,Q23,No
+P13_metabolic_weight,Q24a,4
+P13_metabolic_weight,Q24b,no
+P13_metabolic_weight,Q25,Not difficult
+P13_metabolic_weight,Q26,Very good
+P13_metabolic_weight,Q27,4
+P13_metabolic_weight,Q28,Very quickly
+P13_metabolic_weight,Q29,Never
+P13_metabolic_weight,Q30,Never
+P13_metabolic_weight,Q31,Rarely or never
+P13_metabolic_weight,Q32,Never
+P13_metabolic_weight,Q34,Very little
+P13_metabolic_weight,Q35,Never
+P13_metabolic_weight,Q36,No
+P13_metabolic_weight,Q37,None
+P13_metabolic_weight,Q37b,I do not have caffeinated drinks
+P13_metabolic_weight,Q38,Never
+P13_metabolic_weight,Q39,None
+P13_metabolic_weight,Q41,Never
+P13_metabolic_weight,Q42,Never
+P13_metabolic_weight,Q43,Very well
+P13_metabolic_weight,Q44,Very little
+P13_metabolic_weight,Q45,Never
+P13_metabolic_weight,Q46,no
+P13_metabolic_weight,Q47,No
+P13_metabolic_weight,Q48,No
+P13_metabolic_weight,EXP002,Less than 30 minutes
+P13_metabolic_weight,PHY008,"{""activity"": ""Less than 30 minutes"", ""strength"": ""2 days a week""}"
+P13_metabolic_weight,EXP005,More than 8 hours
+P13_metabolic_weight,NUT009,8–10 times
+P13_metabolic_weight,NUT010,Less than 1 portion
+P13_metabolic_weight,SLP006,Less than 5 hours
+P13_metabolic_weight,MND008,Often
+P14_mobility_joints,Q01,Yes
+P14_mobility_joints,Q02,4
+P14_mobility_joints,Q03,Bad breath
+P14_mobility_joints,Q04,Never
+P14_mobility_joints,Q05,Never
+P14_mobility_joints,Q06,I have taken antibiotics in the last 3 months
+P14_mobility_joints,Q07,None
+P14_mobility_joints,Q08,Never
+P14_mobility_joints,Q09,No
+P14_mobility_joints,Q11,I do not smoke and am not regularly exposed to smoke
+P14_mobility_joints,Q12,Never
+P14_mobility_joints,Q13,Never
+P14_mobility_joints,Q14,Never
+P14_mobility_joints,Q15,Never
+P14_mobility_joints,Q16,Eczema / atopic dermatitis
+P14_mobility_joints,Q16b,Not at all
+P14_mobility_joints,Q17,Very often
+P14_mobility_joints,Q18,I regularly consume dairy
+P14_mobility_joints,Q19,Never
+P14_mobility_joints,Q20,Very good
+P14_mobility_joints,Q21,Never
+P14_mobility_joints,Q23,No
+P14_mobility_joints,Q24a,0
+P14_mobility_joints,Q24b,no
+P14_mobility_joints,Q25,Not difficult
+P14_mobility_joints,Q26,Very good
+P14_mobility_joints,Q27,Mostly whole and minimally processed foods
+P14_mobility_joints,Q28,Very quickly
+P14_mobility_joints,Q29,Never
+P14_mobility_joints,Q30,Never
+P14_mobility_joints,Q31,Rarely or never
+P14_mobility_joints,Q32,Never
+P14_mobility_joints,Q34,Very little
+P14_mobility_joints,Q35,Never
+P14_mobility_joints,Q36,No
+P14_mobility_joints,Q37,None
+P14_mobility_joints,Q37b,I do not have caffeinated drinks
+P14_mobility_joints,Q38,Never
+P14_mobility_joints,Q39,None
+P14_mobility_joints,Q41,Very often
+P14_mobility_joints,Q42,Never
+P14_mobility_joints,Q43,Very well
+P14_mobility_joints,Q44,Very little
+P14_mobility_joints,Q45,Never
+P14_mobility_joints,Q46,no
+P14_mobility_joints,Q47,No
+P14_mobility_joints,Q48,No
+P14_mobility_joints,EXP002,Less than 30 minutes
+P14_mobility_joints,PHY008,"{""activity"": ""Less than 30 minutes"", ""strength"": ""3 or more days a week""}"
+P14_mobility_joints,EXP005,Less than 2 hours
+P14_mobility_joints,NUT009,Rarely or never
+P14_mobility_joints,NUT010,Less than 1 portion
+P14_mobility_joints,SLP006,Less than 5 hours
+P14_mobility_joints,MND008,Often
+P15_cardiovascular,Q01,Yes
+P15_cardiovascular,Q02,Rarely
+P15_cardiovascular,Q03,Bad breath
+P15_cardiovascular,Q04,Never
+P15_cardiovascular,Q05,Never
+P15_cardiovascular,Q06,I have taken antibiotics in the last 3 months
+P15_cardiovascular,Q07,None
+P15_cardiovascular,Q08,Never
+P15_cardiovascular,Q09,No
+P15_cardiovascular,Q11,I do not smoke and am not regularly exposed to smoke
+P15_cardiovascular,Q12,Never
+P15_cardiovascular,Q13,Never
+P15_cardiovascular,Q14,Never
+P15_cardiovascular,Q15,Never
+P15_cardiovascular,Q16,Eczema / atopic dermatitis
+P15_cardiovascular,Q16b,Not at all
+P15_cardiovascular,Q17,Never
+P15_cardiovascular,Q18,I regularly consume dairy
+P15_cardiovascular,Q19,Never
+P15_cardiovascular,Q20,Very good
+P15_cardiovascular,Q21,Never
+P15_cardiovascular,Q23,No
+P15_cardiovascular,Q24a,0
+P15_cardiovascular,Q24b,no
+P15_cardiovascular,Q25,Extremely difficult
+P15_cardiovascular,Q26,Very good
+P15_cardiovascular,Q27,Mostly whole and minimally processed foods
+P15_cardiovascular,Q28,Much slower than expected
+P15_cardiovascular,Q29,Never
+P15_cardiovascular,Q30,Never
+P15_cardiovascular,Q31,Rarely or never
+P15_cardiovascular,Q32,Never
+P15_cardiovascular,Q34,Very little
+P15_cardiovascular,Q35,Never
+P15_cardiovascular,Q36,No
+P15_cardiovascular,Q37,None
+P15_cardiovascular,Q37b,I do not have caffeinated drinks
+P15_cardiovascular,Q38,Never
+P15_cardiovascular,Q39,None
+P15_cardiovascular,Q41,Never
+P15_cardiovascular,Q42,Never
+P15_cardiovascular,Q43,Very well
+P15_cardiovascular,Q44,Very little
+P15_cardiovascular,Q45,Never
+P15_cardiovascular,Q46,no
+P15_cardiovascular,Q47,No
+P15_cardiovascular,Q48,No
+P15_cardiovascular,EXP002,Less than 30 minutes
+P15_cardiovascular,PHY008,"{""activity"": ""Less than 30 minutes"", ""strength"": ""2 days a week""}"
+P15_cardiovascular,EXP005,More than 8 hours
+P15_cardiovascular,NUT009,8–10 times
+P15_cardiovascular,NUT010,Less than 1 portion
+P15_cardiovascular,SLP006,Less than 5 hours
+P15_cardiovascular,MND008,Often
+P16_positive_high_wellness,Q01,Yes
+P16_positive_high_wellness,Q02,Rarely
+P16_positive_high_wellness,Q03,Bad breath
+P16_positive_high_wellness,Q04,Never
+P16_positive_high_wellness,Q05,Never
+P16_positive_high_wellness,Q06,I have taken antibiotics in the last 3 months
+P16_positive_high_wellness,Q07,None
+P16_positive_high_wellness,Q08,Never
+P16_positive_high_wellness,Q09,No
+P16_positive_high_wellness,Q11,I do not smoke and am not regularly exposed to smoke
+P16_positive_high_wellness,Q12,Never
+P16_positive_high_wellness,Q13,Never
+P16_positive_high_wellness,Q14,Never
+P16_positive_high_wellness,Q15,Never
+P16_positive_high_wellness,Q16,Eczema / atopic dermatitis
+P16_positive_high_wellness,Q16b,Not at all
+P16_positive_high_wellness,Q17,Never
+P16_positive_high_wellness,Q18,I regularly consume dairy
+P16_positive_high_wellness,Q19,Never
+P16_positive_high_wellness,Q20,Very good
+P16_positive_high_wellness,Q21,Never
+P16_positive_high_wellness,Q23,No
+P16_positive_high_wellness,Q24a,0
+P16_positive_high_wellness,Q24b,no
+P16_positive_high_wellness,Q25,Not difficult
+P16_positive_high_wellness,Q26,Very good
+P16_positive_high_wellness,Q27,Mostly whole and minimally processed foods
+P16_positive_high_wellness,Q28,Very quickly
+P16_positive_high_wellness,Q29,Never
+P16_positive_high_wellness,Q30,Never
+P16_positive_high_wellness,Q31,Rarely or never
+P16_positive_high_wellness,Q32,Never
+P16_positive_high_wellness,Q34,Very little
+P16_positive_high_wellness,Q35,Never
+P16_positive_high_wellness,Q36,No
+P16_positive_high_wellness,Q37,None
+P16_positive_high_wellness,Q37b,I do not have caffeinated drinks
+P16_positive_high_wellness,Q38,Never
+P16_positive_high_wellness,Q39,None
+P16_positive_high_wellness,Q41,Never
+P16_positive_high_wellness,Q42,Never
+P16_positive_high_wellness,Q43,Very well
+P16_positive_high_wellness,Q44,300 minutes or more
+P16_positive_high_wellness,Q45,Never
+P16_positive_high_wellness,Q46,no
+P16_positive_high_wellness,Q47,No
+P16_positive_high_wellness,Q48,No
+P16_positive_high_wellness,EXP002,Less than 30 minutes
+P16_positive_high_wellness,PHY008,"{""activity"": ""300 minutes or more"", ""strength"": ""3 or more days a week""}"
+P16_positive_high_wellness,EXP005,Less than 2 hours
+P16_positive_high_wellness,NUT009,Rarely or never
+P16_positive_high_wellness,NUT010,Less than 1 portion
+P16_positive_high_wellness,SLP006,7–8 hours
+P16_positive_high_wellness,MND008,Often
+P17_many_weak_no_strong,Q01,Yes
+P17_many_weak_no_strong,Q02,Rarely
+P17_many_weak_no_strong,Q03,Bad breath
+P17_many_weak_no_strong,Q04,Sometimes
+P17_many_weak_no_strong,Q05,Never
+P17_many_weak_no_strong,Q06,I have taken antibiotics in the last 3 months
+P17_many_weak_no_strong,Q07,None
+P17_many_weak_no_strong,Q08,Sometimes
+P17_many_weak_no_strong,Q09,No
+P17_many_weak_no_strong,Q11,I do not smoke and am not regularly exposed to smoke
+P17_many_weak_no_strong,Q12,Never
+P17_many_weak_no_strong,Q13,Never
+P17_many_weak_no_strong,Q14,Sometimes
+P17_many_weak_no_strong,Q15,Sometimes
+P17_many_weak_no_strong,Q16,Eczema / atopic dermatitis
+P17_many_weak_no_strong,Q16b,Not at all
+P17_many_weak_no_strong,Q17,Never
+P17_many_weak_no_strong,Q18,I regularly consume dairy
+P17_many_weak_no_strong,Q19,Never
+P17_many_weak_no_strong,Q20,Variable
+P17_many_weak_no_strong,Q21,Never
+P17_many_weak_no_strong,Q23,No
+P17_many_weak_no_strong,Q24a,0
+P17_many_weak_no_strong,Q24b,no
+P17_many_weak_no_strong,Q25,Not difficult
+P17_many_weak_no_strong,Q26,Very good
+P17_many_weak_no_strong,Q27,Mostly whole and minimally processed foods
+P17_many_weak_no_strong,Q28,Very quickly
+P17_many_weak_no_strong,Q29,Never
+P17_many_weak_no_strong,Q30,Never
+P17_many_weak_no_strong,Q31,Rarely or never
+P17_many_weak_no_strong,Q32,Never
+P17_many_weak_no_strong,Q34,Very little
+P17_many_weak_no_strong,Q35,Never
+P17_many_weak_no_strong,Q36,No
+P17_many_weak_no_strong,Q37,None
+P17_many_weak_no_strong,Q37b,I do not have caffeinated drinks
+P17_many_weak_no_strong,Q38,Never
+P17_many_weak_no_strong,Q39,None
+P17_many_weak_no_strong,Q41,Never
+P17_many_weak_no_strong,Q42,Never
+P17_many_weak_no_strong,Q43,Very well
+P17_many_weak_no_strong,Q44,60–149 minutes
+P17_many_weak_no_strong,Q45,Never
+P17_many_weak_no_strong,Q46,no
+P17_many_weak_no_strong,Q47,No
+P17_many_weak_no_strong,Q48,No
+P17_many_weak_no_strong,EXP002,Less than 30 minutes
+P17_many_weak_no_strong,PHY008,"{""activity"": ""60 to 149 minutes"", ""strength"": ""2 days a week""}"
+P17_many_weak_no_strong,EXP005,4–6 hours
+P17_many_weak_no_strong,NUT009,3–4 times
+P17_many_weak_no_strong,NUT010,Less than 1 portion
+P17_many_weak_no_strong,SLP006,6–6.9 hours
+P17_many_weak_no_strong,MND008,Sometimes
+P18_context_strong_signal_low,Q01,Yes
+P18_context_strong_signal_low,Q02,Rarely
+P18_context_strong_signal_low,Q03,Bad breath
+P18_context_strong_signal_low,Q04,Never
+P18_context_strong_signal_low,Q05,Never
+P18_context_strong_signal_low,Q06,"[""I have taken antibiotics in the last 3 months"", ""I take regular prescription medication""]"
+P18_context_strong_signal_low,Q07,None
+P18_context_strong_signal_low,Q08,Never
+P18_context_strong_signal_low,Q09,Yes
+P18_context_strong_signal_low,Q11,I do not smoke and am not regularly exposed to smoke
+P18_context_strong_signal_low,Q12,Never
+P18_context_strong_signal_low,Q13,Never
+P18_context_strong_signal_low,Q14,Never
+P18_context_strong_signal_low,Q15,Never
+P18_context_strong_signal_low,Q16,"[""Eczema / atopic dermatitis""]"
+P18_context_strong_signal_low,Q16b,A little
+P18_context_strong_signal_low,Q17,Never
+P18_context_strong_signal_low,Q18,I regularly consume dairy
+P18_context_strong_signal_low,Q19,Never
+P18_context_strong_signal_low,Q20,Very good
+P18_context_strong_signal_low,Q21,Never
+P18_context_strong_signal_low,Q23,No
+P18_context_strong_signal_low,Q24a,0
+P18_context_strong_signal_low,Q24b,yes
+P18_context_strong_signal_low,Q25,Not difficult
+P18_context_strong_signal_low,Q26,Very good
+P18_context_strong_signal_low,Q27,Mostly whole and minimally processed foods
+P18_context_strong_signal_low,Q28,Very quickly
+P18_context_strong_signal_low,Q29,Never
+P18_context_strong_signal_low,Q30,Never
+P18_context_strong_signal_low,Q31,Rarely or never
+P18_context_strong_signal_low,Q32,Never
+P18_context_strong_signal_low,Q34,Very little
+P18_context_strong_signal_low,Q35,Never
+P18_context_strong_signal_low,Q36,No
+P18_context_strong_signal_low,Q37,None
+P18_context_strong_signal_low,Q37b,I do not have caffeinated drinks
+P18_context_strong_signal_low,Q38,Never
+P18_context_strong_signal_low,Q39,None
+P18_context_strong_signal_low,Q41,Never
+P18_context_strong_signal_low,Q42,Never
+P18_context_strong_signal_low,Q43,Very well
+P18_context_strong_signal_low,Q44,300 minutes or more
+P18_context_strong_signal_low,Q45,Never
+P18_context_strong_signal_low,Q46,yes
+P18_context_strong_signal_low,Q47,No
+P18_context_strong_signal_low,Q48,No
+P18_context_strong_signal_low,EXP002,Less than 30 minutes
+P18_context_strong_signal_low,PHY008,"{""activity"": ""300 minutes or more"", ""strength"": ""2 days a week""}"
+P18_context_strong_signal_low,EXP005,Less than 2 hours
+P18_context_strong_signal_low,NUT009,Rarely or never
+P18_context_strong_signal_low,NUT010,Less than 1 portion
+P18_context_strong_signal_low,SLP006,7–8 hours
+P18_context_strong_signal_low,MND008,Often

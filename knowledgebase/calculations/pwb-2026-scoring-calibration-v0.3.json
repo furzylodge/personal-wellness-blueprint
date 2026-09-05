@@ -1,0 +1,100 @@
+{
+  "version": "2026-pwb-scoring-calibration-v0.3",
+  "status": "calibration_candidate",
+  "source_basis": [
+    "pwb-provisional-outcome-scoring-architecture-v0.1",
+    "pwb-2026-signal-spec-v0.2",
+    "pwb-2026-signal-provenance-acceptance-v0.1",
+    "pwb-2026-acceptance-test-results-v0.1",
+    "pwb-provisional-model-review-v0.2",
+    "pwb-respondent-level-validation-v0.1-summary"
+  ],
+  "not_final": "The numerical band boundaries below are inferred from the existing provisional outputs solely to make the calibration engine executable. They must be validated against the 18 profiles before production use.",
+  "signal_bands_candidate": {
+    "no_significant_signal": {
+      "min": 0.0,
+      "max_exclusive": 0.25
+    },
+    "weak_signal": {
+      "min": 0.25,
+      "max_exclusive": 0.5
+    },
+    "moderate_signal": {
+      "min": 0.5,
+      "max_exclusive": 0.65
+    },
+    "strong_signal": {
+      "min": 0.65,
+      "max": 1.0
+    }
+  },
+  "interpretation": {
+    "weak": "Relevant evidence exists, but it is not sufficient on its own to make the outcome a dominant priority.",
+    "moderate": "Multiple relevant indicators or a clear coherent pattern support prioritisation.",
+    "strong": "Clear convergence of strong primary evidence and/or several independent relevant responses.",
+    "context": "Never increases signal strength.",
+    "goal": "Can increase priority of an already-supported outcome, never create a signal."
+  },
+  "construct_rules": [
+    {
+      "id": "immune_correlated_cluster",
+      "questions": [
+        "Q02",
+        "Q13",
+        "Q28"
+      ],
+      "method": "capped_normalised_cluster",
+      "reason": "These are related direct constructs and must not be treated as three unrestricted points."
+    },
+    {
+      "id": "stress_related_facets",
+      "questions": [
+        "Q30",
+        "Q42",
+        "Q43"
+      ],
+      "method": "balanced_facets",
+      "reason": "Related stress facets should be balanced rather than raw-summed."
+    },
+    {
+      "id": "sleep_distinct_constructs",
+      "questions": [
+        "Q20",
+        "Q35"
+      ],
+      "method": "independent_primary_mean",
+      "reason": "Historical correlation is low, so these remain separate constructs."
+    },
+    {
+      "id": "digestive_temporal_constructs",
+      "questions": [
+        "Q04",
+        "Q14"
+      ],
+      "method": "independent_if_temporal_distinction_preserved",
+      "reason": "The temporal distinction is important."
+    },
+    {
+      "id": "mobility_constructs",
+      "questions": [
+        "Q32",
+        "Q41"
+      ],
+      "method": "independent_constructs",
+      "reason": "Keep muscle/physical-function and joint/mobility constructs distinct."
+    }
+  ],
+  "priority_rules": {
+    "stage": "after_signal_generation",
+    "goal_effect": "priority_modifier_only",
+    "context_effect": "interpretation_and_constraints_only",
+    "commercial_effect": "none",
+    "top_n": 3,
+    "weak_signal_policy": "May be retained as supporting/background evidence but should not outrank a moderate or strong signal solely through goal matching."
+  },
+  "legacy_boundary": {
+    "sports_performance": "removed from user-facing outcomes",
+    "general_health_resilience": "removed from user-facing outcomes",
+    "body_system_scores": "internal provenance only"
+  }
+}

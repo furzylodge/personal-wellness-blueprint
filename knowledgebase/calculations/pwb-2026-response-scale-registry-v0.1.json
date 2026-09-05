@@ -1,0 +1,1441 @@
+{
+  "version": "2026-pwb-response-scale-registry-v0.1",
+  "status": "candidate",
+  "source": "pwb-question-interaction-design-v0.1",
+  "rule": "Canonical keys are stable identifiers for response positions. Display wording may change without changing scoring.",
+  "scales": {
+    "Q01": {
+      "type": "Ordinal",
+      "options": [
+        {
+          "key": "Q01_1",
+          "position": 1,
+          "label": "Very good energy"
+        },
+        {
+          "key": "Q01_2",
+          "position": 2,
+          "label": "Generally good"
+        },
+        {
+          "key": "Q01_3",
+          "position": 3,
+          "label": "Variable"
+        },
+        {
+          "key": "Q01_4",
+          "position": 4,
+          "label": "Often low"
+        },
+        {
+          "key": "Q01_5",
+          "position": 5,
+          "label": "Consistently low"
+        }
+      ]
+    },
+    "Q02": {
+      "type": "Ordinal",
+      "options": [
+        {
+          "key": "Q02_1",
+          "position": 1,
+          "label": "Rarely"
+        },
+        {
+          "key": "Q02_2",
+          "position": 2,
+          "label": "About once a year"
+        },
+        {
+          "key": "Q02_3",
+          "position": 3,
+          "label": "A few times a year"
+        },
+        {
+          "key": "Q02_4",
+          "position": 4,
+          "label": "Quite often"
+        },
+        {
+          "key": "Q02_5",
+          "position": 5,
+          "label": "Very often"
+        }
+      ]
+    },
+    "Q03": {
+      "type": "Ordinal",
+      "options": [
+        {
+          "key": "Q03_1",
+          "position": 1,
+          "label": "Never or rarely"
+        },
+        {
+          "key": "Q03_2",
+          "position": 2,
+          "label": "Occasionally"
+        },
+        {
+          "key": "Q03_3",
+          "position": 3,
+          "label": "Sometimes"
+        },
+        {
+          "key": "Q03_4",
+          "position": 4,
+          "label": "Often"
+        },
+        {
+          "key": "Q03_5",
+          "position": 5,
+          "label": "Very often"
+        }
+      ]
+    },
+    "Q04": {
+      "type": "Ordinal",
+      "options": [
+        {
+          "key": "Q04_1",
+          "position": 1,
+          "label": "Never"
+        },
+        {
+          "key": "Q04_2",
+          "position": 2,
+          "label": "Occasionally"
+        },
+        {
+          "key": "Q04_3",
+          "position": 3,
+          "label": "Sometimes"
+        },
+        {
+          "key": "Q04_4",
+          "position": 4,
+          "label": "Often"
+        },
+        {
+          "key": "Q04_5",
+          "position": 5,
+          "label": "Very often"
+        }
+      ]
+    },
+    "Q05": {
+      "type": "Ordinal",
+      "options": [
+        {
+          "key": "Q05_1",
+          "position": 1,
+          "label": "Never/rarely"
+        },
+        {
+          "key": "Q05_2",
+          "position": 2,
+          "label": "Less than once a week"
+        },
+        {
+          "key": "Q05_3",
+          "position": 3,
+          "label": "1-2 times a week"
+        },
+        {
+          "key": "Q05_4",
+          "position": 4,
+          "label": "3-4 times a week"
+        },
+        {
+          "key": "Q05_5",
+          "position": 5,
+          "label": "5+ times a week"
+        }
+      ]
+    },
+    "Q06": {
+      "type": "Categorical",
+      "options": [
+        {
+          "key": "Q06_1",
+          "position": 1,
+          "label": "Antibiotics recently"
+        },
+        {
+          "key": "Q06_2",
+          "position": 2,
+          "label": "Regular prescribed medication"
+        },
+        {
+          "key": "Q06_3",
+          "position": 3,
+          "label": "HRT/contraceptive medication"
+        },
+        {
+          "key": "Q06_4",
+          "position": 4,
+          "label": "Other ongoing medication"
+        },
+        {
+          "key": "Q06_5",
+          "position": 5,
+          "label": "None of these"
+        }
+      ]
+    },
+    "Q07": {
+      "type": "Ordinal",
+      "options": [
+        {
+          "key": "Q07_1",
+          "position": 1,
+          "label": "Never"
+        },
+        {
+          "key": "Q07_2",
+          "position": 2,
+          "label": "Less than weekly"
+        },
+        {
+          "key": "Q07_3",
+          "position": 3,
+          "label": "1-2 days/week"
+        },
+        {
+          "key": "Q07_4",
+          "position": 4,
+          "label": "3-4 days/week"
+        },
+        {
+          "key": "Q07_5",
+          "position": 5,
+          "label": "5+ days/week / binge pattern"
+        }
+      ]
+    },
+    "Q08": {
+      "type": "Ordinal",
+      "options": [
+        {
+          "key": "Q08_1",
+          "position": 1,
+          "label": "Never/rarely"
+        },
+        {
+          "key": "Q08_2",
+          "position": 2,
+          "label": "Occasionally"
+        },
+        {
+          "key": "Q08_3",
+          "position": 3,
+          "label": "Sometimes"
+        },
+        {
+          "key": "Q08_4",
+          "position": 4,
+          "label": "Often"
+        },
+        {
+          "key": "Q08_5",
+          "position": 5,
+          "label": "Very often"
+        }
+      ]
+    },
+    "Q09": {
+      "type": "Categorical",
+      "options": [
+        {
+          "key": "Q09_1",
+          "position": 1,
+          "label": "No known food allergies"
+        },
+        {
+          "key": "Q09_2",
+          "position": 2,
+          "label": "I have a diagnosed food allergy"
+        },
+        {
+          "key": "Q09_3",
+          "position": 3,
+          "label": "I avoid foods because of suspected reactions"
+        }
+      ]
+    },
+    "Q10": {
+      "type": "Ordinal",
+      "options": [
+        {
+          "key": "Q10_1",
+          "position": 1,
+          "label": "Never/rarely"
+        },
+        {
+          "key": "Q10_2",
+          "position": 2,
+          "label": "Occasionally"
+        },
+        {
+          "key": "Q10_3",
+          "position": 3,
+          "label": "Sometimes"
+        },
+        {
+          "key": "Q10_4",
+          "position": 4,
+          "label": "Often"
+        },
+        {
+          "key": "Q10_5",
+          "position": 5,
+          "label": "Very often"
+        }
+      ]
+    },
+    "Q11": {
+      "type": "Categorical",
+      "options": [
+        {
+          "key": "Q11_1",
+          "position": 1,
+          "label": "I smoke"
+        },
+        {
+          "key": "Q11_2",
+          "position": 2,
+          "label": "I vape"
+        },
+        {
+          "key": "Q11_3",
+          "position": 3,
+          "label": "I am regularly around smokers/vapers"
+        },
+        {
+          "key": "Q11_4",
+          "position": 4,
+          "label": "Occasionally exposed"
+        },
+        {
+          "key": "Q11_5",
+          "position": 5,
+          "label": "None of these"
+        }
+      ]
+    },
+    "Q12": {
+      "type": "Ordinal",
+      "options": [
+        {
+          "key": "Q12_1",
+          "position": 1,
+          "label": "Never/rarely"
+        },
+        {
+          "key": "Q12_2",
+          "position": 2,
+          "label": "Occasionally"
+        },
+        {
+          "key": "Q12_3",
+          "position": 3,
+          "label": "Sometimes"
+        },
+        {
+          "key": "Q12_4",
+          "position": 4,
+          "label": "Often"
+        },
+        {
+          "key": "Q12_5",
+          "position": 5,
+          "label": "Very often"
+        }
+      ]
+    },
+    "Q13": {
+      "type": "Ordinal",
+      "options": [
+        {
+          "key": "Q13_1",
+          "position": 1,
+          "label": "Rarely catch things"
+        },
+        {
+          "key": "Q13_2",
+          "position": 2,
+          "label": "Occasionally"
+        },
+        {
+          "key": "Q13_3",
+          "position": 3,
+          "label": "Sometimes"
+        },
+        {
+          "key": "Q13_4",
+          "position": 4,
+          "label": "Often"
+        },
+        {
+          "key": "Q13_5",
+          "position": 5,
+          "label": "Usually when illness is circulating"
+        }
+      ]
+    },
+    "Q14": {
+      "type": "Ordinal",
+      "options": [
+        {
+          "key": "Q14_1",
+          "position": 1,
+          "label": "Never"
+        },
+        {
+          "key": "Q14_2",
+          "position": 2,
+          "label": "Occasionally"
+        },
+        {
+          "key": "Q14_3",
+          "position": 3,
+          "label": "Sometimes"
+        },
+        {
+          "key": "Q14_4",
+          "position": 4,
+          "label": "Often"
+        },
+        {
+          "key": "Q14_5",
+          "position": 5,
+          "label": "After most meals"
+        }
+      ]
+    },
+    "Q15": {
+      "type": "Ordinal",
+      "options": [
+        {
+          "key": "Q15_1",
+          "position": 1,
+          "label": "Very little"
+        },
+        {
+          "key": "Q15_2",
+          "position": 2,
+          "label": "Manageable"
+        },
+        {
+          "key": "Q15_3",
+          "position": 3,
+          "label": "Moderate"
+        },
+        {
+          "key": "Q15_4",
+          "position": 4,
+          "label": "High"
+        },
+        {
+          "key": "Q15_5",
+          "position": 5,
+          "label": "Very high / always switched on"
+        }
+      ]
+    },
+    "Q16": {
+      "type": "Ordinal",
+      "options": [
+        {
+          "key": "Q16_1",
+          "position": 1,
+          "label": "None"
+        },
+        {
+          "key": "Q16_2",
+          "position": 2,
+          "label": "Occasional"
+        },
+        {
+          "key": "Q16_3",
+          "position": 3,
+          "label": "Mild/occasional"
+        },
+        {
+          "key": "Q16_4",
+          "position": 4,
+          "label": "Frequent"
+        },
+        {
+          "key": "Q16_5",
+          "position": 5,
+          "label": "Persistent"
+        }
+      ]
+    },
+    "Q17": {
+      "type": "Ordinal",
+      "options": [
+        {
+          "key": "Q17_1",
+          "position": 1,
+          "label": "Rarely"
+        },
+        {
+          "key": "Q17_2",
+          "position": 2,
+          "label": "Occasionally"
+        },
+        {
+          "key": "Q17_3",
+          "position": 3,
+          "label": "Sometimes"
+        },
+        {
+          "key": "Q17_4",
+          "position": 4,
+          "label": "Often"
+        },
+        {
+          "key": "Q17_5",
+          "position": 5,
+          "label": "Very often"
+        }
+      ]
+    },
+    "Q18": {
+      "type": "Ordinal",
+      "options": [
+        {
+          "key": "Q18_1",
+          "position": 1,
+          "label": "Never"
+        },
+        {
+          "key": "Q18_2",
+          "position": 2,
+          "label": "Rarely"
+        },
+        {
+          "key": "Q18_3",
+          "position": 3,
+          "label": "A few times a week"
+        },
+        {
+          "key": "Q18_4",
+          "position": 4,
+          "label": "Most days"
+        },
+        {
+          "key": "Q18_5",
+          "position": 5,
+          "label": "Several times a day"
+        }
+      ]
+    },
+    "Q19": {
+      "type": "Ordinal",
+      "options": [
+        {
+          "key": "Q19_1",
+          "position": 1,
+          "label": "Never/rarely"
+        },
+        {
+          "key": "Q19_2",
+          "position": 2,
+          "label": "Occasionally"
+        },
+        {
+          "key": "Q19_3",
+          "position": 3,
+          "label": "Sometimes"
+        },
+        {
+          "key": "Q19_4",
+          "position": 4,
+          "label": "Often"
+        },
+        {
+          "key": "Q19_5",
+          "position": 5,
+          "label": "Very often"
+        }
+      ]
+    },
+    "Q20": {
+      "type": "Ordinal",
+      "options": [
+        {
+          "key": "Q20_1",
+          "position": 1,
+          "label": "Sleep well"
+        },
+        {
+          "key": "Q20_2",
+          "position": 2,
+          "label": "Generally sleep well"
+        },
+        {
+          "key": "Q20_3",
+          "position": 3,
+          "label": "Variable"
+        },
+        {
+          "key": "Q20_4",
+          "position": 4,
+          "label": "Often restless/insufficient"
+        },
+        {
+          "key": "Q20_5",
+          "position": 5,
+          "label": "Frequently poor/restless sleep"
+        }
+      ]
+    },
+    "Q21": {
+      "type": "Ordinal",
+      "options": [
+        {
+          "key": "Q21_1",
+          "position": 1,
+          "label": "Never"
+        },
+        {
+          "key": "Q21_2",
+          "position": 2,
+          "label": "Occasionally"
+        },
+        {
+          "key": "Q21_3",
+          "position": 3,
+          "label": "Sometimes"
+        },
+        {
+          "key": "Q21_4",
+          "position": 4,
+          "label": "Often"
+        },
+        {
+          "key": "Q21_5",
+          "position": 5,
+          "label": "Very often"
+        }
+      ]
+    },
+    "Q22": {
+      "type": "Ordinal",
+      "options": [
+        {
+          "key": "Q22_1",
+          "position": 1,
+          "label": "Never/rarely"
+        },
+        {
+          "key": "Q22_2",
+          "position": 2,
+          "label": "Occasionally"
+        },
+        {
+          "key": "Q22_3",
+          "position": 3,
+          "label": "Sometimes"
+        },
+        {
+          "key": "Q22_4",
+          "position": 4,
+          "label": "Often"
+        },
+        {
+          "key": "Q22_5",
+          "position": 5,
+          "label": "Very often"
+        }
+      ]
+    },
+    "Q23": {
+      "type": "Ordinal",
+      "options": [
+        {
+          "key": "Q23_1",
+          "position": 1,
+          "label": "None"
+        },
+        {
+          "key": "Q23_2",
+          "position": 2,
+          "label": "Occasional"
+        },
+        {
+          "key": "Q23_3",
+          "position": 3,
+          "label": "Noticeable"
+        },
+        {
+          "key": "Q23_4",
+          "position": 4,
+          "label": "Frequent"
+        },
+        {
+          "key": "Q23_5",
+          "position": 5,
+          "label": "Significant/persistent"
+        }
+      ]
+    },
+    "Q24": {
+      "type": "Categorical",
+      "options": [
+        {
+          "key": "Q24_1",
+          "position": 1,
+          "label": "I regularly eat fried/ready meals"
+        },
+        {
+          "key": "Q24_2",
+          "position": 2,
+          "label": "I have been told I have a cholesterol/lipid issue"
+        },
+        {
+          "key": "Q24_3",
+          "position": 3,
+          "label": "Both"
+        },
+        {
+          "key": "Q24_4",
+          "position": 4,
+          "label": "Neither"
+        }
+      ]
+    },
+    "Q25": {
+      "type": "Ordinal",
+      "options": [
+        {
+          "key": "Q25_1",
+          "position": 1,
+          "label": "No difficulty"
+        },
+        {
+          "key": "Q25_2",
+          "position": 2,
+          "label": "Occasional difficulty"
+        },
+        {
+          "key": "Q25_3",
+          "position": 3,
+          "label": "Some difficulty"
+        },
+        {
+          "key": "Q25_4",
+          "position": 4,
+          "label": "Often difficult"
+        },
+        {
+          "key": "Q25_5",
+          "position": 5,
+          "label": "Very difficult"
+        }
+      ]
+    },
+    "Q26": {
+      "type": "Ordinal",
+      "options": [
+        {
+          "key": "Q26_1",
+          "position": 1,
+          "label": "Never/rarely"
+        },
+        {
+          "key": "Q26_2",
+          "position": 2,
+          "label": "Occasionally"
+        },
+        {
+          "key": "Q26_3",
+          "position": 3,
+          "label": "Sometimes"
+        },
+        {
+          "key": "Q26_4",
+          "position": 4,
+          "label": "Often"
+        },
+        {
+          "key": "Q26_5",
+          "position": 5,
+          "label": "Very often"
+        }
+      ]
+    },
+    "Q27": {
+      "type": "Categorical",
+      "options": [
+        {
+          "key": "Q27_1",
+          "position": 1,
+          "label": "I eat irregularly"
+        },
+        {
+          "key": "Q27_2",
+          "position": 2,
+          "label": "I often choose convenience foods"
+        },
+        {
+          "key": "Q27_3",
+          "position": 3,
+          "label": "I eat too little fruit/vegetables"
+        },
+        {
+          "key": "Q27_4",
+          "position": 4,
+          "label": "I snack frequently"
+        },
+        {
+          "key": "Q27_5",
+          "position": 5,
+          "label": "I eat late at night"
+        },
+        {
+          "key": "Q27_6",
+          "position": 6,
+          "label": "None of these"
+        }
+      ]
+    },
+    "Q28": {
+      "type": "Ordinal",
+      "options": [
+        {
+          "key": "Q28_1",
+          "position": 1,
+          "label": "Usually recover quickly"
+        },
+        {
+          "key": "Q28_2",
+          "position": 2,
+          "label": "Occasionally slow"
+        },
+        {
+          "key": "Q28_3",
+          "position": 3,
+          "label": "Sometimes slow"
+        },
+        {
+          "key": "Q28_4",
+          "position": 4,
+          "label": "Often slow"
+        },
+        {
+          "key": "Q28_5",
+          "position": 5,
+          "label": "Usually slow"
+        }
+      ]
+    },
+    "Q29": {
+      "type": "Ordinal",
+      "options": [
+        {
+          "key": "Q29_1",
+          "position": 1,
+          "label": "Regular and comfortable"
+        },
+        {
+          "key": "Q29_2",
+          "position": 2,
+          "label": "Occasionally irregular"
+        },
+        {
+          "key": "Q29_3",
+          "position": 3,
+          "label": "Sometimes irregular"
+        },
+        {
+          "key": "Q29_4",
+          "position": 4,
+          "label": "Often irregular"
+        },
+        {
+          "key": "Q29_5",
+          "position": 5,
+          "label": "Frequently troublesome"
+        }
+      ]
+    },
+    "Q30": {
+      "type": "Ordinal",
+      "options": [
+        {
+          "key": "Q30_1",
+          "position": 1,
+          "label": "Very relaxed"
+        },
+        {
+          "key": "Q30_2",
+          "position": 2,
+          "label": "Generally relaxed"
+        },
+        {
+          "key": "Q30_3",
+          "position": 3,
+          "label": "Variable"
+        },
+        {
+          "key": "Q30_4",
+          "position": 4,
+          "label": "Often tense"
+        },
+        {
+          "key": "Q30_5",
+          "position": 5,
+          "label": "Very tense / difficult to switch off"
+        }
+      ]
+    },
+    "Q31": {
+      "type": "Ordinal",
+      "options": [
+        {
+          "key": "Q31_1",
+          "position": 1,
+          "label": "Usually high-fibre"
+        },
+        {
+          "key": "Q31_2",
+          "position": 2,
+          "label": "Generally adequate"
+        },
+        {
+          "key": "Q31_3",
+          "position": 3,
+          "label": "Not sure"
+        },
+        {
+          "key": "Q31_4",
+          "position": 4,
+          "label": "Probably low"
+        },
+        {
+          "key": "Q31_5",
+          "position": 5,
+          "label": "Definitely low"
+        }
+      ]
+    },
+    "Q32": {
+      "type": "Ordinal",
+      "options": [
+        {
+          "key": "Q32_1",
+          "position": 1,
+          "label": "Never/rarely"
+        },
+        {
+          "key": "Q32_2",
+          "position": 2,
+          "label": "Occasionally"
+        },
+        {
+          "key": "Q32_3",
+          "position": 3,
+          "label": "Sometimes"
+        },
+        {
+          "key": "Q32_4",
+          "position": 4,
+          "label": "Often"
+        },
+        {
+          "key": "Q32_5",
+          "position": 5,
+          "label": "Very often"
+        }
+      ]
+    },
+    "Q33": {
+      "type": "Ordinal",
+      "options": [
+        {
+          "key": "Q33_1",
+          "position": 1,
+          "label": "Never/rarely"
+        },
+        {
+          "key": "Q33_2",
+          "position": 2,
+          "label": "Occasionally"
+        },
+        {
+          "key": "Q33_3",
+          "position": 3,
+          "label": "Sometimes"
+        },
+        {
+          "key": "Q33_4",
+          "position": 4,
+          "label": "Often"
+        },
+        {
+          "key": "Q33_5",
+          "position": 5,
+          "label": "Very often"
+        }
+      ]
+    },
+    "Q34": {
+      "type": "Ordinal",
+      "options": [
+        {
+          "key": "Q34_1",
+          "position": 1,
+          "label": "Rarely"
+        },
+        {
+          "key": "Q34_2",
+          "position": 2,
+          "label": "Occasionally"
+        },
+        {
+          "key": "Q34_3",
+          "position": 3,
+          "label": "Regularly"
+        },
+        {
+          "key": "Q34_4",
+          "position": 4,
+          "label": "Daily"
+        },
+        {
+          "key": "Q34_5",
+          "position": 5,
+          "label": "High/continuous exposure"
+        }
+      ]
+    },
+    "Q35": {
+      "type": "Ordinal",
+      "options": [
+        {
+          "key": "Q35_1",
+          "position": 1,
+          "label": "Never/rarely"
+        },
+        {
+          "key": "Q35_2",
+          "position": 2,
+          "label": "Occasionally"
+        },
+        {
+          "key": "Q35_3",
+          "position": 3,
+          "label": "Sometimes"
+        },
+        {
+          "key": "Q35_4",
+          "position": 4,
+          "label": "Often"
+        },
+        {
+          "key": "Q35_5",
+          "position": 5,
+          "label": "Very often"
+        }
+      ]
+    },
+    "Q36": {
+      "type": "Ordinal",
+      "options": [
+        {
+          "key": "Q36_1",
+          "position": 1,
+          "label": "Never/rarely"
+        },
+        {
+          "key": "Q36_2",
+          "position": 2,
+          "label": "Occasionally"
+        },
+        {
+          "key": "Q36_3",
+          "position": 3,
+          "label": "Sometimes"
+        },
+        {
+          "key": "Q36_4",
+          "position": 4,
+          "label": "Often"
+        },
+        {
+          "key": "Q36_5",
+          "position": 5,
+          "label": "Very often"
+        }
+      ]
+    },
+    "Q37": {
+      "type": "Ordinal",
+      "options": [
+        {
+          "key": "Q37_1",
+          "position": 1,
+          "label": "0"
+        },
+        {
+          "key": "Q37_2",
+          "position": 2,
+          "label": "1"
+        },
+        {
+          "key": "Q37_3",
+          "position": 3,
+          "label": "2"
+        },
+        {
+          "key": "Q37_4",
+          "position": 4,
+          "label": "3-4"
+        },
+        {
+          "key": "Q37_5",
+          "position": 5,
+          "label": "5+"
+        }
+      ]
+    },
+    "Q38": {
+      "type": "Ordinal",
+      "options": [
+        {
+          "key": "Q38_1",
+          "position": 1,
+          "label": "Never/rarely"
+        },
+        {
+          "key": "Q38_2",
+          "position": 2,
+          "label": "Occasionally"
+        },
+        {
+          "key": "Q38_3",
+          "position": 3,
+          "label": "Sometimes"
+        },
+        {
+          "key": "Q38_4",
+          "position": 4,
+          "label": "Often"
+        },
+        {
+          "key": "Q38_5",
+          "position": 5,
+          "label": "Very often"
+        }
+      ]
+    },
+    "Q39": {
+      "type": "Categorical",
+      "options": [
+        {
+          "key": "Q39_1",
+          "position": 1,
+          "label": "No known sensitivities"
+        },
+        {
+          "key": "Q39_2",
+          "position": 2,
+          "label": "Certain foods"
+        },
+        {
+          "key": "Q39_3",
+          "position": 3,
+          "label": "Cleaning/household chemicals"
+        },
+        {
+          "key": "Q39_4",
+          "position": 4,
+          "label": "Cosmetics/personal-care products"
+        },
+        {
+          "key": "Q39_5",
+          "position": 5,
+          "label": "Other"
+        }
+      ]
+    },
+    "Q40": {
+      "type": "Ordinal",
+      "options": [
+        {
+          "key": "Q40_1",
+          "position": 1,
+          "label": "Never/rarely"
+        },
+        {
+          "key": "Q40_2",
+          "position": 2,
+          "label": "Occasionally"
+        },
+        {
+          "key": "Q40_3",
+          "position": 3,
+          "label": "Sometimes"
+        },
+        {
+          "key": "Q40_4",
+          "position": 4,
+          "label": "Often"
+        },
+        {
+          "key": "Q40_5",
+          "position": 5,
+          "label": "Recurrent/persistent"
+        }
+      ]
+    },
+    "Q41": {
+      "type": "Ordinal",
+      "options": [
+        {
+          "key": "Q41_1",
+          "position": 1,
+          "label": "Never/rarely"
+        },
+        {
+          "key": "Q41_2",
+          "position": 2,
+          "label": "Occasionally"
+        },
+        {
+          "key": "Q41_3",
+          "position": 3,
+          "label": "Sometimes"
+        },
+        {
+          "key": "Q41_4",
+          "position": 4,
+          "label": "Often"
+        },
+        {
+          "key": "Q41_5",
+          "position": 5,
+          "label": "Very often"
+        }
+      ]
+    },
+    "Q42": {
+      "type": "Ordinal",
+      "options": [
+        {
+          "key": "Q42_1",
+          "position": 1,
+          "label": "Rarely"
+        },
+        {
+          "key": "Q42_2",
+          "position": 2,
+          "label": "Occasionally"
+        },
+        {
+          "key": "Q42_3",
+          "position": 3,
+          "label": "Sometimes"
+        },
+        {
+          "key": "Q42_4",
+          "position": 4,
+          "label": "Often"
+        },
+        {
+          "key": "Q42_5",
+          "position": 5,
+          "label": "Most days"
+        }
+      ]
+    },
+    "Q43": {
+      "type": "Ordinal",
+      "options": [
+        {
+          "key": "Q43_1",
+          "position": 1,
+          "label": "Rarely"
+        },
+        {
+          "key": "Q43_2",
+          "position": 2,
+          "label": "Occasionally"
+        },
+        {
+          "key": "Q43_3",
+          "position": 3,
+          "label": "Sometimes"
+        },
+        {
+          "key": "Q43_4",
+          "position": 4,
+          "label": "Often"
+        },
+        {
+          "key": "Q43_5",
+          "position": 5,
+          "label": "Very often"
+        }
+      ]
+    },
+    "Q44": {
+      "type": "Ordinal",
+      "options": [
+        {
+          "key": "Q44_1",
+          "position": 1,
+          "label": "Rarely exercise"
+        },
+        {
+          "key": "Q44_2",
+          "position": 2,
+          "label": "1 day/week"
+        },
+        {
+          "key": "Q44_3",
+          "position": 3,
+          "label": "2 days/week"
+        },
+        {
+          "key": "Q44_4",
+          "position": 4,
+          "label": "3 days/week"
+        },
+        {
+          "key": "Q44_5",
+          "position": 5,
+          "label": "4+ days/week"
+        }
+      ]
+    },
+    "Q45": {
+      "type": "Ordinal",
+      "options": [
+        {
+          "key": "Q45_1",
+          "position": 1,
+          "label": "Never/rarely"
+        },
+        {
+          "key": "Q45_2",
+          "position": 2,
+          "label": "Occasionally"
+        },
+        {
+          "key": "Q45_3",
+          "position": 3,
+          "label": "Sometimes"
+        },
+        {
+          "key": "Q45_4",
+          "position": 4,
+          "label": "Often"
+        },
+        {
+          "key": "Q45_5",
+          "position": 5,
+          "label": "Very often"
+        }
+      ]
+    },
+    "Q46": {
+      "type": "Ordinal",
+      "options": [
+        {
+          "key": "Q46_1",
+          "position": 1,
+          "label": "Not applicable"
+        },
+        {
+          "key": "Q46_2",
+          "position": 2,
+          "label": "Never/rarely"
+        },
+        {
+          "key": "Q46_3",
+          "position": 3,
+          "label": "Occasionally"
+        },
+        {
+          "key": "Q46_4",
+          "position": 4,
+          "label": "Sometimes"
+        },
+        {
+          "key": "Q46_5",
+          "position": 5,
+          "label": "Often/very often"
+        }
+      ]
+    },
+    "Q47": {
+      "type": "Ordinal",
+      "options": [
+        {
+          "key": "Q47_1",
+          "position": 1,
+          "label": "Not applicable"
+        },
+        {
+          "key": "Q47_2",
+          "position": 2,
+          "label": "No concerns"
+        },
+        {
+          "key": "Q47_3",
+          "position": 3,
+          "label": "Some concerns"
+        },
+        {
+          "key": "Q47_4",
+          "position": 4,
+          "label": "Moderate concerns"
+        },
+        {
+          "key": "Q47_5",
+          "position": 5,
+          "label": "Significant concerns"
+        }
+      ]
+    },
+    "Q48": {
+      "type": "Categorical",
+      "options": [
+        {
+          "key": "Q48_1",
+          "position": 1,
+          "label": "No"
+        },
+        {
+          "key": "Q48_2",
+          "position": 2,
+          "label": "Yes - prescribed treatment"
+        },
+        {
+          "key": "Q48_3",
+          "position": 3,
+          "label": "Yes - chronic condition"
+        },
+        {
+          "key": "Q48_4",
+          "position": 4,
+          "label": "Yes - both"
+        },
+        {
+          "key": "Q48_5",
+          "position": 5,
+          "label": "Prefer to discuss with a professional"
+        }
+      ]
+    }
+  },
+  "normalisation": {
+    "ordinal_5_point": "(position - 1) / 4"
+  }
+}

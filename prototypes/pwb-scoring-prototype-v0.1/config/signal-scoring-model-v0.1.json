@@ -1,0 +1,190 @@
+{
+  "version": "2026-pwb-scoring-model-v0.1",
+  "status": "calibration_prototype",
+  "source_signal_spec": "2026-pwb-signal-spec-v0.2",
+  "important_boundary": "Numerical signal thresholds are intentionally not defined here. This layer calculates auditable evidence intensity and convergence inputs for calibration.",
+  "roles": {
+    "primary": {
+      "contributes_to_intensity": true,
+      "contributes_to_signal": true
+    },
+    "supporting": {
+      "contributes_to_intensity": false,
+      "contributes_to_signal": true
+    },
+    "context": {
+      "contributes_to_intensity": false,
+      "contributes_to_signal": false
+    },
+    "excluded": {
+      "contributes_to_intensity": false,
+      "contributes_to_signal": false
+    }
+  },
+  "outcomes": [
+    {
+      "id": "energy_vitality",
+      "name": "Energy & Vitality",
+      "primary": [
+        "Q12",
+        "Q26"
+      ],
+      "supporting": [
+        "Q35"
+      ],
+      "context": [
+        "Q01"
+      ],
+      "rule": "Do not create a signal from Q01 alone. Prefer convergence of energy/fatigue evidence with sleep/recovery or physical-capacity evidence."
+    },
+    {
+      "id": "sleep_recovery",
+      "name": "Sleep & Recovery",
+      "primary": [
+        "Q20",
+        "Q35"
+      ],
+      "supporting": [
+        "Q21",
+        "Q37"
+      ],
+      "context": [],
+      "rule": "A primary sleep/recovery response can create a candidate signal; stronger signals require convergent evidence."
+    },
+    {
+      "id": "digestive_gut",
+      "name": "Digestive & Gut Health",
+      "primary": [
+        "Q04",
+        "Q14",
+        "Q29"
+      ],
+      "supporting": [
+        "Q03",
+        "Q24a",
+        "Q27",
+        "Q31"
+      ],
+      "context": [
+        "Q24b",
+        "Q39",
+        "Q40"
+      ],
+      "rule": "Use symptom/dietary convergence. Medical history, treatment and sensitivity context never increase signal strength."
+    },
+    {
+      "id": "metabolic_weight",
+      "name": "Healthy Weight & Metabolic Balance",
+      "primary": [
+        "Q25"
+      ],
+      "supporting": [
+        "Q17",
+        "Q24a",
+        "Q27",
+        "Q44"
+      ],
+      "context": [
+        "Q24b"
+      ],
+      "rule": "Avoid inferring metabolic problems from a single dietary behaviour."
+    },
+    {
+      "id": "mood_stress",
+      "name": "Mood, Stress & Emotional Balance",
+      "primary": [
+        "Q08",
+        "Q15",
+        "Q19",
+        "Q30",
+        "Q38",
+        "Q42",
+        "Q43"
+      ],
+      "supporting": [],
+      "context": [],
+      "rule": "Multiple direct experiential responses can legitimately form a strong signal; remain non-diagnostic."
+    },
+    {
+      "id": "immune_resilience",
+      "name": "Immune Resilience",
+      "primary": [
+        "Q02",
+        "Q13",
+        "Q28"
+      ],
+      "supporting": [
+        "Q04",
+        "Q14",
+        "Q34"
+      ],
+      "context": [
+        "Q06",
+        "Q09",
+        "Q39",
+        "Q40"
+      ],
+      "rule": "Prefer convergence of recurring illness/resilience/recovery responses."
+    },
+    {
+      "id": "hormonal_lifestage",
+      "name": "Hormonal & Life-Stage Balance",
+      "primary": [
+        "Q47"
+      ],
+      "supporting": [
+        "Q23",
+        "Q33"
+      ],
+      "context": [
+        "Q46"
+      ],
+      "rule": "Conditional output only where relevant; never imply a hormonal diagnosis."
+    },
+    {
+      "id": "mobility_function",
+      "name": "Mobility, Joints & Physical Function",
+      "primary": [
+        "Q32",
+        "Q41"
+      ],
+      "supporting": [
+        "Q44"
+      ],
+      "context": [],
+      "rule": "Use physical-function experience plus activity context."
+    },
+    {
+      "id": "respiratory_health",
+      "name": "Respiratory Health",
+      "primary": [
+        "Q45"
+      ],
+      "supporting": [
+        "Q11",
+        "Q26",
+        "Q34"
+      ],
+      "context": [
+        "Q09"
+      ],
+      "rule": "Q45 is the clearest direct symptom evidence. Exposure/context can corroborate but is not a diagnosis."
+    },
+    {
+      "id": "circulation_cardiovascular",
+      "name": "Circulation & Cardiovascular Fitness",
+      "primary": [],
+      "supporting": [
+        "Q05",
+        "Q11",
+        "Q24a",
+        "Q26",
+        "Q44"
+      ],
+      "context": [
+        "Q24b"
+      ],
+      "rule": "Convergence-based outcome. Do not create a strong signal from a single indirect exposure."
+    }
+  ]
+}

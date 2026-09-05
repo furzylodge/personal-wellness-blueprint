@@ -1,0 +1,1249 @@
+{
+  "title": "Personal Wellness Blueprint Questionnaire Master",
+  "version": "1.0",
+  "status": "STRUCTURAL_FREEZE",
+  "displayed_question_items": 54,
+  "purpose": "Single machine-readable starting point for questionnaire implementation and scoring work.",
+  "important_status_note": "The project registry freezes the 54-item structure and permanent production IDs. It explicitly states that numerical scoring has not yet been calibrated and that some exact wording/response specifications still require canonical reconciliation. This file therefore records those gaps explicitly rather than inventing final values.",
+  "weighting": {
+    "final_weights": "TBD",
+    "status": "NEXT PHASE",
+    "legacy_weights_are_not_final": true
+  },
+  "questions": [
+    {
+      "display_no": 1,
+      "production_id": "CTX001",
+      "legacy_id": "Q01",
+      "construct": "Energy goal / desired improvement",
+      "question": "Would you like to have more energy during the day?",
+      "evidence_role": "Goal/context",
+      "answer_type": "single_select",
+      "answer_options": [
+        "Yes",
+        "No"
+      ],
+      "stored_values": [
+        1,
+        0
+      ],
+      "response_spec_status": "provisional_locked",
+      "response_source": "question-spec",
+      "final_weight": null,
+      "weight_status": "TBD - scoring phase",
+      "legacy_response_weight": 1,
+      "conditional": false
+    },
+    {
+      "display_no": 2,
+      "production_id": "IMM001",
+      "legacy_id": "Q02",
+      "construct": "Frequency of becoming unwell",
+      "question": "How often do you find yourself becoming unwell?",
+      "evidence_role": "Direct/supporting",
+      "answer_type": "frequency_4",
+      "answer_options": [
+        "Rarely",
+        "Occasionally",
+        "Several times a year",
+        "Frequently"
+      ],
+      "stored_values": [
+        0,
+        0.33,
+        0.67,
+        1
+      ],
+      "response_spec_status": "provisional_locked",
+      "response_source": "question-spec",
+      "final_weight": null,
+      "weight_status": "TBD - scoring phase",
+      "legacy_response_weight": 1,
+      "conditional": false
+    },
+    {
+      "display_no": 3,
+      "production_id": "DIG001",
+      "legacy_id": "Q03",
+      "construct": "Bad breath / unusual body odour",
+      "question": "Which of the following have you noticed recently or repeatedly? Select any that apply.",
+      "evidence_role": "Context",
+      "answer_type": "multi_select",
+      "answer_options": [
+        "Bad breath",
+        "Unusual body odour",
+        "Neither"
+      ],
+      "stored_values": {
+        "Bad breath": 1,
+        "Unusual body odour": 1,
+        "Neither": 0
+      },
+      "response_spec_status": "provisional_locked",
+      "response_source": "question-spec",
+      "final_weight": null,
+      "weight_status": "TBD - scoring phase",
+      "legacy_response_weight": 1,
+      "conditional": false
+    },
+    {
+      "display_no": 4,
+      "production_id": "DIG002",
+      "legacy_id": "Q04",
+      "construct": "Difficulty digesting certain foods",
+      "question": "How often do you have difficulty digesting certain foods?",
+      "evidence_role": "Direct",
+      "answer_type": "frequency_5",
+      "answer_options": [
+        "Never",
+        "Occasionally",
+        "Sometimes",
+        "Often",
+        "Very often"
+      ],
+      "stored_values": [
+        0,
+        0.25,
+        0.5,
+        0.75,
+        1
+      ],
+      "response_spec_status": "provisional_locked",
+      "response_source": "question-spec",
+      "final_weight": null,
+      "weight_status": "TBD - scoring phase",
+      "legacy_response_weight": 1,
+      "conditional": false
+    },
+    {
+      "display_no": 5,
+      "production_id": "NUT001",
+      "legacy_id": "Q05",
+      "construct": "Red meat frequency",
+      "question": "How often do you eat red meat, such as beef, lamb or pork?",
+      "evidence_role": "Supporting",
+      "answer_type": "frequency_5",
+      "answer_options": [
+        "Never",
+        "Less than once a week",
+        "1–2 times a week",
+        "3–4 times a week",
+        "5 or more times a week"
+      ],
+      "stored_values": [
+        0,
+        0.25,
+        0.5,
+        0.75,
+        1
+      ],
+      "response_spec_status": "provisional_locked",
+      "response_source": "question-spec",
+      "final_weight": null,
+      "weight_status": "TBD - scoring phase",
+      "legacy_response_weight": 1,
+      "conditional": false
+    },
+    {
+      "display_no": 6,
+      "production_id": "SAF001",
+      "legacy_id": "Q06",
+      "construct": "Antibiotic / medication context",
+      "question": "Retained construct; exact final wording requires canonical reconciliation.",
+      "evidence_role": "Context/safety",
+      "answer_type": "radio",
+      "answer_options": [
+        "Yes",
+        "No"
+      ],
+      "stored_values": [
+        1,
+        0
+      ],
+      "response_spec_status": "legacy-current-only",
+      "response_source": "questions.json / legacy SuperForms",
+      "final_weight": null,
+      "weight_status": "TBD - scoring phase",
+      "legacy_response_weight": 1,
+      "conditional": false
+    },
+    {
+      "display_no": 7,
+      "production_id": "NUT002",
+      "legacy_id": "Q07",
+      "construct": "Alcohol exposure",
+      "question": "Quantified typical weekly UK units; exact final response wording requires committed question set.",
+      "evidence_role": "Supporting",
+      "answer_type": "radio",
+      "answer_options": [
+        "Yes",
+        "No"
+      ],
+      "stored_values": [
+        1,
+        0
+      ],
+      "response_spec_status": "legacy-current-only",
+      "response_source": "questions.json / legacy SuperForms",
+      "final_weight": null,
+      "weight_status": "TBD - scoring phase",
+      "legacy_response_weight": 1,
+      "conditional": false
+    },
+    {
+      "display_no": 8,
+      "production_id": "MND001",
+      "legacy_id": "Q08",
+      "construct": "Mood variability",
+      "question": "Retained construct; exact final wording requires canonical reconciliation.",
+      "evidence_role": "Supporting",
+      "answer_type": "radio",
+      "answer_options": [
+        "Yes",
+        "No"
+      ],
+      "stored_values": [
+        1,
+        0
+      ],
+      "response_spec_status": "legacy-current-only",
+      "response_source": "questions.json / legacy SuperForms",
+      "final_weight": null,
+      "weight_status": "TBD - scoring phase",
+      "legacy_response_weight": 1,
+      "conditional": false
+    },
+    {
+      "display_no": 9,
+      "production_id": "SAF002",
+      "legacy_id": "Q09",
+      "construct": "Allergy / sensitivity context",
+      "question": "Retained construct; exact final wording requires canonical reconciliation.",
+      "evidence_role": "Safety",
+      "answer_type": "radio",
+      "answer_options": [
+        "Yes",
+        "No"
+      ],
+      "stored_values": [
+        1,
+        0
+      ],
+      "response_spec_status": "legacy-current-only",
+      "response_source": "questions.json / legacy SuperForms",
+      "final_weight": null,
+      "weight_status": "TBD - scoring phase",
+      "legacy_response_weight": 1,
+      "conditional": false
+    },
+    {
+      "display_no": 10,
+      "production_id": "EXP001",
+      "legacy_id": "Q11",
+      "construct": "Tobacco exposure",
+      "question": "Retained construct; exact final wording requires canonical reconciliation.",
+      "evidence_role": "Evidence/context",
+      "answer_type": "radio",
+      "answer_options": [
+        "Yes",
+        "No"
+      ],
+      "stored_values": [
+        1,
+        0
+      ],
+      "response_spec_status": "legacy-current-only",
+      "response_source": "questions.json / legacy SuperForms",
+      "final_weight": null,
+      "weight_status": "TBD - scoring phase",
+      "legacy_response_weight": 1,
+      "conditional": false
+    },
+    {
+      "display_no": 11,
+      "production_id": "COG001",
+      "legacy_id": "Q12",
+      "construct": "Concentration / memory",
+      "question": "Retained construct; exact final wording requires canonical reconciliation.",
+      "evidence_role": "Direct/supporting",
+      "answer_type": "radio",
+      "answer_options": [
+        "Yes",
+        "No"
+      ],
+      "stored_values": [
+        1,
+        0
+      ],
+      "response_spec_status": "legacy-current-only",
+      "response_source": "questions.json / legacy SuperForms",
+      "final_weight": null,
+      "weight_status": "TBD - scoring phase",
+      "legacy_response_weight": 1,
+      "conditional": false
+    },
+    {
+      "display_no": 12,
+      "production_id": "IMM002",
+      "legacy_id": "Q13",
+      "construct": "Susceptibility to illness",
+      "question": "Retained construct; exact final wording requires canonical reconciliation.",
+      "evidence_role": "Direct/supporting",
+      "answer_type": "radio",
+      "answer_options": [
+        "Yes",
+        "No"
+      ],
+      "stored_values": [
+        1,
+        0
+      ],
+      "response_spec_status": "legacy-current-only",
+      "response_source": "questions.json / legacy SuperForms",
+      "final_weight": null,
+      "weight_status": "TBD - scoring phase",
+      "legacy_response_weight": 1,
+      "conditional": false
+    },
+    {
+      "display_no": 13,
+      "production_id": "DIG003",
+      "legacy_id": "Q14",
+      "construct": "Post-meal symptoms",
+      "question": "Retained construct; exact final wording requires canonical reconciliation.",
+      "evidence_role": "Direct/supporting",
+      "answer_type": "radio",
+      "answer_options": [
+        "Yes",
+        "No"
+      ],
+      "stored_values": [
+        1,
+        0
+      ],
+      "response_spec_status": "legacy-current-only",
+      "response_source": "questions.json / legacy SuperForms",
+      "final_weight": null,
+      "weight_status": "TBD - scoring phase",
+      "legacy_response_weight": 1,
+      "conditional": false
+    },
+    {
+      "display_no": 14,
+      "production_id": "MND002",
+      "legacy_id": "Q15",
+      "construct": "Stress",
+      "question": "Retained construct; exact final wording requires canonical reconciliation.",
+      "evidence_role": "Direct",
+      "answer_type": "radio",
+      "answer_options": [
+        "Yes",
+        "No"
+      ],
+      "stored_values": [
+        1,
+        0
+      ],
+      "response_spec_status": "legacy-current-only",
+      "response_source": "questions.json / legacy SuperForms",
+      "final_weight": null,
+      "weight_status": "TBD - scoring phase",
+      "legacy_response_weight": 1,
+      "conditional": false
+    },
+    {
+      "display_no": 15,
+      "production_id": "PHY001",
+      "legacy_id": "Q16",
+      "construct": "Skin condition",
+      "question": "Retained with conditional follow-up.",
+      "evidence_role": "Context/supporting",
+      "answer_type": "radio",
+      "answer_options": [
+        "Yes",
+        "No"
+      ],
+      "stored_values": [
+        1,
+        0
+      ],
+      "response_spec_status": "legacy-current-only",
+      "response_source": "questions.json / legacy SuperForms",
+      "final_weight": null,
+      "weight_status": "TBD - scoring phase",
+      "legacy_response_weight": 1,
+      "conditional": false
+    },
+    {
+      "display_no": 16,
+      "production_id": "PHY002",
+      "legacy_id": "Q16b",
+      "construct": "Impact of skin condition",
+      "question": "Conditional follow-up shown when Q16 establishes relevance.",
+      "evidence_role": "Conditional",
+      "answer_type": "quality_5",
+      "answer_options": [
+        "Not at all",
+        "A little",
+        "Moderately",
+        "A lot",
+        "Severely"
+      ],
+      "stored_values": null,
+      "response_spec_status": "provisional",
+      "response_source": "question-spec",
+      "final_weight": null,
+      "weight_status": "TBD - scoring phase",
+      "legacy_response_weight": null,
+      "conditional": true
+    },
+    {
+      "display_no": 17,
+      "production_id": "NUT003",
+      "legacy_id": "Q17",
+      "construct": "Food cravings",
+      "question": "Retained construct; exact final wording requires canonical reconciliation.",
+      "evidence_role": "Supporting",
+      "answer_type": "radio",
+      "answer_options": [
+        "Yes",
+        "No"
+      ],
+      "stored_values": [
+        1,
+        0
+      ],
+      "response_spec_status": "legacy-current-only",
+      "response_source": "questions.json / legacy SuperForms",
+      "final_weight": null,
+      "weight_status": "TBD - scoring phase",
+      "legacy_response_weight": 1,
+      "conditional": false
+    },
+    {
+      "display_no": 18,
+      "production_id": "NUT004",
+      "legacy_id": "Q18",
+      "construct": "Dairy consumption",
+      "question": "Retained construct; exact final wording requires canonical reconciliation.",
+      "evidence_role": "Supporting/context",
+      "answer_type": "radio",
+      "answer_options": [
+        "Yes",
+        "No"
+      ],
+      "stored_values": [
+        1,
+        0
+      ],
+      "response_spec_status": "legacy-current-only",
+      "response_source": "questions.json / legacy SuperForms",
+      "final_weight": null,
+      "weight_status": "TBD - scoring phase",
+      "legacy_response_weight": 1,
+      "conditional": false
+    },
+    {
+      "display_no": 19,
+      "production_id": "MND003",
+      "legacy_id": "Q19",
+      "construct": "Flat / low motivation",
+      "question": "Retained construct; primarily Mood/Stress, not Energy.",
+      "evidence_role": "Direct",
+      "answer_type": "radio",
+      "answer_options": [
+        "Yes",
+        "No"
+      ],
+      "stored_values": [
+        1,
+        0
+      ],
+      "response_spec_status": "legacy-current-only",
+      "response_source": "questions.json / legacy SuperForms",
+      "final_weight": null,
+      "weight_status": "TBD - scoring phase",
+      "legacy_response_weight": 1,
+      "conditional": false
+    },
+    {
+      "display_no": 20,
+      "production_id": "SLP001",
+      "legacy_id": "Q20",
+      "construct": "Sleep quality",
+      "question": "Retained construct; exact final wording requires canonical reconciliation.",
+      "evidence_role": "Direct",
+      "answer_type": "radio",
+      "answer_options": [
+        "Yes",
+        "No"
+      ],
+      "stored_values": [
+        1,
+        0
+      ],
+      "response_spec_status": "legacy-current-only",
+      "response_source": "questions.json / legacy SuperForms",
+      "final_weight": null,
+      "weight_status": "TBD - scoring phase",
+      "legacy_response_weight": 1,
+      "conditional": false
+    },
+    {
+      "display_no": 21,
+      "production_id": "SLP002",
+      "legacy_id": "Q21",
+      "construct": "Night-time urination",
+      "question": "Retained construct; non-specific sleep/context signal.",
+      "evidence_role": "Context/supporting",
+      "answer_type": "radio",
+      "answer_options": [
+        "Yes",
+        "No"
+      ],
+      "stored_values": [
+        1,
+        0
+      ],
+      "response_spec_status": "legacy-current-only",
+      "response_source": "questions.json / legacy SuperForms",
+      "final_weight": null,
+      "weight_status": "TBD - scoring phase",
+      "legacy_response_weight": 1,
+      "conditional": false
+    },
+    {
+      "display_no": 22,
+      "production_id": "EXP002",
+      "legacy_id": "Q22",
+      "construct": "Social-media usage",
+      "question": "On a typical day, how much time do you spend using social media?",
+      "evidence_role": "Supporting",
+      "answer_type": "radio",
+      "answer_options": [
+        "Yes",
+        "No"
+      ],
+      "stored_values": [
+        1,
+        0
+      ],
+      "response_spec_status": "legacy-current-only",
+      "response_source": "questions.json / legacy SuperForms",
+      "final_weight": null,
+      "weight_status": "TBD - scoring phase",
+      "legacy_response_weight": 1,
+      "conditional": false
+    },
+    {
+      "display_no": 23,
+      "production_id": "PHY003",
+      "legacy_id": "Q23",
+      "construct": "Hair shedding / thinning",
+      "question": "Retained construct; exact final wording requires canonical reconciliation.",
+      "evidence_role": "Context",
+      "answer_type": "radio",
+      "answer_options": [
+        "Yes",
+        "No"
+      ],
+      "stored_values": [
+        1,
+        0
+      ],
+      "response_spec_status": "legacy-current-only",
+      "response_source": "questions.json / legacy SuperForms",
+      "final_weight": null,
+      "weight_status": "TBD - scoring phase",
+      "legacy_response_weight": 1,
+      "conditional": false
+    },
+    {
+      "display_no": 24,
+      "production_id": "NUT005",
+      "legacy_id": "Q24a",
+      "construct": "Fried / ready-food exposure",
+      "question": "Retained construct; exact final wording requires canonical reconciliation.",
+      "evidence_role": "Supporting",
+      "answer_type": null,
+      "answer_options": [],
+      "stored_values": null,
+      "response_spec_status": "canonical reconciliation required",
+      "response_source": "registry only",
+      "final_weight": null,
+      "weight_status": "TBD - scoring phase",
+      "legacy_response_weight": null,
+      "conditional": false
+    },
+    {
+      "display_no": 25,
+      "production_id": "SAF003",
+      "legacy_id": "Q24b",
+      "construct": "Diagnosed lipid issue",
+      "question": "Retained as context/modifier; does not itself create a wellness deficit.",
+      "evidence_role": "Context/modifier",
+      "answer_type": null,
+      "answer_options": [],
+      "stored_values": null,
+      "response_spec_status": "canonical reconciliation required",
+      "response_source": "registry only",
+      "final_weight": null,
+      "weight_status": "TBD - scoring phase",
+      "legacy_response_weight": null,
+      "conditional": false
+    },
+    {
+      "display_no": 26,
+      "production_id": "NUT006",
+      "legacy_id": "Q25",
+      "construct": "Weight-management difficulty",
+      "question": "Retained construct; exact final wording requires canonical reconciliation.",
+      "evidence_role": "Direct/supporting",
+      "answer_type": "radio",
+      "answer_options": [
+        "Yes",
+        "No"
+      ],
+      "stored_values": [
+        1,
+        0
+      ],
+      "response_spec_status": "legacy-current-only",
+      "response_source": "questions.json / legacy SuperForms",
+      "final_weight": null,
+      "weight_status": "TBD - scoring phase",
+      "legacy_response_weight": 1,
+      "conditional": false
+    },
+    {
+      "display_no": 27,
+      "production_id": "PHY004",
+      "legacy_id": "Q26",
+      "construct": "Physical stamina / capacity",
+      "question": "Retained construct; exact final wording requires canonical reconciliation.",
+      "evidence_role": "Direct/supporting",
+      "answer_type": "radio",
+      "answer_options": [
+        "Yes",
+        "No"
+      ],
+      "stored_values": [
+        1,
+        0
+      ],
+      "response_spec_status": "legacy-current-only",
+      "response_source": "questions.json / legacy SuperForms",
+      "final_weight": null,
+      "weight_status": "TBD - scoring phase",
+      "legacy_response_weight": 1,
+      "conditional": false
+    },
+    {
+      "display_no": 28,
+      "production_id": "PHY005",
+      "legacy_id": "Q26b",
+      "construct": "Breathlessness follow-up",
+      "question": "Conditional follow-up where Q26 establishes relevance.",
+      "evidence_role": "Conditional",
+      "answer_type": null,
+      "answer_options": [],
+      "stored_values": null,
+      "response_spec_status": "canonical reconciliation required",
+      "response_source": "registry only",
+      "final_weight": null,
+      "weight_status": "TBD - scoring phase",
+      "legacy_response_weight": null,
+      "conditional": true
+    },
+    {
+      "display_no": 29,
+      "production_id": "NUT007",
+      "legacy_id": "Q27",
+      "construct": "Overall eating pattern",
+      "question": "Retained construct; exact final wording requires canonical reconciliation.",
+      "evidence_role": "Supporting",
+      "answer_type": "radio",
+      "answer_options": [
+        "Yes",
+        "No"
+      ],
+      "stored_values": [
+        1,
+        0
+      ],
+      "response_spec_status": "legacy-current-only",
+      "response_source": "questions.json / legacy SuperForms",
+      "final_weight": null,
+      "weight_status": "TBD - scoring phase",
+      "legacy_response_weight": 1,
+      "conditional": false
+    },
+    {
+      "display_no": 30,
+      "production_id": "IMM003",
+      "legacy_id": "Q28",
+      "construct": "Recovery after illness",
+      "question": "Retained construct; exact final wording requires canonical reconciliation.",
+      "evidence_role": "Direct/supporting",
+      "answer_type": "radio",
+      "answer_options": [
+        "Yes",
+        "No"
+      ],
+      "stored_values": [
+        1,
+        0
+      ],
+      "response_spec_status": "legacy-current-only",
+      "response_source": "questions.json / legacy SuperForms",
+      "final_weight": null,
+      "weight_status": "TBD - scoring phase",
+      "legacy_response_weight": 1,
+      "conditional": false
+    },
+    {
+      "display_no": 31,
+      "production_id": "DIG004",
+      "legacy_id": "Q29",
+      "construct": "Bowel regularity / comfort",
+      "question": "Retained construct; exact final wording requires canonical reconciliation.",
+      "evidence_role": "Direct",
+      "answer_type": "radio",
+      "answer_options": [
+        "Yes",
+        "No"
+      ],
+      "stored_values": [
+        1,
+        0
+      ],
+      "response_spec_status": "legacy-current-only",
+      "response_source": "questions.json / legacy SuperForms",
+      "final_weight": null,
+      "weight_status": "TBD - scoring phase",
+      "legacy_response_weight": 1,
+      "conditional": false
+    },
+    {
+      "display_no": 32,
+      "production_id": "MND004",
+      "legacy_id": "Q30",
+      "construct": "Difficulty relaxing / switching off",
+      "question": "Retained construct; Mood/Stress and Sleep convergence.",
+      "evidence_role": "Direct/supporting",
+      "answer_type": "radio",
+      "answer_options": [
+        "Yes",
+        "No"
+      ],
+      "stored_values": [
+        1,
+        0
+      ],
+      "response_spec_status": "legacy-current-only",
+      "response_source": "questions.json / legacy SuperForms",
+      "final_weight": null,
+      "weight_status": "TBD - scoring phase",
+      "legacy_response_weight": 1,
+      "conditional": false
+    },
+    {
+      "display_no": 33,
+      "production_id": "NUT008",
+      "legacy_id": "Q31",
+      "construct": "Fibre-rich foods",
+      "question": "Retained construct; exact final wording requires canonical reconciliation.",
+      "evidence_role": "Supporting",
+      "answer_type": "radio",
+      "answer_options": [
+        "Yes",
+        "No"
+      ],
+      "stored_values": [
+        1,
+        0
+      ],
+      "response_spec_status": "legacy-current-only",
+      "response_source": "questions.json / legacy SuperForms",
+      "final_weight": null,
+      "weight_status": "TBD - scoring phase",
+      "legacy_response_weight": 1,
+      "conditional": false
+    },
+    {
+      "display_no": 34,
+      "production_id": "PHY006",
+      "legacy_id": "Q32",
+      "construct": "Muscle discomfort",
+      "question": "Retained construct; exact final wording requires canonical reconciliation.",
+      "evidence_role": "Direct/supporting",
+      "answer_type": "radio",
+      "answer_options": [
+        "Yes",
+        "No"
+      ],
+      "stored_values": [
+        1,
+        0
+      ],
+      "response_spec_status": "legacy-current-only",
+      "response_source": "questions.json / legacy SuperForms",
+      "final_weight": null,
+      "weight_status": "TBD - scoring phase",
+      "legacy_response_weight": 1,
+      "conditional": false
+    },
+    {
+      "display_no": 35,
+      "production_id": "EXP003",
+      "legacy_id": "Q34",
+      "construct": "Air-pollution exposure",
+      "question": "Retained exposure/context construct; cannot alone establish respiratory disease.",
+      "evidence_role": "Context/supporting",
+      "answer_type": "radio",
+      "answer_options": [
+        "Yes",
+        "No"
+      ],
+      "stored_values": [
+        1,
+        0
+      ],
+      "response_spec_status": "legacy-current-only",
+      "response_source": "questions.json / legacy SuperForms",
+      "final_weight": null,
+      "weight_status": "TBD - scoring phase",
+      "legacy_response_weight": 1,
+      "conditional": false
+    },
+    {
+      "display_no": 36,
+      "production_id": "SLP003",
+      "legacy_id": "Q35",
+      "construct": "Daytime sleepiness",
+      "question": "Retained construct; exact final wording requires canonical reconciliation.",
+      "evidence_role": "Direct/supporting",
+      "answer_type": "radio",
+      "answer_options": [
+        "Yes",
+        "No"
+      ],
+      "stored_values": [
+        1,
+        0
+      ],
+      "response_spec_status": "legacy-current-only",
+      "response_source": "questions.json / legacy SuperForms",
+      "final_weight": null,
+      "weight_status": "TBD - scoring phase",
+      "legacy_response_weight": 1,
+      "conditional": false
+    },
+    {
+      "display_no": 37,
+      "production_id": "CTX002",
+      "legacy_id": "Q36",
+      "construct": "Persistent appetite loss",
+      "question": "Retained as non-specific context.",
+      "evidence_role": "Context",
+      "answer_type": "radio",
+      "answer_options": [
+        "Yes",
+        "No"
+      ],
+      "stored_values": [
+        1,
+        0
+      ],
+      "response_spec_status": "legacy-current-only",
+      "response_source": "questions.json / legacy SuperForms",
+      "final_weight": null,
+      "weight_status": "TBD - scoring phase",
+      "legacy_response_weight": 1,
+      "conditional": false
+    },
+    {
+      "display_no": 38,
+      "production_id": "SLP004",
+      "legacy_id": "Q37",
+      "construct": "Caffeine amount",
+      "question": "How many caffeinated drinks do you typically have each day?",
+      "evidence_role": "Supporting",
+      "answer_type": "radio",
+      "answer_options": [
+        "Yes",
+        "No"
+      ],
+      "stored_values": [
+        1,
+        0
+      ],
+      "response_spec_status": "legacy-current-only",
+      "response_source": "questions.json / legacy SuperForms",
+      "final_weight": null,
+      "weight_status": "TBD - scoring phase",
+      "legacy_response_weight": 1,
+      "conditional": false
+    },
+    {
+      "display_no": 39,
+      "production_id": "SLP005",
+      "legacy_id": "Q37b",
+      "construct": "Caffeine timing",
+      "question": "When do you usually have your last caffeinated drink of the day?",
+      "evidence_role": "Conditional supporting",
+      "answer_type": "single_select",
+      "answer_options": [
+        "I do not have caffeinated drinks",
+        "Before midday",
+        "Between midday and 3 pm",
+        "Between 3 pm and 6 pm",
+        "After 6 pm"
+      ],
+      "stored_values": null,
+      "response_spec_status": "provisional",
+      "response_source": "question-spec",
+      "final_weight": null,
+      "weight_status": "TBD - scoring phase",
+      "legacy_response_weight": null,
+      "conditional": true
+    },
+    {
+      "display_no": 40,
+      "production_id": "MND005",
+      "legacy_id": "Q38",
+      "construct": "Overwhelm / coping difficulty",
+      "question": "Retained construct; exact final wording requires canonical reconciliation.",
+      "evidence_role": "Direct/supporting",
+      "answer_type": "radio",
+      "answer_options": [
+        "Yes",
+        "No"
+      ],
+      "stored_values": [
+        1,
+        0
+      ],
+      "response_spec_status": "legacy-current-only",
+      "response_source": "questions.json / legacy SuperForms",
+      "final_weight": null,
+      "weight_status": "TBD - scoring phase",
+      "legacy_response_weight": 1,
+      "conditional": false
+    },
+    {
+      "display_no": 41,
+      "production_id": "SAF004",
+      "legacy_id": "Q39",
+      "construct": "Food / chemical sensitivity",
+      "question": "Retained safety/filtering construct; exact final wording requires canonical reconciliation.",
+      "evidence_role": "Safety",
+      "answer_type": "radio",
+      "answer_options": [
+        "Yes",
+        "No"
+      ],
+      "stored_values": [
+        1,
+        0
+      ],
+      "response_spec_status": "legacy-current-only",
+      "response_source": "questions.json / legacy SuperForms",
+      "final_weight": null,
+      "weight_status": "TBD - scoring phase",
+      "legacy_response_weight": 1,
+      "conditional": false
+    },
+    {
+      "display_no": 42,
+      "production_id": "PHY007",
+      "legacy_id": "Q41",
+      "construct": "Joint pain / stiffness / mobility",
+      "question": "Retained construct; exact final wording requires canonical reconciliation.",
+      "evidence_role": "Direct",
+      "answer_type": "radio",
+      "answer_options": [
+        "Yes",
+        "No"
+      ],
+      "stored_values": [
+        1,
+        0
+      ],
+      "response_spec_status": "legacy-current-only",
+      "response_source": "questions.json / legacy SuperForms",
+      "final_weight": null,
+      "weight_status": "TBD - scoring phase",
+      "legacy_response_weight": 1,
+      "conditional": false
+    },
+    {
+      "display_no": 43,
+      "production_id": "MND006",
+      "legacy_id": "Q42",
+      "construct": "Excessive worry",
+      "question": "Retained construct; exact final wording requires canonical reconciliation.",
+      "evidence_role": "Direct",
+      "answer_type": "radio",
+      "answer_options": [
+        "Yes",
+        "No"
+      ],
+      "stored_values": [
+        1,
+        0
+      ],
+      "response_spec_status": "legacy-current-only",
+      "response_source": "questions.json / legacy SuperForms",
+      "final_weight": null,
+      "weight_status": "TBD - scoring phase",
+      "legacy_response_weight": 1,
+      "conditional": false
+    },
+    {
+      "display_no": 44,
+      "production_id": "MND007",
+      "legacy_id": "Q43",
+      "construct": "Irritability / frustration",
+      "question": "Retained construct; primarily Mood/Stress; not an independent CVD score.",
+      "evidence_role": "Direct",
+      "answer_type": "radio",
+      "answer_options": [
+        "Yes",
+        "No"
+      ],
+      "stored_values": [
+        1,
+        0
+      ],
+      "response_spec_status": "legacy-current-only",
+      "response_source": "questions.json / legacy SuperForms",
+      "final_weight": null,
+      "weight_status": "TBD - scoring phase",
+      "legacy_response_weight": 1,
+      "conditional": false
+    },
+    {
+      "display_no": 45,
+      "production_id": "PHY008",
+      "legacy_id": "Q44",
+      "construct": "Physical activity + strength activity",
+      "question": "How much moderate or vigorous physical activity do you typically do each week? Follow-up: How often do you do activities that strengthen your muscles?",
+      "evidence_role": "Direct/supporting",
+      "answer_type": "radio",
+      "answer_options": [
+        "Yes",
+        "No"
+      ],
+      "stored_values": [
+        1,
+        0
+      ],
+      "response_spec_status": "legacy-current-only",
+      "response_source": "questions.json / legacy SuperForms",
+      "final_weight": null,
+      "weight_status": "TBD - scoring phase",
+      "legacy_response_weight": 1,
+      "conditional": false
+    },
+    {
+      "display_no": 46,
+      "production_id": "EXP004",
+      "legacy_id": "Q45",
+      "construct": "Recurrent congestion / mucus",
+      "question": "Retained respiratory construct; exact final wording requires canonical reconciliation.",
+      "evidence_role": "Context/supporting",
+      "answer_type": "radio",
+      "answer_options": [
+        "Yes",
+        "No"
+      ],
+      "stored_values": [
+        1,
+        0
+      ],
+      "response_spec_status": "legacy-current-only",
+      "response_source": "questions.json / legacy SuperForms",
+      "final_weight": null,
+      "weight_status": "TBD - scoring phase",
+      "legacy_response_weight": 1,
+      "conditional": false
+    },
+    {
+      "display_no": 47,
+      "production_id": "LIF001",
+      "legacy_id": "Q46",
+      "construct": "Menstrual-cycle concerns",
+      "question": "Conditional life-stage question.",
+      "evidence_role": "Conditional",
+      "answer_type": "radio",
+      "answer_options": [
+        "Yes",
+        "No / Not applicable"
+      ],
+      "stored_values": [
+        1,
+        0
+      ],
+      "response_spec_status": "canonical reconciliation required",
+      "response_source": "questions.json / legacy SuperForms",
+      "final_weight": null,
+      "weight_status": "TBD - scoring phase",
+      "legacy_response_weight": 1,
+      "conditional": true
+    },
+    {
+      "display_no": 48,
+      "production_id": "LIF002",
+      "legacy_id": "Q47",
+      "construct": "Perimenopause / menopause concerns",
+      "question": "Conditional life-stage question.",
+      "evidence_role": "Conditional",
+      "answer_type": "radio",
+      "answer_options": [
+        "Yes",
+        "No / Not applicable"
+      ],
+      "stored_values": [
+        1,
+        0
+      ],
+      "response_spec_status": "canonical reconciliation required",
+      "response_source": "questions.json / legacy SuperForms",
+      "final_weight": null,
+      "weight_status": "TBD - scoring phase",
+      "legacy_response_weight": 1,
+      "conditional": true
+    },
+    {
+      "display_no": 49,
+      "production_id": "SAF005",
+      "legacy_id": "Q48",
+      "construct": "Medical treatment / diagnosed long-term condition",
+      "question": "Are you currently receiving medical treatment or managing a diagnosed long-term health condition?",
+      "evidence_role": "Safety/context",
+      "answer_type": "radio",
+      "answer_options": [
+        "Yes",
+        "No / Not applicable"
+      ],
+      "stored_values": [
+        1,
+        0
+      ],
+      "response_spec_status": "canonical reconciliation required",
+      "response_source": "questions.json / legacy SuperForms",
+      "final_weight": null,
+      "weight_status": "TBD - scoring phase",
+      "legacy_response_weight": 1,
+      "conditional": false
+    },
+    {
+      "display_no": 50,
+      "production_id": "EXP005",
+      "legacy_id": "NEW-01",
+      "construct": "Sedentary / prolonged sitting",
+      "question": "Modern addition; final committed wording required.",
+      "evidence_role": "Supporting",
+      "answer_type": null,
+      "answer_options": [],
+      "stored_values": null,
+      "response_spec_status": "not specified in current source",
+      "response_source": "registry only",
+      "final_weight": null,
+      "weight_status": "TBD - scoring phase",
+      "legacy_response_weight": null,
+      "conditional": false
+    },
+    {
+      "display_no": 51,
+      "production_id": "NUT009",
+      "legacy_id": "NEW-02",
+      "construct": "Ultra / highly processed food exposure",
+      "question": "Modern addition; final committed wording required.",
+      "evidence_role": "Supporting",
+      "answer_type": null,
+      "answer_options": [],
+      "stored_values": null,
+      "response_spec_status": "not specified in current source",
+      "response_source": "registry only",
+      "final_weight": null,
+      "weight_status": "TBD - scoring phase",
+      "legacy_response_weight": null,
+      "conditional": false
+    },
+    {
+      "display_no": 52,
+      "production_id": "NUT010",
+      "legacy_id": "NEW-03",
+      "construct": "Fruit / vegetable intake",
+      "question": "Modern addition; final committed wording required.",
+      "evidence_role": "Supporting",
+      "answer_type": null,
+      "answer_options": [],
+      "stored_values": null,
+      "response_spec_status": "not specified in current source",
+      "response_source": "registry only",
+      "final_weight": null,
+      "weight_status": "TBD - scoring phase",
+      "legacy_response_weight": null,
+      "conditional": false
+    },
+    {
+      "display_no": 53,
+      "production_id": "SLP006",
+      "legacy_id": "NEW-04",
+      "construct": "Sleep duration / circadian routine",
+      "question": "Modern addition; final committed wording required.",
+      "evidence_role": "Supporting",
+      "answer_type": null,
+      "answer_options": [],
+      "stored_values": null,
+      "response_spec_status": "not specified in current source",
+      "response_source": "registry only",
+      "final_weight": null,
+      "weight_status": "TBD - scoring phase",
+      "legacy_response_weight": null,
+      "conditional": false
+    },
+    {
+      "display_no": 54,
+      "production_id": "MND008",
+      "legacy_id": "NEW-05",
+      "construct": "Social connection / support",
+      "question": "How often do you feel you have enough meaningful social connection and support in your life?",
+      "evidence_role": "Direct/supporting",
+      "answer_type": null,
+      "answer_options": [],
+      "stored_values": null,
+      "response_spec_status": "not specified in current source",
+      "response_source": "registry only",
+      "final_weight": null,
+      "weight_status": "TBD - scoring phase",
+      "legacy_response_weight": null,
+      "conditional": false
+    }
+  ],
+  "retired_legacy_ids": [
+    "Q10",
+    "Q33",
+    "Q40"
+  ],
+  "outcomes": [
+    "Energy & Vitality",
+    "Immune Resilience",
+    "Digestive & Gut Health",
+    "Mood, Stress & Emotional Balance",
+    "Sleep & Recovery",
+    "Cognitive Function",
+    "Mobility, Joints & Physical Function",
+    "Circulation & Cardiovascular Fitness",
+    "Healthy Weight & Metabolic Balance"
+  ],
+  "source_files": [
+    "PWB-QUESTIONNAIRE-REGISTRY-v1.0.md",
+    "questions.json",
+    "pwb-2026-questions-v0.2.json",
+    "pwb-2026-question-spec-Q01-Q05-v0.1.json"
+  ]
+}

@@ -1,0 +1,683 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Your Personal Wellness Overview · P01_balanced_baseline</title><style>
+:root{--bg:#f4f6f3;--card:#fff;--ink:#202621;--muted:#6b746d;--line:#dfe5e0;--accent:#334a3b;--soft:#edf2ee;--strong:#294936}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.5}
+.page{max-width:900px;margin:32px auto 70px;background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 6px 30px rgba(20,30,24,.05)}
+.report-top{display:flex;justify-content:space-between;padding:17px 28px;border-bottom:1px solid var(--line);font-size:11px;letter-spacing:.1em;color:var(--muted);font-weight:700}
+.hero{padding:52px 54px 42px;background:linear-gradient(180deg,#f8faf8 0%,#fff 100%)}
+.eyebrow{font-size:11px;letter-spacing:.14em;font-weight:800;color:var(--muted)}
+h1{font-size:39px;line-height:1.08;margin:10px 0 15px;font-weight:650}
+h2{font-size:20px;line-height:1.25;margin:7px 0 8px;font-weight:630}
+h3{font-size:16px;margin:0 0 8px}
+.lede{font-size:18px;max-width:700px;color:#515b54;margin:0}
+.section-title{display:flex;justify-content:space-between;align-items:center;padding:26px 54px 12px;color:var(--muted);font-size:11px;font-weight:800;letter-spacing:.14em}
+.section-title small{font-size:10px;font-weight:500;letter-spacing:0;text-transform:none}
+.signal{margin:0 54px 13px;padding:24px 25px;border:1px solid var(--line);border-radius:16px}
+.signal.first{border-color:#bdcabe;background:#fbfcfb}
+.signal-head{display:flex;gap:20px;align-items:flex-start;justify-content:space-between}
+.signal p,.context p,.next p{margin:8px 0;color:#5b645e}
+.strength{white-space:nowrap;padding:7px 11px;border-radius:999px;background:var(--soft);color:var(--strong);font-size:12px;font-weight:750}
+.evidence{margin-top:16px;padding-top:13px;border-top:1px solid var(--line)}
+.evidence-row{font-size:13px;margin:7px 0;color:#4e5751}
+.evidence-row strong{color:#27332b}
+.evidence-row span{color:#7a837d}
+.context{margin:32px 54px 0;padding:24px 25px;background:#f7f8f7;border-radius:16px}
+.next{margin:18px 54px 50px;padding:28px 25px;background:var(--soft);border-radius:16px}
+.priority{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px}
+.priority-card{padding:14px;border:1px solid var(--line);border-radius:12px;background:#fff}
+.priority-card .rank{font-size:11px;color:var(--muted);font-weight:800;letter-spacing:.08em}
+.priority-card .name{font-size:14px;font-weight:650;margin-top:5px}
+.priority-card .band{font-size:12px;color:var(--muted);margin-top:3px}
+.disclaimer{max-width:900px;margin:0 auto 40px;padding:0 20px;color:#6b746d;font-size:12px}
+@media(max-width:700px){.page{margin:0 0 35px;border-radius:0}.report-top,.hero,.section-title{padding-left:20px;padding-right:20px}.signal,.context,.next{margin-left:20px;margin-right:20px}h1{font-size:31px}.signal-head{display:block}.strength{display:inline-block;margin-top:4px}.priority{grid-template-columns:1fr}}
+</style></head><body><article class="page">
+<div class="report-top"><span>PERSONAL WELLNESS BLUEPRINT</span><span>Example report · P01_balanced_baseline</span></div>
+<div class="hero"><div class="eyebrow">YOUR WELLNESS PATTERN</div><h1>Your Personal Wellness Overview</h1>
+<p class="lede">Your responses do not show a strong concentration of wellness signals in this profile.</p></div><div class="section-title"><span>AREAS TO EXPLORE</span><small>Based on your questionnaire responses</small></div><section class="signal first"><div class="signal-head"><div><div class="eyebrow">WELLNESS PATTERN</div><h2>No dominant signal</h2></div><div class="strength">No significant signal</div></div><p>Your responses do not show a strong concentration of higher-priority wellness signals. This is a valid outcome of the assessment.</p></section><section class="section-title"><span>YOUR PRIORITIES</span><small>Top three only</small></section><section class="signal"><div class="priority"><div class="priority-card"><div class="rank">RESULT</div><div class="name">No priority area</div><div class="band">No significant signal</div></div></div></section><section class="context"><div class="eyebrow">PRACTITIONER CONTEXT</div><h2>Information kept separate from your signals</h2><p>Context and safety information is considered separately and is not used to manufacture a wellness signal.</p></section><section class="next"><div class="eyebrow">WHERE TO EXPLORE NEXT</div><h2>A conversation, not a diagnosis</h2><p>These are questionnaire-derived wellness signals. They are intended to help you explore areas of general wellbeing, not to identify or rule out medical conditions.</p><p><strong>Recommendations:</strong> Food and product recommendations will be generated downstream from the prioritised signals and relevant personal constraints.</p></section></article><div class="disclaimer"><strong>Example profile.</strong> Signal calculations shown here use the current calibration candidate and are for model/report testing. They are not a clinical assessment or diagnosis.</div></body></html>
+<hr style='margin:80px 0;border:0;border-top:2px solid #dfe5e0'>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Your Personal Wellness Overview · P02_sleep_led</title><style>
+:root{--bg:#f4f6f3;--card:#fff;--ink:#202621;--muted:#6b746d;--line:#dfe5e0;--accent:#334a3b;--soft:#edf2ee;--strong:#294936}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.5}
+.page{max-width:900px;margin:32px auto 70px;background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 6px 30px rgba(20,30,24,.05)}
+.report-top{display:flex;justify-content:space-between;padding:17px 28px;border-bottom:1px solid var(--line);font-size:11px;letter-spacing:.1em;color:var(--muted);font-weight:700}
+.hero{padding:52px 54px 42px;background:linear-gradient(180deg,#f8faf8 0%,#fff 100%)}
+.eyebrow{font-size:11px;letter-spacing:.14em;font-weight:800;color:var(--muted)}
+h1{font-size:39px;line-height:1.08;margin:10px 0 15px;font-weight:650}
+h2{font-size:20px;line-height:1.25;margin:7px 0 8px;font-weight:630}
+h3{font-size:16px;margin:0 0 8px}
+.lede{font-size:18px;max-width:700px;color:#515b54;margin:0}
+.section-title{display:flex;justify-content:space-between;align-items:center;padding:26px 54px 12px;color:var(--muted);font-size:11px;font-weight:800;letter-spacing:.14em}
+.section-title small{font-size:10px;font-weight:500;letter-spacing:0;text-transform:none}
+.signal{margin:0 54px 13px;padding:24px 25px;border:1px solid var(--line);border-radius:16px}
+.signal.first{border-color:#bdcabe;background:#fbfcfb}
+.signal-head{display:flex;gap:20px;align-items:flex-start;justify-content:space-between}
+.signal p,.context p,.next p{margin:8px 0;color:#5b645e}
+.strength{white-space:nowrap;padding:7px 11px;border-radius:999px;background:var(--soft);color:var(--strong);font-size:12px;font-weight:750}
+.evidence{margin-top:16px;padding-top:13px;border-top:1px solid var(--line)}
+.evidence-row{font-size:13px;margin:7px 0;color:#4e5751}
+.evidence-row strong{color:#27332b}
+.evidence-row span{color:#7a837d}
+.context{margin:32px 54px 0;padding:24px 25px;background:#f7f8f7;border-radius:16px}
+.next{margin:18px 54px 50px;padding:28px 25px;background:var(--soft);border-radius:16px}
+.priority{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px}
+.priority-card{padding:14px;border:1px solid var(--line);border-radius:12px;background:#fff}
+.priority-card .rank{font-size:11px;color:var(--muted);font-weight:800;letter-spacing:.08em}
+.priority-card .name{font-size:14px;font-weight:650;margin-top:5px}
+.priority-card .band{font-size:12px;color:var(--muted);margin-top:3px}
+.disclaimer{max-width:900px;margin:0 auto 40px;padding:0 20px;color:#6b746d;font-size:12px}
+@media(max-width:700px){.page{margin:0 0 35px;border-radius:0}.report-top,.hero,.section-title{padding-left:20px;padding-right:20px}.signal,.context,.next{margin-left:20px;margin-right:20px}h1{font-size:31px}.signal-head{display:block}.strength{display:inline-block;margin-top:4px}.priority{grid-template-columns:1fr}}
+</style></head><body><article class="page">
+<div class="report-top"><span>PERSONAL WELLNESS BLUEPRINT</span><span>Example report · P02_sleep_led</span></div>
+<div class="hero"><div class="eyebrow">YOUR WELLNESS PATTERN</div><h1>Your Personal Wellness Overview</h1>
+<p class="lede">Your responses show several stronger patterns. Sleep &amp; Recovery is currently the most prominent.</p></div><div class="section-title"><span>AREAS TO EXPLORE</span><small>Based on your questionnaire responses</small></div><section class="signal first"><div class="signal-head"><div><div class="eyebrow">TOP PRIORITY</div><h2>Sleep &amp; Recovery</h2></div><div class="strength">Strong signal</div></div><p>Several relevant responses point in the same direction, creating a clear wellness signal in this area.</p><div class="evidence"><div class="eyebrow">WHAT CONTRIBUTED</div><div class="evidence-row"><strong>Q20</strong> · response intensity 1.00 <span>· primary evidence</span></div><div class="evidence-row"><strong>Q35</strong> · response intensity 1.00 <span>· primary evidence</span></div><div class="evidence-row"><strong>Q21</strong> · response intensity 0.75 <span>· supporting evidence</span></div></div></section><section class="signal"><div class="signal-head"><div><div class="eyebrow">WELLNESS SIGNAL</div><h2>Energy &amp; Vitality</h2></div><div class="strength">Strong signal</div></div><p>Several relevant responses point in the same direction, creating a clear wellness signal in this area.</p><div class="evidence"><div class="eyebrow">WHAT CONTRIBUTED</div><div class="evidence-row"><strong>Q35</strong> · response intensity 1.00 <span>· primary evidence</span></div></div></section><section class="section-title"><span>YOUR PRIORITIES</span><small>Top three only</small></section><section class="signal"><div class="priority"><div class="priority-card"><div class="rank">PRIORITY 1</div><div class="name">Sleep &amp; Recovery</div><div class="band">Strong signal</div></div><div class="priority-card"><div class="rank">PRIORITY 2</div><div class="name">Energy &amp; Vitality</div><div class="band">Strong signal</div></div></div></section><section class="context"><div class="eyebrow">PRACTITIONER CONTEXT</div><h2>Information kept separate from your signals</h2><p>Context and safety information is considered separately and is not used to manufacture a wellness signal.</p></section><section class="next"><div class="eyebrow">WHERE TO EXPLORE NEXT</div><h2>A conversation, not a diagnosis</h2><p>These are questionnaire-derived wellness signals. They are intended to help you explore areas of general wellbeing, not to identify or rule out medical conditions.</p><p><strong>Recommendations:</strong> Food and product recommendations will be generated downstream from the prioritised signals and relevant personal constraints.</p></section></article><div class="disclaimer"><strong>Example profile.</strong> Signal calculations shown here use the current calibration candidate and are for model/report testing. They are not a clinical assessment or diagnosis.</div></body></html>
+<hr style='margin:80px 0;border:0;border-top:2px solid #dfe5e0'>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Your Personal Wellness Overview · P03_stress_led</title><style>
+:root{--bg:#f4f6f3;--card:#fff;--ink:#202621;--muted:#6b746d;--line:#dfe5e0;--accent:#334a3b;--soft:#edf2ee;--strong:#294936}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.5}
+.page{max-width:900px;margin:32px auto 70px;background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 6px 30px rgba(20,30,24,.05)}
+.report-top{display:flex;justify-content:space-between;padding:17px 28px;border-bottom:1px solid var(--line);font-size:11px;letter-spacing:.1em;color:var(--muted);font-weight:700}
+.hero{padding:52px 54px 42px;background:linear-gradient(180deg,#f8faf8 0%,#fff 100%)}
+.eyebrow{font-size:11px;letter-spacing:.14em;font-weight:800;color:var(--muted)}
+h1{font-size:39px;line-height:1.08;margin:10px 0 15px;font-weight:650}
+h2{font-size:20px;line-height:1.25;margin:7px 0 8px;font-weight:630}
+h3{font-size:16px;margin:0 0 8px}
+.lede{font-size:18px;max-width:700px;color:#515b54;margin:0}
+.section-title{display:flex;justify-content:space-between;align-items:center;padding:26px 54px 12px;color:var(--muted);font-size:11px;font-weight:800;letter-spacing:.14em}
+.section-title small{font-size:10px;font-weight:500;letter-spacing:0;text-transform:none}
+.signal{margin:0 54px 13px;padding:24px 25px;border:1px solid var(--line);border-radius:16px}
+.signal.first{border-color:#bdcabe;background:#fbfcfb}
+.signal-head{display:flex;gap:20px;align-items:flex-start;justify-content:space-between}
+.signal p,.context p,.next p{margin:8px 0;color:#5b645e}
+.strength{white-space:nowrap;padding:7px 11px;border-radius:999px;background:var(--soft);color:var(--strong);font-size:12px;font-weight:750}
+.evidence{margin-top:16px;padding-top:13px;border-top:1px solid var(--line)}
+.evidence-row{font-size:13px;margin:7px 0;color:#4e5751}
+.evidence-row strong{color:#27332b}
+.evidence-row span{color:#7a837d}
+.context{margin:32px 54px 0;padding:24px 25px;background:#f7f8f7;border-radius:16px}
+.next{margin:18px 54px 50px;padding:28px 25px;background:var(--soft);border-radius:16px}
+.priority{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px}
+.priority-card{padding:14px;border:1px solid var(--line);border-radius:12px;background:#fff}
+.priority-card .rank{font-size:11px;color:var(--muted);font-weight:800;letter-spacing:.08em}
+.priority-card .name{font-size:14px;font-weight:650;margin-top:5px}
+.priority-card .band{font-size:12px;color:var(--muted);margin-top:3px}
+.disclaimer{max-width:900px;margin:0 auto 40px;padding:0 20px;color:#6b746d;font-size:12px}
+@media(max-width:700px){.page{margin:0 0 35px;border-radius:0}.report-top,.hero,.section-title{padding-left:20px;padding-right:20px}.signal,.context,.next{margin-left:20px;margin-right:20px}h1{font-size:31px}.signal-head{display:block}.strength{display:inline-block;margin-top:4px}.priority{grid-template-columns:1fr}}
+</style></head><body><article class="page">
+<div class="report-top"><span>PERSONAL WELLNESS BLUEPRINT</span><span>Example report · P03_stress_led</span></div>
+<div class="hero"><div class="eyebrow">YOUR WELLNESS PATTERN</div><h1>Your Personal Wellness Overview</h1>
+<p class="lede">The clearest signal in your responses is Mood, Stress &amp; Emotional Balance.</p></div><div class="section-title"><span>AREAS TO EXPLORE</span><small>Based on your questionnaire responses</small></div><section class="signal first"><div class="signal-head"><div><div class="eyebrow">TOP PRIORITY</div><h2>Mood, Stress &amp; Emotional Balance</h2></div><div class="strength">Strong signal</div></div><p>Several relevant responses point in the same direction, creating a clear wellness signal in this area.</p><div class="evidence"><div class="eyebrow">WHAT CONTRIBUTED</div><div class="evidence-row"><strong>Q15</strong> · response intensity 1.00 <span>· primary evidence</span></div><div class="evidence-row"><strong>Q30</strong> · response intensity 0.75 <span>· primary evidence</span></div><div class="evidence-row"><strong>Q42</strong> · response intensity 1.00 <span>· primary evidence</span></div><div class="evidence-row"><strong>Q43</strong> · response intensity 0.75 <span>· primary evidence</span></div></div></section><section class="section-title"><span>YOUR PRIORITIES</span><small>Top three only</small></section><section class="signal"><div class="priority"><div class="priority-card"><div class="rank">PRIORITY 1</div><div class="name">Mood, Stress &amp; Emotional Balance</div><div class="band">Strong signal</div></div></div></section><section class="context"><div class="eyebrow">PRACTITIONER CONTEXT</div><h2>Information kept separate from your signals</h2><p>Context and safety information is considered separately and is not used to manufacture a wellness signal.</p></section><section class="next"><div class="eyebrow">WHERE TO EXPLORE NEXT</div><h2>A conversation, not a diagnosis</h2><p>These are questionnaire-derived wellness signals. They are intended to help you explore areas of general wellbeing, not to identify or rule out medical conditions.</p><p><strong>Recommendations:</strong> Food and product recommendations will be generated downstream from the prioritised signals and relevant personal constraints.</p></section></article><div class="disclaimer"><strong>Example profile.</strong> Signal calculations shown here use the current calibration candidate and are for model/report testing. They are not a clinical assessment or diagnosis.</div></body></html>
+<hr style='margin:80px 0;border:0;border-top:2px solid #dfe5e0'>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Your Personal Wellness Overview · P04_digestive_led</title><style>
+:root{--bg:#f4f6f3;--card:#fff;--ink:#202621;--muted:#6b746d;--line:#dfe5e0;--accent:#334a3b;--soft:#edf2ee;--strong:#294936}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.5}
+.page{max-width:900px;margin:32px auto 70px;background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 6px 30px rgba(20,30,24,.05)}
+.report-top{display:flex;justify-content:space-between;padding:17px 28px;border-bottom:1px solid var(--line);font-size:11px;letter-spacing:.1em;color:var(--muted);font-weight:700}
+.hero{padding:52px 54px 42px;background:linear-gradient(180deg,#f8faf8 0%,#fff 100%)}
+.eyebrow{font-size:11px;letter-spacing:.14em;font-weight:800;color:var(--muted)}
+h1{font-size:39px;line-height:1.08;margin:10px 0 15px;font-weight:650}
+h2{font-size:20px;line-height:1.25;margin:7px 0 8px;font-weight:630}
+h3{font-size:16px;margin:0 0 8px}
+.lede{font-size:18px;max-width:700px;color:#515b54;margin:0}
+.section-title{display:flex;justify-content:space-between;align-items:center;padding:26px 54px 12px;color:var(--muted);font-size:11px;font-weight:800;letter-spacing:.14em}
+.section-title small{font-size:10px;font-weight:500;letter-spacing:0;text-transform:none}
+.signal{margin:0 54px 13px;padding:24px 25px;border:1px solid var(--line);border-radius:16px}
+.signal.first{border-color:#bdcabe;background:#fbfcfb}
+.signal-head{display:flex;gap:20px;align-items:flex-start;justify-content:space-between}
+.signal p,.context p,.next p{margin:8px 0;color:#5b645e}
+.strength{white-space:nowrap;padding:7px 11px;border-radius:999px;background:var(--soft);color:var(--strong);font-size:12px;font-weight:750}
+.evidence{margin-top:16px;padding-top:13px;border-top:1px solid var(--line)}
+.evidence-row{font-size:13px;margin:7px 0;color:#4e5751}
+.evidence-row strong{color:#27332b}
+.evidence-row span{color:#7a837d}
+.context{margin:32px 54px 0;padding:24px 25px;background:#f7f8f7;border-radius:16px}
+.next{margin:18px 54px 50px;padding:28px 25px;background:var(--soft);border-radius:16px}
+.priority{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px}
+.priority-card{padding:14px;border:1px solid var(--line);border-radius:12px;background:#fff}
+.priority-card .rank{font-size:11px;color:var(--muted);font-weight:800;letter-spacing:.08em}
+.priority-card .name{font-size:14px;font-weight:650;margin-top:5px}
+.priority-card .band{font-size:12px;color:var(--muted);margin-top:3px}
+.disclaimer{max-width:900px;margin:0 auto 40px;padding:0 20px;color:#6b746d;font-size:12px}
+@media(max-width:700px){.page{margin:0 0 35px;border-radius:0}.report-top,.hero,.section-title{padding-left:20px;padding-right:20px}.signal,.context,.next{margin-left:20px;margin-right:20px}h1{font-size:31px}.signal-head{display:block}.strength{display:inline-block;margin-top:4px}.priority{grid-template-columns:1fr}}
+</style></head><body><article class="page">
+<div class="report-top"><span>PERSONAL WELLNESS BLUEPRINT</span><span>Example report · P04_digestive_led</span></div>
+<div class="hero"><div class="eyebrow">YOUR WELLNESS PATTERN</div><h1>Your Personal Wellness Overview</h1>
+<p class="lede">The clearest signal in your responses is Digestive &amp; Gut Health.</p></div><div class="section-title"><span>AREAS TO EXPLORE</span><small>Based on your questionnaire responses</small></div><section class="signal first"><div class="signal-head"><div><div class="eyebrow">TOP PRIORITY</div><h2>Digestive &amp; Gut Health</h2></div><div class="strength">Strong signal</div></div><p>Several relevant responses point in the same direction, creating a clear wellness signal in this area.</p><div class="evidence"><div class="eyebrow">WHAT CONTRIBUTED</div><div class="evidence-row"><strong>Q04</strong> · response intensity 1.00 <span>· primary evidence</span></div><div class="evidence-row"><strong>Q14</strong> · response intensity 0.75 <span>· primary evidence</span></div><div class="evidence-row"><strong>Q29</strong> · response intensity 0.75 <span>· primary evidence</span></div><div class="evidence-row"><strong>Q03</strong> · response intensity 0.50 <span>· supporting evidence</span></div></div></section><section class="section-title"><span>YOUR PRIORITIES</span><small>Top three only</small></section><section class="signal"><div class="priority"><div class="priority-card"><div class="rank">PRIORITY 1</div><div class="name">Digestive &amp; Gut Health</div><div class="band">Strong signal</div></div></div></section><section class="context"><div class="eyebrow">PRACTITIONER CONTEXT</div><h2>Information kept separate from your signals</h2><p>Context and safety information is considered separately and is not used to manufacture a wellness signal.</p></section><section class="next"><div class="eyebrow">WHERE TO EXPLORE NEXT</div><h2>A conversation, not a diagnosis</h2><p>These are questionnaire-derived wellness signals. They are intended to help you explore areas of general wellbeing, not to identify or rule out medical conditions.</p><p><strong>Recommendations:</strong> Food and product recommendations will be generated downstream from the prioritised signals and relevant personal constraints.</p></section></article><div class="disclaimer"><strong>Example profile.</strong> Signal calculations shown here use the current calibration candidate and are for model/report testing. They are not a clinical assessment or diagnosis.</div></body></html>
+<hr style='margin:80px 0;border:0;border-top:2px solid #dfe5e0'>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Your Personal Wellness Overview · P05_lifestyle_led</title><style>
+:root{--bg:#f4f6f3;--card:#fff;--ink:#202621;--muted:#6b746d;--line:#dfe5e0;--accent:#334a3b;--soft:#edf2ee;--strong:#294936}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.5}
+.page{max-width:900px;margin:32px auto 70px;background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 6px 30px rgba(20,30,24,.05)}
+.report-top{display:flex;justify-content:space-between;padding:17px 28px;border-bottom:1px solid var(--line);font-size:11px;letter-spacing:.1em;color:var(--muted);font-weight:700}
+.hero{padding:52px 54px 42px;background:linear-gradient(180deg,#f8faf8 0%,#fff 100%)}
+.eyebrow{font-size:11px;letter-spacing:.14em;font-weight:800;color:var(--muted)}
+h1{font-size:39px;line-height:1.08;margin:10px 0 15px;font-weight:650}
+h2{font-size:20px;line-height:1.25;margin:7px 0 8px;font-weight:630}
+h3{font-size:16px;margin:0 0 8px}
+.lede{font-size:18px;max-width:700px;color:#515b54;margin:0}
+.section-title{display:flex;justify-content:space-between;align-items:center;padding:26px 54px 12px;color:var(--muted);font-size:11px;font-weight:800;letter-spacing:.14em}
+.section-title small{font-size:10px;font-weight:500;letter-spacing:0;text-transform:none}
+.signal{margin:0 54px 13px;padding:24px 25px;border:1px solid var(--line);border-radius:16px}
+.signal.first{border-color:#bdcabe;background:#fbfcfb}
+.signal-head{display:flex;gap:20px;align-items:flex-start;justify-content:space-between}
+.signal p,.context p,.next p{margin:8px 0;color:#5b645e}
+.strength{white-space:nowrap;padding:7px 11px;border-radius:999px;background:var(--soft);color:var(--strong);font-size:12px;font-weight:750}
+.evidence{margin-top:16px;padding-top:13px;border-top:1px solid var(--line)}
+.evidence-row{font-size:13px;margin:7px 0;color:#4e5751}
+.evidence-row strong{color:#27332b}
+.evidence-row span{color:#7a837d}
+.context{margin:32px 54px 0;padding:24px 25px;background:#f7f8f7;border-radius:16px}
+.next{margin:18px 54px 50px;padding:28px 25px;background:var(--soft);border-radius:16px}
+.priority{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px}
+.priority-card{padding:14px;border:1px solid var(--line);border-radius:12px;background:#fff}
+.priority-card .rank{font-size:11px;color:var(--muted);font-weight:800;letter-spacing:.08em}
+.priority-card .name{font-size:14px;font-weight:650;margin-top:5px}
+.priority-card .band{font-size:12px;color:var(--muted);margin-top:3px}
+.disclaimer{max-width:900px;margin:0 auto 40px;padding:0 20px;color:#6b746d;font-size:12px}
+@media(max-width:700px){.page{margin:0 0 35px;border-radius:0}.report-top,.hero,.section-title{padding-left:20px;padding-right:20px}.signal,.context,.next{margin-left:20px;margin-right:20px}h1{font-size:31px}.signal-head{display:block}.strength{display:inline-block;margin-top:4px}.priority{grid-template-columns:1fr}}
+</style></head><body><article class="page">
+<div class="report-top"><span>PERSONAL WELLNESS BLUEPRINT</span><span>Example report · P05_lifestyle_led</span></div>
+<div class="hero"><div class="eyebrow">YOUR WELLNESS PATTERN</div><h1>Your Personal Wellness Overview</h1>
+<p class="lede">Your responses show a small number of areas that may be useful to explore, led by Circulation &amp; Cardiovascular Fitness.</p></div><div class="section-title"><span>AREAS TO EXPLORE</span><small>Based on your questionnaire responses</small></div><section class="signal first"><div class="signal-head"><div><div class="eyebrow">TOP PRIORITY</div><h2>Circulation &amp; Cardiovascular Fitness</h2></div><div class="strength">Moderate signal</div></div><p>A number of relevant responses contribute to a moderate wellness signal in this area.</p><div class="evidence"><div class="eyebrow">WHAT CONTRIBUTED</div><div class="evidence-row"><strong>Q05</strong> · response intensity 0.75 <span>· supporting evidence</span></div><div class="evidence-row"><strong>Q11</strong> · response intensity 0.50 <span>· supporting evidence</span></div><div class="evidence-row"><strong>Q24a</strong> · response intensity 0.75 <span>· supporting evidence</span></div><div class="evidence-row"><strong>Q26</strong> · response intensity 0.50 <span>· supporting evidence</span></div><div class="evidence-row"><strong>Q44</strong> · response intensity 0.50 <span>· supporting evidence</span></div></div></section><section class="signal"><div class="signal-head"><div><div class="eyebrow">WELLNESS SIGNAL</div><h2>Energy &amp; Vitality</h2></div><div class="strength">Moderate signal</div></div><p>A number of relevant responses contribute to a moderate wellness signal in this area.</p><div class="evidence"><div class="eyebrow">WHAT CONTRIBUTED</div><div class="evidence-row"><strong>Q26</strong> · response intensity 0.50 <span>· primary evidence</span></div><div class="evidence-row"><strong>Q44</strong> · response intensity 0.50 <span>· supporting evidence</span></div></div></section><section class="section-title"><span>YOUR PRIORITIES</span><small>Top three only</small></section><section class="signal"><div class="priority"><div class="priority-card"><div class="rank">PRIORITY 1</div><div class="name">Circulation &amp; Cardiovascular Fitness</div><div class="band">Moderate signal</div></div><div class="priority-card"><div class="rank">PRIORITY 2</div><div class="name">Energy &amp; Vitality</div><div class="band">Moderate signal</div></div></div></section><section class="context"><div class="eyebrow">PRACTITIONER CONTEXT</div><h2>Information kept separate from your signals</h2><p>Context and safety information is considered separately and is not used to manufacture a wellness signal.</p></section><section class="next"><div class="eyebrow">WHERE TO EXPLORE NEXT</div><h2>A conversation, not a diagnosis</h2><p>These are questionnaire-derived wellness signals. They are intended to help you explore areas of general wellbeing, not to identify or rule out medical conditions.</p><p><strong>Recommendations:</strong> Food and product recommendations will be generated downstream from the prioritised signals and relevant personal constraints.</p></section></article><div class="disclaimer"><strong>Example profile.</strong> Signal calculations shown here use the current calibration candidate and are for model/report testing. They are not a clinical assessment or diagnosis.</div></body></html>
+<hr style='margin:80px 0;border:0;border-top:2px solid #dfe5e0'>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Your Personal Wellness Overview · P06_multi_signal</title><style>
+:root{--bg:#f4f6f3;--card:#fff;--ink:#202621;--muted:#6b746d;--line:#dfe5e0;--accent:#334a3b;--soft:#edf2ee;--strong:#294936}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.5}
+.page{max-width:900px;margin:32px auto 70px;background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 6px 30px rgba(20,30,24,.05)}
+.report-top{display:flex;justify-content:space-between;padding:17px 28px;border-bottom:1px solid var(--line);font-size:11px;letter-spacing:.1em;color:var(--muted);font-weight:700}
+.hero{padding:52px 54px 42px;background:linear-gradient(180deg,#f8faf8 0%,#fff 100%)}
+.eyebrow{font-size:11px;letter-spacing:.14em;font-weight:800;color:var(--muted)}
+h1{font-size:39px;line-height:1.08;margin:10px 0 15px;font-weight:650}
+h2{font-size:20px;line-height:1.25;margin:7px 0 8px;font-weight:630}
+h3{font-size:16px;margin:0 0 8px}
+.lede{font-size:18px;max-width:700px;color:#515b54;margin:0}
+.section-title{display:flex;justify-content:space-between;align-items:center;padding:26px 54px 12px;color:var(--muted);font-size:11px;font-weight:800;letter-spacing:.14em}
+.section-title small{font-size:10px;font-weight:500;letter-spacing:0;text-transform:none}
+.signal{margin:0 54px 13px;padding:24px 25px;border:1px solid var(--line);border-radius:16px}
+.signal.first{border-color:#bdcabe;background:#fbfcfb}
+.signal-head{display:flex;gap:20px;align-items:flex-start;justify-content:space-between}
+.signal p,.context p,.next p{margin:8px 0;color:#5b645e}
+.strength{white-space:nowrap;padding:7px 11px;border-radius:999px;background:var(--soft);color:var(--strong);font-size:12px;font-weight:750}
+.evidence{margin-top:16px;padding-top:13px;border-top:1px solid var(--line)}
+.evidence-row{font-size:13px;margin:7px 0;color:#4e5751}
+.evidence-row strong{color:#27332b}
+.evidence-row span{color:#7a837d}
+.context{margin:32px 54px 0;padding:24px 25px;background:#f7f8f7;border-radius:16px}
+.next{margin:18px 54px 50px;padding:28px 25px;background:var(--soft);border-radius:16px}
+.priority{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px}
+.priority-card{padding:14px;border:1px solid var(--line);border-radius:12px;background:#fff}
+.priority-card .rank{font-size:11px;color:var(--muted);font-weight:800;letter-spacing:.08em}
+.priority-card .name{font-size:14px;font-weight:650;margin-top:5px}
+.priority-card .band{font-size:12px;color:var(--muted);margin-top:3px}
+.disclaimer{max-width:900px;margin:0 auto 40px;padding:0 20px;color:#6b746d;font-size:12px}
+@media(max-width:700px){.page{margin:0 0 35px;border-radius:0}.report-top,.hero,.section-title{padding-left:20px;padding-right:20px}.signal,.context,.next{margin-left:20px;margin-right:20px}h1{font-size:31px}.signal-head{display:block}.strength{display:inline-block;margin-top:4px}.priority{grid-template-columns:1fr}}
+</style></head><body><article class="page">
+<div class="report-top"><span>PERSONAL WELLNESS BLUEPRINT</span><span>Example report · P06_multi_signal</span></div>
+<div class="hero"><div class="eyebrow">YOUR WELLNESS PATTERN</div><h1>Your Personal Wellness Overview</h1>
+<p class="lede">Your responses show a small number of areas that may be useful to explore, led by Mood, Stress &amp; Emotional Balance.</p></div><div class="section-title"><span>AREAS TO EXPLORE</span><small>Based on your questionnaire responses</small></div><section class="signal first"><div class="signal-head"><div><div class="eyebrow">TOP PRIORITY</div><h2>Mood, Stress &amp; Emotional Balance</h2></div><div class="strength">Moderate signal</div></div><p>A number of relevant responses contribute to a moderate wellness signal in this area.</p><div class="evidence"><div class="eyebrow">WHAT CONTRIBUTED</div><div class="evidence-row"><strong>Q15</strong> · response intensity 0.75 <span>· primary evidence</span></div><div class="evidence-row"><strong>Q30</strong> · response intensity 0.75 <span>· primary evidence</span></div></div></section><section class="signal"><div class="signal-head"><div><div class="eyebrow">WELLNESS SIGNAL</div><h2>Sleep &amp; Recovery</h2></div><div class="strength">Moderate signal</div></div><p>A number of relevant responses contribute to a moderate wellness signal in this area.</p><div class="evidence"><div class="eyebrow">WHAT CONTRIBUTED</div><div class="evidence-row"><strong>Q20</strong> · response intensity 0.75 <span>· primary evidence</span></div><div class="evidence-row"><strong>Q35</strong> · response intensity 0.75 <span>· primary evidence</span></div></div></section><section class="signal"><div class="signal-head"><div><div class="eyebrow">WELLNESS SIGNAL</div><h2>Digestive &amp; Gut Health</h2></div><div class="strength">Moderate signal</div></div><p>A number of relevant responses contribute to a moderate wellness signal in this area.</p><div class="evidence"><div class="eyebrow">WHAT CONTRIBUTED</div><div class="evidence-row"><strong>Q04</strong> · response intensity 0.75 <span>· primary evidence</span></div><div class="evidence-row"><strong>Q14</strong> · response intensity 0.75 <span>· primary evidence</span></div><div class="evidence-row"><strong>Q29</strong> · response intensity 0.75 <span>· primary evidence</span></div></div></section><section class="section-title"><span>YOUR PRIORITIES</span><small>Top three only</small></section><section class="signal"><div class="priority"><div class="priority-card"><div class="rank">PRIORITY 1</div><div class="name">Mood, Stress &amp; Emotional Balance</div><div class="band">Moderate signal</div></div><div class="priority-card"><div class="rank">PRIORITY 2</div><div class="name">Sleep &amp; Recovery</div><div class="band">Moderate signal</div></div><div class="priority-card"><div class="rank">PRIORITY 3</div><div class="name">Digestive &amp; Gut Health</div><div class="band">Moderate signal</div></div></div></section><section class="context"><div class="eyebrow">PRACTITIONER CONTEXT</div><h2>Information kept separate from your signals</h2><p>Context and safety information is considered separately and is not used to manufacture a wellness signal.</p></section><section class="next"><div class="eyebrow">WHERE TO EXPLORE NEXT</div><h2>A conversation, not a diagnosis</h2><p>These are questionnaire-derived wellness signals. They are intended to help you explore areas of general wellbeing, not to identify or rule out medical conditions.</p><p><strong>Recommendations:</strong> Food and product recommendations will be generated downstream from the prioritised signals and relevant personal constraints.</p></section></article><div class="disclaimer"><strong>Example profile.</strong> Signal calculations shown here use the current calibration candidate and are for model/report testing. They are not a clinical assessment or diagnosis.</div></body></html>
+<hr style='margin:80px 0;border:0;border-top:2px solid #dfe5e0'>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Your Personal Wellness Overview · P07_context_heavy</title><style>
+:root{--bg:#f4f6f3;--card:#fff;--ink:#202621;--muted:#6b746d;--line:#dfe5e0;--accent:#334a3b;--soft:#edf2ee;--strong:#294936}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.5}
+.page{max-width:900px;margin:32px auto 70px;background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 6px 30px rgba(20,30,24,.05)}
+.report-top{display:flex;justify-content:space-between;padding:17px 28px;border-bottom:1px solid var(--line);font-size:11px;letter-spacing:.1em;color:var(--muted);font-weight:700}
+.hero{padding:52px 54px 42px;background:linear-gradient(180deg,#f8faf8 0%,#fff 100%)}
+.eyebrow{font-size:11px;letter-spacing:.14em;font-weight:800;color:var(--muted)}
+h1{font-size:39px;line-height:1.08;margin:10px 0 15px;font-weight:650}
+h2{font-size:20px;line-height:1.25;margin:7px 0 8px;font-weight:630}
+h3{font-size:16px;margin:0 0 8px}
+.lede{font-size:18px;max-width:700px;color:#515b54;margin:0}
+.section-title{display:flex;justify-content:space-between;align-items:center;padding:26px 54px 12px;color:var(--muted);font-size:11px;font-weight:800;letter-spacing:.14em}
+.section-title small{font-size:10px;font-weight:500;letter-spacing:0;text-transform:none}
+.signal{margin:0 54px 13px;padding:24px 25px;border:1px solid var(--line);border-radius:16px}
+.signal.first{border-color:#bdcabe;background:#fbfcfb}
+.signal-head{display:flex;gap:20px;align-items:flex-start;justify-content:space-between}
+.signal p,.context p,.next p{margin:8px 0;color:#5b645e}
+.strength{white-space:nowrap;padding:7px 11px;border-radius:999px;background:var(--soft);color:var(--strong);font-size:12px;font-weight:750}
+.evidence{margin-top:16px;padding-top:13px;border-top:1px solid var(--line)}
+.evidence-row{font-size:13px;margin:7px 0;color:#4e5751}
+.evidence-row strong{color:#27332b}
+.evidence-row span{color:#7a837d}
+.context{margin:32px 54px 0;padding:24px 25px;background:#f7f8f7;border-radius:16px}
+.next{margin:18px 54px 50px;padding:28px 25px;background:var(--soft);border-radius:16px}
+.priority{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px}
+.priority-card{padding:14px;border:1px solid var(--line);border-radius:12px;background:#fff}
+.priority-card .rank{font-size:11px;color:var(--muted);font-weight:800;letter-spacing:.08em}
+.priority-card .name{font-size:14px;font-weight:650;margin-top:5px}
+.priority-card .band{font-size:12px;color:var(--muted);margin-top:3px}
+.disclaimer{max-width:900px;margin:0 auto 40px;padding:0 20px;color:#6b746d;font-size:12px}
+@media(max-width:700px){.page{margin:0 0 35px;border-radius:0}.report-top,.hero,.section-title{padding-left:20px;padding-right:20px}.signal,.context,.next{margin-left:20px;margin-right:20px}h1{font-size:31px}.signal-head{display:block}.strength{display:inline-block;margin-top:4px}.priority{grid-template-columns:1fr}}
+</style></head><body><article class="page">
+<div class="report-top"><span>PERSONAL WELLNESS BLUEPRINT</span><span>Example report · P07_context_heavy</span></div>
+<div class="hero"><div class="eyebrow">YOUR WELLNESS PATTERN</div><h1>Your Personal Wellness Overview</h1>
+<p class="lede">Your responses do not show a strong concentration of wellness signals in this profile.</p></div><div class="section-title"><span>AREAS TO EXPLORE</span><small>Based on your questionnaire responses</small></div><section class="signal first"><div class="signal-head"><div><div class="eyebrow">WELLNESS PATTERN</div><h2>No dominant signal</h2></div><div class="strength">No significant signal</div></div><p>Your responses do not show a strong concentration of higher-priority wellness signals. This is a valid outcome of the assessment.</p></section><section class="section-title"><span>YOUR PRIORITIES</span><small>Top three only</small></section><section class="signal"><div class="priority"><div class="priority-card"><div class="rank">RESULT</div><div class="name">No priority area</div><div class="band">No significant signal</div></div></div></section><section class="context"><div class="eyebrow">PRACTITIONER CONTEXT</div><h2>Information kept separate from your signals</h2><p>Context and safety information is considered separately and is not used to manufacture a wellness signal.</p></section><section class="next"><div class="eyebrow">WHERE TO EXPLORE NEXT</div><h2>A conversation, not a diagnosis</h2><p>These are questionnaire-derived wellness signals. They are intended to help you explore areas of general wellbeing, not to identify or rule out medical conditions.</p><p><strong>Recommendations:</strong> Food and product recommendations will be generated downstream from the prioritised signals and relevant personal constraints.</p></section></article><div class="disclaimer"><strong>Example profile.</strong> Signal calculations shown here use the current calibration candidate and are for model/report testing. They are not a clinical assessment or diagnosis.</div></body></html>
+<hr style='margin:80px 0;border:0;border-top:2px solid #dfe5e0'>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Your Personal Wellness Overview · P08_respiratory_led</title><style>
+:root{--bg:#f4f6f3;--card:#fff;--ink:#202621;--muted:#6b746d;--line:#dfe5e0;--accent:#334a3b;--soft:#edf2ee;--strong:#294936}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.5}
+.page{max-width:900px;margin:32px auto 70px;background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 6px 30px rgba(20,30,24,.05)}
+.report-top{display:flex;justify-content:space-between;padding:17px 28px;border-bottom:1px solid var(--line);font-size:11px;letter-spacing:.1em;color:var(--muted);font-weight:700}
+.hero{padding:52px 54px 42px;background:linear-gradient(180deg,#f8faf8 0%,#fff 100%)}
+.eyebrow{font-size:11px;letter-spacing:.14em;font-weight:800;color:var(--muted)}
+h1{font-size:39px;line-height:1.08;margin:10px 0 15px;font-weight:650}
+h2{font-size:20px;line-height:1.25;margin:7px 0 8px;font-weight:630}
+h3{font-size:16px;margin:0 0 8px}
+.lede{font-size:18px;max-width:700px;color:#515b54;margin:0}
+.section-title{display:flex;justify-content:space-between;align-items:center;padding:26px 54px 12px;color:var(--muted);font-size:11px;font-weight:800;letter-spacing:.14em}
+.section-title small{font-size:10px;font-weight:500;letter-spacing:0;text-transform:none}
+.signal{margin:0 54px 13px;padding:24px 25px;border:1px solid var(--line);border-radius:16px}
+.signal.first{border-color:#bdcabe;background:#fbfcfb}
+.signal-head{display:flex;gap:20px;align-items:flex-start;justify-content:space-between}
+.signal p,.context p,.next p{margin:8px 0;color:#5b645e}
+.strength{white-space:nowrap;padding:7px 11px;border-radius:999px;background:var(--soft);color:var(--strong);font-size:12px;font-weight:750}
+.evidence{margin-top:16px;padding-top:13px;border-top:1px solid var(--line)}
+.evidence-row{font-size:13px;margin:7px 0;color:#4e5751}
+.evidence-row strong{color:#27332b}
+.evidence-row span{color:#7a837d}
+.context{margin:32px 54px 0;padding:24px 25px;background:#f7f8f7;border-radius:16px}
+.next{margin:18px 54px 50px;padding:28px 25px;background:var(--soft);border-radius:16px}
+.priority{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px}
+.priority-card{padding:14px;border:1px solid var(--line);border-radius:12px;background:#fff}
+.priority-card .rank{font-size:11px;color:var(--muted);font-weight:800;letter-spacing:.08em}
+.priority-card .name{font-size:14px;font-weight:650;margin-top:5px}
+.priority-card .band{font-size:12px;color:var(--muted);margin-top:3px}
+.disclaimer{max-width:900px;margin:0 auto 40px;padding:0 20px;color:#6b746d;font-size:12px}
+@media(max-width:700px){.page{margin:0 0 35px;border-radius:0}.report-top,.hero,.section-title{padding-left:20px;padding-right:20px}.signal,.context,.next{margin-left:20px;margin-right:20px}h1{font-size:31px}.signal-head{display:block}.strength{display:inline-block;margin-top:4px}.priority{grid-template-columns:1fr}}
+</style></head><body><article class="page">
+<div class="report-top"><span>PERSONAL WELLNESS BLUEPRINT</span><span>Example report · P08_respiratory_led</span></div>
+<div class="hero"><div class="eyebrow">YOUR WELLNESS PATTERN</div><h1>Your Personal Wellness Overview</h1>
+<p class="lede">Your responses show several stronger patterns. Respiratory Health is currently the most prominent.</p></div><div class="section-title"><span>AREAS TO EXPLORE</span><small>Based on your questionnaire responses</small></div><section class="signal first"><div class="signal-head"><div><div class="eyebrow">TOP PRIORITY</div><h2>Respiratory Health</h2></div><div class="strength">Strong signal</div></div><p>Several relevant responses point in the same direction, creating a clear wellness signal in this area.</p><div class="evidence"><div class="eyebrow">WHAT CONTRIBUTED</div><div class="evidence-row"><strong>Q45</strong> · response intensity 1.00 <span>· primary evidence</span></div><div class="evidence-row"><strong>Q11</strong> · response intensity 0.75 <span>· supporting evidence</span></div><div class="evidence-row"><strong>Q34</strong> · response intensity 0.75 <span>· supporting evidence</span></div></div></section><section class="signal"><div class="signal-head"><div><div class="eyebrow">WELLNESS SIGNAL</div><h2>Circulation &amp; Cardiovascular Fitness</h2></div><div class="strength">Strong signal</div></div><p>Several relevant responses point in the same direction, creating a clear wellness signal in this area.</p><div class="evidence"><div class="eyebrow">WHAT CONTRIBUTED</div><div class="evidence-row"><strong>Q11</strong> · response intensity 0.75 <span>· supporting evidence</span></div></div></section><section class="section-title"><span>YOUR PRIORITIES</span><small>Top three only</small></section><section class="signal"><div class="priority"><div class="priority-card"><div class="rank">PRIORITY 1</div><div class="name">Respiratory Health</div><div class="band">Strong signal</div></div><div class="priority-card"><div class="rank">PRIORITY 2</div><div class="name">Circulation &amp; Cardiovascular Fitness</div><div class="band">Strong signal</div></div></div></section><section class="context"><div class="eyebrow">PRACTITIONER CONTEXT</div><h2>Information kept separate from your signals</h2><p>Context and safety information is considered separately and is not used to manufacture a wellness signal.</p></section><section class="next"><div class="eyebrow">WHERE TO EXPLORE NEXT</div><h2>A conversation, not a diagnosis</h2><p>These are questionnaire-derived wellness signals. They are intended to help you explore areas of general wellbeing, not to identify or rule out medical conditions.</p><p><strong>Recommendations:</strong> Food and product recommendations will be generated downstream from the prioritised signals and relevant personal constraints.</p></section></article><div class="disclaimer"><strong>Example profile.</strong> Signal calculations shown here use the current calibration candidate and are for model/report testing. They are not a clinical assessment or diagnosis.</div></body></html>
+<hr style='margin:80px 0;border:0;border-top:2px solid #dfe5e0'>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Your Personal Wellness Overview · P09_goal_led</title><style>
+:root{--bg:#f4f6f3;--card:#fff;--ink:#202621;--muted:#6b746d;--line:#dfe5e0;--accent:#334a3b;--soft:#edf2ee;--strong:#294936}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.5}
+.page{max-width:900px;margin:32px auto 70px;background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 6px 30px rgba(20,30,24,.05)}
+.report-top{display:flex;justify-content:space-between;padding:17px 28px;border-bottom:1px solid var(--line);font-size:11px;letter-spacing:.1em;color:var(--muted);font-weight:700}
+.hero{padding:52px 54px 42px;background:linear-gradient(180deg,#f8faf8 0%,#fff 100%)}
+.eyebrow{font-size:11px;letter-spacing:.14em;font-weight:800;color:var(--muted)}
+h1{font-size:39px;line-height:1.08;margin:10px 0 15px;font-weight:650}
+h2{font-size:20px;line-height:1.25;margin:7px 0 8px;font-weight:630}
+h3{font-size:16px;margin:0 0 8px}
+.lede{font-size:18px;max-width:700px;color:#515b54;margin:0}
+.section-title{display:flex;justify-content:space-between;align-items:center;padding:26px 54px 12px;color:var(--muted);font-size:11px;font-weight:800;letter-spacing:.14em}
+.section-title small{font-size:10px;font-weight:500;letter-spacing:0;text-transform:none}
+.signal{margin:0 54px 13px;padding:24px 25px;border:1px solid var(--line);border-radius:16px}
+.signal.first{border-color:#bdcabe;background:#fbfcfb}
+.signal-head{display:flex;gap:20px;align-items:flex-start;justify-content:space-between}
+.signal p,.context p,.next p{margin:8px 0;color:#5b645e}
+.strength{white-space:nowrap;padding:7px 11px;border-radius:999px;background:var(--soft);color:var(--strong);font-size:12px;font-weight:750}
+.evidence{margin-top:16px;padding-top:13px;border-top:1px solid var(--line)}
+.evidence-row{font-size:13px;margin:7px 0;color:#4e5751}
+.evidence-row strong{color:#27332b}
+.evidence-row span{color:#7a837d}
+.context{margin:32px 54px 0;padding:24px 25px;background:#f7f8f7;border-radius:16px}
+.next{margin:18px 54px 50px;padding:28px 25px;background:var(--soft);border-radius:16px}
+.priority{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px}
+.priority-card{padding:14px;border:1px solid var(--line);border-radius:12px;background:#fff}
+.priority-card .rank{font-size:11px;color:var(--muted);font-weight:800;letter-spacing:.08em}
+.priority-card .name{font-size:14px;font-weight:650;margin-top:5px}
+.priority-card .band{font-size:12px;color:var(--muted);margin-top:3px}
+.disclaimer{max-width:900px;margin:0 auto 40px;padding:0 20px;color:#6b746d;font-size:12px}
+@media(max-width:700px){.page{margin:0 0 35px;border-radius:0}.report-top,.hero,.section-title{padding-left:20px;padding-right:20px}.signal,.context,.next{margin-left:20px;margin-right:20px}h1{font-size:31px}.signal-head{display:block}.strength{display:inline-block;margin-top:4px}.priority{grid-template-columns:1fr}}
+</style></head><body><article class="page">
+<div class="report-top"><span>PERSONAL WELLNESS BLUEPRINT</span><span>Example report · P09_goal_led</span></div>
+<div class="hero"><div class="eyebrow">YOUR WELLNESS PATTERN</div><h1>Your Personal Wellness Overview</h1>
+<p class="lede">Your responses do not show a strong concentration of wellness signals in this profile.</p></div><div class="section-title"><span>AREAS TO EXPLORE</span><small>Based on your questionnaire responses</small></div><section class="signal first"><div class="signal-head"><div><div class="eyebrow">WELLNESS PATTERN</div><h2>No dominant signal</h2></div><div class="strength">No significant signal</div></div><p>Your responses do not show a strong concentration of higher-priority wellness signals. This is a valid outcome of the assessment.</p></section><section class="section-title"><span>YOUR PRIORITIES</span><small>Top three only</small></section><section class="signal"><div class="priority"><div class="priority-card"><div class="rank">RESULT</div><div class="name">No priority area</div><div class="band">No significant signal</div></div></div></section><section class="context"><div class="eyebrow">PRACTITIONER CONTEXT</div><h2>Information kept separate from your signals</h2><p>Context and safety information is considered separately and is not used to manufacture a wellness signal.</p></section><section class="next"><div class="eyebrow">WHERE TO EXPLORE NEXT</div><h2>A conversation, not a diagnosis</h2><p>These are questionnaire-derived wellness signals. They are intended to help you explore areas of general wellbeing, not to identify or rule out medical conditions.</p><p><strong>Recommendations:</strong> Food and product recommendations will be generated downstream from the prioritised signals and relevant personal constraints.</p></section></article><div class="disclaimer"><strong>Example profile.</strong> Signal calculations shown here use the current calibration candidate and are for model/report testing. They are not a clinical assessment or diagnosis.</div></body></html>
+<hr style='margin:80px 0;border:0;border-top:2px solid #dfe5e0'>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Your Personal Wellness Overview · P10_minimal_signal</title><style>
+:root{--bg:#f4f6f3;--card:#fff;--ink:#202621;--muted:#6b746d;--line:#dfe5e0;--accent:#334a3b;--soft:#edf2ee;--strong:#294936}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.5}
+.page{max-width:900px;margin:32px auto 70px;background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 6px 30px rgba(20,30,24,.05)}
+.report-top{display:flex;justify-content:space-between;padding:17px 28px;border-bottom:1px solid var(--line);font-size:11px;letter-spacing:.1em;color:var(--muted);font-weight:700}
+.hero{padding:52px 54px 42px;background:linear-gradient(180deg,#f8faf8 0%,#fff 100%)}
+.eyebrow{font-size:11px;letter-spacing:.14em;font-weight:800;color:var(--muted)}
+h1{font-size:39px;line-height:1.08;margin:10px 0 15px;font-weight:650}
+h2{font-size:20px;line-height:1.25;margin:7px 0 8px;font-weight:630}
+h3{font-size:16px;margin:0 0 8px}
+.lede{font-size:18px;max-width:700px;color:#515b54;margin:0}
+.section-title{display:flex;justify-content:space-between;align-items:center;padding:26px 54px 12px;color:var(--muted);font-size:11px;font-weight:800;letter-spacing:.14em}
+.section-title small{font-size:10px;font-weight:500;letter-spacing:0;text-transform:none}
+.signal{margin:0 54px 13px;padding:24px 25px;border:1px solid var(--line);border-radius:16px}
+.signal.first{border-color:#bdcabe;background:#fbfcfb}
+.signal-head{display:flex;gap:20px;align-items:flex-start;justify-content:space-between}
+.signal p,.context p,.next p{margin:8px 0;color:#5b645e}
+.strength{white-space:nowrap;padding:7px 11px;border-radius:999px;background:var(--soft);color:var(--strong);font-size:12px;font-weight:750}
+.evidence{margin-top:16px;padding-top:13px;border-top:1px solid var(--line)}
+.evidence-row{font-size:13px;margin:7px 0;color:#4e5751}
+.evidence-row strong{color:#27332b}
+.evidence-row span{color:#7a837d}
+.context{margin:32px 54px 0;padding:24px 25px;background:#f7f8f7;border-radius:16px}
+.next{margin:18px 54px 50px;padding:28px 25px;background:var(--soft);border-radius:16px}
+.priority{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px}
+.priority-card{padding:14px;border:1px solid var(--line);border-radius:12px;background:#fff}
+.priority-card .rank{font-size:11px;color:var(--muted);font-weight:800;letter-spacing:.08em}
+.priority-card .name{font-size:14px;font-weight:650;margin-top:5px}
+.priority-card .band{font-size:12px;color:var(--muted);margin-top:3px}
+.disclaimer{max-width:900px;margin:0 auto 40px;padding:0 20px;color:#6b746d;font-size:12px}
+@media(max-width:700px){.page{margin:0 0 35px;border-radius:0}.report-top,.hero,.section-title{padding-left:20px;padding-right:20px}.signal,.context,.next{margin-left:20px;margin-right:20px}h1{font-size:31px}.signal-head{display:block}.strength{display:inline-block;margin-top:4px}.priority{grid-template-columns:1fr}}
+</style></head><body><article class="page">
+<div class="report-top"><span>PERSONAL WELLNESS BLUEPRINT</span><span>Example report · P10_minimal_signal</span></div>
+<div class="hero"><div class="eyebrow">YOUR WELLNESS PATTERN</div><h1>Your Personal Wellness Overview</h1>
+<p class="lede">Your responses do not show a strong concentration of wellness signals in this profile.</p></div><div class="section-title"><span>AREAS TO EXPLORE</span><small>Based on your questionnaire responses</small></div><section class="signal first"><div class="signal-head"><div><div class="eyebrow">WELLNESS PATTERN</div><h2>No dominant signal</h2></div><div class="strength">No significant signal</div></div><p>Your responses do not show a strong concentration of higher-priority wellness signals. This is a valid outcome of the assessment.</p></section><section class="section-title"><span>YOUR PRIORITIES</span><small>Top three only</small></section><section class="signal"><div class="priority"><div class="priority-card"><div class="rank">RESULT</div><div class="name">No priority area</div><div class="band">No significant signal</div></div></div></section><section class="context"><div class="eyebrow">PRACTITIONER CONTEXT</div><h2>Information kept separate from your signals</h2><p>Context and safety information is considered separately and is not used to manufacture a wellness signal.</p></section><section class="next"><div class="eyebrow">WHERE TO EXPLORE NEXT</div><h2>A conversation, not a diagnosis</h2><p>These are questionnaire-derived wellness signals. They are intended to help you explore areas of general wellbeing, not to identify or rule out medical conditions.</p><p><strong>Recommendations:</strong> Food and product recommendations will be generated downstream from the prioritised signals and relevant personal constraints.</p></section></article><div class="disclaimer"><strong>Example profile.</strong> Signal calculations shown here use the current calibration candidate and are for model/report testing. They are not a clinical assessment or diagnosis.</div></body></html>
+<hr style='margin:80px 0;border:0;border-top:2px solid #dfe5e0'>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Your Personal Wellness Overview · P11_hormonal_lifestage</title><style>
+:root{--bg:#f4f6f3;--card:#fff;--ink:#202621;--muted:#6b746d;--line:#dfe5e0;--accent:#334a3b;--soft:#edf2ee;--strong:#294936}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.5}
+.page{max-width:900px;margin:32px auto 70px;background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 6px 30px rgba(20,30,24,.05)}
+.report-top{display:flex;justify-content:space-between;padding:17px 28px;border-bottom:1px solid var(--line);font-size:11px;letter-spacing:.1em;color:var(--muted);font-weight:700}
+.hero{padding:52px 54px 42px;background:linear-gradient(180deg,#f8faf8 0%,#fff 100%)}
+.eyebrow{font-size:11px;letter-spacing:.14em;font-weight:800;color:var(--muted)}
+h1{font-size:39px;line-height:1.08;margin:10px 0 15px;font-weight:650}
+h2{font-size:20px;line-height:1.25;margin:7px 0 8px;font-weight:630}
+h3{font-size:16px;margin:0 0 8px}
+.lede{font-size:18px;max-width:700px;color:#515b54;margin:0}
+.section-title{display:flex;justify-content:space-between;align-items:center;padding:26px 54px 12px;color:var(--muted);font-size:11px;font-weight:800;letter-spacing:.14em}
+.section-title small{font-size:10px;font-weight:500;letter-spacing:0;text-transform:none}
+.signal{margin:0 54px 13px;padding:24px 25px;border:1px solid var(--line);border-radius:16px}
+.signal.first{border-color:#bdcabe;background:#fbfcfb}
+.signal-head{display:flex;gap:20px;align-items:flex-start;justify-content:space-between}
+.signal p,.context p,.next p{margin:8px 0;color:#5b645e}
+.strength{white-space:nowrap;padding:7px 11px;border-radius:999px;background:var(--soft);color:var(--strong);font-size:12px;font-weight:750}
+.evidence{margin-top:16px;padding-top:13px;border-top:1px solid var(--line)}
+.evidence-row{font-size:13px;margin:7px 0;color:#4e5751}
+.evidence-row strong{color:#27332b}
+.evidence-row span{color:#7a837d}
+.context{margin:32px 54px 0;padding:24px 25px;background:#f7f8f7;border-radius:16px}
+.next{margin:18px 54px 50px;padding:28px 25px;background:var(--soft);border-radius:16px}
+.priority{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px}
+.priority-card{padding:14px;border:1px solid var(--line);border-radius:12px;background:#fff}
+.priority-card .rank{font-size:11px;color:var(--muted);font-weight:800;letter-spacing:.08em}
+.priority-card .name{font-size:14px;font-weight:650;margin-top:5px}
+.priority-card .band{font-size:12px;color:var(--muted);margin-top:3px}
+.disclaimer{max-width:900px;margin:0 auto 40px;padding:0 20px;color:#6b746d;font-size:12px}
+@media(max-width:700px){.page{margin:0 0 35px;border-radius:0}.report-top,.hero,.section-title{padding-left:20px;padding-right:20px}.signal,.context,.next{margin-left:20px;margin-right:20px}h1{font-size:31px}.signal-head{display:block}.strength{display:inline-block;margin-top:4px}.priority{grid-template-columns:1fr}}
+</style></head><body><article class="page">
+<div class="report-top"><span>PERSONAL WELLNESS BLUEPRINT</span><span>Example report · P11_hormonal_lifestage</span></div>
+<div class="hero"><div class="eyebrow">YOUR WELLNESS PATTERN</div><h1>Your Personal Wellness Overview</h1>
+<p class="lede">The clearest signal in your responses is Hormonal &amp; Life-Stage Balance.</p></div><div class="section-title"><span>AREAS TO EXPLORE</span><small>Based on your questionnaire responses</small></div><section class="signal first"><div class="signal-head"><div><div class="eyebrow">TOP PRIORITY</div><h2>Hormonal &amp; Life-Stage Balance</h2></div><div class="strength">Moderate signal</div></div><p>A number of relevant responses contribute to a moderate wellness signal in this area.</p><div class="evidence"><div class="eyebrow">WHAT CONTRIBUTED</div><div class="evidence-row"><strong>Q23</strong> · response intensity 0.75 <span>· primary evidence</span></div><div class="evidence-row"><strong>Q47</strong> · response intensity 0.75 <span>· primary evidence</span></div></div></section><section class="section-title"><span>YOUR PRIORITIES</span><small>Top three only</small></section><section class="signal"><div class="priority"><div class="priority-card"><div class="rank">PRIORITY 1</div><div class="name">Hormonal &amp; Life-Stage Balance</div><div class="band">Moderate signal</div></div></div></section><section class="context"><div class="eyebrow">PRACTITIONER CONTEXT</div><h2>Information kept separate from your signals</h2><p>Context and safety information is considered separately and is not used to manufacture a wellness signal.</p></section><section class="next"><div class="eyebrow">WHERE TO EXPLORE NEXT</div><h2>A conversation, not a diagnosis</h2><p>These are questionnaire-derived wellness signals. They are intended to help you explore areas of general wellbeing, not to identify or rule out medical conditions.</p><p><strong>Recommendations:</strong> Food and product recommendations will be generated downstream from the prioritised signals and relevant personal constraints.</p></section></article><div class="disclaimer"><strong>Example profile.</strong> Signal calculations shown here use the current calibration candidate and are for model/report testing. They are not a clinical assessment or diagnosis.</div></body></html>
+<hr style='margin:80px 0;border:0;border-top:2px solid #dfe5e0'>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Your Personal Wellness Overview · P12_immune_resilience</title><style>
+:root{--bg:#f4f6f3;--card:#fff;--ink:#202621;--muted:#6b746d;--line:#dfe5e0;--accent:#334a3b;--soft:#edf2ee;--strong:#294936}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.5}
+.page{max-width:900px;margin:32px auto 70px;background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 6px 30px rgba(20,30,24,.05)}
+.report-top{display:flex;justify-content:space-between;padding:17px 28px;border-bottom:1px solid var(--line);font-size:11px;letter-spacing:.1em;color:var(--muted);font-weight:700}
+.hero{padding:52px 54px 42px;background:linear-gradient(180deg,#f8faf8 0%,#fff 100%)}
+.eyebrow{font-size:11px;letter-spacing:.14em;font-weight:800;color:var(--muted)}
+h1{font-size:39px;line-height:1.08;margin:10px 0 15px;font-weight:650}
+h2{font-size:20px;line-height:1.25;margin:7px 0 8px;font-weight:630}
+h3{font-size:16px;margin:0 0 8px}
+.lede{font-size:18px;max-width:700px;color:#515b54;margin:0}
+.section-title{display:flex;justify-content:space-between;align-items:center;padding:26px 54px 12px;color:var(--muted);font-size:11px;font-weight:800;letter-spacing:.14em}
+.section-title small{font-size:10px;font-weight:500;letter-spacing:0;text-transform:none}
+.signal{margin:0 54px 13px;padding:24px 25px;border:1px solid var(--line);border-radius:16px}
+.signal.first{border-color:#bdcabe;background:#fbfcfb}
+.signal-head{display:flex;gap:20px;align-items:flex-start;justify-content:space-between}
+.signal p,.context p,.next p{margin:8px 0;color:#5b645e}
+.strength{white-space:nowrap;padding:7px 11px;border-radius:999px;background:var(--soft);color:var(--strong);font-size:12px;font-weight:750}
+.evidence{margin-top:16px;padding-top:13px;border-top:1px solid var(--line)}
+.evidence-row{font-size:13px;margin:7px 0;color:#4e5751}
+.evidence-row strong{color:#27332b}
+.evidence-row span{color:#7a837d}
+.context{margin:32px 54px 0;padding:24px 25px;background:#f7f8f7;border-radius:16px}
+.next{margin:18px 54px 50px;padding:28px 25px;background:var(--soft);border-radius:16px}
+.priority{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px}
+.priority-card{padding:14px;border:1px solid var(--line);border-radius:12px;background:#fff}
+.priority-card .rank{font-size:11px;color:var(--muted);font-weight:800;letter-spacing:.08em}
+.priority-card .name{font-size:14px;font-weight:650;margin-top:5px}
+.priority-card .band{font-size:12px;color:var(--muted);margin-top:3px}
+.disclaimer{max-width:900px;margin:0 auto 40px;padding:0 20px;color:#6b746d;font-size:12px}
+@media(max-width:700px){.page{margin:0 0 35px;border-radius:0}.report-top,.hero,.section-title{padding-left:20px;padding-right:20px}.signal,.context,.next{margin-left:20px;margin-right:20px}h1{font-size:31px}.signal-head{display:block}.strength{display:inline-block;margin-top:4px}.priority{grid-template-columns:1fr}}
+</style></head><body><article class="page">
+<div class="report-top"><span>PERSONAL WELLNESS BLUEPRINT</span><span>Example report · P12_immune_resilience</span></div>
+<div class="hero"><div class="eyebrow">YOUR WELLNESS PATTERN</div><h1>Your Personal Wellness Overview</h1>
+<p class="lede">The clearest signal in your responses is Immune Resilience.</p></div><div class="section-title"><span>AREAS TO EXPLORE</span><small>Based on your questionnaire responses</small></div><section class="signal first"><div class="signal-head"><div><div class="eyebrow">TOP PRIORITY</div><h2>Immune Resilience</h2></div><div class="strength">Strong signal</div></div><p>Several relevant responses point in the same direction, creating a clear wellness signal in this area.</p><div class="evidence"><div class="eyebrow">WHAT CONTRIBUTED</div><div class="evidence-row"><strong>Q02</strong> · response intensity 0.75 <span>· primary evidence</span></div><div class="evidence-row"><strong>Q13</strong> · response intensity 0.75 <span>· primary evidence</span></div><div class="evidence-row"><strong>Q28</strong> · response intensity 0.75 <span>· primary evidence</span></div></div></section><section class="section-title"><span>YOUR PRIORITIES</span><small>Top three only</small></section><section class="signal"><div class="priority"><div class="priority-card"><div class="rank">PRIORITY 1</div><div class="name">Immune Resilience</div><div class="band">Strong signal</div></div></div></section><section class="context"><div class="eyebrow">PRACTITIONER CONTEXT</div><h2>Information kept separate from your signals</h2><p>Context and safety information is considered separately and is not used to manufacture a wellness signal.</p></section><section class="next"><div class="eyebrow">WHERE TO EXPLORE NEXT</div><h2>A conversation, not a diagnosis</h2><p>These are questionnaire-derived wellness signals. They are intended to help you explore areas of general wellbeing, not to identify or rule out medical conditions.</p><p><strong>Recommendations:</strong> Food and product recommendations will be generated downstream from the prioritised signals and relevant personal constraints.</p></section></article><div class="disclaimer"><strong>Example profile.</strong> Signal calculations shown here use the current calibration candidate and are for model/report testing. They are not a clinical assessment or diagnosis.</div></body></html>
+<hr style='margin:80px 0;border:0;border-top:2px solid #dfe5e0'>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Your Personal Wellness Overview · P13_metabolic_weight</title><style>
+:root{--bg:#f4f6f3;--card:#fff;--ink:#202621;--muted:#6b746d;--line:#dfe5e0;--accent:#334a3b;--soft:#edf2ee;--strong:#294936}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.5}
+.page{max-width:900px;margin:32px auto 70px;background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 6px 30px rgba(20,30,24,.05)}
+.report-top{display:flex;justify-content:space-between;padding:17px 28px;border-bottom:1px solid var(--line);font-size:11px;letter-spacing:.1em;color:var(--muted);font-weight:700}
+.hero{padding:52px 54px 42px;background:linear-gradient(180deg,#f8faf8 0%,#fff 100%)}
+.eyebrow{font-size:11px;letter-spacing:.14em;font-weight:800;color:var(--muted)}
+h1{font-size:39px;line-height:1.08;margin:10px 0 15px;font-weight:650}
+h2{font-size:20px;line-height:1.25;margin:7px 0 8px;font-weight:630}
+h3{font-size:16px;margin:0 0 8px}
+.lede{font-size:18px;max-width:700px;color:#515b54;margin:0}
+.section-title{display:flex;justify-content:space-between;align-items:center;padding:26px 54px 12px;color:var(--muted);font-size:11px;font-weight:800;letter-spacing:.14em}
+.section-title small{font-size:10px;font-weight:500;letter-spacing:0;text-transform:none}
+.signal{margin:0 54px 13px;padding:24px 25px;border:1px solid var(--line);border-radius:16px}
+.signal.first{border-color:#bdcabe;background:#fbfcfb}
+.signal-head{display:flex;gap:20px;align-items:flex-start;justify-content:space-between}
+.signal p,.context p,.next p{margin:8px 0;color:#5b645e}
+.strength{white-space:nowrap;padding:7px 11px;border-radius:999px;background:var(--soft);color:var(--strong);font-size:12px;font-weight:750}
+.evidence{margin-top:16px;padding-top:13px;border-top:1px solid var(--line)}
+.evidence-row{font-size:13px;margin:7px 0;color:#4e5751}
+.evidence-row strong{color:#27332b}
+.evidence-row span{color:#7a837d}
+.context{margin:32px 54px 0;padding:24px 25px;background:#f7f8f7;border-radius:16px}
+.next{margin:18px 54px 50px;padding:28px 25px;background:var(--soft);border-radius:16px}
+.priority{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px}
+.priority-card{padding:14px;border:1px solid var(--line);border-radius:12px;background:#fff}
+.priority-card .rank{font-size:11px;color:var(--muted);font-weight:800;letter-spacing:.08em}
+.priority-card .name{font-size:14px;font-weight:650;margin-top:5px}
+.priority-card .band{font-size:12px;color:var(--muted);margin-top:3px}
+.disclaimer{max-width:900px;margin:0 auto 40px;padding:0 20px;color:#6b746d;font-size:12px}
+@media(max-width:700px){.page{margin:0 0 35px;border-radius:0}.report-top,.hero,.section-title{padding-left:20px;padding-right:20px}.signal,.context,.next{margin-left:20px;margin-right:20px}h1{font-size:31px}.signal-head{display:block}.strength{display:inline-block;margin-top:4px}.priority{grid-template-columns:1fr}}
+</style></head><body><article class="page">
+<div class="report-top"><span>PERSONAL WELLNESS BLUEPRINT</span><span>Example report · P13_metabolic_weight</span></div>
+<div class="hero"><div class="eyebrow">YOUR WELLNESS PATTERN</div><h1>Your Personal Wellness Overview</h1>
+<p class="lede">Your responses show several stronger patterns. Healthy Weight &amp; Metabolic Balance is currently the most prominent.</p></div><div class="section-title"><span>AREAS TO EXPLORE</span><small>Based on your questionnaire responses</small></div><section class="signal first"><div class="signal-head"><div><div class="eyebrow">TOP PRIORITY</div><h2>Healthy Weight &amp; Metabolic Balance</h2></div><div class="strength">Strong signal</div></div><p>Several relevant responses point in the same direction, creating a clear wellness signal in this area.</p><div class="evidence"><div class="eyebrow">WHAT CONTRIBUTED</div><div class="evidence-row"><strong>Q25</strong> · response intensity 1.00 <span>· primary evidence</span></div><div class="evidence-row"><strong>Q17</strong> · response intensity 0.75 <span>· supporting evidence</span></div><div class="evidence-row"><strong>Q24a</strong> · response intensity 0.75 <span>· supporting evidence</span></div><div class="evidence-row"><strong>Q27</strong> · response intensity 0.75 <span>· supporting evidence</span></div></div></section><section class="signal"><div class="signal-head"><div><div class="eyebrow">WELLNESS SIGNAL</div><h2>Circulation &amp; Cardiovascular Fitness</h2></div><div class="strength">Strong signal</div></div><p>Several relevant responses point in the same direction, creating a clear wellness signal in this area.</p><div class="evidence"><div class="eyebrow">WHAT CONTRIBUTED</div><div class="evidence-row"><strong>Q24a</strong> · response intensity 0.75 <span>· supporting evidence</span></div></div></section><section class="section-title"><span>YOUR PRIORITIES</span><small>Top three only</small></section><section class="signal"><div class="priority"><div class="priority-card"><div class="rank">PRIORITY 1</div><div class="name">Healthy Weight &amp; Metabolic Balance</div><div class="band">Strong signal</div></div><div class="priority-card"><div class="rank">PRIORITY 2</div><div class="name">Circulation &amp; Cardiovascular Fitness</div><div class="band">Strong signal</div></div></div></section><section class="context"><div class="eyebrow">PRACTITIONER CONTEXT</div><h2>Information kept separate from your signals</h2><p>Context and safety information is considered separately and is not used to manufacture a wellness signal.</p></section><section class="next"><div class="eyebrow">WHERE TO EXPLORE NEXT</div><h2>A conversation, not a diagnosis</h2><p>These are questionnaire-derived wellness signals. They are intended to help you explore areas of general wellbeing, not to identify or rule out medical conditions.</p><p><strong>Recommendations:</strong> Food and product recommendations will be generated downstream from the prioritised signals and relevant personal constraints.</p></section></article><div class="disclaimer"><strong>Example profile.</strong> Signal calculations shown here use the current calibration candidate and are for model/report testing. They are not a clinical assessment or diagnosis.</div></body></html>
+<hr style='margin:80px 0;border:0;border-top:2px solid #dfe5e0'>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Your Personal Wellness Overview · P14_mobility_joints</title><style>
+:root{--bg:#f4f6f3;--card:#fff;--ink:#202621;--muted:#6b746d;--line:#dfe5e0;--accent:#334a3b;--soft:#edf2ee;--strong:#294936}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.5}
+.page{max-width:900px;margin:32px auto 70px;background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 6px 30px rgba(20,30,24,.05)}
+.report-top{display:flex;justify-content:space-between;padding:17px 28px;border-bottom:1px solid var(--line);font-size:11px;letter-spacing:.1em;color:var(--muted);font-weight:700}
+.hero{padding:52px 54px 42px;background:linear-gradient(180deg,#f8faf8 0%,#fff 100%)}
+.eyebrow{font-size:11px;letter-spacing:.14em;font-weight:800;color:var(--muted)}
+h1{font-size:39px;line-height:1.08;margin:10px 0 15px;font-weight:650}
+h2{font-size:20px;line-height:1.25;margin:7px 0 8px;font-weight:630}
+h3{font-size:16px;margin:0 0 8px}
+.lede{font-size:18px;max-width:700px;color:#515b54;margin:0}
+.section-title{display:flex;justify-content:space-between;align-items:center;padding:26px 54px 12px;color:var(--muted);font-size:11px;font-weight:800;letter-spacing:.14em}
+.section-title small{font-size:10px;font-weight:500;letter-spacing:0;text-transform:none}
+.signal{margin:0 54px 13px;padding:24px 25px;border:1px solid var(--line);border-radius:16px}
+.signal.first{border-color:#bdcabe;background:#fbfcfb}
+.signal-head{display:flex;gap:20px;align-items:flex-start;justify-content:space-between}
+.signal p,.context p,.next p{margin:8px 0;color:#5b645e}
+.strength{white-space:nowrap;padding:7px 11px;border-radius:999px;background:var(--soft);color:var(--strong);font-size:12px;font-weight:750}
+.evidence{margin-top:16px;padding-top:13px;border-top:1px solid var(--line)}
+.evidence-row{font-size:13px;margin:7px 0;color:#4e5751}
+.evidence-row strong{color:#27332b}
+.evidence-row span{color:#7a837d}
+.context{margin:32px 54px 0;padding:24px 25px;background:#f7f8f7;border-radius:16px}
+.next{margin:18px 54px 50px;padding:28px 25px;background:var(--soft);border-radius:16px}
+.priority{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px}
+.priority-card{padding:14px;border:1px solid var(--line);border-radius:12px;background:#fff}
+.priority-card .rank{font-size:11px;color:var(--muted);font-weight:800;letter-spacing:.08em}
+.priority-card .name{font-size:14px;font-weight:650;margin-top:5px}
+.priority-card .band{font-size:12px;color:var(--muted);margin-top:3px}
+.disclaimer{max-width:900px;margin:0 auto 40px;padding:0 20px;color:#6b746d;font-size:12px}
+@media(max-width:700px){.page{margin:0 0 35px;border-radius:0}.report-top,.hero,.section-title{padding-left:20px;padding-right:20px}.signal,.context,.next{margin-left:20px;margin-right:20px}h1{font-size:31px}.signal-head{display:block}.strength{display:inline-block;margin-top:4px}.priority{grid-template-columns:1fr}}
+</style></head><body><article class="page">
+<div class="report-top"><span>PERSONAL WELLNESS BLUEPRINT</span><span>Example report · P14_mobility_joints</span></div>
+<div class="hero"><div class="eyebrow">YOUR WELLNESS PATTERN</div><h1>Your Personal Wellness Overview</h1>
+<p class="lede">Your responses show several stronger patterns. Mobility, Joints &amp; Physical Function is currently the most prominent.</p></div><div class="section-title"><span>AREAS TO EXPLORE</span><small>Based on your questionnaire responses</small></div><section class="signal first"><div class="signal-head"><div><div class="eyebrow">TOP PRIORITY</div><h2>Mobility, Joints &amp; Physical Function</h2></div><div class="strength">Strong signal</div></div><p>Several relevant responses point in the same direction, creating a clear wellness signal in this area.</p><div class="evidence"><div class="eyebrow">WHAT CONTRIBUTED</div><div class="evidence-row"><strong>Q32</strong> · response intensity 0.75 <span>· primary evidence</span></div><div class="evidence-row"><strong>Q41</strong> · response intensity 0.75 <span>· primary evidence</span></div><div class="evidence-row"><strong>Q44</strong> · response intensity 0.50 <span>· supporting evidence</span></div></div></section><section class="signal"><div class="signal-head"><div><div class="eyebrow">WELLNESS SIGNAL</div><h2>Circulation &amp; Cardiovascular Fitness</h2></div><div class="strength">Moderate signal</div></div><p>A number of relevant responses contribute to a moderate wellness signal in this area.</p><div class="evidence"><div class="eyebrow">WHAT CONTRIBUTED</div><div class="evidence-row"><strong>Q44</strong> · response intensity 0.50 <span>· supporting evidence</span></div></div></section><section class="section-title"><span>YOUR PRIORITIES</span><small>Top three only</small></section><section class="signal"><div class="priority"><div class="priority-card"><div class="rank">PRIORITY 1</div><div class="name">Mobility, Joints &amp; Physical Function</div><div class="band">Strong signal</div></div><div class="priority-card"><div class="rank">PRIORITY 2</div><div class="name">Circulation &amp; Cardiovascular Fitness</div><div class="band">Moderate signal</div></div></div></section><section class="context"><div class="eyebrow">PRACTITIONER CONTEXT</div><h2>Information kept separate from your signals</h2><p>Context and safety information is considered separately and is not used to manufacture a wellness signal.</p></section><section class="next"><div class="eyebrow">WHERE TO EXPLORE NEXT</div><h2>A conversation, not a diagnosis</h2><p>These are questionnaire-derived wellness signals. They are intended to help you explore areas of general wellbeing, not to identify or rule out medical conditions.</p><p><strong>Recommendations:</strong> Food and product recommendations will be generated downstream from the prioritised signals and relevant personal constraints.</p></section></article><div class="disclaimer"><strong>Example profile.</strong> Signal calculations shown here use the current calibration candidate and are for model/report testing. They are not a clinical assessment or diagnosis.</div></body></html>
+<hr style='margin:80px 0;border:0;border-top:2px solid #dfe5e0'>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Your Personal Wellness Overview · P15_cardiovascular</title><style>
+:root{--bg:#f4f6f3;--card:#fff;--ink:#202621;--muted:#6b746d;--line:#dfe5e0;--accent:#334a3b;--soft:#edf2ee;--strong:#294936}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.5}
+.page{max-width:900px;margin:32px auto 70px;background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 6px 30px rgba(20,30,24,.05)}
+.report-top{display:flex;justify-content:space-between;padding:17px 28px;border-bottom:1px solid var(--line);font-size:11px;letter-spacing:.1em;color:var(--muted);font-weight:700}
+.hero{padding:52px 54px 42px;background:linear-gradient(180deg,#f8faf8 0%,#fff 100%)}
+.eyebrow{font-size:11px;letter-spacing:.14em;font-weight:800;color:var(--muted)}
+h1{font-size:39px;line-height:1.08;margin:10px 0 15px;font-weight:650}
+h2{font-size:20px;line-height:1.25;margin:7px 0 8px;font-weight:630}
+h3{font-size:16px;margin:0 0 8px}
+.lede{font-size:18px;max-width:700px;color:#515b54;margin:0}
+.section-title{display:flex;justify-content:space-between;align-items:center;padding:26px 54px 12px;color:var(--muted);font-size:11px;font-weight:800;letter-spacing:.14em}
+.section-title small{font-size:10px;font-weight:500;letter-spacing:0;text-transform:none}
+.signal{margin:0 54px 13px;padding:24px 25px;border:1px solid var(--line);border-radius:16px}
+.signal.first{border-color:#bdcabe;background:#fbfcfb}
+.signal-head{display:flex;gap:20px;align-items:flex-start;justify-content:space-between}
+.signal p,.context p,.next p{margin:8px 0;color:#5b645e}
+.strength{white-space:nowrap;padding:7px 11px;border-radius:999px;background:var(--soft);color:var(--strong);font-size:12px;font-weight:750}
+.evidence{margin-top:16px;padding-top:13px;border-top:1px solid var(--line)}
+.evidence-row{font-size:13px;margin:7px 0;color:#4e5751}
+.evidence-row strong{color:#27332b}
+.evidence-row span{color:#7a837d}
+.context{margin:32px 54px 0;padding:24px 25px;background:#f7f8f7;border-radius:16px}
+.next{margin:18px 54px 50px;padding:28px 25px;background:var(--soft);border-radius:16px}
+.priority{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px}
+.priority-card{padding:14px;border:1px solid var(--line);border-radius:12px;background:#fff}
+.priority-card .rank{font-size:11px;color:var(--muted);font-weight:800;letter-spacing:.08em}
+.priority-card .name{font-size:14px;font-weight:650;margin-top:5px}
+.priority-card .band{font-size:12px;color:var(--muted);margin-top:3px}
+.disclaimer{max-width:900px;margin:0 auto 40px;padding:0 20px;color:#6b746d;font-size:12px}
+@media(max-width:700px){.page{margin:0 0 35px;border-radius:0}.report-top,.hero,.section-title{padding-left:20px;padding-right:20px}.signal,.context,.next{margin-left:20px;margin-right:20px}h1{font-size:31px}.signal-head{display:block}.strength{display:inline-block;margin-top:4px}.priority{grid-template-columns:1fr}}
+</style></head><body><article class="page">
+<div class="report-top"><span>PERSONAL WELLNESS BLUEPRINT</span><span>Example report · P15_cardiovascular</span></div>
+<div class="hero"><div class="eyebrow">YOUR WELLNESS PATTERN</div><h1>Your Personal Wellness Overview</h1>
+<p class="lede">Your responses show several stronger patterns. Energy &amp; Vitality is currently the most prominent.</p></div><div class="section-title"><span>AREAS TO EXPLORE</span><small>Based on your questionnaire responses</small></div><section class="signal first"><div class="signal-head"><div><div class="eyebrow">TOP PRIORITY</div><h2>Energy &amp; Vitality</h2></div><div class="strength">Strong signal</div></div><p>Several relevant responses point in the same direction, creating a clear wellness signal in this area.</p><div class="evidence"><div class="eyebrow">WHAT CONTRIBUTED</div><div class="evidence-row"><strong>Q26</strong> · response intensity 0.75 <span>· primary evidence</span></div><div class="evidence-row"><strong>Q44</strong> · response intensity 0.75 <span>· supporting evidence</span></div></div></section><section class="signal"><div class="signal-head"><div><div class="eyebrow">WELLNESS SIGNAL</div><h2>Circulation &amp; Cardiovascular Fitness</h2></div><div class="strength">Strong signal</div></div><p>Several relevant responses point in the same direction, creating a clear wellness signal in this area.</p><div class="evidence"><div class="eyebrow">WHAT CONTRIBUTED</div><div class="evidence-row"><strong>Q05</strong> · response intensity 0.75 <span>· supporting evidence</span></div><div class="evidence-row"><strong>Q11</strong> · response intensity 0.50 <span>· supporting evidence</span></div><div class="evidence-row"><strong>Q24a</strong> · response intensity 0.75 <span>· supporting evidence</span></div><div class="evidence-row"><strong>Q26</strong> · response intensity 0.75 <span>· supporting evidence</span></div><div class="evidence-row"><strong>Q44</strong> · response intensity 0.75 <span>· supporting evidence</span></div></div></section><section class="section-title"><span>YOUR PRIORITIES</span><small>Top three only</small></section><section class="signal"><div class="priority"><div class="priority-card"><div class="rank">PRIORITY 1</div><div class="name">Energy &amp; Vitality</div><div class="band">Strong signal</div></div><div class="priority-card"><div class="rank">PRIORITY 2</div><div class="name">Circulation &amp; Cardiovascular Fitness</div><div class="band">Strong signal</div></div></div></section><section class="context"><div class="eyebrow">PRACTITIONER CONTEXT</div><h2>Information kept separate from your signals</h2><p>Context and safety information is considered separately and is not used to manufacture a wellness signal.</p></section><section class="next"><div class="eyebrow">WHERE TO EXPLORE NEXT</div><h2>A conversation, not a diagnosis</h2><p>These are questionnaire-derived wellness signals. They are intended to help you explore areas of general wellbeing, not to identify or rule out medical conditions.</p><p><strong>Recommendations:</strong> Food and product recommendations will be generated downstream from the prioritised signals and relevant personal constraints.</p></section></article><div class="disclaimer"><strong>Example profile.</strong> Signal calculations shown here use the current calibration candidate and are for model/report testing. They are not a clinical assessment or diagnosis.</div></body></html>
+<hr style='margin:80px 0;border:0;border-top:2px solid #dfe5e0'>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Your Personal Wellness Overview · P16_positive_high_wellness</title><style>
+:root{--bg:#f4f6f3;--card:#fff;--ink:#202621;--muted:#6b746d;--line:#dfe5e0;--accent:#334a3b;--soft:#edf2ee;--strong:#294936}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.5}
+.page{max-width:900px;margin:32px auto 70px;background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 6px 30px rgba(20,30,24,.05)}
+.report-top{display:flex;justify-content:space-between;padding:17px 28px;border-bottom:1px solid var(--line);font-size:11px;letter-spacing:.1em;color:var(--muted);font-weight:700}
+.hero{padding:52px 54px 42px;background:linear-gradient(180deg,#f8faf8 0%,#fff 100%)}
+.eyebrow{font-size:11px;letter-spacing:.14em;font-weight:800;color:var(--muted)}
+h1{font-size:39px;line-height:1.08;margin:10px 0 15px;font-weight:650}
+h2{font-size:20px;line-height:1.25;margin:7px 0 8px;font-weight:630}
+h3{font-size:16px;margin:0 0 8px}
+.lede{font-size:18px;max-width:700px;color:#515b54;margin:0}
+.section-title{display:flex;justify-content:space-between;align-items:center;padding:26px 54px 12px;color:var(--muted);font-size:11px;font-weight:800;letter-spacing:.14em}
+.section-title small{font-size:10px;font-weight:500;letter-spacing:0;text-transform:none}
+.signal{margin:0 54px 13px;padding:24px 25px;border:1px solid var(--line);border-radius:16px}
+.signal.first{border-color:#bdcabe;background:#fbfcfb}
+.signal-head{display:flex;gap:20px;align-items:flex-start;justify-content:space-between}
+.signal p,.context p,.next p{margin:8px 0;color:#5b645e}
+.strength{white-space:nowrap;padding:7px 11px;border-radius:999px;background:var(--soft);color:var(--strong);font-size:12px;font-weight:750}
+.evidence{margin-top:16px;padding-top:13px;border-top:1px solid var(--line)}
+.evidence-row{font-size:13px;margin:7px 0;color:#4e5751}
+.evidence-row strong{color:#27332b}
+.evidence-row span{color:#7a837d}
+.context{margin:32px 54px 0;padding:24px 25px;background:#f7f8f7;border-radius:16px}
+.next{margin:18px 54px 50px;padding:28px 25px;background:var(--soft);border-radius:16px}
+.priority{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px}
+.priority-card{padding:14px;border:1px solid var(--line);border-radius:12px;background:#fff}
+.priority-card .rank{font-size:11px;color:var(--muted);font-weight:800;letter-spacing:.08em}
+.priority-card .name{font-size:14px;font-weight:650;margin-top:5px}
+.priority-card .band{font-size:12px;color:var(--muted);margin-top:3px}
+.disclaimer{max-width:900px;margin:0 auto 40px;padding:0 20px;color:#6b746d;font-size:12px}
+@media(max-width:700px){.page{margin:0 0 35px;border-radius:0}.report-top,.hero,.section-title{padding-left:20px;padding-right:20px}.signal,.context,.next{margin-left:20px;margin-right:20px}h1{font-size:31px}.signal-head{display:block}.strength{display:inline-block;margin-top:4px}.priority{grid-template-columns:1fr}}
+</style></head><body><article class="page">
+<div class="report-top"><span>PERSONAL WELLNESS BLUEPRINT</span><span>Example report · P16_positive_high_wellness</span></div>
+<div class="hero"><div class="eyebrow">YOUR WELLNESS PATTERN</div><h1>Your Personal Wellness Overview</h1>
+<p class="lede">Your responses do not show a strong concentration of wellness signals in this profile.</p></div><div class="section-title"><span>AREAS TO EXPLORE</span><small>Based on your questionnaire responses</small></div><section class="signal first"><div class="signal-head"><div><div class="eyebrow">WELLNESS PATTERN</div><h2>No dominant signal</h2></div><div class="strength">No significant signal</div></div><p>Your responses do not show a strong concentration of higher-priority wellness signals. This is a valid outcome of the assessment.</p></section><section class="section-title"><span>YOUR PRIORITIES</span><small>Top three only</small></section><section class="signal"><div class="priority"><div class="priority-card"><div class="rank">RESULT</div><div class="name">No priority area</div><div class="band">No significant signal</div></div></div></section><section class="context"><div class="eyebrow">PRACTITIONER CONTEXT</div><h2>Information kept separate from your signals</h2><p>Context and safety information is considered separately and is not used to manufacture a wellness signal.</p></section><section class="next"><div class="eyebrow">WHERE TO EXPLORE NEXT</div><h2>A conversation, not a diagnosis</h2><p>These are questionnaire-derived wellness signals. They are intended to help you explore areas of general wellbeing, not to identify or rule out medical conditions.</p><p><strong>Recommendations:</strong> Food and product recommendations will be generated downstream from the prioritised signals and relevant personal constraints.</p></section></article><div class="disclaimer"><strong>Example profile.</strong> Signal calculations shown here use the current calibration candidate and are for model/report testing. They are not a clinical assessment or diagnosis.</div></body></html>
+<hr style='margin:80px 0;border:0;border-top:2px solid #dfe5e0'>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Your Personal Wellness Overview · P17_many_weak_no_strong</title><style>
+:root{--bg:#f4f6f3;--card:#fff;--ink:#202621;--muted:#6b746d;--line:#dfe5e0;--accent:#334a3b;--soft:#edf2ee;--strong:#294936}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.5}
+.page{max-width:900px;margin:32px auto 70px;background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 6px 30px rgba(20,30,24,.05)}
+.report-top{display:flex;justify-content:space-between;padding:17px 28px;border-bottom:1px solid var(--line);font-size:11px;letter-spacing:.1em;color:var(--muted);font-weight:700}
+.hero{padding:52px 54px 42px;background:linear-gradient(180deg,#f8faf8 0%,#fff 100%)}
+.eyebrow{font-size:11px;letter-spacing:.14em;font-weight:800;color:var(--muted)}
+h1{font-size:39px;line-height:1.08;margin:10px 0 15px;font-weight:650}
+h2{font-size:20px;line-height:1.25;margin:7px 0 8px;font-weight:630}
+h3{font-size:16px;margin:0 0 8px}
+.lede{font-size:18px;max-width:700px;color:#515b54;margin:0}
+.section-title{display:flex;justify-content:space-between;align-items:center;padding:26px 54px 12px;color:var(--muted);font-size:11px;font-weight:800;letter-spacing:.14em}
+.section-title small{font-size:10px;font-weight:500;letter-spacing:0;text-transform:none}
+.signal{margin:0 54px 13px;padding:24px 25px;border:1px solid var(--line);border-radius:16px}
+.signal.first{border-color:#bdcabe;background:#fbfcfb}
+.signal-head{display:flex;gap:20px;align-items:flex-start;justify-content:space-between}
+.signal p,.context p,.next p{margin:8px 0;color:#5b645e}
+.strength{white-space:nowrap;padding:7px 11px;border-radius:999px;background:var(--soft);color:var(--strong);font-size:12px;font-weight:750}
+.evidence{margin-top:16px;padding-top:13px;border-top:1px solid var(--line)}
+.evidence-row{font-size:13px;margin:7px 0;color:#4e5751}
+.evidence-row strong{color:#27332b}
+.evidence-row span{color:#7a837d}
+.context{margin:32px 54px 0;padding:24px 25px;background:#f7f8f7;border-radius:16px}
+.next{margin:18px 54px 50px;padding:28px 25px;background:var(--soft);border-radius:16px}
+.priority{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px}
+.priority-card{padding:14px;border:1px solid var(--line);border-radius:12px;background:#fff}
+.priority-card .rank{font-size:11px;color:var(--muted);font-weight:800;letter-spacing:.08em}
+.priority-card .name{font-size:14px;font-weight:650;margin-top:5px}
+.priority-card .band{font-size:12px;color:var(--muted);margin-top:3px}
+.disclaimer{max-width:900px;margin:0 auto 40px;padding:0 20px;color:#6b746d;font-size:12px}
+@media(max-width:700px){.page{margin:0 0 35px;border-radius:0}.report-top,.hero,.section-title{padding-left:20px;padding-right:20px}.signal,.context,.next{margin-left:20px;margin-right:20px}h1{font-size:31px}.signal-head{display:block}.strength{display:inline-block;margin-top:4px}.priority{grid-template-columns:1fr}}
+</style></head><body><article class="page">
+<div class="report-top"><span>PERSONAL WELLNESS BLUEPRINT</span><span>Example report · P17_many_weak_no_strong</span></div>
+<div class="hero"><div class="eyebrow">YOUR WELLNESS PATTERN</div><h1>Your Personal Wellness Overview</h1>
+<p class="lede">The clearest signal in your responses is Immune Resilience.</p></div><div class="section-title"><span>AREAS TO EXPLORE</span><small>Based on your questionnaire responses</small></div><section class="signal first"><div class="signal-head"><div><div class="eyebrow">TOP PRIORITY</div><h2>Immune Resilience</h2></div><div class="strength">Weak signal</div></div><p>There are a few responses worth keeping in mind, but they do not form a strong pattern.</p><div class="evidence"><div class="eyebrow">WHAT CONTRIBUTED</div><div class="evidence-row"><strong>Q02</strong> · response intensity 0.25 <span>· primary evidence</span></div><div class="evidence-row"><strong>Q13</strong> · response intensity 0.25 <span>· primary evidence</span></div><div class="evidence-row"><strong>Q28</strong> · response intensity 0.25 <span>· primary evidence</span></div><div class="evidence-row"><strong>Q04</strong> · response intensity 0.25 <span>· supporting evidence</span></div></div></section><section class="section-title"><span>YOUR PRIORITIES</span><small>Top three only</small></section><section class="signal"><div class="priority"><div class="priority-card"><div class="rank">PRIORITY 1</div><div class="name">Immune Resilience</div><div class="band">Weak signal</div></div></div></section><section class="context"><div class="eyebrow">PRACTITIONER CONTEXT</div><h2>Information kept separate from your signals</h2><p>Context and safety information is considered separately and is not used to manufacture a wellness signal.</p></section><section class="next"><div class="eyebrow">WHERE TO EXPLORE NEXT</div><h2>A conversation, not a diagnosis</h2><p>These are questionnaire-derived wellness signals. They are intended to help you explore areas of general wellbeing, not to identify or rule out medical conditions.</p><p><strong>Recommendations:</strong> Food and product recommendations will be generated downstream from the prioritised signals and relevant personal constraints.</p></section></article><div class="disclaimer"><strong>Example profile.</strong> Signal calculations shown here use the current calibration candidate and are for model/report testing. They are not a clinical assessment or diagnosis.</div></body></html>
+<hr style='margin:80px 0;border:0;border-top:2px solid #dfe5e0'>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Your Personal Wellness Overview · P18_context_strong_signal_low</title><style>
+:root{--bg:#f4f6f3;--card:#fff;--ink:#202621;--muted:#6b746d;--line:#dfe5e0;--accent:#334a3b;--soft:#edf2ee;--strong:#294936}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.5}
+.page{max-width:900px;margin:32px auto 70px;background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 6px 30px rgba(20,30,24,.05)}
+.report-top{display:flex;justify-content:space-between;padding:17px 28px;border-bottom:1px solid var(--line);font-size:11px;letter-spacing:.1em;color:var(--muted);font-weight:700}
+.hero{padding:52px 54px 42px;background:linear-gradient(180deg,#f8faf8 0%,#fff 100%)}
+.eyebrow{font-size:11px;letter-spacing:.14em;font-weight:800;color:var(--muted)}
+h1{font-size:39px;line-height:1.08;margin:10px 0 15px;font-weight:650}
+h2{font-size:20px;line-height:1.25;margin:7px 0 8px;font-weight:630}
+h3{font-size:16px;margin:0 0 8px}
+.lede{font-size:18px;max-width:700px;color:#515b54;margin:0}
+.section-title{display:flex;justify-content:space-between;align-items:center;padding:26px 54px 12px;color:var(--muted);font-size:11px;font-weight:800;letter-spacing:.14em}
+.section-title small{font-size:10px;font-weight:500;letter-spacing:0;text-transform:none}
+.signal{margin:0 54px 13px;padding:24px 25px;border:1px solid var(--line);border-radius:16px}
+.signal.first{border-color:#bdcabe;background:#fbfcfb}
+.signal-head{display:flex;gap:20px;align-items:flex-start;justify-content:space-between}
+.signal p,.context p,.next p{margin:8px 0;color:#5b645e}
+.strength{white-space:nowrap;padding:7px 11px;border-radius:999px;background:var(--soft);color:var(--strong);font-size:12px;font-weight:750}
+.evidence{margin-top:16px;padding-top:13px;border-top:1px solid var(--line)}
+.evidence-row{font-size:13px;margin:7px 0;color:#4e5751}
+.evidence-row strong{color:#27332b}
+.evidence-row span{color:#7a837d}
+.context{margin:32px 54px 0;padding:24px 25px;background:#f7f8f7;border-radius:16px}
+.next{margin:18px 54px 50px;padding:28px 25px;background:var(--soft);border-radius:16px}
+.priority{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px}
+.priority-card{padding:14px;border:1px solid var(--line);border-radius:12px;background:#fff}
+.priority-card .rank{font-size:11px;color:var(--muted);font-weight:800;letter-spacing:.08em}
+.priority-card .name{font-size:14px;font-weight:650;margin-top:5px}
+.priority-card .band{font-size:12px;color:var(--muted);margin-top:3px}
+.disclaimer{max-width:900px;margin:0 auto 40px;padding:0 20px;color:#6b746d;font-size:12px}
+@media(max-width:700px){.page{margin:0 0 35px;border-radius:0}.report-top,.hero,.section-title{padding-left:20px;padding-right:20px}.signal,.context,.next{margin-left:20px;margin-right:20px}h1{font-size:31px}.signal-head{display:block}.strength{display:inline-block;margin-top:4px}.priority{grid-template-columns:1fr}}
+</style></head><body><article class="page">
+<div class="report-top"><span>PERSONAL WELLNESS BLUEPRINT</span><span>Example report · P18_context_strong_signal_low</span></div>
+<div class="hero"><div class="eyebrow">YOUR WELLNESS PATTERN</div><h1>Your Personal Wellness Overview</h1>
+<p class="lede">Your responses do not show a strong concentration of wellness signals in this profile.</p></div><div class="section-title"><span>AREAS TO EXPLORE</span><small>Based on your questionnaire responses</small></div><section class="signal first"><div class="signal-head"><div><div class="eyebrow">WELLNESS PATTERN</div><h2>No dominant signal</h2></div><div class="strength">No significant signal</div></div><p>Your responses do not show a strong concentration of higher-priority wellness signals. This is a valid outcome of the assessment.</p></section><section class="section-title"><span>YOUR PRIORITIES</span><small>Top three only</small></section><section class="signal"><div class="priority"><div class="priority-card"><div class="rank">RESULT</div><div class="name">No priority area</div><div class="band">No significant signal</div></div></div></section><section class="context"><div class="eyebrow">PRACTITIONER CONTEXT</div><h2>Information kept separate from your signals</h2><p>Context and safety information is considered separately and is not used to manufacture a wellness signal.</p></section><section class="next"><div class="eyebrow">WHERE TO EXPLORE NEXT</div><h2>A conversation, not a diagnosis</h2><p>These are questionnaire-derived wellness signals. They are intended to help you explore areas of general wellbeing, not to identify or rule out medical conditions.</p><p><strong>Recommendations:</strong> Food and product recommendations will be generated downstream from the prioritised signals and relevant personal constraints.</p></section></article><div class="disclaimer"><strong>Example profile.</strong> Signal calculations shown here use the current calibration candidate and are for model/report testing. They are not a clinical assessment or diagnosis.</div></body></html>

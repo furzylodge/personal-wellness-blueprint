@@ -1,0 +1,252 @@
+{
+  "version": "0.2",
+  "status": "Calibration-ready prototype",
+  "purpose": "Define the next-stage Personal Wellness Blueprint outcome scoring model without attempting to reproduce the historical live scoring algorithm.",
+  "source_basis": [
+    "Current questionnaire definition in questions.json",
+    "pwb-2026-test-profile-plan-v0.1.xlsx",
+    "pwb-2026-benchmark-scoring-prototype-v0.1.xlsx",
+    "questionnaire-score-validation-v1.0.json"
+  ],
+  "important_constraint": "Historical-derived benchmark scores are a regression/sanity-check dataset, not the authoritative source for new numerical weights.",
+  "scoring_principles": {
+    "primary_evidence": "Direct questions measuring the outcome carry the main signal.",
+    "supporting_evidence": "Supporting questions corroborate a signal but cannot independently manufacture a strong signal.",
+    "context": "Context and safety questions do not increase wellness-signal strength.",
+    "goal": "Goals personalise interpretation and prioritisation but cannot create an outcome signal.",
+    "convergence": "Moderate or strong output should normally require convergent evidence rather than a single extreme response.",
+    "correlation_control": "Historically correlated questions must not be treated as fully independent evidence when both contribute to the same outcome.",
+    "positive_evidence": "Positive behaviours should be capable of contributing positive evidence rather than only reducing negative evidence.",
+    "diagnostic_boundary": "Scores describe questionnaire-derived wellness signals only and must not imply diagnosis or causation."
+  },
+  "signal_bands": [
+    {
+      "band": "No meaningful signal",
+      "purpose": "Use when there is insufficient evidence to prioritise the outcome."
+    },
+    {
+      "band": "Low signal",
+      "purpose": "Some evidence is present but not sufficiently concentrated to prioritise strongly."
+    },
+    {
+      "band": "Moderate signal",
+      "purpose": "Several relevant indicators or a clear pattern support exploration."
+    },
+    {
+      "band": "Elevated signal",
+      "purpose": "A concentrated pattern warrants clear prioritisation."
+    },
+    {
+      "band": "High signal",
+      "purpose": "Strong convergent evidence across relevant questions; still non-diagnostic."
+    }
+  ],
+  "outcomes": {
+    "Energy & Vitality": {
+      "primary": [
+        "Q12",
+        "Q26",
+        "Q35"
+      ],
+      "supporting": [
+        "Q44",
+        "N01"
+      ],
+      "notes": "Avoid allowing Q01, the energy goal question, to create the signal."
+    },
+    "Sleep & Recovery": {
+      "primary": [
+        "Q20",
+        "Q35"
+      ],
+      "supporting": [
+        "Q21",
+        "Q30",
+        "Q37",
+        "Q37b",
+        "N06"
+      ],
+      "notes": "Q20/Q35 form the core signal; lifestyle/contextual sleep influences are supporting evidence."
+    },
+    "Mood, Stress & Emotional Balance": {
+      "primary": [
+        "Q08",
+        "Q15",
+        "Q19",
+        "Q30",
+        "Q38",
+        "Q42",
+        "Q43"
+      ],
+      "supporting": [
+        "Q12",
+        "Q20"
+      ],
+      "notes": "Avoid double-counting closely related stress/worry/irritability indicators."
+    },
+    "Digestive & Gut Health": {
+      "primary": [
+        "Q04",
+        "Q14",
+        "Q29",
+        "Q03"
+      ],
+      "supporting": [
+        "Q27",
+        "Q31",
+        "N03",
+        "N04"
+      ],
+      "notes": "Symptoms provide stronger evidence than dietary context alone."
+    },
+    "Healthy Weight & Metabolic Balance": {
+      "primary": [
+        "Q25",
+        "Q17",
+        "Q24a"
+      ],
+      "supporting": [
+        "Q27",
+        "Q31",
+        "Q44",
+        "N01",
+        "N03",
+        "N04"
+      ],
+      "notes": "Do not infer a health problem solely from a stated goal."
+    },
+    "Circulation & Cardiovascular Fitness": {
+      "primary": [
+        "Q44"
+      ],
+      "supporting": [
+        "Q05",
+        "Q11",
+        "Q24a",
+        "N01",
+        "N03",
+        "N04"
+      ],
+      "notes": "Lifestyle evidence should be interpreted as a wellness pattern, not cardiovascular diagnosis."
+    },
+    "Immune Resilience": {
+      "primary": [
+        "Q02",
+        "Q13",
+        "Q28"
+      ],
+      "supporting": [
+        "Q04",
+        "Q14"
+      ],
+      "notes": "Q02/Q13/Q28 are historically related; convergence should be capped to avoid over-counting."
+    },
+    "Mobility, Joints & Physical Function": {
+      "primary": [
+        "Q32",
+        "Q41"
+      ],
+      "supporting": [
+        "Q26",
+        "Q44",
+        "N01"
+      ],
+      "notes": "Q32 and Q41 should not be treated as fully independent when they describe overlapping symptoms."
+    },
+    "Respiratory Health": {
+      "primary": [
+        "Q45"
+      ],
+      "supporting": [
+        "Q11",
+        "Q34"
+      ],
+      "notes": "Environmental exposure alone cannot create a respiratory signal."
+    },
+    "Hormonal & Life-Stage Balance": {
+      "primary": [
+        "Q23",
+        "Q47"
+      ],
+      "supporting": [],
+      "context_only": [
+        "Q48"
+      ],
+      "notes": "Q48 is general medical-treatment/chronic-condition context and must not increase the hormonal/life-stage wellness signal. Do not infer menopause from age or gender alone."
+    }
+  },
+  "priority_logic": {
+    "rule": "Prioritisation is applied after outcome signal generation.",
+    "max_priority_outcomes": 3,
+    "goal_weight": "Goals may break ties or increase relevance among already-supported outcomes, but cannot create a signal.",
+    "broad_coverage_penalty": true,
+    "duplicate_mechanism_cap": true
+  },
+  "historical_benchmark_use": {
+    "records": 1390,
+    "status": "historical_derived",
+    "use": [
+      "Regression/sanity checking",
+      "Question redundancy analysis",
+      "Distribution inspection"
+    ],
+    "do_not_use_for": [
+      "Direct fitting of new response weights",
+      "Forcing the new model to reproduce historical live scores",
+      "Clinical validation"
+    ]
+  },
+  "synthetic_acceptance_profiles": [
+    {
+      "id": "P01",
+      "profile": "Balanced baseline",
+      "expected": "No strong prioritisation; calm report."
+    },
+    {
+      "id": "P02",
+      "profile": "Sleep-led",
+      "expected": "Sleep & Recovery clearly prioritised."
+    },
+    {
+      "id": "P03",
+      "profile": "Stress-led",
+      "expected": "Mood, Stress & Emotional Balance clearly prioritised."
+    },
+    {
+      "id": "P04",
+      "profile": "Digestive-led",
+      "expected": "Digestive & Gut Health clearly prioritised without diagnosis."
+    },
+    {
+      "id": "P05",
+      "profile": "Lifestyle-led",
+      "expected": "Several moderate signals without one artificial dominant outcome."
+    },
+    {
+      "id": "P06",
+      "profile": "Multi-signal",
+      "expected": "Three strongest areas surfaced with sensible hierarchy."
+    },
+    {
+      "id": "P07",
+      "profile": "Context-heavy",
+      "expected": "Medical/context information remains separate from wellness signal."
+    },
+    {
+      "id": "P08",
+      "profile": "Respiratory-led",
+      "expected": "Respiratory Health responds directly to Q45; exposure alone does not create it."
+    },
+    {
+      "id": "P09",
+      "profile": "Goal-led",
+      "expected": "Goal influences relevance but does not manufacture a health problem."
+    },
+    {
+      "id": "P10",
+      "profile": "Minimal-signal",
+      "expected": "Useful low-signal report rather than forced recommendations."
+    }
+  ],
+  "next_calibration_step": "Implement the evidence/convergence rules against the 10 synthetic profiles, then use the historical-derived dataset for regression checks."
+}
