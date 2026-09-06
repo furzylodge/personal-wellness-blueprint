@@ -87,10 +87,16 @@ print_r($matrix[$questionId]);
                 }
             }
         }
+        
+        $normalizer = new BodySystemNormalizer(
+    	$this->loader,
+    	$this->knowledgePath);
+
+	$normalized = $normalizer->normalize($bodySystems);
 
         return new HealthProfile(
             assessment: $assessment->assessment,
-            bodySystems: $bodySystems,
+            bodySystems: $normalized,
             mechanisms: [],
             biomarkers: [],
             symptoms: [],
