@@ -1,0 +1,7 @@
+{
+  "id": "neutral",
+  "name": "Neutral Baseline",
+  "description": "Every scored question is answered with its neutral (middle) value.",
+  "extends": null,
+  "answers": {}
+}

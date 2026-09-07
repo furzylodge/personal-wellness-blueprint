@@ -1,0 +1,25 @@
+{
+  "id": "respiratory-inflammation",
+  "extends": "neutral",
+  "name": "Respiratory Inflammation",
+  "expected": {
+    "topBodySystem": "BS006"
+  },
+  "answers": {
+    "IMM001": 1,
+    "DIG002": 1,
+    "SAF001": 1,
+    "MND001": 1,
+    "EXP001": 1,
+    "EXP006": 1,
+    "NUT003": 1,
+    "SAF003": 1,
+    "NUT006": 1,
+    "PHY004": 1,
+    "PHY005": 1,
+    "EXP003": 1,
+    "PHY008": 1,
+    "PHY009": 1,
+    "EXP005": 1
+  }
+}

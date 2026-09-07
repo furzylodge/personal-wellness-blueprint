@@ -59,10 +59,6 @@ final class HealthProfileBuilder
             }
 
             $stored = $questions[$questionId]['stored_values'];
-            echo PHP_EOL;
-	echo "Question: {$questionId}" . PHP_EOL;
-	echo "Stored type: " . gettype($stored) . PHP_EOL;
-	var_dump($stored);
 
             if (!isset($stored[$selectedIndex])) {
                 continue;
@@ -74,10 +70,6 @@ final class HealthProfileBuilder
                 continue;
             }
             
-            echo PHP_EOL;
-echo "Matrix for {$questionId}:" . PHP_EOL;
-print_r($matrix[$questionId]);
-
             foreach ($matrix[$questionId] as $bs => $weight) {
             	
             	$weight = (float) $weight;
