@@ -1,0 +1,110 @@
+
+Questions indexed: 58
+Matrix indexed: 58
+Answer IDs:
+
+Product Recommendation Explanation
+=================================
+Persona: respiratory-inflammation
+
+========================================================================
+#01  Synergy Zinc Protect  (105.03)
+------------------------------------------------------------------------
+ +  28.19   TP001    Limonene
+           Status: SOURCE_DEFINED
+ +  76.84   TP003    Thymol
+           Status: SOURCE_DEFINED
+
+========================================================================
+#02  Synergy Pro360 Superfood Performance Beets  (103.55)
+------------------------------------------------------------------------
+ + 103.55   FC016    Betalains
+           Status: CONFIRMED
+
+========================================================================
+#03  Synergy Biome DT  (62.33)
+------------------------------------------------------------------------
+ +  62.33   FC021    Chlorophyllin
+           Status: DIRECT
+
+========================================================================
+#04  PhytoLife  (62.33)
+------------------------------------------------------------------------
+ +  62.33   FC021    Chlorophyllin
+           Status: DIRECT
+
+========================================================================
+#05  Synergy Liver Health  (61.13)
+------------------------------------------------------------------------
+ +  61.13   FC015    Phycocyanin
+           Status: SOURCE_DEFINED
+
+========================================================================
+#06  Synergy Omega-3  (29.48)
+------------------------------------------------------------------------
+ +  29.48   FA002    Eicosapentaenoic Acid
+           Status: DIRECT
+
+
+Products With No Matching Clinical Bioactives
+============================================
+
+Synergy ProArgi-9+
+   FC011    FC011                               DIRECT
+   FC012    FC012                               DIRECT
+   FC014    FC014                               DIRECT
+   PP006    PP006                               CONFIRMED_PRODUCT_SPECIFIC
+
+Synergy e9
+   FC011    FC011                               DIRECT
+
+Synergy Immune Booster
+   DF001    DF001                               DIRECT
+   DF009    DF009                               DIRECT
+
+Synergy Pro360 Wholefood Greens
+   DF012    DF012                               DIRECT
+   DF009    DF009                               DIRECT
+   FA001    FA001                               SOURCE_DEFINED
+   PP011    PP011                               SOURCE_DEFINED
+   PP003    PP003                               SOURCE_DEFINED
+   PP008    PP008                               SOURCE_DEFINED
+   PP004    PP004                               DIRECT
+
+Synergy Biome Actives
+   DF003    DF003                               DIRECT
+
+Synergy Biome Shake
+   DF012    DF012                               DIRECT
+   DF009    DF009                               DIRECT
+   PP003    PP003                               SOURCE_DEFINED
+   PP008    PP008                               SOURCE_DEFINED
+   PP004    PP004                               DIRECT
+
+Synergy Body Prime
+   DF002    DF002                               DIRECT
+
+Mistify
+   PP001    PP001                               CONFIRMED_PRODUCT_PROFILE
+   PP003    PP003                               SOURCE_DEFINED
+
+Synergy Collagen+
+   FC022    FC022                               DIRECT
+   FC023    FC023                               DIRECT
+
+Synergy Collagen+ Beauty
+   FC022    FC022                               DIRECT
+   FC023    FC023                               DIRECT
+   PP006    PP006                               DIRECT
+
+Synergy FL-3X
+   FC024    FC024                               DIRECT
+   FC025    FC025                               DIRECT
+   FC026    FC026                               DIRECT
+
+Synergy Vitamin D3
+
+Synergy CoQ10
+   FC008    FC008                               DIRECT
+
+Synergy SleepWell

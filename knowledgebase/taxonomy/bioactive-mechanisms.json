@@ -4119,6 +4119,117 @@
       "strength": 5,
       "confidence": "High",
       "evidence": "Soy isoflavones are dietary phytoestrogens and daidzein can be converted by intestinal bacteria to equol. Equol production varies substantially between individuals because it depends on the presence of equol-producing gut bacteria. The relationship is therefore directly relevant to phytoestrogen metabolism, but does not imply that soy isoflavones raise endogenous oestrogen."
-    }
+    },
+    {
+  "id": "BM000900",
+  "bioactive": "PP006",
+  "mechanism": "MEC020",
+  "strength": 5,
+  "confidence": "High",
+  "notes": "Resveratrol has strong evidence for reducing oxidative stress.",
+  "references": ["Scientific Literature"]
+},
+{
+  "id": "BM000901",
+  "bioactive": "PP006",
+  "mechanism": "MEC021",
+  "strength": 5,
+  "confidence": "High",
+  "notes": "Resveratrol scavenges reactive oxygen species and supports antioxidant defence.",
+  "references": ["Scientific Literature"]
+},
+{
+  "id": "BM000902",
+  "bioactive": "PP006",
+  "mechanism": "MEC022",
+  "strength": 4,
+  "confidence": "High",
+  "notes": "Resveratrol activates endogenous antioxidant pathways including Nrf2 signalling.",
+  "references": ["Scientific Literature"]
+},
+{
+  "id": "BM000903",
+  "bioactive": "PP006",
+  "mechanism": "MEC024",
+  "strength": 3,
+  "confidence": "Moderate",
+  "notes": "Resveratrol supports mitochondrial resilience and cellular energy regulation.",
+  "references": ["Scientific Literature"]
+},
+{
+  "id": "BM000904",
+  "bioactive": "PP006",
+  "mechanism": "MEC051",
+  "strength": 3,
+  "confidence": "Moderate",
+  "notes": "Resveratrol has moderate evidence for supporting endothelial and cerebral blood flow.",
+  "references": ["Scientific Literature"]
+},
+
+{
+  "id": "BM000905",
+  "bioactive": "FC011",
+  "mechanism": "MEC051",
+  "strength": 5,
+  "confidence": "High",
+  "notes": "L-Arginine is the principal substrate for nitric oxide synthesis and endothelial function.",
+  "references": ["Scientific Literature"]
+},
+{
+  "id": "BM000906",
+  "bioactive": "FC011",
+  "mechanism": "MEC024",
+  "strength": 3,
+  "confidence": "Moderate",
+  "notes": "L-Arginine contributes to vascular perfusion and mitochondrial efficiency.",
+  "references": ["Scientific Literature"]
+},
+
+{
+  "id": "BM000907",
+  "bioactive": "FC012",
+  "mechanism": "MEC051",
+  "strength": 5,
+  "confidence": "High",
+  "notes": "L-Citrulline elevates arginine availability and supports nitric oxide production.",
+  "references": ["Scientific Literature"]
+},
+{
+  "id": "BM000908",
+  "bioactive": "FC012",
+  "mechanism": "MEC024",
+  "strength": 3,
+  "confidence": "Moderate",
+  "notes": "L-Citrulline supports vascular resilience and exercise-related mitochondrial function.",
+  "references": ["Scientific Literature"]
+},
+
+{
+  "id": "BM000909",
+  "bioactive": "FC014",
+  "mechanism": "MEC020",
+  "strength": 4,
+  "confidence": "High",
+  "notes": "Vitamin C reduces oxidative stress through antioxidant activity.",
+  "references": ["Scientific Literature"]
+},
+{
+  "id": "BM000910",
+  "bioactive": "FC014",
+  "mechanism": "MEC021",
+  "strength": 4,
+  "confidence": "High",
+  "notes": "Vitamin C neutralises reactive oxygen species and regenerates antioxidant capacity.",
+  "references": ["Scientific Literature"]
+},
+{
+  "id": "BM000911",
+  "bioactive": "FC014",
+  "mechanism": "MEC022",
+  "strength": 3,
+  "confidence": "Moderate",
+  "notes": "Vitamin C supports endogenous antioxidant systems and collagen-dependent vascular integrity.",
+  "references": ["Scientific Literature"]
+}
   ]
 }
