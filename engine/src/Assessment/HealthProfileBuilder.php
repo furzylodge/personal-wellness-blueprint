@@ -45,12 +45,6 @@ final class HealthProfileBuilder
 	echo "Matrix indexed: " . count($matrix) . PHP_EOL;
 	echo "Answer IDs:" . PHP_EOL;
 
-	foreach ($assessment->answers as $id => $value) {
-	    echo "  {$id}";
-	    echo isset($questions[$id]) ? " T question" : " X question";
-	    echo isset($matrix[$id]) ? " T matrix" : " X matrix";
-	    echo PHP_EOL;
-	}
 
         foreach ($assessment->answers as $questionId => $selectedIndex) {
 
