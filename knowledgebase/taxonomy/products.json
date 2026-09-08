@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "description": "Canonical product registry for the PWB product relationship layer. PRD codes are stable internal identifiers used by product-bioactives and product-mechanisms.",
-  "count": 20,
+  "count": 23,
   "products": [
     {
       "id": "PRD001",
@@ -102,6 +102,30 @@
       "id": "PRD020",
       "name": "Synergy SleepWell",
       "status": "Active"
-    }
+    },
+    {
+    "id": "PRD021",
+    "name": "Synergy Multivitamin",
+    "category": "Foundational Nutrition",
+    "format": "Powder Sachets",
+    "servings": 30,
+    "status": "Active"
+  },
+  {
+    "id": "PRD022",
+    "name": "Synergy Carb Blocker",
+    "category": "Metabolic Support",
+    "format": "Capsules",
+    "servings": 60,
+    "status": "Active"
+  },
+  {
+    "id": "PRD023",
+    "name": "Synergy Fat Grabber",
+    "category": "Digestive Support",
+    "format": "Capsules",
+    "servings": 120,
+    "status": "Active"
+  }
   ]
 }

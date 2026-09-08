@@ -1,7 +1,7 @@
 {
   "version": "1.1",
   "description": "Proposed product-to-canonical-bioactive relationships for the current PWB product set. Status distinguishes direct formulation evidence from product-specific confirmation and source-defined constituents.",
-  "count": 46,
+  "count": 91,
   "products": [
     {
       "id": "PRD001",
@@ -21,7 +21,7 @@
         },
         {
           "id": "PP006",
-          "status": "CONFIRMED_PRODUCT_SPECIFIC"
+          "status": "DIRECT"
         }
       ]
     },
@@ -29,10 +29,13 @@
       "id": "PRD002",
       "name": "Synergy e9",
       "bioactives": [
-        {
-          "id": "FC011",
-          "status": "DIRECT"
-        }
+        { "id": "FC011", "status": "DIRECT" },
+    	{ "id": "FC027", "status": "SOURCE_DEFINED" },
+    	{ "id": "PP003", "status": "SOURCE_DEFINED" },
+    	{ "id": "FC028", "status": "SOURCE_DEFINED" },
+    	{ "id": "FC029", "status": "SOURCE_DEFINED" },
+    	{ "id": "PP001", "status": "SOURCE_DEFINED" },
+    	{ "id": "FC030", "status": "SOURCE_DEFINED" }
       ]
     },
     {
@@ -53,49 +56,35 @@
       "id": "PRD004",
       "name": "Synergy Pro360 Wholefood Greens",
       "bioactives": [
-        {
-          "id": "DF012",
-          "status": "DIRECT"
-        },
-        {
-          "id": "DF009",
-          "status": "DIRECT"
-        },
-        {
-          "id": "FA001",
-          "status": "SOURCE_DEFINED"
-        },
-        {
-          "id": "PP011",
-          "status": "SOURCE_DEFINED"
-        },
-        {
-          "id": "PP003",
-          "status": "SOURCE_DEFINED"
-        },
-        {
-          "id": "PP008",
-          "status": "SOURCE_DEFINED"
-        },
-        {
-          "id": "PP004",
-          "status": "DIRECT"
-        }
-      ]
+    { "id": "DF012", "status": "DIRECT" },
+    { "id": "DF009", "status": "DIRECT" },
+    { "id": "FA001", "status": "SOURCE_DEFINED" },
+    { "id": "PP011", "status": "SOURCE_DEFINED" },
+    { "id": "PP003", "status": "SOURCE_DEFINED" },
+    { "id": "PP002", "status": "DIRECT" },
+    { "id": "PP001", "status": "SOURCE_DEFINED" },
+    { "id": "PP009", "status": "SOURCE_DEFINED" },
+    { "id": "FC001", "status": "SOURCE_DEFINED" },
+    { "id": "FC028", "status": "SOURCE_DEFINED" },
+    { "id": "FC029", "status": "SOURCE_DEFINED" },
+    { "id": "FC031", "status": "SOURCE_DEFINED" },
+    { "id": "FC032", "status": "SOURCE_DEFINED" }
+  ]
     },
     {
       "id": "PRD005",
       "name": "Synergy Pro360 Superfood Performance Beets",
       "bioactives": [
-        {
-          "id": "FC020",
-          "status": "CONFIRMED"
-        },
-        {
-          "id": "FC016",
-          "status": "CONFIRMED"
-        }
-      ]
+    { "id": "FC020", "status": "DIRECT" },
+    { "id": "FC016", "status": "DIRECT" },
+    { "id": "DF009", "status": "DIRECT" },
+    { "id": "PP003", "status": "SOURCE_DEFINED" },
+    { "id": "PP006", "status": "SOURCE_DEFINED" },
+    { "id": "PP001", "status": "SOURCE_DEFINED" },
+    { "id": "PP008", "status": "SOURCE_DEFINED" },
+    { "id": "FC001", "status": "SOURCE_DEFINED" },
+    { "id": "OS003", "status": "SOURCE_DEFINED" }
+  ]
     },
     {
       "id": "PRD006",
@@ -111,83 +100,56 @@
       "id": "PRD007",
       "name": "Synergy Biome DT",
       "bioactives": [
-        {
-          "id": "DF011",
-          "status": "DIRECT"
-        },
-        {
-          "id": "FC013",
-          "status": "DIRECT"
-        },
-        {
-          "id": "DF003",
-          "status": "DIRECT"
-        },
-        {
-          "id": "FC021",
-          "status": "DIRECT"
-        }
-      ]
+    { "id": "DF011", "status": "DIRECT" },
+    { "id": "FC013", "status": "DIRECT" },
+    { "id": "DF003", "status": "DIRECT" },
+    { "id": "FC021", "status": "DIRECT" },
+    { "id": "PP003", "status": "SOURCE_DEFINED" },
+    { "id": "PP009", "status": "SOURCE_DEFINED" },
+    { "id": "FC001", "status": "SOURCE_DEFINED" },
+    { "id": "OS003", "status": "SOURCE_DEFINED" }
+  ]
     },
     {
       "id": "PRD008",
       "name": "Synergy Biome Shake",
       "bioactives": [
-        {
-          "id": "DF012",
-          "status": "DIRECT"
-        },
-        {
-          "id": "DF009",
-          "status": "DIRECT"
-        },
-        {
-          "id": "PP003",
-          "status": "SOURCE_DEFINED"
-        },
-        {
-          "id": "PP008",
-          "status": "SOURCE_DEFINED"
-        },
-        {
-          "id": "PP004",
-          "status": "DIRECT"
-        }
-      ]
+    { "id": "DF012", "status": "DIRECT" },
+    { "id": "DF009", "status": "DIRECT" },
+    { "id": "PP003", "status": "SOURCE_DEFINED" },
+    { "id": "FC001", "status": "DIRECT" },
+    { "id": "FC020", "status": "SOURCE_DEFINED" }
+  ]
     },
     {
       "id": "PRD009",
       "name": "Synergy Body Prime",
       "bioactives": [
-        {
-          "id": "DF002",
-          "status": "DIRECT"
-        }
-      ]
+    { "id": "DF004", "status": "DIRECT" },
+    { "id": "DF006", "status": "DIRECT" }
+  ]
     },
     {
       "id": "PRD010",
       "name": "PhytoLife",
       "bioactives": [
-        {
-          "id": "FC021",
-          "status": "DIRECT"
-        }
-      ]
+    { "id": "FC021", "status": "DIRECT" },
+    { "id": "FC034", "status": "DIRECT" },
+    { "id": "FC005", "status": "SOURCE_DEFINED" },
+    { "id": "FC004", "status": "SOURCE_DEFINED" }
+  ]
     },
     {
       "id": "PRD011",
       "name": "Mistify",
       "bioactives": [
-        {
-          "id": "PP001",
-          "status": "CONFIRMED_PRODUCT_PROFILE"
-        },
-        {
-          "id": "PP003",
-          "status": "SOURCE_DEFINED"
-        }
-      ]
+    { "id": "PP001", "status": "SOURCE_DEFINED" },
+    { "id": "PP003", "status": "SOURCE_DEFINED" },
+    { "id": "PP006", "status": "SOURCE_DEFINED" },
+    { "id": "PP008", "status": "SOURCE_DEFINED" },
+    { "id": "PP009", "status": "SOURCE_DEFINED" },
+    { "id": "FA001", "status": "SOURCE_DEFINED" }
+  ]
     },
     {
       "id": "PRD012",
@@ -225,19 +187,12 @@
       "id": "PRD014",
       "name": "Synergy FL-3X",
       "bioactives": [
-        {
-          "id": "FC024",
-          "status": "DIRECT"
-        },
-        {
-          "id": "FC025",
-          "status": "DIRECT"
-        },
-        {
-          "id": "FC026",
-          "status": "DIRECT"
-        }
-      ]
+    { "id": "FC024", "status": "DIRECT" },
+    { "id": "FC025", "status": "DIRECT" },
+    { "id": "FC026", "status": "DIRECT" },
+    { "id": "PP003", "status": "SOURCE_DEFINED" },
+    { "id": "PP009", "status": "SOURCE_DEFINED" }
+  ]
     },
     {
       "id": "PRD015",
@@ -272,38 +227,55 @@
       "id": "PRD018",
       "name": "Synergy Liver Health",
       "bioactives": [
-        {
-          "id": "FC001",
-          "status": "SOURCE_DEFINED"
-        },
-        {
-          "id": "FC015",
-          "status": "SOURCE_DEFINED"
-        }
-      ]
+    { "id": "FC001", "status": "DIRECT" },
+    { "id": "FC004", "status": "SOURCE_DEFINED" },
+    { "id": "FC006", "status": "SOURCE_DEFINED" },
+    { "id": "FC009", "status": "SOURCE_DEFINED" },
+    { "id": "FC010", "status": "SOURCE_DEFINED" },
+    { "id": "FC015", "status": "SOURCE_DEFINED" }
+  ]
     },
     {
       "id": "PRD019",
       "name": "Synergy Zinc Protect",
       "bioactives": [
-        {
-          "id": "TP001",
-          "status": "SOURCE_DEFINED"
-        },
-        {
-          "id": "TP003",
-          "status": "SOURCE_DEFINED"
-        },
-        {
-          "id": "TP004",
-          "status": "SOURCE_DEFINED"
-        }
-      ]
+    { "id": "FC035", "status": "SOURCE_DEFINED" },
+    { "id": "FC004", "status": "SOURCE_DEFINED" },
+    { "id": "FC018", "status": "SOURCE_DEFINED" }
+  ]
     },
     {
       "id": "PRD020",
       "name": "Synergy SleepWell",
-      "bioactives": []
-    }
+      "bioactives": [
+    { "id": "FC036", "status": "DIRECT" },
+    { "id": "FC019", "status": "SOURCE_DEFINED" },
+    { "id": "FC037", "status": "SOURCE_DEFINED" }
+  ]
+    },
+    {
+  "id": "PRD022",
+  "name": "Synergy Carb Blocker",
+  "bioactives": [
+    { "id": "FC038", "status": "DIRECT" }
+  ]
+},
+{
+  "id": "PRD023",
+  "name": "Synergy Fat Grabber",
+  "bioactives": [
+    { "id": "DF010", "status": "DIRECT" },
+    { "id": "DF007", "status": "DIRECT" },
+    { "id": "FC017", "status": "SOURCE_DEFINED" }
+  ]
+},
+{
+  "id": "PRD021",
+  "name": "Synergy Multivitamin",
+  "bioactives": [
+    { "id": "DF009", "status": "DIRECT" }
+  ]
+}
+    
   ]
 }

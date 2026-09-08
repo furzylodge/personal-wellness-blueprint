@@ -1,8 +1,8 @@
 {
-  "version": "1.0",
+  "version": "1.1",
   "status": "ACTIVE",
   "description": "Canonical nutrient-to-mechanism relationships for vitamins and minerals. Nutrients remain a separate layer from bioactives.",
-  "count": 20,
+  "count": 25,
   "relationships": [
     {
       "nutrientId": "M004",
@@ -203,6 +203,56 @@
       "confidence": "Moderate",
       "basis": "Tendons are collagen-rich connective tissue; vitamin C is required for collagen biosynthesis. This is a mechanistic relationship, not a claim that supplementation improves tendon outcomes in all circumstances.",
       "tier1Target": true
-    }
+    },
+    {
+  "nutrientId": "V010",
+  "nutrient": "Vitamin C",
+  "mechanismId": "MEC027",
+  "mechanism": "Supports Cellular Repair",
+  "strength": 4,
+  "confidence": "High",
+  "basis": "Vitamin C is required for collagen maturation and tissue repair, supporting normal cellular repair processes.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "M011",
+  "nutrient": "Selenium",
+  "mechanismId": "MEC111",
+  "mechanism": "Supports Glutathione Synthesis",
+  "strength": 5,
+  "confidence": "High",
+  "basis": "Selenium is required for glutathione peroxidase activity and supports endogenous glutathione-dependent antioxidant systems.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "V011",
+  "nutrient": "Vitamin D",
+  "mechanismId": "MEC114",
+  "mechanism": "Supports Calcium Utilisation",
+  "strength": 5,
+  "confidence": "High",
+  "basis": "Vitamin D regulates intestinal calcium absorption and supports normal calcium utilisation throughout the body.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "V013",
+  "nutrient": "Vitamin K",
+  "mechanismId": "MEC114",
+  "mechanism": "Supports Calcium Utilisation",
+  "strength": 5,
+  "confidence": "High",
+  "basis": "Vitamin K activates calcium-binding proteins including osteocalcin, supporting normal calcium utilisation.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "M006",
+  "nutrient": "Magnesium",
+  "mechanismId": "MEC115",
+  "mechanism": "Supports Glucose Homeostasis",
+  "strength": 4,
+  "confidence": "High",
+  "basis": "Magnesium is an essential cofactor in glucose metabolism and contributes to maintenance of normal glucose homeostasis.",
+  "tier1Target": true
+}
   ]
 }

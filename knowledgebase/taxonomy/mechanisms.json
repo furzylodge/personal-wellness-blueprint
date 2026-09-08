@@ -1,8 +1,8 @@
 {
-  "version": "12.0",
+  "version": "13.0",
   "description": "Mechanisms aligned to the nine Personal Wellness Blueprint body systems",
   "mechanisms": [
-    {
+    { 
       "id": "MEC001",
       "name": "Bile Acid Binding",
       "category": "Lipid Metabolism",
@@ -2006,7 +2006,147 @@
       "maturity": "Proposed",
       "status": "Active",
       "guardrail": "This mechanism represents metabolism and bioavailability of dietary phytoestrogens. It is not a claim that phytoestrogens replace endogenous oestrogen, treat menopause, or normalise hormone concentrations."
-    }
+    },
+    {
+  "id": "MEC109",
+  "name": "Supports Phase I Detoxification",
+  "category": "Detoxification",
+  "description": "Supports hepatic Phase I biotransformation of endogenous compounds and xenobiotics through cytochrome P450 enzyme activity.",
+  "plainEnglish": "Helps the liver begin breaking down toxins and unwanted compounds.",
+  "evidence": "Moderate",
+  "primaryBodySystems": ["BS001","BS005"],
+  "bioactiveCompounds": [],
+  "keywords": [
+    "phase i",
+    "cytochrome p450",
+    "biotransformation",
+    "liver",
+    "detoxification"
   ],
-  "count": 108
+  "primaryBodySystemNames": ["Digestive","Immune"]
+},
+{
+  "id": "MEC110",
+  "name": "Supports Phase II Conjugation",
+  "category": "Detoxification",
+  "description": "Supports conjugation pathways including glutathione, glucuronidation and sulfation that prepare compounds for safe elimination.",
+  "plainEnglish": "Helps the liver make toxins water-soluble so they can be removed safely.",
+  "evidence": "High",
+  "primaryBodySystems": ["BS001","BS005"],
+  "bioactiveCompounds": [],
+  "keywords": [
+    "phase ii",
+    "glutathione",
+    "glucuronidation",
+    "sulfation",
+    "conjugation"
+  ],
+  "primaryBodySystemNames": ["Digestive","Immune"]
+},
+{
+  "id": "MEC111",
+  "name": "Supports Glutathione Synthesis",
+  "category": "Detoxification",
+  "description": "Supports endogenous production and recycling of glutathione, the body's principal intracellular antioxidant and detoxification molecule.",
+  "plainEnglish": "Helps the body produce and recycle glutathione, its main natural detox molecule.",
+  "evidence": "High",
+  "primaryBodySystems": ["BS001","BS005"],
+  "bioactiveCompounds": [],
+  "keywords": [
+    "glutathione",
+    "gsh",
+    "antioxidant",
+    "detoxification",
+    "liver"
+  ],
+  "primaryBodySystemNames": ["Digestive","Immune"]
+},
+{
+  "id": "MEC112",
+  "name": "Supports Xenobiotic Elimination",
+  "category": "Detoxification",
+  "description": "Supports the transport and elimination of metabolised environmental compounds, pollutants and metabolic waste.",
+  "plainEnglish": "Helps the body remove processed toxins and waste products.",
+  "evidence": "Moderate",
+  "primaryBodySystems": ["BS001","BS005"],
+  "bioactiveCompounds": [],
+  "keywords": [
+    "xenobiotic",
+    "elimination",
+    "transport",
+    "detoxification",
+    "waste removal"
+  ],
+  "primaryBodySystemNames": ["Digestive","Immune"]
+},
+{
+  "id": "MEC113",
+  "name": "Supports Hepatic Cellular Protection",
+  "category": "Detoxification",
+  "description": "Supports resilience and protection of liver cells during normal metabolic and detoxification activity.",
+  "plainEnglish": "Helps protect liver cells while the liver performs detoxification.",
+  "evidence": "High",
+  "primaryBodySystems": ["BS001","BS005"],
+  "bioactiveCompounds": [],
+  "keywords": [
+    "liver protection",
+    "hepatocyte",
+    "hepatic",
+    "detoxification",
+    "cell protection"
+  ],
+  "primaryBodySystemNames": ["Digestive","Immune"]
+},
+{
+  "id": "MEC114",
+  "name": "Supports Calcium Utilisation",
+  "category": "Musculoskeletal Function",
+  "description": "Supports the absorption, transport and physiological utilisation of calcium for normal skeletal and cellular function.",
+  "plainEnglish": "Helps the body absorb and use calcium effectively.",
+  "evidence": "High",
+  "primaryBodySystems": [
+    "BS009"
+  ],
+  "bioactiveCompounds": [],
+  "keywords": [
+    "calcium utilisation",
+    "calcium absorption",
+    "bone health",
+    "osteocalcin",
+    "vitamin d",
+    "vitamin k"
+  ],
+  "primaryBodySystemNames": [
+    "Structural"
+  ]
+},
+{
+  "id": "MEC115",
+  "name": "Supports Glucose Homeostasis",
+  "category": "Glucose Regulation",
+  "description": "Supports maintenance of normal glucose homeostasis through regulation of glucose metabolism and cellular glucose handling.",
+  "plainEnglish": "Helps maintain healthy blood glucose balance.",
+  "evidence": "High",
+  "primaryBodySystems": [
+    "BS008"
+  ],
+  "bioactiveCompounds": [],
+  "keywords": [
+    "glucose homeostasis",
+    "glucose metabolism",
+    "blood glucose",
+    "metabolic health",
+    "magnesium"
+  ],
+  "primaryBodySystemNames": [
+    "Glandular"
+  ]
+}
+    
+    
+    
+    
+    
+  ],
+  "count": 115
 }

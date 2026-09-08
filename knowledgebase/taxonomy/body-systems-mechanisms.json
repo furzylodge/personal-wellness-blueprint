@@ -1,5 +1,5 @@
 {
-  "version": "10.0",
+  "version": "11.0",
   "bodySystems": [
     {
       "id": "BS001",
@@ -64,7 +64,42 @@
           "priority": 1,
           "weight": 35,
           "evidence": "Emerging"
-        }
+        },
+{
+  "id": "MEC109",
+  "name": "Supports Phase I Detoxification",
+  "priority": 5,
+  "weight": 100,
+  "evidence": "High"
+},
+{
+  "id": "MEC110",
+  "name": "Supports Phase II Conjugation",
+  "priority": 5,
+  "weight": 95,
+  "evidence": "High"
+},
+{
+  "id": "MEC111",
+  "name": "Supports Glutathione Synthesis",
+  "priority": 5,
+  "weight": 90,
+  "evidence": "High"
+},
+{
+  "id": "MEC112",
+  "name": "Supports Xenobiotic Elimination",
+  "priority": 4,
+  "weight": 80,
+  "evidence": "Moderate"
+},
+{
+  "id": "MEC113",
+  "name": "Supports Hepatic Cellular Protection",
+  "priority": 5,
+  "weight": 95,
+  "evidence": "High"
+}
       ]
     },
     {
@@ -712,7 +747,14 @@
           "name": "Supports Phytoestrogen Metabolism",
           "priority": "Tier 1",
           "evidence": "Moderate"
-        }
+        },
+        {
+  "id": "MEC115",
+  "name": "Supports Glucose Homeostasis",
+  "priority": 4,
+  "weight": 85,
+  "evidence": "High"
+}
       ]
     },
     {
@@ -778,7 +820,14 @@
           "priority": 2,
           "weight": 40,
           "evidence": "Moderate"
-        }
+        },
+        {
+  "id": "MEC114",
+  "name": "Supports Calcium Utilisation",
+  "priority": 5,
+  "weight": 100,
+  "evidence": "High"
+}
       ]
     }
   ]
