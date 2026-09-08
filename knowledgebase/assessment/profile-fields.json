@@ -1,0 +1,133 @@
+{
+  "version": "1.0",
+  "status": "ACTIVE",
+  "description": "Personal intake fields for the Personal Wellness Blueprint. These fields do not contribute to wellness scoring.",
+  "fields": [
+    {
+      "id": "PF001",
+      "key": "first_name",
+      "label": "First name",
+      "type": "text",
+      "required": true,
+      "placeholder": "Enter your first name"
+    },
+    {
+      "id": "PF002",
+      "key": "last_name",
+      "label": "Last name",
+      "type": "text",
+      "required": false,
+      "placeholder": "Optional"
+    },
+    {
+      "id": "PF003",
+      "key": "email",
+      "label": "Email address",
+      "type": "email",
+      "required": true,
+      "placeholder": "you@example.com"
+    },
+    {
+      "id": "PF004",
+      "key": "mobile",
+      "label": "Mobile telephone",
+      "type": "tel",
+      "required": false,
+      "placeholder": "Optional"
+    },
+    {
+      "id": "PF005",
+      "key": "year_of_birth",
+      "label": "What year were you born?",
+      "type": "year",
+      "required": true,
+      "min": 1920,
+      "max": 2026
+    },
+    {
+      "id": "PF006",
+      "key": "biological_sex",
+      "label": "Biological sex",
+      "type": "single_select",
+      "required": true,
+      "options": [
+        {
+          "value": "female",
+          "label": "Female",
+          "routeAs": "female"
+        },
+        {
+          "value": "male",
+          "label": "Male",
+          "routeAs": "male"
+        },
+        {
+          "value": "unspecified",
+          "label": "Prefer not to say",
+          "routeAs": "female"
+        }
+      ]
+    },
+    {
+      "id": "PF014",
+      "key": "primary_goals",
+      "label": "What are your primary wellness goals?",
+      "type": "multi_select",
+      "required": false,
+      "maxSelections": 3,
+      "helper": "Select up to three that matter most to you.",
+      "options": [
+        {
+          "value": "OUT001",
+          "label": "More Energy"
+        },
+        {
+          "value": "OUT002",
+          "label": "Better Sleep"
+        },
+        {
+          "value": "OUT003",
+          "label": "Heart Health"
+        },
+        {
+          "value": "OUT004",
+          "label": "Healthy Weight"
+        },
+        {
+          "value": "OUT005",
+          "label": "Digestive & Gut Health"
+        },
+        {
+          "value": "OUT006",
+          "label": "Mental Wellbeing"
+        },
+        {
+          "value": "OUT007",
+          "label": "Mobility & Joint Health"
+        },
+        {
+          "value": "OUT008",
+          "label": "Healthy Ageing"
+        },
+        {
+          "value": "OUT009",
+          "label": "Menopause Transition Resilience"
+        }
+      ]
+    },
+    {
+      "id": "PF018",
+      "key": "privacy_consent",
+      "label": "I have read and agree to the Privacy Policy.",
+      "type": "checkbox",
+      "required": true
+    },
+    {
+      "id": "PF019",
+      "key": "terms_consent",
+      "label": "I agree to the Terms and Conditions.",
+      "type": "checkbox",
+      "required": true
+    }
+  ]
+}

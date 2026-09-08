@@ -8,6 +8,9 @@ final class AssessmentLoader
 {
     private array $questions = [];
     private array $matrix = [];
+    private array $profileFields = [];
+    private array $quizFlow = [];
+    private array $scoring = [];
 
     public function __construct(
         private JsonLoader $loader,
@@ -23,6 +26,18 @@ final class AssessmentLoader
         $this->matrix = $this->loader->load(
             $this->knowledgePath . '/assessment/question-body-system-matrix.json'
         );
+        
+        $this->profileFields = $this->loader->load(
+    		$this->knowledgePath . '/assessment/profile-fields.json'
+	);
+
+	$this->quizFlow = $this->loader->load(
+    		$this->knowledgePath . '/assessment/quiz-flow.json'
+	);
+
+	$this->scoring = $this->loader->load(
+		$this->knowledgePath . '/assessment/question-body-system-scoring.json'
+	);
 
         return new Assessment(
             assessment: [
@@ -44,4 +59,20 @@ final class AssessmentLoader
     {
         return $this->matrix;
     }
+
+public function profileFields(): array
+{
+    return $this->profileFields;
+}
+
+public function quizFlow(): array
+{
+    return $this->quizFlow;
+}
+
+public function scoring(): array
+{
+    return $this->scoring;
+}    
+
 }

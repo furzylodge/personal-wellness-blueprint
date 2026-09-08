@@ -1,0 +1,40 @@
+{
+  "version": "1.0",
+  "status": "ACTIVE",
+  "pages": [
+    {
+      "id": "PAGE001",
+      "type": "welcome",
+      "title": "Welcome"
+    },
+    {
+      "id": "PAGE002",
+      "type": "profile",
+      "title": "About You",
+      "source": "profile-fields.json"
+    },
+    {
+      "id": "PAGE003",
+      "type": "questions",
+      "title": "Your Wellbeing",
+      "section": "wellbeing"
+    },
+    {
+      "id": "PAGE004",
+      "type": "questions",
+      "title": "Your Lifestyle",
+      "section": "lifestyle"
+    },
+    {
+      "id": "PAGE005",
+      "type": "questions",
+      "title": "Your Body",
+      "section": "body"
+    },
+    {
+      "id": "PAGE006",
+      "type": "finish",
+      "title": "Complete"
+    }
+  ]
+}
