@@ -2,6 +2,7 @@
   {
     "id": "CTX001",
     "legacy_id": "Q01",
+    "page": "PAGE003",
     "question": "Would you like to have more energy during the day?",
     "answer_type": "single_select",
     "answer_options": [
@@ -16,6 +17,7 @@
   {
     "id": "IMM001",
     "legacy_id": "Q02",
+    "page": "PAGE003",
     "question": "How often do you find yourself becoming unwell?",
     "answer_type": "frequency_4",
     "answer_options": [
@@ -34,6 +36,7 @@
   {
     "id": "DIG001",
     "legacy_id": "Q03",
+    "page": "PAGE003",
     "question": "Which of the following have you noticed recently or repeatedly? Select any that apply.",
     "answer_type": "multi_select",
     "answer_options": [
@@ -50,6 +53,7 @@
   {
     "id": "DIG002",
     "legacy_id": "Q04",
+    "page": "PAGE003",
     "question": "How often do you have difficulty digesting certain foods?",
     "answer_type": "frequency_5",
     "answer_options": [
@@ -70,6 +74,7 @@
   {
     "id": "NUT001",
     "legacy_id": "Q05",
+    "page": "PAGE003",
     "question": "How often do you eat red meat, such as beef, lamb or pork?",
     "answer_type": "frequency_5",
     "answer_options": [
@@ -90,6 +95,7 @@
   {
     "id": "SAF001",
     "legacy_id": "Q06",
+    "page": "PAGE003",
     "question": "Which of the following applies to your health history? Select any that apply",
     "answer_type": "multi_select",
     "answer_options": [
@@ -114,6 +120,7 @@
   {
     "id": "NUT002",
     "legacy_id": "Q07",
+    "page": "PAGE003",
     "question": "How often do you drink alcohol?",
     "answer_type": "frequency_4",
     "answer_options": [
@@ -132,6 +139,7 @@
   {
     "id": "MND001",
     "legacy_id": "Q08",
+    "page": "PAGE003",
     "question": "How often do you experience noticeable changes in your mood or emotional state?",
     "answer_type": "frequency_5",
     "answer_options": [
@@ -152,8 +160,10 @@
   {
     "id": "SAF002",
     "legacy_id": "Q09",
+    "page": "PAGE003",
     "question": "Do you have any diagnosed food allergies?",
     "answer_type": "radio",
+    "required": true,
     "answer_options": [
       "Yes",
       "No"
@@ -166,8 +176,14 @@
   {
     "id": "SAF006",
     "legacy_id": null,
+    "page": "PAGE003",
     "question": "Which food allergies apply to you?",
     "answer_type": "multi_select",
+    "required": true,
+    "visible_if": {
+    	"question": "SAF002",
+    	"operator": "equals",
+    	"value": 1},
     "answer_options": [
       "Celery",
       "Cereals containing gluten",
@@ -189,18 +205,22 @@
   {
     "id": "SAF007",
     "legacy_id": null,
+    "page": "PAGE003",
     "question": "How would you rate the impact on you?",
     "answer_type": "frequency_4",
+    "visible_if": {
+    	"question": "SAF002",
+    	"operator": "equals",
+    	"value": 1},
     "answer_options": [
-      "Unknown",
+      "No impact",
       "Mild",
       "Moderate",
       "Severe"
     ],
     "stored_values": [
-      0.75,
-      0.25,
       0,
+      0.5,
       0.75,
       1
     ]
@@ -208,6 +228,7 @@
   {
     "id": "EXP001",
     "legacy_id": "Q11",
+    "page": "PAGE003",
     "question": "Which best describes your tobacco/vape usage?",
     "answer_type": "frequency_5",
     "answer_options": [
@@ -228,6 +249,7 @@
   {
     "id": "EXP006",
     "legacy_id": null,
+    "page": "PAGE003",
     "question": "Which best describes your tobacco smoke exposure from others?",
     "answer_type": "frequency_5",
     "answer_options": [
@@ -248,6 +270,7 @@
   {
     "id": "COG001",
     "legacy_id": "Q12",
+    "page": "PAGE003",
     "question": "How often do you have difficulty concentrating or remembering things?",
     "answer_type": "frequency_5",
     "answer_options": [
@@ -268,6 +291,7 @@
   {
     "id": "IMM002",
     "legacy_id": "Q13",
+    "page": "PAGE003",
     "question": "How often do you feel that you are unusually susceptible to infections or take longer than expected to recover from them?",
     "answer_type": "frequency_5",
     "answer_options": [
@@ -288,6 +312,7 @@
   {
     "id": "DIG003",
     "legacy_id": "Q14",
+    "page": "PAGE003",
     "question": "How often do you experience discomfort, bloating, reflux or other symptoms after eating?",
     "answer_type": "frequency_5",
     "answer_options": [
@@ -308,6 +333,7 @@
   {
     "id": "MND002",
     "legacy_id": "Q15",
+    "page": "PAGE003",
     "question": "How often do you feel stressed or under pressure?",
     "answer_type": "frequency_5",
     "answer_options": [
@@ -328,6 +354,7 @@
   {
     "id": "PHY001",
     "legacy_id": "Q16",
+    "page": "PAGE003",
     "question": "Do you currently have, or have you previously been diagnosed with, any of the following skin conditions? Select any that apply.",
     "answer_type": "multi_select",
     "answer_options": [
@@ -348,6 +375,7 @@
   {
     "id": "PHY002",
     "legacy_id": "Q16b",
+    "page": "PAGE003",
     "question": "How much does this skin condition currently affect your day-to-day life?",
     "answer_type": "quality_5",
     "answer_options": [
@@ -368,6 +396,7 @@
   {
     "id": "NUT003",
     "legacy_id": "Q17",
+    "page": "PAGE003",
     "question": "How often do you find yourself craving sweet or highly processed foods?",
     "answer_type": "frequency_5",
     "answer_options": [
@@ -388,6 +417,7 @@
   {
     "id": "NUT004",
     "legacy_id": "Q18",
+    "page": "PAGE003",
     "question": "Which of the following best describes your relationship with dairy products?",
     "answer_type": "frequency_5",
     "answer_options": [
@@ -408,6 +438,7 @@
   {
     "id": "MND003",
     "legacy_id": "Q19",
+    "page": "PAGE003",
     "question": "How often do you feel unusually low, flat or lacking motivation?",
     "answer_type": "frequency_5",
     "answer_options": [
@@ -428,6 +459,7 @@
   {
     "id": "SLP001",
     "legacy_id": "Q20",
+    "page": "PAGE003",
     "question": "How would you describe the quality of your sleep?",
     "answer_type": "frequency_5",
     "answer_options": [
@@ -448,6 +480,7 @@
   {
     "id": "SLP002",
     "legacy_id": "Q21",
+    "page": "PAGE003",
     "question": "How often do you wake during the night to urinate?",
     "answer_type": "frequency_5",
     "answer_options": [
@@ -468,6 +501,7 @@
   {
     "id": "EXP002",
     "legacy_id": "Q22",
+    "page": "PAGE003",
     "question": "On a typical day, how much time do you spend using social media?",
     "answer_type": "single_select",
     "answer_options": [
@@ -490,6 +524,7 @@
   {
     "id": "PHY003",
     "legacy_id": "Q23",
+    "page": "PAGE003",
     "question": "Have you noticed increased hair shedding or thinning compared with your usual pattern?",
     "answer_type": "radio",
     "answer_options": [
@@ -504,6 +539,7 @@
   {
     "id": "NUT005",
     "legacy_id": "Q24a",
+    "page": "PAGE003",
     "question": "How often do you eat foods that are high in saturated fat?",
     "answer_type": "frequency_5",
     "answer_options": [
@@ -524,6 +560,7 @@
   {
     "id": "SAF003",
     "legacy_id": "Q24b",
+    "page": "PAGE003",
     "question": "Has a healthcare professional ever told you that you have raised cholesterol or another lipid-related issue?",
     "answer_type": "radio",
     "answer_options": [
@@ -538,6 +575,7 @@
   {
     "id": "NUT006",
     "legacy_id": "Q25",
+    "page": "PAGE003",
     "question": "How difficult is it for you to maintain a healthy weight for your body and lifestyle?",
     "answer_type": "frequency_5",
     "answer_options": [
@@ -558,6 +596,7 @@
   {
     "id": "PHY004",
     "legacy_id": "Q26",
+    "page": "PAGE003",
     "question": "How would you describe your physical stamina in everyday activities?",
     "answer_type": "frequency_3",
     "answer_options": [
@@ -574,6 +613,7 @@
   {
     "id": "PHY005",
     "legacy_id": "Q26b",
+    "page": "PAGE003",
     "question": "How much does the breathlessness limit your daily activities?",
     "answer_type": "frequency_5",
     "answer_options": [
@@ -594,6 +634,7 @@
   {
     "id": "NUT007",
     "legacy_id": "Q27",
+    "page": "PAGE003",
     "question": "Which best describes your usual eating pattern?",
     "answer_type": "frequency_4",
     "answer_options": [
@@ -612,6 +653,7 @@
   {
     "id": "IMM003",
     "legacy_id": "Q28",
+    "page": "PAGE003",
     "question": "When you do become unwell, how quickly do you usually recover?",
     "answer_type": "frequency_4",
     "answer_options": [
@@ -630,6 +672,7 @@
   {
     "id": "DIG004",
     "legacy_id": "Q29",
+    "page": "PAGE003",
     "question": "How often do you experience constipation, diarrhoea or other noticeable changes in bowel regularity?",
     "answer_type": "frequency_3",
     "answer_options": [
@@ -646,6 +689,7 @@
   {
     "id": "MND004",
     "legacy_id": "Q30",
+    "page": "PAGE003",
     "question": "How often do you find it difficult to switch off or relax, even when you have the opportunity to do so?",
     "answer_type": "frequency_3",
     "answer_options": [
@@ -662,6 +706,7 @@
   {
     "id": "NUT008",
     "legacy_id": "Q31",
+    "page": "PAGE003",
     "question": "How often do you eat foods that are naturally high in fibre, such as vegetables, fruit, beans, lentils, wholegrains, nuts or seeds?",
     "answer_type": "frequency_3",
     "answer_options": [
@@ -678,6 +723,7 @@
   {
     "id": "PHY006",
     "legacy_id": "Q32",
+    "page": "PAGE003",
     "question": "How often do you experience muscle aches, stiffness, weakness or discomfort that affects your normal activities?",
     "answer_type": "frequency_5",
     "answer_options": [
@@ -698,6 +744,7 @@
   {
     "id": "EXP003",
     "legacy_id": "Q34",
+    "page": "PAGE003",
     "question": "How much time per day do you typically spend in areas with noticeable traffic, industrial or other air pollution?",
     "answer_type": "frequency_4",
     "answer_options": [
@@ -716,6 +763,7 @@
   {
     "id": "SLP003",
     "legacy_id": "Q35",
+    "page": "PAGE003",
     "question": "How often do you feel excessively sleepy or tired during the day?",
     "answer_type": "frequency_5",
     "answer_options": [
@@ -736,6 +784,7 @@
   {
     "id": "CTX002",
     "legacy_id": "Q36",
+    "page": "PAGE003",
     "question": "Have you experienced an unexplained loss of appetite recently?",
     "answer_type": "radio",
     "answer_options": [
@@ -750,6 +799,7 @@
   {
     "id": "SLP004",
     "legacy_id": "Q37",
+    "page": "PAGE003",
     "question": "How many caffeinated drinks do you typically have each day?",
     "answer_type": "single_select",
     "answer_options": [
@@ -772,6 +822,7 @@
   {
     "id": "SLP005",
     "legacy_id": "Q37b",
+    "page": "PAGE003",
     "question": "When do you usually have your last caffeinated drink of the day?",
     "answer_type": "single_select",
     "answer_options": [
@@ -794,6 +845,7 @@
   {
     "id": "MND005",
     "legacy_id": "Q38",
+    "page": "PAGE003",
     "question": "How often do you feel irritable, impatient or easily frustrated?",
     "answer_type": "frequency_5",
     "answer_options": [
@@ -814,6 +866,7 @@
   {
     "id": "SAF004",
     "legacy_id": "Q39",
+    "page": "PAGE003",
     "question": "Do you have any food, chemical or environmental sensitivities or intolerances that we should take into account?",
     "answer_type": "radio",
     "answer_options": [
@@ -828,6 +881,7 @@
   {
     "id": "PHY007",
     "legacy_id": "Q41",
+    "page": "PAGE003",
     "question": "How often do you experience joint pain, stiffness, reduced mobility or weakness that affects your normal activities?",
     "answer_type": "frequency_5",
     "answer_options": [
@@ -848,6 +902,7 @@
   {
     "id": "MND006",
     "legacy_id": "Q42",
+    "page": "PAGE003",
     "question": "How often do you find yourself worrying more than you would like?",
     "answer_type": "radio",
     "answer_options": [
@@ -862,6 +917,7 @@
   {
     "id": "MND007",
     "legacy_id": "Q43",
+    "page": "PAGE003",
     "question": "How well do you usually cope when things don't go as planned?",
     "answer_type": "radio",
     "answer_options": [
@@ -876,6 +932,7 @@
   {
     "id": "PHY008",
     "legacy_id": "Q44",
+    "page": "PAGE003",
     "question": "How much moderate or vigorous physical activity do you typically do each week?",
     "answer_type": "frequency_5",
     "answer_options": [
@@ -898,6 +955,7 @@
   {
     "id": "PHY009",
     "legacy_id": null,
+    "page": "PAGE003",
     "question": "How often do you do activities that strengthen your muscles?",
     "answer_type": "frequency_5",
     "answer_options": [
@@ -918,6 +976,7 @@
   {
     "id": "EXP004",
     "legacy_id": "Q45",
+    "page": "PAGE003",
     "question": "How often do you experience persistent or recurring congestion, excess mucus, wheezing or similar breathing symptoms?",
     "answer_type": "frequency_4",
     "answer_options": [
@@ -936,6 +995,7 @@
   {
     "id": "LIF001",
     "legacy_id": "Q46",
+    "page": "PAGE003",
     "question": "Do you currently experience menstrual or cycle-related changes or symptoms that you would like to take into account?",
     "answer_type": "radio",
     "answer_options": [
@@ -950,6 +1010,7 @@
   {
     "id": "LIF002",
     "legacy_id": "Q47",
+    "page": "PAGE003",
     "question": "Are you experiencing perimenopause, menopause or related life-stage changes that you would like to take into account?",
     "answer_type": "radio",
     "answer_options": [
@@ -964,6 +1025,7 @@
   {
     "id": "SAF005",
     "legacy_id": "Q48",
+    "page": "PAGE003",
     "question": "Are you currently receiving medical treatment or managing a diagnosed long-term health condition?",
     "answer_type": "radio",
     "answer_options": [
@@ -980,6 +1042,7 @@
   {
     "id": "EXP005",
     "legacy_id": "NEW-01",
+    "page": "PAGE003",
     "question": "On a typical day, how much time do you spend sitting or otherwise inactive while awake?",
     "answer_type": "single_select",
     "answer_options": [
@@ -1000,6 +1063,7 @@
   {
     "id": "NUT009",
     "legacy_id": "NEW-02",
+    "page": "PAGE003",
     "question": "In a typical week, how often do you eat highly processed or ultra-processed foods such as packaged snacks, processed meats, ready meals, sweets, biscuits or similar convenience foods?",
     "answer_type": "single_select",
     "answer_options": [
@@ -1024,6 +1088,7 @@
   {
     "id": "NUT010",
     "legacy_id": "NEW-03",
+    "page": "PAGE003",
     "question": "On a typical day, how many portions of fruit and vegetables do you eat?",
     "answer_type": "single_select",
     "answer_options": [
@@ -1046,6 +1111,7 @@
   {
     "id": "SLP006",
     "legacy_id": "NEW-04",
+    "page": "PAGE003",
     "question": "How many hours of sleep do you usually get on a typical night?",
     "answer_type": "single_select",
     "answer_options": [
@@ -1070,6 +1136,7 @@
   {
     "id": "MND008",
     "legacy_id": "NEW-05",
+    "page": "PAGE003",
     "question": "How often do you feel you have enough meaningful social connection and support in your life?",
     "answer_type": "frequency_5",
     "answer_options": [

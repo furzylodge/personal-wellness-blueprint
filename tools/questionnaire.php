@@ -4,11 +4,7 @@ session_start();
 
 $root = dirname(__DIR__);
 
-require_once $root . '/engine/src/Loader/JsonLoader.php';
-require_once $root . '/engine/src/Assessment/Assessment.php';
-require_once $root . '/engine/src/Assessment/AssessmentLoader.php';
-require_once $root . '/engine/src/Assessment/QuizController.php';
-require_once $root . '/engine/src/Assessment/QuestionRenderer.php';
+require_once __DIR__ . '/../engine/bootstrap.php';
 
 use PWB\Loader\JsonLoader;
 use PWB\Assessment\AssessmentLoader;
@@ -44,18 +40,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $answers[$key] = $value;
     }
 
+// Page-specific fields
+if ($pageId === 'PAGE002') {
+
     // Unchecked checkboxes are not posted
-    if (!isset($_POST['PF018'])) {
-        $answers['PF018'] = null;
-    }
+    $answers['PF018'] = isset($_POST['PF018']) ? '1' : '0';
+    $answers['PF019'] = isset($_POST['PF019']) ? '1' : '0';
 
-    if (!isset($_POST['PF019'])) {
-        $answers['PF019'] = null;
-    }
-
-    if (!isset($_POST['PF014'])) {
-        $answers['PF014'] = [];
-    }
+    // Multi-select wellness goals
+    $answers['PF014'] = $_POST['PF014'] ?? [];
+}
 
     // Required fields from canonical JSON
     $profileFields = $loader->profileFields()['fields'] ?? [];
@@ -102,14 +96,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $_SESSION['answers'] = $answers;
 
     // Advance when valid
-    if (empty($errors) && $pageId === 'PAGE002') {
-        header('Location: ?page=PAGE003');
+if (empty($errors)) {
+
+    $_SESSION['answers'] = $answers;
+    
+    $nextPage = $quiz->nextPageId($pageId);
+
+    if ($nextPage) {
+        header("Location: ?page={$nextPage}");
         exit;
     }
 }
 
-$page = $quiz->pageComponents($pageId);
+}
 
+$page = $quiz->pageComponents($pageId, $answers);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -164,9 +165,27 @@ $page = $quiz->pageComponents($pageId);
 
 <?php else: ?>
 
-    <h1>PAGE003</h1>
+    <form method="post" novalidate>
 
-    <p>Next milestone.</p>
+        <?= $renderer->render($page, $answers, $errors); ?>
+
+        <div style="display:flex;justify-content:space-between;margin-top:30px;">
+
+            <?php if ($previous = $quiz->previousPageId($pageId)): ?>
+                <a class="next" href="?page=<?= $previous ?>" style="background:#666;">
+                    Previous
+                </a>
+            <?php else: ?>
+                <div></div>
+            <?php endif; ?>
+
+            <button class="next" type="submit">
+                Continue
+            </button>
+
+        </div>
+
+    </form>
 
 <?php endif; ?>
 

@@ -17,19 +17,19 @@
       "id": "PAGE003",
       "type": "questions",
       "title": "Your Wellbeing",
-      "section": "wellbeing"
+      "source": "questions.json"
     },
     {
       "id": "PAGE004",
       "type": "questions",
       "title": "Your Lifestyle",
-      "section": "lifestyle"
+      "source": "lifestyle"
     },
     {
       "id": "PAGE005",
       "type": "questions",
       "title": "Your Body",
-      "section": "body"
+      "source": "body"
     },
     {
       "id": "PAGE006",

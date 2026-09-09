@@ -42,9 +42,11 @@ class QuestionRenderer
                     $errors[$component['field']['id']] ?? null
                 ),
 
-            'question' =>
-                $this->renderQuestion($component['question']),
-
+		'question' =>
+		    $this->renderQuestion(
+		        $component['question'],
+		        $answers[$component['question']['id']] ?? null
+    		),
             default => ''
         };
     }
@@ -136,7 +138,7 @@ class QuestionRenderer
 
             case 'checkbox':
 
-                $checked = !empty($value) ? 'checked' : '';
+                $checked = ((string)$value === '1') ? 'checked' : '';
 
                 $html .= "
                 <label class='checkbox'>
@@ -161,10 +163,155 @@ class QuestionRenderer
         return $html;
     }
 
-    private function renderQuestion(?array $question): string
-    {
+/**
+ * Render an assessment question.
+ */
+private function renderQuestion(?array $question, mixed $answer = null): string
+{
+    if (!$question) {
         return '';
     }
+
+    $id    = $question['id'];
+    $title = $this->e($question['question']);
+
+    $html = "<div class='question'>";
+    
+    $visibleIf = $question['visible_if'] ?? null;
+
+if ($visibleIf) {
+
+$depends  = $visibleIf['question'];
+$operator = $visibleIf['operator'] ?? 'equals';
+$value    = htmlspecialchars((string)$visibleIf['value'], ENT_QUOTES);
+
+$html .= "
+    <div class='conditional'
+         data-question='{$depends}'
+         data-operator='{$operator}'
+         data-value='{$value}'>";
+}
+
+    $html .= "<h3>{$title}</h3>";
+
+    $labels = $question['answer_options'] ?? [];
+    $values = $question['stored_values'] ?? [];
+
+switch ($question['answer_type']) {
+
+    case 'radio':
+    case 'single_select':
+
+        foreach ($labels as $index => $label) {
+
+            $value = (string)($values[$index] ?? $label);
+            $checked = ((string)$answer === $value) ? 'checked' : '';
+
+            $html .= "
+                <label class='radio'>
+                    <input
+                        type='radio'
+                        name='{$id}'
+                        value='{$this->e($value)}'
+                        {$checked}>
+                    {$this->e($label)}
+                </label>";
+        }
+
+        break;
+
+    case 'multi_select':
+
+        $selected = is_array($answer)
+            ? array_map('strval', $answer)
+            : [];
+
+        foreach ($labels as $index => $label) {
+
+            $value = (string)($values[$index] ?? $label);
+            $checked = in_array($value, $selected, true)
+                ? 'checked'
+                : '';
+
+            $html .= "
+                <label class='checkbox'>
+                    <input
+                        type='checkbox'
+                        name='{$id}[]'
+                        value='{$this->e($value)}'
+                        {$checked}>
+                    {$this->e($label)}
+                </label>";
+        }
+
+        break;
+        
+case 'frequency_3':
+case 'frequency_4':
+case 'frequency_5':
+case 'quality_5':
+
+    // Find selected position from stored value
+    $selectedIndex = 0;
+
+    foreach ($values as $i => $stored) {
+        if ((string)$stored === (string)$answer) {
+            $selectedIndex = $i;
+            break;
+        }
+    }
+
+    $jsonValues = htmlspecialchars(
+        json_encode($values),
+        ENT_QUOTES,
+        'UTF-8'
+    );
+    
+    $jsonLabels = htmlspecialchars(
+    json_encode($labels),
+    ENT_QUOTES,
+    'UTF-8'
+	);
+
+    $html .= "
+        <div class='slider-question' data-values='{$jsonValues}' data-option-labels='{$jsonLabels}'>
+            <div class='slider-current'>
+                {$this->e($labels[$selectedIndex])}
+            </div>
+
+            <input
+                class='likert-slider'
+                type='range'
+                min='0'
+                max='" . (count($labels) - 1) . "'
+                step='1'
+                value='{$selectedIndex}'>
+
+            <input
+                type='hidden'
+                name='{$id}'
+                value='{$values[$selectedIndex]}'>
+
+            <div class='slider-ends'>
+                <span>{$this->e($labels[0])}</span>
+                <span>{$this->e(end($labels))}</span>
+            </div>
+        </div>";
+
+        break;
+}
+
+    $html .= "</div>";
+
+if ($visibleIf) {
+    $html .= "</div>";
+}
+
+    return $html;
+}
+
+
+
 
     private function e(string $text): string
     {
