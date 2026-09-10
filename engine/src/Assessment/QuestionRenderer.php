@@ -4,26 +4,131 @@ namespace PWB\Assessment;
 
 class QuestionRenderer
 {
-    public function render(array $page, array $answers = [], array $errors = []): string
-    {
-        $html = "<section class='pwb-page' id='{$page['id']}'>";
 
-        if (!empty($page['title'])) {
-            $html .= "<h1>" . $this->e($page['title']) . "</h1>";
-        }
+public function render(array $page, array $answers = [], array $errors = []): string
+{
+    $pageId   = $this->e($page['id'] ?? '');
+    $title    = $this->e($page['title'] ?? '');
+    $subtitle = $this->e($page['subtitle'] ?? '');
+    $icon     = $this->e($page['icon'] ?? 'circle');
+    $minutes  = $page['estimated_minutes'] ?? '';
+    $section = $page['section'] ?? '';
+    $total   = $page['total_sections'] ?? 7;
 
-        if (!empty($page['subtitle'])) {
-            $html .= "<p class='subtitle'>" . $this->e($page['subtitle']) . "</p>";
-        }
+    $html = "<section class='pwb-page' id='{$pageId}'>";
 
-        foreach ($page['components'] ?? [] as $component) {
-            $html .= $this->renderComponent($component, $answers, $errors);
-        }
+    switch ($page['type'] ?? '') {
 
-        $html .= "</section>";
+case 'profile':
 
-        return $html;
+    $html .= "<div class='section-header'>";
+    $html .= $this->renderProgressBar(
+        (int)($page['section'] ?? 1),
+        (int)($page['total_sections'] ?? 7)
+    );
+
+    $html .= "
+        <div class='section-meta'>
+
+            <div class='section-meta-left'>
+                <span class='section-badge'>Section {$section} of {$total}</span>
+                <span class='section-time'>{$minutes} min</span>
+            </div>
+
+            <div class='theme-picker'>
+                <span class='theme-label'>Theme</span>
+
+                <div class='theme-options'>
+<button class='theme-dot green' data-theme='green' type='button'></button>
+<button class='theme-dot ocean' data-theme='ocean' type='button'></button>
+<button class='theme-dot lavender' data-theme='lavender' type='button'></button>
+<button class='theme-dot amber' data-theme='amber' type='button'></button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class='section-intro'>
+
+            <div class='section-icon'>
+                <div class='section-icon-inner icon-{$icon}'></div>
+            </div>
+
+            <div class='section-text'>
+                <h1>{$title}</h1>
+                <p class='section-subtitle'>{$subtitle}</p>
+            </div>
+
+        </div>
+
+    </div>";
+    break;
+
+case 'questions':
+
+    $html .= "<div class='section-header'>";
+    $html .= $this->renderProgressBar(
+        (int)($page['section'] ?? 1),
+        (int)($page['total_sections'] ?? 7)
+    );
+
+    $html .= "
+        <div class='section-meta'>
+            <span class='section-badge'>Section {$section} of {$total}</span>
+            <span class='section-time'>{$minutes} min</span>
+        </div>
+
+        <div class='section-intro'>
+
+            <div class='section-icon'>
+                <div class='section-icon-inner icon-{$icon}'></div>
+            </div>
+
+            <div class='section-text'>
+                <h1>{$title}</h1>
+                <p class='section-subtitle'>{$subtitle}</p>
+            </div>
+
+        </div>
+
+    </div>";
+    break;
+case 'welcome':
+
+    $html .= "
+    <div class='welcome-card'>
+    ";
+
+    if ($title !== '') {
+        $html .= "<h1>{$title}</h1>";
     }
+
+    if ($subtitle !== '') {
+        $html .= "<p class='subtitle'>{$subtitle}</p>";
+    }
+    $html .= "</div>";
+
+    break;
+        case 'finish':
+
+            if ($title !== '') {
+                $html .= "<h1>{$title}</h1>";
+            }
+
+            if ($subtitle !== '') {
+                $html .= "<p class='subtitle'>{$subtitle}</p>";
+            }
+            break;
+    }
+
+    foreach ($page['components'] ?? [] as $component) {
+        $html .= $this->renderComponent($component, $answers, $errors);
+    }
+
+    $html .= "</section>";
+
+    return $html;
+}
 
     private function renderComponent(array $component, array $answers, array $errors): string
     {
@@ -175,24 +280,30 @@ private function renderQuestion(?array $question, mixed $answer = null): string
     $id    = $question['id'];
     $title = $this->e($question['question']);
 
-    $html = "<div class='question'>";
-    
-    $visibleIf = $question['visible_if'] ?? null;
+$visibleIf = $question['visible_if'] ?? null;
+
+$html = '';
 
 if ($visibleIf) {
 
-$depends  = $visibleIf['question'];
-$operator = $visibleIf['operator'] ?? 'equals';
-$value    = htmlspecialchars((string)$visibleIf['value'], ENT_QUOTES);
+    $depends  = $visibleIf['question'];
+    $operator = $visibleIf['operator'] ?? 'equals';
+    $value    = htmlspecialchars((string)$visibleIf['value'], ENT_QUOTES);
 
-$html .= "
-    <div class='conditional'
-         data-question='{$depends}'
-         data-operator='{$operator}'
-         data-value='{$value}'>";
+    $html .= "
+        <div class='conditional'
+             data-question='{$depends}'
+             data-operator='{$operator}'
+             data-value='{$value}'>";
 }
 
-    $html .= "<h3>{$title}</h3>";
+$exclusive = !empty($question['exclusive_none'])
+    ? " data-exclusive-none='true'"
+    : '';
+
+$html .= "<div class='question'{$exclusive}>";
+
+$html .= "<h3>{$title}</h3>";
 
     $labels = $question['answer_options'] ?? [];
     $values = $question['stored_values'] ?? [];
@@ -229,6 +340,7 @@ switch ($question['answer_type']) {
         foreach ($labels as $index => $label) {
 
             $value = (string)($values[$index] ?? $label);
+            $isNone = ($value === "0") ? " data-none-option='true'" : '';
             $checked = in_array($value, $selected, true)
                 ? 'checked'
                 : '';
@@ -239,7 +351,8 @@ switch ($question['answer_type']) {
                         type='checkbox'
                         name='{$id}[]'
                         value='{$this->e($value)}'
-                        {$checked}>
+                        {$checked}
+                        {$isNone}>
                     {$this->e($label)}
                 </label>";
         }
@@ -301,10 +414,38 @@ case 'quality_5':
         break;
 }
 
-    $html .= "</div>";
+if (!empty($question['follow_up'])) {
+
+    $fu = $question['follow_up'];
+
+    $operator = $fu['show_if']['operator'];
+    $value    = htmlspecialchars((string)$fu['show_if']['value'], ENT_QUOTES);
+
+    $required = !empty($fu['required']) ? 'required' : '';
+
+    $html .= "
+        <div class='follow-up'
+             data-parent='{$id}'
+             data-operator='{$operator}'
+             data-value='{$value}'>
+
+            <label for='{$fu['id']}'>{$fu['label']}</label>
+
+            <textarea
+                id='{$fu['id']}'
+                name='{$fu['id']}'
+                rows='3'
+                {$required}>"
+                . htmlspecialchars((string)($answer[$fu['id']] ?? ''), ENT_QUOTES)
+            . "</textarea>
+
+        </div>";
+}
+
+$html .= "</div>"; // closes .question
 
 if ($visibleIf) {
-    $html .= "</div>";
+    $html .= "</div>"; // closes .conditional
 }
 
     return $html;
@@ -317,4 +458,21 @@ if ($visibleIf) {
     {
         return htmlspecialchars($text, ENT_QUOTES, 'UTF-8');
     }
+    
+    private function renderProgressBar(int $current, int $total): string
+{
+    $html = "<div class='progress-bar'>";
+
+    for ($i = 1; $i <= $total; $i++) {
+
+        $class = $i === $current ? "active" : "inactive";
+
+        $html .= "<span class='progress-segment {$class}'></span>";
+    }
+
+    $html .= "</div>";
+
+    return $html;
+}
+
 }

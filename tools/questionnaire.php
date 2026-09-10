@@ -2,6 +2,32 @@
 
 session_start();
 
+
+if (
+    $_SERVER['REQUEST_METHOD'] === 'POST' &&
+    ($_POST['action'] ?? '') === 'set_theme'
+) {
+    $allowed = ['green', 'ocean', 'lavender', 'amber'];
+
+    if (in_array($_POST['theme'] ?? '', $allowed, true)) {
+        $_SESSION['theme'] = $_POST['theme'];
+    }
+    
+    header('Content-Type: application/json');
+    echo json_encode(['success' => true]);
+
+    exit;
+}
+
+if (isset($_GET['theme'])) {
+
+    $allowed = ['green', 'ocean', 'lavender', 'amber'];
+
+    if (in_array($_GET['theme'], $allowed, true)) {
+        $_SESSION['theme'] = $_GET['theme'];
+    }
+}
+
 $root = dirname(__DIR__);
 
 require_once __DIR__ . '/../engine/bootstrap.php';
@@ -21,7 +47,7 @@ $loader->load();
 $quiz = new QuizController($loader);
 $renderer = new QuestionRenderer();
 
-$pageId = $_GET['page'] ?? 'PAGE001';
+$pageId = $_GET['page'] ?? 'WELCOME';
 
 if (!isset($_SESSION['answers'])) {
     $_SESSION['answers'] = [];
@@ -29,6 +55,7 @@ if (!isset($_SESSION['answers'])) {
 
 $answers = $_SESSION['answers'];
 $errors = [];
+$page = $quiz->pageComponents($pageId, $answers);
 
 /* ----------------------------------------------------------
    Handle form submission
@@ -40,8 +67,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $answers[$key] = $value;
     }
 
-// Page-specific fields
-if ($pageId === 'PAGE002') {
+// Profile page fields
+if (($page['type'] ?? '') === 'profile') {
 
     // Unchecked checkboxes are not posted
     $answers['PF018'] = isset($_POST['PF018']) ? '1' : '0';
@@ -110,7 +137,7 @@ if (empty($errors)) {
 
 }
 
-$page = $quiz->pageComponents($pageId, $answers);
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -126,68 +153,122 @@ $page = $quiz->pageComponents($pageId, $answers);
 
 </head>
 
-<body>
+<body class="theme-<?= htmlspecialchars($_SESSION['theme'] ?? 'green') ?>">
 
 <div class="container">
 
-<?php if ($pageId === 'PAGE001'): ?>
+<?php switch ($page['type'] ?? 'questions'):
+    case 'welcome':
+?>
+
+<div class="welcome-card">
+
+    <div class="welcome-icon">
+<div class="welcome-icon-inner"></div>
+    </div>
 
     <?= $renderer->render($page); ?>
 
-    <a class="next" href="?page=PAGE002">Begin Assessment</a>
+<?php if (!empty($page['stats'])): ?>
 
-<?php elseif ($pageId === 'PAGE002'): ?>
+<div class="welcome-stats">
 
-    <form method="post" novalidate>
+    <?php foreach ($page['stats'] as $stat): ?>
 
-        <?= $renderer->render($page, $answers, $errors); ?>
-
-        <?php if (!empty($errors)): ?>
-
-            <div class="error">
-                <strong>Please correct the highlighted fields.</strong>
-            </div>
-
-            <?php foreach ($errors as $error): ?>
-
-                <div class="error">
-                    <strong><?= htmlspecialchars($error['label']) ?>:</strong>
-                    <?= htmlspecialchars($error['message']) ?>
-                </div>
-
-            <?php endforeach; ?>
-
-        <?php endif; ?>
-
-        <button class="next" type="submit">Continue</button>
-
-    </form>
-
-<?php else: ?>
-
-    <form method="post" novalidate>
-
-        <?= $renderer->render($page, $answers, $errors); ?>
-
-        <div style="display:flex;justify-content:space-between;margin-top:30px;">
-
-            <?php if ($previous = $quiz->previousPageId($pageId)): ?>
-                <a class="next" href="?page=<?= $previous ?>" style="background:#666;">
-                    Previous
-                </a>
-            <?php else: ?>
-                <div></div>
-            <?php endif; ?>
-
-            <button class="next" type="submit">
-                Continue
-            </button>
-
+        <div class="stat">
+            <strong><?= htmlspecialchars($stat['value']) ?></strong>
+            <span><?= htmlspecialchars($stat['label']) ?></span>
         </div>
 
-    </form>
+    <?php endforeach; ?>
+
+</div>
 
 <?php endif; ?>
+
+    <a class="next" href="?page=<?= $quiz->nextPageId($pageId) ?>">
+        Begin Assessment
+    </a>
+    
+                <p class="welcome-note">
+    Your progress is saved automatically as you complete the assessment.
+</p>
+
+
+</div>
+
+<?php break; ?>
+<?php
+    case 'profile':
+?>
+
+        <form method="post" novalidate>
+
+            <?= $renderer->render($page, $answers, $errors); ?>
+
+            <?php if (!empty($errors)): ?>
+
+                <div class="error">
+                    <strong>Please correct the highlighted fields.</strong>
+                </div>
+
+                <?php foreach ($errors as $error): ?>
+
+                    <div class="error">
+                        <strong><?= htmlspecialchars($error['label']) ?>:</strong>
+                        <?= htmlspecialchars($error['message']) ?>
+                    </div>
+
+                <?php endforeach; ?>
+
+            <?php endif; ?>
+
+            <button class="next" type="submit">Continue</button>
+            
+
+        </form>
+
+        <?php break; ?>
+
+
+<?php
+    case 'questions':
+?>
+
+        <form method="post" novalidate>
+
+            <?= $renderer->render($page, $answers, $errors); ?>
+
+            <div class="nav-buttons">
+
+                <?php if ($previous = $quiz->previousPageId($pageId)): ?>
+                    <a class="next previous" href="?page=<?= $previous ?>">
+                        Previous
+                    </a>
+                <?php else: ?>
+                    <div></div>
+                <?php endif; ?>
+
+                <button class="next" type="submit">
+                    Continue
+                </button>
+
+            </div>
+
+        </form>
+
+        <?php break; ?>
+
+
+<?php
+    case 'finish':
+?>
+
+        <?= $renderer->render($page, $answers); ?>
+
+        <?php break; ?>
+
+<?php endswitch; ?>
 
 </div>
 

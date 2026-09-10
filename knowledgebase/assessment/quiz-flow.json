@@ -1,40 +1,137 @@
 {
-  "version": "1.0",
+  "version": "2.0",
   "status": "ACTIVE",
   "pages": [
+{
+  "id": "WELCOME",
+  "type": "welcome",
+  "title": "Personal Wellness Blueprint",
+  "subtitle": "A personalised wellness assessment that adapts to your answers and generates your evidence-based blueprint.",
+  "estimated_minutes": 15,
+  "icon": "leaf",
+  "stats": [
     {
-      "id": "PAGE001",
-      "type": "welcome",
-      "title": "Welcome"
+      "value": "58",
+      "label": "Questions"
     },
     {
-      "id": "PAGE002",
+      "value": "8",
+      "label": "Sections"
+    },
+    {
+      "value": "15 min",
+      "label": "Assessment"
+    }
+  ]
+},
+    {
+      "id": "PROFILE",
       "type": "profile",
       "title": "About You",
-      "source": "profile-fields.json"
+      "subtitle": "Tell us a little about yourself before we begin your Personal Wellness Blueprint.",
+      "progress_label": "Profile",
+      "icon": "user",
+      "hero_image": "profile",
+      "estimated_minutes": 2,
+      "source": "profile-fields.json",
+      "section": 1,
+"total_sections": 8
     },
     {
-      "id": "PAGE003",
+      "id": "ENERGY",
       "type": "questions",
-      "title": "Your Wellbeing",
-      "source": "questions.json"
+      "title": "Energy & Foundations",
+      "subtitle": "Understanding your body's vitality, resilience and overall wellbeing.",
+      "progress_label": "Energy",
+      "icon": "zap",
+      "hero_image": "energy",
+      "estimated_minutes": 2,
+      "source": "questions.json",
+      "section": 2,
+"total_sections": 8
     },
     {
-      "id": "PAGE004",
+      "id": "NUTRITION",
       "type": "questions",
-      "title": "Your Lifestyle",
-      "source": "lifestyle"
+      "title": "Nutrition & Digestion",
+      "subtitle": "Exploring how your diet and digestive health support your body.",
+      "progress_label": "Nutrition",
+      "icon": "apple",
+      "hero_image": "nutrition",
+      "estimated_minutes": 2,
+      "source": "questions.json",
+      "section": 3,
+"total_sections": 8
     },
     {
-      "id": "PAGE005",
+      "id": "MIND",
       "type": "questions",
-      "title": "Your Body",
-      "source": "body"
+      "title": "Mind & Resilience",
+      "subtitle": "Understanding how you think, feel and respond to everyday pressures.",
+      "progress_label": "Mind",
+      "icon": "brain",
+      "hero_image": "mind",
+      "estimated_minutes": 2,
+      "source": "questions.json",
+      "section": 4,
+"total_sections": 8
     },
     {
-      "id": "PAGE006",
+      "id": "BODY",
+      "type": "questions",
+      "title": "Body & Physical Health",
+      "subtitle": "Looking at your skin, joints, muscles and overall physical function.",
+      "progress_label": "Body",
+      "icon": "activity",
+      "hero_image": "body",
+      "estimated_minutes": 2,
+      "source": "questions.json",
+      "section": 5,
+"total_sections": 8
+    },
+    {
+      "id": "SLEEP",
+      "type": "questions",
+      "title": "Sleep & Recovery",
+      "subtitle": "How well your body rests, recovers and restores itself.",
+      "progress_label": "Sleep",
+      "icon": "moon",
+      "hero_image": "sleep",
+      "estimated_minutes": 2,
+      "source": "questions.json",
+      "section": 6,
+"total_sections": 8
+    },
+    {
+      "id": "LIFESTYLE",
+      "type": "questions",
+      "title": "Lifestyle & Environment",
+      "subtitle": "Your daily habits and the environment in which you live and work.",
+      "progress_label": "Lifestyle",
+      "icon": "leaf",
+      "hero_image": "lifestyle",
+      "estimated_minutes": 2,
+      "source": "questions.json",
+      "section": 7,
+"total_sections": 8
+    },
+    {
+      "id": "MEDICAL",
+      "type": "questions",
+      "title": "Medical Context",
+      "subtitle": "Important personal health information that helps personalise your blueprint.",
+      "progress_label": "Medical",
+      "icon": "clipboard-list",
+      "hero_image": "medical",
+      "estimated_minutes": 2,
+      "source": "questions.json",
+      "section": 8,
+"total_sections": 8
+    },
+    {
+      "id": "COMPLETE",
       "type": "finish",
-      "title": "Complete"
+      "title": "Your Blueprint is Ready"
     }
   ]
 }
