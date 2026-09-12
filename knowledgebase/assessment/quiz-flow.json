@@ -128,10 +128,16 @@
       "section": 8,
 "total_sections": 8
     },
-    {
-      "id": "COMPLETE",
-      "type": "finish",
-      "title": "Your Blueprint is Ready"
-    }
+{
+  "id": "FINISH",
+  "type": "finish",
+  "title": "Review Your Assessment",
+  "subtitle": "Check your answers before generating your Personal Wellness Blueprint.",
+  "section": 8,
+  "total_sections": 8,
+  "components": [
+    { "type": "review" }
+  ]
+}
   ]
 }

@@ -46,60 +46,56 @@ document.addEventListener('DOMContentLoaded', () => {
             hidden.value = values[index];
             current.textContent = labels[index];
         });
+        slider.addEventListener("input", () => {
+    current.textContent = labels[slider.value];
+    hidden.value = values[slider.value];
+    slider.classList.remove("is-unset");
+});
     });
 
 
     /* ---------------------------------------
        Conditional questions
     ---------------------------------------- */
+function updateConditionalQuestions() {
 
-    function updateConditionalQuestions() {
+    document.querySelectorAll('.conditional').forEach(section => {
 
-        document.querySelectorAll('.conditional').forEach(section => {
+        const parentId = section.dataset.question;
+        const operator = section.dataset.operator;
+        const expected = section.dataset.value;
 
-            const parentId = section.dataset.question;
-            const operator = section.dataset.operator;
-            const expected = section.dataset.value;
+        let visible = false;
 
-            let visible = false;
+        if (operator === 'equals') {
 
-            if (operator === 'equals') {
+            const selected = document.querySelector(
+                `input[name="${parentId}"]:checked`
+            );
 
-                const selected = document.querySelector(
-                    `input[name="${parentId}"]:checked`
-                );
+            visible = selected && selected.value === expected;
 
-                visible = selected && selected.value === expected;
+        } else {
 
-            } else if (operator === 'contains') {
+            const checked = document.querySelectorAll(
+                `input[name="${parentId}[]"]:checked`
+            );
 
-                const checked = document.querySelectorAll(
-                    `input[name="${parentId}[]"]:checked`
-                );
+            const values = Array.from(checked).map(input => input.value);
 
-                visible = Array.from(checked).some(
-                    input => input.value === expected
-                );
+            if (operator === 'contains') {
+                visible = values.includes(expected);
             }
 
-            section.classList.toggle('visible', visible);
-        });
-    }
-
-    document.addEventListener('change', event => {
-
-        if (
-            event.target.matches('input[type=radio]') ||
-            event.target.matches('input[type=checkbox]')
-        ) {
-            updateConditionalQuestions();
-            updateFollowUps();
+            if (operator === 'not_contains') {
+                visible = values.length > 0 && !values.includes(expected);
+            }
         }
-    });
 
-    updateConditionalQuestions();
-    updateFollowUps();
-});
+        section.classList.toggle('visible', visible);
+    });
+}
+
 
 function updateFollowUps() {
 
@@ -122,6 +118,7 @@ function updateFollowUps() {
 
         section.classList.toggle('visible', visible);
     });
+}
 
 /* ---------------------------------------
    Exclusive "None of these" groups
@@ -152,12 +149,13 @@ function updateExclusiveGroup(question) {
         );
 
         if (anyPositive) {
-            noneBox.disabled = true;
-        }
+    noneBox.checked = false;
+    noneBox.disabled = true;
+}
     }
 }
 
-document.querySelectorAll('.question[data-exclusive-none]')
+document.querySelectorAll('[data-exclusive-none]')
     .forEach(question => {
 
         question.querySelectorAll('input[type=checkbox]')
@@ -171,13 +169,11 @@ document.querySelectorAll('.question[data-exclusive-none]')
             });
 
         updateExclusiveGroup(question);
-    });  
+    });
 
-}
+updateConditionalQuestions();
+updateFollowUps();
 
-// =====================================================
-// Theme picker
-// =====================================================
 
 // =====================================================
 // Theme picker
@@ -206,5 +202,50 @@ document.querySelectorAll('.theme-dot').forEach(dot => {
         document.body.classList.add(`theme-${theme}`);
 
     });
+
+});
+
+function handleExclusiveNone(changed) {
+
+    const group = document.querySelectorAll(
+        `input[name="${changed.name}"]`
+    );
+
+    if (changed.dataset.none === "1" && changed.checked) {
+        group.forEach(cb => {
+            if (cb !== changed) cb.checked = false;
+        });
+        return;
+    }
+
+    if (changed.dataset.none !== "1" && changed.checked) {
+        group.forEach(cb => {
+            if (cb.dataset.none === "1") cb.checked = false;
+        });
+    }
+}
+
+
+// ==========================================
+// Review accordion
+// ==========================================
+
+document.querySelectorAll('.review-summary').forEach(button => {
+
+    button.addEventListener('click', () => {
+
+        const section = button.parentElement;
+
+        document.querySelectorAll('.review-section').forEach(card => {
+            if (card !== section) {
+                card.classList.remove('open');
+            }
+        });
+
+        section.classList.toggle('open');
+
+    });
+
+});
 
 });

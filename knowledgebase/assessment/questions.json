@@ -4,6 +4,7 @@
     "legacy_id": "Q01",
     "page": "ENERGY",
     "question": "Would you like to have more energy during the day?",
+    "required": true,
     "answer_type": "single_select",
     "answer_options": [
       "Yes",
@@ -20,6 +21,7 @@
     "page": "ENERGY",
     "question": "How often do you find yourself becoming unwell?",
     "answer_type": "frequency_4",
+    "required": true,
     "answer_options": [
       "Rarely",
       "Occasionally",
@@ -39,6 +41,7 @@
     "page": "ENERGY",
     "question": "How often do you feel that you are unusually susceptible to infections or take longer than expected to recover from them?",
     "answer_type": "frequency_5",
+    "required": true,
     "answer_options": [
       "Rarely catch things",
       "Occasionally",
@@ -60,6 +63,7 @@
     "page": "ENERGY",
     "question": "When you do become unwell, how quickly do you usually recover?",
     "answer_type": "frequency_4",
+    "required": true,
     "answer_options": [
       "Very quickly",
       "Somewhat quickly",
@@ -79,6 +83,7 @@
     "page": "ENERGY",
     "question": "Have you experienced an unexplained loss of appetite recently?",
     "answer_type": "radio",
+    "required": true,
     "answer_options": [
       "Yes",
       "No"
@@ -94,6 +99,7 @@
     "page": "ENERGY",
     "question": "How would you describe your physical stamina in everyday activities?",
     "answer_type": "frequency_3",
+    "required": true,
     "answer_options": [
       "Strong",
       "Normal",
@@ -111,6 +117,7 @@
     "page": "ENERGY",
     "question": "How much does the breathlessness limit your daily activities?",
     "answer_type": "frequency_5",
+    "required": true,
     "answer_options": [
       "Never",
       "Occasionally",
@@ -132,6 +139,7 @@
     "page": "ENERGY",
     "question": "How much moderate or vigorous physical activity do you typically do each week?",
     "answer_type": "frequency_5",
+    "required": true,
     "answer_options": [
       "Less than 30 minutes",
       "30 to 59 minutes",
@@ -155,6 +163,7 @@
     "page": "NUTRITION",
     "question": "Which of the following have you noticed recently or repeatedly? Select any that apply.",
     "answer_type": "multi_select",
+    "required": true,
     "exclusive_none": true,
     "answer_options": [
       "Bad breath",
@@ -173,6 +182,7 @@
     "page": "NUTRITION",
     "question": "How often do you have difficulty digesting certain foods?",
     "answer_type": "frequency_5",
+    "required": true,
     "answer_options": [
       "Never",
       "Occasionally",
@@ -194,6 +204,7 @@
     "page": "NUTRITION",
     "question": "How often do you experience discomfort, bloating, reflux or other symptoms after eating?",
     "answer_type": "frequency_5",
+    "required": true,
     "answer_options": [
       "Never",
       "Occasionally",
@@ -215,6 +226,7 @@
     "page": "NUTRITION",
     "question": "How often do you experience constipation, diarrhoea or other noticeable changes in bowel regularity?",
     "answer_type": "frequency_3",
+    "required": true,
     "answer_options": [
       "Rarely",
       "Occasionally",
@@ -232,6 +244,7 @@
     "page": "NUTRITION",
     "question": "How often do you eat red meat, such as beef, lamb or pork?",
     "answer_type": "frequency_5",
+    "required": true,
     "answer_options": [
       "Never",
       "Less than once a week",
@@ -253,6 +266,7 @@
     "page": "NUTRITION",
     "question": "How often do you find yourself craving sweet or highly processed foods?",
     "answer_type": "frequency_5",
+    "required": true,
     "answer_options": [
       "Never",
       "Occasionally",
@@ -274,6 +288,7 @@
     "page": "NUTRITION",
     "question": "Which of the following best describes your relationship with dairy products?",
     "answer_type": "frequency_5",
+    "required": true,
     "answer_options": [
       "I regularly consume",
       "I occasionally consume",
@@ -295,6 +310,7 @@
     "page": "NUTRITION",
     "question": "How often do you eat foods that are high in saturated fat?",
     "answer_type": "frequency_5",
+    "required": true,
     "answer_options": [
       "Never",
       "Occasionally",
@@ -316,6 +332,7 @@
     "page": "NUTRITION",
     "question": "Which best describes your usual eating pattern?",
     "answer_type": "frequency_4",
+    "required": true,
     "answer_options": [
       "Mostly whole/minimally processed",
       "Mixed",
@@ -335,6 +352,7 @@
     "page": "NUTRITION",
     "question": "How often do you eat foods that are naturally high in fibre, such as vegetables, fruit, beans, lentils, wholegrains, nuts or seeds?",
     "answer_type": "frequency_3",
+    "required": true,
     "answer_options": [
       "Rarely",
       "Occasionally",
@@ -352,6 +370,7 @@
     "page": "MIND",
     "question": "How often do you experience noticeable changes in your mood or emotional state?",
     "answer_type": "frequency_5",
+    "required": true,
     "answer_options": [
       "Never",
       "Rarely",
@@ -373,6 +392,7 @@
     "page": "MIND",
     "question": "How often do you feel stressed or under pressure?",
     "answer_type": "frequency_5",
+    "required": true,
     "answer_options": [
       "Never",
       "Occasionally",
@@ -394,6 +414,7 @@
     "page": "MIND",
     "question": "How often do you feel unusually low, flat or lacking motivation?",
     "answer_type": "frequency_5",
+    "required": true,
     "answer_options": [
       "Never",
       "Occasionally",
@@ -415,6 +436,7 @@
     "page": "MIND",
     "question": "How often do you find it difficult to switch off or relax, even when you have the opportunity to do so?",
     "answer_type": "frequency_3",
+    "required": true,
     "answer_options": [
       "Rarely",
       "Occasionally",
@@ -432,6 +454,7 @@
     "page": "MIND",
     "question": "How often do you feel irritable, impatient or easily frustrated?",
     "answer_type": "frequency_5",
+    "required": true,
     "answer_options": [
       "Never",
       "Less than once a week",
@@ -453,6 +476,7 @@
     "page": "MIND",
     "question": "How often do you find yourself worrying more than you would like?",
     "answer_type": "frequency_5",
+    "required": true,
     "answer_options": [
       "Never",
       "Occasionally",
@@ -474,6 +498,7 @@
     "page": "MIND",
     "question": "How well do you usually cope when things don't go as planned?",
     "answer_type": "quality_5",
+    "required": true,
     "answer_options": [
       "Very well",
       "Well",
@@ -495,6 +520,7 @@
     "page": "MIND",
     "question": "How often do you have difficulty concentrating or remembering things?",
     "answer_type": "frequency_5",
+    "required": true,
     "answer_options": [
       "Never",
       "Occasionally",
@@ -516,6 +542,7 @@
     "page": "BODY",
     "question": "Do you currently have, or have you previously been diagnosed with, any of the following skin conditions? Select any that apply.",
     "answer_type": "multi_select",
+    "required": true,
     "exclusive_none": true,
     "answer_options": [
       "Eczema / atopic dermatitis",
@@ -524,14 +551,20 @@
       "Another diagnosed skin condition",
       "None of these"
     ],
-    "stored_values": [
-      1,
-      1,
-      1,
-      1,
-      0
-    ]
-  },
+"stored_values": [
+  "eczema",
+  "psoriasis",
+  "rosacea",
+  "other_skin",
+  "none"
+],
+"score_values": [
+  1,
+  1,
+  1,
+  1,
+  0
+]  },
   {
     "id": "PHY002",
     "legacy_id": "Q16b",
@@ -541,8 +574,8 @@
     "required": true,
     "visible_if": {
       "question": "PHY001",
-      "operator": "contains",
-      "value": 1
+  "operator": "not_contains",
+  "value": "none"
     },
     "answer_options": [
       "Not at all",
@@ -565,6 +598,7 @@
     "page": "BODY",
     "question": "Have you noticed increased hair shedding or thinning compared with your usual pattern?",
     "answer_type": "radio",
+    "required": true,
     "answer_options": [
       "Yes",
       "No"
@@ -580,6 +614,7 @@
     "page": "BODY",
     "question": "How often do you experience muscle aches, stiffness, weakness or discomfort that affects your normal activities?",
     "answer_type": "frequency_5",
+    "required": true,
     "answer_options": [
       "Never",
       "Less than once a week",
@@ -601,6 +636,7 @@
     "page": "BODY",
     "question": "How often do you experience joint pain, stiffness, reduced mobility or weakness that affects your normal activities?",
     "answer_type": "frequency_5",
+    "required": true,
     "answer_options": [
       "Never",
       "Less than once a week",
@@ -622,6 +658,7 @@
     "page": "BODY",
     "question": "How often do you do activities that strengthen your muscles?",
     "answer_type": "frequency_5",
+    "required": true,
     "answer_options": [
       "Never",
       "Less than once a week",
@@ -640,9 +677,10 @@
   {
     "id": "EXP004",
     "legacy_id": "Q45",
-    "page": "BODY",
+    "page": "LIFESTYLE",
     "question": "How often do you experience persistent or recurring congestion, excess mucus, wheezing or similar breathing symptoms?",
     "answer_type": "frequency_4",
+    "required": true,
     "answer_options": [
       "Rarely",
       "Occasionally",
@@ -662,6 +700,7 @@
     "page": "SLEEP",
     "question": "How would you describe the quality of your sleep?",
     "answer_type": "frequency_5",
+    "required": true,
     "answer_options": [
       "Very good",
       "Generally good",
@@ -683,6 +722,7 @@
     "page": "SLEEP",
     "question": "How often do you wake during the night to urinate?",
     "answer_type": "frequency_5",
+    "required": true,
     "answer_options": [
       "Never",
       "Occasionally",
@@ -704,6 +744,7 @@
     "page": "SLEEP",
     "question": "How often do you feel excessively sleepy or tired during the day?",
     "answer_type": "frequency_5",
+    "required": true,
     "answer_options": [
       "Never",
       "Less than once a week",
@@ -725,6 +766,7 @@
     "page": "SLEEP",
     "question": "How many caffeinated drinks do you typically have each day?",
     "answer_type": "single_select",
+    "required": true,
     "answer_options": [
       "None",
       "1",
@@ -748,6 +790,7 @@
     "page": "SLEEP",
     "question": "When do you usually have your last caffeinated drink of the day?",
     "answer_type": "single_select",
+    "required": true,
     "answer_options": [
       "Before midday",
       "12pm to 2pm",
@@ -771,23 +814,24 @@
     "page": "SLEEP",
     "question": "How many hours of sleep do you usually get on a typical night?",
     "answer_type": "single_select",
+    "required": true,
     "answer_options": [
       "Less than 5 hours",
-      "5–5.9 hours",
-      "6–6.9 hours",
+      "5–6 hours",
+      "6–7 hours",
       "7–8 hours",
       "More than 8 hours",
       "It varies considerably",
       "I'm not sure"
     ],
     "stored_values": [
-      0,
-      0.2,
-      0.4,
-      0.6,
       0.8,
-      1.0,
-      null
+      0.6,
+      0.4,
+      0.0,
+      0.2,
+      0.8,
+      0.4
     ]
   },
   {
@@ -796,6 +840,7 @@
     "page": "LIFESTYLE",
     "question": "Which best describes your tobacco/vape usage?",
     "answer_type": "frequency_5",
+    "required": true,
     "answer_options": [
       "I do not smoke/vape",
       "I used to smoke/vape",
@@ -817,6 +862,7 @@
     "page": "LIFESTYLE",
     "question": "On a typical day, how much time do you spend using social media?",
     "answer_type": "single_select",
+    "required": true,
     "answer_options": [
       "I don't use social media",
       "Less than 30 minutes",
@@ -840,6 +886,7 @@
     "page": "LIFESTYLE",
     "question": "How much time per day do you typically spend in areas with noticeable traffic, industrial or other air pollution?",
     "answer_type": "frequency_4",
+    "required": true,
     "answer_options": [
       "None",
       "Less than 2 hours",
@@ -859,6 +906,7 @@
     "page": "LIFESTYLE",
     "question": "On a typical day, how much time do you spend sitting or otherwise inactive while awake?",
     "answer_type": "single_select",
+    "required": true,
     "answer_options": [
       "Less than 2 hours",
       "2 to 4 hours",
@@ -880,6 +928,7 @@
     "page": "LIFESTYLE",
     "question": "Which best describes your tobacco smoke exposure from others?",
     "answer_type": "frequency_5",
+    "required": true,
     "answer_options": [
       "None",
       "Occasional",
@@ -901,6 +950,7 @@
     "page": "LIFESTYLE",
     "question": "How often do you drink alcohol?",
     "answer_type": "frequency_4",
+    "required": true,
     "answer_options": [
       "Never",
       "Occasionally (1-3 times per week)",
@@ -920,6 +970,7 @@
     "page": "LIFESTYLE",
     "question": "How difficult is it for you to maintain a healthy weight for your body and lifestyle?",
     "answer_type": "frequency_5",
+    "required": true,
     "answer_options": [
       "Not difficult",
       "Slightly difficult",
@@ -941,6 +992,7 @@
     "page": "LIFESTYLE",
     "question": "In a typical week, how often do you eat highly processed or ultra-processed foods such as packaged snacks, processed meats, ready meals, sweets, biscuits or similar convenience foods?",
     "answer_type": "single_select",
+    "required": true,
     "answer_options": [
       "Rarely or never",
       "1–2 times",
@@ -957,7 +1009,7 @@
       0.6,
       0.8,
       1.0,
-      null
+      0.5
     ]
   },
   {
@@ -966,6 +1018,7 @@
     "page": "LIFESTYLE",
     "question": "On a typical day, how many portions of fruit and vegetables do you eat?",
     "answer_type": "single_select",
+    "required": true,
     "answer_options": [
       "Less than 1 portion",
       "1–2 portions",
@@ -989,6 +1042,7 @@
     "page": "MEDICAL",
     "question": "Which of the following applies to your health history? Select any that apply",
     "answer_type": "multi_select",
+    "required": true,
     "exclusive_none": true,
     "answer_options": [
       "None of these",
@@ -999,16 +1053,15 @@
       "Stroke or TAI",
       "Asthma or COPD"
     ],
-    "stored_values": [
-      0,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1
-    ]
-  },
+"stored_values": [
+  "none",
+  "hypertension",
+  "cholesterol",
+  "type2_diabetes",
+  "heart_disease",
+  "stroke_tia",
+  "asthma_copd"
+]  },
   {
     "id": "SAF002",
     "legacy_id": "Q09",
@@ -1053,7 +1106,23 @@
       "Sulphur dioxide / sulphites",
       "Tree nuts"
     ],
-    "stored_values": "None"
+"stored_values": [
+  "celery",
+  "gluten",
+  "crustaceans",
+  "eggs",
+  "fish",
+  "lupin",
+  "milk",
+  "molluscs",
+  "mustard",
+  "peanuts",
+  "sesame",
+  "soybeans",
+  "sulphites",
+  "tree_nuts"
+],
+"score_values": [1,1,1,1,1,1,1,1,1,1,1,1,1,1]
   },
   {
     "id": "SAF007",
@@ -1061,6 +1130,7 @@
     "page": "MEDICAL",
     "question": "How would you rate the impact on you?",
     "answer_type": "frequency_4",
+    "required": true,
     "visible_if": {
       "question": "SAF002",
       "operator": "equals",
@@ -1085,6 +1155,7 @@
     "page": "MEDICAL",
     "question": "Has a healthcare professional ever told you that you have raised cholesterol or another lipid-related issue?",
     "answer_type": "radio",
+    "required": true,
     "answer_options": [
       "Yes",
       "No"
@@ -1100,6 +1171,7 @@
     "page": "MEDICAL",
     "question": "Do you have any food, chemical or environmental sensitivities or intolerances that we should take into account?",
     "answer_type": "radio",
+    "required": true,
     "answer_options": [
       "Yes",
       "No"
@@ -1152,6 +1224,16 @@
     "page": "MEDICAL",
     "question": "Do you currently experience menstrual or cycle-related changes or symptoms that you would like to take into account?",
     "answer_type": "radio",
+        "follow_up": {
+      "id": "LIF001_DETAIL",
+      "label": "Please describe the changes or symptom",
+      "type": "textarea",
+      "required": true,
+      "show_if": {
+        "operator": "equals",
+        "value": 1
+      }
+    },
     "answer_options": [
       "Yes",
       "No / Not applicable"
@@ -1167,6 +1249,16 @@
     "page": "MEDICAL",
     "question": "Are you experiencing perimenopause, menopause or related life-stage changes that you would like to take into account?",
     "answer_type": "radio",
+            "follow_up": {
+      "id": "LIF002_DETAIL",
+      "label": "Please describe the changes",
+      "type": "textarea",
+      "required": true,
+      "show_if": {
+        "operator": "equals",
+        "value": 1
+      }
+    },
     "answer_options": [
       "Yes",
       "No / Not applicable"
@@ -1182,6 +1274,7 @@
     "page": "MEDICAL",
     "question": "How often do you feel you have enough meaningful social connection and support in your life?",
     "answer_type": "frequency_5",
+    "required": true,
     "answer_options": [
       "Always",
       "Often",

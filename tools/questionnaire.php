@@ -47,7 +47,11 @@ $loader->load();
 $quiz = new QuizController($loader);
 $renderer = new QuestionRenderer();
 
-$pageId = $_GET['page'] ?? 'WELCOME';
+if (isset($_GET['page'])) {
+    $_SESSION['current_page'] = strtoupper($_GET['page']);
+}
+
+$pageId = $_SESSION['current_page'] ?? 'WELCOME';
 
 if (!isset($_SESSION['answers'])) {
     $_SESSION['answers'] = [];
@@ -56,6 +60,27 @@ if (!isset($_SESSION['answers'])) {
 $answers = $_SESSION['answers'];
 $errors = [];
 $page = $quiz->pageComponents($pageId, $answers);
+
+
+$pages = [];
+
+foreach ($quiz->pages() as $quizPage) {
+    $pages[] = $quiz->pageComponents($quizPage['id'], $answers);
+}
+
+// Build profile values keyed by field key
+$profile = [];
+
+foreach ($loader->profileFields()['fields'] as $field) {
+    $profile[$field['key']] = $answers[$field['id']] ?? null;
+}
+
+$reviewData = [
+    'pages'     => $pages,
+    'questions' => $loader->questions(),
+    'profile'   => $profile,
+    'answers'   => $answers
+];
 
 /* ----------------------------------------------------------
    Handle form submission
@@ -78,6 +103,8 @@ if (($page['type'] ?? '') === 'profile') {
     $answers['PF014'] = $_POST['PF014'] ?? [];
 }
 
+if (($page['type'] ?? '') === 'profile') {
+
     // Required fields from canonical JSON
     $profileFields = $loader->profileFields()['fields'] ?? [];
 
@@ -88,36 +115,82 @@ if (($page['type'] ?? '') === 'profile') {
         }
 
         $fieldId = $field['id'];
-        $value = $answers[$fieldId] ?? null;
+        $value   = $answers[$fieldId] ?? null;
 
         $isEmpty = match ($field['type']) {
-
-            'checkbox' =>
-                empty($value),
-
-            'multi_select' =>
-                empty($value) || count($value) === 0,
-
-            default =>
-                trim((string)$value) === ''
+            'checkbox'     => empty($value),
+            'multi_select' => empty($value) || count($value) === 0,
+            default        => trim((string)$value) === ''
         };
 
         if ($isEmpty) {
             $errors[$fieldId] = [
-                'label' => $field['label'],
+                'label'   => $field['label'],
                 'message' => 'This field is required.'
             ];
         }
     }
 
     // Maximum 3 wellness goals
-    if (count($answers['PF014']) > 3) {
-
+    if (count($answers['PF014'] ?? []) > 3) {
         $errors['PF014'] = [
-            'label' => 'Primary wellness goals',
+            'label'   => 'Primary wellness goals',
             'message' => 'Select a maximum of 3 options.'
         ];
     }
+}
+
+/* ----------------------------------------------------------
+   Validate required follow-up questions
+---------------------------------------------------------- */
+
+foreach ($page['components'] ?? [] as $component) {
+
+    if (($component['type'] ?? '') !== 'question') {
+        continue;
+    }
+
+    $question = $component['question'] ?? [];
+    $followUp = $question['follow_up'] ?? null;
+
+    if (!$followUp || empty($followUp['required'])) {
+        continue;
+    }
+
+    $parentId = $question['id'];
+    $parentAnswer = $answers[$parentId] ?? null;
+
+    $showIf = $followUp['show_if'];
+    $visible = false;
+
+    switch ($showIf['operator']) {
+
+        case 'equals':
+            $visible = ((string)$parentAnswer === (string)$showIf['value']);
+            break;
+
+        case 'contains':
+            $visible = is_array($parentAnswer)
+                && in_array((string)$showIf['value'], array_map('strval', $parentAnswer), true);
+            break;
+    }
+
+    if ($visible) {
+
+        $value = trim((string)($answers[$followUp['id']] ?? ''));
+
+        if ($value === '') {
+
+            $errors[$followUp['id']] = [
+                'label'   => $followUp['label'],
+                'message' => 'Please provide this additional information.'
+            ];
+
+        }
+
+    }
+
+}
 
     // Persist answers
     $_SESSION['answers'] = $answers;
@@ -264,7 +337,7 @@ if (empty($errors)) {
     case 'finish':
 ?>
 
-        <?= $renderer->render($page, $answers); ?>
+        <?= $renderer->render($page, $answers, $errors, $reviewData); ?>
 
         <?php break; ?>
 
