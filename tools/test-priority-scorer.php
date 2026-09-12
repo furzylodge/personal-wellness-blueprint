@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
+use PWB\Loader\JsonLoader;
 use PWB\Assessment\AssessmentLoader;
 use PWB\Assessment\HealthProfileBuilder;
 use PWB\Recommendation\RecommendationConfiguration;
@@ -15,12 +16,25 @@ echo "====================" . PHP_EOL;
 echo PHP_EOL;
 
 // Load assessment
-$assessment = AssessmentLoader::load(
-    __DIR__ . '/../knowledgebase/test-data/assessment.json'
+$loader = new AssessmentLoader(
+    new JsonLoader(),
+    __DIR__ . '/../knowledgebase'
 );
 
+$assessment = $loader->load();
+$assessment->answers = [
+    'PHY001' => 0,   // Eczema
+    'PHY002' => 1,   // No hair thinning
+    'PHY003' => 2,   // Muscle aches
+    'NUT001' => 3,
+    'SLP001' => 1
+];
+
 // Build HealthProfile
-$builder = new HealthProfileBuilder();
+$builder = new HealthProfileBuilder(
+    new JsonLoader(),
+    __DIR__ . '/../knowledgebase'
+);
 
 $profile = $builder->build($assessment);
 

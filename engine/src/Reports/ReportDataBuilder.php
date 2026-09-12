@@ -9,6 +9,10 @@ use PWB\Model\Repository;
 use PWB\Recommendations\RecommendationEngine;
 use PWB\Scanner\RepositoryScanner;
 use PWB\Utils\FileLocator;
+use PWB\Assessment\HealthProfileBuilder;
+use PWB\Recommendation\Scorers\PriorityScorer;
+use PWB\Recommendation\MechanismResolver;
+use PWB\Recommendation\BioactiveResolver;
 
 class ReportDataBuilder
 {
@@ -48,14 +52,34 @@ class ReportDataBuilder
     		'bodySystems');
     }
 
-    public function build(): array
+    public function build(array $assessment): array
     {
-        $assessment = [];
 
-        $recommendations =
-            $this->recommendationEngine->recommend($assessment);
+$builder = new HealthProfileBuilder(
+    new JsonLoader(),
+    $this->locator->getKnowledgebaseDirectory()
+);
 
-        $foods = [];
+$profile = $builder->build($assessment);
+
+$priorityScorer = new PriorityScorer();
+$priorities = $priorityScorer->score($profile);
+
+$mechanismResolver = new MechanismResolver(
+    new JsonLoader(),
+    $this->locator->getKnowledgebaseDirectory()
+);
+
+$mechanisms = $mechanismResolver->resolve($priorities);
+
+$bioactiveResolver = new BioactiveResolver(
+    new JsonLoader(),
+    $this->locator->getKnowledgebaseDirectory()
+);
+
+$bioactives = $bioactiveResolver->resolve($mechanisms);
+
+$foods = [];
 
         foreach ($recommendations['foods'] as $foodId) {
 
@@ -79,6 +103,9 @@ class ReportDataBuilder
 		    'client' => [
 		    'name' => 'Test User'],
 		    'summary' => $recommendations['summary'],
+		    'priorities' => $priorities,
+'mechanisms' => $mechanisms,
+'bioactives' => $bioactives,
 		    'foods' => $foods,
 		    'bodySystems' => $this->buildBodySystems($foods),
 		    'actionPlan' => [

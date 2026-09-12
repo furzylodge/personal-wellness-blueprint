@@ -47,15 +47,17 @@ final class BodySystemNormalizer
         $questionIndex = [];
 
         foreach ($questions as $question) {
-        
-        $stored = $question['stored_values'] ?? [];
 
-	if (!is_array($stored) || empty($stored)) {
-    	$questionIndex[$question['id']] = 0.0;
-    	continue;
-	}
+        $scores = $question['score_values']
+    ?? $question['stored_values']
+    ?? [];
 
-	$questionIndex[$question['id']] = (float) max($stored);
+if (!is_array($scores) || empty($scores)) {
+    $questionIndex[$question['id']] = 0.0;
+    continue;
+}
+
+$questionIndex[$question['id']] = (float) max($scores);        
 
         }
 

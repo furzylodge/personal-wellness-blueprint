@@ -10,6 +10,8 @@ use PWB\Loader\JsonLoader;
 use PWB\Recommendation\PriorityEngine;
 use PWB\Recommendation\MechanismResolver;
 use PWB\Utils\TestAssessmentFactory;
+use PWB\Recommendation\BioactiveResolver;
+use PWB\Recommendation\FoodResolver;
 
 
 $builder = new HealthProfileBuilder(
@@ -56,6 +58,20 @@ $mechanisms = $resolver->resolve(
     array_slice($priorities, 0, 3)
 );
 
+$bioactiveResolver = new BioactiveResolver(
+    new JsonLoader(),
+    __DIR__ . '/../knowledgebase'
+);
+
+$bioactives = $bioactiveResolver->resolve($mechanisms);
+
+$foodResolver = new FoodResolver(
+    new JsonLoader(),
+    __DIR__ . '/../knowledgebase'
+);
+
+$foods = $foodResolver->resolve($mechanisms);
+
 echo PHP_EOL;
 echo "Top Clinical Mechanisms" . PHP_EOL;
 echo "=======================" . PHP_EOL;
@@ -63,10 +79,36 @@ echo "=======================" . PHP_EOL;
 foreach (array_slice($mechanisms, 0, 15) as $m) {
 
     printf(
-        "%-12s %-8s %-38s %6.2f\n",
-        $m['bodySystemName'],
-        $m['mechanismId'],
-        substr($m['mechanismName'], 0, 38),
-        $m['clinicalScore']
+    "%-8s %-45s %6.2f\n",
+    $m['mechanismId'],
+    $m['mechanismName'],
+    $m['clinicalScore']
+);
+
+}
+
+echo PHP_EOL;
+echo "Top Bioactives" . PHP_EOL;
+echo "====================" . PHP_EOL;
+
+foreach (array_slice($bioactives, 0, 15) as $b) {
+    printf(
+        "%-8s %-35s %6.2f\n",
+        $b['bioactiveId'],
+        $b['name'],
+        $b['clinicalScore']
+    );
+}
+
+echo PHP_EOL;
+echo "Top Foods" . PHP_EOL;
+echo "====================" . PHP_EOL;
+
+foreach (array_slice($foods, 0, 15) as $f) {
+    printf(
+        "%-8s %-35s %6.2f\n",
+        $f['foodId'],
+        $f['name'],
+        $f['clinicalScore']
     );
 }

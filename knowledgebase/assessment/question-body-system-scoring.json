@@ -32,7 +32,8 @@
     "question": "Which of the following have you noticed recently or repeatedly? Select any that apply.",
     "answer_type": "multi_select",
     "answer_options": "[\"Bad breath\", \"Unusual body odour\", \"Neither\"]",
-    "stored_values": "[1,1,0]",
+    "stored_values": ["bad_breath","body_odour","none"],
+    "score_values": [1,1,0],
     "body_system_scores": {
       "BS001": "Y",
       "BS002": "Y"
@@ -71,7 +72,16 @@
     "question": "Which of the following applies to your health history? Select any that apply",
     "answer_type": "multi_select",
     "answer_options": "[\"None of these\", \"High blood pressure\", \"High cholesterol\",\"Type 2 diabetes\",\"Heart disease\",\"Stroke or TAI\", \"Asthma or COPD\"]",
-    "stored_values": "[0, 1,1,1,1,1,1]",
+    "stored_values": [
+  "none",
+  "hypertension",
+  "cholesterol",
+  "type2_diabetes",
+  "heart_disease",
+  "stroke_tia",
+  "asthma_copd"
+],
+"score_values": [0,1,1,1,1,1,1],
     "body_system_scores": {
       "BS002": "Y",
       "BS003": "Y",
@@ -226,7 +236,14 @@
     "question": "Do you currently have, or have you previously been diagnosed with, any of the following skin conditions? Select any that apply.",
     "answer_type": "multi_select",
     "answer_options": "[\"Eczema / atopic dermatitis\", \"Psoriasis\",\"Rosacea\",\"Another diagnosed skin condition\",\"None of these\"]",
-    "stored_values": "[1, 1, 1, 1 ,0]",
+    "stored_values": [
+  "eczema",
+  "psoriasis",
+  "rosacea",
+  "other_skin",
+  "none"
+],
+"score_values": [1,1,1,1,0],
     "body_system_scores": {
       "BS001": "Y",
       "BS002": "Y",

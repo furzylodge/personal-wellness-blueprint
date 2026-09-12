@@ -16,17 +16,13 @@ final class HealthProfileBuilder
 
     public function build(Assessment $assessment): HealthProfile
     {
-        $questions = $this->indexById(
-            $this->loader->load(
-                $this->knowledgePath . '/assessment/questions.json'
-            )
-        );
+$questions = $this->indexById(
+    $this->loader->load(
+        $this->knowledgePath . '/assessment/question-body-system-scoring.json'
+    )
+);
 
-        $matrix = $this->indexMatrix(
-            $this->loader->load(
-                $this->knowledgePath . '/assessment/question-body-system-matrix.json'
-            )
-        );
+$matrix = $this->indexMatrix($questions);
 
         $bodySystems = [
             'BS001' => 0.0,
@@ -39,40 +35,48 @@ final class HealthProfileBuilder
             'BS008' => 0.0,
             'BS009' => 0.0,
         ];
-        
-        echo PHP_EOL;
-	echo "Questions indexed: " . count($questions) . PHP_EOL;
-	echo "Matrix indexed: " . count($matrix) . PHP_EOL;
-	echo "Answer IDs:" . PHP_EOL;
 
+foreach ($assessment->answers as $questionId => $answer) {
 
-        foreach ($assessment->answers as $questionId => $selectedIndex) {
+    if (!isset($questions[$questionId], $matrix[$questionId])) {
+        continue;
+    }
 
-            if (!isset($questions[$questionId])) {
-                continue;
-            }
+    $stored = $questions[$questionId]['stored_values'] ?? [];
+    $scores = $questions[$questionId]['score_values'] ?? $stored;
 
-            $stored = $questions[$questionId]['stored_values'];
+    $score = 0.0;
 
-            if (!isset($stored[$selectedIndex])) {
-                continue;
-            }
+    if (is_array($answer)) {
 
-            $score = (float) $stored[$selectedIndex];
+        // Multi-select: any positive option = 1
+        foreach ($answer as $selected) {
+            $index = array_search($selected, $stored, true);
 
-            if (!isset($matrix[$questionId])) {
-                continue;
-            }
-            
-            foreach ($matrix[$questionId] as $bs => $weight) {
-            	
-            	$weight = (float) $weight;
-
-                if ($weight > 0) {
-                    $bodySystems[$bs] += ($score * $weight);
-                }
+            if ($index !== false && (($scores[$index] ?? 0) > 0)) {
+                $score = 1.0;
+                break;
             }
         }
+
+    } else {
+
+        // Slider / radio
+        $index = (int) $answer;
+
+        if (isset($scores[$index])) {
+            $score = (float) $scores[$index];
+        }
+    }
+
+    foreach ($matrix[$questionId] as $bs => $weight) {
+        $weight = (float) $weight;
+
+        if ($weight > 0) {
+            $bodySystems[$bs] += ($score * $weight);
+        }
+    }
+}
         
         $normalizer = new BodySystemNormalizer(
     	$this->loader,
@@ -93,16 +97,20 @@ final class HealthProfileBuilder
         );
     }
 
-    private function indexById(array $questions): array
-    {
-        $indexed = [];
+private function indexById(array $questions): array
+{
+    $indexed = [];
 
-        foreach ($questions as $question) {
-            $indexed[$question['id']] = $question;
+    foreach ($questions as $question) {
+        $id = $question['production_id'] ?? null;
+
+        if ($id) {
+            $indexed[$id] = $question;
         }
-
-        return $indexed;
     }
+
+    return $indexed;
+}
 
 private function indexMatrix(array $rows): array
 {
@@ -116,10 +124,17 @@ private function indexMatrix(array $rows): array
             $scores[$bs] = strtoupper((string)$value) === 'Y' ? 1.0 : 0.0;
         }
 
-        $indexed[$row['question_id']] = $scores;
+        $id = $row['production_id'] ?? null;
+
+        if ($id) {
+            $indexed[$id] = $scores;
+        }
     }
 
     return $indexed;
 }
+
+
+
 
 }
