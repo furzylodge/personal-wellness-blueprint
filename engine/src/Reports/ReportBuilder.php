@@ -6,11 +6,16 @@ namespace PWB\Reports;
 use PWB\Reports\Sections\FoodSection;
 use PWB\Reports\Sections\BodySystemsSection;
 use PWB\Reports\Sections\ActionPlanSection;
+use PWB\Reports\Sections\BioactiveSection;
+use PWB\Reports\Sections\VitaminSection;
+use PWB\Reports\Sections\MineralSection;
 
 class ReportBuilder
 {
     public function build(array $reportData): string
     {
+        $theme = $reportData['theme'] ?? 'theme-green';
+        
         $clientName = $reportData['client']['name'] ?? 'Unknown';
 
         $foods = $reportData['foods'] ?? [];
@@ -24,34 +29,10 @@ class ReportBuilder
 <head>
     <meta charset="UTF-8">
     <title>Personal Wellness Blueprint</title>
-
-    <style>
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 40px;
-            color: #333;
-        }
-
-        h1 {
-            color: #2E6F40;
-        }
-
-        h2 {
-            margin-top: 40px;
-            border-bottom: 1px solid #cccccc;
-            padding-bottom: 6px;
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-
-    </style>
-
+    <link rel="stylesheet" href="../engine/assets/css/questionnaire.css">
 </head>
 
-<body>
+<body class="<?= $theme ?>">
 
 <h1>Personal Wellness Blueprint</h1>
 
@@ -75,13 +56,22 @@ HTML;
 
 HTML;
 
-	$foodSection = new FoodSection();
-	$bodySystemsSection = new BodySystemsSection();
-	$actionPlanSection = new ActionPlanSection();
-	$html .= $foodSection->render($reportData);
-	$html .= $bodySystemsSection->render($reportData);
-	$html .= $actionPlanSection->render($reportData);
-        $html .= <<<HTML
+$foodSection = new FoodSection();
+$bodySystemsSection = new BodySystemsSection();
+$bioactiveSection = new BioactiveSection();
+//$vitaminSection = new VitaminSection();
+//$mineralSection = new MineralSection();
+//$actionPlanSection = new ActionPlanSection();
+
+$html .= $foodSection->render($reportData);
+$html .= $bodySystemsSection->render(
+    $reportData['bodySystems']
+);
+$html .= $bioactiveSection->render($reportData);
+//$html .= $vitaminSection->render($reportData);
+//$html .= $mineralSection->render($reportData);
+//$html .= $actionPlanSection->render($reportData);
+$html .= <<<HTML
 
 </ul>
 

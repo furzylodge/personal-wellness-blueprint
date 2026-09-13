@@ -242,14 +242,15 @@ case 'finish':
                         ? 'checked'
                         : '';
 
-                    $html .= "
-                    <label class='checkbox'>
-                        <input
-    type='checkbox'
-    name='<?= $id ?>[]'
-    value='<?= $storedValue ?>'
-    <?= $checked ? 'checked' : '' ?>
-                    </label>";
+$html .= "
+<label class='checkbox'>
+    <input
+        type='checkbox'
+        name='{$id}[]'
+        value='{$this->e($option['value'])}'
+        {$checked}>
+    {$this->e($option['label'])}
+</label>";
                 }
 
                 if (!empty($field['helper'])) {
@@ -607,9 +608,8 @@ $html .= "
     $html .= "
     </div>
 
-    <button class='next' type='button'>
-        Generate My Wellness Blueprint
-    </button>";
+    <a class='next' href='generate-report.php' target='_blank'>
+    Generate My Wellness Blueprint</a>";
 
     return $html;
 }

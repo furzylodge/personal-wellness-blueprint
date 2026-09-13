@@ -8,148 +8,120 @@ class FoodSection
 {
     public function render(array $reportData): string
     {
-        $foods = $reportData['foods'] ?? [];
+        $foods = array_slice(
+            $reportData['foods'] ?? [],
+            0,
+            10
+        );
+
+        if (empty($foods)) {
+            return '';
+        }
 
         $html = <<<HTML
 
-<h2>Recommended Foods</h2>
+<h2>Priority Foods</h2>
+
+<p class="section-intro">
+These foods have been prioritised because they best support the highest-scoring clinical mechanisms identified in your assessment.
+</p>
 
 HTML;
 
-        if (count($foods) === 0) {
 
-            $html .= "<p>No food recommendations available.</p>";
+        foreach ($foods as $index => $food) {
 
-            return $html;
-        }
+    $rank = $index + 1;
 
-        foreach ($foods as $food) {
+            $name = htmlspecialchars(
+                $food['identity']['name'] ?? 'Unknown'
+            );
 
-            $name =
-                $food['identity']['name']
-                ?? 'Unknown';
+            $description = strip_tags(
+    $food['knowledge']['description'] ?? ''
+);
 
-            $scientificName =
-                $food['identity']['scientificName']
-                ?? '';
+if (strlen($description) > 220) {
+    $description = substr($description, 0, 217) . '...';
+}
 
-            $category =
-                $food['classification']['category']
-                ?? '';
+$description = htmlspecialchars($description);
 
-            $foodGroup =
-                $food['classification']['foodGroup']
-                ?? '';
+            $score = number_format(
+                $food['clinicalScore'] ?? 0,
+                1
+            );
 
-            $description =
-                $food['knowledge']['description']
-                ?? '';
+            $compounds = array_slice(
+                $food['knowledge']['activeCompounds'] ?? [],
+                0,
+                3
+            );
 
-            $recommendedFor =
-                $food['personalisation']['recommendedFor']
-                ?? [];
+ $mechanisms = [];
 
-            $goalsSupported =
-                $food['personalisation']['goalsSupported']
-                ?? [];
+foreach (array_slice($food['sources'] ?? [], 0, 3) as $source) {
 
-            $activeCompounds =
-                $food['knowledge']['activeCompounds']
-                ?? [];
+    if (!empty($source['mechanismName'])) {
+        $mechanisms[] = $source['mechanismName'];
+    }
 
-            $preparation =
-                $food['practical']['preparation']
-                ?? '';
+}
 
-            $tags =
-                $food['tags']
-                ?? [];
+$why = implode(', ', $mechanisms);
 
             $html .= <<<HTML
 
-<div class="food">
+<div class="recommendation-card">
 
-<h3>{$name}</h3>
+<div class="recommendation-header">
 
-<p><strong>Scientific Name:</strong> <em>{$scientificName}</em></p>
+    <div class="recommendation-title-group">
+        <div class="rank-badge">{$rank}</div>
+        <h3>{$name}</h3>
+    </div>
 
-<p><strong>Category:</strong> {$category}</p>
+    <div class="score-badge">{$score}</div>
 
-<p><strong>Food Group:</strong> {$foodGroup}</p>
+</div>
 
-<p>{$description}</p>
+    <p>{$description}</p>
 
-HTML;
+<p><strong>Supports:</strong></p>
 
-            if (!empty($recommendedFor)) {
-
-                $html .= "<h4>Recommended For</h4>";
-                $html .= "<ul>";
-
-                foreach ($recommendedFor as $item) {
-                    $html .= "<li>{$item}</li>";
-                }
-
-                $html .= "</ul>";
-
-            }
-
-            if (!empty($goalsSupported)) {
-
-                $html .= "<h4>Goals Supported</h4>";
-                $html .= "<ul>";
-
-                foreach ($goalsSupported as $item) {
-                    $html .= "<li>{$item}</li>";
-                }
-
-                $html .= "</ul>";
-
-            }
-
-            if (!empty($activeCompounds)) {
-
-                $html .= "<h4>Key Active Compounds</h4>";
-                $html .= "<ul>";
-
-                foreach ($activeCompounds as $item) {
-                    $html .= "<li>{$item}</li>";
-                }
-
-                $html .= "</ul>";
-
-            }
-
-            if ($preparation !== '') {
-
-                $html .= <<<HTML
-
-<h4>Preparation</h4>
-
-<p>{$preparation}</p>
+<div class="mechanism-row">
 
 HTML;
 
-            }
+foreach ($mechanisms as $mechanism) {
 
-            if (!empty($tags)) {
+    $mechanism = htmlspecialchars($mechanism);
 
-                $html .= "<h4>Tags</h4>";
-                $html .= "<ul>";
+    $html .= "<span class=\"mechanism-chip\">{$mechanism}</span>";
 
-                foreach ($tags as $tag) {
-                    $html .= "<li>{$tag}</li>";
+}
+
+$html .= <<<HTML
+
+</div>
+
+HTML;
+
+            if (!empty($compounds)) {
+
+                $html .= '<div class="tag-row">';
+
+                foreach ($compounds as $compound) {
+                    $compound = htmlspecialchars($compound);
+                    $html .= "<span class=\"tag\">{$compound}</span>";
                 }
 
-                $html .= "</ul>";
-
+                $html .= '</div>';
             }
 
             $html .= <<<HTML
 
 </div>
-
-<hr>
 
 HTML;
 

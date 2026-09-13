@@ -59,15 +59,18 @@ foreach ($assessment->answers as $questionId => $answer) {
             }
         }
 
-    } else {
+} else {
 
-        // Slider / radio
-        $index = (int) $answer;
+    // Radio / single select
+    $storedValues = $config['stored_values'] ?? [];
+    $scoreValues  = $config['score_values'] ?? [];
 
-        if (isset($scores[$index])) {
-            $score = (float) $scores[$index];
-        }
+    $index = array_search((string)$answer, $storedValues, true);
+
+    if ($index !== false && isset($scoreValues[$index])) {
+        $score = (float)$scoreValues[$index];
     }
+}
 
     foreach ($matrix[$questionId] as $bs => $weight) {
         $weight = (float) $weight;

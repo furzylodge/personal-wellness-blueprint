@@ -6,19 +6,21 @@ namespace PWB\Reports;
 
 use PWB\Loader\JsonLoader;
 use PWB\Model\Repository;
-use PWB\Recommendations\RecommendationEngine;
 use PWB\Scanner\RepositoryScanner;
 use PWB\Utils\FileLocator;
 use PWB\Assessment\HealthProfileBuilder;
 use PWB\Recommendation\Scorers\PriorityScorer;
 use PWB\Recommendation\MechanismResolver;
 use PWB\Recommendation\BioactiveResolver;
+use PWB\Recommendation\FoodResolver;
+use PWB\Recommendation\NutrientResolver;
+use PWB\Assessment\Assessment;
+use PWB\Recommendation\RecommendationConfiguration;
 
 class ReportDataBuilder
 {
     private Repository $repository;
     private JsonLoader $loader;
-    private RecommendationEngine $recommendationEngine;
     private FileLocator $locator;
 
     private array $tags = [];
@@ -35,7 +37,6 @@ class ReportDataBuilder
 
         $this->loader = new JsonLoader();
 
-        $this->recommendationEngine = new RecommendationEngine();
 
         $this->tags = $this->loadLookup(
             'tags.json',
@@ -52,7 +53,7 @@ class ReportDataBuilder
     		'bodySystems');
     }
 
-    public function build(array $assessment): array
+    public function build(Assessment $assessment): array
     {
 
 $builder = new HealthProfileBuilder(
@@ -63,7 +64,9 @@ $builder = new HealthProfileBuilder(
 $profile = $builder->build($assessment);
 
 $priorityScorer = new PriorityScorer();
-$priorities = $priorityScorer->score($profile);
+$config = new RecommendationConfiguration();
+
+$priorities = $priorityScorer->score($profile, $config);
 
 $mechanismResolver = new MechanismResolver(
     new JsonLoader(),
@@ -77,11 +80,27 @@ $bioactiveResolver = new BioactiveResolver(
     $this->locator->getKnowledgebaseDirectory()
 );
 
+$foodResolver = new FoodResolver(
+    new JsonLoader(),
+    $this->locator->getKnowledgebaseDirectory()
+);
+
+$nutrientResolver = new NutrientResolver(
+    new JsonLoader(),
+    $this->locator->getKnowledgebaseDirectory()
+);
+
 $bioactives = $bioactiveResolver->resolve($mechanisms);
+$foodResults = $foodResolver->resolve($mechanisms);
+
+$vitamins = $nutrientResolver->resolve($mechanisms, 'vitamin');
+$minerals = $nutrientResolver->resolve($mechanisms, 'mineral');
 
 $foods = [];
 
-        foreach ($recommendations['foods'] as $foodId) {
+foreach ($foodResults as $foodResult) {
+
+    $foodId = $foodResult['foodId'];
 
             foreach ($this->repository->getFoods() as $foodFile) {
 
@@ -93,22 +112,38 @@ $foods = [];
 
                 $food = $this->prepareFood($food);
 
-                $foods[] = $food;
+// Preserve recommendation metadata
+$food['clinicalScore'] = $foodResult['clinicalScore'];
+
+$food['sources'] = array_map(
+    fn($m) => [
+        'mechanismId'   => $m['id'],
+        'mechanismName' => $m['name'],
+        'contribution'  => $m['contribution'],
+    ],
+    $foodResult['matchedMechanisms'] ?? []
+);
+
+$foods[] = $food;
 
                 break;
             }
 
         }
 		return [
-		    'client' => [
-		    'name' => 'Test User'],
-		    'summary' => $recommendations['summary'],
-		    'priorities' => $priorities,
-'mechanisms' => $mechanisms,
-'bioactives' => $bioactives,
-		    'foods' => $foods,
-		    'bodySystems' => $this->buildBodySystems($foods),
-		    'actionPlan' => [
+		'client' => [
+        'name' => 'Test User'
+    ],
+		'summary'      => [],
+'priorities'   => $priorities,
+'mechanisms'   => $mechanisms,
+'bioactives'   => $bioactives,
+'vitamins'     => $vitamins,
+'minerals'     => $minerals,
+'foods'        => $foods,
+'bodySystems' => $this->buildBodySystems($foods, $priorities),
+'theme' => $assessment->theme ?? 'theme-green',
+'actionPlan' => [
 
     'This Week' => [
 
@@ -132,8 +167,8 @@ $foods = [];
         'Maintain a diverse range of plant-based foods.',
         'Review your progress every four weeks.'
 
+             ]
     ]
-		    ]
 ];
     }
 
@@ -166,32 +201,35 @@ $foods = [];
         return $food;
     }
     
-    private function buildBodySystems(array $foods): array
-	{
-    $bodySystems = [];
+private function buildBodySystems(array $foods, array $priorities): array
+{
+    // Priority score lookup (BS001 => 21.7)
+    $priorityLookup = [];
+
+    foreach ($priorities as $priority) {
+        $priorityLookup[$priority->id] = $priority->finalScore;
+    }
+
+    $systems = [];
 
     foreach ($foods as $food) {
 
-        $foodName =
-            $food['identity']['name']
-            ?? 'Unknown';
+        $foodName = $food['identity']['name'] ?? 'Unknown';
 
-        $systems =
-            $food['supports']['bodySystems']
-            ?? [];
+        foreach ($food['supports']['bodySystems'] ?? [] as $systemId) {
 
-        foreach ($systems as $systemId) {
+            if (!isset($systems[$systemId])) {
 
-            $systemName =
-                $this->bodySystems[$systemId]
-                ?? $systemId;
+                $systems[$systemId] = [
+                    'name'     => $this->bodySystems[$systemId] ?? $systemId,
+                    'score'    => $priorityLookup[$systemId] ?? 0,
+                    'topFoods' => []
+                ];
 
-            if (!isset($bodySystems[$systemName])) {
-                $bodySystems[$systemName] = [];
             }
 
-            $bodySystems[$systemName][] = [
-                'id' => $food['id'],
+            $systems[$systemId]['topFoods'][] = [
+                'id'   => $food['id'],
                 'name' => $foodName
             ];
 
@@ -199,9 +237,22 @@ $foods = [];
 
     }
 
-    ksort($bodySystems);
+    // Convert associative array to indexed array
+    $systems = array_values($systems);
 
-    return $bodySystems;
+    // Highest score first
+    usort($systems, fn($a, $b) => $b['score'] <=> $a['score']);
+    
+    $systems = array_filter(
+    $systems,
+    fn($system) => $system['score'] > 0
+);
+
+$systems = array_values($systems);
+
+usort($systems, fn($a, $b) => $b['score'] <=> $a['score']);
+
+    return $systems;
 }
 
     private function loadLookup(

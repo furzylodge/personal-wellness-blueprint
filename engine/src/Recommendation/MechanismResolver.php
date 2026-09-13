@@ -41,7 +41,7 @@ $resolved = [];
 
 foreach ($priorities as $priority) {
 
-    $bodySystemId = $priority['id'];
+    $bodySystemId = $priority->id;
 
     if (!isset($bodySystems[$bodySystemId])) {
         continue;
@@ -52,7 +52,7 @@ foreach ($priorities as $priority) {
         $id = $mechanism['id'];
 
         $clinicalContribution =
-            $priority['score'] * (($mechanism['weight'] ?? 100) / 100);
+    $priority->score * (($mechanism['weight'] ?? 100) / 100);
 
         if (!isset($resolved[$id])) {
 
@@ -89,7 +89,6 @@ usort(
     $resolved,
     fn($a, $b) => $b['clinicalScore'] <=> $a['clinicalScore']
 );
-echo "Mechanisms resolved: " . count($resolved) . PHP_EOL;
 return $resolved;
 
 }

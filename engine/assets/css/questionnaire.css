@@ -26,6 +26,21 @@
     --text:#1F2937;
     --text-secondary:#52637A;
     --text-muted:#64748B;
+    
+    --report-card-bg: var(--surface);
+    --report-card-border: var(--border);
+
+    --report-heading: var(--text);
+    --report-body: var(--text-secondary);
+
+    --report-chip-bg: var(--surface-soft);
+    --report-chip-text: var(--text-secondary);
+
+    --report-mechanism-bg: var(--primary-soft);
+    --report-mechanism-text: var(--primary);
+
+    --report-score-bg: var(--primary);
+    --report-score-text: var(--surface);
 
 }
 
@@ -59,7 +74,7 @@ body.theme-amber{
 
 body{
     font-family:Arial, Helvetica, sans-serif;
-    background:background:var(--background);
+    background: var(--background);
     margin:0;
     padding:40px;
 }
@@ -67,7 +82,7 @@ body{
 .container{
     max-width:760px;
     margin:auto;
-    background:background:var(--surface);
+    background: var(--surface);
     padding:40px;
     border-radius:12px;
     box-shadow:0 8px 24px rgba(0,0,0,.08);
@@ -343,12 +358,6 @@ border:1px solid var(--border);
     font-size:.8rem;
 }
 
-.section-intro{
-    display:flex;
-    gap:1rem;
-    align-items:center;
-}
-
 .section-icon{
     width:56px;
     height:56px;
@@ -549,7 +558,7 @@ border:1px solid var(--border);
     height:18px;
     border-radius:50%;
     display:block;
-    border:2px solid #fff;
+    border:2px solid var(--surface);
     box-shadow:0 0 0 1px rgba(0,0,0,.08);
     transition:transform .15s ease;
 }
@@ -846,3 +855,168 @@ border:1px solid var(--border);
 }
 
 
+.recommendation-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.recommendation-table th {
+    background: #E8F3EA;
+    color: #2E6F40;
+    padding: 10px;
+    text-align: left;
+}
+
+.recommendation-table td {
+    padding: 10px;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.score {
+    text-align: center;
+    font-weight: 600;
+}
+
+.section-intro {
+    margin-bottom: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+
+
+.section-intro{
+    color:#666;
+    line-height:1.6;
+    margin-bottom:20px;
+}
+
+.recommendation-card{
+    border:1px solid var(--report-card-border);
+background:var(--report-card-bg);
+    border-radius:10px;
+    padding:16px 18px;
+    margin-bottom:18px;
+}
+
+.recommendation-card p{
+    margin:8px 0;
+}
+
+.recommendation-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.recommendation-header h3{
+    margin:0;
+    color:var(--report-heading);
+}
+
+.score-badge{
+    background:var(--report-score-bg);
+color:var(--report-score-text);
+    font-weight:700;
+    padding:6px 12px;
+    border-radius:20px;
+    min-width:56px;
+    text-align:center;
+}
+
+.tag-row{
+    margin-top:12px;
+}
+
+.tag{
+    display:inline-block;
+    background:var(--report-chip-bg);
+color:var(--report-chip-text);
+    padding:4px 10px;
+    border-radius:12px;
+    font-size:12px;
+    margin:2px 6px 2px 0;
+}
+
+.recommendation-title-group{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.rank-badge{
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    background:#2F7D4B;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:700;
+    font-size:14px;
+    flex-shrink:0;
+}
+
+.mechanism-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin:8px 0 12px;
+}
+
+.mechanism-chip{
+background:var(--report-mechanism-bg);
+color:var(--report-mechanism-text);
+    padding:6px 10px;
+    border-radius:999px;
+    font-size:12px;
+    font-weight:600;
+}
+
+
+/* ========================================
+   BODY SYSTEM PRIORITY CARDS
+======================================== */
+
+.body-system-card{
+    background:var(--report-card-bg);
+border:1px solid var(--report-card-border);
+    border-radius:14px;
+    padding:18px;
+    margin-bottom:18px;
+}
+
+.body-system-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:14px;
+}
+
+.body-system-title{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.body-system-title h3{
+    margin:0;
+    color:var(--report-heading);
+    font-size:20px;
+}
+
+.body-food-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+}
+
+.body-food-chip{
+    background:var(--report-chip-bg);
+color:var(--report-chip-text);
+    padding:7px 12px;
+    border-radius:999px;
+    font-size:13px;
+    font-weight:500;
+}

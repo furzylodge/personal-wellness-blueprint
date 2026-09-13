@@ -4,29 +4,31 @@ declare(strict_types=1);
 
 namespace PWB\Recommendation;
 
-
 class RecommendationEngine
 {
+    private PriorityEngine $priorityEngine;
+    private BioactiveResolver $bioactiveScorer;
+    private FoodResolver $foodScorer;
 
-	public function recommend(array $profile): array
-	{
-    	$priorities = $this->priorityEngine->calculate($profile);
+    public function __construct()
+    {
+        $this->priorityEngine = new PriorityEngine();
+        $this->bioactiveScorer = new BioactiveResolver();
+        $this->foodScorer = new FoodResolver();
+    }
 
-	$bioactives = $this->bioactiveScorer->score($priorities);
+    public function recommend(array $profile): array
+    {
+        $priorities = $this->priorityEngine->calculate($profile);
 
-	$foods = $this->foodScorer->score($bioactives);
+        $bioactives = $this->bioactiveScorer->score($priorities);
 
-	$foods = $this->ranker->rankFoods($foods);
+        $foods = $this->foodScorer->score($bioactives);
 
-    return [
-
-        'priorities' => $priorities,
-
-        'bioactives' => $bioactives,
-
-        'foods' => $foods
-
-    ];
-}
-
+        return [
+            'priorities' => $priorities,
+            'bioactives' => $bioactives,
+            'foods' => $foods,
+        ];
+    }
 }

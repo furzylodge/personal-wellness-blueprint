@@ -6,57 +6,61 @@ namespace PWB\Reports\Sections;
 
 class BodySystemsSection
 {
-    public function render(array $reportData): string
-    {
-        $bodySystems = $reportData['bodySystems'] ?? [];
+public function render(array $systems): string
+{
+    $html = '
+    <section class="report-section">
 
-        $html = <<<HTML
+        <h2>Body System Priorities</h2>
 
-<h2>Primary Body Systems Supported</h2>
+        <p class="section-intro">
+            Your assessment identified these as the highest priority physiological systems. The foods shown are the five strongest whole-food recommendations supporting each system.
+        </p>';
 
-HTML;
+    $rank = 1;
 
-        if (empty($bodySystems)) {
+    foreach ($systems as $system) {
 
-            $html .= "<p>No body system recommendations available.</p>";
+        $foods = array_slice($system['topFoods'] ?? [], 0, 5);
 
-            return $html;
-        }
+        $html .= '
+        <div class="body-system-card">
 
-        foreach ($bodySystems as $systemName => $foods) {
+            <div class="body-system-header">
 
-            $html .= <<<HTML
+                <div class="body-system-title">
+                    <div class="rank-badge">'.$rank.'</div>
+                    <h3>'.htmlspecialchars($system['name']).'</h3>
+                </div>
 
-<div class="body-system">
+                <div class="score-badge">
+                    '.number_format($system['score'], 1).'%
+                </div>
 
-<h3>{$systemName}</h3>
+            </div>
 
-<p>The following recommended foods may help support this body system:</p>
+            <div class="body-food-row">';
 
-<ul>
+        foreach ($foods as $food) {
 
-HTML;
-
-            foreach ($foods as $food) {
-
-                $foodName = $food['name'] ?? 'Unknown';
-
-                $html .= "<li>{$foodName}</li>";
-
-            }
-
-            $html .= <<<HTML
-
-</ul>
-
-</div>
-
-<hr>
-
-HTML;
+            $html .= '
+                <span class="body-food-chip">
+                    '.htmlspecialchars($food['name']).'
+                </span>';
 
         }
 
-        return $html;
+        $html .= '
+            </div>
+
+        </div>';
+
+        $rank++;
     }
+
+    $html .= '
+    </section>';
+
+    return $html;
+}
 }

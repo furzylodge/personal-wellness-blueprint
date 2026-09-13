@@ -276,6 +276,9 @@ if (empty($errors)) {
 ?>
 
         <form method="post" novalidate>
+        
+        <input type="hidden" name="theme"
+       value="<?= htmlspecialchars($_SESSION['theme'] ?? 'green') ?>">
 
             <?= $renderer->render($page, $answers, $errors); ?>
 
@@ -309,6 +312,9 @@ if (empty($errors)) {
 ?>
 
         <form method="post" novalidate>
+        
+        <input type="hidden" name="theme"
+       value="<?= htmlspecialchars($_SESSION['theme'] ?? 'green') ?>">
 
             <?= $renderer->render($page, $answers, $errors); ?>
 

@@ -41,12 +41,11 @@ echo PHP_EOL;
 echo "Body System Priorities" . PHP_EOL;
 echo "======================" . PHP_EOL;
 
-foreach ($priorities as $p) {
+foreach ($priorities as $priority) {
     printf(
-        "#%d  %-20s %6.1f%%\n",
-        $p['rank'],
-        $p['name'],
-        $p['score']
+        "%s  %.1f%%\n",
+        $priority->name,
+        $priority->score
     );
 }
 

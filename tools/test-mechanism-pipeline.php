@@ -10,6 +10,7 @@ use PWB\Loader\JsonLoader;
 use PWB\Recommendation\Scorers\PriorityScorer;
 use PWB\Recommendation\MechanismResolver;
 use PWB\Recommendation\BioactiveResolver;
+use PWB\Recommendation\RecommendationConfiguration;
 
 $assessment = new Assessment(
     assessment: [],
@@ -34,7 +35,10 @@ $builder = new HealthProfileBuilder(
 $profile = $builder->build($assessment);
 
 $priorityScorer = new PriorityScorer();
-$priorities = $priorityScorer->score($profile);
+
+$config = new RecommendationConfiguration();
+
+$priorities = $priorityScorer->score($profile, $config);
 
 $mechanisms = (new MechanismResolver(
     new JsonLoader(),
@@ -47,10 +51,13 @@ $bioactives = (new BioactiveResolver(
 ))->resolve($mechanisms);
 
 echo PHP_EOL . "=== BODY SYSTEMS ===" . PHP_EOL;
-foreach ($priorities as $p) {
-    printf("%-15s %6.2f\n", $p['name'], $p['score']);
+foreach ($priorities as $priority) {
+    printf(
+        "%s  %.1f%%\n",
+        $priority->name,
+        $priority->score
+    );
 }
-
 echo PHP_EOL . "=== TOP 10 MECHANISMS ===" . PHP_EOL;
 foreach (array_slice($mechanisms, 0, 10) as $m) {
     printf("%-40s %5.2f\n", $m['mechanismName'], $m['clinicalScore']);
