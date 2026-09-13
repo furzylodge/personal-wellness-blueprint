@@ -12,6 +12,8 @@ use PWB\Recommendation\MechanismResolver;
 use PWB\Utils\TestAssessmentFactory;
 use PWB\Recommendation\BioactiveResolver;
 use PWB\Recommendation\FoodResolver;
+use PWB\Recommendation\VitaminResolver;
+use PWB\Recommendation\MineralResolver;
 
 
 $builder = new HealthProfileBuilder(
@@ -72,6 +74,20 @@ $foodResolver = new FoodResolver(
 
 $foods = $foodResolver->resolve($mechanisms);
 
+$vitaminResolver = new VitaminResolver(
+    new JsonLoader(),
+    __DIR__ . '/../knowledgebase'
+);
+
+$vitamins = $vitaminResolver->resolve($mechanisms);
+
+$mineralResolver = new MineralResolver(
+    new JsonLoader(),
+    __DIR__ . '/../knowledgebase'
+);
+
+$minerals = $mineralResolver->resolve($mechanisms);
+
 echo PHP_EOL;
 echo "Top Clinical Mechanisms" . PHP_EOL;
 echo "=======================" . PHP_EOL;
@@ -110,5 +126,27 @@ foreach (array_slice($foods, 0, 15) as $f) {
         $f['foodId'],
         $f['name'],
         $f['clinicalScore']
+    );
+}
+
+echo PHP_EOL . "Top Vitamins" . PHP_EOL;
+echo "====================" . PHP_EOL;
+
+foreach ($vitamins as $v) {
+    printf("%-6s %-25s %6.2f\n",
+        $v['vitaminId'],
+        $v['name'],
+        $v['clinicalScore']
+    );
+}
+
+echo PHP_EOL . "Top Minerals" . PHP_EOL;
+echo "====================" . PHP_EOL;
+
+foreach ($minerals as $m) {
+    printf("%-6s %-25s %6.2f\n",
+        $m['mineralId'],
+        $m['name'],
+        $m['clinicalScore']
     );
 }
