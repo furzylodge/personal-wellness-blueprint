@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "mechanisms": {
+    "MEC001": {
+      "tooltip": "Helps naturally remove cholesterol by supporting the binding and excretion of bile acids.",
+      "plainEnglish": "Supports one of the body's natural pathways for maintaining healthy cholesterol balance.",
+      "description": "Certain soluble fibres can bind bile acids in the digestive tract, allowing them to be excreted rather than recycled. The body then uses cholesterol to produce new bile acids, making this an important nutrition-supported pathway for healthy lipid metabolism.",
+      "whyItMatters": "Bile acid binding is one of the best understood mechanisms by which fibre-rich foods contribute to long-term cardiovascular and metabolic wellbeing."
+    }
+  }
+}

@@ -203,7 +203,6 @@ $foods[] = $food;
     
 private function buildBodySystems(array $foods, array $priorities): array
 {
-    // Priority score lookup (BS001 => 21.7)
     $priorityLookup = [];
 
     foreach ($priorities as $priority) {
@@ -221,38 +220,97 @@ private function buildBodySystems(array $foods, array $priorities): array
             if (!isset($systems[$systemId])) {
 
                 $systems[$systemId] = [
-                    'name'     => $this->bodySystems[$systemId] ?? $systemId,
-                    'score'    => $priorityLookup[$systemId] ?? 0,
-                    'topFoods' => []
+                    'name' => $this->bodySystems[$systemId] ?? $systemId,
+                    'score' => $priorityLookup[$systemId] ?? 0,
+                    'topFoods' => [],
+                    'mechanisms' => []
                 ];
-
             }
 
-            $systems[$systemId]['topFoods'][] = [
-                'id'   => $food['id'],
-                'name' => $foodName
+            $systems[$systemId]['topFoods'][$food['id']] = [
+                'id' => $food['id'],
+                'name' => $foodName,
+                'score' => $food['clinicalScore'] ?? 0
             ];
 
-        }
+            foreach ($food['sources'] ?? [] as $source) {
 
+                $id = $source['mechanismId'];
+
+                if (!isset($systems[$systemId]['mechanisms'][$id])) {
+
+                    $systems[$systemId]['mechanisms'][$id] = [
+                        'name' => $source['mechanismName'],
+                        'score' => 0
+                    ];
+                }
+
+                $systems[$systemId]['mechanisms'][$id]['score'] += $source['contribution'];
+            }
+        }
     }
 
-    // Convert associative array to indexed array
-    $systems = array_values($systems);
+    foreach ($systems as &$system) {
 
-    // Highest score first
-    usort($systems, fn($a, $b) => $b['score'] <=> $a['score']);
+        usort(
+            $system['topFoods'],
+            fn($a, $b) => $b['score'] <=> $a['score']
+        );
+
+        $system['topFoods'] = array_slice($system['topFoods'], 0, 5);
+
+        usort(
+            $system['mechanisms'],
+            fn($a, $b) => $b['score'] <=> $a['score']
+        );
+
+        $system['topMechanisms'] = array_slice($system['mechanisms'], 0, 3);
+
+        unset($system['mechanisms']);
+
+// -------------------------------------------------
+// Convert internal priority score to a 0–100
+// Wellness Support Score for reporting only
+// -------------------------------------------------
+
+$rawScore = $system['score'];
+
+$maxScore = !empty($priorityLookup)
+    ? max($priorityLookup)
+    : 1;
+
+$wellnessScore = (int) round(($rawScore / $maxScore) * 100);
+
+$system['score'] = $wellnessScore;
+
+// Interpretation shown in the report
+if ($wellnessScore >= 85) {
+    $system['interpretation'] = 'Strong opportunity for support';
+} elseif ($wellnessScore >= 70) {
+    $system['interpretation'] = 'Good opportunity for support';
+} elseif ($wellnessScore >= 55) {
+    $system['interpretation'] = 'Worth paying attention to';
+} elseif ($wellnessScore >= 40) {
+    $system['interpretation'] = 'Supportive habits may help';
+} else {
+    $system['interpretation'] = 'Lower current focus';
+}
+
+$system['summary'] =
+    'Your answers suggest this is one of the areas most likely to benefit from consistent dietary support. The pathways below explain why these foods were prioritised.';
     
+    }
+
+    unset($system);
+
     $systems = array_filter(
-    $systems,
-    fn($system) => $system['score'] > 0
-);
+        $systems,
+        fn($system) => $system['score'] > 0
+    );
 
-$systems = array_values($systems);
+    usort($systems, fn($a, $b) => $b['score'] <=> $a['score']);
 
-usort($systems, fn($a, $b) => $b['score'] <=> $a['score']);
-
-    return $systems;
+    return array_values($systems);
 }
 
     private function loadLookup(

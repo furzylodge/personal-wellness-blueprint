@@ -174,6 +174,14 @@ document.querySelectorAll('[data-exclusive-none]')
 updateConditionalQuestions();
 updateFollowUps();
 
+// Update conditional questions immediately when radio buttons change
+document.querySelectorAll('input[type=radio]').forEach(radio => {
+    radio.addEventListener('change', () => {
+        updateConditionalQuestions();
+        updateFollowUps();
+    });
+});
+
 
 // =====================================================
 // Theme picker

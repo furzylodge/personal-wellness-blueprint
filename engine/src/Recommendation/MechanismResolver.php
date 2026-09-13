@@ -22,6 +22,15 @@ public function resolve(array $priorities): array
     $mechanisms = $this->loader->load(
         $this->knowledgePath . '/taxonomy/mechanisms.json'
     );
+    
+    // Optional educational content
+$contentPath = $this->knowledgePath . '/taxonomy/mechanism-content.json';
+$mechanismContent = [];
+
+if (file_exists($contentPath)) {
+    $content = $this->loader->load($contentPath);
+    $mechanismContent = $content['mechanisms'] ?? [];
+}
 
     // Build body system lookup
     $bodySystems = [];
@@ -30,12 +39,22 @@ public function resolve(array $priorities): array
         $bodySystems[$system['id']] = $system;
     }
 
-    // Build mechanism lookup
-    $mechanismLookup = [];
+    // Build mechanism lookup and merge educational content
+$mechanismLookup = [];
 
-    foreach ($mechanisms['mechanisms'] as $mechanism) {
-        $mechanismLookup[$mechanism['id']] = $mechanism;
+foreach ($mechanisms['mechanisms'] as $mechanism) {
+
+    $id = $mechanism['id'];
+
+    if (isset($mechanismContent[$id])) {
+        $mechanism = array_merge(
+            $mechanism,
+            $mechanismContent[$id]
+        );
     }
+
+    $mechanismLookup[$id] = $mechanism;
+}
 
 $resolved = [];
 
@@ -60,7 +79,11 @@ foreach ($priorities as $priority) {
     'mechanismId'   => $id,
     'mechanismName' => $mechanismLookup[$id]['name'] ?? $id,
     'clinicalScore' => 0,
-    'evidence'      => $mechanismLookup[$id]['evidence_level'] ?? '',
+    'evidence'      => $mechanismLookup[$id]['evidence'] ?? '',
+    'plainEnglish' => $mechanismLookup[$id]['plainEnglish'] ?? '',
+'description'  => $mechanismLookup[$id]['description'] ?? '',
+'tooltip'      => $mechanismLookup[$id]['tooltip'] ?? '',
+'whyItMatters' => $mechanismLookup[$id]['whyItMatters'] ?? '',
     'sources'       => []
 ];
         }
@@ -89,6 +112,16 @@ usort(
     $resolved,
     fn($a, $b) => $b['clinicalScore'] <=> $a['clinicalScore']
 );
+
+foreach ($resolved as $row) {
+    if ($row['mechanismId'] === 'MEC001') {
+        echo '<pre>';
+        print_r($row);
+        echo '</pre>';
+        exit;
+    }
+}
+
 return $resolved;
 
 }
