@@ -1,8 +1,8 @@
 {
-  "version": "1.1",
+  "version": "1.2",
   "status": "ACTIVE",
   "description": "Canonical nutrient-to-mechanism relationships for vitamins and minerals. Nutrients remain a separate layer from bioactives.",
-  "count": 25,
+  "count": 151,
   "relationships": [
     {
       "nutrientId": "M004",
@@ -253,6 +253,1266 @@
   "confidence": "High",
   "basis": "Magnesium is an essential cofactor in glucose metabolism and contributes to maintenance of normal glucose homeostasis.",
   "tier1Target": true
+},
+{
+    "nutrientId": "V001",
+    "nutrient": "Vitamin A",
+    "mechanismId": "MEC038",
+    "mechanism": "Supports Mucosal Health",
+    "strength": 5,
+    "confidence": "High",
+    "basis": "Vitamin A is required for maintenance of normal mucosal tissues.",
+    "tier1Target": true
+  },
+  {
+    "nutrientId": "V001",
+    "nutrient": "Vitamin A",
+    "mechanismId": "MEC032",
+    "mechanism": "Supports Gut Barrier Integrity",
+    "strength": 4,
+    "confidence": "High",
+    "basis": "Vitamin A supports epithelial integrity throughout the gastrointestinal tract.",
+    "tier1Target": true
+  },
+  {
+    "nutrientId": "V001",
+    "nutrient": "Vitamin A",
+    "mechanismId": "MEC065",
+    "mechanism": "Supports Antimicrobial Defence",
+    "strength": 3,
+    "confidence": "Moderate",
+    "basis": "Vitamin A contributes to normal immune defence through maintenance of epithelial barriers.",
+    "tier1Target": true
+  },
+  {
+    "nutrientId": "V002",
+    "nutrient": "Vitamin B1 (Thiamine)",
+    "mechanismId": "MEC024",
+    "mechanism": "Supports Mitochondrial Resilience",
+    "strength": 4,
+    "confidence": "High",
+    "basis": "Thiamine is an essential cofactor in mitochondrial energy metabolism.",
+    "tier1Target": true
+  },
+  {
+    "nutrientId": "V002",
+    "nutrient": "Vitamin B1 (Thiamine)",
+    "mechanismId": "MEC044",
+    "mechanism": "Supports Healthy Energy Regulation",
+    "strength": 4,
+    "confidence": "High",
+    "basis": "Thiamine contributes to normal energy-yielding metabolism.",
+    "tier1Target": true
+  },
+  {
+    "nutrientId": "V002",
+    "nutrient": "Vitamin B1 (Thiamine)",
+    "mechanismId": "MEC057",
+    "mechanism": "Supports Nervous System Function",
+    "strength": 4,
+    "confidence": "High",
+    "basis": "Thiamine contributes to normal nervous system function.",
+    "tier1Target": true
+  },
+  {
+    "nutrientId": "V003",
+    "nutrient": "Vitamin B2 (Riboflavin)",
+    "mechanismId": "MEC026",
+    "mechanism": "Supports Redox Balance",
+    "strength": 5,
+    "confidence": "High",
+    "basis": "Riboflavin forms FAD and FMN, essential cofactors in cellular redox reactions.",
+    "tier1Target": true
+  },
+  {
+    "nutrientId": "V003",
+    "nutrient": "Vitamin B2 (Riboflavin)",
+    "mechanismId": "MEC024",
+    "mechanism": "Supports Mitochondrial Resilience",
+    "strength": 4,
+    "confidence": "High",
+    "basis": "Riboflavin supports mitochondrial ATP production.",
+    "tier1Target": true
+  },
+  {
+    "nutrientId": "V003",
+    "nutrient": "Vitamin B2 (Riboflavin)",
+    "mechanismId": "MEC072",
+    "mechanism": "Supports Glutathione Production",
+    "strength": 3,
+    "confidence": "Moderate",
+    "basis": "Riboflavin is required for glutathione reductase activity.",
+    "tier1Target": true
+  },
+  {
+    "nutrientId": "V004",
+    "nutrient": "Vitamin B3 (Niacin)",
+    "mechanismId": "MEC024",
+    "mechanism": "Supports Mitochondrial Resilience",
+    "strength": 5,
+    "confidence": "High",
+    "basis": "Niacin provides NAD and NADP for cellular energy metabolism.",
+    "tier1Target": true
+  },
+  {
+    "nutrientId": "V004",
+    "nutrient": "Vitamin B3 (Niacin)",
+    "mechanismId": "MEC026",
+    "mechanism": "Supports Redox Balance",
+    "strength": 4,
+    "confidence": "High",
+    "basis": "Niacin is central to oxidative and reductive metabolic pathways.",
+    "tier1Target": true
+  },
+  {
+    "nutrientId": "V005",
+    "nutrient": "Vitamin B5 (Pantothenic Acid)",
+    "mechanismId": "MEC024",
+    "mechanism": "Supports Mitochondrial Resilience",
+    "strength": 5,
+    "confidence": "High",
+    "basis": "Pantothenic acid is required for coenzyme A synthesis.",
+    "tier1Target": true
+  },
+  {
+    "nutrientId": "V005",
+    "nutrient": "Vitamin B5 (Pantothenic Acid)",
+    "mechanismId": "MEC070",
+    "mechanism": "Supports Phase II Detoxification",
+    "strength": 3,
+    "confidence": "Moderate",
+    "basis": "Coenzyme A participates in numerous hepatic metabolic pathways.",
+    "tier1Target": true
+  },
+  {
+    "nutrientId": "V006",
+    "nutrient": "Vitamin B6",
+    "mechanismId": "MEC053",
+    "mechanism": "Supports Neurotransmitter Synthesis",
+    "strength": 5,
+    "confidence": "High",
+    "basis": "Vitamin B6 is required for synthesis of serotonin, dopamine and GABA.",
+    "tier1Target": true
+  },
+  {
+    "nutrientId": "V006",
+    "nutrient": "Vitamin B6",
+    "mechanismId": "MEC057",
+    "mechanism": "Supports Nervous System Function",
+    "strength": 4,
+    "confidence": "High",
+    "basis": "Vitamin B6 contributes to normal nervous system function.",
+    "tier1Target": true
+  },
+  {
+    "nutrientId": "V006",
+    "nutrient": "Vitamin B6",
+    "mechanismId": "MEC072",
+    "mechanism": "Supports Glutathione Production",
+    "strength": 3,
+    "confidence": "Moderate",
+    "basis": "Vitamin B6 supports sulphur amino acid metabolism relevant to glutathione synthesis.",
+    "tier1Target": true
+  },
+  {
+    "nutrientId": "V007",
+    "nutrient": "Vitamin B7 (Biotin)",
+    "mechanismId": "MEC044",
+    "mechanism": "Supports Healthy Energy Regulation",
+    "strength": 4,
+    "confidence": "High",
+    "basis": "Biotin contributes to normal macronutrient metabolism.",
+    "tier1Target": true
+  },
+  {
+    "nutrientId": "V007",
+    "nutrient": "Vitamin B7 (Biotin)",
+    "mechanismId": "MEC047",
+    "mechanism": "Supports Glucose Uptake",
+    "strength": 3,
+    "confidence": "Moderate",
+    "basis": "Biotin participates in carbohydrate metabolism and glucose utilisation.",
+    "tier1Target": true
+  },
+  {
+    "nutrientId": "V008",
+    "nutrient": "Vitamin B9 (Folate)",
+    "mechanismId": "MEC027",
+    "mechanism": "Supports Cellular Repair",
+    "strength": 5,
+    "confidence": "High",
+    "basis": "Folate is essential for DNA synthesis and normal cell division.",
+    "tier1Target": true
+  },
+  {
+    "nutrientId": "V008",
+    "nutrient": "Vitamin B9 (Folate)",
+    "mechanismId": "MEC063",
+    "mechanism": "Supports Immune Cell Signalling",
+    "strength": 3,
+    "confidence": "Moderate",
+    "basis": "Folate supports rapidly dividing immune cells.",
+    "tier1Target": true
+  },
+  {
+    "nutrientId": "V009",
+    "nutrient": "Vitamin B12",
+    "mechanismId": "MEC057",
+    "mechanism": "Supports Nervous System Function",
+    "strength": 5,
+    "confidence": "High",
+    "basis": "Vitamin B12 contributes to normal neurological function.",
+    "tier1Target": true
+  },
+  {
+    "nutrientId": "V009",
+    "nutrient": "Vitamin B12",
+    "mechanismId": "MEC053",
+    "mechanism": "Supports Neurotransmitter Synthesis",
+    "strength": 3,
+    "confidence": "Moderate",
+    "basis": "Vitamin B12 supports methylation pathways involved in neurotransmitter metabolism.",
+    "tier1Target": true
+  },
+  {
+    "nutrientId": "V009",
+    "nutrient": "Vitamin B12",
+    "mechanismId": "MEC027",
+    "mechanism": "Supports Cellular Repair",
+    "strength": 4,
+    "confidence": "High",
+    "basis": "Vitamin B12 is required for DNA synthesis and healthy cell turnover.",
+    "tier1Target": true
+  },
+  {
+    "nutrientId": "V012",
+    "nutrient": "Vitamin E",
+    "mechanismId": "MEC023",
+    "mechanism": "Protects Cellular Membranes",
+    "strength": 5,
+    "confidence": "High",
+    "basis": "Vitamin E is the principal lipid-soluble antioxidant protecting cell membranes.",
+    "tier1Target": true
+  },
+  {
+    "nutrientId": "V012",
+    "nutrient": "Vitamin E",
+    "mechanismId": "MEC021",
+    "mechanism": "Neutralises Free Radicals",
+    "strength": 4,
+    "confidence": "High",
+    "basis": "Vitamin E contributes to protection of cells from oxidative stress.",
+    "tier1Target": true
+  },
+  {
+    "nutrientId": "V012",
+    "nutrient": "Vitamin E",
+    "mechanismId": "MEC027",
+    "mechanism": "Supports Cellular Repair",
+    "strength": 3,
+    "confidence": "Moderate",
+    "basis": "Vitamin E supports preservation of cellular integrity during oxidative challenge.",
+    "tier1Target": true
+  },
+  {
+    "nutrientId": "V010",
+    "nutrient": "Vitamin C",
+    "mechanismId": "MEC032",
+    "mechanism": "Supports Gut Barrier Integrity",
+    "strength": 4,
+    "confidence": "High",
+    "basis": "Vitamin C supports collagen formation and epithelial integrity.",
+    "tier1Target": true
+  },
+  {
+    "nutrientId": "V010",
+    "nutrient": "Vitamin C",
+    "mechanismId": "MEC038",
+    "mechanism": "Supports Mucosal Health",
+    "strength": 4,
+    "confidence": "High",
+    "basis": "Vitamin C contributes to maintenance of healthy mucosal tissues.",
+    "tier1Target": true
+  },
+  {
+    "nutrientId": "V011",
+    "nutrient": "Vitamin D",
+    "mechanismId": "MEC032",
+    "mechanism": "Supports Gut Barrier Integrity",
+    "strength": 4,
+    "confidence": "High",
+    "basis": "Vitamin D helps maintain epithelial barrier function.",
+    "tier1Target": true
+  },
+  {
+    "nutrientId": "V011",
+    "nutrient": "Vitamin D",
+    "mechanismId": "MEC037",
+    "mechanism": "Supports Nutrient Absorption",
+    "strength": 5,
+    "confidence": "High",
+    "basis": "Vitamin D regulates intestinal absorption of calcium and phosphorus.",
+    "tier1Target": true
+  },
+  {
+    "nutrientId": "V013",
+    "nutrient": "Vitamin K",
+    "mechanismId": "MEC037",
+    "mechanism": "Supports Nutrient Absorption",
+    "strength": 3,
+    "confidence": "Moderate",
+    "basis": "Fat-soluble vitamin K depends on healthy intestinal absorption.",
+    "tier1Target": true
+  },
+  {
+    "nutrientId": "V008",
+    "nutrient": "Vitamin B9 (Folate)",
+    "mechanismId": "MEC037",
+    "mechanism": "Supports Nutrient Absorption",
+    "strength": 4,
+    "confidence": "High",
+    "basis": "Healthy intestinal function supports folate absorption.",
+    "tier1Target": true
+  },
+  {
+    "nutrientId": "V009",
+    "nutrient": "Vitamin B12",
+    "mechanismId": "MEC037",
+    "mechanism": "Supports Nutrient Absorption",
+    "strength": 5,
+    "confidence": "High",
+    "basis": "Vitamin B12 absorption depends on intact gastrointestinal physiology.",
+    "tier1Target": true
+  },
+  {
+    "nutrientId": "M006",
+    "nutrient": "Magnesium",
+    "mechanismId": "MEC037",
+    "mechanism": "Supports Nutrient Absorption",
+    "strength": 4,
+    "confidence": "High",
+    "basis": "Magnesium status is strongly influenced by intestinal absorption efficiency.",
+    "tier1Target": true
+  },
+  {
+    "nutrientId": "M001",
+    "nutrient": "Calcium",
+    "mechanismId": "MEC037",
+    "mechanism": "Supports Nutrient Absorption",
+    "strength": 4,
+    "confidence": "High",
+    "basis": "Calcium absorption occurs primarily within the small intestine.",
+    "tier1Target": true
+  },
+  {
+    "nutrientId": "M013",
+    "nutrient": "Zinc",
+    "mechanismId": "MEC032",
+    "mechanism": "Supports Gut Barrier Integrity",
+    "strength": 4,
+    "confidence": "High",
+    "basis": "Zinc supports epithelial repair and intestinal barrier integrity.",
+    "tier1Target": true
+  },
+  {
+    "nutrientId": "M013",
+    "nutrient": "Zinc",
+    "mechanismId": "MEC038",
+    "mechanism": "Supports Mucosal Health",
+    "strength": 4,
+    "confidence": "High",
+    "basis": "Zinc contributes to maintenance of normal mucous membranes.",
+    "tier1Target": true
+  },
+  {
+    "nutrientId": "M011",
+    "nutrient": "Selenium",
+    "mechanismId": "MEC038",
+    "mechanism": "Supports Mucosal Health",
+    "strength": 3,
+    "confidence": "Moderate",
+    "basis": "Selenium supports antioxidant protection within gastrointestinal tissues.",
+    "tier1Target": true
+  },
+  {
+    "nutrientId": "M004",
+    "nutrient": "Iodine",
+    "mechanismId": "MEC037",
+    "mechanism": "Supports Nutrient Absorption",
+    "strength": 2,
+    "confidence": "Moderate",
+    "basis": "Adequate intestinal absorption is required for iodine bioavailability.",
+    "tier1Target": false
+  },
+  {
+    "nutrientId": "M006",
+    "nutrient": "Magnesium",
+    "mechanismId": "MEC036",
+    "mechanism": "Supports Healthy Gut pH",
+    "strength": 2,
+    "confidence": "Low",
+    "basis": "Magnesium may indirectly support a healthy intestinal environment.",
+    "tier1Target": false
+  },
+  {
+    "nutrientId": "V010",
+    "nutrient": "Vitamin C",
+    "mechanismId": "MEC036",
+    "mechanism": "Supports Healthy Gut pH",
+    "strength": 2,
+    "confidence": "Low",
+    "basis": "Vitamin C contributes indirectly to a healthy gastrointestinal environment.",
+    "tier1Target": false
+  },
+{
+  "nutrientId": "V005",
+  "nutrient": "Vitamin B5 (Pantothenic Acid)",
+  "mechanismId": "MEC109",
+  "mechanism": "Supports Phase I Detoxification",
+  "strength": 4,
+  "confidence": "High",
+  "basis": "Pantothenic acid is required for coenzyme A production in hepatic metabolism.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "V005",
+  "nutrient": "Vitamin B5 (Pantothenic Acid)",
+  "mechanismId": "MEC110",
+  "mechanism": "Supports Phase II Conjugation",
+  "strength": 4,
+  "confidence": "High",
+  "basis": "Coenzyme A participates in numerous conjugation pathways.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "V003",
+  "nutrient": "Vitamin B2 (Riboflavin)",
+  "mechanismId": "MEC109",
+  "mechanism": "Supports Phase I Detoxification",
+  "strength": 4,
+  "confidence": "High",
+  "basis": "Riboflavin provides FAD for cytochrome P450 activity.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "V003",
+  "nutrient": "Vitamin B2 (Riboflavin)",
+  "mechanismId": "MEC111",
+  "mechanism": "Supports Glutathione Synthesis",
+  "strength": 3,
+  "confidence": "High",
+  "basis": "Riboflavin is required for glutathione reductase function.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "V006",
+  "nutrient": "Vitamin B6",
+  "mechanismId": "MEC110",
+  "mechanism": "Supports Phase II Conjugation",
+  "strength": 4,
+  "confidence": "High",
+  "basis": "Vitamin B6 supports sulphur amino acid metabolism.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "V006",
+  "nutrient": "Vitamin B6",
+  "mechanismId": "MEC113",
+  "mechanism": "Supports Hepatic Cellular Protection",
+  "strength": 3,
+  "confidence": "Moderate",
+  "basis": "Vitamin B6 contributes to normal homocysteine metabolism.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "V012",
+  "nutrient": "Vitamin E",
+  "mechanismId": "MEC113",
+  "mechanism": "Supports Hepatic Cellular Protection",
+  "strength": 4,
+  "confidence": "High",
+  "basis": "Vitamin E protects hepatocyte membranes from oxidative damage.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "V010",
+  "nutrient": "Vitamin C",
+  "mechanismId": "MEC111",
+  "mechanism": "Supports Glutathione Synthesis",
+  "strength": 4,
+  "confidence": "High",
+  "basis": "Vitamin C regenerates oxidised glutathione and vitamin E.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "V010",
+  "nutrient": "Vitamin C",
+  "mechanismId": "MEC113",
+  "mechanism": "Supports Hepatic Cellular Protection",
+  "strength": 3,
+  "confidence": "Moderate",
+  "basis": "Vitamin C contributes to antioxidant protection of liver tissue.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "M011",
+  "nutrient": "Selenium",
+  "mechanismId": "MEC111",
+  "mechanism": "Supports Glutathione Synthesis",
+  "strength": 5,
+  "confidence": "High",
+  "basis": "Selenium is required for glutathione peroxidase enzymes.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "M011",
+  "nutrient": "Selenium",
+  "mechanismId": "MEC113",
+  "mechanism": "Supports Hepatic Cellular Protection",
+  "strength": 4,
+  "confidence": "High",
+  "basis": "Selenium protects hepatic tissue through selenoproteins.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "M013",
+  "nutrient": "Zinc",
+  "mechanismId": "MEC113",
+  "mechanism": "Supports Hepatic Cellular Protection",
+  "strength": 3,
+  "confidence": "Moderate",
+  "basis": "Zinc supports antioxidant enzyme activity and cellular repair.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "M008",
+  "nutrient": "Molybdenum",
+  "mechanismId": "MEC112",
+  "mechanism": "Supports Xenobiotic Elimination",
+  "strength": 5,
+  "confidence": "High",
+  "basis": "Molybdenum is a cofactor for sulphite oxidase and aldehyde oxidase.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "M008",
+  "nutrient": "Molybdenum",
+  "mechanismId": "MEC110",
+  "mechanism": "Supports Phase II Conjugation",
+  "strength": 3,
+  "confidence": "Moderate",
+  "basis": "Molybdenum supports sulphur compound metabolism.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "M006",
+  "nutrient": "Magnesium",
+  "mechanismId": "MEC109",
+  "mechanism": "Supports Phase I Detoxification",
+  "strength": 2,
+  "confidence": "Low",
+  "basis": "Magnesium acts as a cofactor in numerous hepatic enzymatic reactions.",
+  "tier1Target": false
+},
+{
+  "nutrientId": "V010",
+  "nutrient": "Vitamin C",
+  "mechanismId": "MEC061",
+  "mechanism": "Supports Innate Immune Function",
+  "strength": 5,
+  "confidence": "High",
+  "basis": "Vitamin C contributes to the normal function of the immune system.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "V010",
+  "nutrient": "Vitamin C",
+  "mechanismId": "MEC062",
+  "mechanism": "Supports Adaptive Immune Function",
+  "strength": 4,
+  "confidence": "High",
+  "basis": "Vitamin C supports lymphocyte function and adaptive immunity.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "V010",
+  "nutrient": "Vitamin C",
+  "mechanismId": "MEC064",
+  "mechanism": "Supports Resolution of Inflammation",
+  "strength": 3,
+  "confidence": "Moderate",
+  "basis": "Vitamin C contributes to protection from oxidative stress during inflammatory responses.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "V001",
+  "nutrient": "Vitamin A",
+  "mechanismId": "MEC061",
+  "mechanism": "Supports Innate Immune Function",
+  "strength": 4,
+  "confidence": "High",
+  "basis": "Vitamin A maintains epithelial immune barriers and innate defence.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "V001",
+  "nutrient": "Vitamin A",
+  "mechanismId": "MEC062",
+  "mechanism": "Supports Adaptive Immune Function",
+  "strength": 4,
+  "confidence": "High",
+  "basis": "Vitamin A regulates adaptive immune cell differentiation.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "V011",
+  "nutrient": "Vitamin D",
+  "mechanismId": "MEC064",
+  "mechanism": "Supports Resolution of Inflammation",
+  "strength": 3,
+  "confidence": "Moderate",
+  "basis": "Vitamin D modulates inflammatory signalling pathways.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "V012",
+  "nutrient": "Vitamin E",
+  "mechanismId": "MEC061",
+  "mechanism": "Supports Innate Immune Function",
+  "strength": 3,
+  "confidence": "Moderate",
+  "basis": "Vitamin E supports normal immune-cell membrane function.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "V012",
+  "nutrient": "Vitamin E",
+  "mechanismId": "MEC064",
+  "mechanism": "Supports Resolution of Inflammation",
+  "strength": 3,
+  "confidence": "Moderate",
+  "basis": "Vitamin E protects immune cells from oxidative damage.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "M013",
+  "nutrient": "Zinc",
+  "mechanismId": "MEC064",
+  "mechanism": "Supports Resolution of Inflammation",
+  "strength": 4,
+  "confidence": "High",
+  "basis": "Zinc regulates inflammatory cytokine signalling and tissue repair.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "M003",
+  "nutrient": "Copper",
+  "mechanismId": "MEC061",
+  "mechanism": "Supports Innate Immune Function",
+  "strength": 3,
+  "confidence": "Moderate",
+  "basis": "Copper contributes to normal immune function through antioxidant enzymes.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "M003",
+  "nutrient": "Copper",
+  "mechanismId": "MEC021",
+  "mechanism": "Neutralises Free Radicals",
+  "strength": 4,
+  "confidence": "High",
+  "basis": "Copper is a cofactor for superoxide dismutase.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "M011",
+  "nutrient": "Selenium",
+  "mechanismId": "MEC021",
+  "mechanism": "Neutralises Free Radicals",
+  "strength": 5,
+  "confidence": "High",
+  "basis": "Selenium-dependent enzymes protect cells from oxidative stress.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "M006",
+  "nutrient": "Magnesium",
+  "mechanismId": "MEC064",
+  "mechanism": "Supports Resolution of Inflammation",
+  "strength": 3,
+  "confidence": "Moderate",
+  "basis": "Adequate magnesium supports normal inflammatory regulation.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "M001",
+  "nutrient": "Calcium",
+  "mechanismId": "MEC063",
+  "mechanism": "Supports Immune Cell Signalling",
+  "strength": 4,
+  "confidence": "High",
+  "basis": "Calcium is an essential intracellular signalling molecule in immune cells.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "V008",
+  "nutrient": "Vitamin B9 (Folate)",
+  "mechanismId": "MEC062",
+  "mechanism": "Supports Adaptive Immune Function",
+  "strength": 3,
+  "confidence": "Moderate",
+  "basis": "Folate supports proliferation of adaptive immune cells.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "V010",
+  "nutrient": "Vitamin C",
+  "mechanismId": "MEC010",
+  "mechanism": "Supports Endothelial Function",
+  "strength": 5,
+  "confidence": "High",
+  "basis": "Vitamin C supports endothelial nitric oxide availability through antioxidant protection.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "V010",
+  "nutrient": "Vitamin C",
+  "mechanismId": "MEC011",
+  "mechanism": "Supports Nitric Oxide Production",
+  "strength": 3,
+  "confidence": "Moderate",
+  "basis": "Vitamin C helps preserve nitric oxide bioavailability by reducing oxidative degradation.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "V013",
+  "nutrient": "Vitamin K",
+  "mechanismId": "MEC012",
+  "mechanism": "Supports Vascular Integrity",
+  "strength": 5,
+  "confidence": "High",
+  "basis": "Vitamin K activates matrix Gla protein, supporting vascular health.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "V009",
+  "nutrient": "Vitamin B12",
+  "mechanismId": "MEC011",
+  "mechanism": "Supports Nitric Oxide Production",
+  "strength": 2,
+  "confidence": "Moderate",
+  "basis": "Vitamin B12 contributes indirectly through homocysteine regulation.",
+  "tier1Target": false
+},
+{
+  "nutrientId": "V008",
+  "nutrient": "Vitamin B9 (Folate)",
+  "mechanismId": "MEC011",
+  "mechanism": "Supports Nitric Oxide Production",
+  "strength": 4,
+  "confidence": "High",
+  "basis": "Folate supports endothelial nitric oxide synthase coupling.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "M006",
+  "nutrient": "Magnesium",
+  "mechanismId": "MEC010",
+  "mechanism": "Supports Endothelial Function",
+  "strength": 5,
+  "confidence": "High",
+  "basis": "Magnesium contributes to normal vascular smooth muscle relaxation.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "M006",
+  "nutrient": "Magnesium",
+  "mechanismId": "MEC011",
+  "mechanism": "Supports Nitric Oxide Production",
+  "strength": 3,
+  "confidence": "Moderate",
+  "basis": "Magnesium supports endothelial signalling involved in nitric oxide activity.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "M010",
+  "nutrient": "Potassium",
+  "mechanismId": "MEC010",
+  "mechanism": "Supports Endothelial Function",
+  "strength": 4,
+  "confidence": "High",
+  "basis": "Potassium contributes to maintenance of normal blood pressure and vascular function.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "M010",
+  "nutrient": "Potassium",
+  "mechanismId": "MEC012",
+  "mechanism": "Supports Vascular Integrity",
+  "strength": 3,
+  "confidence": "Moderate",
+  "basis": "Potassium supports healthy vascular physiology.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "M003",
+  "nutrient": "Copper",
+  "mechanismId": "MEC012",
+  "mechanism": "Supports Vascular Integrity",
+  "strength": 4,
+  "confidence": "High",
+  "basis": "Copper is required for lysyl oxidase, essential for elastin and collagen cross-linking.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "M003",
+  "nutrient": "Copper",
+  "mechanismId": "MEC093",
+  "mechanism": "Supports Connective Tissue Integrity",
+  "strength": 4,
+  "confidence": "High",
+  "basis": "Copper supports structural integrity of connective tissues including blood vessels.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "M013",
+  "nutrient": "Zinc",
+  "mechanismId": "MEC010",
+  "mechanism": "Supports Endothelial Function",
+  "strength": 3,
+  "confidence": "Moderate",
+  "basis": "Zinc contributes to endothelial antioxidant defence.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "M001",
+  "nutrient": "Calcium",
+  "mechanismId": "MEC010",
+  "mechanism": "Supports Endothelial Function",
+  "strength": 2,
+  "confidence": "Low",
+  "basis": "Calcium participates in vascular signalling and smooth muscle contraction.",
+  "tier1Target": false
+},
+{
+  "nutrientId": "V001",
+  "nutrient": "Vitamin A",
+  "mechanismId": "MEC012",
+  "mechanism": "Supports Vascular Integrity",
+  "strength": 2,
+  "confidence": "Low",
+  "basis": "Vitamin A contributes indirectly through epithelial and connective tissue maintenance.",
+  "tier1Target": false
+},
+{
+  "nutrientId": "V012",
+  "nutrient": "Vitamin E",
+  "mechanismId": "MEC010",
+  "mechanism": "Supports Endothelial Function",
+  "strength": 3,
+  "confidence": "Moderate",
+  "basis": "Vitamin E protects endothelial cell membranes from oxidative stress.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "V002",
+  "nutrient": "Vitamin B1 (Thiamine)",
+  "mechanismId": "MEC051",
+  "mechanism": "Supports Cognitive Performance",
+  "strength": 4,
+  "confidence": "High",
+  "basis": "Thiamine contributes to normal psychological function and brain energy metabolism.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "V002",
+  "nutrient": "Vitamin B1 (Thiamine)",
+  "mechanismId": "MEC053",
+  "mechanism": "Supports Neurotransmitter Synthesis",
+  "strength": 3,
+  "confidence": "Moderate",
+  "basis": "Thiamine supports neuronal carbohydrate metabolism required for neurotransmission.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "V003",
+  "nutrient": "Vitamin B2 (Riboflavin)",
+  "mechanismId": "MEC051",
+  "mechanism": "Supports Cognitive Performance",
+  "strength": 3,
+  "confidence": "Moderate",
+  "basis": "Riboflavin supports cerebral energy metabolism through FAD-dependent enzymes.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "V004",
+  "nutrient": "Vitamin B3 (Niacin)",
+  "mechanismId": "MEC051",
+  "mechanism": "Supports Cognitive Performance",
+  "strength": 4,
+  "confidence": "High",
+  "basis": "Niacin provides NAD for neuronal energy production.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "V006",
+  "nutrient": "Vitamin B6",
+  "mechanismId": "MEC052",
+  "mechanism": "Supports Mood Regulation",
+  "strength": 5,
+  "confidence": "High",
+  "basis": "Vitamin B6 is required for serotonin and dopamine synthesis.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "V008",
+  "nutrient": "Vitamin B9 (Folate)",
+  "mechanismId": "MEC052",
+  "mechanism": "Supports Mood Regulation",
+  "strength": 4,
+  "confidence": "High",
+  "basis": "Folate contributes to methylation pathways involved in neurotransmitter metabolism.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "V009",
+  "nutrient": "Vitamin B12",
+  "mechanismId": "MEC052",
+  "mechanism": "Supports Mood Regulation",
+  "strength": 4,
+  "confidence": "High",
+  "basis": "Vitamin B12 supports neurological and psychological function.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "V009",
+  "nutrient": "Vitamin B12",
+  "mechanismId": "MEC051",
+  "mechanism": "Supports Cognitive Performance",
+  "strength": 4,
+  "confidence": "High",
+  "basis": "Vitamin B12 contributes to normal cognitive and neurological function.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "M005",
+  "nutrient": "Iron",
+  "mechanismId": "MEC051",
+  "mechanism": "Supports Cognitive Performance",
+  "strength": 5,
+  "confidence": "High",
+  "basis": "Iron is essential for oxygen transport and normal cognitive function.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "M005",
+  "nutrient": "Iron",
+  "mechanismId": "MEC044",
+  "mechanism": "Supports Healthy Energy Regulation",
+  "strength": 5,
+  "confidence": "High",
+  "basis": "Iron contributes to normal energy-yielding metabolism and reduction of fatigue.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "M002",
+  "nutrient": "Chromium",
+  "mechanismId": "MEC047",
+  "mechanism": "Supports Glucose Uptake",
+  "strength": 5,
+  "confidence": "High",
+  "basis": "Chromium contributes to maintenance of normal blood glucose levels.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "M002",
+  "nutrient": "Chromium",
+  "mechanismId": "MEC115",
+  "mechanism": "Supports Glucose Homeostasis",
+  "strength": 4,
+  "confidence": "High",
+  "basis": "Chromium supports normal macronutrient metabolism and glucose regulation.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "M007",
+  "nutrient": "Manganese",
+  "mechanismId": "MEC021",
+  "mechanism": "Neutralises Free Radicals",
+  "strength": 4,
+  "confidence": "High",
+  "basis": "Manganese is a cofactor for mitochondrial superoxide dismutase.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "M007",
+  "nutrient": "Manganese",
+  "mechanismId": "MEC024",
+  "mechanism": "Supports Mitochondrial Resilience",
+  "strength": 3,
+  "confidence": "Moderate",
+  "basis": "Manganese supports mitochondrial antioxidant defence.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "M006",
+  "nutrient": "Magnesium",
+  "mechanismId": "MEC052",
+  "mechanism": "Supports Mood Regulation",
+  "strength": 4,
+  "confidence": "High",
+  "basis": "Magnesium contributes to normal psychological function and nervous system health.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "V010",
+  "nutrient": "Vitamin C",
+  "mechanismId": "MEC094",
+  "mechanism": "Supports Collagen Formation",
+  "strength": 5,
+  "confidence": "High",
+  "basis": "Vitamin C is essential for hydroxylation of collagen fibres.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "V010",
+  "nutrient": "Vitamin C",
+  "mechanismId": "MEC095",
+  "mechanism": "Supports Cartilage Integrity",
+  "strength": 4,
+  "confidence": "High",
+  "basis": "Collagen is a major structural component of cartilage.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "V010",
+  "nutrient": "Vitamin C",
+  "mechanismId": "MEC098",
+  "mechanism": "Supports Ligament Health",
+  "strength": 4,
+  "confidence": "High",
+  "basis": "Vitamin C supports collagen-rich ligament tissue.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "V013",
+  "nutrient": "Vitamin K",
+  "mechanismId": "MEC095",
+  "mechanism": "Supports Cartilage Integrity",
+  "strength": 3,
+  "confidence": "Moderate",
+  "basis": "Vitamin K-dependent proteins contribute to cartilage metabolism.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "V011",
+  "nutrient": "Vitamin D",
+  "mechanismId": "MEC099",
+  "mechanism": "Supports Muscle Function",
+  "strength": 5,
+  "confidence": "High",
+  "basis": "Vitamin D contributes to normal muscle function.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "M006",
+  "nutrient": "Magnesium",
+  "mechanismId": "MEC099",
+  "mechanism": "Supports Muscle Function",
+  "strength": 5,
+  "confidence": "High",
+  "basis": "Magnesium is essential for muscle contraction and relaxation.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "M001",
+  "nutrient": "Calcium",
+  "mechanismId": "MEC099",
+  "mechanism": "Supports Muscle Function",
+  "strength": 5,
+  "confidence": "High",
+  "basis": "Calcium is required for excitation-contraction coupling.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "M005",
+  "nutrient": "Iron",
+  "mechanismId": "MEC099",
+  "mechanism": "Supports Muscle Function",
+  "strength": 3,
+  "confidence": "Moderate",
+  "basis": "Iron supports oxygen delivery to skeletal muscle.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "M003",
+  "nutrient": "Copper",
+  "mechanismId": "MEC094",
+  "mechanism": "Supports Collagen Formation",
+  "strength": 4,
+  "confidence": "High",
+  "basis": "Copper-dependent lysyl oxidase strengthens collagen fibres.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "M007",
+  "nutrient": "Manganese",
+  "mechanismId": "MEC095",
+  "mechanism": "Supports Cartilage Integrity",
+  "strength": 3,
+  "confidence": "Moderate",
+  "basis": "Manganese contributes to connective tissue formation.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "M010",
+  "nutrient": "Potassium",
+  "mechanismId": "MEC100",
+  "mechanism": "Supports Electrolyte Balance",
+  "strength": 5,
+  "confidence": "High",
+  "basis": "Potassium is the principal intracellular electrolyte.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "M012",
+  "nutrient": "Sodium",
+  "mechanismId": "MEC100",
+  "mechanism": "Supports Electrolyte Balance",
+  "strength": 5,
+  "confidence": "High",
+  "basis": "Sodium is the principal extracellular electrolyte.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "M006",
+  "nutrient": "Magnesium",
+  "mechanismId": "MEC100",
+  "mechanism": "Supports Electrolyte Balance",
+  "strength": 4,
+  "confidence": "High",
+  "basis": "Magnesium regulates sodium and potassium transport.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "M001",
+  "nutrient": "Calcium",
+  "mechanismId": "MEC100",
+  "mechanism": "Supports Electrolyte Balance",
+  "strength": 3,
+  "confidence": "Moderate",
+  "basis": "Calcium contributes to cellular signalling during electrolyte regulation.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "M009",
+  "nutrient": "Phosphorus",
+  "mechanismId": "MEC024",
+  "mechanism": "Supports Mitochondrial Resilience",
+  "strength": 4,
+  "confidence": "High",
+  "basis": "Phosphorus is essential for ATP production.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "M009",
+  "nutrient": "Phosphorus",
+  "mechanismId": "MEC044",
+  "mechanism": "Supports Healthy Energy Regulation",
+  "strength": 4,
+  "confidence": "High",
+  "basis": "Phosphorus is required for cellular energy transfer.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "M010",
+  "nutrient": "Potassium",
+  "mechanismId": "MEC099",
+  "mechanism": "Supports Muscle Function",
+  "strength": 4,
+  "confidence": "High",
+  "basis": "Potassium supports neuromuscular excitability.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "M012",
+  "nutrient": "Sodium",
+  "mechanismId": "MEC057",
+  "mechanism": "Supports Nervous System Function",
+  "strength": 3,
+  "confidence": "Moderate",
+  "basis": "Sodium gradients enable neuronal impulse transmission.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "V007",
+  "nutrient": "Vitamin B7 (Biotin)",
+  "mechanismId": "MEC101",
+  "mechanism": "Supports Hair Growth",
+  "strength": 5,
+  "confidence": "High",
+  "basis": "Biotin contributes to maintenance of normal hair.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "V007",
+  "nutrient": "Vitamin B7 (Biotin)",
+  "mechanismId": "MEC102",
+  "mechanism": "Supports Nail Strength",
+  "strength": 5,
+  "confidence": "High",
+  "basis": "Biotin contributes to maintenance of normal nails.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "V001",
+  "nutrient": "Vitamin A",
+  "mechanismId": "MEC103",
+  "mechanism": "Supports Skin Renewal",
+  "strength": 5,
+  "confidence": "High",
+  "basis": "Vitamin A regulates epithelial cell turnover.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "V010",
+  "nutrient": "Vitamin C",
+  "mechanismId": "MEC103",
+  "mechanism": "Supports Skin Renewal",
+  "strength": 4,
+  "confidence": "High",
+  "basis": "Vitamin C supports dermal collagen synthesis.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "M013",
+  "nutrient": "Zinc",
+  "mechanismId": "MEC103",
+  "mechanism": "Supports Skin Renewal",
+  "strength": 4,
+  "confidence": "High",
+  "basis": "Zinc supports epithelial repair and wound healing.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "M003",
+  "nutrient": "Copper",
+  "mechanismId": "MEC101",
+  "mechanism": "Supports Hair Growth",
+  "strength": 3,
+  "confidence": "Moderate",
+  "basis": "Copper contributes to pigmentation and connective tissue integrity.",
+  "tier1Target": true
+},
+{
+  "nutrientId": "M005",
+  "nutrient": "Iron",
+  "mechanismId": "MEC101",
+  "mechanism": "Supports Hair Growth",
+  "strength": 3,
+  "confidence": "Moderate",
+  "basis": "Iron supports oxygen delivery to rapidly dividing hair follicle cells.",
+  "tier1Target": true
 }
-  ]
+]
 }
