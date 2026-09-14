@@ -1272,3 +1272,49 @@ color:var(--report-chip-text);
     font-weight: 700;
     white-space: nowrap;
 }
+
+.food-score-breakdown{
+    margin-top:18px;
+    border-top:1px solid #E5E7EB;
+    padding-top:14px;
+}
+
+.food-score-breakdown summary{
+    cursor:pointer;
+    font-size:14px;
+    font-weight:600;
+    color:#0F766E;
+    list-style:none;
+}
+
+.food-score-breakdown summary::-webkit-details-marker{
+    display:none;
+}
+
+.score-breakdown-table{
+    margin-top:12px;
+}
+
+.score-row{
+    display:flex;
+    justify-content:space-between;
+    padding:6px 0;
+    font-size:14px;
+    border-bottom:1px solid #F3F4F6;
+}
+
+.score-row.total{
+    margin-top:6px;
+    padding-top:10px;
+    border-top:2px solid #D1D5DB;
+    border-bottom:none;
+    font-weight:700;
+}
+
+.score-breakdown-intro{
+    font-size:13px;
+    line-height:1.5;
+    color:#64748B;
+    margin:8px 0 12px;
+}
+

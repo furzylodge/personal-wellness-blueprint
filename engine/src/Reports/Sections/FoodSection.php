@@ -139,6 +139,56 @@ HTML;
 
                 $html .= '</div>';
             }
+            
+            if (!empty($food['scoreBreakdown']['mechanisms'])) {
+
+$html .= '
+<details class="food-score-breakdown">
+    <summary>Why this was recommended</summary>
+
+    <div class="score-breakdown-intro">
+        These values show how much each nutritional pathway contributed to this food\'s recommendation score.
+    </div>
+
+    <div class="score-breakdown-table">';
+    
+ $displayMechanisms = array_slice(
+    $food['scoreBreakdown']['mechanisms'],
+    0,
+    3
+);
+
+$other = 0;
+
+foreach (array_slice($food['scoreBreakdown']['mechanisms'], 3) as $m) {
+    $other += $m['contribution'];
+}
+
+foreach ($displayMechanisms as $m) {
+
+        $html .= '
+            <div class="score-row">
+                <span>'.htmlspecialchars($m['mechanismName']).'</span>
+                <strong>'.number_format($m['contribution'], 1).'</strong>
+            </div>';
+    }
+    
+if ($other > 0) {
+    $html .= '
+        <div class="score-row">
+            <span>Other supporting pathways</span>
+            <strong>'.number_format($other, 1).'</strong>
+        </div>';
+}    
+
+    $html .= '
+            <div class="score-row total">
+                <span>Recommendation score</span>
+                <strong>'.number_format($food['scoreBreakdown']['total'], 1).'</strong>
+            </div>
+        </div>
+    </details>';
+}
 
             $html .= <<<HTML
 

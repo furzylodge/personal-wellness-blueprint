@@ -67,32 +67,46 @@ final class FoodResolver
 
             $foodId = $foodRelationship['foodId'];
 
-            $total = 0;
-            $matched = [];
+$total = 0;
+$matched = [];
+$breakdown = [];
 
-            foreach ($foodRelationship['mechanisms'] as $mech) {
+foreach ($foodRelationship['mechanisms'] as $mech) {
 
-                $id = $mech['id'];
+    $id = $mech['id'];
 
-                if (!isset($mechanismScores[$id])) {
-                    continue;
-                }
+    if (!isset($mechanismScores[$id])) {
+        continue;
+    }
 
-                $contribution =
-                    $mechanismScores[$id] *
-                    ($mech['strength'] / 5) *
-                    $mech['confidence'];
+    $mechanismScore   = $mechanismScores[$id];
+    $strengthWeight   = $mech['strength'] / 5;
+    $confidenceWeight = $mech['confidence'];
 
-                $total += $contribution;
+    $contribution = round(
+        $mechanismScore * $strengthWeight * $confidenceWeight,
+        2
+    );
 
-                $matched[] = [
-                    'id' => $id,
-                    'name' => $mechanismNameLookup[$id] ?? $id,
-                    'strength' => $mech['strength'],
-                    'confidence' => $mech['confidence'],
-                    'contribution' => round($contribution, 2)
-                ];
-            }
+    $total += $contribution;
+
+    $matched[] = [
+        'id'           => $id,
+        'name'         => $mechanismNameLookup[$id] ?? $id,
+        'strength'     => $mech['strength'],
+        'confidence'   => $mech['confidence'],
+        'contribution' => $contribution,
+    ];
+
+    $breakdown[] = [
+        'mechanismId'      => $id,
+        'mechanismName'    => $mechanismNameLookup[$id] ?? $id,
+        'mechanismScore'   => $mechanismScore,
+        'strengthWeight'   => $strengthWeight,
+        'confidenceWeight' => $confidenceWeight,
+        'contribution'     => $contribution,
+    ];
+}
 
             if ($total <= 0) {
                 continue;
@@ -103,8 +117,11 @@ final class FoodResolver
                 'name' => $foodLookup[$foodId]['name'] ?? $foodId,
                 'category' => $foodLookup[$foodId]['category'] ?? '',
                 'clinicalScore' => round($total, 2),
-                'matchedMechanisms' => $matched
-            ];
+		'matchedMechanisms' => $matched,
+		'scoreBreakdown' => [
+		'total' => round($total, 2),
+		'mechanisms' => $breakdown,
+		]];
         }
 
         usort(
@@ -127,7 +144,6 @@ unset($food);
         foreach ($results as $i => &$food) {
             $food['rank'] = $i + 1;
         }
-
         return $results;
     }
 }

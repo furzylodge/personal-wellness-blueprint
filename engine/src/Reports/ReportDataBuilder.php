@@ -121,6 +121,7 @@ foreach ($foodResults as $foodResult) {
 // Preserve recommendation metadata
 $food['clinicalScore'] = $foodResult['reportScore'];
 $food['rawScore']      = $foodResult['clinicalScore'];
+$food['scoreBreakdown']  = $foodResult['scoreBreakdown'] ?? null;
 
 $food['sources'] = array_map(
     function ($m) {
