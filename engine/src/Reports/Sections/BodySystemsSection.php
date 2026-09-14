@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 namespace PWB\Reports\Sections;
+use PWB\Reports\Components\MechanismPopover;
 
 class BodySystemsSection
 {
@@ -56,13 +57,12 @@ class BodySystemsSection
 
                 <div class="mechanism-row">';
 
-            foreach ($system['topMechanisms'] ?? [] as $mechanism) {
-
-                $html .= '
-                    <span class="mechanism-chip">'
-                        .htmlspecialchars($mechanism['name']).'
-                    </span>';
-            }
+foreach ($system['topMechanisms'] ?? [] as $mechanism) {
+    $html .= MechanismPopover::render(
+        $mechanism,
+        'mechanisms-'.$rank
+    );
+}
 
             $html .= '
                 </div>

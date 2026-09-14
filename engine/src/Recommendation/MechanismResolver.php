@@ -113,14 +113,7 @@ usort(
     fn($a, $b) => $b['clinicalScore'] <=> $a['clinicalScore']
 );
 
-foreach ($resolved as $row) {
-    if ($row['mechanismId'] === 'MEC001') {
-        echo '<pre>';
-        print_r($row);
-        echo '</pre>';
-        exit;
-    }
-}
+
 
 return $resolved;
 

@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 namespace PWB\Reports\Sections;
+use PWB\Reports\Components\MechanismPopover;
 
 class BioactiveSection
 {
@@ -11,50 +12,106 @@ class BioactiveSection
         $bioactives = array_slice(
             $reportData['bioactives'] ?? [],
             0,
-            10
+            8
         );
 
         if (empty($bioactives)) {
             return '';
         }
 
-        $html = <<<HTML
+        $html = '
+        <section class="report-section">
 
-<h2>Priority Bioactives</h2>
+            <h2>Priority Bioactives</h2>
 
-<p>
-These bioactives have been ranked according to the clinical mechanisms
-identified from your questionnaire.
-</p>
+            <p class="section-intro">
+                These naturally occurring plant compounds have been prioritised because they support several of your highest-scoring nutritional pathways.
+            </p>
 
-<table style="width:100%; border-collapse:collapse; margin-top:15px;">
-<tr style="background:#E8F3EA;">
-    <th style="padding:10px; text-align:left;">Bioactive</th>
-    <th style="padding:10px; text-align:center;">Clinical Score</th>
-</tr>
-
-HTML;
+            <div class="bioactive-grid">';
 
         foreach ($bioactives as $item) {
 
-            $name = htmlspecialchars($item['name']);
-            $score = number_format($item['clinicalScore'], 1);
+            $name  = htmlspecialchars($item['name'] ?? 'Unknown');
+            $score = round($item['clinicalScore'] ?? 0);
 
-            $html .= <<<HTML
+            $summary = htmlspecialchars(
+                $item['description']
+                ?? $item['plainEnglish']
+                ?? 'A beneficial plant compound that contributes to healthy nutritional pathways.'
+            );
 
-<tr style="border-bottom:1px solid #dddddd;">
-    <td style="padding:10px;">{$name}</td>
-    <td style="padding:10px; text-align:center;">{$score}</td>
-</tr>
+            $html .= '
+                <div class="bioactive-card">
 
-HTML;
+<div class="bioactive-header">
+
+    <div class="bioactive-title">
+        <h3>'.$name.'</h3>
+    </div>
+
+    <div class="score-badge">
+        '.$score.'
+        <span class="score-label">/100</span>
+    </div>
+
+</div>
+
+                    <p class="bioactive-summary">'.$summary.'</p>';
+
+// Supporting mechanisms
+if (!empty($item['mechanisms'])) {
+
+    $html .= '
+        <div class="body-label">
+            KEY NUTRITIONAL PATHWAYS
+        </div>
+
+        <div class="mechanism-chip-row">';
+
+    foreach (array_slice($item['mechanisms'], 0, 3) as $m) {
+        $html .= MechanismPopover::render(
+            $m,
+            'bioactive-' . $name
+        );
+    }
+
+    $html .= '</div>';
+}
+
+            // Food sources
+            if (!empty($item['foods'])) {
+
+                $html .= '
+                    <div class="bioactive-section-title">
+                        Best food sources
+                    </div>
+
+                    <div class="body-food-row">';
+
+                foreach (array_slice($item['foods'], 0, 5) as $food) {
+
+                    $label = htmlspecialchars(
+                        is_array($food)
+                            ? ($food['name'] ?? '')
+                            : $food
+                    );
+
+                    $html .= '
+                        <span class="body-food-chip">'.$label.'</span>';
+                }
+
+                $html .= '</div>';
+            }
+
+            $html .= '
+                </div>';
         }
 
-        $html .= <<<HTML
+        $html .= '
+            </div>
 
-</table>
-
-HTML;
+        </section>';
 
         return $html;
     }

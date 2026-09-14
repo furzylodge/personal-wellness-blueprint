@@ -26,6 +26,9 @@ class ReportDataBuilder
     private array $tags = [];
     private array $foodGroups = [];
     private array $bodySystems = [];
+    private array $mechanismLookup = [];
+    private array $bioactiveLookup = [];
+    private array $foodLookup = [];
 
     public function __construct()
     {
@@ -74,6 +77,9 @@ $mechanismResolver = new MechanismResolver(
 );
 
 $mechanisms = $mechanismResolver->resolve($priorities);
+foreach ($mechanisms as $m) {
+    $this->mechanismLookup[$m['mechanismId']] = $m;
+}
 
 $bioactiveResolver = new BioactiveResolver(
     new JsonLoader(),
@@ -113,14 +119,23 @@ foreach ($foodResults as $foodResult) {
                 $food = $this->prepareFood($food);
 
 // Preserve recommendation metadata
-$food['clinicalScore'] = $foodResult['clinicalScore'];
+$food['clinicalScore'] = $foodResult['reportScore'];
+$food['rawScore']      = $foodResult['clinicalScore'];
 
 $food['sources'] = array_map(
-    fn($m) => [
-        'mechanismId'   => $m['id'],
-        'mechanismName' => $m['name'],
-        'contribution'  => $m['contribution'],
-    ],
+    function ($m) {
+
+        $resolved = $this->mechanismLookup[$m['id']] ?? [];
+
+        return [
+            'id'   => $m['id'],
+            'mechanismName' => $resolved['mechanismName'] ?? $m['name'],
+            'plainEnglish'  => $resolved['plainEnglish'] ?? '',
+            'whyItMatters'  => $resolved['whyItMatters'] ?? '',
+            'tooltip'       => $resolved['tooltip'] ?? '',
+            'contribution'  => $m['contribution'],
+        ];
+    },
     $foodResult['matchedMechanisms'] ?? []
 );
 
@@ -130,6 +145,47 @@ $foods[] = $food;
             }
 
         }
+
+// Normalise food scores (0–100)
+
+$maxScore = max(array_column($foods, 'rawScore'));
+
+foreach ($foods as &$food) {
+
+    $normalised = $food['rawScore'] / $maxScore;
+
+    // Create a wider spread (40–100)
+    $food['score'] = (int) round(
+        40 + (pow($normalised, 2.8) * 60)
+    );
+
+    // Recommendation text
+    if ($food['score'] >= 92) {
+        $food['recommendation'] = 'Highly Recommended';
+    } elseif ($food['score'] >= 82) {
+        $food['recommendation'] = 'Recommended';
+    } elseif ($food['score'] >= 70) {
+        $food['recommendation'] = 'Good Choice';
+    } else {
+        $food['recommendation'] = 'Useful Option';
+    }
+}
+unset($food);
+
+// ---------------------------------------------
+// Build lookup tables for report enrichment
+// ---------------------------------------------
+
+foreach ($bioactives as $b) {
+    $this->bioactiveLookup[$b['bioactiveId']] = $b;
+}
+
+foreach ($foods as $food) {
+    $this->foodLookup[$food['id']] = $food;
+}
+
+$bioactives = $this->enrichBioactives($bioactives);
+        
 		return [
 		'client' => [
         'name' => 'Test User'
@@ -230,22 +286,33 @@ private function buildBodySystems(array $foods, array $priorities): array
             $systems[$systemId]['topFoods'][$food['id']] = [
                 'id' => $food['id'],
                 'name' => $foodName,
-                'score' => $food['clinicalScore'] ?? 0
+                'score' => $food['score'] ?? 0
             ];
 
             foreach ($food['sources'] ?? [] as $source) {
 
-                $id = $source['mechanismId'];
+               $id = $source['id'] ?? null;
 
-                if (!isset($systems[$systemId]['mechanisms'][$id])) {
+if (!$id) {
+    continue;
+}
 
-                    $systems[$systemId]['mechanisms'][$id] = [
-                        'name' => $source['mechanismName'],
-                        'score' => 0
-                    ];
-                }
+if (!isset($systems[$systemId]['mechanisms'][$id])) {
 
-                $systems[$systemId]['mechanisms'][$id]['score'] += $source['contribution'];
+    $resolved = $this->mechanismLookup[$id] ?? [];
+
+    $systems[$systemId]['mechanisms'][$id] = [
+        'name'          => $source['mechanismName'],
+        'score'         => 0,
+        'evidence'      => $resolved['evidence'] ?? '',
+        'plainEnglish'  => $resolved['plainEnglish'] ?? '',
+        'tooltip'       => $resolved['tooltip'] ?? '',
+        'whyItMatters'  => $resolved['whyItMatters'] ?? '',
+    ];
+}
+
+$systems[$systemId]['mechanisms'][$id]['score'] += $source['contribution'];
+
             }
         }
     }
@@ -311,6 +378,61 @@ $system['summary'] =
     usort($systems, fn($a, $b) => $b['score'] <=> $a['score']);
 
     return array_values($systems);
+}
+
+private function enrichBioactives(array $bioactives): array
+{
+    foreach ($bioactives as &$bioactive) {
+
+        $id = $bioactive['bioactiveId'];
+
+        // Description
+        $bioactive['description'] =
+            $bioactive['description']
+            ?? ($this->bioactiveLookup[$id]['description'] ?? '');
+
+$bioactive['mechanisms'] = [];
+
+foreach (array_slice($bioactive['matchedMechanisms'] ?? [], 0, 3) as $m) {
+
+    $mechanismId = $m['mechanismId'] ?? $m['id'] ?? null;
+
+    if (!$mechanismId || !isset($this->mechanismLookup[$mechanismId])) {
+        continue;
+    }
+
+    $resolved = $this->mechanismLookup[$mechanismId];
+
+    $bioactive['mechanisms'][] = [
+        'id'            => $mechanismId,
+        'name'          => $resolved['mechanismName'],
+        'plainEnglish'  => $resolved['plainEnglish'] ?? '',
+        'whyItMatters'  => $resolved['whyItMatters'] ?? '',
+        'tooltip'       => $resolved['tooltip'] ?? '',
+        'evidence'      => $resolved['evidence'] ?? '',
+    ];
+}
+        // Best food sources
+        $foods = [];
+
+        foreach ($this->foodLookup as $food) {
+
+            if (!in_array($id, $food['contains']['bioactives'] ?? [], true)) {
+                continue;
+            }
+
+            $foods[] = [
+                'name'  => $food['identity']['name'],
+                'score' => $food['clinicalScore'] ?? 0,
+            ];
+        }
+
+        usort($foods, fn($a, $b) => $b['score'] <=> $a['score']);
+
+        $bioactive['foods'] = array_slice($foods, 0, 5);
+    }
+
+    return $bioactives;
 }
 
     private function loadLookup(

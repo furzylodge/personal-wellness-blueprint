@@ -33,6 +33,7 @@ class ReportBuilder
 </head>
 
 <body class="<?= $theme ?>">
+<div class="report-container">
 
 <h1>Personal Wellness Blueprint</h1>
 
@@ -74,7 +75,7 @@ $html .= $bioactiveSection->render($reportData);
 $html .= <<<HTML
 
 </ul>
-
+</div>
 </body>
 
 </html>

@@ -14,6 +14,7 @@
 
     --background:#F3F5F4;
     --surface:#FFFFFF;
+    --color-surface-elevated:#FFFFFF;
     --surface-soft:#F7FAF8;
 
     /* Borders */
@@ -316,6 +317,21 @@ border-left:4px solid var(--primary);
     font:inherit;
 }
 
+/* ======================================================
+   REPORT STYLING
+====================================================== */
+.report-container{
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 32px 24px 48px;
+    box-sizing: border-box;
+}
+
+@media (max-width:768px){
+    .report-container{
+        padding:20px 16px 32px;
+    }
+}
 
 /* ======================================================
    SECTION HEADER
@@ -974,6 +990,14 @@ color:var(--report-mechanism-text);
     font-weight:600;
 }
 
+.body-label{
+    margin:14px 0 8px;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:var(--text-muted);
+}
 
 /* ========================================
    BODY SYSTEM PRIORITY CARDS
@@ -1071,4 +1095,180 @@ color:var(--report-chip-text);
     font-size:11px;
     opacity:.8;
     font-weight:500;
+}
+
+/* ==========================================
+   Mechanism popover
+========================================== */
+
+
+.mechanism-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 12px;
+    border-radius: 999px;
+    background: var(--report-mechanism-bg);
+    color: var(--report-mechanism-text);
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+    user-select: none;
+}
+
+.mechanism-chip::-webkit-details-marker {
+    display: none;
+}
+
+.mechanism-chip .info {
+    font-size: 12px;
+    opacity: .7;
+}
+
+.mechanism-popover {
+    position: relative;
+    display: inline-block;
+    margin: 0 8px 8px 0;
+}
+
+.mechanism-card {
+    position: absolute;
+    left: 0;
+    bottom: calc(100% + 12px);
+    width: 340px;
+    z-index: 1000;
+    background: var(--color-surface-elevated);
+    opacity: 1;
+    border: 1px solid var(--color-border);
+    border-radius: 16px;
+    padding: 18px;
+    box-shadow: 0 16px 40px rgba(15,23,42,.18);
+}
+
+.mechanism-card h5 {
+    margin: 0 0 4px;
+    font-size: 16px;
+}
+
+.mechanism-evidence {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 999px;
+    background: var(--color-primary-light);
+    color: var(--color-primary-dark);
+    font-size: 11px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.mechanism-summary{
+    font-size:18px;
+    font-weight:400;
+    line-height:1.45;
+    color: var(--color-text-secondary);
+    margin-top:8px;
+    margin-bottom:16px;
+}
+
+.mechanism-card p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--color-text-secondary);
+}
+
+.mechanism-card::after {
+    content: "";
+    position: absolute;
+    left: 28px;
+    top: 100%;
+
+    width: 14px;
+    height: 14px;
+
+    background: var(--color-surface-elevated);
+    border-right:1px solid var(--color-border);
+    border-bottom:1px solid var(--color-border);
+
+    transform: rotate(45deg) translateY(-7px);
+}
+
+.mechanism-divider{
+    border:0;
+    border-top: 1px solid var(--color-border);
+    margin:14px 0;
+}
+
+.mechanism-label{
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:var(--color-primary);
+    margin-bottom:8px;
+}
+
+/* ==========================================
+   Bioactive cards
+========================================== */
+
+.bioactive-card{
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:20px;
+    padding:24px;
+    margin-bottom: 18px;
+}
+
+.bioactive-header{
+    display:grid;
+    grid-template-columns:1fr auto;
+    align-items:start;
+    gap:16px;
+    margin-bottom:18px;
+}
+
+.bioactive-title{
+    flex:1;
+    min-width:0;
+}
+
+.bioactive-title h3{
+    margin:0 0 4px;
+    font-size:32px;
+    line-height:1.1;
+    color:var(--text);
+}
+
+.bioactive-subtitle{
+    margin-top:4px;
+    color:var(--primary);
+    font-size:14px;
+    font-weight:600;
+}
+
+.bioactive-summary{
+    margin:0 0 18px;
+    color:var(--text-secondary);
+    line-height:1.6;
+}
+
+.mechanism-chip-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-top:8px;
+}
+
+.food-recommendation {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 18px;
+    border-radius: 999px;
+    background: #0a8a4b;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 700;
+    white-space: nowrap;
 }

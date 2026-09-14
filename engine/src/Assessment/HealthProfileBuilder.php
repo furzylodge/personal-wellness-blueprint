@@ -42,8 +42,12 @@ foreach ($assessment->answers as $questionId => $answer) {
         continue;
     }
 
-    $stored = $questions[$questionId]['stored_values'] ?? [];
-    $scores = $questions[$questionId]['score_values'] ?? $stored;
+$stored = $questions[$questionId]['stored_values'] ?? [];
+$scores = $questions[$questionId]['score_values'] ?? $stored;
+
+// Normalise scalar values to arrays
+$stored = is_array($stored) ? $stored : [$stored];
+$scores = is_array($scores) ? $scores : [$scores];
 
     $score = 0.0;
 
@@ -61,14 +65,13 @@ foreach ($assessment->answers as $questionId => $answer) {
 
 } else {
 
-    // Radio / single select
-    $storedValues = $config['stored_values'] ?? [];
-    $scoreValues  = $config['score_values'] ?? [];
+ // Radio / single select
 
-    $index = array_search((string)$answer, $storedValues, true);
 
-    if ($index !== false && isset($scoreValues[$index])) {
-        $score = (float)$scoreValues[$index];
+    $index = array_search((string)$answer, $stored, true);
+
+    if ($index !== false && isset($scores[$index])) {
+        $score = (float) $scores[$index];
     }
 }
 

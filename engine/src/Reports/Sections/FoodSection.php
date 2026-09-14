@@ -30,6 +30,9 @@ HTML;
 
 
         foreach ($foods as $index => $food) {
+   
+   
+$recommendation = $food['recommendation'] ?? 'Useful option';        
 
     $rank = $index + 1;
 
@@ -47,10 +50,7 @@ if (strlen($description) > 220) {
 
 $description = htmlspecialchars($description);
 
-            $score = number_format(
-                $food['clinicalScore'] ?? 0,
-                1
-            );
+           $score = (int) ($food['score'] ?? 0);
 
             $compounds = array_slice(
                 $food['knowledge']['activeCompounds'] ?? [],
@@ -58,48 +58,69 @@ $description = htmlspecialchars($description);
                 3
             );
 
- $mechanisms = [];
-
-foreach (array_slice($food['sources'] ?? [], 0, 3) as $source) {
-
-    if (!empty($source['mechanismName'])) {
-        $mechanisms[] = $source['mechanismName'];
-    }
-
-}
-
-$why = implode(', ', $mechanisms);
-
-            $html .= <<<HTML
-
+$html .= '
 <div class="recommendation-card">
 
 <div class="recommendation-header">
 
     <div class="recommendation-title-group">
-        <div class="rank-badge">{$rank}</div>
-        <h3>{$name}</h3>
+        <div class="rank-badge">'.$rank.'</div>
+        <h3>'.$name.'</h3>
     </div>
 
-    <div class="score-badge">{$score}</div>
+    <div class="food-recommendation">'.$recommendation.'</div>
 
 </div>
 
-    <p>{$description}</p>
+<p>'.$description.'</p>
 
-<p><strong>Supports:</strong></p>
+<div class="body-label">KEY NUTRITIONAL PATHWAYS</div>
 
-<div class="mechanism-row">
+<div class="mechanism-row">';
 
-HTML;
 
-foreach ($mechanisms as $mechanism) {
+$html .= '<div class="mechanism-chip-row">';
 
-    $mechanism = htmlspecialchars($mechanism);
+foreach (array_slice($food['sources'] ?? [], 0, 3) as $source) {
 
-    $html .= "<span class=\"mechanism-chip\">{$mechanism}</span>";
+    if (empty($source['mechanismName'])) {
+        continue;
+    }
 
+ $foodGroup = htmlspecialchars($food['id'] ?? ('food-'.$rank));
+
+$html .= '
+<details class="mechanism-popover" name="food-'.$foodGroup.'">
+
+        <summary class="mechanism-chip">
+            '.htmlspecialchars($source['mechanismName']).'
+            <span class="info-icon">ⓘ</span>
+        </summary>
+
+        <div class="mechanism-card">
+
+            <h5>'.htmlspecialchars($source['mechanismName']).'</h5>
+
+            <div class="mechanism-summary">'
+                .htmlspecialchars($source['plainEnglish'] ?? '').'
+            </div>
+
+            <hr class="mechanism-divider">
+
+            <div class="mechanism-label">
+                WHY THIS PATHWAY MATTERS
+            </div>
+
+            <p>'
+                .htmlspecialchars($source['whyItMatters'] ?? '').'
+            </p>
+
+        </div>
+
+    </details>';
 }
+
+$html .= '</div>';
 
 $html .= <<<HTML
 

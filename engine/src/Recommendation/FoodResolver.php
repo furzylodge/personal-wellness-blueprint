@@ -111,6 +111,18 @@ final class FoodResolver
             $results,
             fn($a, $b) => $b['clinicalScore'] <=> $a['clinicalScore']
         );
+        
+        $maxScore = $results[0]['clinicalScore'] ?? 1;
+
+foreach ($results as $i => &$food) {
+    $food['rank'] = $i + 1;
+
+    $food['reportScore'] = (int) round(
+        ($food['clinicalScore'] / $maxScore) * 100
+    );
+}
+unset($food);
+
 
         foreach ($results as $i => &$food) {
             $food['rank'] = $i + 1;
