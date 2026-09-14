@@ -26,6 +26,10 @@ final class FoodResolver
         $mechanisms = $this->loader->load(
     	$this->knowledgePath . '/taxonomy/mechanisms.json'
 	);
+	
+	$bodySystemMap = $this->loader->load(
+        $this->knowledgePath . '/taxonomy/body-systems-mechanisms.json'
+	);
 
         // -------------------------------------------------
         // Food catalogue lookup
@@ -46,6 +50,35 @@ final class FoodResolver
 	foreach ($mechanisms['mechanisms'] as $mechanism) {
 	    $mechanismNameLookup[$mechanism['id']] = $mechanism['name'];
 	}
+	
+        // -------------------------------------------------
+	// Mechanism system lookup
+	// -------------------------------------------------
+
+$mechanismSystemLookup = [];
+
+foreach ($bodySystemMap['bodySystems'] as $bodySystem) {
+
+    $system = $bodySystem['id'];
+
+    foreach ($bodySystem['mechanisms'] as $mechanism) {
+
+        $mechanismId = $mechanism['id'];
+
+        $mechanismSystemLookup[$mechanismId][] = $system;
+    }
+}
+
+        // -------------------------------------------------
+	// Body system lookup
+	// -------------------------------------------------
+
+
+$bodySystemNames = [];
+
+foreach ($bodySystemMap['bodySystems'] as $bodySystem) {
+    $bodySystemNames[$bodySystem['id']] = $bodySystem['name'];
+}
 
         // -------------------------------------------------
         // Convert mechanism results into lookup
@@ -72,6 +105,7 @@ $matched = [];
 $breakdown = [];
 $pathwayCount = 0;
 $strengthTotal = 0;
+$systemsCovered = [];
 
 foreach ($foodRelationship['mechanisms'] as $mech) {
 
@@ -89,9 +123,18 @@ foreach ($foodRelationship['mechanisms'] as $mech) {
         $mechanismScore * $strengthWeight * $confidenceWeight,
         2
     );
+    
 if ($contribution < 0.5) {
     continue;
 }
+    
+    if (isset($mechanismSystemLookup[$id])) {
+    foreach ($mechanismSystemLookup[$id] as $system) {
+        $systemsCovered[$system] = $bodySystemNames[$system] ?? $system;
+    }
+}
+    
+    
     $total += $contribution;
     
     $pathwayCount++;
@@ -124,7 +167,10 @@ if ($contribution < 0.5) {
     ? $strengthTotal / $pathwayCount
     : 0;
 
-$breadthScore = min($pathwayCount / 5, 1);      // maxes at 5 pathways
+$systemCount = count($systemsCovered);
+
+$breadthScore = min($systemCount / 6, 1);
+
 $diversityBonus = $pathwayCount >= 4 ? 1 : ($pathwayCount / 4);
 
 $clinicalScore =
@@ -132,7 +178,7 @@ $clinicalScore =
     ($total * $averageStrength * 0.20) +
     ($total * $breadthScore * 0.20) +
     ($total * $diversityBonus * 0.10);
-
+    
 $results[] = [
     'foodId' => $foodId,
     'name' => $foodLookup[$foodId]['name'] ?? $foodId,
@@ -148,6 +194,8 @@ $results[] = [
             'breadth'   => round($total * $breadthScore * 0.20, 2),
             'strength'  => round($total * $averageStrength * 0.20, 2),
             'diversity' => round($total * $diversityBonus * 0.10, 2),
+            'systemsCovered' => array_values($systemsCovered),
+            'systemCount'    => $systemCount,
         ],
     ],
 ];

@@ -140,6 +140,19 @@ HTML;
                 $html .= '</div>';
             }
             
+   if (!empty($food['scoreBreakdown']['summary']['systemsCovered'])) {
+
+    $html .= '<div class="body-label" style="margin-top:14px;">PHYSIOLOGICAL SYSTEMS</div>';
+    $html .= '<div class="tag-row">';
+
+    foreach ($food['scoreBreakdown']['summary']['systemsCovered'] as $system) {
+        $system = htmlspecialchars($system);
+        $html .= "<span class=\"tag\">{$system}</span>";
+    }
+
+    $html .= '</div>';
+}         
+            
             if (!empty($food['scoreBreakdown']['mechanisms'])) {
 
 $html .= '
@@ -147,7 +160,7 @@ $html .= '
     <summary>Why this was recommended</summary>
 
     <div class="score-breakdown-intro">
-        These values show how much each nutritional pathway contributed to this food\'s recommendation score.
+        These values show how each nutritional pathway contributed to this foods Explainable Recommendation Score.
     </div>
 
     <div class="score-breakdown-table">';
@@ -183,7 +196,7 @@ if ($other > 0) {
 
     $html .= '
             <div class="score-row total">
-                <span>Recommendation score</span>
+                <span>Explainable Recommendation Score</span>
                 <strong>'.number_format($food['scoreBreakdown']['total'], 1).'</strong>
             </div>
         </div>
