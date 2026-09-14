@@ -70,6 +70,8 @@ final class FoodResolver
 $total = 0;
 $matched = [];
 $breakdown = [];
+$pathwayCount = 0;
+$strengthTotal = 0;
 
 foreach ($foodRelationship['mechanisms'] as $mech) {
 
@@ -87,8 +89,14 @@ foreach ($foodRelationship['mechanisms'] as $mech) {
         $mechanismScore * $strengthWeight * $confidenceWeight,
         2
     );
-
+if ($contribution < 0.5) {
+    continue;
+}
     $total += $contribution;
+    
+    $pathwayCount++;
+
+    $strengthTotal += ($strengthWeight * $confidenceWeight);
 
     $matched[] = [
         'id'           => $id,
@@ -111,18 +119,39 @@ foreach ($foodRelationship['mechanisms'] as $mech) {
             if ($total <= 0) {
                 continue;
             }
+            
+            $averageStrength = $pathwayCount > 0
+    ? $strengthTotal / $pathwayCount
+    : 0;
 
-            $results[] = [
-                'foodId' => $foodId,
-                'name' => $foodLookup[$foodId]['name'] ?? $foodId,
-                'category' => $foodLookup[$foodId]['category'] ?? '',
-                'clinicalScore' => round($total, 2),
-		'matchedMechanisms' => $matched,
-		'scoreBreakdown' => [
-		'total' => round($total, 2),
-		'mechanisms' => $breakdown,
-		]];
-        }
+$breadthScore = min($pathwayCount / 5, 1);      // maxes at 5 pathways
+$diversityBonus = $pathwayCount >= 4 ? 1 : ($pathwayCount / 4);
+
+$clinicalScore =
+    ($total * 0.50) +
+    ($total * $averageStrength * 0.20) +
+    ($total * $breadthScore * 0.20) +
+    ($total * $diversityBonus * 0.10);
+
+$results[] = [
+    'foodId' => $foodId,
+    'name' => $foodLookup[$foodId]['name'] ?? $foodId,
+    'category' => $foodLookup[$foodId]['category'] ?? '',
+    'clinicalScore' => round($clinicalScore, 2),
+    'matchedMechanisms' => $matched,
+
+    'scoreBreakdown' => [
+        'total' => round($total, 2),
+        'mechanisms' => $breakdown,
+        'summary' => [
+            'relevance' => round($total * 0.50, 2),
+            'breadth'   => round($total * $breadthScore * 0.20, 2),
+            'strength'  => round($total * $averageStrength * 0.20, 2),
+            'diversity' => round($total * $diversityBonus * 0.10, 2),
+        ],
+    ],
+];
+}
 
         usort(
             $results,
