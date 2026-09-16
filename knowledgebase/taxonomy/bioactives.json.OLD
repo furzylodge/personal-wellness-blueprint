@@ -1,21 +1,21 @@
 {
   "version": "2.6",
   "generated": "2026-08-05T15:26:45+00:00",
-  "count": 81,
+  "count": 89,
   "bioactives": [
     {
       "id": "DF001",
       "name": "Beta-glucan",
       "canonicalName": "beta-glucan",
       "aliases": [
-        "\u03b2-glucan"
+        "β-glucan"
       ],
       "category": "Dietary Fibre",
       "subcategory": "Soluble Fibre",
       "plainEnglish": "A natural soluble fibre found mainly in oats and barley that supports heart, digestive and metabolic health.",
       "primaryAction": "Supports healthy cholesterol levels, blood glucose regulation and digestive health.",
       "description": "Beta-glucan is a soluble dietary fibre found primarily in oats and barley. It forms a gel-like substance within the digestive tract, slowing digestion and helping reduce LDL cholesterol while supporting healthy blood glucose regulation. It also acts as a fermentable fibre, encouraging production of beneficial short-chain fatty acids by the gut microbiome.",
-      "scientificSummary": "Mixed-linkage \u03b2-(1\u21923)(1\u21924)-D-glucan that increases intestinal viscosity, reduces bile acid reabsorption, attenuates postprandial glycaemic response and is fermented to produce short-chain fatty acids including butyrate.",
+      "scientificSummary": "Mixed-linkage β-(1→3)(1→4)-D-glucan that increases intestinal viscosity, reduces bile acid reabsorption, attenuates postprandial glycaemic response and is fermented to produce short-chain fatty acids including butyrate.",
       "evidence": "High",
       "clinicalImportance": 5,
       "maturity": "Established",
@@ -139,7 +139,7 @@
       "plainEnglish": "An insoluble plant fibre that supports healthy digestion and regular bowel function.",
       "primaryAction": "Promotes bowel regularity and healthy digestive transit.",
       "description": "Cellulose is the most abundant structural fibre found in plants. Although it is not significantly fermented by gut bacteria, it provides bulk within the digestive tract, helping maintain regular bowel movements and supporting overall digestive health.",
-      "scientificSummary": "Linear \u03b2-(1\u21924)-linked glucose polysaccharide forming the primary structural component of plant cell walls. It increases faecal bulk and accelerates intestinal transit with minimal microbial fermentation.",
+      "scientificSummary": "Linear β-(1→4)-linked glucose polysaccharide forming the primary structural component of plant cell walls. It increases faecal bulk and accelerates intestinal transit with minimal microbial fermentation.",
       "evidence": "High",
       "clinicalImportance": 4,
       "maturity": "Established",
@@ -293,7 +293,7 @@
       "plainEnglish": "A widely distributed plant flavonoid that supports healthy inflammation responses and cardiovascular health.",
       "primaryAction": "Supports healthy inflammatory balance and antioxidant protection.",
       "description": "Quercetin occurs naturally in onions, apples, kale, berries and many other plant foods. It is recognised for supporting antioxidant defences while contributing to cardiovascular and immune health.",
-      "scientificSummary": "Polyhydroxylated flavonol exhibiting antioxidant, anti-inflammatory and endothelial-supportive properties through modulation of NF-\u03baB, Nrf2 and nitric oxide pathways.",
+      "scientificSummary": "Polyhydroxylated flavonol exhibiting antioxidant, anti-inflammatory and endothelial-supportive properties through modulation of NF-κB, Nrf2 and nitric oxide pathways.",
       "evidence": "High",
       "clinicalImportance": 5,
       "maturity": "Established",
@@ -749,7 +749,7 @@
       "name": "Beta-carotene",
       "canonicalName": "beta-carotene",
       "aliases": [
-        "\u03b2-carotene"
+        "β-carotene"
       ],
       "category": "Carotenoids",
       "subcategory": "Carotenes",
@@ -775,7 +775,7 @@
       "name": "Alpha-carotene",
       "canonicalName": "alpha-carotene",
       "aliases": [
-        "\u03b1-carotene"
+        "α-carotene"
       ],
       "category": "Carotenoids",
       "subcategory": "Carotenes",
@@ -1049,7 +1049,7 @@
       "name": "Beta-sitosterol",
       "canonicalName": "beta-sitosterol",
       "aliases": [
-        "\u03b2-sitosterol"
+        "β-sitosterol"
       ],
       "category": "Phytosterols",
       "subcategory": "Sterols",
@@ -1390,7 +1390,7 @@
       "plainEnglish": "A soluble, slowly digested fibre that reaches the large intestine for microbial fermentation.",
       "primaryAction": "Supports digestive health and production of beneficial microbial metabolites.",
       "description": "Resistant dextrin is a soluble dietary fibre produced from starch that resists digestion in the upper gastrointestinal tract and can be fermented by the gut microbiota.",
-      "scientificSummary": "A mixture of indigestible glucose polymers containing \u03b1- and \u03b2-linked structures that resist small-intestinal digestion and undergo colonic fermentation.",
+      "scientificSummary": "A mixture of indigestible glucose polymers containing α- and β-linked structures that resist small-intestinal digestion and undergo colonic fermentation.",
       "evidence": "Moderate",
       "clinicalImportance": 4,
       "maturity": "Growing",
@@ -1492,7 +1492,7 @@
       "plainEnglish": "A conditionally essential amino acid that serves as a substrate for nitric oxide synthesis.",
       "primaryAction": "Provides substrate for nitric oxide synthesis and normal amino acid metabolism.",
       "description": "L-arginine is a proteinogenic amino acid and a precursor for nitric oxide synthesis. It is present in foods and is also used as a defined ingredient in nutritional formulations.",
-      "scientificSummary": "A basic semi-essential \u03b1-amino acid that serves as a substrate for nitric oxide synthases and participates in the urea cycle and polyamine metabolism.",
+      "scientificSummary": "A basic semi-essential α-amino acid that serves as a substrate for nitric oxide synthases and participates in the urea cycle and polyamine metabolism.",
       "evidence": "High",
       "clinicalImportance": 5,
       "maturity": "Established",
@@ -1518,7 +1518,7 @@
       "plainEnglish": "A non-proteinogenic amino acid that participates in arginine metabolism and nitric oxide production.",
       "primaryAction": "Supports arginine availability and the nitric oxide pathway.",
       "description": "L-citrulline is a non-proteinogenic amino acid that participates in the urea cycle and can be converted to L-arginine in the body.",
-      "scientificSummary": "A neutral \u03b1-amino acid that is converted through the citrulline-arginine cycle to L-arginine, providing a substrate pathway for nitric oxide synthesis.",
+      "scientificSummary": "A neutral α-amino acid that is converted through the citrulline-arginine cycle to L-arginine, providing a substrate pathway for nitric oxide synthesis.",
       "evidence": "High",
       "clinicalImportance": 5,
       "maturity": "Established",
@@ -1755,6 +1755,140 @@
       ]
     },
     {
+      "id": "FC022",
+      "name": "Hydrolysed Collagen Peptides",
+      "canonicalName": "hydrolysed collagen peptides",
+      "aliases": [
+        "Collagen Peptides",
+        "Hydrolysed Collagen",
+        "Marine Collagen Peptides"
+      ],
+      "category": "Functional Compounds",
+      "subcategory": "Structural Proteins",
+      "plainEnglish": "Collagen-derived peptides used as a source of collagen-building amino acids and peptides.",
+      "primaryAction": "Provides collagen peptides supporting connective-tissue and structural protein needs.",
+      "description": "Hydrolysed collagen peptides are enzymatically broken-down collagen proteins used in nutritional formulations. The supplied product factsheets identify collagen peptides as key ingredients and associate them with collagen production, connective-tissue integrity and normal protein synthesis.",
+      "scientificSummary": "Low-molecular-weight peptides generated by hydrolysis of collagen, providing collagen-derived amino acids and peptides used in connective-tissue nutrition.",
+      "evidence": "Moderate",
+      "clinicalImportance": 4,
+      "maturity": "Growing",
+      "status": "Active",
+      "keywords": [
+        "collagen",
+        "collagen peptides",
+        "connective tissue",
+        "skin",
+        "cartilage",
+        "bone",
+        "protein synthesis"
+      ]
+    },
+    {
+      "id": "FC023",
+      "name": "Hyaluronic Acid",
+      "canonicalName": "hyaluronic acid",
+      "aliases": [
+        "Hyaluronan",
+        "HA"
+      ],
+      "category": "Functional Compounds",
+      "subcategory": "Structural Biomolecules",
+      "plainEnglish": "A naturally occurring component of connective tissue that helps maintain tissue hydration and joint structure.",
+      "primaryAction": "Supports connective-tissue hydration and joint structure.",
+      "description": "Hyaluronic acid is a glycosaminoglycan found in connective tissues and joint structures. The supplied product factsheets identify it as a key ingredient in collagen formulations and associate it with hydration and cartilage support.",
+      "scientificSummary": "High-molecular-weight glycosaminoglycan composed of repeating N-acetylglucosamine and glucuronic acid units, abundant in extracellular matrix and synovial fluid.",
+      "evidence": "Moderate",
+      "clinicalImportance": 4,
+      "maturity": "Established",
+      "status": "Active",
+      "keywords": [
+        "hyaluronic acid",
+        "hyaluronan",
+        "hydration",
+        "cartilage",
+        "joint",
+        "connective tissue"
+      ]
+    },
+    {
+      "id": "FC024",
+      "name": "Glucosamine Sulphate",
+      "canonicalName": "glucosamine sulphate",
+      "aliases": [
+        "Glucosamine",
+        "Glucosamine sulfate"
+      ],
+      "category": "Functional Compounds",
+      "subcategory": "Joint Support Compounds",
+      "plainEnglish": "A naturally occurring amino sugar used as a structural component of joint tissues.",
+      "primaryAction": "Supports joint tissue structure and function.",
+      "description": "Glucosamine sulphate is an amino sugar associated with cartilage and other joint structures. The supplied FL-3X factsheet identifies 500 mg glucosamine sulphate and states that glucosamine is a fundamental component of joint tissue.",
+      "scientificSummary": "A glucosamine salt used as a source of glucosamine for glycosaminoglycan and proteoglycan synthesis in connective tissues.",
+      "evidence": "Moderate",
+      "clinicalImportance": 4,
+      "maturity": "Established",
+      "status": "Active",
+      "keywords": [
+        "glucosamine",
+        "glucosamine sulphate",
+        "cartilage",
+        "joint",
+        "mobility"
+      ]
+    },
+    {
+      "id": "FC025",
+      "name": "Chondroitin Sulphate",
+      "canonicalName": "chondroitin sulphate",
+      "aliases": [
+        "Chondroitin",
+        "Chondroitin sulfate"
+      ],
+      "category": "Functional Compounds",
+      "subcategory": "Joint Support Compounds",
+      "plainEnglish": "A sulphated glycosaminoglycan that forms part of cartilage and connective tissue.",
+      "primaryAction": "Supports cartilage and joint tissue structure.",
+      "description": "Chondroitin sulphate is a structural glycosaminoglycan found in cartilage and connective tissues. The supplied FL-3X factsheet identifies 300 mg chondroitin sulphate and states that chondroitin is a fundamental component of joint tissue.",
+      "scientificSummary": "Sulphated glycosaminoglycan incorporated into cartilage proteoglycans and extracellular matrix, contributing to tissue hydration and mechanical properties.",
+      "evidence": "Moderate",
+      "clinicalImportance": 4,
+      "maturity": "Established",
+      "status": "Active",
+      "keywords": [
+        "chondroitin",
+        "chondroitin sulphate",
+        "cartilage",
+        "joint",
+        "connective tissue"
+      ]
+    },
+    {
+      "id": "FC026",
+      "name": "MSM",
+      "canonicalName": "methylsulfonylmethane",
+      "aliases": [
+        "Methylsulfonylmethane",
+        "Dimethyl sulfone"
+      ],
+      "category": "Functional Compounds",
+      "subcategory": "Sulphur Compounds",
+      "plainEnglish": "An organic sulphur compound used in nutritional formulations for joint and mobility support.",
+      "primaryAction": "Supports joint comfort and mobility.",
+      "description": "Methylsulfonylmethane (MSM) is an organic sulphur compound. The supplied FL-3X factsheet identifies 125 mg MSM and positions the ingredient within a formulation supporting mobility, range of motion and flexibility.",
+      "scientificSummary": "Dimethyl sulfone, a small organosulfur compound used as a dietary supplement ingredient and studied for joint and inflammatory outcomes.",
+      "evidence": "Moderate",
+      "clinicalImportance": 3,
+      "maturity": "Growing",
+      "status": "Active",
+      "keywords": [
+        "MSM",
+        "methylsulfonylmethane",
+        "joint",
+        "mobility",
+        "sulphur"
+      ]
+    },
+    {
       "id": "PP016",
       "name": "Caffeoylquinic Acids",
       "canonicalName": "caffeoylquinic-acids",
@@ -1817,210 +1951,193 @@
         "menopause"
       ]
     },
-    {
-      "id": "FC027",
-      "name": "Caffeine",
-      "canonicalName": "caffeine",
-      "aliases": [
-        "Guaranine",
-        "Mateine"
-      ],
-      "category": "Functional Compounds",
-      "subcategory": "Methylxanthines",
-      "plainEnglish": "A naturally occurring stimulant found in coffee, tea, guarana and yerba mate that supports alertness and mental performance.",
-      "primaryAction": "Supports alertness, cognitive performance and energy metabolism.",
-      "description": "Caffeine is a naturally occurring methylxanthine present in coffee, tea, guarana and yerba mate. It supports wakefulness, attention and physical performance through adenosine receptor antagonism.",
-      "scientificSummary": "A methylxanthine alkaloid that antagonises adenosine receptors, enhancing neuronal activity, alertness and exercise performance.",
-      "evidence": "High",
-      "clinicalImportance": 5,
-      "maturity": "Established",
-      "status": "Active",
-      "keywords": [
-        "guarana",
-        "yerba mate",
-        "coffee",
-        "tea",
-        "alertness",
-        "energy"
-      ]
-    },
-    {
-      "id": "PP018",
-      "name": "Rutin",
-      "canonicalName": "rutin",
-      "aliases": [
-        "Quercetin-3-rutinoside",
-        "Sophorin"
-      ],
-      "category": "Polyphenols",
-      "subcategory": "Flavonols",
-      "plainEnglish": "A flavonoid glycoside, related to quercetin, found particularly in buckwheat and citrus that supports blood vessel and antioxidant health.",
-      "primaryAction": "Supports vascular health, capillary strength and antioxidant defence.",
-      "description": "Rutin is a glycoside form of quercetin (quercetin bound to the sugar rutinose), found particularly richly in buckwheat as well as in citrus fruits and some other plant foods. It has long been studied for supporting blood vessel wall integrity and healthy circulation, alongside general antioxidant activity.",
-      "scientificSummary": "A flavonol glycoside comprising quercetin conjugated to rutinose, exhibiting antioxidant activity and studied for effects on capillary permeability and vascular integrity, partly independent of its aglycone quercetin.",
-      "evidence": "Moderate",
-      "clinicalImportance": 4,
-      "maturity": "Established",
-      "status": "Active",
-      "keywords": [
-        "buckwheat",
-        "citrus",
-        "quercetin",
-        "vascular",
-        "capillary",
-        "circulation"
-      ]
-    },
-    {
-      "id": "PP019",
-      "name": "Theaflavins",
-      "canonicalName": "theaflavins",
-      "aliases": [],
-      "category": "Polyphenols",
-      "subcategory": "Flavonoids",
-      "plainEnglish": "Distinctive black tea polyphenols formed during fermentation that support cardiovascular and antioxidant health.",
-      "primaryAction": "Supports cardiovascular health and antioxidant protection.",
-      "description": "Theaflavins are formed during the fermentation (oxidation) of tea leaves that produces black tea, when catechins are oxidised and combine into larger polyphenol structures. They are responsible for black tea's characteristic colour and contribute to its cardiovascular and antioxidant associations.",
-      "scientificSummary": "Oxidative dimerisation products of catechins formed enzymatically during black tea manufacture, exhibiting antioxidant activity and studied for effects on endothelial function and blood lipid profiles.",
-      "evidence": "Moderate",
-      "clinicalImportance": 4,
-      "maturity": "Established",
-      "status": "Active",
-      "keywords": [
-        "black tea",
-        "fermentation",
-        "catechins",
-        "cardiovascular",
-        "antioxidant"
-      ]
-    },
-    {
-      "id": "PP020",
-      "name": "Epigallocatechin Gallate",
-      "canonicalName": "epigallocatechin gallate",
-      "aliases": [
-        "EGCG"
-      ],
-      "category": "Polyphenols",
-      "subcategory": "Flavanols",
-      "plainEnglish": "The principal and most extensively studied catechin in green tea, supporting antioxidant and cardiovascular health.",
-      "primaryAction": "Supports antioxidant defence, healthy metabolism and cardiovascular function.",
-      "description": "Epigallocatechin gallate (EGCG) is the most abundant and most extensively researched catechin in green tea. It is the individual compound most often responsible for green tea's antioxidant and metabolic health associations in clinical research.",
-      "scientificSummary": "A gallate ester of epigallocatechin and the predominant catechin in green tea, exhibiting potent antioxidant activity and studied for effects on endothelial function, lipid metabolism and cellular signalling pathways including Nrf2 and NF-kB.",
-      "evidence": "High",
-      "clinicalImportance": 5,
-      "maturity": "Established",
-      "status": "Active",
-      "keywords": [
-        "green tea",
-        "catechin",
-        "antioxidant",
-        "metabolism",
-        "cardiovascular"
-      ]
-    },
-    {
-      "id": "PP021",
-      "name": "Fisetin",
-      "canonicalName": "fisetin",
-      "aliases": [],
-      "category": "Polyphenols",
-      "subcategory": "Flavonols",
-      "plainEnglish": "A flavonoid found particularly in strawberries that supports antioxidant protection and healthy cellular ageing.",
-      "primaryAction": "Supports antioxidant defence and healthy cellular ageing pathways.",
-      "description": "Fisetin is a flavonol found in a range of fruits and vegetables, most notably strawberries. It has drawn research interest for antioxidant activity and, more recently, for a proposed role in supporting healthy cellular ageing processes (senescent cell biology), an area of active and still-developing research.",
-      "scientificSummary": "A polyhydroxylated flavonol exhibiting antioxidant and anti-inflammatory activity, studied preclinically and in early human trials for senolytic (senescent cell-clearing) properties; human clinical evidence remains at an early stage.",
-      "evidence": "Moderate",
-      "clinicalImportance": 3,
-      "maturity": "Growing",
-      "status": "Active",
-      "keywords": [
-        "strawberries",
-        "antioxidant",
-        "senescence",
-        "cellular ageing"
-      ]
-    },
-    {
-      "id": "OS006",
-      "name": "Indole-3-Carbinol",
-      "canonicalName": "indole-3-carbinol",
-      "aliases": [
-        "I3C",
-        "DIM (as dimerised metabolite)"
-      ],
-      "category": "Sulphur Compounds",
-      "subcategory": "Glucosinolates",
-      "plainEnglish": "A compound formed from cruciferous vegetables that supports the body's natural detoxification processes.",
-      "primaryAction": "Supports healthy detoxification pathways and cellular defence.",
-      "description": "Indole-3-carbinol is produced when cruciferous vegetables such as broccoli, kale, cabbage and Brussels sprouts are chopped or chewed, from the breakdown of the glucosinolate glucobrassicin. In the acidic environment of the stomach it can combine to form diindolylmethane (DIM). Both compounds have been studied for their role in supporting the body's detoxification enzyme systems.",
-      "scientificSummary": "An indole compound derived from enzymatic hydrolysis of glucobrassicin by myrosinase, which undergoes acid-catalysed condensation in the stomach to form diindolylmethane (DIM); both influence phase I/II detoxification enzyme expression and oestrogen metabolism pathways.",
-      "evidence": "Moderate",
-      "clinicalImportance": 4,
-      "maturity": "Established",
-      "status": "Active",
-      "keywords": [
-        "broccoli",
-        "kale",
-        "cabbage",
-        "brussels sprouts",
-        "cruciferous",
-        "detoxification",
-        "DIM"
-      ]
-    },
-    {
-      "id": "FC039",
-      "name": "L-Theanine",
-      "canonicalName": "l-theanine",
-      "aliases": [
-        "Theanine"
-      ],
-      "category": "Functional Compounds",
-      "subcategory": "Amino Acids",
-      "plainEnglish": "A calming amino acid found almost exclusively in tea that supports relaxed alertness and healthy stress response.",
-      "primaryAction": "Supports calm, focused mental function and healthy stress response.",
-      "description": "L-theanine is an amino acid found almost exclusively in tea plants (green and black tea) and, to a lesser extent, certain mushrooms. It is well known for promoting a state of relaxed alertness, often studied in combination with caffeine, and is associated with alpha brain wave activity linked to calm wakefulness.",
-      "scientificSummary": "A non-proteinogenic amino acid structurally similar to glutamate that crosses the blood-brain barrier and influences alpha brain wave activity, GABA and dopamine signalling, studied for effects on relaxation, attention and stress response, often synergistically with caffeine.",
-      "evidence": "High",
-      "clinicalImportance": 4,
-      "maturity": "Established",
-      "status": "Active",
-      "keywords": [
-        "green tea",
-        "black tea",
-        "relaxation",
-        "focus",
-        "caffeine synergy",
-        "stress"
-      ]
-    },
-    {
-      "id": "FC040",
-      "name": "Betaine",
-      "canonicalName": "betaine",
-      "aliases": [
-        "Trimethylglycine",
-        "TMG"
-      ],
-      "category": "Functional Compounds",
-      "subcategory": "Amino Acid Derivatives",
-      "plainEnglish": "A naturally occurring compound, especially concentrated in beetroot, that supports healthy liver function and methylation.",
-      "primaryAction": "Supports healthy methylation processes and liver function.",
-      "description": "Betaine (trimethylglycine) is especially concentrated in beetroot, from which it takes its name, and is also present in spinach and wholegrains such as quinoa. It acts as a methyl donor in the body, contributing to homocysteine metabolism and supporting healthy liver fat metabolism.",
-      "scientificSummary": "A quaternary ammonium methyl-donor compound that participates in the betaine-homocysteine methyltransferase pathway, supporting homocysteine remethylation to methionine and hepatic lipid metabolism.",
-      "evidence": "High",
-      "clinicalImportance": 4,
-      "maturity": "Established",
-      "status": "Active",
-      "keywords": [
-        "beetroot",
-        "spinach",
-        "quinoa",
-        "methylation",
-        "liver",
-        "homocysteine"
-      ]
-    }
+      {
+    "id": "FC027",
+    "name": "Caffeine",
+    "canonicalName": "caffeine",
+    "aliases": ["Guaranine", "Mateine"],
+    "category": "Functional Compounds",
+    "subcategory": "Methylxanthines",
+    "plainEnglish": "A naturally occurring stimulant found in coffee, tea, guarana and yerba mate that supports alertness and mental performance.",
+    "primaryAction": "Supports alertness, cognitive performance and energy metabolism.",
+    "description": "Caffeine is a naturally occurring methylxanthine present in coffee, tea, guarana and yerba mate. It supports wakefulness, attention and physical performance through adenosine receptor antagonism.",
+    "scientificSummary": "A methylxanthine alkaloid that antagonises adenosine receptors, enhancing neuronal activity, alertness and exercise performance.",
+    "evidence": "High",
+    "clinicalImportance": 5,
+    "maturity": "Established",
+    "status": "Active",
+    "keywords": ["guarana", "yerba mate", "coffee", "tea", "alertness", "energy"]
+  },
+  {
+    "id": "FC028",
+    "name": "Ginsenosides",
+    "canonicalName": "ginsenosides",
+    "aliases": [],
+    "category": "Functional Compounds",
+    "subcategory": "Saponins",
+    "plainEnglish": "The principal bioactive compounds in Korean ginseng that support resilience and cognitive performance.",
+    "primaryAction": "Supports mental performance, stress resilience and healthy energy.",
+    "description": "Ginsenosides are the characteristic triterpene saponins of Panax ginseng and are responsible for many of its recognised adaptogenic properties.",
+    "scientificSummary": "A family of triterpene saponins that modulate neuroendocrine signalling, mitochondrial function and stress adaptation pathways.",
+    "evidence": "High",
+    "clinicalImportance": 4,
+    "maturity": "Established",
+    "status": "Active",
+    "keywords": ["Panax ginseng", "adaptogen", "cognition", "fatigue", "energy"]
+  },
+  {
+    "id": "FC029",
+    "name": "Macamides",
+    "canonicalName": "macamides",
+    "aliases": [],
+    "category": "Functional Compounds",
+    "subcategory": "Fatty Acid Amides",
+    "plainEnglish": "Unique compounds from maca root associated with energy, stamina and wellbeing.",
+    "primaryAction": "Supports vitality, stamina and healthy energy.",
+    "description": "Macamides are characteristic bioactive compounds found in Lepidium meyenii (maca) and contribute to its traditional adaptogenic properties.",
+    "scientificSummary": "A group of fatty acid amides unique to maca that influence endocannabinoid signalling and physiological resilience.",
+    "evidence": "Moderate",
+    "clinicalImportance": 3,
+    "maturity": "Growing",
+    "status": "Active",
+    "keywords": ["maca", "adaptogen", "stamina", "vitality", "energy"]
+  },
+  {
+    "id": "FC030",
+    "name": "Acemannan",
+    "canonicalName": "acemannan",
+    "aliases": [],
+    "category": "Functional Compounds",
+    "subcategory": "Polysaccharides",
+    "plainEnglish": "A polysaccharide from aloe vera that supports gut and immune health.",
+    "primaryAction": "Supports gut barrier function and healthy immune activity.",
+    "description": "Acemannan is the principal bioactive polysaccharide of Aloe vera and is associated with digestive and immune-supportive properties.",
+    "scientificSummary": "An acetylated mannan polysaccharide that influences macrophage activity, gut mucosal integrity and immune signalling.",
+    "evidence": "Moderate",
+    "clinicalImportance": 3,
+    "maturity": "Growing",
+    "status": "Active",
+    "keywords": ["aloe vera", "gut", "immune", "polysaccharide", "mucosal health"]
+  },
+  {
+  "id": "FC031",
+  "name": "Rhodiolosides",
+  "canonicalName": "rhodiolosides",
+  "aliases": ["Salidroside"],
+  "category": "Functional Compounds",
+  "subcategory": "Phenylpropanoid Glycosides",
+  "plainEnglish": "The characteristic bioactive compounds of Rhodiola that support resilience and mental performance.",
+  "primaryAction": "Supports stress resilience, mental performance and healthy energy.",
+  "description": "Rhodiolosides are the principal bioactive glycosides found in Rhodiola rosea and contribute to its recognised adaptogenic properties.",
+  "scientificSummary": "Phenylpropanoid glycosides including salidroside that influence mitochondrial function, neuroendocrine signalling and physiological resilience.",
+  "evidence": "Moderate",
+  "clinicalImportance": 4,
+  "maturity": "Growing",
+  "status": "Active",
+  "keywords": ["rhodiola", "adaptogen", "stress", "fatigue", "cognition"]
+},
+{
+  "id": "FC032",
+  "name": "Schisandrins",
+  "canonicalName": "schisandrins",
+  "aliases": [],
+  "category": "Functional Compounds",
+  "subcategory": "Lignans",
+  "plainEnglish": "The principal lignans from Schisandra that support liver and stress resilience.",
+  "primaryAction": "Supports liver resilience, antioxidant defence and healthy stress adaptation.",
+  "description": "Schisandrins are the characteristic lignans of Schisandra chinensis and contribute to its traditional adaptogenic and hepatoprotective properties.",
+  "scientificSummary": "Dibenzocyclooctadiene lignans that modulate antioxidant pathways, mitochondrial function and hepatic cellular resilience.",
+  "evidence": "Moderate",
+  "clinicalImportance": 4,
+  "maturity": "Growing",
+  "status": "Active",
+  "keywords": ["schisandra", "liver", "adaptogen", "antioxidant", "stress"]
+},
+{
+  "id": "FC034",
+  "name": "Menthol",
+  "canonicalName": "menthol",
+  "aliases": [],
+  "category": "Functional Compounds",
+  "subcategory": "Monoterpenes",
+  "plainEnglish": "The principal cooling compound in peppermint that supports digestive comfort.",
+  "primaryAction": "Supports digestive comfort and gastrointestinal function.",
+  "description": "Menthol is the characteristic monoterpene of peppermint oil and contributes to its recognised digestive and soothing properties.",
+  "scientificSummary": "A cyclic monoterpene alcohol that influences smooth muscle tone, sensory receptors and digestive comfort.",
+  "evidence": "High",
+  "clinicalImportance": 3,
+  "maturity": "Established",
+  "status": "Active",
+  "keywords": ["peppermint", "menthol", "digestive", "GI", "cooling"]
+},
+{
+  "id": "FC035",
+  "name": "Thymol",
+  "canonicalName": "thymol",
+  "aliases": [],
+  "category": "Functional Compounds",
+  "subcategory": "Monoterpenes",
+  "plainEnglish": "The principal bioactive compound in thyme that supports immune and respiratory health.",
+  "primaryAction": "Supports immune modulation and antimicrobial defence.",
+  "description": "Thymol is the characteristic monoterpene of Thymus vulgaris and contributes to its traditional immune and respiratory benefits.",
+  "scientificSummary": "A phenolic monoterpene with antioxidant, antimicrobial and immune-modulating activity.",
+  "evidence": "High",
+  "clinicalImportance": 3,
+  "maturity": "Established",
+  "status": "Active",
+  "keywords": ["thyme", "thymol", "immune", "respiratory", "monoterpene"]
+},
+{
+  "id": "FC036",
+  "name": "Valerenic Acids",
+  "canonicalName": "valerenic acids",
+  "aliases": [],
+  "category": "Functional Compounds",
+  "subcategory": "Sesquiterpenes",
+  "plainEnglish": "The characteristic calming compounds from valerian root that support healthy sleep.",
+  "primaryAction": "Supports relaxation and restorative sleep.",
+  "description": "Valerenic acids are the principal bioactive constituents of Valeriana officinalis associated with sleep and nervous system support.",
+  "scientificSummary": "A family of sesquiterpene acids that modulate GABAergic signalling and sleep physiology.",
+  "evidence": "High",
+  "clinicalImportance": 4,
+  "maturity": "Established",
+  "status": "Active",
+  "keywords": ["valerian", "sleep", "GABA", "relaxation", "nervous system"]
+},
+{
+  "id": "FC037",
+  "name": "Humulones",
+  "canonicalName": "humulones",
+  "aliases": ["Alpha acids"],
+  "category": "Functional Compounds",
+  "subcategory": "Bitter Acids",
+  "plainEnglish": "The characteristic bitter compounds from hop flowers that contribute to relaxation.",
+  "primaryAction": "Supports calmness and healthy sleep.",
+  "description": "Humulones are the principal bitter acids of Humulus lupulus and contribute to its traditional calming properties.",
+  "scientificSummary": "Hop-derived alpha acids that influence neurochemical pathways involved in relaxation and sleep quality.",
+  "evidence": "Moderate",
+  "clinicalImportance": 3,
+  "maturity": "Growing",
+  "status": "Active",
+  "keywords": ["hop", "humulus", "sleep", "calm", "bitter acids"]
+},
+{
+  "id": "FC038",
+  "name": "Phaseolamin",
+  "canonicalName": "phaseolamin",
+  "aliases": ["Alpha-amylase inhibitor"],
+  "category": "Functional Compounds",
+  "subcategory": "Protein Inhibitors",
+  "plainEnglish": "A natural protein from white kidney beans that reduces starch digestion.",
+  "primaryAction": "Supports healthy carbohydrate metabolism by inhibiting alpha-amylase.",
+  "description": "Phaseolamin is the characteristic alpha-amylase inhibiting protein extracted from Phaseolus vulgaris.",
+  "scientificSummary": "A glycoprotein that inhibits pancreatic alpha-amylase, reducing enzymatic starch breakdown.",
+  "evidence": "Moderate",
+  "clinicalImportance": 3,
+  "maturity": "Established",
+  "status": "Active",
+  "keywords": ["white kidney bean", "phaseolamin", "starch", "alpha amylase", "carbohydrate"]
+}
+    
   ]
 }
