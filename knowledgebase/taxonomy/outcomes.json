@@ -1,5 +1,5 @@
 {
-  "version": "2.0",
+  "version": "2.1",
   "status": "Active",
   "description": "Canonical Personal Wellness Blueprint outcomes linking user goals to body systems, biological mechanisms and demographic modifiers.",
   "outcomes": [
@@ -157,7 +157,7 @@
       "candidateMechanisms": [
         "MEC090",
         "MEC094",
-        "MEC114"
+        "MEC091"
       ],
       "status": "Active"
     },
@@ -189,7 +189,7 @@
         "MEC090",
         "MEC102",
         "MEC111",
-        "MEC114"
+        "MEC091"
       ],
       "demographicModifiers": {
         "ageRanges": [
@@ -221,7 +221,7 @@
         "MEC085",
         "MEC107",
         "MEC108",
-        "MEC114"
+        "MEC091"
       ],
       "demographicModifiers": {
         "gender": [

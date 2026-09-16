@@ -1,29 +1,48 @@
 {
-  "version": "1.0",
-  "status": "PROPOSED_NO_REPOSITORY_CHANGES",
-  "description": "Proposed food-to-nutrient relationships for the eight priority nutrients. No quantities are encoded. Relationships are intended to support pathway coverage, not dietary adequacy claims.",
-  "nutrients": {
-    "V010": "Vitamin C",
-    "V011": "Vitamin D",
-    "V013": "Vitamin K",
-    "M001": "Calcium",
-    "M004": "Iodine",
-    "M006": "Magnesium",
-    "M011": "Selenium",
-    "M013": "Zinc"
-  },
-  "count": 89,
+  "version": "20260916-2.0",
+  "status": "ACTIVE",
+  "description": "Food-to-nutrient (vitamin/mineral) relationships across the full nutrient catalogue, matching the completeness and shape established for food-bioactives.json. No quantities/RDA values are encoded - relationships indicate that a food is a genuinely notable dietary source, not a specific dose.",
+  "scope": "All 29 vitamins and minerals in vitamins.json/minerals.json, superseding the earlier 8-nutrient priority-only first pass.",
+  "guardrails": [
+    "Food nutrient content varies by cultivar, species, soil, processing, fortification and preparation.",
+    "Presence of a nutrient does not imply that a food provides a clinically meaningful dose - see per-entry notes for known caveats.",
+    "No quantities, RDA/NRV values or adequacy claims are encoded.",
+    "M014 Chloride is deliberately excluded - no food in this catalogue has a genuinely differentiating dietary source distinct from ordinary table salt."
+  ],
+  "count": 283,
   "relationships": [
     {
       "foodId": "FD001",
       "nutrients": [
         {
           "id": "M006",
-          "confidence": "High"
+          "strength": 4,
+          "confidence": "High",
+          "notes": null
+        },
+        {
+          "id": "M007",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "M008",
+          "strength": 2,
+          "confidence": "Emerging",
+          "notes": null
         },
         {
           "id": "M013",
-          "confidence": "High"
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "V002",
+          "strength": 3,
+          "confidence": "High",
+          "notes": null
         }
       ]
     },
@@ -31,8 +50,10 @@
       "foodId": "FD002",
       "nutrients": [
         {
-          "id": "V010",
-          "confidence": "High"
+          "id": "V013",
+          "strength": 2,
+          "confidence": "Emerging",
+          "notes": null
         }
       ]
     },
@@ -40,8 +61,16 @@
       "foodId": "FD003",
       "nutrients": [
         {
+          "id": "M007",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
           "id": "V010",
-          "confidence": "High"
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
         }
       ]
     },
@@ -50,7 +79,9 @@
       "nutrients": [
         {
           "id": "V010",
-          "confidence": "High"
+          "strength": 4,
+          "confidence": "High",
+          "notes": null
         }
       ]
     },
@@ -58,8 +89,16 @@
       "foodId": "FD005",
       "nutrients": [
         {
+          "id": "M007",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
           "id": "V010",
-          "confidence": "High"
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
         }
       ]
     },
@@ -67,16 +106,64 @@
       "foodId": "FD006",
       "nutrients": [
         {
-          "id": "V010",
-          "confidence": "High"
-        },
-        {
-          "id": "V013",
-          "confidence": "High"
+          "id": "M005",
+          "strength": 4,
+          "confidence": "High",
+          "notes": null
         },
         {
           "id": "M006",
-          "confidence": "High"
+          "strength": 4,
+          "confidence": "High",
+          "notes": null
+        },
+        {
+          "id": "M007",
+          "strength": 2,
+          "confidence": "Emerging",
+          "notes": null
+        },
+        {
+          "id": "M010",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "V001",
+          "strength": 4,
+          "confidence": "High",
+          "notes": null
+        },
+        {
+          "id": "V003",
+          "strength": 2,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "V006",
+          "strength": 2,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "V008",
+          "strength": 5,
+          "confidence": "High",
+          "notes": null
+        },
+        {
+          "id": "V012",
+          "strength": 2,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "V013",
+          "strength": 5,
+          "confidence": "High",
+          "notes": null
         }
       ]
     },
@@ -84,16 +171,46 @@
       "foodId": "FD007",
       "nutrients": [
         {
+          "id": "M001",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "M005",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "M016",
+          "strength": 2,
+          "confidence": "Emerging",
+          "notes": null
+        },
+        {
+          "id": "V001",
+          "strength": 4,
+          "confidence": "High",
+          "notes": null
+        },
+        {
+          "id": "V008",
+          "strength": 4,
+          "confidence": "High",
+          "notes": null
+        },
+        {
           "id": "V010",
-          "confidence": "High"
+          "strength": 4,
+          "confidence": "High",
+          "notes": null
         },
         {
           "id": "V013",
-          "confidence": "High"
-        },
-        {
-          "id": "M006",
-          "confidence": "High"
+          "strength": 5,
+          "confidence": "High",
+          "notes": null
         }
       ]
     },
@@ -101,16 +218,22 @@
       "foodId": "FD008",
       "nutrients": [
         {
+          "id": "M001",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
           "id": "V010",
-          "confidence": "High"
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
         },
         {
           "id": "V013",
-          "confidence": "High"
-        },
-        {
-          "id": "M006",
-          "confidence": "High"
+          "strength": 4,
+          "confidence": "High",
+          "notes": null
         }
       ]
     },
@@ -118,16 +241,22 @@
       "foodId": "FD009",
       "nutrients": [
         {
-          "id": "V010",
-          "confidence": "High"
+          "id": "M010",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "V008",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
         },
         {
           "id": "V013",
-          "confidence": "High"
-        },
-        {
-          "id": "M006",
-          "confidence": "High"
+          "strength": 5,
+          "confidence": "High",
+          "notes": null
         }
       ]
     },
@@ -135,12 +264,52 @@
       "foodId": "FD010",
       "nutrients": [
         {
+          "id": "M001",
+          "strength": 2,
+          "confidence": "Emerging",
+          "notes": null
+        },
+        {
+          "id": "M002",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "M016",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "V005",
+          "strength": 2,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "V008",
+          "strength": 4,
+          "confidence": "High",
+          "notes": null
+        },
+        {
           "id": "V010",
-          "confidence": "High"
+          "strength": 4,
+          "confidence": "High",
+          "notes": null
+        },
+        {
+          "id": "V012",
+          "strength": 2,
+          "confidence": "Emerging",
+          "notes": null
         },
         {
           "id": "V013",
-          "confidence": "High"
+          "strength": 4,
+          "confidence": "High",
+          "notes": null
         }
       ]
     },
@@ -148,12 +317,28 @@
       "foodId": "FD011",
       "nutrients": [
         {
+          "id": "M016",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "V008",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
           "id": "V010",
-          "confidence": "High"
+          "strength": 4,
+          "confidence": "High",
+          "notes": null
         },
         {
           "id": "V013",
-          "confidence": "High"
+          "strength": 4,
+          "confidence": "High",
+          "notes": null
         }
       ]
     },
@@ -162,11 +347,9 @@
       "nutrients": [
         {
           "id": "V010",
-          "confidence": "High"
-        },
-        {
-          "id": "V013",
-          "confidence": "High"
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
         }
       ]
     },
@@ -174,12 +357,22 @@
       "foodId": "FD013",
       "nutrients": [
         {
+          "id": "M016",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
           "id": "V010",
-          "confidence": "High"
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
         },
         {
           "id": "V013",
-          "confidence": "High"
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
         }
       ]
     },
@@ -187,12 +380,40 @@
       "foodId": "FD014",
       "nutrients": [
         {
-          "id": "M006",
-          "confidence": "High"
+          "id": "M005",
+          "strength": 5,
+          "confidence": "High",
+          "notes": null
+        },
+        {
+          "id": "M008",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "M009",
+          "strength": 2,
+          "confidence": "Emerging",
+          "notes": null
         },
         {
           "id": "M013",
-          "confidence": "High"
+          "strength": 2,
+          "confidence": "Emerging",
+          "notes": null
+        },
+        {
+          "id": "V002",
+          "strength": 3,
+          "confidence": "High",
+          "notes": null
+        },
+        {
+          "id": "V008",
+          "strength": 5,
+          "confidence": "High",
+          "notes": null
         }
       ]
     },
@@ -200,12 +421,52 @@
       "foodId": "FD015",
       "nutrients": [
         {
-          "id": "M006",
-          "confidence": "High"
+          "id": "M003",
+          "strength": 2,
+          "confidence": "Emerging",
+          "notes": null
+        },
+        {
+          "id": "M005",
+          "strength": 4,
+          "confidence": "High",
+          "notes": null
+        },
+        {
+          "id": "M007",
+          "strength": 2,
+          "confidence": "Emerging",
+          "notes": null
+        },
+        {
+          "id": "M008",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
         },
         {
           "id": "M013",
-          "confidence": "High"
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "V002",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "V006",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "V008",
+          "strength": 4,
+          "confidence": "High",
+          "notes": null
         }
       ]
     },
@@ -213,12 +474,40 @@
       "foodId": "FD016",
       "nutrients": [
         {
-          "id": "M006",
-          "confidence": "High"
+          "id": "M005",
+          "strength": 4,
+          "confidence": "Moderate",
+          "notes": null
         },
         {
-          "id": "M013",
-          "confidence": "High"
+          "id": "M006",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "M008",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "M010",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "V002",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "V008",
+          "strength": 4,
+          "confidence": "Moderate",
+          "notes": null
         }
       ]
     },
@@ -226,12 +515,52 @@
       "foodId": "FD017",
       "nutrients": [
         {
+          "id": "M003",
+          "strength": 2,
+          "confidence": "Emerging",
+          "notes": null
+        },
+        {
+          "id": "M005",
+          "strength": 4,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
           "id": "M006",
-          "confidence": "High"
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "M008",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "M010",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
         },
         {
           "id": "M013",
-          "confidence": "High"
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "V002",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "V008",
+          "strength": 4,
+          "confidence": "Moderate",
+          "notes": null
         }
       ]
     },
@@ -239,12 +568,22 @@
       "foodId": "FD018",
       "nutrients": [
         {
-          "id": "M006",
-          "confidence": "High"
+          "id": "M003",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
         },
         {
-          "id": "M013",
-          "confidence": "High"
+          "id": "M006",
+          "strength": 2,
+          "confidence": "Emerging",
+          "notes": null
+        },
+        {
+          "id": "M007",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
         }
       ]
     },
@@ -252,12 +591,40 @@
       "foodId": "FD019",
       "nutrients": [
         {
-          "id": "M006",
-          "confidence": "High"
+          "id": "M001",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
         },
         {
-          "id": "M013",
-          "confidence": "High"
+          "id": "M006",
+          "strength": 5,
+          "confidence": "High",
+          "notes": null
+        },
+        {
+          "id": "M009",
+          "strength": 2,
+          "confidence": "Emerging",
+          "notes": null
+        },
+        {
+          "id": "V003",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "V007",
+          "strength": 2,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "V012",
+          "strength": 5,
+          "confidence": "High",
+          "notes": null
         }
       ]
     },
@@ -265,12 +632,52 @@
       "foodId": "FD020",
       "nutrients": [
         {
+          "id": "M005",
+          "strength": 4,
+          "confidence": "High",
+          "notes": null
+        },
+        {
           "id": "M006",
-          "confidence": "High"
+          "strength": 5,
+          "confidence": "High",
+          "notes": null
+        },
+        {
+          "id": "M007",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "M009",
+          "strength": 4,
+          "confidence": "High",
+          "notes": null
         },
         {
           "id": "M013",
-          "confidence": "High"
+          "strength": 5,
+          "confidence": "High",
+          "notes": null
+        },
+        {
+          "id": "V002",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "V006",
+          "strength": 2,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "V012",
+          "strength": 2,
+          "confidence": "Moderate",
+          "notes": null
         }
       ]
     },
@@ -278,16 +685,16 @@
       "foodId": "FD021",
       "nutrients": [
         {
-          "id": "M006",
-          "confidence": "High"
-        },
-        {
-          "id": "M013",
-          "confidence": "High"
-        },
-        {
           "id": "M001",
-          "confidence": "High"
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "M006",
+          "strength": 4,
+          "confidence": "High",
+          "notes": null
         }
       ]
     },
@@ -296,15 +703,9 @@
       "nutrients": [
         {
           "id": "M006",
-          "confidence": "High"
-        },
-        {
-          "id": "M013",
-          "confidence": "High"
-        },
-        {
-          "id": "M001",
-          "confidence": "High"
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
         }
       ]
     },
@@ -312,25 +713,50 @@
       "foodId": "FD023",
       "nutrients": [
         {
-          "id": "M011",
-          "confidence": "High"
+          "id": "M003",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
         },
         {
           "id": "M006",
-          "confidence": "High"
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "M011",
+          "strength": 5,
+          "confidence": "High",
+          "notes": "By far the most concentrated common dietary source - a small handful can exceed the daily target."
         }
       ]
     },
     {
       "foodId": "FD024",
-      "nutrients": []
+      "nutrients": [
+        {
+          "id": "V012",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "V013",
+          "strength": 2,
+          "confidence": "Moderate",
+          "notes": null
+        }
+      ]
     },
     {
       "foodId": "FD025",
       "nutrients": [
         {
-          "id": "V010",
-          "confidence": "Moderate"
+          "id": "M016",
+          "strength": 4,
+          "confidence": "High",
+          "notes": null
         }
       ]
     },
@@ -338,8 +764,10 @@
       "foodId": "FD026",
       "nutrients": [
         {
-          "id": "V010",
-          "confidence": "Moderate"
+          "id": "M016",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
         }
       ]
     },
@@ -347,8 +775,16 @@
       "foodId": "FD027",
       "nutrients": [
         {
+          "id": "M010",
+          "strength": 2,
+          "confidence": "Emerging",
+          "notes": null
+        },
+        {
           "id": "V010",
-          "confidence": "Moderate"
+          "strength": 2,
+          "confidence": "Emerging",
+          "notes": null
         }
       ]
     },
@@ -356,8 +792,34 @@
       "foodId": "FD028",
       "nutrients": [
         {
-          "id": "V010",
-          "confidence": "Moderate"
+          "id": "M006",
+          "strength": 2,
+          "confidence": "Emerging",
+          "notes": null
+        },
+        {
+          "id": "M010",
+          "strength": 4,
+          "confidence": "High",
+          "notes": null
+        },
+        {
+          "id": "V005",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "V008",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "V012",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
         }
       ]
     },
@@ -365,8 +827,46 @@
       "foodId": "FD029",
       "nutrients": [
         {
+          "id": "M003",
+          "strength": 2,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "M010",
+          "strength": 2,
+          "confidence": "Emerging",
+          "notes": null
+        },
+        {
+          "id": "M011",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "V003",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "V004",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "V005",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
           "id": "V011",
-          "confidence": "Moderate"
+          "strength": 2,
+          "confidence": "Emerging",
+          "notes": "Strongly dependent on UV light exposure during growing/processing - see file guardrails."
         }
       ]
     },
@@ -374,12 +874,70 @@
       "foodId": "FD030",
       "nutrients": [
         {
-          "id": "V011",
-          "confidence": "High"
+          "id": "M003",
+          "strength": 2,
+          "confidence": "Emerging",
+          "notes": null
+        },
+        {
+          "id": "M004",
+          "strength": 2,
+          "confidence": "Emerging",
+          "notes": null
+        },
+        {
+          "id": "M009",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "M010",
+          "strength": 2,
+          "confidence": "Emerging",
+          "notes": null
         },
         {
           "id": "M011",
-          "confidence": "High"
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "V002",
+          "strength": 2,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "V004",
+          "strength": 4,
+          "confidence": "High",
+          "notes": null
+        },
+        {
+          "id": "V006",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "V007",
+          "strength": 2,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "V009",
+          "strength": 5,
+          "confidence": "High",
+          "notes": null
+        },
+        {
+          "id": "V011",
+          "strength": 5,
+          "confidence": "High",
+          "notes": null
         }
       ]
     },
@@ -387,16 +945,40 @@
       "foodId": "FD031",
       "nutrients": [
         {
-          "id": "V011",
-          "confidence": "High"
+          "id": "M001",
+          "strength": 5,
+          "confidence": "High",
+          "notes": "Primarily from the edible soft bones."
+        },
+        {
+          "id": "M005",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
         },
         {
           "id": "M011",
-          "confidence": "High"
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
         },
         {
-          "id": "M001",
-          "confidence": "High"
+          "id": "V004",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "V009",
+          "strength": 5,
+          "confidence": "High",
+          "notes": null
+        },
+        {
+          "id": "V011",
+          "strength": 5,
+          "confidence": "High",
+          "notes": null
         }
       ]
     },
@@ -404,12 +986,28 @@
       "foodId": "FD032",
       "nutrients": [
         {
-          "id": "V011",
-          "confidence": "High"
+          "id": "M011",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
         },
         {
-          "id": "M011",
-          "confidence": "High"
+          "id": "V004",
+          "strength": 4,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "V009",
+          "strength": 5,
+          "confidence": "High",
+          "notes": null
+        },
+        {
+          "id": "V011",
+          "strength": 5,
+          "confidence": "High",
+          "notes": null
         }
       ]
     },
@@ -417,12 +1015,28 @@
       "foodId": "FD033",
       "nutrients": [
         {
-          "id": "V011",
-          "confidence": "High"
+          "id": "M011",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
         },
         {
-          "id": "M011",
-          "confidence": "High"
+          "id": "V004",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "V009",
+          "strength": 5,
+          "confidence": "High",
+          "notes": null
+        },
+        {
+          "id": "V011",
+          "strength": 5,
+          "confidence": "High",
+          "notes": null
         }
       ]
     },
@@ -431,11 +1045,27 @@
       "nutrients": [
         {
           "id": "M001",
-          "confidence": "High"
+          "strength": 4,
+          "confidence": "High",
+          "notes": null
         },
         {
-          "id": "M013",
-          "confidence": "Moderate"
+          "id": "M004",
+          "strength": 2,
+          "confidence": "Emerging",
+          "notes": null
+        },
+        {
+          "id": "V003",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "V009",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
         }
       ]
     },
@@ -444,11 +1074,27 @@
       "nutrients": [
         {
           "id": "M001",
-          "confidence": "High"
+          "strength": 4,
+          "confidence": "High",
+          "notes": null
         },
         {
-          "id": "M013",
-          "confidence": "Moderate"
+          "id": "M004",
+          "strength": 2,
+          "confidence": "Emerging",
+          "notes": null
+        },
+        {
+          "id": "V003",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "V009",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
         }
       ]
     },
@@ -456,8 +1102,10 @@
       "foodId": "FD036",
       "nutrients": [
         {
-          "id": "V010",
-          "confidence": "Moderate"
+          "id": "M012",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": "From the salt used in lacto-fermentation."
         }
       ]
     },
@@ -465,8 +1113,10 @@
       "foodId": "FD037",
       "nutrients": [
         {
-          "id": "V010",
-          "confidence": "Moderate"
+          "id": "M012",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": "From the salt used in fermentation/seasoning."
         }
       ]
     },
@@ -474,8 +1124,10 @@
       "foodId": "FD043",
       "nutrients": [
         {
-          "id": "M006",
-          "confidence": "Moderate"
+          "id": "M015",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": "Tea leaves accumulate fluoride from the environment."
         }
       ]
     },
@@ -483,8 +1135,10 @@
       "foodId": "FD044",
       "nutrients": [
         {
-          "id": "M006",
-          "confidence": "Moderate"
+          "id": "M015",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": "Tea leaves accumulate fluoride from the environment."
         }
       ]
     },
@@ -492,8 +1146,33 @@
       "foodId": "FD046",
       "nutrients": [
         {
+          "id": "M003",
+          "strength": 4,
+          "confidence": "High",
+          "notes": null
+        },
+        {
+          "id": "M005",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
           "id": "M006",
-          "confidence": "Moderate"
+          "strength": 4,
+          "confidence": "High",
+          "notes": null
+        }
+      ]
+    },
+    {
+      "foodId": "FD047",
+      "nutrients": [
+        {
+          "id": "M012",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": "From brining."
         }
       ]
     },
@@ -501,12 +1180,16 @@
       "foodId": "FD049",
       "nutrients": [
         {
-          "id": "M006",
-          "confidence": "Moderate"
+          "id": "M005",
+          "strength": 4,
+          "confidence": "Moderate",
+          "notes": "Spirulina is a widely cited iron source, though bioavailability varies."
         },
         {
-          "id": "M004",
-          "confidence": "Moderate"
+          "id": "V009",
+          "strength": 1,
+          "confidence": "Emerging",
+          "notes": "Spirulina contains B12-like analogue compounds that are not fully biologically active in humans - should not be relied upon as a dietary B12 source."
         }
       ]
     },
@@ -514,8 +1197,16 @@
       "foodId": "FD050",
       "nutrients": [
         {
-          "id": "V010",
-          "confidence": "Moderate"
+          "id": "M010",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "V008",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
         }
       ]
     },
@@ -523,8 +1214,16 @@
       "foodId": "FD053",
       "nutrients": [
         {
-          "id": "V010",
-          "confidence": "Moderate"
+          "id": "V001",
+          "strength": 5,
+          "confidence": "High",
+          "notes": null
+        },
+        {
+          "id": "V006",
+          "strength": 2,
+          "confidence": "Emerging",
+          "notes": null
         }
       ]
     },
@@ -533,7 +1232,20 @@
       "nutrients": [
         {
           "id": "V010",
-          "confidence": "High"
+          "strength": 4,
+          "confidence": "High",
+          "notes": null
+        }
+      ]
+    },
+    {
+      "foodId": "FD055",
+      "nutrients": [
+        {
+          "id": "M007",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
         }
       ]
     },
@@ -541,8 +1253,10 @@
       "foodId": "FD057",
       "nutrients": [
         {
-          "id": "V010",
-          "confidence": "Moderate"
+          "id": "M002",
+          "strength": 2,
+          "confidence": "Emerging",
+          "notes": null
         }
       ]
     },
@@ -550,8 +1264,16 @@
       "foodId": "FD058",
       "nutrients": [
         {
+          "id": "V008",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
           "id": "V010",
-          "confidence": "High"
+          "strength": 5,
+          "confidence": "High",
+          "notes": null
         }
       ]
     },
@@ -560,7 +1282,9 @@
       "nutrients": [
         {
           "id": "V010",
-          "confidence": "High"
+          "strength": 4,
+          "confidence": "High",
+          "notes": null
         }
       ]
     },
@@ -569,7 +1293,9 @@
       "nutrients": [
         {
           "id": "V010",
-          "confidence": "High"
+          "strength": 4,
+          "confidence": "High",
+          "notes": null
         }
       ]
     },
@@ -577,20 +1303,70 @@
       "foodId": "FD061",
       "nutrients": [
         {
-          "id": "V011",
-          "confidence": "Moderate"
+          "id": "M004",
+          "strength": 2,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "M009",
+          "strength": 2,
+          "confidence": "Emerging",
+          "notes": null
         },
         {
           "id": "M011",
-          "confidence": "High"
-        },
-        {
-          "id": "M004",
-          "confidence": "Moderate"
+          "strength": 2,
+          "confidence": "Moderate",
+          "notes": null
         },
         {
           "id": "M013",
-          "confidence": "Moderate"
+          "strength": 2,
+          "confidence": "Emerging",
+          "notes": null
+        },
+        {
+          "id": "M016",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": "From sulphur-containing amino acids in egg protein."
+        },
+        {
+          "id": "V001",
+          "strength": 3,
+          "confidence": "High",
+          "notes": "From egg yolk."
+        },
+        {
+          "id": "V003",
+          "strength": 3,
+          "confidence": "High",
+          "notes": null
+        },
+        {
+          "id": "V005",
+          "strength": 2,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "V007",
+          "strength": 4,
+          "confidence": "High",
+          "notes": "Concentrated in egg yolk; raw egg white contains avidin, which binds biotin - cooking inactivates this."
+        },
+        {
+          "id": "V009",
+          "strength": 3,
+          "confidence": "High",
+          "notes": null
+        },
+        {
+          "id": "V011",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
         }
       ]
     },
@@ -598,8 +1374,16 @@
       "foodId": "FD062",
       "nutrients": [
         {
+          "id": "M010",
+          "strength": 2,
+          "confidence": "Emerging",
+          "notes": null
+        },
+        {
           "id": "V010",
-          "confidence": "Moderate"
+          "strength": 2,
+          "confidence": "Moderate",
+          "notes": null
         }
       ]
     },
@@ -608,15 +1392,15 @@
       "nutrients": [
         {
           "id": "M004",
-          "confidence": "High"
+          "strength": 5,
+          "confidence": "High",
+          "notes": "Content is highly variable by species and product - see file guardrails."
         },
         {
-          "id": "M001",
-          "confidence": "Moderate"
-        },
-        {
-          "id": "M006",
-          "confidence": "Moderate"
+          "id": "M015",
+          "strength": 2,
+          "confidence": "Emerging",
+          "notes": null
         }
       ]
     },
@@ -625,17 +1409,700 @@
       "nutrients": [
         {
           "id": "M006",
-          "confidence": "Moderate"
+          "strength": 2,
+          "confidence": "Emerging",
+          "notes": null
+        },
+        {
+          "id": "V008",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "V010",
+          "strength": 2,
+          "confidence": "Emerging",
+          "notes": null
+        }
+      ]
+    },
+    {
+      "foodId": "FD065",
+      "nutrients": [
+        {
+          "id": "M001",
+          "strength": 4,
+          "confidence": "High",
+          "notes": null
+        },
+        {
+          "id": "M003",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "M005",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "M007",
+          "strength": 2,
+          "confidence": "Emerging",
+          "notes": null
+        },
+        {
+          "id": "M009",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "M011",
+          "strength": 2,
+          "confidence": "Emerging",
+          "notes": null
+        },
+        {
+          "id": "M013",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "V002",
+          "strength": 2,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "V012",
+          "strength": 2,
+          "confidence": "Moderate",
+          "notes": null
+        }
+      ]
+    },
+    {
+      "foodId": "FD066",
+      "nutrients": [
+        {
+          "id": "V012",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        }
+      ]
+    },
+    {
+      "foodId": "FD067",
+      "nutrients": [
+        {
+          "id": "M005",
+          "strength": 4,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "M006",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "M007",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "V008",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        }
+      ]
+    },
+    {
+      "foodId": "FD068",
+      "nutrients": [
+        {
+          "id": "M001",
+          "strength": 4,
+          "confidence": "Moderate",
+          "notes": "Only where set with a calcium-based coagulant (calcium sulfate) rather than nigari - see monograph."
+        },
+        {
+          "id": "M005",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "M006",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "M013",
+          "strength": 2,
+          "confidence": "Emerging",
+          "notes": null
+        }
+      ]
+    },
+    {
+      "foodId": "FD069",
+      "nutrients": [
+        {
+          "id": "M005",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "M007",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "M013",
+          "strength": 2,
+          "confidence": "Emerging",
+          "notes": null
+        }
+      ]
+    },
+    {
+      "foodId": "FD070",
+      "nutrients": [
+        {
+          "id": "M005",
+          "strength": 2,
+          "confidence": "Emerging",
+          "notes": null
+        },
+        {
+          "id": "M009",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "M011",
+          "strength": 2,
+          "confidence": "Emerging",
+          "notes": null
+        },
+        {
+          "id": "M013",
+          "strength": 2,
+          "confidence": "Emerging",
+          "notes": null
+        },
+        {
+          "id": "V004",
+          "strength": 5,
+          "confidence": "High",
+          "notes": null
+        },
+        {
+          "id": "V005",
+          "strength": 2,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "V006",
+          "strength": 4,
+          "confidence": "High",
+          "notes": null
+        },
+        {
+          "id": "V009",
+          "strength": 1,
+          "confidence": "Emerging",
+          "notes": "Modest amount compared with red meat and oily fish."
+        }
+      ]
+    },
+    {
+      "foodId": "FD071",
+      "nutrients": [
+        {
+          "id": "M002",
+          "strength": 2,
+          "confidence": "Emerging",
+          "notes": null
+        },
+        {
+          "id": "M005",
+          "strength": 2,
+          "confidence": "Emerging",
+          "notes": null
+        },
+        {
+          "id": "M011",
+          "strength": 2,
+          "confidence": "Emerging",
+          "notes": null
+        },
+        {
+          "id": "M013",
+          "strength": 2,
+          "confidence": "Emerging",
+          "notes": null
+        },
+        {
+          "id": "V004",
+          "strength": 5,
+          "confidence": "High",
+          "notes": null
+        },
+        {
+          "id": "V006",
+          "strength": 4,
+          "confidence": "High",
+          "notes": null
+        },
+        {
+          "id": "V009",
+          "strength": 1,
+          "confidence": "Emerging",
+          "notes": "Modest amount compared with red meat and oily fish."
+        }
+      ]
+    },
+    {
+      "foodId": "FD072",
+      "nutrients": [
+        {
+          "id": "M005",
+          "strength": 5,
+          "confidence": "High",
+          "notes": null
+        },
+        {
+          "id": "M009",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "M013",
+          "strength": 5,
+          "confidence": "High",
+          "notes": null
+        },
+        {
+          "id": "V004",
+          "strength": 4,
+          "confidence": "High",
+          "notes": null
+        },
+        {
+          "id": "V009",
+          "strength": 4,
+          "confidence": "High",
+          "notes": null
+        }
+      ]
+    },
+    {
+      "foodId": "FD073",
+      "nutrients": [
+        {
+          "id": "M001",
+          "strength": 5,
+          "confidence": "High",
+          "notes": null
+        },
+        {
+          "id": "M004",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "M009",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "V001",
+          "strength": 2,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "V003",
+          "strength": 4,
+          "confidence": "High",
+          "notes": null
+        },
+        {
+          "id": "V009",
+          "strength": 3,
+          "confidence": "High",
+          "notes": null
+        }
+      ]
+    },
+    {
+      "foodId": "FD074",
+      "nutrients": [
+        {
+          "id": "M001",
+          "strength": 5,
+          "confidence": "High",
+          "notes": null
+        },
+        {
+          "id": "M004",
+          "strength": 2,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "M009",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "M012",
+          "strength": 2,
+          "confidence": "Emerging",
+          "notes": null
+        },
+        {
+          "id": "V001",
+          "strength": 2,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "V003",
+          "strength": 2,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "V009",
+          "strength": 3,
+          "confidence": "High",
+          "notes": null
+        }
+      ]
+    },
+    {
+      "foodId": "FD075",
+      "nutrients": [
+        {
+          "id": "M001",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "M009",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "V009",
+          "strength": 2,
+          "confidence": "Moderate",
+          "notes": null
+        }
+      ]
+    },
+    {
+      "foodId": "FD076",
+      "nutrients": [
+        {
+          "id": "M001",
+          "strength": 4,
+          "confidence": "Moderate",
+          "notes": "Fortified - standard practice for UK oat milk."
+        },
+        {
+          "id": "V011",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": "Only where fortified - common practice for UK oat milk but not universal."
+        }
+      ]
+    },
+    {
+      "foodId": "FD077",
+      "nutrients": [
+        {
+          "id": "M001",
+          "strength": 4,
+          "confidence": "Moderate",
+          "notes": "Fortified - standard practice for UK almond milk."
+        },
+        {
+          "id": "V011",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": "Only where fortified - common practice for UK almond milk but not universal."
+        }
+      ]
+    },
+    {
+      "foodId": "FD078",
+      "nutrients": [
+        {
+          "id": "M001",
+          "strength": 4,
+          "confidence": "Moderate",
+          "notes": "Fortified - standard practice for UK soy milk."
+        },
+        {
+          "id": "V011",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": "Only where fortified - common practice for UK soy milk but not universal."
+        }
+      ]
+    },
+    {
+      "foodId": "FD079",
+      "nutrients": [
+        {
+          "id": "M006",
+          "strength": 2,
+          "confidence": "Emerging",
+          "notes": null
+        },
+        {
+          "id": "M007",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "V002",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "V004",
+          "strength": 2,
+          "confidence": "Moderate",
+          "notes": null
+        }
+      ]
+    },
+    {
+      "foodId": "FD080",
+      "nutrients": [
+        {
+          "id": "M005",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "M006",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        }
+      ]
+    },
+    {
+      "foodId": "FD081",
+      "nutrients": [
+        {
+          "id": "V002",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        }
+      ]
+    },
+    {
+      "foodId": "FD082",
+      "nutrients": [
+        {
+          "id": "M006",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "M007",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        }
+      ]
+    },
+    {
+      "foodId": "FD083",
+      "nutrients": [
+        {
+          "id": "V004",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "V012",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        }
+      ]
+    },
+    {
+      "foodId": "FD085",
+      "nutrients": [
+        {
+          "id": "M006",
+          "strength": 2,
+          "confidence": "Emerging",
+          "notes": null
+        },
+        {
+          "id": "M010",
+          "strength": 4,
+          "confidence": "High",
+          "notes": null
+        },
+        {
+          "id": "V006",
+          "strength": 4,
+          "confidence": "High",
+          "notes": null
+        }
+      ]
+    },
+    {
+      "foodId": "FD087",
+      "nutrients": [
+        {
+          "id": "V001",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "V010",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        }
+      ]
+    },
+    {
+      "foodId": "FD088",
+      "nutrients": [
+        {
+          "id": "M010",
+          "strength": 4,
+          "confidence": "High",
+          "notes": null
+        },
+        {
+          "id": "V001",
+          "strength": 5,
+          "confidence": "High",
+          "notes": null
+        },
+        {
+          "id": "V005",
+          "strength": 2,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "V007",
+          "strength": 2,
+          "confidence": "Emerging",
+          "notes": null
+        },
+        {
+          "id": "V010",
+          "strength": 2,
+          "confidence": "Moderate",
+          "notes": null
+        }
+      ]
+    },
+    {
+      "foodId": "FD089",
+      "nutrients": [
+        {
+          "id": "M002",
+          "strength": 2,
+          "confidence": "Emerging",
+          "notes": null
+        },
+        {
+          "id": "M010",
+          "strength": 4,
+          "confidence": "High",
+          "notes": null
+        },
+        {
+          "id": "V006",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "V010",
+          "strength": 2,
+          "confidence": "Moderate",
+          "notes": "Content declines with storage and cooking."
+        }
+      ]
+    },
+    {
+      "foodId": "FD090",
+      "nutrients": [
+        {
+          "id": "V001",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": "Highest in red/orange/yellow varieties."
+        },
+        {
+          "id": "V010",
+          "strength": 5,
+          "confidence": "High",
+          "notes": "Bell peppers contain more vitamin C by weight than most citrus fruit."
+        }
+      ]
+    },
+    {
+      "foodId": "FD092",
+      "nutrients": [
+        {
+          "id": "V002",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
+        },
+        {
+          "id": "V008",
+          "strength": 3,
+          "confidence": "Moderate",
+          "notes": null
         }
       ]
     }
-  ],
-  "scope": "Only the eight priority nutrients from nutrient-mechanisms-v1 are included. Other vitamins/minerals remain outside this first pass.",
-  "guardrails": [
-    "Food nutrient content varies by cultivar, species, soil, processing, fortification and preparation.",
-    "Presence of a nutrient does not imply that a food provides a clinically meaningful dose.",
-    "Seaweed iodine content is particularly variable and should be treated as species/product dependent.",
-    "Vitamin D mappings for mushrooms depend strongly on UV exposure and processing.",
-    "No quantities, RDA/NRV values or adequacy claims are encoded."
   ]
 }

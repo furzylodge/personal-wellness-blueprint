@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "nutrient-mechanisms-schema.json",
+  "title": "Nutrient Mechanism Relationships",
+  "description": "Relationships between vitamins/minerals and biological mechanisms, used by NutrientResolver.php. Plays the same role for nutrients that bioactive-mechanisms.json plays for bioactives - both plug into the same mechanisms.json / body-systems-mechanisms.json hub.",
+  "type": "object",
+  "required": ["version", "status", "description", "count", "relationships"],
+  "properties": {
+    "version": { "type": "string" },
+    "status": { "type": "string", "enum": ["ACTIVE", "PROPOSED_NO_REPOSITORY_CHANGES", "DEPRECATED"] },
+    "description": { "type": "string" },
+    "count": { "type": "integer", "minimum": 0 },
+    "relationships": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["nutrientId", "nutrient", "mechanismId", "mechanism", "strength", "confidence", "basis", "tier1Target"],
+        "properties": {
+          "nutrientId": {
+            "type": "string",
+            "pattern": "^(V|M)[0-9]{3}$",
+            "description": "Must match an id in vitamins.json (V-prefix) or minerals.json (M-prefix)."
+          },
+          "nutrient": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Denormalised display name - must match the name of the referenced nutrient."
+          },
+          "mechanismId": {
+            "type": "string",
+            "pattern": "^MEC[0-9]{3}$",
+            "description": "Must match an id in mechanisms.json."
+          },
+          "mechanism": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Denormalised display name - must match the name of the referenced mechanism."
+          },
+          "strength": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 5
+          },
+          "confidence": {
+            "type": "string",
+            "enum": ["High", "Moderate", "Low"]
+          },
+          "basis": {
+            "type": "string",
+            "minLength": 1,
+            "description": "The physiological rationale for this relationship."
+          },
+          "tier1Target": {
+            "type": "boolean",
+            "description": "Whether this nutrient is a first-line recommended target for this mechanism."
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

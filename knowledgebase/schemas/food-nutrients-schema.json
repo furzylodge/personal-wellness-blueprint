@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "food-nutrients-schema.json",
+  "title": "Food Nutrient Relationships",
+  "description": "Relationships between foods and vitamins/minerals, matching the completeness and shape of food-bioactives.json. Not every food needs an entry - a food is included only where it is a genuinely notable dietary source of a nutrient, not for trace amounts.",
+  "type": "object",
+  "required": ["version", "status", "description", "scope", "guardrails", "count", "relationships"],
+  "properties": {
+    "version": { "type": "string" },
+    "status": { "type": "string", "enum": ["ACTIVE", "PROPOSED_NO_REPOSITORY_CHANGES", "DEPRECATED"] },
+    "description": { "type": "string" },
+    "scope": { "type": "string" },
+    "guardrails": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "count": { "type": "integer", "minimum": 0 },
+    "relationships": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["foodId", "nutrients"],
+        "properties": {
+          "foodId": {
+            "type": "string",
+            "pattern": "^FD[0-9]{3}$"
+          },
+          "nutrients": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["id", "strength", "confidence", "notes"],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "pattern": "^(V|M)[0-9]{3}$",
+                  "description": "Must match an id in vitamins.json (V-prefix) or minerals.json (M-prefix)."
+                },
+                "strength": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 5,
+                  "description": "Relative notability of this food as a dietary source of this nutrient."
+                },
+                "confidence": {
+                  "type": "string",
+                  "enum": ["High", "Moderate", "Emerging"]
+                },
+                "notes": {
+                  "type": ["string", "null"],
+                  "description": "Caveats such as fortification-dependence, bioavailability or preparation sensitivity."
+                }
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

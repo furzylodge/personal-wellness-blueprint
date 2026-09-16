@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "food-mechanisms-schema.json",
+  "title": "Food Mechanism Relationships",
+  "description": "Weighted Food -> Mechanism relationships consumed by FoodResolver.php for scoring. This file is DERIVED, not hand-curated: it must be regenerated from food-bioactives.json x bioactive-mechanisms.json whenever either changes, never edited directly. Each relationship's top-level strength/confidence reflect its single strongest contributing bioactive; 'contributors' preserves every bioactive path that feeds into it, so the recommendation stays auditable back to the active ingredient.",
+  "type": "object",
+  "required": ["version", "description", "strengthScale", "confidenceScale", "relationships", "count"],
+  "properties": {
+    "version": { "type": "string" },
+    "description": { "type": "string" },
+    "derivation": {
+      "type": "object",
+      "description": "Documents how this file was generated and from what sources."
+    },
+    "strengthScale": { "type": "object" },
+    "confidenceScale": { "type": "string" },
+    "count": { "type": "integer", "minimum": 0 },
+    "relationships": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["foodId", "mechanisms"],
+        "properties": {
+          "foodId": {
+            "type": "string",
+            "pattern": "^FD[0-9]{3}$"
+          },
+          "mechanisms": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["id", "strength", "confidence", "contributors"],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "pattern": "^MEC[0-9]{3}$"
+                },
+                "strength": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 5,
+                  "description": "The strongest contributing bioactive path's combined strength."
+                },
+                "confidence": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1,
+                  "description": "The strongest contributing bioactive path's combined confidence."
+                },
+                "contributors": {
+                  "type": "array",
+                  "minItems": 1,
+                  "description": "Every bioactive path that feeds into this food-mechanism relationship, preserving the full audit trail back to the active ingredient.",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "bioactive",
+                      "foodBioactiveStrength",
+                      "foodBioactiveConfidence",
+                      "bioactiveMechanismStrength",
+                      "bioactiveMechanismConfidence",
+                      "combinedStrength",
+                      "combinedConfidence"
+                    ],
+                    "properties": {
+                      "bioactive": {
+                        "type": "string",
+                        "pattern": "^(DF|PP|OS|CA|FA|PS|TP|FC)[0-9]{3}$"
+                      },
+                      "foodBioactiveStrength": { "type": "integer", "minimum": 1, "maximum": 5 },
+                      "foodBioactiveConfidence": { "type": "string", "enum": ["High", "Moderate", "Emerging"] },
+                      "bioactiveMechanismStrength": { "type": "integer", "minimum": 1, "maximum": 5 },
+                      "bioactiveMechanismConfidence": { "type": "string", "enum": ["High", "Moderate", "Emerging"] },
+                      "combinedStrength": { "type": "integer", "minimum": 1, "maximum": 5 },
+                      "combinedConfidence": { "type": "number", "minimum": 0, "maximum": 1 }
+                    },
+                    "additionalProperties": false
+                  }
+                }
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "goals-schema.json",
+  "title": "Goals",
+  "description": "User-selected lifestyle goals used as explicit intent within the PWB recommendation model. Goals are deliberately separated from outcomes.json, which represents the structured physiological targets used by the scoring engine.",
+  "type": "object",
+  "required": ["version", "status", "description", "selection", "goals"],
+  "properties": {
+    "version": { "type": "string" },
+    "status": { "type": "string", "enum": ["Draft", "Active", "Deprecated"] },
+    "description": { "type": "string" },
+    "selection": {
+      "type": "object",
+      "required": ["maximum", "minimum", "uiInstruction", "selectionWeighting"],
+      "properties": {
+        "maximum": { "type": "integer", "minimum": 1 },
+        "minimum": { "type": "integer", "minimum": 0 },
+        "uiInstruction": { "type": "string", "minLength": 1 },
+        "selectionWeighting": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "goals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "displayText", "description", "category", "outcomes", "status", "sortOrder"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^GOAL[0-9]{3}$"
+          },
+          "name": { "type": "string", "minLength": 1 },
+          "displayText": { "type": "string", "minLength": 1 },
+          "description": { "type": "string", "minLength": 1 },
+          "category": { "type": "string", "minLength": 1 },
+          "outcomes": {
+            "type": "array",
+            "description": "Must match ids in outcomes.json. May be empty for a Proposed goal with no dedicated outcome yet.",
+            "items": {
+              "type": "string",
+              "pattern": "^OUT[0-9]{3}$"
+            }
+          },
+          "applicability": {
+            "type": "object",
+            "description": "Optional demographic restriction on when this goal is offered.",
+            "properties": {
+              "gender": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "ageRange": {
+                "type": "array",
+                "items": { "type": "string" }
+              }
+            },
+            "additionalProperties": false
+          },
+          "status": { "type": "string", "enum": ["Active", "Proposed", "Deprecated"] },
+          "sortOrder": { "type": "integer", "minimum": 1 },
+          "note": {
+            "type": "string",
+            "description": "Freeform caveat, e.g. explaining why a Proposed goal has no outcomes yet."
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
