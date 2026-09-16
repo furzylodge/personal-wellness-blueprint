@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "body-systems-schema.json",
+  "title": "Body Systems",
+  "description": "The canonical set of body systems referenced by body-systems-mechanisms.json and used throughout reports.",
+  "type": "object",
+  "required": ["version", "bodySystems"],
+  "properties": {
+    "version": { "type": "string" },
+    "bodySystems": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^BS[0-9]{3}$",
+            "description": "Unique body system identifier."
+          },
+          "name": { "type": "string", "minLength": 1 }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

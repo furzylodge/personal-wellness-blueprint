@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "allergens-schema.json",
+  "title": "Allergens",
+  "description": "The canonical set of allergens (the UK FSA's 14 major allergens). Not yet wired into a live validator - engine/src/Validators/TaxonomyValidator.php::validateAllergens() is defined but not called.",
+  "type": "object",
+  "required": ["version", "allergens"],
+  "properties": {
+    "version": { "type": "string" },
+    "allergens": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^AL[0-9]{3}$",
+            "description": "Unique allergen identifier."
+          },
+          "name": { "type": "string", "minLength": 1 }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

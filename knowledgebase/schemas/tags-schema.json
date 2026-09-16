@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "tags-schema.json",
+  "title": "Tags",
+  "description": "The canonical set of food tags, validated live against foods by engine/src/Validators/TaxonomyValidator.php.",
+  "type": "object",
+  "required": ["version", "tags"],
+  "properties": {
+    "version": { "type": "string" },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^TAG[0-9]{3}$",
+            "description": "Unique tag identifier."
+          },
+          "name": { "type": "string", "minLength": 1 }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

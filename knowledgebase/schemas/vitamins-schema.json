@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "vitamins-schema.json",
+  "title": "Vitamins",
+  "description": "The canonical set of dietary vitamins used by the Personal Wellness Blueprint recommendation engine and reports.",
+  "type": "object",
+  "required": ["version", "vitamins"],
+  "properties": {
+    "version": { "type": "string" },
+    "vitamins": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^V[0-9]{3}$",
+            "description": "Unique vitamin identifier."
+          },
+          "name": { "type": "string", "minLength": 1 }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
