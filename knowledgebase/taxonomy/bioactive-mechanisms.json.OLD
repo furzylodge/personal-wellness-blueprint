@@ -1,7 +1,8 @@
 {
-  "version": "20260916-1.0",
-  "generated": "2026-09-16T14:22:06Z",
-  "count": 526,
+  "schema": "bioactive-mechanisms-schema.json",
+  "version": "1.7",
+  "generated": "2026-08-12T15:00:00+01:00",
+  "count": 445,
   "relationships": [
     {
       "id": "BM000001",
@@ -1513,7 +1514,7 @@
     {
       "id": "BM000138",
       "bioactive": "OS002",
-      "mechanism": "MEC022",
+      "mechanism": "MEC043",
       "strength": 3,
       "confidence": "Moderate",
       "notes": "Secondary immune-supportive effects through redox regulation.",
@@ -2030,7 +2031,7 @@
     {
       "id": "BM000185",
       "bioactive": "FA001",
-      "mechanism": "MEC023",
+      "mechanism": "MEC044",
       "strength": 4,
       "confidence": "High",
       "notes": "Cell membrane integrity is a principal biological role.",
@@ -3691,7 +3692,7 @@
     {
       "id": "BM000336",
       "bioactive": "FC013",
-      "mechanism": "MEC111",
+      "mechanism": "MEC072",
       "strength": 3,
       "confidence": "Moderate",
       "notes": "L-glutamine contributes to glutathione synthesis.",
@@ -3746,7 +3747,7 @@
     {
       "id": "BM000341",
       "bioactive": "FC015",
-      "mechanism": "MEC113",
+      "mechanism": "MEC071",
       "strength": 4,
       "confidence": "Moderate",
       "notes": "Literature identifies NRF2/HO-1 signalling as an important antioxidant and cytoprotective pathway.",
@@ -3790,7 +3791,7 @@
     {
       "id": "BM000345",
       "bioactive": "FC016",
-      "mechanism": "MEC113",
+      "mechanism": "MEC071",
       "strength": 3,
       "confidence": "Moderate",
       "notes": "Reviews describe modulation of Nrf2-related antioxidant responses.",
@@ -3834,7 +3835,7 @@
     {
       "id": "BM000349",
       "bioactive": "FC017",
-      "mechanism": "MEC110",
+      "mechanism": "MEC071",
       "strength": 5,
       "confidence": "High",
       "notes": "NRF2 activation is directly reported in the literature and contributes to the antioxidant response.",
@@ -3900,7 +3901,7 @@
     {
       "id": "BM000355",
       "bioactive": "FC019",
-      "mechanism": "MEC113",
+      "mechanism": "MEC071",
       "strength": 4,
       "confidence": "Moderate",
       "notes": "NRF2-related antioxidant signalling is reported for salidroside.",
@@ -3986,1793 +3987,937 @@
       ]
     },
     {
-      "id": "BM000372",
-      "bioactive": "OS002",
-      "mechanism": "MEC110",
-      "strength": 4,
-      "confidence": "High",
-      "notes": "Sulforaphane activates Nrf2-mediated cytoprotective and antioxidant pathways and has liver-focused evidence for reducing oxidative stress and liver injury."
+      "id": "BM000363",
+      "bioactive": "FC021",
+      "mechanism": "MEC071",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Preclinical evidence supports activation/modulation of endogenous antioxidant defence pathways.",
+      "references": [
+        "Scientific Literature"
+      ]
     },
     {
-      "id": "BM000373",
+      "id": "BM000364",
+      "bioactive": "FC022",
+      "mechanism": "MEC090",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "The supplied Collagen+ and Collagen+ Beauty factsheets explicitly identify collagen peptides and support collagen production.",
+      "references": [
+        "Supplied Synergy product factsheets"
+      ]
+    },
+    {
+      "id": "BM000365",
+      "bioactive": "FC022",
+      "mechanism": "MEC091",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "The supplied Collagen+ factsheet explicitly associates collagen with bone tissue support.",
+      "references": [
+        "Supplied Synergy product factsheets"
+      ]
+    },
+    {
+      "id": "BM000366",
+      "bioactive": "FC022",
+      "mechanism": "MEC092",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "The supplied Collagen+ factsheet explicitly refers to normal protein synthesis and muscle tissue.",
+      "references": [
+        "Supplied Synergy product factsheets"
+      ]
+    },
+    {
+      "id": "BM000367",
+      "bioactive": "FC022",
+      "mechanism": "MEC094",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "The supplied collagen factsheets explicitly associate collagen with cartilage/connective tissue support.",
+      "references": [
+        "Supplied Synergy product factsheets"
+      ]
+    },
+    {
+      "id": "BM000368",
+      "bioactive": "FC023",
+      "mechanism": "MEC094",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "The supplied collagen factsheets explicitly identify hyaluronic acid and associate the formulation with cartilage/joint hydration.",
+      "references": [
+        "Supplied Synergy product factsheets"
+      ]
+    },
+    {
+      "id": "BM000369",
+      "bioactive": "FC024",
+      "mechanism": "MEC094",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "The supplied FL-3X factsheet identifies glucosamine sulphate and states that glucosamine is a fundamental component of joint tissue.",
+      "references": [
+        "Supplied Synergy product factsheets"
+      ]
+    },
+    {
+      "id": "BM000370",
+      "bioactive": "FC025",
+      "mechanism": "MEC094",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "The supplied FL-3X factsheet identifies chondroitin sulphate and states that chondroitin is a fundamental component of joint tissue.",
+      "references": [
+        "Supplied Synergy product factsheets"
+      ]
+    },
+    {
+      "id": "BM000371",
+      "bioactive": "FC026",
+      "mechanism": "MEC094",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "The supplied FL-3X factsheet identifies MSM and positions the formulation for mobility, range of motion and flexibility.",
+      "references": [
+        "Supplied Synergy product factsheets"
+      ]
+    },
+    {
+    "id": "BM000372",
+      "bioactive": "OS002",
+      "mechanism": "MEC073",
+      "strength": 4,
+      "confidence": "High",
+      "evidence": "Sulforaphane activates Nrf2-mediated cytoprotective and antioxidant pathways and has liver-focused evidence for reducing oxidative stress and liver injury."
+    },
+    {
+    "id": "BM000373",
       "bioactive": "OS002",
       "mechanism": "MEC066",
       "strength": 3,
       "confidence": "Moderate",
-      "notes": "Preclinical studies report antiviral activity of sulforaphane against multiple viruses; evidence remains predominantly cellular/animal rather than clinical."
+      "evidence": "Preclinical studies report antiviral activity of sulforaphane against multiple viruses; evidence remains predominantly cellular/animal rather than clinical."
     },
     {
-      "id": "BM000374",
+    "id": "BM000374",
       "bioactive": "PP016",
-      "mechanism": "MEC113",
+      "mechanism": "MEC074",
       "strength": 3,
       "confidence": "Moderate",
-      "notes": "Artichoke extracts containing caffeoylquinic acids have demonstrated choleretic activity, including increased bile secretion in a placebo-controlled human pilot study. Evidence does not establish that any single caffeoylquinic acid is solely responsible."
+      "evidence": "Artichoke extracts containing caffeoylquinic acids have demonstrated choleretic activity, including increased bile secretion in a placebo-controlled human pilot study. Evidence does not establish that any single caffeoylquinic acid is solely responsible."
     },
     {
-      "id": "BM000375",
+    "id": "BM000375",
       "bioactive": "PP011",
       "mechanism": "MEC108",
       "strength": 4,
       "confidence": "Moderate",
-      "notes": "Dietary lignans are converted by gut bacteria into enterolignans such as enterolactone and enterodiol. A 2026 randomized controlled trial in perimenopausal women reported increased serum estradiol alongside increased fecal enterolactone, enterodiol and beta-glucuronidase after one month of lignan supplementation, supporting a microbiome-dependent phytoestrogen metabolism pathway. The evidence is still limited to a small clinical literature and does not establish a menopause treatment effect."
+      "evidence": "Dietary lignans are converted by gut bacteria into enterolignans such as enterolactone and enterodiol. A 2026 randomized controlled trial in perimenopausal women reported increased serum estradiol alongside increased fecal enterolactone, enterodiol and beta-glucuronidase after one month of lignan supplementation, supporting a microbiome-dependent phytoestrogen metabolism pathway. The evidence is still limited to a small clinical literature and does not establish a menopause treatment effect."
     },
     {
-      "id": "BM000376",
+    "id": "BM000376",
       "bioactive": "PP017",
       "mechanism": "MEC108",
       "strength": 5,
       "confidence": "High",
-      "notes": "Soy isoflavones are dietary phytoestrogens and daidzein can be converted by intestinal bacteria to equol. Equol production varies substantially between individuals because it depends on the presence of equol-producing gut bacteria. The relationship is therefore directly relevant to phytoestrogen metabolism, but does not imply that soy isoflavones raise endogenous oestrogen."
-    },
-    {
-      "id": "BM000900",
-      "bioactive": "PP006",
-      "mechanism": "MEC020",
-      "strength": 5,
-      "confidence": "High",
-      "notes": "Resveratrol has strong evidence for reducing oxidative stress.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000901",
-      "bioactive": "PP006",
-      "mechanism": "MEC021",
-      "strength": 5,
-      "confidence": "High",
-      "notes": "Resveratrol scavenges reactive oxygen species and supports antioxidant defence.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000902",
-      "bioactive": "PP006",
-      "mechanism": "MEC022",
-      "strength": 4,
-      "confidence": "High",
-      "notes": "Resveratrol activates endogenous antioxidant pathways including Nrf2 signalling.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000904",
-      "bioactive": "PP006",
-      "mechanism": "MEC051",
-      "strength": 3,
-      "confidence": "Moderate",
-      "notes": "Resveratrol has moderate evidence for supporting endothelial and cerebral blood flow.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000905",
-      "bioactive": "FC011",
-      "mechanism": "MEC051",
-      "strength": 5,
-      "confidence": "High",
-      "notes": "L-Arginine is the principal substrate for nitric oxide synthesis and endothelial function.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000906",
-      "bioactive": "FC011",
-      "mechanism": "MEC024",
-      "strength": 3,
-      "confidence": "Moderate",
-      "notes": "L-Arginine contributes to vascular perfusion and mitochondrial efficiency.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000907",
-      "bioactive": "FC012",
-      "mechanism": "MEC051",
-      "strength": 5,
-      "confidence": "High",
-      "notes": "L-Citrulline elevates arginine availability and supports nitric oxide production.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000908",
-      "bioactive": "FC012",
-      "mechanism": "MEC024",
-      "strength": 3,
-      "confidence": "Moderate",
-      "notes": "L-Citrulline supports vascular resilience and exercise-related mitochondrial function.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000909",
-      "bioactive": "FC014",
-      "mechanism": "MEC020",
-      "strength": 4,
-      "confidence": "High",
-      "notes": "Vitamin C reduces oxidative stress through antioxidant activity.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000910",
-      "bioactive": "FC014",
-      "mechanism": "MEC021",
-      "strength": 4,
-      "confidence": "High",
-      "notes": "Vitamin C neutralises reactive oxygen species and regenerates antioxidant capacity.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000911",
-      "bioactive": "FC014",
-      "mechanism": "MEC022",
-      "strength": 3,
-      "confidence": "Moderate",
-      "notes": "Vitamin C supports endogenous antioxidant systems and collagen-dependent vascular integrity.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000377",
-      "bioactive": "DF003",
-      "mechanism": "MEC034",
-      "strength": 5,
-      "confidence": "High",
-      "notes": "Selective stimulation of beneficial microbiota increases overall microbiome diversity.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000378",
-      "bioactive": "DF005",
-      "mechanism": "MEC034",
-      "strength": 4,
-      "confidence": "Moderate",
-      "notes": "Microbial fermentation supports increased microbiota diversity.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000379",
-      "bioactive": "PP001",
-      "mechanism": "MEC014",
-      "strength": 4,
-      "confidence": "Moderate",
-      "notes": "Anthocyanins improve capillary perfusion and peripheral microcirculation through endothelial signalling.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000380",
-      "bioactive": "PP002",
-      "mechanism": "MEC010",
-      "strength": 5,
-      "confidence": "High",
-      "notes": "Quercetin supports endothelial function through nitric oxide preservation and reduced endothelial inflammation.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000381",
-      "bioactive": "PP004",
-      "mechanism": "MEC018",
-      "strength": 4,
-      "confidence": "High",
-      "notes": "Epicatechin improves vascular responsiveness, contributing to healthy blood flow during circulation and exercise.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000382",
-      "bioactive": "PP006",
-      "mechanism": "MEC024",
-      "strength": 5,
-      "confidence": "High",
-      "notes": "Resveratrol activates cellular pathways supporting mitochondrial resilience and energy metabolism.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000383",
-      "bioactive": "PP006",
-      "mechanism": "MEC027",
-      "strength": 4,
-      "confidence": "Moderate",
-      "notes": "Supports cellular repair and resilience through sirtuin-mediated signalling pathways.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000384",
-      "bioactive": "PP007",
-      "mechanism": "MEC027",
-      "strength": 4,
-      "confidence": "Moderate",
-      "notes": "Microbial metabolites including urolithins contribute to cellular repair and resilience.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000385",
-      "bioactive": "PP008",
-      "mechanism": "MEC013",
-      "strength": 4,
-      "confidence": "Moderate",
-      "notes": "Supports healthy blood pressure regulation through vascular and metabolic signalling.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000386",
-      "bioactive": "PP009",
-      "mechanism": "MEC010",
-      "strength": 5,
-      "confidence": "High",
-      "notes": "Supports endothelial function through vascular tone regulation and antioxidant signalling.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000387",
-      "bioactive": "PP010",
-      "mechanism": "MEC002",
-      "strength": 4,
-      "confidence": "Moderate",
-      "notes": "Contributes to healthy cholesterol metabolism through hepatic lipid signalling.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000388",
-      "bioactive": "PP011",
-      "mechanism": "MEC081",
-      "strength": 4,
-      "confidence": "Moderate",
-      "notes": "Enterolignan metabolites influence healthy oestrogen receptor signalling.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000389",
-      "bioactive": "PP012",
-      "mechanism": "MEC019",
-      "strength": 4,
-      "confidence": "Moderate",
-      "notes": "Supports vascular resilience through antioxidant and endothelial protective activity.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000390",
-      "bioactive": "CA001",
-      "mechanism": "MEC027",
-      "strength": 4,
-      "confidence": "Moderate",
-      "notes": "Vitamin A precursor supporting cellular repair and epithelial resilience.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000391",
-      "bioactive": "CA002",
-      "mechanism": "MEC019",
-      "strength": 4,
-      "confidence": "Moderate",
-      "notes": "Supports vascular resilience through antioxidant protection of endothelial tissues.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000392",
-      "bioactive": "CA003",
-      "mechanism": "MEC083",
-      "strength": 5,
-      "confidence": "High",
-      "notes": "Accumulates within the macula and supports retinal protection from oxidative stress.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000393",
-      "bioactive": "CA004",
-      "mechanism": "MEC083",
-      "strength": 5,
-      "confidence": "High",
-      "notes": "Supports retinal integrity and protection of photoreceptor tissues.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000394",
-      "bioactive": "CA005",
-      "mechanism": "MEC024",
-      "strength": 5,
-      "confidence": "High",
-      "notes": "Supports mitochondrial resilience through potent antioxidant activity.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000395",
-      "bioactive": "CA005",
-      "mechanism": "MEC027",
-      "strength": 4,
-      "confidence": "Moderate",
-      "notes": "Supports cellular repair by protecting membrane lipids and mitochondrial structures.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000396",
-      "bioactive": "OS001",
-      "mechanism": "MEC022",
-      "strength": 5,
-      "confidence": "High",
-      "notes": "Potent activation of endogenous antioxidant pathways through Nrf2 signalling.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000397",
-      "bioactive": "OS001",
-      "mechanism": "MEC027",
-      "strength": 4,
-      "confidence": "High",
-      "notes": "Supports cellular repair and resilience through cytoprotective gene expression.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000398",
-      "bioactive": "OS002",
-      "mechanism": "MEC010",
-      "strength": 4,
-      "confidence": "Moderate",
-      "notes": "Supports endothelial function and healthy vascular responsiveness.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000399",
-      "bioactive": "OS002",
-      "mechanism": "MEC060",
-      "strength": 4,
-      "confidence": "Moderate",
-      "notes": "Supports healthy inflammatory balance through modulation of inflammatory signalling.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000400",
-      "bioactive": "OS003",
-      "mechanism": "MEC022",
-      "strength": 4,
-      "confidence": "Moderate",
-      "notes": "Activates endogenous antioxidant defence enzymes through organosulfur signalling.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000401",
-      "bioactive": "OS004",
-      "mechanism": "MEC022",
-      "strength": 4,
-      "confidence": "Moderate",
-      "notes": "Precursor compounds that generate isothiocyanates supporting endogenous antioxidant pathways.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000402",
-      "bioactive": "FA002",
-      "mechanism": "MEC064",
-      "strength": 5,
-      "confidence": "High",
-      "notes": "EPA is a primary precursor for specialised pro-resolving mediators supporting resolution of inflammation.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000403",
-      "bioactive": "FA001",
-      "mechanism": "MEC016",
-      "strength": 4,
-      "confidence": "High",
-      "notes": "Supports healthy platelet function and balanced thrombotic signalling.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000405",
-      "bioactive": "FA002",
-      "mechanism": "MEC024",
-      "strength": 4,
-      "confidence": "Moderate",
-      "notes": "Supports mitochondrial resilience through membrane stability and cellular energy metabolism.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000406",
-      "bioactive": "FA003",
-      "mechanism": "MEC043",
-      "strength": 4,
-      "confidence": "Moderate",
-      "notes": "Contributes to healthy inflammatory balance as the dietary omega-3 precursor.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000407",
-      "bioactive": "FA004",
-      "mechanism": "MEC010",
-      "strength": 4,
-      "confidence": "Moderate",
-      "notes": "Supports endothelial function and vascular health within Mediterranean dietary patterns.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000408",
-      "bioactive": "FA005",
-      "mechanism": "MEC008",
-      "strength": 3,
-      "confidence": "Moderate",
-      "notes": "May support healthy lipid oxidation and body composition through metabolic signalling.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000412",
-      "bioactive": "FC012",
-      "mechanism": "MEC013",
-      "strength": 4,
-      "confidence": "Moderate",
-      "notes": "Supports healthy blood pressure regulation through enhanced nitric oxide availability.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000413",
-      "bioactive": "FC009",
-      "mechanism": "MEC013",
-      "strength": 4,
-      "confidence": "High",
-      "notes": "Supports healthy vascular tone and blood pressure regulation.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000414",
-      "bioactive": "FC009",
-      "mechanism": "MEC019",
-      "strength": 4,
-      "confidence": "Moderate",
-      "notes": "Supports vascular resilience through endothelial and membrane stabilising effects.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000461",
-      "bioactive": "OS001",
-      "mechanism": "MEC110",
-      "strength": 5,
-      "confidence": "High",
-      "notes": "Activates Phase II conjugation enzymes through Nrf2 signalling.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000462",
-      "bioactive": "OS001",
-      "mechanism": "MEC111",
-      "strength": 5,
-      "confidence": "High",
-      "notes": "Enhances endogenous glutathione synthesis and recycling.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000463",
-      "bioactive": "OS004",
-      "mechanism": "MEC110",
-      "strength": 4,
-      "confidence": "High",
-      "notes": "Glucosinolate metabolites support Phase II detoxification pathways.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000464",
-      "bioactive": "OS002",
-      "mechanism": "MEC113",
-      "strength": 4,
-      "confidence": "Moderate",
-      "notes": "Supports protection of hepatocytes during normal detoxification activity.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000465",
-      "bioactive": "PP013",
-      "mechanism": "MEC112",
-      "strength": 4,
-      "confidence": "Moderate",
-      "notes": "Supports elimination of metabolised xenobiotic compounds.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000466",
-      "bioactive": "PP013",
-      "mechanism": "MEC113",
-      "strength": 4,
-      "confidence": "Moderate",
-      "notes": "Supports hepatic cellular resilience during detoxification processes.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000467",
-      "bioactive": "FC021",
-      "mechanism": "MEC112",
-      "strength": 4,
-      "confidence": "Moderate",
-      "notes": "Binds and supports elimination of selected dietary and environmental compounds.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000468",
-      "bioactive": "FC021",
-      "mechanism": "MEC113",
-      "strength": 3,
-      "confidence": "Moderate",
-      "notes": "Supports normal liver cellular protection through antioxidant activity.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000912",
-      "bioactive": "FC027",
-      "mechanism": "MEC056",
-      "strength": 5,
-      "confidence": "High",
-      "notes": "Well-established acute effect on alertness and mental performance via adenosine receptor antagonism.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000913",
-      "bioactive": "FC027",
-      "mechanism": "MEC098",
-      "strength": 4,
-      "confidence": "High",
-      "notes": "Well-documented ergogenic aid in sports science, improving endurance and perceived exertion.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000914",
-      "bioactive": "FC027",
-      "mechanism": "MEC008",
-      "strength": 3,
-      "confidence": "Moderate",
-      "notes": "Promotes fat oxidation, particularly during exercise; frequently studied alongside EGCG for this effect.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000915",
-      "bioactive": "FC039",
-      "mechanism": "MEC058",
-      "strength": 4,
-      "confidence": "High",
-      "notes": "Classic calming effect associated with increased alpha brain wave activity, without sedation.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000916",
-      "bioactive": "FC039",
-      "mechanism": "MEC056",
-      "strength": 3,
-      "confidence": "Moderate",
-      "notes": "Most consistently demonstrated in combination with caffeine, improving attention and focus.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000917",
-      "bioactive": "FC040",
-      "mechanism": "MEC113",
-      "strength": 3,
-      "confidence": "Moderate",
-      "notes": "Used clinically as a methyl donor supporting liver homocysteine metabolism; studied in non-alcoholic fatty liver contexts.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000918",
-      "bioactive": "FC040",
-      "mechanism": "MEC098",
-      "strength": 2,
-      "confidence": "Emerging",
-      "notes": "Studied in sports science for power and body-composition effects, though evidence is mixed.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000919",
-      "bioactive": "OS006",
-      "mechanism": "MEC085",
-      "strength": 5,
-      "confidence": "High",
-      "notes": "Well-established shift of oestrogen metabolism toward the 2-hydroxyestrone pathway; one of the most-studied brassica compounds for this mechanism.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000920",
-      "bioactive": "OS006",
-      "mechanism": "MEC109",
-      "strength": 4,
-      "confidence": "High",
-      "notes": "Induces Phase I (CYP1A1/1A2) detoxification enzyme activity.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000921",
-      "bioactive": "OS006",
-      "mechanism": "MEC110",
-      "strength": 3,
-      "confidence": "Moderate",
-      "notes": "Also induces some Phase II conjugation enzyme activity, though less prominently than its Phase I effect.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000922",
-      "bioactive": "PP018",
-      "mechanism": "MEC017",
-      "strength": 5,
-      "confidence": "High",
-      "notes": "Classically studied for reducing capillary fragility and vascular permeability - historically the basis of the term 'vitamin P'.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000923",
-      "bioactive": "PP018",
-      "mechanism": "MEC016",
-      "strength": 3,
-      "confidence": "Moderate",
-      "notes": "Documented anti-platelet-aggregation effects.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000924",
-      "bioactive": "PP018",
-      "mechanism": "MEC020",
-      "strength": 3,
-      "confidence": "Moderate",
-      "notes": "General flavonoid antioxidant activity.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000925",
-      "bioactive": "PP019",
-      "mechanism": "MEC002",
-      "strength": 3,
-      "confidence": "Moderate",
-      "notes": "Black tea theaflavins have been studied for modest LDL-lowering effects.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000926",
-      "bioactive": "PP019",
-      "mechanism": "MEC020",
-      "strength": 3,
-      "confidence": "Moderate",
-      "notes": "Antioxidant activity from the oxidative fermentation of tea catechins.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000927",
-      "bioactive": "PP019",
-      "mechanism": "MEC010",
-      "strength": 3,
-      "confidence": "Moderate",
-      "notes": "Black tea polyphenols have been studied for supporting endothelial/vascular function.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000928",
-      "bioactive": "PP020",
-      "mechanism": "MEC020",
-      "strength": 5,
-      "confidence": "High",
-      "notes": "One of the most extensively studied dietary antioxidants.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000929",
-      "bioactive": "PP020",
-      "mechanism": "MEC002",
-      "strength": 3,
-      "confidence": "Moderate",
-      "notes": "Green tea catechins have been studied for modest favourable effects on lipid profile.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000930",
-      "bioactive": "PP020",
-      "mechanism": "MEC008",
-      "strength": 3,
-      "confidence": "Moderate",
-      "notes": "Studied for promoting fat oxidation and thermogenesis, notably in combination with caffeine.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000931",
-      "bioactive": "PP020",
-      "mechanism": "MEC059",
-      "strength": 3,
-      "confidence": "Moderate",
-      "notes": "Widely studied antioxidant with documented neuroprotective activity in preclinical and some clinical research.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000932",
-      "bioactive": "PP021",
-      "mechanism": "MEC020",
-      "strength": 4,
-      "confidence": "Moderate",
-      "notes": "Well-documented antioxidant flavonoid activity.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000933",
-      "bioactive": "PP021",
-      "mechanism": "MEC029",
-      "strength": 3,
-      "confidence": "Emerging",
-      "notes": "An active area of geroscience research as a candidate senolytic compound; human evidence is still early-stage relative to preclinical findings.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000934",
-      "bioactive": "PP021",
-      "mechanism": "MEC054",
-      "strength": 2,
-      "confidence": "Emerging",
-      "notes": "Some preclinical evidence for neuroprotective and cognitive benefit.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000935",
-      "bioactive": "FA002",
-      "mechanism": "MEC003",
-      "strength": 5,
-      "confidence": "High",
-      "notes": "Omega-3 EPA is one of the most robustly evidence-supported triglyceride-lowering dietary compounds; underpins licensed prescription-strength fish oil products.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000936",
-      "bioactive": "FA003",
-      "mechanism": "MEC003",
-      "strength": 4,
-      "confidence": "High",
-      "notes": "DHA also meaningfully lowers circulating triglycerides, though EPA has the larger evidence base specifically for this effect.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000937",
-      "bioactive": "FA001",
-      "mechanism": "MEC003",
-      "strength": 2,
-      "confidence": "Moderate",
-      "notes": "A modest effect via partial conversion to EPA; plant omega-3 alone shows weaker triglyceride effects than marine sources.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000938",
-      "bioactive": "PS001",
-      "mechanism": "MEC004",
-      "strength": 5,
-      "confidence": "High",
-      "notes": "Textbook mechanism: phytosterols structurally compete with cholesterol for incorporation into intestinal micelles, reducing its absorption.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000939",
-      "bioactive": "PS002",
-      "mechanism": "MEC004",
-      "strength": 4,
-      "confidence": "High",
-      "notes": "Shares beta-sitosterol's cholesterol-competing structural mechanism.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000940",
-      "bioactive": "PS003",
-      "mechanism": "MEC004",
-      "strength": 4,
-      "confidence": "High",
-      "notes": "Shares beta-sitosterol's cholesterol-competing structural mechanism.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000941",
-      "bioactive": "DF011",
-      "mechanism": "MEC004",
-      "strength": 4,
-      "confidence": "High",
-      "notes": "Soluble fibre gel binds bile acids in the gut, prompting the liver to draw on circulating cholesterol to replace them.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000942",
-      "bioactive": "DF002",
-      "mechanism": "MEC004",
-      "strength": 3,
-      "confidence": "Moderate",
-      "notes": "Soluble fibre binds bile acids similarly to psyllium, though generally with a smaller effect size.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000943",
-      "bioactive": "FA004",
-      "mechanism": "MEC005",
-      "strength": 4,
-      "confidence": "Moderate",
-      "notes": "Replacing saturated fat with monounsaturated oleic acid is associated with maintained or modestly improved HDL levels.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000944",
-      "bioactive": "FA002",
-      "mechanism": "MEC005",
-      "strength": 2,
-      "confidence": "Moderate",
-      "notes": "Omega-3 intake is associated with modest HDL support alongside its larger triglyceride effect.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000945",
-      "bioactive": "FA002",
-      "mechanism": "MEC007",
-      "strength": 3,
-      "confidence": "Moderate",
-      "notes": "Omega-3 fatty acids influence lipoprotein particle composition and transport dynamics.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000946",
-      "bioactive": "PS001",
-      "mechanism": "MEC007",
-      "strength": 2,
-      "confidence": "Emerging",
-      "notes": "Phytosterol effects on lipid transport are secondary to their better-established role in reducing cholesterol absorption.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000947",
-      "bioactive": "FA002",
-      "mechanism": "MEC009",
-      "strength": 4,
-      "confidence": "Moderate",
-      "notes": "Associated with a shift toward larger, less atherogenic LDL particle size alongside triglyceride lowering.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000948",
-      "bioactive": "PP006",
-      "mechanism": "MEC009",
-      "strength": 2,
-      "confidence": "Emerging",
-      "notes": "Preliminary evidence for favourable lipoprotein profile effects; human dietary-intake evidence is limited.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000949",
-      "bioactive": "PP009",
-      "mechanism": "MEC012",
-      "strength": 3,
-      "confidence": "Moderate",
-      "notes": "Citrus flavanones have been studied for supporting arterial elasticity.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000950",
-      "bioactive": "PP015",
-      "mechanism": "MEC012",
-      "strength": 4,
-      "confidence": "Moderate",
-      "notes": "Olive polyphenols are associated with improved arterial stiffness measures in intervention studies.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000951",
-      "bioactive": "FC020",
-      "mechanism": "MEC012",
-      "strength": 4,
-      "confidence": "Moderate",
-      "notes": "Nitric oxide generated from dietary nitrate supports vascular smooth muscle relaxation and compliance.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000952",
-      "bioactive": "FA002",
-      "mechanism": "MEC015",
-      "strength": 2,
-      "confidence": "Emerging",
-      "notes": "Anti-inflammatory resolution effects may indirectly support vascular repair processes; direct evidence is limited.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000953",
-      "bioactive": "PP006",
-      "mechanism": "MEC015",
-      "strength": 2,
-      "confidence": "Emerging",
-      "notes": "Preclinical evidence for endothelial progenitor cell support; human evidence is limited.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000954",
-      "bioactive": "PP002",
-      "mechanism": "MEC025",
-      "strength": 4,
-      "confidence": "Moderate",
-      "notes": "Quercetin has demonstrated DNA-protective effects against oxidative damage in cell and animal studies.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000955",
-      "bioactive": "PP006",
-      "mechanism": "MEC025",
-      "strength": 3,
-      "confidence": "Moderate",
-      "notes": "Resveratrol has shown DNA-protective antioxidant effects, predominantly in preclinical research.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000956",
-      "bioactive": "CA001",
-      "mechanism": "MEC025",
-      "strength": 3,
-      "confidence": "Moderate",
-      "notes": "Lycopene intake is associated with reduced markers of oxidative DNA damage in observational studies.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000957",
-      "bioactive": "OS002",
-      "mechanism": "MEC025",
-      "strength": 3,
-      "confidence": "Moderate",
-      "notes": "Sulforaphane's Nrf2-mediated antioxidant induction extends to protection against oxidative DNA damage.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000958",
-      "bioactive": "OS002",
-      "mechanism": "MEC026",
-      "strength": 5,
-      "confidence": "High",
-      "notes": "Sulforaphane is a benchmark activator of the Nrf2 pathway, the body's master regulator of redox balance.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000959",
-      "bioactive": "PP015",
-      "mechanism": "MEC026",
-      "strength": 3,
-      "confidence": "Moderate",
-      "notes": "Olive polyphenols support cellular redox balance alongside their direct antioxidant activity.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000960",
-      "bioactive": "FC008",
-      "mechanism": "MEC026",
-      "strength": 3,
-      "confidence": "Moderate",
-      "notes": "CoQ10 functions as a redox-active cofactor in the mitochondrial electron transport chain.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000961",
-      "bioactive": "CA001",
-      "mechanism": "MEC028",
-      "strength": 3,
-      "confidence": "Moderate",
-      "notes": "Lycopene's antioxidant activity extends to protecting proteins from oxidative modification.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000962",
-      "bioactive": "PP001",
-      "mechanism": "MEC028",
-      "strength": 3,
-      "confidence": "Moderate",
-      "notes": "Anthocyanins contribute general antioxidant protection against protein oxidation.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000963",
-      "bioactive": "FC008",
-      "mechanism": "MEC028",
-      "strength": 3,
-      "confidence": "Moderate",
-      "notes": "CoQ10's antioxidant activity in cell membranes helps protect nearby proteins from oxidative damage.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000964",
-      "bioactive": "FA003",
-      "mechanism": "MEC057",
-      "strength": 5,
-      "confidence": "High",
-      "notes": "DHA is a major structural component of neuronal membranes and is central to normal nervous system function.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000965",
-      "bioactive": "FC009",
-      "mechanism": "MEC057",
-      "strength": 3,
-      "confidence": "Moderate",
-      "notes": "Taurine acts as a neuromodulator supporting normal neuronal excitability.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000966",
-      "bioactive": "OS001",
-      "mechanism": "MEC061",
-      "strength": 4,
-      "confidence": "Moderate",
-      "notes": "Garlic-derived allicin has documented immune-stimulating effects on innate immune cell activity.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000967",
-      "bioactive": "CA004",
-      "mechanism": "MEC061",
-      "strength": 3,
-      "confidence": "Moderate",
-      "notes": "Beta-carotene, as a vitamin A precursor, supports normal innate immune barrier and cell function.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000968",
-      "bioactive": "CA004",
-      "mechanism": "MEC062",
-      "strength": 4,
-      "confidence": "Moderate",
-      "notes": "Vitamin A (from beta-carotene) is well established as necessary for normal antibody-mediated adaptive immune responses.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000969",
-      "bioactive": "PP002",
-      "mechanism": "MEC062",
-      "strength": 2,
-      "confidence": "Emerging",
-      "notes": "Preliminary evidence for quercetin's modulation of lymphocyte activity.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000970",
-      "bioactive": "OS002",
-      "mechanism": "MEC063",
-      "strength": 3,
-      "confidence": "Moderate",
-      "notes": "Sulforaphane's Nrf2 activation modulates immune cell signalling pathways.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000971",
-      "bioactive": "PP001",
-      "mechanism": "MEC063",
-      "strength": 2,
-      "confidence": "Emerging",
-      "notes": "Anthocyanins have shown modulatory effects on immune cell signalling in preclinical studies.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000972",
-      "bioactive": "OS001",
-      "mechanism": "MEC065",
-      "strength": 5,
-      "confidence": "High",
-      "notes": "Allicin has well-documented direct antibacterial and antifungal activity.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000973",
-      "bioactive": "FC004",
-      "mechanism": "MEC065",
-      "strength": 2,
-      "confidence": "Emerging",
-      "notes": "Ginger compounds have shown antimicrobial activity in laboratory studies; dietary-intake evidence is limited.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000974",
-      "bioactive": "CA001",
-      "mechanism": "MEC067",
-      "strength": 2,
-      "confidence": "Emerging",
-      "notes": "Carotenoid intake has been associated with natural killer cell activity in some observational studies.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000975",
-      "bioactive": "CA004",
-      "mechanism": "MEC067",
-      "strength": 2,
-      "confidence": "Emerging",
-      "notes": "Vitamin A supports normal immune surveillance function, though direct evidence for beta-carotene specifically is limited.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000976",
-      "bioactive": "PP001",
-      "mechanism": "MEC068",
-      "strength": 3,
-      "confidence": "Moderate",
-      "notes": "Anthocyanins are associated with reduced pro-inflammatory cytokine markers in intervention studies.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000977",
-      "bioactive": "PP008",
-      "mechanism": "MEC068",
-      "strength": 3,
-      "confidence": "Moderate",
-      "notes": "Chlorogenic acid has demonstrated cytokine-modulating anti-inflammatory activity.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000978",
-      "bioactive": "OS002",
-      "mechanism": "MEC068",
-      "strength": 3,
-      "confidence": "Moderate",
-      "notes": "Sulforaphane's anti-inflammatory action includes modulation of pro-inflammatory cytokine production.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000979",
-      "bioactive": "CA004",
-      "mechanism": "MEC069",
-      "strength": 3,
-      "confidence": "Moderate",
-      "notes": "Vitamin A status supports overall immune resilience and barrier defence.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000980",
-      "bioactive": "PP002",
-      "mechanism": "MEC069",
-      "strength": 2,
-      "confidence": "Emerging",
-      "notes": "General antioxidant support may contribute modestly to overall immune resilience.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000981",
-      "bioactive": "OS001",
-      "mechanism": "MEC082",
-      "strength": 3,
-      "confidence": "Moderate",
-      "notes": "Garlic compounds have shown favourable effects on insulin signalling pathways in intervention studies.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000982",
-      "bioactive": "PP002",
-      "mechanism": "MEC082",
-      "strength": 3,
-      "confidence": "Moderate",
-      "notes": "Quercetin has demonstrated effects on insulin signalling pathways in preclinical and some human studies.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000983",
-      "bioactive": "FC019",
-      "mechanism": "MEC084",
-      "strength": 4,
-      "confidence": "Moderate",
-      "notes": "Rhodiola's salidroside is classically studied as an adaptogen supporting HPA-axis and adrenal stress response function.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000984",
-      "bioactive": "FC018",
-      "mechanism": "MEC084",
-      "strength": 4,
-      "confidence": "Moderate",
-      "notes": "Rhodiola's rosavins are considered co-active adaptogenic compounds alongside salidroside for stress-response support.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000985",
-      "bioactive": "FC017",
-      "mechanism": "MEC084",
-      "strength": 3,
-      "confidence": "Moderate",
-      "notes": "Schisandra is traditionally and increasingly clinically studied as an adaptogen supporting adrenal stress resilience.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000986",
-      "bioactive": "PP017",
-      "mechanism": "MEC087",
-      "strength": 3,
-      "confidence": "Moderate",
-      "notes": "Soy isoflavones' phytoestrogenic activity is studied for supporting broader hormonal balance, particularly around menopause.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000987",
-      "bioactive": "FC019",
-      "mechanism": "MEC087",
-      "strength": 2,
-      "confidence": "Emerging",
-      "notes": "Adaptogenic compounds are studied for supporting overall hormonal homeostasis under stress.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000988",
-      "bioactive": "FC018",
-      "mechanism": "MEC088",
-      "strength": 4,
-      "confidence": "Moderate",
-      "notes": "Rhodiola's adaptogenic compounds are studied for supporting endocrine system resilience under stress.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000989",
-      "bioactive": "FC019",
-      "mechanism": "MEC088",
-      "strength": 4,
-      "confidence": "Moderate",
-      "notes": "Salidroside is a key adaptogenic compound studied for endocrine stress resilience.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000990",
-      "bioactive": "FC017",
-      "mechanism": "MEC088",
-      "strength": 3,
-      "confidence": "Moderate",
-      "notes": "Schisandra's adaptogenic lignans are studied for supporting endocrine resilience.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000991",
-      "bioactive": "PP013",
-      "mechanism": "MEC090",
-      "strength": 4,
-      "confidence": "Moderate",
-      "notes": "Proanthocyanidins (e.g. from grape seed) are well studied for stabilising collagen cross-links and supporting collagen structure.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000992",
-      "bioactive": "PP007",
-      "mechanism": "MEC090",
-      "strength": 2,
-      "confidence": "Emerging",
-      "notes": "Preliminary evidence for ellagic acid supporting collagen-related pathways.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000993",
-      "bioactive": "PP017",
-      "mechanism": "MEC091",
-      "strength": 4,
-      "confidence": "Moderate",
-      "notes": "Soy isoflavones are extensively studied for supporting bone mineral density, particularly in postmenopausal populations.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000994",
-      "bioactive": "FC010",
-      "mechanism": "MEC092",
-      "strength": 4,
-      "confidence": "Moderate",
-      "notes": "Creatine supplementation is well documented to support muscle protein synthesis when combined with resistance training.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000995",
-      "bioactive": "PP013",
-      "mechanism": "MEC093",
-      "strength": 4,
-      "confidence": "Moderate",
-      "notes": "Proanthocyanidins support connective tissue integrity through collagen cross-link stabilisation, a well-studied effect (e.g. Pycnogenol research).",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000996",
-      "bioactive": "FC001",
-      "mechanism": "MEC094",
-      "strength": 5,
-      "confidence": "High",
-      "notes": "Curcumin is one of the most extensively studied dietary compounds for joint health and osteoarthritis symptom support.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000997",
-      "bioactive": "FC002",
-      "mechanism": "MEC094",
-      "strength": 3,
-      "confidence": "Moderate",
-      "notes": "Piperine both enhances curcumin's bioavailability and has shown some direct anti-inflammatory joint benefit.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000998",
-      "bioactive": "PP001",
-      "mechanism": "MEC095",
-      "strength": 4,
-      "confidence": "Moderate",
-      "notes": "Anthocyanin-rich foods (notably tart cherry) are a specifically well-studied area of exercise-recovery research, reducing muscle soreness and supporting recovery.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000999",
-      "bioactive": "FC013",
-      "mechanism": "MEC095",
-      "strength": 3,
-      "confidence": "Moderate",
-      "notes": "Glutamine is a classic recovery-supporting amino acid following intensive exercise.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM001000",
-      "bioactive": "FC010",
-      "mechanism": "MEC095",
-      "strength": 3,
-      "confidence": "Moderate",
-      "notes": "Creatine supports recovery capacity between bouts of high-intensity effort.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM001001",
-      "bioactive": "PP017",
-      "mechanism": "MEC096",
-      "strength": 3,
-      "confidence": "Moderate",
-      "notes": "Soy isoflavones are studied for supporting the bone remodelling cycle alongside their bone density effects.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM001002",
-      "bioactive": "PP013",
-      "mechanism": "MEC097",
-      "strength": 2,
-      "confidence": "Emerging",
-      "notes": "Collagen cross-link support is plausible for tendon tissue, though direct tendon-specific evidence is limited.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM001003",
-      "bioactive": "FC010",
-      "mechanism": "MEC099",
-      "strength": 4,
-      "confidence": "Moderate",
-      "notes": "Creatine is well studied for supporting muscle mass and function in ageing populations (sarcopenia prevention).",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM001004",
-      "bioactive": "PP017",
-      "mechanism": "MEC099",
-      "strength": 3,
-      "confidence": "Moderate",
-      "notes": "Soy isoflavones are studied for supporting bone health during ageing.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM001005",
-      "bioactive": "FA003",
-      "mechanism": "MEC100",
-      "strength": 4,
-      "confidence": "Moderate",
-      "notes": "DHA supports neurotrophic signalling pathways, including BDNF expression, in preclinical and some human research.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM001006",
-      "bioactive": "PP020",
-      "mechanism": "MEC100",
-      "strength": 3,
-      "confidence": "Moderate",
-      "notes": "EGCG has demonstrated neurotrophic signalling support in preclinical studies.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM001007",
-      "bioactive": "FA003",
-      "mechanism": "MEC101",
-      "strength": 3,
-      "confidence": "Moderate",
-      "notes": "DHA supports the structural integrity of cell membranes making up the blood-brain barrier.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM001008",
-      "bioactive": "PP001",
-      "mechanism": "MEC101",
-      "strength": 3,
-      "confidence": "Moderate",
-      "notes": "Anthocyanins (notably from blueberry) are a specifically studied area of blood-brain barrier integrity research.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM001009",
-      "bioactive": "FA002",
-      "mechanism": "MEC103",
-      "strength": 3,
-      "confidence": "Moderate",
-      "notes": "Omega-3s are studied for supporting healthy airway inflammatory balance, an active area of asthma-related nutrition research.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM001010",
-      "bioactive": "FA003",
-      "mechanism": "MEC103",
-      "strength": 3,
-      "confidence": "Moderate",
-      "notes": "DHA shares EPA's anti-inflammatory relevance to airway inflammatory balance.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM001011",
-      "bioactive": "FA002",
-      "mechanism": "MEC104",
-      "strength": 2,
-      "confidence": "Emerging",
-      "notes": "Some studies suggest omega-3 intake may support healthy airway reactivity; evidence is preliminary.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM001012",
-      "bioactive": "CA004",
-      "mechanism": "MEC105",
-      "strength": 2,
-      "confidence": "Emerging",
-      "notes": "Vitamin A supports epithelial barrier tissue generally, including respiratory epithelium, though airway-specific evidence is limited.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM001013",
-      "bioactive": "PP015",
-      "mechanism": "MEC106",
-      "strength": 3,
-      "confidence": "Moderate",
-      "notes": "Olive oil polyphenols have shown renal-protective antioxidant effects in preclinical and some clinical research.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM001014",
-      "bioactive": "FC020",
-      "mechanism": "MEC106",
-      "strength": 2,
-      "confidence": "Emerging",
-      "notes": "Dietary nitrate supports renal blood flow, with plausible but preliminary evidence for cellular protection.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM001015",
-      "bioactive": "PP017",
-      "mechanism": "MEC107",
-      "strength": 5,
-      "confidence": "High",
-      "notes": "Soy isoflavones are the most extensively studied dietary compound for supporting the menopausal transition, via phytoestrogenic activity.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM001016",
-      "bioactive": "FC019",
-      "mechanism": "MEC107",
-      "strength": 2,
-      "confidence": "Emerging",
-      "notes": "Adaptogenic compounds are studied for general stress-resilience support during the menopausal transition, though menopause-specific evidence is limited.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM001017",
-      "bioactive": "FC017",
-      "mechanism": "MEC107",
-      "strength": 2,
-      "confidence": "Emerging",
-      "notes": "Schisandra is traditionally used for broad resilience support relevant to the menopausal transition, though direct evidence is limited.",
-      "references": [
-        "Scientific Literature"
-      ]
-    }
+      "evidence": "Soy isoflavones are dietary phytoestrogens and daidzein can be converted by intestinal bacteria to equol. Equol production varies substantially between individuals because it depends on the presence of equol-producing gut bacteria. The relationship is therefore directly relevant to phytoestrogen metabolism, but does not imply that soy isoflavones raise endogenous oestrogen."
+    },
+    {
+  "id": "BM000900",
+  "bioactive": "PP006",
+  "mechanism": "MEC020",
+  "strength": 5,
+  "confidence": "High",
+  "notes": "Resveratrol has strong evidence for reducing oxidative stress.",
+  "references": ["Scientific Literature"]
+},
+{
+  "id": "BM000901",
+  "bioactive": "PP006",
+  "mechanism": "MEC021",
+  "strength": 5,
+  "confidence": "High",
+  "notes": "Resveratrol scavenges reactive oxygen species and supports antioxidant defence.",
+  "references": ["Scientific Literature"]
+},
+{
+  "id": "BM000902",
+  "bioactive": "PP006",
+  "mechanism": "MEC022",
+  "strength": 4,
+  "confidence": "High",
+  "notes": "Resveratrol activates endogenous antioxidant pathways including Nrf2 signalling.",
+  "references": ["Scientific Literature"]
+},
+{
+  "id": "BM000903",
+  "bioactive": "PP006",
+  "mechanism": "MEC024",
+  "strength": 3,
+  "confidence": "Moderate",
+  "notes": "Resveratrol supports mitochondrial resilience and cellular energy regulation.",
+  "references": ["Scientific Literature"]
+},
+{
+  "id": "BM000904",
+  "bioactive": "PP006",
+  "mechanism": "MEC051",
+  "strength": 3,
+  "confidence": "Moderate",
+  "notes": "Resveratrol has moderate evidence for supporting endothelial and cerebral blood flow.",
+  "references": ["Scientific Literature"]
+},
+
+{
+  "id": "BM000905",
+  "bioactive": "FC011",
+  "mechanism": "MEC051",
+  "strength": 5,
+  "confidence": "High",
+  "notes": "L-Arginine is the principal substrate for nitric oxide synthesis and endothelial function.",
+  "references": ["Scientific Literature"]
+},
+{
+  "id": "BM000906",
+  "bioactive": "FC011",
+  "mechanism": "MEC024",
+  "strength": 3,
+  "confidence": "Moderate",
+  "notes": "L-Arginine contributes to vascular perfusion and mitochondrial efficiency.",
+  "references": ["Scientific Literature"]
+},
+
+{
+  "id": "BM000907",
+  "bioactive": "FC012",
+  "mechanism": "MEC051",
+  "strength": 5,
+  "confidence": "High",
+  "notes": "L-Citrulline elevates arginine availability and supports nitric oxide production.",
+  "references": ["Scientific Literature"]
+},
+{
+  "id": "BM000908",
+  "bioactive": "FC012",
+  "mechanism": "MEC024",
+  "strength": 3,
+  "confidence": "Moderate",
+  "notes": "L-Citrulline supports vascular resilience and exercise-related mitochondrial function.",
+  "references": ["Scientific Literature"]
+},
+
+{
+  "id": "BM000909",
+  "bioactive": "FC014",
+  "mechanism": "MEC020",
+  "strength": 4,
+  "confidence": "High",
+  "notes": "Vitamin C reduces oxidative stress through antioxidant activity.",
+  "references": ["Scientific Literature"]
+},
+{
+  "id": "BM000910",
+  "bioactive": "FC014",
+  "mechanism": "MEC021",
+  "strength": 4,
+  "confidence": "High",
+  "notes": "Vitamin C neutralises reactive oxygen species and regenerates antioxidant capacity.",
+  "references": ["Scientific Literature"]
+},
+{
+  "id": "BM000911",
+  "bioactive": "FC014",
+  "mechanism": "MEC022",
+  "strength": 3,
+  "confidence": "Moderate",
+  "notes": "Vitamin C supports endogenous antioxidant systems and collagen-dependent vascular integrity.",
+  "references": ["Scientific Literature"]
+},
+{
+  "id": "BM000377",
+  "bioactive": "DF003",
+  "mechanism": "MEC034",
+  "strength": 5,
+  "confidence": "High",
+  "notes": "Selective stimulation of beneficial microbiota increases overall microbiome diversity.",
+  "references": [
+    "Scientific Literature"
+  ]
+},
+{
+  "id": "BM000378",
+  "bioactive": "DF005",
+  "mechanism": "MEC034",
+  "strength": 4,
+  "confidence": "Moderate",
+  "notes": "Microbial fermentation supports increased microbiota diversity.",
+  "references": [
+    "Scientific Literature"
+  ]
+},
+{
+  "id": "BM000379",
+  "bioactive": "PP001",
+  "mechanism": "MEC014",
+  "strength": 4,
+  "confidence": "Moderate",
+  "notes": "Anthocyanins improve capillary perfusion and peripheral microcirculation through endothelial signalling.",
+  "references": [
+    "Scientific Literature"
+  ]
+},
+{
+  "id": "BM000380",
+  "bioactive": "PP002",
+  "mechanism": "MEC010",
+  "strength": 5,
+  "confidence": "High",
+  "notes": "Quercetin supports endothelial function through nitric oxide preservation and reduced endothelial inflammation.",
+  "references": [
+    "Scientific Literature"
+  ]
+},
+{
+  "id": "BM000381",
+  "bioactive": "PP004",
+  "mechanism": "MEC018",
+  "strength": 4,
+  "confidence": "High",
+  "notes": "Epicatechin improves vascular responsiveness, contributing to healthy blood flow during circulation and exercise.",
+  "references": [
+    "Scientific Literature"
+  ]
+},
+{
+  "id": "BM000382",
+  "bioactive": "PP006",
+  "mechanism": "MEC024",
+  "strength": 5,
+  "confidence": "High",
+  "notes": "Resveratrol activates cellular pathways supporting mitochondrial resilience and energy metabolism.",
+  "references": [
+    "Scientific Literature"
+  ]
+},
+{
+  "id": "BM000383",
+  "bioactive": "PP006",
+  "mechanism": "MEC027",
+  "strength": 4,
+  "confidence": "Moderate",
+  "notes": "Supports cellular repair and resilience through sirtuin-mediated signalling pathways.",
+  "references": [
+    "Scientific Literature"
+  ]
+},
+{
+  "id": "BM000384",
+  "bioactive": "PP007",
+  "mechanism": "MEC027",
+  "strength": 4,
+  "confidence": "Moderate",
+  "notes": "Microbial metabolites including urolithins contribute to cellular repair and resilience.",
+  "references": [
+    "Scientific Literature"
+  ]
+},
+{
+  "id": "BM000385",
+  "bioactive": "PP008",
+  "mechanism": "MEC013",
+  "strength": 4,
+  "confidence": "Moderate",
+  "notes": "Supports healthy blood pressure regulation through vascular and metabolic signalling.",
+  "references": [
+    "Scientific Literature"
+  ]
+},
+{
+  "id": "BM000386",
+  "bioactive": "PP009",
+  "mechanism": "MEC010",
+  "strength": 5,
+  "confidence": "High",
+  "notes": "Supports endothelial function through vascular tone regulation and antioxidant signalling.",
+  "references": [
+    "Scientific Literature"
+  ]
+},
+{
+  "id": "BM000387",
+  "bioactive": "PP010",
+  "mechanism": "MEC002",
+  "strength": 4,
+  "confidence": "Moderate",
+  "notes": "Contributes to healthy cholesterol metabolism through hepatic lipid signalling.",
+  "references": [
+    "Scientific Literature"
+  ]
+},
+{
+  "id": "BM000388",
+  "bioactive": "PP011",
+  "mechanism": "MEC081",
+  "strength": 4,
+  "confidence": "Moderate",
+  "notes": "Enterolignan metabolites influence healthy oestrogen receptor signalling.",
+  "references": [
+    "Scientific Literature"
+  ]
+},
+{
+  "id": "BM000389",
+  "bioactive": "PP012",
+  "mechanism": "MEC019",
+  "strength": 4,
+  "confidence": "Moderate",
+  "notes": "Supports vascular resilience through antioxidant and endothelial protective activity.",
+  "references": [
+    "Scientific Literature"
+  ]
+},
+{
+  "id": "BM000390",
+  "bioactive": "CA001",
+  "mechanism": "MEC027",
+  "strength": 4,
+  "confidence": "Moderate",
+  "notes": "Vitamin A precursor supporting cellular repair and epithelial resilience.",
+  "references": [
+    "Scientific Literature"
+  ]
+},
+{
+  "id": "BM000391",
+  "bioactive": "CA002",
+  "mechanism": "MEC019",
+  "strength": 4,
+  "confidence": "Moderate",
+  "notes": "Supports vascular resilience through antioxidant protection of endothelial tissues.",
+  "references": [
+    "Scientific Literature"
+  ]
+},
+{
+  "id": "BM000392",
+  "bioactive": "CA003",
+  "mechanism": "MEC083",
+  "strength": 5,
+  "confidence": "High",
+  "notes": "Accumulates within the macula and supports retinal protection from oxidative stress.",
+  "references": [
+    "Scientific Literature"
+  ]
+},
+{
+  "id": "BM000393",
+  "bioactive": "CA004",
+  "mechanism": "MEC083",
+  "strength": 5,
+  "confidence": "High",
+  "notes": "Supports retinal integrity and protection of photoreceptor tissues.",
+  "references": [
+    "Scientific Literature"
+  ]
+},
+{
+  "id": "BM000394",
+  "bioactive": "CA005",
+  "mechanism": "MEC024",
+  "strength": 5,
+  "confidence": "High",
+  "notes": "Supports mitochondrial resilience through potent antioxidant activity.",
+  "references": [
+    "Scientific Literature"
+  ]
+},
+{
+  "id": "BM000395",
+  "bioactive": "CA005",
+  "mechanism": "MEC027",
+  "strength": 4,
+  "confidence": "Moderate",
+  "notes": "Supports cellular repair by protecting membrane lipids and mitochondrial structures.",
+  "references": [
+    "Scientific Literature"
+  ]
+},
+{
+  "id": "BM000396",
+  "bioactive": "OS001",
+  "mechanism": "MEC022",
+  "strength": 5,
+  "confidence": "High",
+  "notes": "Potent activation of endogenous antioxidant pathways through Nrf2 signalling.",
+  "references": [
+    "Scientific Literature"
+  ]
+},
+{
+  "id": "BM000397",
+  "bioactive": "OS001",
+  "mechanism": "MEC027",
+  "strength": 4,
+  "confidence": "High",
+  "notes": "Supports cellular repair and resilience through cytoprotective gene expression.",
+  "references": [
+    "Scientific Literature"
+  ]
+},
+{
+  "id": "BM000398",
+  "bioactive": "OS002",
+  "mechanism": "MEC010",
+  "strength": 4,
+  "confidence": "Moderate",
+  "notes": "Supports endothelial function and healthy vascular responsiveness.",
+  "references": [
+    "Scientific Literature"
+  ]
+},
+{
+  "id": "BM000399",
+  "bioactive": "OS002",
+  "mechanism": "MEC043",
+  "strength": 4,
+  "confidence": "Moderate",
+  "notes": "Supports healthy inflammatory balance through modulation of inflammatory signalling.",
+  "references": [
+    "Scientific Literature"
+  ]
+},
+{
+  "id": "BM000400",
+  "bioactive": "OS003",
+  "mechanism": "MEC022",
+  "strength": 4,
+  "confidence": "Moderate",
+  "notes": "Activates endogenous antioxidant defence enzymes through organosulfur signalling.",
+  "references": [
+    "Scientific Literature"
+  ]
+},
+{
+  "id": "BM000401",
+  "bioactive": "OS004",
+  "mechanism": "MEC022",
+  "strength": 4,
+  "confidence": "Moderate",
+  "notes": "Precursor compounds that generate isothiocyanates supporting endogenous antioxidant pathways.",
+  "references": [
+    "Scientific Literature"
+  ]
+},
+{
+  "id": "BM000402",
+  "bioactive": "FA001",
+  "mechanism": "MEC044",
+  "strength": 5,
+  "confidence": "High",
+  "notes": "EPA is a primary precursor for specialised pro-resolving mediators supporting resolution of inflammation.",
+  "references": [
+    "Scientific Literature"
+  ]
+},
+{
+  "id": "BM000403",
+  "bioactive": "FA001",
+  "mechanism": "MEC016",
+  "strength": 4,
+  "confidence": "High",
+  "notes": "Supports healthy platelet function and balanced thrombotic signalling.",
+  "references": [
+    "Scientific Literature"
+  ]
+},
+{
+  "id": "BM000404",
+  "bioactive": "FA002",
+  "mechanism": "MEC070",
+  "strength": 5,
+  "confidence": "High",
+  "notes": "DHA is an essential structural lipid supporting neuronal membrane integrity and synaptic function.",
+  "references": [
+    "Scientific Literature"
+  ]
+},
+{
+  "id": "BM000405",
+  "bioactive": "FA002",
+  "mechanism": "MEC024",
+  "strength": 4,
+  "confidence": "Moderate",
+  "notes": "Supports mitochondrial resilience through membrane stability and cellular energy metabolism.",
+  "references": [
+    "Scientific Literature"
+  ]
+},
+{
+  "id": "BM000406",
+  "bioactive": "FA003",
+  "mechanism": "MEC043",
+  "strength": 4,
+  "confidence": "Moderate",
+  "notes": "Contributes to healthy inflammatory balance as the dietary omega-3 precursor.",
+  "references": [
+    "Scientific Literature"
+  ]
+},
+{
+  "id": "BM000407",
+  "bioactive": "FA004",
+  "mechanism": "MEC010",
+  "strength": 4,
+  "confidence": "Moderate",
+  "notes": "Supports endothelial function and vascular health within Mediterranean dietary patterns.",
+  "references": [
+    "Scientific Literature"
+  ]
+},
+{
+  "id": "BM000408",
+  "bioactive": "FA005",
+  "mechanism": "MEC008",
+  "strength": 3,
+  "confidence": "Moderate",
+  "notes": "May support healthy lipid oxidation and body composition through metabolic signalling.",
+  "references": [
+    "Scientific Literature"
+  ]
+},
+{
+  "id": "BM000409",
+  "bioactive": "AA001",
+  "mechanism": "MEC011",
+  "strength": 5,
+  "confidence": "High",
+  "notes": "Primary substrate for endothelial nitric oxide synthesis supporting vascular function.",
+  "references": [
+    "Scientific Literature"
+  ]
+},
+{
+  "id": "BM000410",
+  "bioactive": "AA001",
+  "mechanism": "MEC018",
+  "strength": 4,
+  "confidence": "Moderate",
+  "notes": "Improves vascular responsiveness and healthy blood flow during increased physiological demand.",
+  "references": [
+    "Scientific Literature"
+  ]
+},
+{
+  "id": "BM000411",
+  "bioactive": "AA002",
+  "mechanism": "MEC011",
+  "strength": 5,
+  "confidence": "High",
+  "notes": "Efficient precursor for sustained nitric oxide production through arginine recycling.",
+  "references": [
+    "Scientific Literature"
+  ]
+},
+{
+  "id": "BM000412",
+  "bioactive": "AA002",
+  "mechanism": "MEC013",
+  "strength": 4,
+  "confidence": "Moderate",
+  "notes": "Supports healthy blood pressure regulation through enhanced nitric oxide availability.",
+  "references": [
+    "Scientific Literature"
+  ]
+},
+{
+  "id": "BM000413",
+  "bioactive": "AA003",
+  "mechanism": "MEC013",
+  "strength": 4,
+  "confidence": "High",
+  "notes": "Supports healthy vascular tone and blood pressure regulation.",
+  "references": [
+    "Scientific Literature"
+  ]
+},
+{
+  "id": "BM000414",
+  "bioactive": "AA003",
+  "mechanism": "MEC019",
+  "strength": 4,
+  "confidence": "Moderate",
+  "notes": "Supports vascular resilience through endothelial and membrane stabilising effects.",
+  "references": [
+    "Scientific Literature"
+  ]
+},
+{
+  "id": "BM000415",
+  "bioactive": "AA004",
+  "mechanism": "MEC025",
+  "strength": 4,
+  "confidence": "Moderate",
+  "notes": "Supports collagen synthesis and extracellular matrix integrity.",
+  "references": [
+    "Scientific Literature"
+  ]
+},
+{
+  "id": "BM000416",
+  "bioactive": "AA005",
+  "mechanism": "MEC008",
+  "strength": 5,
+  "confidence": "High",
+  "notes": "Essential transporter of long-chain fatty acids into mitochondria for lipid oxidation.",
+  "references": [
+    "Scientific Literature"
+  ]
+},
+{
+  "id": "BM000417",
+  "bioactive": "AA005",
+  "mechanism": "MEC024",
+  "strength": 5,
+  "confidence": "High",
+  "notes": "Supports mitochondrial resilience and efficient cellular energy metabolism.",
+  "references": [
+    "Scientific Literature"
+  ]
+},
+{
+  "id": "BM000418",
+  "bioactive": "BT001",
+  "mechanism": "MEC028",
+  "strength": 5,
+  "confidence": "High",
+  "notes": "Supports healthy stress hormone regulation through HPA-axis modulation.",
+  "references": [
+    "Scientific Literature"
+  ]
+},
+{
+  "id": "BM000419",
+  "bioactive": "BT001",
+  "mechanism": "MEC030",
+  "strength": 4,
+  "confidence": "Moderate",
+  "notes": "Supports cognitive processing during mental fatigue and sustained attention.",
+  "references": [
+    "Scientific Literature"
+  ]
+},
+{
+  "id": "BM000420",
+  "bioactive": "BT002",
+  "mechanism": "MEC028",
+  "strength": 5,
+  "confidence": "High",
+  "notes": "Supports healthy cortisol regulation and physiological stress resilience.",
+  "references": [
+    "Scientific Literature"
+  ]
+},
+{
+  "id": "BM000421",
+  "bioactive": "BT002",
+  "mechanism": "MEC026",
+  "strength": 4,
+  "confidence": "Moderate",
+  "notes": "Supports neuroprotection through antioxidant and anti-inflammatory activity.",
+  "references": [
+    "Scientific Literature"
+  ]
+},
+{
+  "id": "BM000422",
+  "bioactive": "BT003",
+  "mechanism": "MEC025",
+  "strength": 4,
+  "confidence": "Moderate",
+  "notes": "Supports synaptic plasticity and adaptive neuronal signalling.",
+  "references": [
+    "Scientific Literature"
+  ]
+},
+{
+  "id": "BM000423",
+  "bioactive": "BT003",
+  "mechanism": "MEC024",
+  "strength": 4,
+  "confidence": "Moderate",
+  "notes": "Supports mitochondrial resilience and cellular energy metabolism.",
+  "references": [
+    "Scientific Literature"
+  ]
+},
+{
+  "id": "BM000424",
+  "bioactive": "BT004",
+  "mechanism": "MEC020",
+  "strength": 5,
+  "confidence": "High",
+  "notes": "Direct modulation of GABA-A receptor activity supporting relaxation and sleep physiology.",
+  "references": [
+    "Scientific Literature"
+  ]
+},
+{
+  "id": "BM000425",
+  "bioactive": "BT005",
+  "mechanism": "MEC020",
+  "strength": 4,
+  "confidence": "Moderate",
+  "notes": "Supports inhibitory neurotransmission through GABA receptor modulation.",
+  "references": [
+    "Scientific Literature"
+  ]
+},
+{
+  "id": "BM000438",
+  "bioactive": "PB001",
+  "mechanism": "MEC034",
+  "strength": 5,
+  "confidence": "High",
+  "notes": "Increases overall gut microbiome diversity through colonisation support.",
+  "references": [
+    "Scientific Literature"
+  ]
+},
+{
+  "id": "BM000439",
+  "bioactive": "PB001",
+  "mechanism": "MEC032",
+  "strength": 4,
+  "confidence": "High",
+  "notes": "Supports intestinal barrier integrity through microbial metabolite production.",
+  "references": [
+    "Scientific Literature"
+  ]
+},
+{
+  "id": "BM000440",
+  "bioactive": "PB002",
+  "mechanism": "MEC034",
+  "strength": 5,
+  "confidence": "High",
+  "notes": "Promotes a diverse and resilient gut microbiome.",
+  "references": [
+    "Scientific Literature"
+  ]
+},
+{
+  "id": "BM000441",
+  "bioactive": "PB002",
+  "mechanism": "MEC036",
+  "strength": 4,
+  "confidence": "Moderate",
+  "notes": "SCFA production contributes to maintenance of a healthy colonic environment.",
+  "references": [
+    "Scientific Literature"
+  ]
+},
+{
+  "id": "BM000442",
+  "bioactive": "BP001",
+  "mechanism": "MEC010",
+  "strength": 4,
+  "confidence": "Moderate",
+  "notes": "Supports endothelial function through ACE-inhibitory peptide activity.",
+  "references": [
+    "Scientific Literature"
+  ]
+},
+{
+  "id": "BM000443",
+  "bioactive": "BP001",
+  "mechanism": "MEC013",
+  "strength": 4,
+  "confidence": "Moderate",
+  "notes": "Supports healthy blood pressure regulation through vascular signalling.",
+  "references": [
+    "Scientific Literature"
+  ]
+},
+{
+  "id": "BM000461",
+  "bioactive": "OS001",
+  "mechanism": "MEC110",
+  "strength": 5,
+  "confidence": "High",
+  "notes": "Activates Phase II conjugation enzymes through Nrf2 signalling.",
+  "references": ["Scientific Literature"]
+},
+{
+  "id": "BM000462",
+  "bioactive": "OS001",
+  "mechanism": "MEC111",
+  "strength": 5,
+  "confidence": "High",
+  "notes": "Enhances endogenous glutathione synthesis and recycling.",
+  "references": ["Scientific Literature"]
+},
+{
+  "id": "BM000463",
+  "bioactive": "OS004",
+  "mechanism": "MEC110",
+  "strength": 4,
+  "confidence": "High",
+  "notes": "Glucosinolate metabolites support Phase II detoxification pathways.",
+  "references": ["Scientific Literature"]
+},
+{
+  "id": "BM000464",
+  "bioactive": "OS002",
+  "mechanism": "MEC113",
+  "strength": 4,
+  "confidence": "Moderate",
+  "notes": "Supports protection of hepatocytes during normal detoxification activity.",
+  "references": ["Scientific Literature"]
+},
+{
+  "id": "BM000465",
+  "bioactive": "PP013",
+  "mechanism": "MEC112",
+  "strength": 4,
+  "confidence": "Moderate",
+  "notes": "Supports elimination of metabolised xenobiotic compounds.",
+  "references": ["Scientific Literature"]
+},
+{
+  "id": "BM000466",
+  "bioactive": "PP013",
+  "mechanism": "MEC113",
+  "strength": 4,
+  "confidence": "Moderate",
+  "notes": "Supports hepatic cellular resilience during detoxification processes.",
+  "references": ["Scientific Literature"]
+},
+{
+  "id": "BM000467",
+  "bioactive": "FC021",
+  "mechanism": "MEC112",
+  "strength": 4,
+  "confidence": "Moderate",
+  "notes": "Binds and supports elimination of selected dietary and environmental compounds.",
+  "references": ["Scientific Literature"]
+},
+{
+  "id": "BM000468",
+  "bioactive": "FC021",
+  "mechanism": "MEC113",
+  "strength": 3,
+  "confidence": "Moderate",
+  "notes": "Supports normal liver cellular protection through antioxidant activity.",
+  "references": ["Scientific Literature"]
+}
+
+
+
+
+
+
   ]
 }

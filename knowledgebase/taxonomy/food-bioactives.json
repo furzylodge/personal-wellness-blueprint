@@ -1,1208 +1,3114 @@
 {
-  "version": "20260813-1.0",
-  "generated": "2026-08-12",
-  "source": "Derived from food-bioactives(8).json with the current canonical food and bioactive catalogues.",
-  "count": 177,
+  "version": "20260916-1.0",
+  "generated": "2026-09-16T14:04:24Z",
+  "count": 234,
   "relationships": [
     {
-      "foodId": "FD001",
-      "bioactives": [
-        {
-          "id": "DF001",
-          "strength": 5,
-          "confidence": 0.99
-        },
-        {
-          "id": "DF004",
-          "strength": 3,
-          "confidence": 0.87
-        },
-        {
-          "id": "DF006",
-          "strength": 3,
-          "confidence": 0.87
-        },
-        {
-          "id": "PP012",
-          "strength": 4,
-          "confidence": 0.94
-        },
-        {
-          "id": "DF005",
-          "strength": 3,
-          "confidence": 0.85
-        },
-        {
-          "id": "DF007",
-          "strength": 3,
-          "confidence": 0.85
-        },
-        {
-          "id": "DF008",
-          "strength": 3,
-          "confidence": 0.85
-        },
-        {
-          "id": "PS002",
-          "strength": 4,
-          "confidence": 0.9
-        },
-        {
-          "id": "FC007",
-          "strength": 3,
-          "confidence": 0.85
-        }
-      ]
+      "id": "FB000001",
+      "food": "FD001",
+      "bioactive": "DF001",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Whole grain (bran/endosperm cell walls)",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "Low",
+      "notes": "Soluble fibre acting locally in the gut; not systemically absorbed. EFSA-recognised cholesterol-lowering claim applies to oat and barley beta-glucan specifically."
     },
     {
-      "foodId": "FD002",
-      "bioactives": [
-        {
-          "id": "PP001",
-          "strength": 5,
-          "confidence": 0.99
-        },
-        {
-          "id": "PP003",
-          "strength": 3,
-          "confidence": 0.87
-        },
-        {
-          "id": "PP008",
-          "strength": 4,
-          "confidence": 0.94
-        }
-      ]
+      "id": "FB000002",
+      "food": "FD001",
+      "bioactive": "DF004",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Whole food (starch fraction)",
+      "preparation": [
+        "Cooked"
+      ],
+      "bioavailability": "Low",
+      "notes": "Resistant to digestion in the small intestine and fermented in the colon; content typically increases when starchy foods are cooked and then cooled."
     },
     {
-      "foodId": "FD003",
-      "bioactives": [
-        {
-          "id": "PP001",
-          "strength": 5,
-          "confidence": 0.99
-        },
-        {
-          "id": "PP007",
-          "strength": 4,
-          "confidence": 0.94
-        }
-      ]
+      "id": "FB000003",
+      "food": "FD001",
+      "bioactive": "DF006",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Cell walls (whole food)",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "Low",
+      "notes": "Insoluble fibre; not absorbed, adds bulk and supports bowel regularity."
     },
     {
-      "foodId": "FD004",
-      "bioactives": [
-        {
-          "id": "CA004",
-          "strength": 3,
-          "confidence": 0.87
-        },
-        {
-          "id": "PP001",
-          "strength": 5,
-          "confidence": 0.99
-        },
-        {
-          "id": "PP009",
-          "strength": 4,
-          "confidence": 0.94
-        }
-      ]
+      "id": "FB000004",
+      "food": "FD001",
+      "bioactive": "PP012",
+      "strength": 4,
+      "confidence": "High",
+      "part": "Bran layer",
+      "preparation": [
+        "Cooked"
+      ],
+      "bioavailability": "Moderate",
+      "notes": "Oat-specific polyphenols with genuine, though modest, systemic absorption."
     },
     {
-      "foodId": "FD005",
-      "bioactives": [
-        {
-          "id": "DF004",
-          "strength": 3,
-          "confidence": 0.87
-        },
-        {
-          "id": "PP001",
-          "strength": 5,
-          "confidence": 0.99
-        },
-        {
-          "id": "PP007",
-          "strength": 4,
-          "confidence": 0.94
-        }
-      ]
+      "id": "FB000005",
+      "food": "FD001",
+      "bioactive": "DF005",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Bran/outer layer",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "Low",
+      "notes": "Insoluble/soluble fibre fraction acting locally in the gut."
     },
     {
-      "foodId": "FD006",
-      "bioactives": [
-        {
-          "id": "CA002",
-          "strength": 5,
-          "confidence": 0.99
-        },
-        {
-          "id": "CA003",
-          "strength": 4,
-          "confidence": 0.94
-        },
-        {
-          "id": "DF007",
-          "strength": 3,
-          "confidence": 0.85
-        },
-        {
-          "id": "PP005",
-          "strength": 3,
-          "confidence": 0.85
-        }
-      ]
+      "id": "FB000006",
+      "food": "FD001",
+      "bioactive": "DF007",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Cell walls (whole food)",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "Low",
+      "notes": "Insoluble fibre fraction; acts locally in the gut."
     },
     {
-      "foodId": "FD007",
-      "bioactives": [
-        {
-          "id": "CA001",
-          "strength": 3,
-          "confidence": 0.87
-        },
-        {
-          "id": "OS002",
-          "strength": 5,
-          "confidence": 0.99
-        },
-        {
-          "id": "OS003",
-          "strength": 4,
-          "confidence": 0.94
-        },
-        {
-          "id": "DF007",
-          "strength": 3,
-          "confidence": 0.85
-        },
-        {
-          "id": "PP005",
-          "strength": 3,
-          "confidence": 0.85
-        }
-      ]
+      "id": "FB000007",
+      "food": "FD001",
+      "bioactive": "DF008",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Seed coat/hull",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "Low",
+      "notes": "Insoluble fibre component; not absorbed."
     },
     {
-      "foodId": "FD008",
-      "bioactives": [
-        {
-          "id": "OS002",
-          "strength": 4,
-          "confidence": 0.94
-        },
-        {
-          "id": "DF007",
-          "strength": 3,
-          "confidence": 0.85
-        }
-      ]
+      "id": "FB000008",
+      "food": "FD001",
+      "bioactive": "PS002",
+      "strength": 4,
+      "confidence": "Moderate",
+      "part": "Seed/nut oil fraction",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "Low",
+      "notes": "Poorly absorbed; competes with dietary and biliary cholesterol for intestinal absorption."
     },
     {
-      "foodId": "FD009",
-      "bioactives": [
-        {
-          "id": "CA004",
-          "strength": 4,
-          "confidence": 0.94
-        },
-        {
-          "id": "DF007",
-          "strength": 3,
-          "confidence": 0.85
-        }
-      ]
+      "id": "FB000009",
+      "food": "FD001",
+      "bioactive": "FC007",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Whole food (trace amounts)",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "Low",
+      "notes": "Present only in small, variable amounts in food; dietary contribution is modest compared with the body's own endogenous production."
     },
     {
-      "foodId": "FD010",
-      "bioactives": [
-        {
-          "id": "OS002",
-          "strength": 5,
-          "confidence": 0.99
-        },
-        {
-          "id": "OS003",
-          "strength": 4,
-          "confidence": 0.94
-        },
-        {
-          "id": "DF007",
-          "strength": 3,
-          "confidence": 0.85
-        },
-        {
-          "id": "PP005",
-          "strength": 3,
-          "confidence": 0.85
-        }
-      ]
+      "id": "FB000010",
+      "food": "FD002",
+      "bioactive": "PP001",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Skin/peel and flesh",
+      "preparation": [
+        "Raw"
+      ],
+      "bioavailability": "Low",
+      "notes": "Polyphenol with genuinely low systemic bioavailability (commonly cited under 5%); most benefit is thought to arise from gut-microbiome metabolites and local antioxidant effects."
     },
     {
-      "foodId": "FD011",
-      "bioactives": [
-        {
-          "id": "OS002",
-          "strength": 5,
-          "confidence": 0.99
-        },
-        {
-          "id": "DF007",
-          "strength": 3,
-          "confidence": 0.85
-        }
-      ]
+      "id": "FB000011",
+      "food": "FD002",
+      "bioactive": "PP003",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Whole food",
+      "preparation": [
+        "Raw"
+      ],
+      "bioavailability": "Moderate",
+      "notes": "Absorption is moderate and influenced by co-consumed food matrix."
     },
     {
-      "foodId": "FD012",
-      "bioactives": [
-        {
-          "id": "OS002",
-          "strength": 5,
-          "confidence": 0.99
-        },
-        {
-          "id": "OS003",
-          "strength": 4,
-          "confidence": 0.94
-        },
-        {
-          "id": "DF007",
-          "strength": 3,
-          "confidence": 0.85
-        }
-      ]
+      "id": "FB000012",
+      "food": "FD002",
+      "bioactive": "PP008",
+      "strength": 4,
+      "confidence": "High",
+      "part": "Skin and flesh",
+      "preparation": [
+        "Raw",
+        "Cooked"
+      ],
+      "bioavailability": "Moderate",
+      "notes": "Bioavailability is reduced by roasting at high temperature but the compound remains a major contributor to dietary polyphenol intake."
     },
     {
-      "foodId": "FD013",
-      "bioactives": [
-        {
-          "id": "OS002",
-          "strength": 5,
-          "confidence": 0.99
-        },
-        {
-          "id": "DF007",
-          "strength": 3,
-          "confidence": 0.85
-        },
-        {
-          "id": "OS005",
-          "strength": 3,
-          "confidence": 0.85
-        }
-      ]
+      "id": "FB000013",
+      "food": "FD003",
+      "bioactive": "PP001",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Skin/peel and flesh",
+      "preparation": [
+        "Raw"
+      ],
+      "bioavailability": "Low",
+      "notes": "Polyphenol with genuinely low systemic bioavailability (commonly cited under 5%); most benefit is thought to arise from gut-microbiome metabolites and local antioxidant effects."
     },
     {
-      "foodId": "FD014",
-      "bioactives": [
-        {
-          "id": "DF003",
-          "strength": 3,
-          "confidence": 0.87
-        },
-        {
-          "id": "DF004",
-          "strength": 5,
-          "confidence": 0.99
-        },
-        {
-          "id": "PP011",
-          "strength": 4,
-          "confidence": 0.94
-        },
-        {
-          "id": "DF007",
-          "strength": 3,
-          "confidence": 0.85
-        },
-        {
-          "id": "PP005",
-          "strength": 3,
-          "confidence": 0.85
-        },
-        {
-          "id": "PS002",
-          "strength": 4,
-          "confidence": 0.9
-        },
-        {
-          "id": "PS003",
-          "strength": 3,
-          "confidence": 0.85
-        }
-      ]
+      "id": "FB000014",
+      "food": "FD003",
+      "bioactive": "PP007",
+      "strength": 4,
+      "confidence": "High",
+      "part": "Skin/seeds",
+      "preparation": [
+        "Raw"
+      ],
+      "bioavailability": "Low",
+      "notes": "Absorbed poorly as the free acid; most benefit is attributed to gut-microbiome-derived urolithin metabolites."
     },
     {
-      "foodId": "FD015",
-      "bioactives": [
-        {
-          "id": "DF003",
-          "strength": 3,
-          "confidence": 0.87
-        },
-        {
-          "id": "DF004",
-          "strength": 5,
-          "confidence": 0.99
-        },
-        {
-          "id": "DF007",
-          "strength": 3,
-          "confidence": 0.85
-        },
-        {
-          "id": "PP005",
-          "strength": 3,
-          "confidence": 0.85
-        },
-        {
-          "id": "PS002",
-          "strength": 4,
-          "confidence": 0.9
-        },
-        {
-          "id": "PS003",
-          "strength": 3,
-          "confidence": 0.85
-        }
-      ]
+      "id": "FB000015",
+      "food": "FD004",
+      "bioactive": "CA004",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Flesh/leaves",
+      "preparation": [
+        "Cooked"
+      ],
+      "bioavailability": "Variable",
+      "notes": "Fat-soluble provitamin-A carotenoid; absorption is markedly improved by cooking and by co-ingested fat."
     },
     {
-      "foodId": "FD016",
-      "bioactives": [
-        {
-          "id": "PP001",
-          "strength": 5,
-          "confidence": 0.99
-        },
-        {
-          "id": "PP011",
-          "strength": 4,
-          "confidence": 0.94
-        },
-        {
-          "id": "DF007",
-          "strength": 3,
-          "confidence": 0.85
-        },
-        {
-          "id": "PP005",
-          "strength": 3,
-          "confidence": 0.85
-        },
-        {
-          "id": "PS002",
-          "strength": 4,
-          "confidence": 0.9
-        },
-        {
-          "id": "PS003",
-          "strength": 3,
-          "confidence": 0.85
-        }
-      ]
+      "id": "FB000016",
+      "food": "FD004",
+      "bioactive": "PP001",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Skin/peel and flesh",
+      "preparation": [
+        "Raw"
+      ],
+      "bioavailability": "Low",
+      "notes": "Polyphenol with genuinely low systemic bioavailability (commonly cited under 5%); most benefit is thought to arise from gut-microbiome metabolites and local antioxidant effects."
     },
     {
-      "foodId": "FD017",
-      "bioactives": [
-        {
-          "id": "DF004",
-          "strength": 5,
-          "confidence": 0.99
-        },
-        {
-          "id": "PP011",
-          "strength": 4,
-          "confidence": 0.94
-        },
-        {
-          "id": "DF007",
-          "strength": 3,
-          "confidence": 0.85
-        },
-        {
-          "id": "PP005",
-          "strength": 3,
-          "confidence": 0.85
-        },
-        {
-          "id": "PS002",
-          "strength": 4,
-          "confidence": 0.9
-        },
-        {
-          "id": "PS003",
-          "strength": 3,
-          "confidence": 0.85
-        }
-      ]
+      "id": "FB000017",
+      "food": "FD004",
+      "bioactive": "PP009",
+      "strength": 4,
+      "confidence": "High",
+      "part": "Peel and pith (concentrated), also in flesh/juice",
+      "preparation": [
+        "Raw"
+      ],
+      "bioavailability": "Moderate",
+      "notes": "A citrus flavanone glycoside; absorption depends on hydrolysis by gut bacteria."
     },
     {
-      "foodId": "FD018",
-      "bioactives": [
-        {
-          "id": "FA001",
-          "strength": 5,
-          "confidence": 0.99
-        },
-        {
-          "id": "PP008",
-          "strength": 3,
-          "confidence": 0.87
-        },
-        {
-          "id": "PS001",
-          "strength": 4,
-          "confidence": 0.94
-        },
-        {
-          "id": "DF008",
-          "strength": 3,
-          "confidence": 0.85
-        },
-        {
-          "id": "FA005",
-          "strength": 4,
-          "confidence": 0.9
-        },
-        {
-          "id": "PS002",
-          "strength": 4,
-          "confidence": 0.9
-        },
-        {
-          "id": "PS003",
-          "strength": 3,
-          "confidence": 0.85
-        },
-        {
-          "id": "FC007",
-          "strength": 3,
-          "confidence": 0.85
-        }
-      ]
+      "id": "FB000018",
+      "food": "FD005",
+      "bioactive": "DF004",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Whole food (starch fraction)",
+      "preparation": [
+        "Cooked"
+      ],
+      "bioavailability": "Low",
+      "notes": "Resistant to digestion in the small intestine and fermented in the colon; content typically increases when starchy foods are cooked and then cooled."
     },
     {
-      "foodId": "FD019",
-      "bioactives": [
-        {
-          "id": "FA004",
-          "strength": 5,
-          "confidence": 0.99
-        },
-        {
-          "id": "PS001",
-          "strength": 4,
-          "confidence": 0.94
-        },
-        {
-          "id": "DF008",
-          "strength": 3,
-          "confidence": 0.85
-        },
-        {
-          "id": "FA005",
-          "strength": 4,
-          "confidence": 0.9
-        },
-        {
-          "id": "PS002",
-          "strength": 4,
-          "confidence": 0.9
-        },
-        {
-          "id": "PS003",
-          "strength": 3,
-          "confidence": 0.85
-        }
-      ]
+      "id": "FB000019",
+      "food": "FD005",
+      "bioactive": "PP001",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Skin/peel and flesh",
+      "preparation": [
+        "Raw"
+      ],
+      "bioavailability": "Low",
+      "notes": "Polyphenol with genuinely low systemic bioavailability (commonly cited under 5%); most benefit is thought to arise from gut-microbiome metabolites and local antioxidant effects."
     },
     {
-      "foodId": "FD020",
-      "bioactives": [
-        {
-          "id": "PS001",
-          "strength": 5,
-          "confidence": 0.99
-        },
-        {
-          "id": "DF008",
-          "strength": 3,
-          "confidence": 0.85
-        },
-        {
-          "id": "FA005",
-          "strength": 4,
-          "confidence": 0.9
-        },
-        {
-          "id": "PS002",
-          "strength": 4,
-          "confidence": 0.9
-        },
-        {
-          "id": "PS003",
-          "strength": 3,
-          "confidence": 0.85
-        }
-      ]
+      "id": "FB000020",
+      "food": "FD005",
+      "bioactive": "PP007",
+      "strength": 4,
+      "confidence": "High",
+      "part": "Skin/seeds",
+      "preparation": [
+        "Raw"
+      ],
+      "bioavailability": "Low",
+      "notes": "Absorbed poorly as the free acid; most benefit is attributed to gut-microbiome-derived urolithin metabolites."
     },
     {
-      "foodId": "FD021",
-      "bioactives": [
-        {
-          "id": "DF004",
-          "strength": 4,
-          "confidence": 0.94
-        },
-        {
-          "id": "FA001",
-          "strength": 5,
-          "confidence": 0.99
-        },
-        {
-          "id": "DF008",
-          "strength": 3,
-          "confidence": 0.85
-        },
-        {
-          "id": "FA005",
-          "strength": 4,
-          "confidence": 0.9
-        },
-        {
-          "id": "PS002",
-          "strength": 4,
-          "confidence": 0.9
-        },
-        {
-          "id": "PS003",
-          "strength": 3,
-          "confidence": 0.85
-        }
-      ]
+      "id": "FB000021",
+      "food": "FD006",
+      "bioactive": "CA002",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Leaves/flesh",
+      "preparation": [
+        "Cooked"
+      ],
+      "bioavailability": "Variable",
+      "notes": "Fat-soluble; absorption is improved by cooking and by eating with a source of dietary fat."
     },
     {
-      "foodId": "FD022",
-      "bioactives": [
-        {
-          "id": "DF004",
-          "strength": 3,
-          "confidence": 0.87
-        },
-        {
-          "id": "FA001",
-          "strength": 5,
-          "confidence": 0.99
-        },
-        {
-          "id": "DF008",
-          "strength": 3,
-          "confidence": 0.85
-        },
-        {
-          "id": "FA005",
-          "strength": 4,
-          "confidence": 0.9
-        },
-        {
-          "id": "PS002",
-          "strength": 4,
-          "confidence": 0.9
-        },
-        {
-          "id": "PS003",
-          "strength": 3,
-          "confidence": 0.85
-        },
-        {
-          "id": "PP011",
-          "strength": 5,
-          "confidence": 0.98
-        }
-      ]
+      "id": "FB000022",
+      "food": "FD006",
+      "bioactive": "CA003",
+      "strength": 4,
+      "confidence": "High",
+      "part": "Leaves/flesh",
+      "preparation": [
+        "Cooked"
+      ],
+      "bioavailability": "Variable",
+      "notes": "Fat-soluble; absorption is improved by cooking and by eating with a source of dietary fat."
     },
     {
-      "foodId": "FD024",
-      "bioactives": [
-        {
-          "id": "FA004",
-          "strength": 3,
-          "confidence": 0.87
-        },
-        {
-          "id": "PP015",
-          "strength": 5,
-          "confidence": 0.99
-        },
-        {
-          "id": "FA005",
-          "strength": 4,
-          "confidence": 0.9
-        },
-        {
-          "id": "PS002",
-          "strength": 4,
-          "confidence": 0.9
-        },
-        {
-          "id": "PS003",
-          "strength": 3,
-          "confidence": 0.85
-        }
-      ]
+      "id": "FB000023",
+      "food": "FD006",
+      "bioactive": "DF007",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Cell walls (whole food)",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "Low",
+      "notes": "Insoluble fibre fraction; acts locally in the gut."
     },
     {
-      "foodId": "FD025",
-      "bioactives": [
-        {
-          "id": "OS001",
-          "strength": 5,
-          "confidence": 0.99
-        },
-        {
-          "id": "OS004",
-          "strength": 3,
-          "confidence": 0.85
-        }
-      ]
+      "id": "FB000024",
+      "food": "FD006",
+      "bioactive": "PP005",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Skin/outer leaves",
+      "preparation": [
+        "Raw"
+      ],
+      "bioavailability": "Moderate",
+      "notes": "Flavonol with moderate, variable absorption depending on food matrix and gut microbiome."
     },
     {
-      "foodId": "FD026",
-      "bioactives": [
-        {
-          "id": "DF003",
-          "strength": 3,
-          "confidence": 0.87
-        },
-        {
-          "id": "PP002",
-          "strength": 5,
-          "confidence": 0.99
-        },
-        {
-          "id": "OS005",
-          "strength": 3,
-          "confidence": 0.85
-        }
-      ]
+      "id": "FB000025",
+      "food": "FD007",
+      "bioactive": "CA004",
+      "strength": 4,
+      "confidence": "High",
+      "part": "Flesh/leaves",
+      "preparation": [
+        "Cooked"
+      ],
+      "bioavailability": "Variable",
+      "notes": "Corrected from an earlier erroneous Lycopene mapping: kale's dominant carotenoids are beta-carotene and lutein, not lycopene, which is essentially a tomato/watermelon-family pigment."
     },
     {
-      "foodId": "FD027",
-      "bioactives": [
-        {
-          "id": "CA001",
-          "strength": 5,
-          "confidence": 0.99
-        },
-        {
-          "id": "CA004",
-          "strength": 4,
-          "confidence": 0.94
-        }
-      ]
+      "id": "FB000026",
+      "food": "FD007",
+      "bioactive": "OS002",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Whole vegetable (formed enzymatically on damage)",
+      "preparation": [
+        "Raw",
+        "Chopped",
+        "Lightly Steamed"
+      ],
+      "bioavailability": "Variable",
+      "notes": "Formed from glucoraphanin via the enzyme myrosinase when the plant is cut or chewed; heavy cooking destroys myrosinase and substantially reduces formation, so light steaming or raw/chopped preparation preserves more."
     },
     {
-      "foodId": "FD028",
-      "bioactives": [
-        {
-          "id": "FA004",
-          "strength": 5,
-          "confidence": 0.99
-        },
-        {
-          "id": "PS001",
-          "strength": 4,
-          "confidence": 0.94
-        }
-      ]
+      "id": "FB000027",
+      "food": "FD007",
+      "bioactive": "OS003",
+      "strength": 4,
+      "confidence": "High",
+      "part": "Whole vegetable",
+      "preparation": [
+        "Raw",
+        "Cooked"
+      ],
+      "bioavailability": "Variable",
+      "notes": "The precursor compound to sulforaphane; conversion depends on active myrosinase enzyme or, to a lesser extent, gut bacteria."
     },
     {
-      "foodId": "FD030",
-      "bioactives": [
-        {
-          "id": "FA002",
-          "strength": 5,
-          "confidence": 0.99
-        },
-        {
-          "id": "FA003",
-          "strength": 4,
-          "confidence": 0.94
-        },
-        {
-          "id": "CA006",
-          "strength": 3,
-          "confidence": 0.85
-        },
-        {
-          "id": "FC009",
-          "strength": 4,
-          "confidence": 0.9
-        },
-        {
-          "id": "FC010",
-          "strength": 4,
-          "confidence": 0.9
-        }
-      ]
+      "id": "FB000028",
+      "food": "FD007",
+      "bioactive": "DF007",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Cell walls (whole food)",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "Low",
+      "notes": "Insoluble fibre fraction; acts locally in the gut."
     },
     {
-      "foodId": "FD031",
-      "bioactives": [
-        {
-          "id": "FA002",
-          "strength": 5,
-          "confidence": 0.99
-        },
-        {
-          "id": "FA003",
-          "strength": 4,
-          "confidence": 0.94
-        },
-        {
-          "id": "FC009",
-          "strength": 4,
-          "confidence": 0.9
-        },
-        {
-          "id": "FC010",
-          "strength": 4,
-          "confidence": 0.9
-        }
-      ]
+      "id": "FB000029",
+      "food": "FD007",
+      "bioactive": "PP005",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Skin/outer leaves",
+      "preparation": [
+        "Raw"
+      ],
+      "bioavailability": "Moderate",
+      "notes": "Flavonol with moderate, variable absorption depending on food matrix and gut microbiome."
     },
     {
-      "foodId": "FD032",
-      "bioactives": [
-        {
-          "id": "FA002",
-          "strength": 5,
-          "confidence": 0.99
-        },
-        {
-          "id": "FA003",
-          "strength": 4,
-          "confidence": 0.94
-        },
-        {
-          "id": "FC009",
-          "strength": 4,
-          "confidence": 0.9
-        },
-        {
-          "id": "FC010",
-          "strength": 4,
-          "confidence": 0.9
-        }
-      ]
+      "id": "FB000030",
+      "food": "FD008",
+      "bioactive": "OS002",
+      "strength": 4,
+      "confidence": "High",
+      "part": "Whole vegetable (formed enzymatically on damage)",
+      "preparation": [
+        "Raw",
+        "Chopped",
+        "Lightly Steamed"
+      ],
+      "bioavailability": "Variable",
+      "notes": "Formed from glucoraphanin via the enzyme myrosinase when the plant is cut or chewed; heavy cooking destroys myrosinase and substantially reduces formation, so light steaming or raw/chopped preparation preserves more."
     },
     {
-      "foodId": "FD033",
-      "bioactives": [
-        {
-          "id": "FA002",
-          "strength": 5,
-          "confidence": 0.99
-        },
-        {
-          "id": "FA003",
-          "strength": 4,
-          "confidence": 0.94
-        },
-        {
-          "id": "FC009",
-          "strength": 4,
-          "confidence": 0.9
-        },
-        {
-          "id": "FC010",
-          "strength": 4,
-          "confidence": 0.9
-        }
-      ]
+      "id": "FB000031",
+      "food": "FD008",
+      "bioactive": "DF007",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Cell walls (whole food)",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "Low",
+      "notes": "Insoluble fibre fraction; acts locally in the gut."
     },
     {
-      "foodId": "FD037",
-      "bioactives": [
-        {
-          "id": "OS002",
-          "strength": 3,
-          "confidence": 0.87
-        }
-      ]
+      "id": "FB000032",
+      "food": "FD009",
+      "bioactive": "CA004",
+      "strength": 4,
+      "confidence": "High",
+      "part": "Flesh/leaves",
+      "preparation": [
+        "Cooked"
+      ],
+      "bioavailability": "Variable",
+      "notes": "Fat-soluble provitamin-A carotenoid; absorption is markedly improved by cooking and by co-ingested fat."
     },
     {
-      "foodId": "FD038",
-      "bioactives": [
-        {
-          "id": "FC001",
-          "strength": 5,
-          "confidence": 0.99
-        }
-      ]
+      "id": "FB000033",
+      "food": "FD009",
+      "bioactive": "DF007",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Cell walls (whole food)",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "Low",
+      "notes": "Insoluble fibre fraction; acts locally in the gut."
     },
     {
-      "foodId": "FD039",
-      "bioactives": [
-        {
-          "id": "FC004",
-          "strength": 5,
-          "confidence": 0.99
-        },
-        {
-          "id": "FC005",
-          "strength": 4,
-          "confidence": 0.94
-        }
-      ]
+      "id": "FB000034",
+      "food": "FD010",
+      "bioactive": "OS002",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Whole vegetable (formed enzymatically on damage)",
+      "preparation": [
+        "Raw",
+        "Chopped",
+        "Lightly Steamed"
+      ],
+      "bioavailability": "Variable",
+      "notes": "Formed from glucoraphanin via the enzyme myrosinase when the plant is cut or chewed; heavy cooking destroys myrosinase and substantially reduces formation, so light steaming or raw/chopped preparation preserves more."
     },
     {
-      "foodId": "FD043",
-      "bioactives": [
-        {
-          "id": "PP001",
-          "strength": 5,
-          "confidence": 0.99
-        },
-        {
-          "id": "PP005",
-          "strength": 3,
-          "confidence": 0.85
-        }
-      ]
+      "id": "FB000035",
+      "food": "FD010",
+      "bioactive": "OS003",
+      "strength": 4,
+      "confidence": "High",
+      "part": "Whole vegetable",
+      "preparation": [
+        "Raw",
+        "Cooked"
+      ],
+      "bioavailability": "Variable",
+      "notes": "The precursor compound to sulforaphane; conversion depends on active myrosinase enzyme or, to a lesser extent, gut bacteria."
     },
     {
-      "foodId": "FD044",
-      "bioactives": [
-        {
-          "id": "PP007",
-          "strength": 5,
-          "confidence": 0.99
-        },
-        {
-          "id": "PP005",
-          "strength": 3,
-          "confidence": 0.85
-        }
-      ]
+      "id": "FB000036",
+      "food": "FD010",
+      "bioactive": "DF007",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Cell walls (whole food)",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "Low",
+      "notes": "Insoluble fibre fraction; acts locally in the gut."
     },
     {
-      "foodId": "FD045",
-      "bioactives": [
-        {
-          "id": "PP008",
-          "strength": 4,
-          "confidence": 0.94
-        }
-      ]
+      "id": "FB000037",
+      "food": "FD010",
+      "bioactive": "PP005",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Skin/outer leaves",
+      "preparation": [
+        "Raw"
+      ],
+      "bioavailability": "Moderate",
+      "notes": "Flavonol with moderate, variable absorption depending on food matrix and gut microbiome."
     },
     {
-      "foodId": "FD046",
-      "bioactives": [
-        {
-          "id": "FC001",
-          "strength": 4,
-          "confidence": 0.94
-        }
-      ]
+      "id": "FB000038",
+      "food": "FD011",
+      "bioactive": "OS002",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Whole vegetable (formed enzymatically on damage)",
+      "preparation": [
+        "Raw",
+        "Chopped",
+        "Lightly Steamed"
+      ],
+      "bioavailability": "Variable",
+      "notes": "Formed from glucoraphanin via the enzyme myrosinase when the plant is cut or chewed; heavy cooking destroys myrosinase and substantially reduces formation, so light steaming or raw/chopped preparation preserves more."
     },
     {
-      "foodId": "FD047",
-      "bioactives": [
-        {
-          "id": "PP014",
-          "strength": 5,
-          "confidence": 0.95
-        },
-        {
-          "id": "PP015",
-          "strength": 5,
-          "confidence": 0.95
-        }
-      ]
+      "id": "FB000039",
+      "food": "FD011",
+      "bioactive": "DF007",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Cell walls (whole food)",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "Low",
+      "notes": "Insoluble fibre fraction; acts locally in the gut."
     },
     {
-      "foodId": "FD048",
-      "bioactives": [
-        {
-          "id": "DF003",
-          "strength": 5,
-          "confidence": 0.99
-        }
-      ]
+      "id": "FB000040",
+      "food": "FD012",
+      "bioactive": "OS002",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Whole vegetable (formed enzymatically on damage)",
+      "preparation": [
+        "Raw",
+        "Chopped",
+        "Lightly Steamed"
+      ],
+      "bioavailability": "Variable",
+      "notes": "Formed from glucoraphanin via the enzyme myrosinase when the plant is cut or chewed; heavy cooking destroys myrosinase and substantially reduces formation, so light steaming or raw/chopped preparation preserves more."
     },
     {
-      "foodId": "FD049",
-      "bioactives": [
-        {
-          "id": "FC015",
-          "strength": 5,
-          "confidence": 0.95
-        },
-        {
-          "id": "CA004",
-          "strength": 3,
-          "confidence": 0.8
-        }
-      ]
+      "id": "FB000041",
+      "food": "FD012",
+      "bioactive": "OS003",
+      "strength": 4,
+      "confidence": "High",
+      "part": "Whole vegetable",
+      "preparation": [
+        "Raw",
+        "Cooked"
+      ],
+      "bioavailability": "Variable",
+      "notes": "The precursor compound to sulforaphane; conversion depends on active myrosinase enzyme or, to a lesser extent, gut bacteria."
     },
     {
-      "foodId": "FD050",
-      "bioactives": [
-        {
-          "id": "FC016",
-          "strength": 5,
-          "confidence": 0.99
-        },
-        {
-          "id": "FC020",
-          "strength": 5,
-          "confidence": 0.99
-        }
-      ]
+      "id": "FB000042",
+      "food": "FD012",
+      "bioactive": "DF007",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Cell walls (whole food)",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "Low",
+      "notes": "Insoluble fibre fraction; acts locally in the gut."
     },
     {
-      "foodId": "FD051",
-      "bioactives": [
-        {
-          "id": "FC017",
-          "strength": 5,
-          "confidence": 0.95
-        }
-      ]
+      "id": "FB000043",
+      "food": "FD013",
+      "bioactive": "OS002",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Whole vegetable (formed enzymatically on damage)",
+      "preparation": [
+        "Raw",
+        "Chopped",
+        "Lightly Steamed"
+      ],
+      "bioavailability": "Variable",
+      "notes": "Formed from glucoraphanin via the enzyme myrosinase when the plant is cut or chewed; heavy cooking destroys myrosinase and substantially reduces formation, so light steaming or raw/chopped preparation preserves more."
     },
     {
-      "foodId": "FD052",
-      "bioactives": [
-        {
-          "id": "FC018",
-          "strength": 5,
-          "confidence": 0.95
-        },
-        {
-          "id": "FC019",
-          "strength": 5,
-          "confidence": 0.95
-        }
-      ]
+      "id": "FB000044",
+      "food": "FD013",
+      "bioactive": "DF007",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Cell walls (whole food)",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "Low",
+      "notes": "Insoluble fibre fraction; acts locally in the gut."
     },
     {
-      "foodId": "FD023",
-      "bioactives": [
-        {
-          "id": "DF008",
-          "strength": 3,
-          "confidence": 0.85
-        },
-        {
-          "id": "FA005",
-          "strength": 4,
-          "confidence": 0.9
-        },
-        {
-          "id": "PS002",
-          "strength": 4,
-          "confidence": 0.9
-        },
-        {
-          "id": "PS003",
-          "strength": 3,
-          "confidence": 0.85
-        }
-      ]
+      "id": "FB000045",
+      "food": "FD013",
+      "bioactive": "OS005",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Whole vegetable",
+      "preparation": [
+        "Raw",
+        "Cooked"
+      ],
+      "bioavailability": "Moderate",
+      "notes": "A sulphur compound characteristic of brassica and allium vegetables."
     },
     {
-      "foodId": "FD034",
-      "bioactives": [
-        {
-          "id": "FC009",
-          "strength": 4,
-          "confidence": 0.9
-        }
-      ]
+      "id": "FB000046",
+      "food": "FD014",
+      "bioactive": "DF003",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Root/bulb",
+      "preparation": [
+        "Raw",
+        "Cooked"
+      ],
+      "bioavailability": "Low",
+      "notes": "Fermentable fibre metabolised by gut bacteria rather than absorbed intact."
     },
     {
-      "foodId": "FD035",
-      "bioactives": [
-        {
-          "id": "FC009",
-          "strength": 4,
-          "confidence": 0.9
-        }
-      ]
+      "id": "FB000047",
+      "food": "FD014",
+      "bioactive": "DF004",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Whole food (starch fraction)",
+      "preparation": [
+        "Cooked"
+      ],
+      "bioavailability": "Low",
+      "notes": "Resistant to digestion in the small intestine and fermented in the colon; content typically increases when starchy foods are cooked and then cooled."
     },
     {
-      "foodId": "FD040",
-      "bioactives": [
-        {
-          "id": "FC006",
-          "strength": 3,
-          "confidence": 0.85
-        }
-      ]
+      "id": "FB000048",
+      "food": "FD014",
+      "bioactive": "PP011",
+      "strength": 4,
+      "confidence": "High",
+      "part": "Seed coat/hull",
+      "preparation": [
+        "Raw",
+        "Cooked"
+      ],
+      "bioavailability": "Moderate",
+      "notes": "Converted by gut bacteria into enterolignans (enterodiol, enterolactone); grinding/chewing improves release from the seed coat."
     },
     {
-      "foodId": "FD053",
-      "bioactives": [
-        {
-          "id": "CA005",
-          "strength": 5,
-          "confidence": 0.97
-        }
-      ]
+      "id": "FB000049",
+      "food": "FD014",
+      "bioactive": "DF007",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Cell walls (whole food)",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "Low",
+      "notes": "Insoluble fibre fraction; acts locally in the gut."
     },
     {
-      "foodId": "FD054",
-      "bioactives": [
-        {
-          "id": "PP010",
-          "strength": 4,
-          "confidence": 0.95
-        },
-        {
-          "id": "TP001",
-          "strength": 3,
-          "confidence": 0.9
-        }
-      ]
+      "id": "FB000050",
+      "food": "FD014",
+      "bioactive": "PP005",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Skin/outer leaves",
+      "preparation": [
+        "Raw"
+      ],
+      "bioavailability": "Moderate",
+      "notes": "Flavonol with moderate, variable absorption depending on food matrix and gut microbiome."
     },
     {
-      "foodId": "FD055",
-      "bioactives": [
-        {
-          "id": "FC002",
-          "strength": 5,
-          "confidence": 0.99
-        }
-      ]
+      "id": "FB000051",
+      "food": "FD014",
+      "bioactive": "PS002",
+      "strength": 4,
+      "confidence": "Moderate",
+      "part": "Seed/nut oil fraction",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "Low",
+      "notes": "Poorly absorbed; competes with dietary and biliary cholesterol for intestinal absorption."
     },
     {
-      "foodId": "FD056",
-      "bioactives": [
-        {
-          "id": "FC003",
-          "strength": 5,
-          "confidence": 0.99
-        }
-      ]
+      "id": "FB000052",
+      "food": "FD014",
+      "bioactive": "PS003",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Seed/nut oil fraction",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "Low",
+      "notes": "Poorly absorbed; competes with dietary and biliary cholesterol for intestinal absorption."
     },
     {
-      "foodId": "FD057",
-      "bioactives": [
-        {
-          "id": "PP013",
-          "strength": 5,
-          "confidence": 0.97
-        },
-        {
-          "id": "PP006",
-          "strength": 4,
-          "confidence": 0.95
-        },
-        {
-          "id": "PP001",
-          "strength": 3,
-          "confidence": 0.9
-        }
-      ]
+      "id": "FB000053",
+      "food": "FD015",
+      "bioactive": "DF003",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Root/bulb",
+      "preparation": [
+        "Raw",
+        "Cooked"
+      ],
+      "bioavailability": "Low",
+      "notes": "Fermentable fibre metabolised by gut bacteria rather than absorbed intact."
     },
     {
-      "foodId": "FD058",
-      "bioactives": [
-        {
-          "id": "PP009",
-          "strength": 5,
-          "confidence": 0.95
-        },
-        {
-          "id": "TP001",
-          "strength": 3,
-          "confidence": 0.9
-        }
-      ]
+      "id": "FB000054",
+      "food": "FD015",
+      "bioactive": "DF004",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Whole food (starch fraction)",
+      "preparation": [
+        "Cooked"
+      ],
+      "bioavailability": "Low",
+      "notes": "Resistant to digestion in the small intestine and fermented in the colon; content typically increases when starchy foods are cooked and then cooled."
     },
     {
-      "foodId": "FD059",
-      "bioactives": [
-        {
-          "id": "PP009",
-          "strength": 5,
-          "confidence": 0.95
-        },
-        {
-          "id": "TP001",
-          "strength": 3,
-          "confidence": 0.9
-        }
-      ]
+      "id": "FB000055",
+      "food": "FD015",
+      "bioactive": "DF007",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Cell walls (whole food)",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "Low",
+      "notes": "Insoluble fibre fraction; acts locally in the gut."
     },
     {
-      "foodId": "FD060",
-      "bioactives": [
-        {
-          "id": "PP009",
-          "strength": 5,
-          "confidence": 0.95
-        },
-        {
-          "id": "TP001",
-          "strength": 3,
-          "confidence": 0.9
-        }
-      ]
+      "id": "FB000056",
+      "food": "FD015",
+      "bioactive": "PP005",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Skin/outer leaves",
+      "preparation": [
+        "Raw"
+      ],
+      "bioavailability": "Moderate",
+      "notes": "Flavonol with moderate, variable absorption depending on food matrix and gut microbiome."
     },
     {
-      "foodId": "FD064",
-      "bioactives": [
-        {
-          "id": "PP016",
-          "strength": 4,
-          "confidence": 0.95
-        }
-      ]
+      "id": "FB000057",
+      "food": "FD015",
+      "bioactive": "PS002",
+      "strength": 4,
+      "confidence": "Moderate",
+      "part": "Seed/nut oil fraction",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "Low",
+      "notes": "Poorly absorbed; competes with dietary and biliary cholesterol for intestinal absorption."
     },
     {
-      "foodId": "FD065",
-      "bioactives": [
-        {
-          "id": "PP011",
-          "strength": 5,
-          "confidence": 0.95
-        },
-        {
-          "id": "FA004",
-          "strength": 4,
-          "confidence": 0.95
-        },
-        {
-          "id": "FA005",
-          "strength": 4,
-          "confidence": 0.95
-        }
-      ]
+      "id": "FB000058",
+      "food": "FD015",
+      "bioactive": "PS003",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Seed/nut oil fraction",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "Low",
+      "notes": "Poorly absorbed; competes with dietary and biliary cholesterol for intestinal absorption."
     },
     {
-      "foodId": "FD066",
-      "bioactives": [
-        {
-          "id": "PP011",
-          "strength": 3,
-          "confidence": 0.85
-        },
-        {
-          "id": "FA004",
-          "strength": 4,
-          "confidence": 0.95
-        },
-        {
-          "id": "FA005",
-          "strength": 4,
-          "confidence": 0.95
-        }
-      ]
+      "id": "FB000059",
+      "food": "FD016",
+      "bioactive": "PP001",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Skin/peel and flesh",
+      "preparation": [
+        "Raw"
+      ],
+      "bioavailability": "Low",
+      "notes": "Polyphenol with genuinely low systemic bioavailability (commonly cited under 5%); most benefit is thought to arise from gut-microbiome metabolites and local antioxidant effects."
+    },
+    {
+      "id": "FB000060",
+      "food": "FD016",
+      "bioactive": "PP011",
+      "strength": 4,
+      "confidence": "High",
+      "part": "Seed coat/hull",
+      "preparation": [
+        "Raw",
+        "Cooked"
+      ],
+      "bioavailability": "Moderate",
+      "notes": "Converted by gut bacteria into enterolignans (enterodiol, enterolactone); grinding/chewing improves release from the seed coat."
+    },
+    {
+      "id": "FB000061",
+      "food": "FD016",
+      "bioactive": "DF007",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Cell walls (whole food)",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "Low",
+      "notes": "Insoluble fibre fraction; acts locally in the gut."
+    },
+    {
+      "id": "FB000062",
+      "food": "FD016",
+      "bioactive": "PP005",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Skin/outer leaves",
+      "preparation": [
+        "Raw"
+      ],
+      "bioavailability": "Moderate",
+      "notes": "Flavonol with moderate, variable absorption depending on food matrix and gut microbiome."
+    },
+    {
+      "id": "FB000063",
+      "food": "FD016",
+      "bioactive": "PS002",
+      "strength": 4,
+      "confidence": "Moderate",
+      "part": "Seed/nut oil fraction",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "Low",
+      "notes": "Poorly absorbed; competes with dietary and biliary cholesterol for intestinal absorption."
+    },
+    {
+      "id": "FB000064",
+      "food": "FD016",
+      "bioactive": "PS003",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Seed/nut oil fraction",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "Low",
+      "notes": "Poorly absorbed; competes with dietary and biliary cholesterol for intestinal absorption."
+    },
+    {
+      "id": "FB000065",
+      "food": "FD017",
+      "bioactive": "DF004",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Whole food (starch fraction)",
+      "preparation": [
+        "Cooked"
+      ],
+      "bioavailability": "Low",
+      "notes": "Resistant to digestion in the small intestine and fermented in the colon; content typically increases when starchy foods are cooked and then cooled."
+    },
+    {
+      "id": "FB000066",
+      "food": "FD017",
+      "bioactive": "PP011",
+      "strength": 4,
+      "confidence": "High",
+      "part": "Seed coat/hull",
+      "preparation": [
+        "Raw",
+        "Cooked"
+      ],
+      "bioavailability": "Moderate",
+      "notes": "Converted by gut bacteria into enterolignans (enterodiol, enterolactone); grinding/chewing improves release from the seed coat."
+    },
+    {
+      "id": "FB000067",
+      "food": "FD017",
+      "bioactive": "DF007",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Cell walls (whole food)",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "Low",
+      "notes": "Insoluble fibre fraction; acts locally in the gut."
+    },
+    {
+      "id": "FB000068",
+      "food": "FD017",
+      "bioactive": "PP005",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Skin/outer leaves",
+      "preparation": [
+        "Raw"
+      ],
+      "bioavailability": "Moderate",
+      "notes": "Flavonol with moderate, variable absorption depending on food matrix and gut microbiome."
+    },
+    {
+      "id": "FB000069",
+      "food": "FD017",
+      "bioactive": "PS002",
+      "strength": 4,
+      "confidence": "Moderate",
+      "part": "Seed/nut oil fraction",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "Low",
+      "notes": "Poorly absorbed; competes with dietary and biliary cholesterol for intestinal absorption."
+    },
+    {
+      "id": "FB000070",
+      "food": "FD017",
+      "bioactive": "PS003",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Seed/nut oil fraction",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "Low",
+      "notes": "Poorly absorbed; competes with dietary and biliary cholesterol for intestinal absorption."
+    },
+    {
+      "id": "FB000071",
+      "food": "FD018",
+      "bioactive": "FA001",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Oil/fat fraction",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "High",
+      "notes": "Readily absorbed as dietary fat, but conversion in the body to the longer-chain omega-3s EPA and DHA is limited, typically well under 10%."
+    },
+    {
+      "id": "FB000072",
+      "food": "FD018",
+      "bioactive": "PP008",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Skin and flesh",
+      "preparation": [
+        "Raw",
+        "Cooked"
+      ],
+      "bioavailability": "Moderate",
+      "notes": "Bioavailability is reduced by roasting at high temperature but the compound remains a major contributor to dietary polyphenol intake."
+    },
+    {
+      "id": "FB000073",
+      "food": "FD018",
+      "bioactive": "PS001",
+      "strength": 4,
+      "confidence": "High",
+      "part": "Seed/nut oil fraction",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "Low",
+      "notes": "Phytosterols are poorly absorbed (typically under 5%); this is central to their cholesterol-lowering mechanism, as they compete with cholesterol for absorption in the gut."
+    },
+    {
+      "id": "FB000074",
+      "food": "FD018",
+      "bioactive": "DF008",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Seed coat/hull",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "Low",
+      "notes": "Insoluble fibre component; not absorbed."
+    },
+    {
+      "id": "FB000075",
+      "food": "FD018",
+      "bioactive": "FA005",
+      "strength": 4,
+      "confidence": "Moderate",
+      "part": "Oil/fat fraction",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "High",
+      "notes": "An essential polyunsaturated fat absorbed efficiently as part of dietary fat."
+    },
+    {
+      "id": "FB000076",
+      "food": "FD018",
+      "bioactive": "PS002",
+      "strength": 4,
+      "confidence": "Moderate",
+      "part": "Seed/nut oil fraction",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "Low",
+      "notes": "Poorly absorbed; competes with dietary and biliary cholesterol for intestinal absorption."
+    },
+    {
+      "id": "FB000077",
+      "food": "FD018",
+      "bioactive": "PS003",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Seed/nut oil fraction",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "Low",
+      "notes": "Poorly absorbed; competes with dietary and biliary cholesterol for intestinal absorption."
+    },
+    {
+      "id": "FB000078",
+      "food": "FD018",
+      "bioactive": "FC007",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Whole food (trace amounts)",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "Low",
+      "notes": "Present only in small, variable amounts in food; dietary contribution is modest compared with the body's own endogenous production."
+    },
+    {
+      "id": "FB000079",
+      "food": "FD019",
+      "bioactive": "FA004",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Oil/fat fraction",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "High",
+      "notes": "A monounsaturated fat absorbed efficiently as part of dietary fat."
+    },
+    {
+      "id": "FB000080",
+      "food": "FD019",
+      "bioactive": "PS001",
+      "strength": 4,
+      "confidence": "High",
+      "part": "Seed/nut oil fraction",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "Low",
+      "notes": "Phytosterols are poorly absorbed (typically under 5%); this is central to their cholesterol-lowering mechanism, as they compete with cholesterol for absorption in the gut."
+    },
+    {
+      "id": "FB000081",
+      "food": "FD019",
+      "bioactive": "DF008",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Seed coat/hull",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "Low",
+      "notes": "Insoluble fibre component; not absorbed."
+    },
+    {
+      "id": "FB000082",
+      "food": "FD019",
+      "bioactive": "FA005",
+      "strength": 4,
+      "confidence": "Moderate",
+      "part": "Oil/fat fraction",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "High",
+      "notes": "An essential polyunsaturated fat absorbed efficiently as part of dietary fat."
+    },
+    {
+      "id": "FB000083",
+      "food": "FD019",
+      "bioactive": "PS002",
+      "strength": 4,
+      "confidence": "Moderate",
+      "part": "Seed/nut oil fraction",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "Low",
+      "notes": "Poorly absorbed; competes with dietary and biliary cholesterol for intestinal absorption."
+    },
+    {
+      "id": "FB000084",
+      "food": "FD019",
+      "bioactive": "PS003",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Seed/nut oil fraction",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "Low",
+      "notes": "Poorly absorbed; competes with dietary and biliary cholesterol for intestinal absorption."
+    },
+    {
+      "id": "FB000085",
+      "food": "FD020",
+      "bioactive": "PS001",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Seed/nut oil fraction",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "Low",
+      "notes": "Phytosterols are poorly absorbed (typically under 5%); this is central to their cholesterol-lowering mechanism, as they compete with cholesterol for absorption in the gut."
+    },
+    {
+      "id": "FB000086",
+      "food": "FD020",
+      "bioactive": "DF008",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Seed coat/hull",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "Low",
+      "notes": "Insoluble fibre component; not absorbed."
+    },
+    {
+      "id": "FB000087",
+      "food": "FD020",
+      "bioactive": "FA005",
+      "strength": 4,
+      "confidence": "Moderate",
+      "part": "Oil/fat fraction",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "High",
+      "notes": "An essential polyunsaturated fat absorbed efficiently as part of dietary fat."
+    },
+    {
+      "id": "FB000088",
+      "food": "FD020",
+      "bioactive": "PS002",
+      "strength": 4,
+      "confidence": "Moderate",
+      "part": "Seed/nut oil fraction",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "Low",
+      "notes": "Poorly absorbed; competes with dietary and biliary cholesterol for intestinal absorption."
+    },
+    {
+      "id": "FB000089",
+      "food": "FD020",
+      "bioactive": "PS003",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Seed/nut oil fraction",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "Low",
+      "notes": "Poorly absorbed; competes with dietary and biliary cholesterol for intestinal absorption."
+    },
+    {
+      "id": "FB000090",
+      "food": "FD021",
+      "bioactive": "DF004",
+      "strength": 4,
+      "confidence": "High",
+      "part": "Whole food (starch fraction)",
+      "preparation": [
+        "Cooked"
+      ],
+      "bioavailability": "Low",
+      "notes": "Resistant to digestion in the small intestine and fermented in the colon; content typically increases when starchy foods are cooked and then cooled."
+    },
+    {
+      "id": "FB000091",
+      "food": "FD021",
+      "bioactive": "FA001",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Oil/fat fraction",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "High",
+      "notes": "Readily absorbed as dietary fat, but conversion in the body to the longer-chain omega-3s EPA and DHA is limited, typically well under 10%."
+    },
+    {
+      "id": "FB000092",
+      "food": "FD021",
+      "bioactive": "DF008",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Seed coat/hull",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "Low",
+      "notes": "Insoluble fibre component; not absorbed."
+    },
+    {
+      "id": "FB000093",
+      "food": "FD021",
+      "bioactive": "FA005",
+      "strength": 4,
+      "confidence": "Moderate",
+      "part": "Oil/fat fraction",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "High",
+      "notes": "An essential polyunsaturated fat absorbed efficiently as part of dietary fat."
+    },
+    {
+      "id": "FB000094",
+      "food": "FD021",
+      "bioactive": "PS002",
+      "strength": 4,
+      "confidence": "Moderate",
+      "part": "Seed/nut oil fraction",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "Low",
+      "notes": "Poorly absorbed; competes with dietary and biliary cholesterol for intestinal absorption."
+    },
+    {
+      "id": "FB000095",
+      "food": "FD021",
+      "bioactive": "PS003",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Seed/nut oil fraction",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "Low",
+      "notes": "Poorly absorbed; competes with dietary and biliary cholesterol for intestinal absorption."
+    },
+    {
+      "id": "FB000096",
+      "food": "FD022",
+      "bioactive": "DF004",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Whole food (starch fraction)",
+      "preparation": [
+        "Cooked"
+      ],
+      "bioavailability": "Low",
+      "notes": "Resistant to digestion in the small intestine and fermented in the colon; content typically increases when starchy foods are cooked and then cooled."
+    },
+    {
+      "id": "FB000097",
+      "food": "FD022",
+      "bioactive": "FA001",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Oil/fat fraction",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "High",
+      "notes": "Readily absorbed as dietary fat, but conversion in the body to the longer-chain omega-3s EPA and DHA is limited, typically well under 10%."
+    },
+    {
+      "id": "FB000098",
+      "food": "FD022",
+      "bioactive": "DF008",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Seed coat/hull",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "Low",
+      "notes": "Insoluble fibre component; not absorbed."
+    },
+    {
+      "id": "FB000099",
+      "food": "FD022",
+      "bioactive": "FA005",
+      "strength": 4,
+      "confidence": "Moderate",
+      "part": "Oil/fat fraction",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "High",
+      "notes": "An essential polyunsaturated fat absorbed efficiently as part of dietary fat."
+    },
+    {
+      "id": "FB000100",
+      "food": "FD022",
+      "bioactive": "PS002",
+      "strength": 4,
+      "confidence": "Moderate",
+      "part": "Seed/nut oil fraction",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "Low",
+      "notes": "Poorly absorbed; competes with dietary and biliary cholesterol for intestinal absorption."
+    },
+    {
+      "id": "FB000101",
+      "food": "FD022",
+      "bioactive": "PS003",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Seed/nut oil fraction",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "Low",
+      "notes": "Poorly absorbed; competes with dietary and biliary cholesterol for intestinal absorption."
+    },
+    {
+      "id": "FB000102",
+      "food": "FD022",
+      "bioactive": "PP011",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Seed coat/hull",
+      "preparation": [
+        "Raw",
+        "Cooked"
+      ],
+      "bioavailability": "Moderate",
+      "notes": "Converted by gut bacteria into enterolignans (enterodiol, enterolactone); grinding/chewing improves release from the seed coat."
+    },
+    {
+      "id": "FB000103",
+      "food": "FD024",
+      "bioactive": "FA004",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Oil/fat fraction",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "High",
+      "notes": "A monounsaturated fat absorbed efficiently as part of dietary fat."
+    },
+    {
+      "id": "FB000104",
+      "food": "FD024",
+      "bioactive": "PP015",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Fruit/oil",
+      "preparation": [
+        "Raw"
+      ],
+      "bioavailability": "High",
+      "notes": "One of the better-absorbed dietary polyphenols; EFSA recognises a health claim for olive oil polyphenols and LDL protection from oxidative damage."
+    },
+    {
+      "id": "FB000105",
+      "food": "FD024",
+      "bioactive": "FA005",
+      "strength": 4,
+      "confidence": "Moderate",
+      "part": "Oil/fat fraction",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "High",
+      "notes": "An essential polyunsaturated fat absorbed efficiently as part of dietary fat."
+    },
+    {
+      "id": "FB000106",
+      "food": "FD024",
+      "bioactive": "PS002",
+      "strength": 4,
+      "confidence": "Moderate",
+      "part": "Seed/nut oil fraction",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "Low",
+      "notes": "Poorly absorbed; competes with dietary and biliary cholesterol for intestinal absorption."
+    },
+    {
+      "id": "FB000107",
+      "food": "FD024",
+      "bioactive": "PS003",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Seed/nut oil fraction",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "Low",
+      "notes": "Poorly absorbed; competes with dietary and biliary cholesterol for intestinal absorption."
+    },
+    {
+      "id": "FB000108",
+      "food": "FD025",
+      "bioactive": "OS001",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Whole bulb (formed enzymatically on damage)",
+      "preparation": [
+        "Crushed",
+        "Crushed and Rested"
+      ],
+      "bioavailability": "Variable",
+      "notes": "Only forms when raw garlic is cut or crushed, activating the enzyme alliinase; resting crushed garlic for several minutes before cooking preserves more of the compound, and it degrades quickly with heat."
+    },
+    {
+      "id": "FB000109",
+      "food": "FD025",
+      "bioactive": "OS004",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Whole bulb",
+      "preparation": [
+        "Crushed",
+        "Cooked"
+      ],
+      "bioavailability": "Variable",
+      "notes": "Formed from allicin breakdown; contributes to the characteristic aroma of cooked allium vegetables."
+    },
+    {
+      "id": "FB000110",
+      "food": "FD026",
+      "bioactive": "DF003",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Root/bulb",
+      "preparation": [
+        "Raw",
+        "Cooked"
+      ],
+      "bioavailability": "Low",
+      "notes": "Fermentable fibre metabolised by gut bacteria rather than absorbed intact."
+    },
+    {
+      "id": "FB000111",
+      "food": "FD026",
+      "bioactive": "PP002",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Skin/outer layer",
+      "preparation": [
+        "Raw"
+      ],
+      "bioavailability": "Moderate",
+      "notes": "Absorption varies with the sugar moiety attached (glycoside form) and individual gut microbiome composition."
+    },
+    {
+      "id": "FB000112",
+      "food": "FD026",
+      "bioactive": "OS005",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Whole vegetable",
+      "preparation": [
+        "Raw",
+        "Cooked"
+      ],
+      "bioavailability": "Moderate",
+      "notes": "A sulphur compound characteristic of brassica and allium vegetables."
+    },
+    {
+      "id": "FB000113",
+      "food": "FD027",
+      "bioactive": "CA001",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Flesh",
+      "preparation": [
+        "Cooked"
+      ],
+      "bioavailability": "Variable",
+      "notes": "Bioavailability is substantially improved by cooking and by co-ingestion with fat, which helps release this fat-soluble carotenoid from the plant cell matrix."
+    },
+    {
+      "id": "FB000114",
+      "food": "FD027",
+      "bioactive": "CA004",
+      "strength": 4,
+      "confidence": "High",
+      "part": "Flesh/leaves",
+      "preparation": [
+        "Cooked"
+      ],
+      "bioavailability": "Variable",
+      "notes": "Fat-soluble provitamin-A carotenoid; absorption is markedly improved by cooking and by co-ingested fat."
+    },
+    {
+      "id": "FB000115",
+      "food": "FD028",
+      "bioactive": "FA004",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Oil/fat fraction",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "High",
+      "notes": "A monounsaturated fat absorbed efficiently as part of dietary fat."
+    },
+    {
+      "id": "FB000116",
+      "food": "FD028",
+      "bioactive": "PS001",
+      "strength": 4,
+      "confidence": "High",
+      "part": "Seed/nut oil fraction",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "Low",
+      "notes": "Phytosterols are poorly absorbed (typically under 5%); this is central to their cholesterol-lowering mechanism, as they compete with cholesterol for absorption in the gut."
+    },
+    {
+      "id": "FB000117",
+      "food": "FD030",
+      "bioactive": "FA002",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Fat fraction (oily fish)",
+      "preparation": [
+        "Cooked",
+        "Raw"
+      ],
+      "bioavailability": "High",
+      "notes": "A long-chain omega-3 fatty acid absorbed efficiently as part of dietary fat."
+    },
+    {
+      "id": "FB000118",
+      "food": "FD030",
+      "bioactive": "FA003",
+      "strength": 4,
+      "confidence": "High",
+      "part": "Fat fraction (oily fish)",
+      "preparation": [
+        "Cooked",
+        "Raw"
+      ],
+      "bioavailability": "High",
+      "notes": "A long-chain omega-3 fatty acid absorbed efficiently as part of dietary fat."
+    },
+    {
+      "id": "FB000119",
+      "food": "FD030",
+      "bioactive": "CA006",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Flesh",
+      "preparation": [
+        "Cooked"
+      ],
+      "bioavailability": "Variable",
+      "notes": "Fat-soluble carotenoid; absorption benefits from co-ingested dietary fat."
+    },
+    {
+      "id": "FB000120",
+      "food": "FD030",
+      "bioactive": "FC009",
+      "strength": 4,
+      "confidence": "Moderate",
+      "part": "Muscle/dairy tissue",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "High",
+      "notes": "Readily absorbed; animal foods are the principal dietary source since plant foods contain negligible amounts."
+    },
+    {
+      "id": "FB000121",
+      "food": "FD030",
+      "bioactive": "FC010",
+      "strength": 4,
+      "confidence": "Moderate",
+      "part": "Muscle tissue",
+      "preparation": [
+        "Cooked"
+      ],
+      "bioavailability": "High",
+      "notes": "Red meat is the richest common dietary source; well absorbed and also synthesised endogenously."
+    },
+    {
+      "id": "FB000122",
+      "food": "FD031",
+      "bioactive": "FA002",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Fat fraction (oily fish)",
+      "preparation": [
+        "Cooked",
+        "Raw"
+      ],
+      "bioavailability": "High",
+      "notes": "A long-chain omega-3 fatty acid absorbed efficiently as part of dietary fat."
+    },
+    {
+      "id": "FB000123",
+      "food": "FD031",
+      "bioactive": "FA003",
+      "strength": 4,
+      "confidence": "High",
+      "part": "Fat fraction (oily fish)",
+      "preparation": [
+        "Cooked",
+        "Raw"
+      ],
+      "bioavailability": "High",
+      "notes": "A long-chain omega-3 fatty acid absorbed efficiently as part of dietary fat."
+    },
+    {
+      "id": "FB000124",
+      "food": "FD031",
+      "bioactive": "FC009",
+      "strength": 4,
+      "confidence": "Moderate",
+      "part": "Muscle/dairy tissue",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "High",
+      "notes": "Readily absorbed; animal foods are the principal dietary source since plant foods contain negligible amounts."
+    },
+    {
+      "id": "FB000125",
+      "food": "FD031",
+      "bioactive": "FC010",
+      "strength": 4,
+      "confidence": "Moderate",
+      "part": "Muscle tissue",
+      "preparation": [
+        "Cooked"
+      ],
+      "bioavailability": "High",
+      "notes": "Red meat is the richest common dietary source; well absorbed and also synthesised endogenously."
+    },
+    {
+      "id": "FB000126",
+      "food": "FD032",
+      "bioactive": "FA002",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Fat fraction (oily fish)",
+      "preparation": [
+        "Cooked",
+        "Raw"
+      ],
+      "bioavailability": "High",
+      "notes": "A long-chain omega-3 fatty acid absorbed efficiently as part of dietary fat."
+    },
+    {
+      "id": "FB000127",
+      "food": "FD032",
+      "bioactive": "FA003",
+      "strength": 4,
+      "confidence": "High",
+      "part": "Fat fraction (oily fish)",
+      "preparation": [
+        "Cooked",
+        "Raw"
+      ],
+      "bioavailability": "High",
+      "notes": "A long-chain omega-3 fatty acid absorbed efficiently as part of dietary fat."
+    },
+    {
+      "id": "FB000128",
+      "food": "FD032",
+      "bioactive": "FC009",
+      "strength": 4,
+      "confidence": "Moderate",
+      "part": "Muscle/dairy tissue",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "High",
+      "notes": "Readily absorbed; animal foods are the principal dietary source since plant foods contain negligible amounts."
+    },
+    {
+      "id": "FB000129",
+      "food": "FD032",
+      "bioactive": "FC010",
+      "strength": 4,
+      "confidence": "Moderate",
+      "part": "Muscle tissue",
+      "preparation": [
+        "Cooked"
+      ],
+      "bioavailability": "High",
+      "notes": "Red meat is the richest common dietary source; well absorbed and also synthesised endogenously."
+    },
+    {
+      "id": "FB000130",
+      "food": "FD033",
+      "bioactive": "FA002",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Fat fraction (oily fish)",
+      "preparation": [
+        "Cooked",
+        "Raw"
+      ],
+      "bioavailability": "High",
+      "notes": "A long-chain omega-3 fatty acid absorbed efficiently as part of dietary fat."
+    },
+    {
+      "id": "FB000131",
+      "food": "FD033",
+      "bioactive": "FA003",
+      "strength": 4,
+      "confidence": "High",
+      "part": "Fat fraction (oily fish)",
+      "preparation": [
+        "Cooked",
+        "Raw"
+      ],
+      "bioavailability": "High",
+      "notes": "A long-chain omega-3 fatty acid absorbed efficiently as part of dietary fat."
+    },
+    {
+      "id": "FB000132",
+      "food": "FD033",
+      "bioactive": "FC009",
+      "strength": 4,
+      "confidence": "Moderate",
+      "part": "Muscle/dairy tissue",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "High",
+      "notes": "Readily absorbed; animal foods are the principal dietary source since plant foods contain negligible amounts."
+    },
+    {
+      "id": "FB000133",
+      "food": "FD033",
+      "bioactive": "FC010",
+      "strength": 4,
+      "confidence": "Moderate",
+      "part": "Muscle tissue",
+      "preparation": [
+        "Cooked"
+      ],
+      "bioavailability": "High",
+      "notes": "Red meat is the richest common dietary source; well absorbed and also synthesised endogenously."
+    },
+    {
+      "id": "FB000134",
+      "food": "FD037",
+      "bioactive": "OS002",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Whole vegetable (formed enzymatically on damage)",
+      "preparation": [
+        "Raw",
+        "Chopped",
+        "Lightly Steamed"
+      ],
+      "bioavailability": "Variable",
+      "notes": "Formed from glucoraphanin via the enzyme myrosinase when the plant is cut or chewed; heavy cooking destroys myrosinase and substantially reduces formation, so light steaming or raw/chopped preparation preserves more."
+    },
+    {
+      "id": "FB000135",
+      "food": "FD038",
+      "bioactive": "FC001",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Rhizome",
+      "preparation": [
+        "Cooked",
+        "Raw"
+      ],
+      "bioavailability": "Low",
+      "notes": "Notoriously poor oral bioavailability alone; absorption is markedly enhanced by co-consuming black pepper (piperine) and dietary fat."
+    },
+    {
+      "id": "FB000136",
+      "food": "FD039",
+      "bioactive": "FC004",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Rhizome",
+      "preparation": [
+        "Raw",
+        "Cooked"
+      ],
+      "bioavailability": "Moderate",
+      "notes": "Partly converted to shogaol on drying/cooking."
+    },
+    {
+      "id": "FB000137",
+      "food": "FD039",
+      "bioactive": "FC005",
+      "strength": 4,
+      "confidence": "High",
+      "part": "Rhizome (dried/cooked)",
+      "preparation": [
+        "Cooked",
+        "Dried"
+      ],
+      "bioavailability": "Moderate",
+      "notes": "Formed from gingerol through dehydration during drying or cooking."
+    },
+    {
+      "id": "FB000138",
+      "food": "FD043",
+      "bioactive": "PP001",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Skin/peel and flesh",
+      "preparation": [
+        "Raw"
+      ],
+      "bioavailability": "Low",
+      "notes": "Polyphenol with genuinely low systemic bioavailability (commonly cited under 5%); most benefit is thought to arise from gut-microbiome metabolites and local antioxidant effects."
+    },
+    {
+      "id": "FB000139",
+      "food": "FD043",
+      "bioactive": "PP005",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Skin/outer leaves",
+      "preparation": [
+        "Raw"
+      ],
+      "bioavailability": "Moderate",
+      "notes": "Flavonol with moderate, variable absorption depending on food matrix and gut microbiome."
+    },
+    {
+      "id": "FB000140",
+      "food": "FD044",
+      "bioactive": "PP007",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Skin/seeds",
+      "preparation": [
+        "Raw"
+      ],
+      "bioavailability": "Low",
+      "notes": "Absorbed poorly as the free acid; most benefit is attributed to gut-microbiome-derived urolithin metabolites."
+    },
+    {
+      "id": "FB000141",
+      "food": "FD044",
+      "bioactive": "PP005",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Skin/outer leaves",
+      "preparation": [
+        "Raw"
+      ],
+      "bioavailability": "Moderate",
+      "notes": "Flavonol with moderate, variable absorption depending on food matrix and gut microbiome."
+    },
+    {
+      "id": "FB000142",
+      "food": "FD045",
+      "bioactive": "PP008",
+      "strength": 4,
+      "confidence": "High",
+      "part": "Skin and flesh",
+      "preparation": [
+        "Raw",
+        "Cooked"
+      ],
+      "bioavailability": "Moderate",
+      "notes": "Bioavailability is reduced by roasting at high temperature but the compound remains a major contributor to dietary polyphenol intake."
+    },
+    {
+      "id": "FB000143",
+      "food": "FD046",
+      "bioactive": "PP004",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Bean/seed (fermented and roasted)",
+      "preparation": [
+        "Cooked"
+      ],
+      "bioavailability": "Moderate",
+      "notes": "Corrected from an earlier erroneous Curcumin mapping (that compound is specific to turmeric): cocoa is one of the most-cited dietary sources of epicatechin."
+    },
+    {
+      "id": "FB000144",
+      "food": "FD046",
+      "bioactive": "PP003",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Whole food",
+      "preparation": [
+        "Raw"
+      ],
+      "bioavailability": "Moderate",
+      "notes": "Absorption is moderate and influenced by co-consumed food matrix."
+    },
+    {
+      "id": "FB000145",
+      "food": "FD047",
+      "bioactive": "PP014",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Fruit and leaf",
+      "preparation": [
+        "Raw",
+        "Fermented"
+      ],
+      "bioavailability": "Moderate",
+      "notes": "Broken down to hydroxytyrosol during curing/fermentation, which is itself well absorbed."
+    },
+    {
+      "id": "FB000146",
+      "food": "FD047",
+      "bioactive": "PP015",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Fruit/oil",
+      "preparation": [
+        "Raw"
+      ],
+      "bioavailability": "High",
+      "notes": "One of the better-absorbed dietary polyphenols; EFSA recognises a health claim for olive oil polyphenols and LDL protection from oxidative damage."
+    },
+    {
+      "id": "FB000147",
+      "food": "FD048",
+      "bioactive": "DF003",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Root/bulb",
+      "preparation": [
+        "Raw",
+        "Cooked"
+      ],
+      "bioavailability": "Low",
+      "notes": "Fermentable fibre metabolised by gut bacteria rather than absorbed intact."
+    },
+    {
+      "id": "FB000148",
+      "food": "FD049",
+      "bioactive": "FC015",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Whole organism",
+      "preparation": [
+        "Raw",
+        "Dried"
+      ],
+      "bioavailability": "Variable",
+      "notes": "A pigment-protein complex unique to blue-green algae; degraded by heat, so best preserved in raw/lightly processed forms."
+    },
+    {
+      "id": "FB000149",
+      "food": "FD049",
+      "bioactive": "CA004",
+      "strength": 3,
+      "confidence": "Emerging",
+      "part": "Flesh/leaves",
+      "preparation": [
+        "Cooked"
+      ],
+      "bioavailability": "Variable",
+      "notes": "Fat-soluble provitamin-A carotenoid; absorption is markedly improved by cooking and by co-ingested fat."
+    },
+    {
+      "id": "FB000150",
+      "food": "FD050",
+      "bioactive": "FC016",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Root",
+      "preparation": [
+        "Raw",
+        "Cooked",
+        "Juiced"
+      ],
+      "bioavailability": "Moderate",
+      "notes": "Nitrogen-containing pigments giving beetroot its colour; partially heat-sensitive."
+    },
+    {
+      "id": "FB000151",
+      "food": "FD050",
+      "bioactive": "FC020",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Root",
+      "preparation": [
+        "Raw",
+        "Cooked",
+        "Juiced"
+      ],
+      "bioavailability": "High",
+      "notes": "Converted in the body to nitrite and then nitric oxide via the gut-bacteria-dependent enteric-salivary nitrate pathway."
+    },
+    {
+      "id": "FB000152",
+      "food": "FD051",
+      "bioactive": "FC017",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Fruit/berry",
+      "preparation": [
+        "Dried"
+      ],
+      "bioavailability": "Moderate",
+      "notes": "One of the principal lignan-type actives characteristic of Schisandra berry."
+    },
+    {
+      "id": "FB000153",
+      "food": "FD052",
+      "bioactive": "FC018",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Root",
+      "preparation": [
+        "Dried"
+      ],
+      "bioavailability": "Moderate",
+      "notes": "A group of phenylpropanoid glycosides considered characteristic markers of Rhodiola root."
+    },
+    {
+      "id": "FB000154",
+      "food": "FD052",
+      "bioactive": "FC019",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Root",
+      "preparation": [
+        "Dried"
+      ],
+      "bioavailability": "Moderate",
+      "notes": "A phenolic glycoside considered a characteristic marker compound of Rhodiola root."
+    },
+    {
+      "id": "FB000155",
+      "food": "FD023",
+      "bioactive": "DF008",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Seed coat/hull",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "Low",
+      "notes": "Insoluble fibre component; not absorbed."
+    },
+    {
+      "id": "FB000156",
+      "food": "FD023",
+      "bioactive": "FA005",
+      "strength": 4,
+      "confidence": "Moderate",
+      "part": "Oil/fat fraction",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "High",
+      "notes": "An essential polyunsaturated fat absorbed efficiently as part of dietary fat."
+    },
+    {
+      "id": "FB000157",
+      "food": "FD023",
+      "bioactive": "PS002",
+      "strength": 4,
+      "confidence": "Moderate",
+      "part": "Seed/nut oil fraction",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "Low",
+      "notes": "Poorly absorbed; competes with dietary and biliary cholesterol for intestinal absorption."
+    },
+    {
+      "id": "FB000158",
+      "food": "FD023",
+      "bioactive": "PS003",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Seed/nut oil fraction",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "Low",
+      "notes": "Poorly absorbed; competes with dietary and biliary cholesterol for intestinal absorption."
+    },
+    {
+      "id": "FB000159",
+      "food": "FD034",
+      "bioactive": "FC009",
+      "strength": 4,
+      "confidence": "Moderate",
+      "part": "Muscle/dairy tissue",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "High",
+      "notes": "Readily absorbed; animal foods are the principal dietary source since plant foods contain negligible amounts."
+    },
+    {
+      "id": "FB000160",
+      "food": "FD035",
+      "bioactive": "FC009",
+      "strength": 4,
+      "confidence": "Moderate",
+      "part": "Muscle/dairy tissue",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "High",
+      "notes": "Readily absorbed; animal foods are the principal dietary source since plant foods contain negligible amounts."
+    },
+    {
+      "id": "FB000161",
+      "food": "FD040",
+      "bioactive": "FC006",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Bark",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "Moderate",
+      "notes": "The compound responsible for cinnamon's characteristic flavour and aroma."
+    },
+    {
+      "id": "FB000162",
+      "food": "FD053",
+      "bioactive": "CA005",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Flesh",
+      "preparation": [
+        "Cooked"
+      ],
+      "bioavailability": "Variable",
+      "notes": "Fat-soluble carotenoid; absorption is improved by cooking and by co-ingested fat."
+    },
+    {
+      "id": "FB000163",
+      "food": "FD054",
+      "bioactive": "PP010",
+      "strength": 4,
+      "confidence": "High",
+      "part": "Peel and pith (concentrated), also in flesh/juice",
+      "preparation": [
+        "Raw"
+      ],
+      "bioavailability": "Moderate",
+      "notes": "Responsible for grapefruit's bitterness; absorption depends on gut-bacterial hydrolysis of its glycoside form."
+    },
+    {
+      "id": "FB000164",
+      "food": "FD054",
+      "bioactive": "TP001",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Peel/zest (essential oil)",
+      "preparation": [
+        "Raw"
+      ],
+      "bioavailability": "Variable",
+      "notes": "Concentrated in the aromatic peel oil rather than the edible flesh; absorption from the small amounts typically consumed is modest."
+    },
+    {
+      "id": "FB000165",
+      "food": "FD055",
+      "bioactive": "FC002",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Fruit (dried peppercorn)",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "High",
+      "notes": "Well absorbed itself, and increases the bioavailability of co-consumed compounds such as curcumin."
+    },
+    {
+      "id": "FB000166",
+      "food": "FD056",
+      "bioactive": "FC003",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Fruit (pith and seeds concentrated)",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "High",
+      "notes": "Well absorbed; the pungency-causing compound responsible for chilli's characteristic heat."
+    },
+    {
+      "id": "FB000167",
+      "food": "FD057",
+      "bioactive": "PP013",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Skin/seeds",
+      "preparation": [
+        "Raw"
+      ],
+      "bioavailability": "Low",
+      "notes": "Larger, more polymerised tannins with limited direct absorption; partly metabolised by gut bacteria."
+    },
+    {
+      "id": "FB000168",
+      "food": "FD057",
+      "bioactive": "PP006",
+      "strength": 4,
+      "confidence": "High",
+      "part": "Skin",
+      "preparation": [
+        "Raw"
+      ],
+      "bioavailability": "Low",
+      "notes": "Notably poor oral bioavailability due to rapid first-pass metabolism; most human trial doses greatly exceed typical dietary intake."
+    },
+    {
+      "id": "FB000169",
+      "food": "FD057",
+      "bioactive": "PP001",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Skin/peel and flesh",
+      "preparation": [
+        "Raw"
+      ],
+      "bioavailability": "Low",
+      "notes": "Polyphenol with genuinely low systemic bioavailability (commonly cited under 5%); most benefit is thought to arise from gut-microbiome metabolites and local antioxidant effects."
+    },
+    {
+      "id": "FB000170",
+      "food": "FD058",
+      "bioactive": "PP009",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Peel and pith (concentrated), also in flesh/juice",
+      "preparation": [
+        "Raw"
+      ],
+      "bioavailability": "Moderate",
+      "notes": "A citrus flavanone glycoside; absorption depends on hydrolysis by gut bacteria."
+    },
+    {
+      "id": "FB000171",
+      "food": "FD058",
+      "bioactive": "TP001",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Peel/zest (essential oil)",
+      "preparation": [
+        "Raw"
+      ],
+      "bioavailability": "Variable",
+      "notes": "Concentrated in the aromatic peel oil rather than the edible flesh; absorption from the small amounts typically consumed is modest."
+    },
+    {
+      "id": "FB000172",
+      "food": "FD059",
+      "bioactive": "PP009",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Peel and pith (concentrated), also in flesh/juice",
+      "preparation": [
+        "Raw"
+      ],
+      "bioavailability": "Moderate",
+      "notes": "A citrus flavanone glycoside; absorption depends on hydrolysis by gut bacteria."
+    },
+    {
+      "id": "FB000173",
+      "food": "FD059",
+      "bioactive": "TP001",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Peel/zest (essential oil)",
+      "preparation": [
+        "Raw"
+      ],
+      "bioavailability": "Variable",
+      "notes": "Concentrated in the aromatic peel oil rather than the edible flesh; absorption from the small amounts typically consumed is modest."
+    },
+    {
+      "id": "FB000174",
+      "food": "FD060",
+      "bioactive": "PP009",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Peel and pith (concentrated), also in flesh/juice",
+      "preparation": [
+        "Raw"
+      ],
+      "bioavailability": "Moderate",
+      "notes": "A citrus flavanone glycoside; absorption depends on hydrolysis by gut bacteria."
+    },
+    {
+      "id": "FB000175",
+      "food": "FD060",
+      "bioactive": "TP001",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Peel/zest (essential oil)",
+      "preparation": [
+        "Raw"
+      ],
+      "bioavailability": "Variable",
+      "notes": "Concentrated in the aromatic peel oil rather than the edible flesh; absorption from the small amounts typically consumed is modest."
+    },
+    {
+      "id": "FB000176",
+      "food": "FD064",
+      "bioactive": "PP016",
+      "strength": 4,
+      "confidence": "High",
+      "part": "Leaf/bract",
+      "preparation": [
+        "Cooked"
+      ],
+      "bioavailability": "Moderate",
+      "notes": "A family of chlorogenic-acid-related compounds; absorption is comparable to other caffeoylquinic acids."
+    },
+    {
+      "id": "FB000177",
+      "food": "FD065",
+      "bioactive": "PP011",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Seed coat/hull",
+      "preparation": [
+        "Raw",
+        "Cooked"
+      ],
+      "bioavailability": "Moderate",
+      "notes": "Converted by gut bacteria into enterolignans (enterodiol, enterolactone); grinding/chewing improves release from the seed coat."
+    },
+    {
+      "id": "FB000178",
+      "food": "FD065",
+      "bioactive": "FA004",
+      "strength": 4,
+      "confidence": "High",
+      "part": "Oil/fat fraction",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "High",
+      "notes": "A monounsaturated fat absorbed efficiently as part of dietary fat."
+    },
+    {
+      "id": "FB000179",
+      "food": "FD065",
+      "bioactive": "FA005",
+      "strength": 4,
+      "confidence": "High",
+      "part": "Oil/fat fraction",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "High",
+      "notes": "An essential polyunsaturated fat absorbed efficiently as part of dietary fat."
+    },
+    {
+      "id": "FB000180",
+      "food": "FD066",
+      "bioactive": "PP011",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Seed coat/hull",
+      "preparation": [
+        "Raw",
+        "Cooked"
+      ],
+      "bioavailability": "Moderate",
+      "notes": "Converted by gut bacteria into enterolignans (enterodiol, enterolactone); grinding/chewing improves release from the seed coat."
+    },
+    {
+      "id": "FB000181",
+      "food": "FD066",
+      "bioactive": "FA004",
+      "strength": 4,
+      "confidence": "High",
+      "part": "Oil/fat fraction",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "High",
+      "notes": "A monounsaturated fat absorbed efficiently as part of dietary fat."
+    },
+    {
+      "id": "FB000182",
+      "food": "FD066",
+      "bioactive": "FA005",
+      "strength": 4,
+      "confidence": "High",
+      "part": "Oil/fat fraction",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "High",
+      "notes": "An essential polyunsaturated fat absorbed efficiently as part of dietary fat."
+    },
+    {
+      "id": "FB000183",
+      "food": "FD053",
+      "bioactive": "CA004",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Flesh/leaves",
+      "preparation": [
+        "Cooked"
+      ],
+      "bioavailability": "Variable",
+      "notes": "Carrots contain substantial beta-carotene alongside alpha-carotene; beta-carotene is generally the larger contributor of the two."
+    },
+    {
+      "id": "FB000184",
+      "food": "FD029",
+      "bioactive": "DF001",
+      "strength": 4,
+      "confidence": "Moderate",
+      "part": "Fruiting body (cell wall)",
+      "preparation": [
+        "Raw",
+        "Cooked"
+      ],
+      "bioavailability": "Low",
+      "notes": "Soluble fibre acting locally in the gut; not systemically absorbed. EFSA-recognised cholesterol-lowering claim applies to oat and barley beta-glucan specifically."
+    },
+    {
+      "id": "FB000185",
+      "food": "FD036",
+      "bioactive": "OS003",
+      "strength": 2,
+      "confidence": "Moderate",
+      "part": "Whole vegetable (fermented)",
+      "preparation": [
+        "Fermented"
+      ],
+      "bioavailability": "Variable",
+      "notes": "Lacto-fermentation alters rather than eliminates cabbage's glucosinolate content; levels are generally lower than in fresh raw cabbage."
+    },
+    {
+      "id": "FB000186",
+      "food": "FD036",
+      "bioactive": "OS006",
+      "strength": 2,
+      "confidence": "Emerging",
+      "part": "Whole vegetable (fermented)",
+      "preparation": [
+        "Fermented"
+      ],
+      "bioavailability": "Variable",
+      "notes": "Formed from glucosinolate breakdown; can dimerise to DIM in the acidic stomach environment."
+    },
+    {
+      "id": "FB000187",
+      "food": "FD042",
+      "bioactive": "TP004",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Leaf (essential oil)",
+      "preparation": [
+        "Raw",
+        "Cooked"
+      ],
+      "bioavailability": "Variable",
+      "notes": "Oregano is one of the richest common dietary sources of carvacrol."
+    },
+    {
+      "id": "FB000188",
+      "food": "FD042",
+      "bioactive": "TP003",
+      "strength": 4,
+      "confidence": "Moderate",
+      "part": "Leaf (essential oil)",
+      "preparation": [
+        "Raw",
+        "Cooked"
+      ],
+      "bioavailability": "Variable",
+      "notes": "Concentrated in the essential oil fraction; content is reduced by prolonged cooking."
+    },
+    {
+      "id": "FB000189",
+      "food": "FD061",
+      "bioactive": "CA002",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Egg yolk",
+      "preparation": [
+        "Cooked",
+        "Raw"
+      ],
+      "bioavailability": "High",
+      "notes": "Egg yolk lutein and zeaxanthin sit within a fat- and cholesterol-rich matrix that gives markedly higher absorption than the same carotenoids from leafy greens."
+    },
+    {
+      "id": "FB000190",
+      "food": "FD061",
+      "bioactive": "CA003",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Egg yolk",
+      "preparation": [
+        "Cooked",
+        "Raw"
+      ],
+      "bioavailability": "High",
+      "notes": "Benefits from the same highly bioavailable yolk fat matrix as lutein."
+    },
+    {
+      "id": "FB000191",
+      "food": "FD062",
+      "bioactive": "PP001",
+      "strength": 4,
+      "confidence": "Moderate",
+      "part": "Arils/juice",
+      "preparation": [
+        "Raw"
+      ],
+      "bioavailability": "Low",
+      "notes": "Polyphenol with genuinely low systemic bioavailability (commonly cited under 5%); most benefit is thought to arise from gut-microbiome metabolites and local antioxidant effects."
+    },
+    {
+      "id": "FB000192",
+      "food": "FD062",
+      "bioactive": "PP007",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Peel and pith (concentrated), also in arils",
+      "preparation": [
+        "Raw"
+      ],
+      "bioavailability": "Low",
+      "notes": "Ellagitannins are concentrated in the peel and pith rather than the edible arils/juice alone; most benefit is attributed to gut-microbiome-derived urolithin metabolites."
+    },
+    {
+      "id": "FB000193",
+      "food": "FD062",
+      "bioactive": "PP013",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Peel/pith",
+      "preparation": [
+        "Raw"
+      ],
+      "bioavailability": "Low",
+      "notes": "Larger, more polymerised tannins with limited direct absorption; partly metabolised by gut bacteria."
+    },
+    {
+      "id": "FB000194",
+      "food": "FD067",
+      "bioactive": "PP017",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Whole bean",
+      "preparation": [
+        "Cooked"
+      ],
+      "bioavailability": "Variable",
+      "notes": "Metabolism, including conversion to the more bioactive equol by gut bacteria, varies substantially between individuals ('equol producer' phenomenon)."
+    },
+    {
+      "id": "FB000195",
+      "food": "FD068",
+      "bioactive": "PP017",
+      "strength": 4,
+      "confidence": "Moderate",
+      "part": "Bean curd",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "Variable",
+      "notes": "Absorption and metabolism (including conversion to equol) vary substantially between individuals depending on gut microbiome composition."
+    },
+    {
+      "id": "FB000196",
+      "food": "FD069",
+      "bioactive": "PP017",
+      "strength": 4,
+      "confidence": "High",
+      "part": "Fermented bean cake",
+      "preparation": [
+        "Fermented"
+      ],
+      "bioavailability": "High",
+      "notes": "Fermentation converts glycoside-form isoflavones into more readily absorbed aglycone forms."
+    },
+    {
+      "id": "FB000197",
+      "food": "FD070",
+      "bioactive": "FC009",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Muscle tissue",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "High",
+      "notes": "Readily absorbed; animal foods are the principal dietary source since plant foods contain negligible amounts."
+    },
+    {
+      "id": "FB000198",
+      "food": "FD070",
+      "bioactive": "FC010",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Muscle tissue",
+      "preparation": [
+        "Cooked"
+      ],
+      "bioavailability": "High",
+      "notes": "Red meat is the richest common dietary source; well absorbed and also synthesised endogenously."
+    },
+    {
+      "id": "FB000199",
+      "food": "FD071",
+      "bioactive": "FC009",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Muscle tissue",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "High",
+      "notes": "Readily absorbed; animal foods are the principal dietary source since plant foods contain negligible amounts."
+    },
+    {
+      "id": "FB000200",
+      "food": "FD071",
+      "bioactive": "FC010",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Muscle tissue",
+      "preparation": [
+        "Cooked"
+      ],
+      "bioavailability": "High",
+      "notes": "Red meat is the richest common dietary source; well absorbed and also synthesised endogenously."
+    },
+    {
+      "id": "FB000201",
+      "food": "FD072",
+      "bioactive": "FC010",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Muscle tissue",
+      "preparation": [
+        "Cooked"
+      ],
+      "bioavailability": "High",
+      "notes": "Red meat is the richest common dietary source of creatine."
+    },
+    {
+      "id": "FB000202",
+      "food": "FD072",
+      "bioactive": "FC009",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Muscle tissue",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "High",
+      "notes": "Readily absorbed; animal foods are the principal dietary source since plant foods contain negligible amounts."
+    },
+    {
+      "id": "FB000203",
+      "food": "FD072",
+      "bioactive": "FC008",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Muscle tissue",
+      "preparation": [
+        "Cooked"
+      ],
+      "bioavailability": "Moderate",
+      "notes": "Endogenously synthesised in the body as well as obtained from the diet; muscle meats are among the richer dietary sources."
+    },
+    {
+      "id": "FB000204",
+      "food": "FD076",
+      "bioactive": "DF001",
+      "strength": 2,
+      "confidence": "Emerging",
+      "part": "Processed oat base (variable retention)",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "Variable",
+      "notes": "Beta-glucan retention in commercial oat milk varies significantly by brand and processing method, and is generally lower than in whole oats."
+    },
+    {
+      "id": "FB000205",
+      "food": "FD078",
+      "bioactive": "PP017",
+      "strength": 3,
+      "confidence": "Emerging",
+      "part": "Processed soy base",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "Variable",
+      "notes": "Isoflavone content is diluted relative to whole soybeans and varies by brand and fortification."
+    },
+    {
+      "id": "FB000206",
+      "food": "FD079",
+      "bioactive": "PP011",
+      "strength": 2,
+      "confidence": "Moderate",
+      "part": "Bran layer",
+      "preparation": [
+        "Raw",
+        "Cooked"
+      ],
+      "bioavailability": "Moderate",
+      "notes": "Converted by gut bacteria into enterolignans (enterodiol, enterolactone); grinding/chewing improves release from the seed coat."
+    },
+    {
+      "id": "FB000207",
+      "food": "FD079",
+      "bioactive": "DF004",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Whole grain (starch fraction)",
+      "preparation": [
+        "Cooked"
+      ],
+      "bioavailability": "Low",
+      "notes": "Resistant to digestion in the small intestine and fermented in the colon; content typically increases when starchy foods are cooked and then cooled."
+    },
+    {
+      "id": "FB000208",
+      "food": "FD080",
+      "bioactive": "PP002",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Outer seed layer",
+      "preparation": [
+        "Raw"
+      ],
+      "bioavailability": "Moderate",
+      "notes": "Absorption varies with the sugar moiety attached (glycoside form) and individual gut microbiome composition."
+    },
+    {
+      "id": "FB000209",
+      "food": "FD080",
+      "bioactive": "PP005",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Outer seed layer",
+      "preparation": [
+        "Raw"
+      ],
+      "bioavailability": "Moderate",
+      "notes": "Flavonol with moderate, variable absorption depending on food matrix and gut microbiome."
+    },
+    {
+      "id": "FB000210",
+      "food": "FD081",
+      "bioactive": "DF001",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Bran/endosperm cell walls",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "Low",
+      "notes": "Alongside oats, barley is one of the two richest common dietary sources of beta-glucan, and carries the same EFSA cholesterol-lowering claim."
+    },
+    {
+      "id": "FB000211",
+      "food": "FD082",
+      "bioactive": "PP018",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Whole groat/hull",
+      "preparation": [
+        "Cooked"
+      ],
+      "bioavailability": "Moderate",
+      "notes": "Buckwheat is the most concentrated common dietary source of rutin."
+    },
+    {
+      "id": "FB000212",
+      "food": "FD082",
+      "bioactive": "PP002",
+      "strength": 2,
+      "confidence": "Moderate",
+      "part": "Whole groat/hull",
+      "preparation": [
+        "Raw"
+      ],
+      "bioavailability": "Moderate",
+      "notes": "Absorption varies with the sugar moiety attached (glycoside form) and individual gut microbiome composition."
+    },
+    {
+      "id": "FB000213",
+      "food": "FD083",
+      "bioactive": "PS001",
+      "strength": 4,
+      "confidence": "Moderate",
+      "part": "Seed/nut oil fraction",
+      "preparation": [
+        "Any"
+      ],
+      "bioavailability": "Low",
+      "notes": "Phytosterols are poorly absorbed (typically under 5%); this is central to their cholesterol-lowering mechanism, as they compete with cholesterol for absorption in the gut."
+    },
+    {
+      "id": "FB000214",
+      "food": "FD083",
+      "bioactive": "PP006",
+      "strength": 2,
+      "confidence": "Emerging",
+      "part": "Skin",
+      "preparation": [
+        "Raw"
+      ],
+      "bioavailability": "Low",
+      "notes": "Present in peanut skins at far lower concentration than in grapes or red wine."
+    },
+    {
+      "id": "FB000215",
+      "food": "FD084",
+      "bioactive": "PP002",
+      "strength": 4,
+      "confidence": "Moderate",
+      "part": "Skin",
+      "preparation": [
+        "Raw"
+      ],
+      "bioavailability": "Moderate",
+      "notes": "Absorption varies with the sugar moiety attached (glycoside form) and individual gut microbiome composition."
+    },
+    {
+      "id": "FB000216",
+      "food": "FD084",
+      "bioactive": "PP008",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Skin and flesh",
+      "preparation": [
+        "Raw",
+        "Cooked"
+      ],
+      "bioavailability": "Moderate",
+      "notes": "Bioavailability is reduced by roasting at high temperature but the compound remains a major contributor to dietary polyphenol intake."
+    },
+    {
+      "id": "FB000217",
+      "food": "FD084",
+      "bioactive": "DF002",
+      "strength": 4,
+      "confidence": "Moderate",
+      "part": "Skin and flesh",
+      "preparation": [
+        "Raw",
+        "Cooked"
+      ],
+      "bioavailability": "Low",
+      "notes": "Concentrated in and near the skin and core."
+    },
+    {
+      "id": "FB000218",
+      "food": "FD085",
+      "bioactive": "DF004",
+      "strength": 4,
+      "confidence": "Moderate",
+      "part": "Flesh",
+      "preparation": [
+        "Cooked"
+      ],
+      "bioavailability": "Low",
+      "notes": "Highest in unripe/green bananas; resistant starch content declines markedly as the fruit ripens and sugars develop."
+    },
+    {
+      "id": "FB000219",
+      "food": "FD085",
+      "bioactive": "DF002",
+      "strength": 2,
+      "confidence": "Moderate",
+      "part": "Flesh",
+      "preparation": [
+        "Raw",
+        "Cooked"
+      ],
+      "bioavailability": "Low",
+      "notes": "Soluble fibre; acts in the gut rather than being absorbed. Concentration is generally highest in and near the skin."
+    },
+    {
+      "id": "FB000220",
+      "food": "FD086",
+      "bioactive": "DF002",
+      "strength": 4,
+      "confidence": "Moderate",
+      "part": "Skin and flesh",
+      "preparation": [
+        "Raw",
+        "Cooked"
+      ],
+      "bioavailability": "Low",
+      "notes": "Soluble fibre; acts in the gut rather than being absorbed. Concentration is generally highest in and near the skin."
+    },
+    {
+      "id": "FB000221",
+      "food": "FD086",
+      "bioactive": "PP008",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Skin and flesh",
+      "preparation": [
+        "Raw",
+        "Cooked"
+      ],
+      "bioavailability": "Moderate",
+      "notes": "Bioavailability is reduced by roasting at high temperature but the compound remains a major contributor to dietary polyphenol intake."
+    },
+    {
+      "id": "FB000222",
+      "food": "FD087",
+      "bioactive": "CA004",
+      "strength": 4,
+      "confidence": "Moderate",
+      "part": "Flesh",
+      "preparation": [
+        "Cooked"
+      ],
+      "bioavailability": "Variable",
+      "notes": "Fat-soluble provitamin-A carotenoid; absorption is markedly improved by cooking and by co-ingested fat."
+    },
+    {
+      "id": "FB000223",
+      "food": "FD087",
+      "bioactive": "PP002",
+      "strength": 2,
+      "confidence": "Emerging",
+      "part": "Skin/peel",
+      "preparation": [
+        "Raw"
+      ],
+      "bioavailability": "Moderate",
+      "notes": "Absorption varies with the sugar moiety attached (glycoside form) and individual gut microbiome composition."
+    },
+    {
+      "id": "FB000224",
+      "food": "FD088",
+      "bioactive": "CA004",
+      "strength": 5,
+      "confidence": "High",
+      "part": "Flesh (orange-fleshed varieties)",
+      "preparation": [
+        "Cooked"
+      ],
+      "bioavailability": "Variable",
+      "notes": "Purple-fleshed sweet potato varieties are instead rich in anthocyanins rather than beta-carotene."
+    },
+    {
+      "id": "FB000225",
+      "food": "FD088",
+      "bioactive": "PP008",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Skin and flesh",
+      "preparation": [
+        "Raw",
+        "Cooked"
+      ],
+      "bioavailability": "Moderate",
+      "notes": "Bioavailability is reduced by roasting at high temperature but the compound remains a major contributor to dietary polyphenol intake."
+    },
+    {
+      "id": "FB000226",
+      "food": "FD089",
+      "bioactive": "PP008",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Skin and flesh, concentrated near the skin",
+      "preparation": [
+        "Raw",
+        "Cooked"
+      ],
+      "bioavailability": "Moderate",
+      "notes": "Bioavailability is reduced by roasting at high temperature but the compound remains a major contributor to dietary polyphenol intake."
+    },
+    {
+      "id": "FB000227",
+      "food": "FD089",
+      "bioactive": "DF004",
+      "strength": 4,
+      "confidence": "Moderate",
+      "part": "Starch fraction",
+      "preparation": [
+        "Cooked"
+      ],
+      "bioavailability": "Low",
+      "notes": "Resistant starch content increases substantially when cooked potato is then cooled, as in potato salad."
+    },
+    {
+      "id": "FB000228",
+      "food": "FD090",
+      "bioactive": "CA004",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Flesh",
+      "preparation": [
+        "Cooked"
+      ],
+      "bioavailability": "Variable",
+      "notes": "Content is markedly higher in red, orange and yellow varieties than in green (unripe) peppers."
+    },
+    {
+      "id": "FB000229",
+      "food": "FD090",
+      "bioactive": "CA003",
+      "strength": 3,
+      "confidence": "Moderate",
+      "part": "Flesh (red varieties particularly)",
+      "preparation": [
+        "Cooked"
+      ],
+      "bioavailability": "Variable",
+      "notes": "Fat-soluble; absorption is improved by cooking and by eating with a source of dietary fat."
+    },
+    {
+      "id": "FB000230",
+      "food": "FD090",
+      "bioactive": "PP002",
+      "strength": 2,
+      "confidence": "Emerging",
+      "part": "Skin",
+      "preparation": [
+        "Raw"
+      ],
+      "bioavailability": "Moderate",
+      "notes": "Absorption varies with the sugar moiety attached (glycoside form) and individual gut microbiome composition."
+    },
+    {
+      "id": "FB000231",
+      "food": "FD091",
+      "bioactive": "DF002",
+      "strength": 1,
+      "confidence": "Emerging",
+      "part": "Skin",
+      "preparation": [
+        "Raw",
+        "Cooked"
+      ],
+      "bioavailability": "Low",
+      "notes": "Soluble fibre; acts in the gut rather than being absorbed. Concentration is generally highest in and near the skin."
+    },
+    {
+      "id": "FB000232",
+      "food": "FD091",
+      "bioactive": "PP002",
+      "strength": 1,
+      "confidence": "Emerging",
+      "part": "Skin",
+      "preparation": [
+        "Raw"
+      ],
+      "bioavailability": "Moderate",
+      "notes": "Absorption varies with the sugar moiety attached (glycoside form) and individual gut microbiome composition."
+    },
+    {
+      "id": "FB000233",
+      "food": "FD092",
+      "bioactive": "CA002",
+      "strength": 2,
+      "confidence": "Emerging",
+      "part": "Whole pea",
+      "preparation": [
+        "Cooked"
+      ],
+      "bioavailability": "Variable",
+      "notes": "Fat-soluble; absorption is improved by cooking and by eating with a source of dietary fat."
+    },
+    {
+      "id": "FB000234",
+      "food": "FD092",
+      "bioactive": "DF004",
+      "strength": 2,
+      "confidence": "Emerging",
+      "part": "Whole pea",
+      "preparation": [
+        "Cooked"
+      ],
+      "bioavailability": "Low",
+      "notes": "Resistant to digestion in the small intestine and fermented in the colon; content typically increases when starchy foods are cooked and then cooled."
     }
   ]
 }
