@@ -75,11 +75,6 @@
       "id": "FG015",
       "name": "Beverages",
       "description": "Tea, coffee, etc."
-    },
-    {
-      "id": "FG016",
-      "name": "Algae & Superfoods",
-      "description": "Algae, cyanobacteria and other nutrient-dense whole-food concentrates that don't fit standard produce categories."
     }
   ]
 }

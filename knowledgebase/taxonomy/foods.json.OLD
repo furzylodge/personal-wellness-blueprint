@@ -514,8 +514,8 @@
       "name": "Olives",
       "scientificName": "Olea europaea",
       "slug": "olives",
-      "foodGroup": "FG003",
-      "foodGroupName": "Fruit",
+      "foodGroup": "FG009",
+      "foodGroupName": "Fruits",
       "evidence": "High",
       "status": "Approved",
       "monograph": "FD047-olives.md"
@@ -536,8 +536,8 @@
       "name": "Spirulina",
       "scientificName": "Arthrospira platensis",
       "slug": "spirulina",
-      "foodGroup": "FG016",
-      "foodGroupName": "Algae & Superfoods",
+      "foodGroup": "FG012",
+      "foodGroupName": "Other",
       "evidence": "Moderate",
       "status": "Approved",
       "monograph": "FD049-spirulina.md"
@@ -668,8 +668,8 @@
       "name": "Eggs",
       "scientificName": "Gallus gallus domesticus",
       "slug": "eggs",
-      "foodGroup": "FG009",
-      "foodGroupName": "Eggs",
+      "foodGroup": "FG005",
+      "foodGroupName": "Animal Foods",
       "evidence": "High",
       "status": "Approved",
       "monograph": "FD061-eggs.md"
@@ -690,8 +690,8 @@
       "name": "Seaweed",
       "scientificName": "Marine macroalgae",
       "slug": "seaweed",
-      "foodGroup": "FG014",
-      "foodGroupName": "Sea Vegetables",
+      "foodGroup": "FG007",
+      "foodGroupName": "Other Functional Foods",
       "evidence": "High",
       "status": "Approved",
       "monograph": "FD063-seaweed.md"
