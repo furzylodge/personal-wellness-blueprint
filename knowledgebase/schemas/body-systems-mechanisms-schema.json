@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "body-systems-mechanisms-schema.json",
+  "title": "Body System Mechanism Relationships",
+  "description": "Maps each body system to the mechanisms that contribute to it, used by the recommendation engine's body-system coverage scoring. The 'evidence' field is denormalised from mechanisms.json and must be kept in sync with it.",
+  "type": "object",
+  "required": ["version", "bodySystems"],
+  "properties": {
+    "version": { "type": "string" },
+    "bodySystems": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "mechanisms"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^BS[0-9]{3}$",
+            "description": "Must match an id in body-systems.json."
+          },
+          "name": { "type": "string", "minLength": 1 },
+          "mechanisms": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["id", "priority", "weight", "evidence", "name"],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "pattern": "^MEC[0-9]{3}$",
+                  "description": "Must match an id in mechanisms.json."
+                },
+                "priority": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 5,
+                  "description": "Relative priority of this mechanism within this body system."
+                },
+                "weight": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 100,
+                  "description": "Relative scoring weight of this mechanism within this body system."
+                },
+                "evidence": {
+                  "type": "string",
+                  "enum": ["High", "Moderate", "Low"],
+                  "description": "Must match the evidence value on the corresponding entry in mechanisms.json - this is a denormalised copy, not an independent judgement."
+                },
+                "name": {
+                  "type": "string",
+                  "minLength": 1,
+                  "description": "Denormalised display name - must match the name of the corresponding entry in mechanisms.json."
+                }
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

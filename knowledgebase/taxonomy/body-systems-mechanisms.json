@@ -16,14 +16,14 @@
           "id": "MEC031",
           "priority": 5,
           "weight": 95,
-          "evidence": "High",
+          "evidence": "Moderate",
           "name": "Increases Short-Chain Fatty Acid Production"
         },
         {
           "id": "MEC032",
           "priority": 4,
           "weight": 85,
-          "evidence": "High",
+          "evidence": "Moderate",
           "name": "Supports Gut Barrier Integrity"
         },
         {
@@ -51,7 +51,7 @@
           "id": "MEC036",
           "priority": 2,
           "weight": 55,
-          "evidence": "Moderate",
+          "evidence": "High",
           "name": "Supports Healthy Gut pH"
         },
         {
@@ -72,7 +72,7 @@
           "id": "MEC039",
           "priority": 1,
           "weight": 35,
-          "evidence": "Emerging",
+          "evidence": "High",
           "name": "Reduces Digestive Discomfort"
         },
         {
@@ -80,7 +80,7 @@
           "name": "Supports Phase I Detoxification",
           "priority": 5,
           "weight": 100,
-          "evidence": "High"
+          "evidence": "Moderate"
         },
         {
           "id": "MEC110",
@@ -127,49 +127,49 @@
           "id": "MEC031",
           "priority": 4,
           "weight": 85,
-          "evidence": "High",
+          "evidence": "Moderate",
           "name": "Increases Short-Chain Fatty Acid Production"
         },
         {
           "id": "MEC032",
           "priority": 5,
           "weight": 95,
-          "evidence": "High",
+          "evidence": "Moderate",
           "name": "Supports Gut Barrier Integrity"
         },
         {
           "id": "MEC033",
           "priority": 2,
           "weight": 55,
-          "evidence": "Moderate",
+          "evidence": "High",
           "name": "Improves Bowel Regularity"
         },
         {
           "id": "MEC034",
           "priority": 1,
           "weight": 40,
-          "evidence": "Emerging",
+          "evidence": "Moderate",
           "name": "Supports Digestive Enzyme Activity"
         },
         {
           "id": "MEC035",
           "priority": 5,
           "weight": 100,
-          "evidence": "High",
+          "evidence": "Moderate",
           "name": "Supports Microbiome Diversity"
         },
         {
           "id": "MEC036",
           "priority": 3,
           "weight": 65,
-          "evidence": "Moderate",
+          "evidence": "High",
           "name": "Supports Healthy Gut pH"
         },
         {
           "id": "MEC037",
           "priority": 4,
           "weight": 80,
-          "evidence": "High",
+          "evidence": "Moderate",
           "name": "Supports Nutrient Absorption"
         },
         {
@@ -183,7 +183,7 @@
           "id": "MEC039",
           "priority": 2,
           "weight": 50,
-          "evidence": "Moderate",
+          "evidence": "High",
           "name": "Reduces Digestive Discomfort"
         }
       ]
@@ -196,21 +196,21 @@
           "id": "MEC001",
           "priority": 5,
           "weight": 90,
-          "evidence": "High",
+          "evidence": "Moderate",
           "name": "Bile Acid Binding"
         },
         {
           "id": "MEC002",
           "priority": 4,
           "weight": 85,
-          "evidence": "High",
+          "evidence": "Moderate",
           "name": "Supports Healthy Cholesterol Metabolism"
         },
         {
           "id": "MEC003",
           "priority": 3,
           "weight": 65,
-          "evidence": "Moderate",
+          "evidence": "High",
           "name": "Supports Healthy Triglyceride Metabolism"
         },
         {
@@ -252,35 +252,35 @@
           "id": "MEC009",
           "priority": 1,
           "weight": 40,
-          "evidence": "Emerging",
+          "evidence": "High",
           "name": "Supports Healthy Lipoprotein Balance"
         },
         {
           "id": "MEC010",
           "priority": 5,
           "weight": 100,
-          "evidence": "High",
+          "evidence": "Moderate",
           "name": "Supports Endothelial Function"
         },
         {
           "id": "MEC011",
           "priority": 5,
           "weight": 95,
-          "evidence": "High",
+          "evidence": "Moderate",
           "name": "Supports Nitric Oxide Production"
         },
         {
           "id": "MEC012",
           "priority": 3,
           "weight": 70,
-          "evidence": "Moderate",
+          "evidence": "High",
           "name": "Supports Vascular Elasticity"
         },
         {
           "id": "MEC013",
           "priority": 4,
           "weight": 80,
-          "evidence": "High",
+          "evidence": "Moderate",
           "name": "Supports Healthy Blood Pressure Regulation"
         },
         {
@@ -335,7 +335,7 @@
           "id": "MEC050",
           "priority": 5,
           "weight": 100,
-          "evidence": "High",
+          "evidence": "Moderate",
           "name": "Supports Synaptic Plasticity"
         },
         {
@@ -349,7 +349,7 @@
           "id": "MEC052",
           "priority": 4,
           "weight": 85,
-          "evidence": "High",
+          "evidence": "Moderate",
           "name": "Supports Neuronal Antioxidant Defence"
         },
         {
@@ -384,7 +384,7 @@
           "id": "MEC057",
           "priority": 3,
           "weight": 60,
-          "evidence": "Moderate",
+          "evidence": "High",
           "name": "Supports Nervous System Function"
         },
         {
@@ -400,6 +400,20 @@
           "weight": 45,
           "evidence": "Moderate",
           "name": "Supports Neuroprotection"
+        },
+        {
+          "id": "MEC100",
+          "priority": 3,
+          "weight": 80,
+          "evidence": "Moderate",
+          "name": "Supports Neurotrophic Signalling"
+        },
+        {
+          "id": "MEC101",
+          "priority": 3,
+          "weight": 75,
+          "evidence": "Moderate",
+          "name": "Supports Blood-Brain Barrier Integrity"
         }
       ]
     },
@@ -418,7 +432,7 @@
           "id": "MEC021",
           "priority": 2,
           "weight": 50,
-          "evidence": "Moderate",
+          "evidence": "High",
           "name": "Neutralises Free Radicals"
         },
         {
@@ -488,28 +502,28 @@
           "id": "MEC061",
           "priority": 4,
           "weight": 85,
-          "evidence": "High",
+          "evidence": "Moderate",
           "name": "Supports Innate Immune Function"
         },
         {
           "id": "MEC062",
           "priority": 4,
           "weight": 80,
-          "evidence": "High",
+          "evidence": "Moderate",
           "name": "Supports Adaptive Immune Function"
         },
         {
           "id": "MEC063",
           "priority": 3,
           "weight": 70,
-          "evidence": "Moderate",
+          "evidence": "High",
           "name": "Supports Immune Cell Signalling"
         },
         {
           "id": "MEC064",
           "priority": 5,
           "weight": 95,
-          "evidence": "High",
+          "evidence": "Moderate",
           "name": "Supports Resolution of Inflammation"
         },
         {
@@ -544,7 +558,7 @@
           "id": "MEC069",
           "priority": 3,
           "weight": 60,
-          "evidence": "Moderate",
+          "evidence": "High",
           "name": "Supports Immune Resilience"
         }
       ]
@@ -557,7 +571,7 @@
           "id": "MEC020",
           "priority": 5,
           "weight": 100,
-          "evidence": "High",
+          "evidence": "Moderate",
           "name": "Reduces Oxidative Stress"
         },
         {
@@ -571,7 +585,7 @@
           "id": "MEC022",
           "priority": 4,
           "weight": 85,
-          "evidence": "High",
+          "evidence": "Moderate",
           "name": "Activates Endogenous Antioxidant Pathways"
         },
         {
@@ -585,7 +599,7 @@
           "id": "MEC024",
           "priority": 3,
           "weight": 70,
-          "evidence": "Moderate",
+          "evidence": "High",
           "name": "Supports Mitochondrial Resilience"
         },
         {
@@ -606,7 +620,7 @@
           "id": "MEC027",
           "priority": 3,
           "weight": 65,
-          "evidence": "Moderate",
+          "evidence": "High",
           "name": "Supports Cellular Repair"
         },
         {
@@ -622,6 +636,27 @@
           "weight": 50,
           "evidence": "Moderate",
           "name": "Supports Healthy Ageing"
+        },
+        {
+          "id": "MEC103",
+          "priority": 3,
+          "weight": 80,
+          "evidence": "Moderate",
+          "name": "Supports Healthy Airway Inflammatory Balance"
+        },
+        {
+          "id": "MEC104",
+          "priority": 3,
+          "weight": 55,
+          "evidence": "Moderate",
+          "name": "Supports Healthy Airway Reactivity"
+        },
+        {
+          "id": "MEC105",
+          "priority": 3,
+          "weight": 60,
+          "evidence": "Moderate",
+          "name": "Supports Airway Barrier Integrity"
         }
       ]
     },
@@ -630,74 +665,18 @@
       "name": "Urinary",
       "mechanisms": [
         {
-          "id": "MEC070",
-          "priority": 5,
-          "weight": 100,
-          "evidence": "High",
-          "name": "Supports Phase II Detoxification"
-        },
-        {
-          "id": "MEC071",
-          "priority": 4,
+          "id": "MEC106",
+          "priority": 3,
           "weight": 90,
-          "evidence": "High",
-          "name": "Activates Nrf2 Pathways"
+          "evidence": "Moderate",
+          "name": "Supports Renal Cellular Protection"
         },
         {
-          "id": "MEC072",
-          "priority": 5,
-          "weight": 95,
-          "evidence": "High",
-          "name": "Supports Glutathione Production"
-        },
-        {
-          "id": "MEC073",
-          "priority": 4,
-          "weight": 85,
-          "evidence": "High",
-          "name": "Supports Hepatic Antioxidant Capacity"
-        },
-        {
-          "id": "MEC074",
-          "priority": 4,
-          "weight": 80,
-          "evidence": "High",
-          "name": "Supports Bile Production"
-        },
-        {
-          "id": "MEC075",
+          "id": "MEC112",
           "priority": 3,
           "weight": 70,
           "evidence": "Moderate",
-          "name": "Supports Liver Cell Protection"
-        },
-        {
-          "id": "MEC076",
-          "priority": 3,
-          "weight": 65,
-          "evidence": "Moderate",
-          "name": "Supports Xenobiotic Metabolism"
-        },
-        {
-          "id": "MEC077",
-          "priority": 2,
-          "weight": 55,
-          "evidence": "Moderate",
-          "name": "Supports Fat Metabolism"
-        },
-        {
-          "id": "MEC078",
-          "priority": 2,
-          "weight": 50,
-          "evidence": "Moderate",
-          "name": "Supports Healthy Liver Enzymes"
-        },
-        {
-          "id": "MEC079",
-          "priority": 2,
-          "weight": 45,
-          "evidence": "Moderate",
-          "name": "Supports Hepatic Regeneration"
+          "name": "Supports Xenobiotic Elimination"
         }
       ]
     },
@@ -779,7 +758,7 @@
           "id": "MEC080",
           "priority": 5,
           "weight": 100,
-          "evidence": "High",
+          "evidence": "Moderate",
           "name": "Supports Hormone Synthesis"
         },
         {
@@ -793,21 +772,21 @@
           "id": "MEC082",
           "priority": 4,
           "weight": 85,
-          "evidence": "High",
+          "evidence": "Moderate",
           "name": "Supports Insulin Signalling"
         },
         {
           "id": "MEC083",
           "priority": 4,
           "weight": 80,
-          "evidence": "High",
+          "evidence": "Moderate",
           "name": "Supports Sex Hormone Balance"
         },
         {
           "id": "MEC084",
           "priority": 3,
           "weight": 65,
-          "evidence": "Moderate",
+          "evidence": "High",
           "name": "Supports Adrenal Function"
         },
         {
@@ -828,7 +807,7 @@
           "id": "MEC087",
           "priority": 3,
           "weight": 70,
-          "evidence": "Moderate",
+          "evidence": "High",
           "name": "Supports Hormonal Homeostasis"
         },
         {
@@ -839,30 +818,25 @@
           "name": "Supports Endocrine Resilience"
         },
         {
-          "id": "MEC089",
-          "priority": 1,
-          "weight": 35,
-          "evidence": "Emerging",
-          "name": "Supports Menopausal Health"
-        },
-        {
           "id": "MEC107",
           "name": "Supports Menopausal Transition Resilience",
-          "priority": "Tier 1",
-          "evidence": "Strong"
+          "priority": 3,
+          "evidence": "Moderate",
+          "weight": 60
         },
         {
           "id": "MEC108",
           "name": "Supports Phytoestrogen Metabolism",
-          "priority": "Tier 1",
-          "evidence": "Moderate"
+          "priority": 3,
+          "evidence": "Moderate",
+          "weight": 60
         },
         {
-          "id": "MEC115",
-          "name": "Supports Glucose Homeostasis",
-          "priority": 4,
-          "weight": 85,
-          "evidence": "High"
+          "id": "MEC102",
+          "priority": 3,
+          "weight": 60,
+          "evidence": "Moderate",
+          "name": "Supports Cellular Energy Metabolism"
         }
       ]
     },
@@ -881,28 +855,28 @@
           "id": "MEC091",
           "priority": 5,
           "weight": 100,
-          "evidence": "High",
+          "evidence": "Moderate",
           "name": "Supports Bone Mineralisation"
         },
         {
           "id": "MEC092",
           "priority": 4,
           "weight": 85,
-          "evidence": "High",
+          "evidence": "Moderate",
           "name": "Supports Muscle Protein Synthesis"
         },
         {
           "id": "MEC093",
           "priority": 3,
           "weight": 70,
-          "evidence": "Moderate",
+          "evidence": "High",
           "name": "Supports Connective Tissue Integrity"
         },
         {
           "id": "MEC094",
           "priority": 4,
           "weight": 80,
-          "evidence": "High",
+          "evidence": "Moderate",
           "name": "Supports Joint Health"
         },
         {
@@ -916,7 +890,7 @@
           "id": "MEC096",
           "priority": 3,
           "weight": 65,
-          "evidence": "Moderate",
+          "evidence": "High",
           "name": "Supports Bone Remodelling"
         },
         {
@@ -937,15 +911,8 @@
           "id": "MEC099",
           "priority": 2,
           "weight": 40,
-          "evidence": "Moderate",
+          "evidence": "High",
           "name": "Supports Healthy Ageing of Musculoskeletal System"
-        },
-        {
-          "id": "MEC114",
-          "name": "Supports Calcium Utilisation",
-          "priority": 5,
-          "weight": 100,
-          "evidence": "High"
         }
       ]
     }
