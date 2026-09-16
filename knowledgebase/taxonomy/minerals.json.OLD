@@ -52,18 +52,6 @@
     {
       "id": "M013",
       "name": "Zinc"
-    },
-    {
-      "id": "M014",
-      "name": "Chloride"
-    },
-    {
-      "id": "M015",
-      "name": "Fluoride"
-    },
-    {
-      "id": "M016",
-      "name": "Sulfur"
     }
   ]
 }

@@ -1,5 +1,6 @@
 {
   "id": "FD009",
+  "version": "1.1",
   "identity": {
     "name": "Swiss Chard",
     "scientificName": "Beta vulgaris subsp. vulgaris",
@@ -53,18 +54,19 @@
       "metabolicHealth": "Supports overall nutritional adequacy within a balanced diet."
     }
   },
-  "suitability": [
-    "Vegetarian",
-    "Vegan",
-    "Dairy Free",
-    "Egg Free",
-    "Nut Free",
-    "Soy Free",
-    "Halal",
-    "Kosher",
-    "Pregnancy",
-    "Children"
-  ],
+  "suitability": {
+    "vegetarian": true,
+    "vegan": true,
+    "glutenFree": true,
+    "dairyFree": true,
+    "eggFree": true,
+    "nutFree": true,
+    "soyFree": true,
+    "halal": true,
+    "kosher": true,
+    "pregnancySuitable": true,
+    "childFriendly": true
+  },
   "allergens": {
     "gluten": "Naturally gluten free."
   },
