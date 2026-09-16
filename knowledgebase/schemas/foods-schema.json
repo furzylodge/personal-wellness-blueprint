@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "foods-schema.json",
+  "title": "Foods",
+  "description": "The canonical food catalog used by the Personal Wellness Blueprint recommendation engine and reports.",
+  "type": "object",
+  "required": ["version", "generated", "count", "foods"],
+  "properties": {
+    "version": { "type": "string" },
+    "generated": { "type": "string" },
+    "count": { "type": "integer", "minimum": 0 },
+    "foods": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id", "name", "scientificName", "slug", "foodGroup",
+          "foodGroupName", "evidence", "status", "monograph"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^FD[0-9]{3}$",
+            "description": "Unique food identifier."
+          },
+          "name": { "type": "string", "minLength": 1 },
+          "scientificName": { "type": "string", "minLength": 1 },
+          "slug": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+          },
+          "foodGroup": {
+            "type": "string",
+            "pattern": "^FG[0-9]{3}$",
+            "description": "Must match an id in food-groups.json."
+          },
+          "foodGroupName": {
+            "type": "string",
+            "description": "Denormalised display name. Must match the name of the referenced foodGroup id in food-groups.json."
+          },
+          "evidence": {
+            "type": "string",
+            "enum": ["High", "Moderate", "Low"]
+          },
+          "status": {
+            "type": "string",
+            "enum": ["Approved", "Draft", "Deprecated"]
+          },
+          "monograph": {
+            "type": "string",
+            "pattern": "^FD[0-9]{3}-[a-z0-9-]+\\.md$",
+            "description": "Filename of the corresponding monograph in knowledgebase/monographs/. Schema cannot verify the file exists on disk - a repository-level check is still required for that."
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "food-groups-schema.json",
+  "title": "Food Groups",
+  "description": "The canonical set of food groups referenced by foods.json.",
+  "type": "object",
+  "required": ["version", "foodGroups"],
+  "properties": {
+    "version": { "type": "string" },
+    "foodGroups": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "description"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^FG[0-9]{3}$",
+            "description": "Unique food group identifier."
+          },
+          "name": { "type": "string", "minLength": 1 },
+          "description": { "type": "string", "minLength": 1 }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

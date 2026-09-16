@@ -336,7 +336,7 @@
     {
       "id": "FD031",
       "name": "Sardines",
-      "scientificName": "Sardina pilchardus",
+      "scientificName": null,
       "slug": "sardines",
       "evidence": "High",
       "status": "Approved",
@@ -347,7 +347,7 @@
     {
       "id": "FD032",
       "name": "Mackerel",
-      "scientificName": "Scomber scombrus",
+      "scientificName": null,
       "slug": "mackerel",
       "evidence": "High",
       "status": "Approved",
@@ -358,7 +358,7 @@
     {
       "id": "FD033",
       "name": "Herring",
-      "scientificName": "Clupea harengus",
+      "scientificName": null,
       "slug": "herring",
       "evidence": "High",
       "status": "Approved",
@@ -369,7 +369,7 @@
     {
       "id": "FD034",
       "name": "Kefir",
-      "scientificName": "Bos taurus (fermented dairy)",
+      "scientificName": null,
       "slug": "kefir",
       "evidence": "High",
       "status": "Approved",
@@ -380,7 +380,7 @@
     {
       "id": "FD035",
       "name": "Live Yoghurt",
-      "scientificName": "Bos taurus (fermented dairy)",
+      "scientificName": null,
       "slug": "live-yoghurt",
       "evidence": "High",
       "status": "Approved",
@@ -391,7 +391,7 @@
     {
       "id": "FD036",
       "name": "Sauerkraut",
-      "scientificName": "Brassica oleracea (fermented)",
+      "scientificName": null,
       "slug": "sauerkraut",
       "evidence": "High",
       "status": "Approved",
@@ -402,7 +402,7 @@
     {
       "id": "FD037",
       "name": "Kimchi",
-      "scientificName": "Brassica rapa (fermented)",
+      "scientificName": null,
       "slug": "kimchi",
       "evidence": "High",
       "status": "Approved",
@@ -413,7 +413,7 @@
     {
       "id": "FD038",
       "name": "Turmeric",
-      "scientificName": "Curcuma longa",
+      "scientificName": null,
       "slug": "turmeric",
       "evidence": "High",
       "status": "Approved",
@@ -424,7 +424,7 @@
     {
       "id": "FD039",
       "name": "Ginger",
-      "scientificName": "Zingiber officinale",
+      "scientificName": null,
       "slug": "ginger",
       "evidence": "High",
       "status": "Approved",
@@ -435,7 +435,7 @@
     {
       "id": "FD040",
       "name": "Cinnamon",
-      "scientificName": "Cinnamomum verum",
+      "scientificName": null,
       "slug": "cinnamon",
       "evidence": "High",
       "status": "Approved",
@@ -446,7 +446,7 @@
     {
       "id": "FD041",
       "name": "Rosemary",
-      "scientificName": "Rosmarinus officinalis",
+      "scientificName": null,
       "slug": "rosemary",
       "evidence": "High",
       "status": "Approved",
@@ -457,7 +457,7 @@
     {
       "id": "FD042",
       "name": "Oregano",
-      "scientificName": "Origanum vulgare",
+      "scientificName": null,
       "slug": "oregano",
       "evidence": "High",
       "status": "Approved",
@@ -468,7 +468,7 @@
     {
       "id": "FD043",
       "name": "Green Tea",
-      "scientificName": "Camellia sinensis",
+      "scientificName": null,
       "slug": "green-tea",
       "evidence": "High",
       "status": "Approved",
@@ -479,7 +479,7 @@
     {
       "id": "FD044",
       "name": "Black Tea",
-      "scientificName": "Camellia sinensis",
+      "scientificName": null,
       "slug": "black-tea",
       "evidence": "High",
       "status": "Approved",
@@ -490,7 +490,7 @@
     {
       "id": "FD045",
       "name": "Coffee",
-      "scientificName": "Coffea arabica",
+      "scientificName": null,
       "slug": "coffee",
       "evidence": "High",
       "status": "Approved",
@@ -501,7 +501,7 @@
     {
       "id": "FD046",
       "name": "Cocoa",
-      "scientificName": "Theobroma cacao",
+      "scientificName": null,
       "slug": "cocoa",
       "evidence": "High",
       "status": "Approved",

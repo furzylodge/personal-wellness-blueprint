@@ -60,13 +60,13 @@
         "Dietary Fibre",
         "Polyphenols",
         "Sulphur Compounds",
-        "Glucosinolates",
         "Carotenoids",
         "Fatty Acids",
         "Phytosterols",
         "Terpenes",
-        "Other Bioactives"
-      ]
+        "Functional Compounds"
+      ],
+      "description": "Glucosinolates is a subcategory value (under Sulphur Compounds), not a top-level category - see the subcategory field."
     },
 
     "subcategory": {
@@ -94,7 +94,7 @@
       "enum": [
         "High",
         "Moderate",
-        "Emerging"
+        "Low"
       ]
     },
 
@@ -109,7 +109,7 @@
       "enum": [
         "Established",
         "Growing",
-        "Emerging"
+        "Proposed"
       ]
     },
 

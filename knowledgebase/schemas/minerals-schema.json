@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "minerals-schema.json",
+  "title": "Minerals",
+  "description": "The canonical set of dietary minerals used by the Personal Wellness Blueprint recommendation engine and reports.",
+  "type": "object",
+  "required": ["version", "minerals"],
+  "properties": {
+    "version": { "type": "string" },
+    "minerals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^M[0-9]{3}$",
+            "description": "Unique mineral identifier."
+          },
+          "name": { "type": "string", "minLength": 1 }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
