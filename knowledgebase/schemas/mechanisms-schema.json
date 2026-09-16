@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mechanisms-schema.json",
+  "title": "Mechanisms",
+  "description": "Biological mechanisms through which foods and bioactive compounds may influence body systems, used by the Personal Wellness Blueprint recommendation engine.",
+  "type": "object",
+  "required": ["version", "description", "mechanisms", "count"],
+  "properties": {
+    "version": { "type": "string" },
+    "description": { "type": "string" },
+    "count": { "type": "integer", "minimum": 0 },
+    "mechanisms": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id", "name", "category", "description", "plainEnglish",
+          "evidence", "primaryBodySystems", "maturity", "status"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^MEC[0-9]{3}$",
+            "description": "Unique mechanism identifier."
+          },
+          "name": { "type": "string" },
+          "category": {
+            "type": "string",
+            "description": "Editorial sub-domain grouping (e.g. 'Lipid Metabolism', 'Gut Health'). Not read by engine code; for authoring organisation only."
+          },
+          "description": {
+            "type": "string",
+            "description": "A genuine, mechanism-specific scientific explanation. Must not be a templated restatement of the name."
+          },
+          "plainEnglish": {
+            "type": "string",
+            "description": "User-facing explanatory text shown directly in generated reports. Must be a real, accessible sentence, not the mechanism name restated."
+          },
+          "evidence": {
+            "type": "string",
+            "enum": ["High", "Moderate", "Low"]
+          },
+          "primaryBodySystems": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^BS[0-9]{3}$"
+            },
+            "minItems": 1,
+            "description": "Body system IDs this mechanism primarily affects. Resolve display names from body-systems.json at read time; do not store a denormalised name copy here."
+          },
+          "maturity": {
+            "type": "string",
+            "enum": ["Established", "Growing", "Proposed"]
+          },
+          "status": {
+            "type": "string",
+            "enum": ["Active", "Deprecated"]
+          },
+          "guardrail": {
+            "type": "string",
+            "description": "Optional scope-limiting safety note. Populate only for mechanisms that could plausibly be over-read as a medical or hormone-therapy claim (e.g. hormonal/menopausal mechanisms) - not required on every entry."
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
