@@ -1,8 +1,8 @@
 {
-  "version": "1.2",
+  "version": "1.3",
   "status": "ACTIVE",
   "description": "Canonical nutrient-to-mechanism relationships for vitamins and minerals. Nutrients remain a separate layer from bioactives.",
-  "count": 152,
+  "count": 148,
   "relationships": [
     {
       "nutrientId": "M004",
@@ -335,16 +335,6 @@
       "tier1Target": true
     },
     {
-      "nutrientId": "V003",
-      "nutrient": "Vitamin B2 (Riboflavin)",
-      "mechanismId": "MEC111",
-      "mechanism": "Supports Glutathione Synthesis",
-      "strength": 3,
-      "confidence": "Moderate",
-      "basis": "Riboflavin is required for glutathione reductase activity.",
-      "tier1Target": true
-    },
-    {
       "nutrientId": "V004",
       "nutrient": "Vitamin B3 (Niacin)",
       "mechanismId": "MEC024",
@@ -372,16 +362,6 @@
       "strength": 5,
       "confidence": "High",
       "basis": "Pantothenic acid is required for coenzyme A synthesis.",
-      "tier1Target": true
-    },
-    {
-      "nutrientId": "V005",
-      "nutrient": "Vitamin B5 (Pantothenic Acid)",
-      "mechanismId": "MEC113",
-      "mechanism": "Supports Hepatic Cellular Protection",
-      "strength": 3,
-      "confidence": "Moderate",
-      "basis": "Coenzyme A participates in numerous hepatic metabolic pathways.",
       "tier1Target": true
     },
     {
@@ -692,6 +672,16 @@
       "strength": 4,
       "confidence": "High",
       "basis": "Riboflavin provides FAD for cytochrome P450 activity.",
+      "tier1Target": true
+    },
+    {
+      "nutrientId": "V003",
+      "nutrient": "Vitamin B2 (Riboflavin)",
+      "mechanismId": "MEC111",
+      "mechanism": "Supports Glutathione Synthesis",
+      "strength": 3,
+      "confidence": "High",
+      "basis": "Riboflavin is required for glutathione reductase function.",
       "tier1Target": true
     },
     {
@@ -1207,8 +1197,8 @@
     {
       "nutrientId": "M002",
       "nutrient": "Chromium",
-      "mechanismId": "MEC041",
-      "mechanism": "Improves Insulin Sensitivity",
+      "mechanismId": "MEC082",
+      "mechanism": "Supports Insulin Signalling",
       "strength": 4,
       "confidence": "High",
       "basis": "Chromium supports normal macronutrient metabolism and glucose regulation.",
@@ -1493,36 +1483,6 @@
       "confidence": "Moderate",
       "basis": "Iron supports oxygen delivery to rapidly dividing hair follicle cells.",
       "tier1Target": true
-    },
-    {
-      "nutrientId": "M015",
-      "nutrient": "Fluoride",
-      "mechanismId": "MEC091",
-      "mechanism": "Supports Bone Mineralisation",
-      "strength": 2,
-      "confidence": "Moderate",
-      "basis": "Fluoride incorporates into bone mineral (fluorapatite); its primary, better-established role is dental enamel resistance, which the current mechanism catalogue does not yet separately represent.",
-      "tier1Target": false
-    },
-    {
-      "nutrientId": "M016",
-      "nutrient": "Sulfur",
-      "mechanismId": "MEC110",
-      "mechanism": "Supports Phase II Conjugation",
-      "strength": 3,
-      "confidence": "Moderate",
-      "basis": "Sulfation is a sulfur-dependent Phase II conjugation pathway; dietary sulfur (via sulphur amino acids) is a required substrate.",
-      "tier1Target": false
-    },
-    {
-      "nutrientId": "M016",
-      "nutrient": "Sulfur",
-      "mechanismId": "MEC093",
-      "mechanism": "Supports Connective Tissue Integrity",
-      "strength": 3,
-      "confidence": "Moderate",
-      "basis": "Sulfur forms structural disulfide bonds in collagen and keratin, relevant to connective tissue integrity.",
-      "tier1Target": false
     }
   ]
 }

@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "product-bioactives-schema.json",
+  "title": "Product Bioactive Relationships",
+  "description": "Product-to-canonical-bioactive relationships, built against manufacturer factsheets. Plays the same role for products that food-bioactives.json plays for foods, plugging into the same bioactive-mechanisms.json / mechanisms.json / body-systems-mechanisms.json chain.",
+  "type": "object",
+  "required": ["version", "description", "count", "products"],
+  "properties": {
+    "version": { "type": "string" },
+    "description": { "type": "string" },
+    "count": { "type": "integer", "minimum": 0 },
+    "products": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "bioactives"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^PRD[0-9]{3}$"
+          },
+          "name": { "type": "string", "minLength": 1 },
+          "bioactives": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["id", "status"],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "pattern": "^(DF|PP|OS|CA|FA|PS|TP|FC)[0-9]{3}$",
+                  "description": "Must match an id in bioactives.json."
+                },
+                "status": {
+                  "type": "string",
+                  "enum": ["DIRECT", "SOURCE_DEFINED"],
+                  "description": "DIRECT: the compound itself (or its declared source at a stated dose) appears on the factsheet. SOURCE_DEFINED: present via a named source ingredient characteristic of this compound, without an independently declared amount."
+                }
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,7 +1,420 @@
 {
-  "version": "1.0",
-  "description": "Proposed product-to-vitamin/mineral relationships for newly supplied Synergy products. Vitamins and minerals remain outside the bioactive model.",
+  "version": "2.0",
+  "description": "Product-to-vitamin/mineral relationships for the current PWB product set, rebuilt against the manufacturer factsheets. Vitamins and minerals remain outside the bioactive model, mirroring the food-nutrients.json relationship to food-bioactives.json. DIRECT means the nutrient appears with a declared amount on the product's supplement facts panel; SOURCE_DEFINED means it is present via a named source ingredient without an independently declared amount.",
+  "count": 93,
   "products": [
+    {
+      "productId": "PRD001",
+      "productName": "Synergy ProArgi-9+",
+      "vitamins": [
+        {
+          "id": "V010",
+          "name": "Vitamin C",
+          "status": "DIRECT"
+        },
+        {
+          "id": "V011",
+          "name": "Vitamin D",
+          "status": "DIRECT"
+        },
+        {
+          "id": "V013",
+          "name": "Vitamin K",
+          "status": "DIRECT"
+        },
+        {
+          "id": "V006",
+          "name": "Vitamin B6",
+          "status": "DIRECT"
+        },
+        {
+          "id": "V009",
+          "name": "Vitamin B12",
+          "status": "DIRECT"
+        },
+        {
+          "id": "V008",
+          "name": "Vitamin B9 (Folate)",
+          "status": "DIRECT"
+        }
+      ],
+      "minerals": []
+    },
+    {
+      "productId": "PRD002",
+      "productName": "Synergy e9",
+      "vitamins": [
+        {
+          "id": "V010",
+          "name": "Vitamin C",
+          "status": "DIRECT"
+        },
+        {
+          "id": "V002",
+          "name": "Vitamin B1 (Thiamine)",
+          "status": "DIRECT"
+        },
+        {
+          "id": "V003",
+          "name": "Vitamin B2 (Riboflavin)",
+          "status": "DIRECT"
+        },
+        {
+          "id": "V004",
+          "name": "Vitamin B3 (Niacin)",
+          "status": "DIRECT"
+        },
+        {
+          "id": "V006",
+          "name": "Vitamin B6",
+          "status": "DIRECT"
+        },
+        {
+          "id": "V008",
+          "name": "Vitamin B9 (Folate)",
+          "status": "DIRECT"
+        },
+        {
+          "id": "V009",
+          "name": "Vitamin B12",
+          "status": "DIRECT"
+        },
+        {
+          "id": "V005",
+          "name": "Vitamin B5 (Pantothenic Acid)",
+          "status": "DIRECT"
+        }
+      ],
+      "minerals": []
+    },
+    {
+      "productId": "PRD003",
+      "productName": "Synergy Immune Booster",
+      "vitamins": [
+        {
+          "id": "V010",
+          "name": "Vitamin C",
+          "status": "DIRECT"
+        },
+        {
+          "id": "V011",
+          "name": "Vitamin D",
+          "status": "DIRECT"
+        },
+        {
+          "id": "V006",
+          "name": "Vitamin B6",
+          "status": "DIRECT"
+        }
+      ],
+      "minerals": [
+        {
+          "id": "M013",
+          "name": "Zinc",
+          "status": "DIRECT"
+        }
+      ]
+    },
+    {
+      "productId": "PRD004",
+      "productName": "Synergy Pro360 Wholefood Greens",
+      "vitamins": [
+        {
+          "id": "V001",
+          "name": "Vitamin A",
+          "status": "DIRECT"
+        },
+        {
+          "id": "V002",
+          "name": "Vitamin B1 (Thiamine)",
+          "status": "DIRECT"
+        },
+        {
+          "id": "V003",
+          "name": "Vitamin B2 (Riboflavin)",
+          "status": "DIRECT"
+        },
+        {
+          "id": "V004",
+          "name": "Vitamin B3 (Niacin)",
+          "status": "DIRECT"
+        },
+        {
+          "id": "V005",
+          "name": "Vitamin B5 (Pantothenic Acid)",
+          "status": "DIRECT"
+        },
+        {
+          "id": "V006",
+          "name": "Vitamin B6",
+          "status": "DIRECT"
+        },
+        {
+          "id": "V007",
+          "name": "Vitamin B7 (Biotin)",
+          "status": "DIRECT"
+        },
+        {
+          "id": "V008",
+          "name": "Vitamin B9 (Folate)",
+          "status": "DIRECT"
+        },
+        {
+          "id": "V009",
+          "name": "Vitamin B12",
+          "status": "DIRECT"
+        },
+        {
+          "id": "V010",
+          "name": "Vitamin C",
+          "status": "DIRECT"
+        },
+        {
+          "id": "V011",
+          "name": "Vitamin D",
+          "status": "DIRECT"
+        },
+        {
+          "id": "V012",
+          "name": "Vitamin E",
+          "status": "DIRECT"
+        },
+        {
+          "id": "V013",
+          "name": "Vitamin K",
+          "status": "DIRECT"
+        }
+      ],
+      "minerals": [
+        {
+          "id": "M001",
+          "name": "Calcium",
+          "status": "DIRECT"
+        },
+        {
+          "id": "M003",
+          "name": "Copper",
+          "status": "DIRECT"
+        },
+        {
+          "id": "M004",
+          "name": "Iodine",
+          "status": "DIRECT"
+        },
+        {
+          "id": "M005",
+          "name": "Iron",
+          "status": "DIRECT"
+        },
+        {
+          "id": "M006",
+          "name": "Magnesium",
+          "status": "DIRECT"
+        },
+        {
+          "id": "M007",
+          "name": "Manganese",
+          "status": "DIRECT"
+        },
+        {
+          "id": "M009",
+          "name": "Phosphorus",
+          "status": "DIRECT"
+        },
+        {
+          "id": "M010",
+          "name": "Potassium",
+          "status": "DIRECT"
+        },
+        {
+          "id": "M011",
+          "name": "Selenium",
+          "status": "DIRECT"
+        },
+        {
+          "id": "M013",
+          "name": "Zinc",
+          "status": "DIRECT"
+        }
+      ]
+    },
+    {
+      "productId": "PRD005",
+      "productName": "Synergy Pro360 Superfood Performance Beets",
+      "vitamins": [
+        {
+          "id": "V010",
+          "name": "Vitamin C",
+          "status": "DIRECT"
+        },
+        {
+          "id": "V011",
+          "name": "Vitamin D",
+          "status": "DIRECT"
+        },
+        {
+          "id": "V002",
+          "name": "Vitamin B1 (Thiamine)",
+          "status": "DIRECT"
+        },
+        {
+          "id": "V004",
+          "name": "Vitamin B3 (Niacin)",
+          "status": "DIRECT"
+        },
+        {
+          "id": "V006",
+          "name": "Vitamin B6",
+          "status": "DIRECT"
+        },
+        {
+          "id": "V008",
+          "name": "Vitamin B9 (Folate)",
+          "status": "DIRECT"
+        },
+        {
+          "id": "V009",
+          "name": "Vitamin B12",
+          "status": "DIRECT"
+        }
+      ],
+      "minerals": [
+        {
+          "id": "M006",
+          "name": "Magnesium",
+          "status": "DIRECT"
+        },
+        {
+          "id": "M012",
+          "name": "Sodium",
+          "status": "DIRECT"
+        }
+      ]
+    },
+    {
+      "productId": "PRD007",
+      "productName": "Synergy Biome DT",
+      "vitamins": [],
+      "minerals": [
+        {
+          "id": "M013",
+          "name": "Zinc",
+          "status": "DIRECT"
+        }
+      ]
+    },
+    {
+      "productId": "PRD008",
+      "productName": "Synergy Biome Shake",
+      "vitamins": [
+        {
+          "id": "V010",
+          "name": "Vitamin C",
+          "status": "DIRECT"
+        },
+        {
+          "id": "V011",
+          "name": "Vitamin D",
+          "status": "DIRECT"
+        },
+        {
+          "id": "V004",
+          "name": "Vitamin B3 (Niacin)",
+          "status": "DIRECT"
+        },
+        {
+          "id": "V001",
+          "name": "Vitamin A",
+          "status": "DIRECT"
+        },
+        {
+          "id": "V005",
+          "name": "Vitamin B5 (Pantothenic Acid)",
+          "status": "DIRECT"
+        },
+        {
+          "id": "V007",
+          "name": "Vitamin B7 (Biotin)",
+          "status": "DIRECT"
+        },
+        {
+          "id": "V009",
+          "name": "Vitamin B12",
+          "status": "DIRECT"
+        },
+        {
+          "id": "V008",
+          "name": "Vitamin B9 (Folate)",
+          "status": "DIRECT"
+        },
+        {
+          "id": "V006",
+          "name": "Vitamin B6",
+          "status": "DIRECT"
+        },
+        {
+          "id": "V002",
+          "name": "Vitamin B1 (Thiamine)",
+          "status": "DIRECT"
+        },
+        {
+          "id": "V003",
+          "name": "Vitamin B2 (Riboflavin)",
+          "status": "DIRECT"
+        }
+      ],
+      "minerals": [
+        {
+          "id": "M013",
+          "name": "Zinc",
+          "status": "DIRECT"
+        },
+        {
+          "id": "M004",
+          "name": "Iodine",
+          "status": "DIRECT"
+        },
+        {
+          "id": "M011",
+          "name": "Selenium",
+          "status": "DIRECT"
+        },
+        {
+          "id": "M007",
+          "name": "Manganese",
+          "status": "DIRECT"
+        },
+        {
+          "id": "M003",
+          "name": "Copper",
+          "status": "DIRECT"
+        }
+      ]
+    },
+    {
+      "productId": "PRD009",
+      "productName": "Synergy Body Prime",
+      "vitamins": [],
+      "minerals": [
+        {
+          "id": "M006",
+          "name": "Magnesium",
+          "status": "DIRECT"
+        }
+      ]
+    },
+    {
+      "productId": "PRD011",
+      "productName": "Mistify",
+      "vitamins": [
+        {
+          "id": "V006",
+          "name": "Vitamin B6",
+          "status": "DIRECT"
+        }
+      ],
+      "minerals": []
+    },
     {
       "productId": "PRD012",
       "productName": "Synergy Collagen+",
@@ -71,9 +484,101 @@
           "id": "M013",
           "name": "Zinc",
           "status": "DIRECT"
+        },
+        {
+          "id": "M004",
+          "name": "Iodine",
+          "status": "SOURCE_DEFINED"
+        }
+      ]
+    },
+    {
+      "productId": "PRD021",
+      "productName": "Synergy Multivitamin",
+      "vitamins": [
+        {
+          "id": "V001",
+          "name": "Vitamin A",
+          "status": "DIRECT"
+        },
+        {
+          "id": "V004",
+          "name": "Vitamin B3 (Niacin)",
+          "status": "DIRECT"
+        },
+        {
+          "id": "V013",
+          "name": "Vitamin K",
+          "status": "DIRECT"
+        },
+        {
+          "id": "V011",
+          "name": "Vitamin D",
+          "status": "DIRECT"
+        },
+        {
+          "id": "V005",
+          "name": "Vitamin B5 (Pantothenic Acid)",
+          "status": "DIRECT"
+        },
+        {
+          "id": "V007",
+          "name": "Vitamin B7 (Biotin)",
+          "status": "DIRECT"
+        },
+        {
+          "id": "V008",
+          "name": "Vitamin B9 (Folate)",
+          "status": "DIRECT"
+        },
+        {
+          "id": "V006",
+          "name": "Vitamin B6",
+          "status": "DIRECT"
+        },
+        {
+          "id": "V003",
+          "name": "Vitamin B2 (Riboflavin)",
+          "status": "DIRECT"
+        },
+        {
+          "id": "V002",
+          "name": "Vitamin B1 (Thiamine)",
+          "status": "DIRECT"
+        },
+        {
+          "id": "V009",
+          "name": "Vitamin B12",
+          "status": "DIRECT"
+        },
+        {
+          "id": "V012",
+          "name": "Vitamin E",
+          "status": "DIRECT"
+        }
+      ],
+      "minerals": [
+        {
+          "id": "M001",
+          "name": "Calcium",
+          "status": "DIRECT"
+        },
+        {
+          "id": "M006",
+          "name": "Magnesium",
+          "status": "DIRECT"
+        },
+        {
+          "id": "M010",
+          "name": "Potassium",
+          "status": "DIRECT"
+        },
+        {
+          "id": "M013",
+          "name": "Zinc",
+          "status": "DIRECT"
         }
       ]
     }
-  ],
-  "note": "SleepWell and Liver Health contain botanicals whose specific canonical constituents have not been established from the supplied factsheets alone."
+  ]
 }

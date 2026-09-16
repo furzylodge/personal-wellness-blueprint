@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "product-nutrients-schema.json",
+  "title": "Product Nutrient Relationships",
+  "description": "Product-to-vitamin/mineral relationships, built against manufacturer factsheets. Plays the same role for products that food-nutrients.json plays for foods. Vitamins and minerals remain outside the bioactive model. A product with no vitamin/mineral content is simply absent from the relationships array.",
+  "type": "object",
+  "required": ["version", "description", "count", "products"],
+  "properties": {
+    "version": { "type": "string" },
+    "description": { "type": "string" },
+    "count": { "type": "integer", "minimum": 0 },
+    "products": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["productId", "productName", "vitamins", "minerals"],
+        "properties": {
+          "productId": {
+            "type": "string",
+            "pattern": "^PRD[0-9]{3}$"
+          },
+          "productName": { "type": "string", "minLength": 1 },
+          "vitamins": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["id", "name", "status"],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "pattern": "^V[0-9]{3}$",
+                  "description": "Must match an id in vitamins.json."
+                },
+                "name": { "type": "string", "minLength": 1 },
+                "status": {
+                  "type": "string",
+                  "enum": ["DIRECT", "SOURCE_DEFINED"],
+                  "description": "DIRECT: appears on the supplement facts panel with a declared amount. SOURCE_DEFINED: present via a named source ingredient without an independently declared amount."
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "minerals": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["id", "name", "status"],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "pattern": "^M[0-9]{3}$",
+                  "description": "Must match an id in minerals.json."
+                },
+                "name": { "type": "string", "minLength": 1 },
+                "status": {
+                  "type": "string",
+                  "enum": ["DIRECT", "SOURCE_DEFINED"]
+                }
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

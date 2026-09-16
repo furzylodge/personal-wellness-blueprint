@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "product-outcomes-schema.json",
+  "title": "Product Outcome Relationships",
+  "description": "Derived outcome-to-product relationships generated from product-mechanisms.json matched against each outcome's candidateMechanisms in outcomes.json. This file is DERIVED, not hand-curated: it must be regenerated whenever product-mechanisms.json or outcomes.json change. Mirrors food-outcomes.json for the product side, using identical methodology.",
+  "type": "object",
+  "required": ["version", "status", "description", "generationRule", "outcomeCount", "productOutcomeRelationshipCount", "outcomes"],
+  "properties": {
+    "version": { "type": "string" },
+    "status": { "type": "string", "enum": ["ACTIVE", "PROPOSED_NO_REPOSITORY_CHANGES", "DEPRECATED"] },
+    "description": { "type": "string" },
+    "generationRule": { "type": "string" },
+    "outcomeCount": { "type": "integer", "minimum": 0 },
+    "productOutcomeRelationshipCount": { "type": "integer", "minimum": 0 },
+    "outcomes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["outcomeId", "outcome", "productCount", "products"],
+        "properties": {
+          "outcomeId": { "type": "string", "pattern": "^OUT[0-9]{3}$" },
+          "outcome": { "type": "string", "minLength": 1 },
+          "productCount": { "type": "integer", "minimum": 0 },
+          "products": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["id", "name", "matchedMechanisms", "matchedMechanismCount", "requiredMechanismCount", "coverage", "averageStrength", "evidenceScore"],
+              "properties": {
+                "id": { "type": "string", "pattern": "^PRD[0-9]{3}$" },
+                "name": { "type": "string", "minLength": 1 },
+                "matchedMechanisms": {
+                  "type": "array",
+                  "items": { "type": "string", "pattern": "^MEC[0-9]{3}$" }
+                },
+                "matchedMechanismCount": { "type": "integer", "minimum": 1 },
+                "requiredMechanismCount": { "type": "integer", "minimum": 0 },
+                "coverage": {
+                  "type": "number", "minimum": 0, "maximum": 1,
+                  "description": "Informational only (matched/required candidate mechanisms). Does not drive evidenceScore or ranking."
+                },
+                "averageStrength": { "type": "number", "minimum": 1, "maximum": 5 },
+                "evidenceScore": {
+                  "type": "number", "minimum": 0, "maximum": 100,
+                  "description": "Contribution-weighted score normalised 0-100 against the top-scoring product for this specific outcome. Only comparable within this outcome's list."
+                }
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "products-schema.json",
+  "title": "Products",
+  "description": "Canonical product registry for the PWB product relationship layer (nutritional supplements). PRD codes are stable internal identifiers used by product-bioactives.json, product-nutrients.json and product-mechanisms.json, mirroring foods.json for the supplement side of recommendations.",
+  "type": "object",
+  "required": ["version", "description", "count", "products"],
+  "properties": {
+    "version": { "type": "string" },
+    "description": { "type": "string" },
+    "count": { "type": "integer", "minimum": 0 },
+    "products": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "status"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^PRD[0-9]{3}$"
+          },
+          "name": { "type": "string", "minLength": 1 },
+          "category": { "type": "string" },
+          "format": { "type": "string" },
+          "servings": { "type": "integer", "minimum": 1 },
+          "status": { "type": "string", "enum": ["Active", "Discontinued", "Proposed"] }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

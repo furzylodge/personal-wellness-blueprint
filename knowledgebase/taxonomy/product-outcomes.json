@@ -1,877 +1,1651 @@
 {
-  "version": "1.1",
+  "version": "2.1",
   "status": "ACTIVE",
-  "description": "Derived product-to-outcome relationships generated from product-mechanisms.json and outcomes.json with evidence scoring.",
-  "generationRule": "Mechanism overlap only; coverage = matched/required mechanisms.",
-  "productCount": 23,
-  "productOutcomeRelationshipCount": 53,
-  "products": [
+  "description": "Derived outcome-to-product relationships generated from products' mechanism profiles (product-mechanisms.json) matched against each outcome's candidateMechanisms (outcomes.json). This file is DERIVED, not hand-curated: it must be regenerated whenever product-mechanisms.json or outcomes.json change. Score is contribution-weighted (sum of matched mechanisms' strength/5 x confidence, each mechanism discarded below a 0.5 contribution threshold), not a coverage ratio, so outcomes with long candidate-mechanism lists are not structurally penalised relative to outcomes with short ones. 'coverage' (matched/required) is retained as an informational field only and does not drive ranking or evidenceScore. evidenceScore normalises the raw contribution score to 0-100 against the top-scoring product for that specific outcome; scores are only ever comparable within one outcome's list, never across outcomes.",
+  "generationRule": "sum(strength/5 x confidence) over each product's mechanisms that are also in the outcome's candidateMechanisms, discarding any single mechanism contribution below 0.5, then normalised 0-100 against the top product for that outcome.",
+  "outcomeCount": 9,
+  "productOutcomeRelationshipCount": 115,
+  "outcomes": [
     {
-      "productId": "PRD001",
-      "productName": "Synergy ProArgi-9+",
-      "outcomeCount": 7,
-      "outcomes": [
+      "outcomeId": "OUT001",
+      "outcome": "Better Sleep",
+      "productCount": 10,
+      "products": [
         {
-          "outcomeId": "OUT002",
-          "outcome": "More Energy",
-          "coverage": 1.0,
+          "id": "PRD020",
+          "name": "Synergy SleepWell",
+          "matchedMechanisms": [
+            "MEC057",
+            "MEC058"
+          ],
           "matchedMechanismCount": 2,
           "requiredMechanismCount": 2,
-          "averageStrength": 4.5,
+          "coverage": 1.0,
+          "averageStrength": 3.5,
+          "evidenceScore": 100.0
+        },
+        {
+          "id": "PRD001",
+          "name": "Synergy ProArgi-9+",
+          "matchedMechanisms": [
+            "MEC057"
+          ],
+          "matchedMechanismCount": 1,
+          "requiredMechanismCount": 2,
+          "coverage": 0.5,
+          "averageStrength": 5.0,
+          "evidenceScore": 78.0
+        },
+        {
+          "id": "PRD002",
+          "name": "Synergy e9",
+          "matchedMechanisms": [
+            "MEC057"
+          ],
+          "matchedMechanismCount": 1,
+          "requiredMechanismCount": 2,
+          "coverage": 0.5,
+          "averageStrength": 5.0,
+          "evidenceScore": 78.0
+        },
+        {
+          "id": "PRD004",
+          "name": "Synergy Pro360 Wholefood Greens",
+          "matchedMechanisms": [
+            "MEC057"
+          ],
+          "matchedMechanismCount": 1,
+          "requiredMechanismCount": 2,
+          "coverage": 0.5,
+          "averageStrength": 5.0,
+          "evidenceScore": 78.0
+        },
+        {
+          "id": "PRD005",
+          "name": "Synergy Pro360 Superfood Performance Beets",
+          "matchedMechanisms": [
+            "MEC057"
+          ],
+          "matchedMechanismCount": 1,
+          "requiredMechanismCount": 2,
+          "coverage": 0.5,
+          "averageStrength": 5.0,
+          "evidenceScore": 78.0
+        },
+        {
+          "id": "PRD008",
+          "name": "Synergy Biome Shake",
+          "matchedMechanisms": [
+            "MEC057"
+          ],
+          "matchedMechanismCount": 1,
+          "requiredMechanismCount": 2,
+          "coverage": 0.5,
+          "averageStrength": 5.0,
+          "evidenceScore": 78.0
+        },
+        {
+          "id": "PRD016",
+          "name": "Synergy Omega-3",
+          "matchedMechanisms": [
+            "MEC057"
+          ],
+          "matchedMechanismCount": 1,
+          "requiredMechanismCount": 2,
+          "coverage": 0.5,
+          "averageStrength": 5.0,
+          "evidenceScore": 78.0
+        },
+        {
+          "id": "PRD021",
+          "name": "Synergy Multivitamin",
+          "matchedMechanisms": [
+            "MEC057"
+          ],
+          "matchedMechanismCount": 1,
+          "requiredMechanismCount": 2,
+          "coverage": 0.5,
+          "averageStrength": 5.0,
+          "evidenceScore": 78.0
+        },
+        {
+          "id": "PRD003",
+          "name": "Synergy Immune Booster",
+          "matchedMechanisms": [
+            "MEC057"
+          ],
+          "matchedMechanismCount": 1,
+          "requiredMechanismCount": 2,
+          "coverage": 0.5,
+          "averageStrength": 4.0,
+          "evidenceScore": 62.4
+        },
+        {
+          "id": "PRD011",
+          "name": "Mistify",
+          "matchedMechanisms": [
+            "MEC057"
+          ],
+          "matchedMechanismCount": 1,
+          "requiredMechanismCount": 2,
+          "coverage": 0.5,
+          "averageStrength": 4.0,
+          "evidenceScore": 62.4
+        }
+      ]
+    },
+    {
+      "outcomeId": "OUT002",
+      "outcome": "More Energy",
+      "productCount": 12,
+      "products": [
+        {
+          "id": "PRD004",
+          "name": "Synergy Pro360 Wholefood Greens",
           "matchedMechanisms": [
             "MEC044",
             "MEC102"
           ],
-          "evidenceScore": 97.0
+          "matchedMechanismCount": 2,
+          "requiredMechanismCount": 2,
+          "coverage": 1.0,
+          "averageStrength": 5.0,
+          "evidenceScore": 100.0
         },
         {
-          "outcomeId": "OUT003",
-          "outcome": "Healthy Weight Management",
-          "coverage": 0.75,
-          "matchedMechanismCount": 3,
-          "requiredMechanismCount": 4,
-          "averageStrength": 4.67,
+          "id": "PRD021",
+          "name": "Synergy Multivitamin",
+          "matchedMechanisms": [
+            "MEC044",
+            "MEC102"
+          ],
+          "matchedMechanismCount": 2,
+          "requiredMechanismCount": 2,
+          "coverage": 1.0,
+          "averageStrength": 5.0,
+          "evidenceScore": 100.0
+        },
+        {
+          "id": "PRD008",
+          "name": "Synergy Biome Shake",
+          "matchedMechanisms": [
+            "MEC102",
+            "MEC044"
+          ],
+          "matchedMechanismCount": 2,
+          "requiredMechanismCount": 2,
+          "coverage": 1.0,
+          "averageStrength": 5.0,
+          "evidenceScore": 92.5
+        },
+        {
+          "id": "PRD001",
+          "name": "Synergy ProArgi-9+",
+          "matchedMechanisms": [
+            "MEC044",
+            "MEC102"
+          ],
+          "matchedMechanismCount": 2,
+          "requiredMechanismCount": 2,
+          "coverage": 1.0,
+          "averageStrength": 4.5,
+          "evidenceScore": 79.1
+        },
+        {
+          "id": "PRD007",
+          "name": "Synergy Biome DT",
+          "matchedMechanisms": [
+            "MEC102",
+            "MEC044"
+          ],
+          "matchedMechanismCount": 2,
+          "requiredMechanismCount": 2,
+          "coverage": 1.0,
+          "averageStrength": 4.0,
+          "evidenceScore": 70.6
+        },
+        {
+          "id": "PRD013",
+          "name": "Synergy Collagen+ Beauty",
+          "matchedMechanisms": [
+            "MEC044"
+          ],
+          "matchedMechanismCount": 1,
+          "requiredMechanismCount": 2,
+          "coverage": 0.5,
+          "averageStrength": 5.0,
+          "evidenceScore": 50.0
+        },
+        {
+          "id": "PRD016",
+          "name": "Synergy Omega-3",
+          "matchedMechanisms": [
+            "MEC044"
+          ],
+          "matchedMechanismCount": 1,
+          "requiredMechanismCount": 2,
+          "coverage": 0.5,
+          "averageStrength": 5.0,
+          "evidenceScore": 50.0
+        },
+        {
+          "id": "PRD005",
+          "name": "Synergy Pro360 Superfood Performance Beets",
+          "matchedMechanisms": [
+            "MEC044"
+          ],
+          "matchedMechanismCount": 1,
+          "requiredMechanismCount": 2,
+          "coverage": 0.5,
+          "averageStrength": 5.0,
+          "evidenceScore": 42.5
+        },
+        {
+          "id": "PRD011",
+          "name": "Mistify",
+          "matchedMechanisms": [
+            "MEC044"
+          ],
+          "matchedMechanismCount": 1,
+          "requiredMechanismCount": 2,
+          "coverage": 0.5,
+          "averageStrength": 5.0,
+          "evidenceScore": 42.5
+        },
+        {
+          "id": "PRD018",
+          "name": "Synergy Liver Health",
+          "matchedMechanisms": [
+            "MEC044"
+          ],
+          "matchedMechanismCount": 1,
+          "requiredMechanismCount": 2,
+          "coverage": 0.5,
+          "averageStrength": 5.0,
+          "evidenceScore": 42.5
+        },
+        {
+          "id": "PRD002",
+          "name": "Synergy e9",
+          "matchedMechanisms": [
+            "MEC044"
+          ],
+          "matchedMechanismCount": 1,
+          "requiredMechanismCount": 2,
+          "coverage": 0.5,
+          "averageStrength": 4.0,
+          "evidenceScore": 40.0
+        },
+        {
+          "id": "PRD014",
+          "name": "Synergy FL-3X",
+          "matchedMechanisms": [
+            "MEC044"
+          ],
+          "matchedMechanismCount": 1,
+          "requiredMechanismCount": 2,
+          "coverage": 0.5,
+          "averageStrength": 4.0,
+          "evidenceScore": 34.0
+        }
+      ]
+    },
+    {
+      "outcomeId": "OUT003",
+      "outcome": "Healthy Weight Management",
+      "productCount": 18,
+      "products": [
+        {
+          "id": "PRD004",
+          "name": "Synergy Pro360 Wholefood Greens",
           "matchedMechanisms": [
             "MEC040",
             "MEC041",
-            "MEC044"
+            "MEC044",
+            "MEC043"
           ],
-          "evidenceScore": 80.5
+          "matchedMechanismCount": 4,
+          "requiredMechanismCount": 4,
+          "coverage": 1.0,
+          "averageStrength": 4.75,
+          "evidenceScore": 100.0
         },
         {
-          "outcomeId": "OUT006",
-          "outcome": "Mental Clarity & Cognitive Performance",
-          "coverage": 0.667,
-          "matchedMechanismCount": 2,
-          "requiredMechanismCount": 3,
-          "averageStrength": 4.5,
+          "id": "PRD013",
+          "name": "Synergy Collagen+ Beauty",
           "matchedMechanisms": [
-            "MEC051",
-            "MEC102"
+            "MEC040",
+            "MEC044",
+            "MEC043",
+            "MEC041"
           ],
+          "matchedMechanismCount": 4,
+          "requiredMechanismCount": 4,
+          "coverage": 1.0,
+          "averageStrength": 4.75,
+          "evidenceScore": 100.0
+        },
+        {
+          "id": "PRD011",
+          "name": "Mistify",
+          "matchedMechanisms": [
+            "MEC040",
+            "MEC041",
+            "MEC044",
+            "MEC043"
+          ],
+          "matchedMechanismCount": 4,
+          "requiredMechanismCount": 4,
+          "coverage": 1.0,
+          "averageStrength": 4.75,
+          "evidenceScore": 96.0
+        },
+        {
+          "id": "PRD002",
+          "name": "Synergy e9",
+          "matchedMechanisms": [
+            "MEC043",
+            "MEC041",
+            "MEC040",
+            "MEC044"
+          ],
+          "matchedMechanismCount": 4,
+          "requiredMechanismCount": 4,
+          "coverage": 1.0,
+          "averageStrength": 4.75,
+          "evidenceScore": 92.1
+        },
+        {
+          "id": "PRD008",
+          "name": "Synergy Biome Shake",
+          "matchedMechanisms": [
+            "MEC040",
+            "MEC044",
+            "MEC041",
+            "MEC043"
+          ],
+          "matchedMechanismCount": 4,
+          "requiredMechanismCount": 4,
+          "coverage": 1.0,
+          "averageStrength": 4.75,
+          "evidenceScore": 86.3
+        },
+        {
+          "id": "PRD005",
+          "name": "Synergy Pro360 Superfood Performance Beets",
+          "matchedMechanisms": [
+            "MEC040",
+            "MEC044",
+            "MEC041",
+            "MEC043"
+          ],
+          "matchedMechanismCount": 4,
+          "requiredMechanismCount": 4,
+          "coverage": 1.0,
+          "averageStrength": 4.75,
+          "evidenceScore": 84.9
+        },
+        {
+          "id": "PRD007",
+          "name": "Synergy Biome DT",
+          "matchedMechanisms": [
+            "MEC040",
+            "MEC041",
+            "MEC043",
+            "MEC044"
+          ],
+          "matchedMechanismCount": 4,
+          "requiredMechanismCount": 4,
+          "coverage": 1.0,
+          "averageStrength": 4.5,
+          "evidenceScore": 81.9
+        },
+        {
+          "id": "PRD018",
+          "name": "Synergy Liver Health",
+          "matchedMechanisms": [
+            "MEC040",
+            "MEC044",
+            "MEC043",
+            "MEC041"
+          ],
+          "matchedMechanismCount": 4,
+          "requiredMechanismCount": 4,
+          "coverage": 1.0,
+          "averageStrength": 4.5,
+          "evidenceScore": 81.9
+        },
+        {
+          "id": "PRD021",
+          "name": "Synergy Multivitamin",
+          "matchedMechanisms": [
+            "MEC040",
+            "MEC044",
+            "MEC041"
+          ],
+          "matchedMechanismCount": 3,
+          "requiredMechanismCount": 4,
+          "coverage": 0.75,
+          "averageStrength": 4.67,
           "evidenceScore": 73.7
         },
         {
-          "outcomeId": "OUT008",
-          "outcome": "Healthy Ageing & Resilience",
+          "id": "PRD016",
+          "name": "Synergy Omega-3",
+          "matchedMechanisms": [
+            "MEC044",
+            "MEC041",
+            "MEC043"
+          ],
+          "matchedMechanismCount": 3,
+          "requiredMechanismCount": 4,
+          "coverage": 0.75,
+          "averageStrength": 4.33,
+          "evidenceScore": 66.6
+        },
+        {
+          "id": "PRD001",
+          "name": "Synergy ProArgi-9+",
+          "matchedMechanisms": [
+            "MEC040",
+            "MEC044",
+            "MEC041"
+          ],
+          "matchedMechanismCount": 3,
+          "requiredMechanismCount": 4,
+          "coverage": 0.75,
+          "averageStrength": 4.67,
+          "evidenceScore": 62.6
+        },
+        {
+          "id": "PRD010",
+          "name": "PhytoLife",
+          "matchedMechanisms": [
+            "MEC041",
+            "MEC040",
+            "MEC043"
+          ],
+          "matchedMechanismCount": 3,
+          "requiredMechanismCount": 4,
+          "coverage": 0.75,
+          "averageStrength": 4.0,
+          "evidenceScore": 59.6
+        },
+        {
+          "id": "PRD019",
+          "name": "Synergy Zinc Protect",
+          "matchedMechanisms": [
+            "MEC041",
+            "MEC040",
+            "MEC043"
+          ],
+          "matchedMechanismCount": 3,
+          "requiredMechanismCount": 4,
+          "coverage": 0.75,
+          "averageStrength": 4.0,
+          "evidenceScore": 50.6
+        },
+        {
+          "id": "PRD017",
+          "name": "Synergy CoQ10",
+          "matchedMechanisms": [
+            "MEC043",
+            "MEC041"
+          ],
+          "matchedMechanismCount": 2,
+          "requiredMechanismCount": 4,
           "coverage": 0.5,
+          "averageStrength": 4.0,
+          "evidenceScore": 40.3
+        },
+        {
+          "id": "PRD014",
+          "name": "Synergy FL-3X",
+          "matchedMechanisms": [
+            "MEC040",
+            "MEC044"
+          ],
+          "matchedMechanismCount": 2,
+          "requiredMechanismCount": 4,
+          "coverage": 0.5,
+          "averageStrength": 4.5,
+          "evidenceScore": 40.2
+        },
+        {
+          "id": "PRD023",
+          "name": "Synergy Fat Grabber",
+          "matchedMechanisms": [
+            "MEC040",
+            "MEC043"
+          ],
+          "matchedMechanismCount": 2,
+          "requiredMechanismCount": 4,
+          "coverage": 0.5,
+          "averageStrength": 4.0,
+          "evidenceScore": 38.6
+        },
+        {
+          "id": "PRD009",
+          "name": "Synergy Body Prime",
+          "matchedMechanisms": [
+            "MEC041"
+          ],
+          "matchedMechanismCount": 1,
+          "requiredMechanismCount": 4,
+          "coverage": 0.25,
+          "averageStrength": 4.0,
+          "evidenceScore": 21.1
+        },
+        {
+          "id": "PRD022",
+          "name": "Synergy Carb Blocker",
+          "matchedMechanisms": [
+            "MEC040"
+          ],
+          "matchedMechanismCount": 1,
+          "requiredMechanismCount": 4,
+          "coverage": 0.25,
+          "averageStrength": 4.0,
+          "evidenceScore": 19.3
+        }
+      ]
+    },
+    {
+      "outcomeId": "OUT004",
+      "outcome": "Better Fitness & Physical Performance",
+      "productCount": 5,
+      "products": [
+        {
+          "id": "PRD004",
+          "name": "Synergy Pro360 Wholefood Greens",
+          "matchedMechanisms": [
+            "MEC102"
+          ],
+          "matchedMechanismCount": 1,
+          "requiredMechanismCount": 2,
+          "coverage": 0.5,
+          "averageStrength": 5.0,
+          "evidenceScore": 100.0
+        },
+        {
+          "id": "PRD008",
+          "name": "Synergy Biome Shake",
+          "matchedMechanisms": [
+            "MEC102"
+          ],
+          "matchedMechanismCount": 1,
+          "requiredMechanismCount": 2,
+          "coverage": 0.5,
+          "averageStrength": 5.0,
+          "evidenceScore": 100.0
+        },
+        {
+          "id": "PRD021",
+          "name": "Synergy Multivitamin",
+          "matchedMechanisms": [
+            "MEC102"
+          ],
+          "matchedMechanismCount": 1,
+          "requiredMechanismCount": 2,
+          "coverage": 0.5,
+          "averageStrength": 5.0,
+          "evidenceScore": 100.0
+        },
+        {
+          "id": "PRD001",
+          "name": "Synergy ProArgi-9+",
+          "matchedMechanisms": [
+            "MEC102"
+          ],
+          "matchedMechanismCount": 1,
+          "requiredMechanismCount": 2,
+          "coverage": 0.5,
+          "averageStrength": 4.0,
+          "evidenceScore": 73.3
+        },
+        {
+          "id": "PRD007",
+          "name": "Synergy Biome DT",
+          "matchedMechanisms": [
+            "MEC102"
+          ],
+          "matchedMechanismCount": 1,
+          "requiredMechanismCount": 2,
+          "coverage": 0.5,
+          "averageStrength": 4.0,
+          "evidenceScore": 73.3
+        }
+      ]
+    },
+    {
+      "outcomeId": "OUT005",
+      "outcome": "Digestive & Gut Health",
+      "productCount": 20,
+      "products": [
+        {
+          "id": "PRD008",
+          "name": "Synergy Biome Shake",
+          "matchedMechanisms": [
+            "MEC030",
+            "MEC031",
+            "MEC032",
+            "MEC035",
+            "MEC033",
+            "MEC111",
+            "MEC113",
+            "MEC109",
+            "MEC110",
+            "MEC036"
+          ],
+          "matchedMechanismCount": 10,
+          "requiredMechanismCount": 11,
+          "coverage": 0.909,
+          "averageStrength": 4.6,
+          "evidenceScore": 100.0
+        },
+        {
+          "id": "PRD004",
+          "name": "Synergy Pro360 Wholefood Greens",
+          "matchedMechanisms": [
+            "MEC111",
+            "MEC030",
+            "MEC035",
+            "MEC031",
+            "MEC032",
+            "MEC110",
+            "MEC113",
+            "MEC109",
+            "MEC112",
+            "MEC033",
+            "MEC036"
+          ],
+          "matchedMechanismCount": 11,
+          "requiredMechanismCount": 11,
+          "coverage": 1.0,
+          "averageStrength": 4.55,
+          "evidenceScore": 97.3
+        },
+        {
+          "id": "PRD005",
+          "name": "Synergy Pro360 Superfood Performance Beets",
+          "matchedMechanisms": [
+            "MEC030",
+            "MEC033",
+            "MEC031",
+            "MEC032",
+            "MEC035",
+            "MEC111",
+            "MEC110",
+            "MEC113",
+            "MEC036",
+            "MEC112"
+          ],
+          "matchedMechanismCount": 10,
+          "requiredMechanismCount": 11,
+          "coverage": 0.909,
+          "averageStrength": 4.5,
+          "evidenceScore": 87.8
+        },
+        {
+          "id": "PRD007",
+          "name": "Synergy Biome DT",
+          "matchedMechanisms": [
+            "MEC033",
+            "MEC030",
+            "MEC031",
+            "MEC035",
+            "MEC032",
+            "MEC036",
+            "MEC112",
+            "MEC113",
+            "MEC111"
+          ],
+          "matchedMechanismCount": 9,
+          "requiredMechanismCount": 11,
+          "coverage": 0.818,
+          "averageStrength": 4.44,
+          "evidenceScore": 82.0
+        },
+        {
+          "id": "PRD003",
+          "name": "Synergy Immune Booster",
+          "matchedMechanisms": [
+            "MEC030",
+            "MEC031",
+            "MEC033",
+            "MEC032",
+            "MEC111",
+            "MEC110",
+            "MEC036",
+            "MEC113"
+          ],
+          "matchedMechanismCount": 8,
+          "requiredMechanismCount": 11,
+          "coverage": 0.727,
+          "averageStrength": 4.25,
+          "evidenceScore": 73.2
+        },
+        {
+          "id": "PRD021",
+          "name": "Synergy Multivitamin",
+          "matchedMechanisms": [
+            "MEC030",
+            "MEC033",
+            "MEC031",
+            "MEC032",
+            "MEC109",
+            "MEC110",
+            "MEC113",
+            "MEC111"
+          ],
+          "matchedMechanismCount": 8,
+          "requiredMechanismCount": 11,
+          "coverage": 0.727,
+          "averageStrength": 4.12,
+          "evidenceScore": 72.3
+        },
+        {
+          "id": "PRD018",
+          "name": "Synergy Liver Health",
+          "matchedMechanisms": [
+            "MEC030",
+            "MEC031",
+            "MEC032",
+            "MEC035",
+            "MEC036",
+            "MEC113"
+          ],
+          "matchedMechanismCount": 6,
+          "requiredMechanismCount": 11,
+          "coverage": 0.545,
+          "averageStrength": 4.67,
+          "evidenceScore": 58.6
+        },
+        {
+          "id": "PRD009",
+          "name": "Synergy Body Prime",
+          "matchedMechanisms": [
+            "MEC030",
+            "MEC031",
+            "MEC035",
+            "MEC033",
+            "MEC032",
+            "MEC036"
+          ],
+          "matchedMechanismCount": 6,
+          "requiredMechanismCount": 11,
+          "coverage": 0.545,
+          "averageStrength": 4.5,
+          "evidenceScore": 57.7
+        },
+        {
+          "id": "PRD006",
+          "name": "Synergy Biome Actives",
+          "matchedMechanisms": [
+            "MEC030",
+            "MEC031",
+            "MEC035",
+            "MEC032",
+            "MEC036"
+          ],
+          "matchedMechanismCount": 5,
+          "requiredMechanismCount": 11,
+          "coverage": 0.455,
+          "averageStrength": 4.6,
+          "evidenceScore": 48.9
+        },
+        {
+          "id": "PRD002",
+          "name": "Synergy e9",
+          "matchedMechanisms": [
+            "MEC032",
+            "MEC111",
+            "MEC109",
+            "MEC110",
+            "MEC113"
+          ],
+          "matchedMechanismCount": 5,
+          "requiredMechanismCount": 11,
+          "coverage": 0.455,
+          "averageStrength": 3.8,
+          "evidenceScore": 41.1
+        },
+        {
+          "id": "PRD023",
+          "name": "Synergy Fat Grabber",
+          "matchedMechanisms": [
+            "MEC033",
+            "MEC032",
+            "MEC030",
+            "MEC031",
+            "MEC035"
+          ],
+          "matchedMechanismCount": 5,
+          "requiredMechanismCount": 11,
+          "coverage": 0.455,
+          "averageStrength": 3.8,
+          "evidenceScore": 39.0
+        },
+        {
+          "id": "PRD001",
+          "name": "Synergy ProArgi-9+",
+          "matchedMechanisms": [
+            "MEC032",
+            "MEC111",
+            "MEC110",
+            "MEC113"
+          ],
           "matchedMechanismCount": 4,
-          "requiredMechanismCount": 8,
-          "averageStrength": 4.75,
+          "requiredMechanismCount": 11,
+          "coverage": 0.364,
+          "averageStrength": 3.75,
+          "evidenceScore": 32.3
+        },
+        {
+          "id": "PRD014",
+          "name": "Synergy FL-3X",
+          "matchedMechanisms": [
+            "MEC032",
+            "MEC111",
+            "MEC112",
+            "MEC113"
+          ],
+          "matchedMechanismCount": 4,
+          "requiredMechanismCount": 11,
+          "coverage": 0.364,
+          "averageStrength": 4.0,
+          "evidenceScore": 31.1
+        },
+        {
+          "id": "PRD012",
+          "name": "Synergy Collagen+",
+          "matchedMechanisms": [
+            "MEC032",
+            "MEC111",
+            "MEC113"
+          ],
+          "matchedMechanismCount": 3,
+          "requiredMechanismCount": 11,
+          "coverage": 0.273,
+          "averageStrength": 3.67,
+          "evidenceScore": 23.5
+        },
+        {
+          "id": "PRD013",
+          "name": "Synergy Collagen+ Beauty",
+          "matchedMechanisms": [
+            "MEC032",
+            "MEC111",
+            "MEC113"
+          ],
+          "matchedMechanismCount": 3,
+          "requiredMechanismCount": 11,
+          "coverage": 0.273,
+          "averageStrength": 3.67,
+          "evidenceScore": 23.5
+        },
+        {
+          "id": "PRD017",
+          "name": "Synergy CoQ10",
+          "matchedMechanisms": [
+            "MEC032",
+            "MEC035"
+          ],
+          "matchedMechanismCount": 2,
+          "requiredMechanismCount": 11,
+          "coverage": 0.182,
+          "averageStrength": 5.0,
+          "evidenceScore": 21.9
+        },
+        {
+          "id": "PRD011",
+          "name": "Mistify",
+          "matchedMechanisms": [
+            "MEC110",
+            "MEC111",
+            "MEC113"
+          ],
+          "matchedMechanismCount": 3,
+          "requiredMechanismCount": 11,
+          "coverage": 0.273,
+          "averageStrength": 3.33,
+          "evidenceScore": 20.8
+        },
+        {
+          "id": "PRD019",
+          "name": "Synergy Zinc Protect",
+          "matchedMechanisms": [
+            "MEC032",
+            "MEC113"
+          ],
+          "matchedMechanismCount": 2,
+          "requiredMechanismCount": 11,
+          "coverage": 0.182,
+          "averageStrength": 3.5,
+          "evidenceScore": 14.8
+        },
+        {
+          "id": "PRD010",
+          "name": "PhytoLife",
+          "matchedMechanisms": [
+            "MEC112",
+            "MEC113"
+          ],
+          "matchedMechanismCount": 2,
+          "requiredMechanismCount": 11,
+          "coverage": 0.182,
+          "averageStrength": 3.5,
+          "evidenceScore": 14.0
+        },
+        {
+          "id": "PRD015",
+          "name": "Synergy Vitamin D3",
+          "matchedMechanisms": [
+            "MEC032"
+          ],
+          "matchedMechanismCount": 1,
+          "requiredMechanismCount": 11,
+          "coverage": 0.091,
+          "averageStrength": 4.0,
+          "evidenceScore": 8.8
+        }
+      ]
+    },
+    {
+      "outcomeId": "OUT006",
+      "outcome": "Mental Clarity & Cognitive Performance",
+      "productCount": 10,
+      "products": [
+        {
+          "id": "PRD004",
+          "name": "Synergy Pro360 Wholefood Greens",
+          "matchedMechanisms": [
+            "MEC051",
+            "MEC102"
+          ],
+          "matchedMechanismCount": 2,
+          "requiredMechanismCount": 5,
+          "coverage": 0.4,
+          "averageStrength": 5.0,
+          "evidenceScore": 100.0
+        },
+        {
+          "id": "PRD008",
+          "name": "Synergy Biome Shake",
+          "matchedMechanisms": [
+            "MEC102",
+            "MEC051"
+          ],
+          "matchedMechanismCount": 2,
+          "requiredMechanismCount": 5,
+          "coverage": 0.4,
+          "averageStrength": 4.5,
+          "evidenceScore": 90.0
+        },
+        {
+          "id": "PRD021",
+          "name": "Synergy Multivitamin",
+          "matchedMechanisms": [
+            "MEC102",
+            "MEC051"
+          ],
+          "matchedMechanismCount": 2,
+          "requiredMechanismCount": 5,
+          "coverage": 0.4,
+          "averageStrength": 4.5,
+          "evidenceScore": 90.0
+        },
+        {
+          "id": "PRD001",
+          "name": "Synergy ProArgi-9+",
+          "matchedMechanisms": [
+            "MEC051",
+            "MEC102"
+          ],
+          "matchedMechanismCount": 2,
+          "requiredMechanismCount": 5,
+          "coverage": 0.4,
+          "averageStrength": 4.5,
+          "evidenceScore": 86.6
+        },
+        {
+          "id": "PRD002",
+          "name": "Synergy e9",
+          "matchedMechanisms": [
+            "MEC051",
+            "MEC050"
+          ],
+          "matchedMechanismCount": 2,
+          "requiredMechanismCount": 5,
+          "coverage": 0.4,
+          "averageStrength": 4.5,
+          "evidenceScore": 86.6
+        },
+        {
+          "id": "PRD007",
+          "name": "Synergy Biome DT",
+          "matchedMechanisms": [
+            "MEC102",
+            "MEC051"
+          ],
+          "matchedMechanismCount": 2,
+          "requiredMechanismCount": 5,
+          "coverage": 0.4,
+          "averageStrength": 4.0,
+          "evidenceScore": 67.7
+        },
+        {
+          "id": "PRD010",
+          "name": "PhytoLife",
+          "matchedMechanisms": [
+            "MEC050"
+          ],
+          "matchedMechanismCount": 1,
+          "requiredMechanismCount": 5,
+          "coverage": 0.2,
+          "averageStrength": 5.0,
+          "evidenceScore": 50.0
+        },
+        {
+          "id": "PRD019",
+          "name": "Synergy Zinc Protect",
+          "matchedMechanisms": [
+            "MEC050"
+          ],
+          "matchedMechanismCount": 1,
+          "requiredMechanismCount": 5,
+          "coverage": 0.2,
+          "averageStrength": 5.0,
+          "evidenceScore": 42.5
+        },
+        {
+          "id": "PRD005",
+          "name": "Synergy Pro360 Superfood Performance Beets",
+          "matchedMechanisms": [
+            "MEC051"
+          ],
+          "matchedMechanismCount": 1,
+          "requiredMechanismCount": 5,
+          "coverage": 0.2,
+          "averageStrength": 4.0,
+          "evidenceScore": 40.0
+        },
+        {
+          "id": "PRD013",
+          "name": "Synergy Collagen+ Beauty",
+          "matchedMechanisms": [
+            "MEC051"
+          ],
+          "matchedMechanismCount": 1,
+          "requiredMechanismCount": 5,
+          "coverage": 0.2,
+          "averageStrength": 3.0,
+          "evidenceScore": 27.5
+        }
+      ]
+    },
+    {
+      "outcomeId": "OUT007",
+      "outcome": "Mobility & Joint Health",
+      "productCount": 13,
+      "products": [
+        {
+          "id": "PRD005",
+          "name": "Synergy Pro360 Superfood Performance Beets",
+          "matchedMechanisms": [
+            "MEC094",
+            "MEC091",
+            "MEC090"
+          ],
+          "matchedMechanismCount": 3,
+          "requiredMechanismCount": 3,
+          "coverage": 1.0,
+          "averageStrength": 4.67,
+          "evidenceScore": 100.0
+        },
+        {
+          "id": "PRD001",
+          "name": "Synergy ProArgi-9+",
+          "matchedMechanisms": [
+            "MEC094",
+            "MEC091"
+          ],
+          "matchedMechanismCount": 2,
+          "requiredMechanismCount": 3,
+          "coverage": 0.667,
+          "averageStrength": 5.0,
+          "evidenceScore": 76.3
+        },
+        {
+          "id": "PRD003",
+          "name": "Synergy Immune Booster",
+          "matchedMechanisms": [
+            "MEC094",
+            "MEC091"
+          ],
+          "matchedMechanismCount": 2,
+          "requiredMechanismCount": 3,
+          "coverage": 0.667,
+          "averageStrength": 5.0,
+          "evidenceScore": 76.3
+        },
+        {
+          "id": "PRD004",
+          "name": "Synergy Pro360 Wholefood Greens",
+          "matchedMechanisms": [
+            "MEC094",
+            "MEC091"
+          ],
+          "matchedMechanismCount": 2,
+          "requiredMechanismCount": 3,
+          "coverage": 0.667,
+          "averageStrength": 5.0,
+          "evidenceScore": 76.3
+        },
+        {
+          "id": "PRD008",
+          "name": "Synergy Biome Shake",
+          "matchedMechanisms": [
+            "MEC094",
+            "MEC091"
+          ],
+          "matchedMechanismCount": 2,
+          "requiredMechanismCount": 3,
+          "coverage": 0.667,
+          "averageStrength": 5.0,
+          "evidenceScore": 76.3
+        },
+        {
+          "id": "PRD012",
+          "name": "Synergy Collagen+",
+          "matchedMechanisms": [
+            "MEC090",
+            "MEC094"
+          ],
+          "matchedMechanismCount": 2,
+          "requiredMechanismCount": 3,
+          "coverage": 0.667,
+          "averageStrength": 5.0,
+          "evidenceScore": 76.3
+        },
+        {
+          "id": "PRD013",
+          "name": "Synergy Collagen+ Beauty",
+          "matchedMechanisms": [
+            "MEC090",
+            "MEC094"
+          ],
+          "matchedMechanismCount": 2,
+          "requiredMechanismCount": 3,
+          "coverage": 0.667,
+          "averageStrength": 5.0,
+          "evidenceScore": 76.3
+        },
+        {
+          "id": "PRD014",
+          "name": "Synergy FL-3X",
+          "matchedMechanisms": [
+            "MEC094",
+            "MEC090"
+          ],
+          "matchedMechanismCount": 2,
+          "requiredMechanismCount": 3,
+          "coverage": 0.667,
+          "averageStrength": 4.5,
+          "evidenceScore": 61.9
+        },
+        {
+          "id": "PRD007",
+          "name": "Synergy Biome DT",
+          "matchedMechanisms": [
+            "MEC094",
+            "MEC090"
+          ],
+          "matchedMechanismCount": 2,
+          "requiredMechanismCount": 3,
+          "coverage": 0.667,
+          "averageStrength": 4.5,
+          "evidenceScore": 56.1
+        },
+        {
+          "id": "PRD002",
+          "name": "Synergy e9",
+          "matchedMechanisms": [
+            "MEC094"
+          ],
+          "matchedMechanismCount": 1,
+          "requiredMechanismCount": 3,
+          "coverage": 0.333,
+          "averageStrength": 5.0,
+          "evidenceScore": 38.1
+        },
+        {
+          "id": "PRD015",
+          "name": "Synergy Vitamin D3",
+          "matchedMechanisms": [
+            "MEC091"
+          ],
+          "matchedMechanismCount": 1,
+          "requiredMechanismCount": 3,
+          "coverage": 0.333,
+          "averageStrength": 5.0,
+          "evidenceScore": 38.1
+        },
+        {
+          "id": "PRD018",
+          "name": "Synergy Liver Health",
+          "matchedMechanisms": [
+            "MEC094"
+          ],
+          "matchedMechanismCount": 1,
+          "requiredMechanismCount": 3,
+          "coverage": 0.333,
+          "averageStrength": 5.0,
+          "evidenceScore": 38.1
+        },
+        {
+          "id": "PRD021",
+          "name": "Synergy Multivitamin",
+          "matchedMechanisms": [
+            "MEC091"
+          ],
+          "matchedMechanismCount": 1,
+          "requiredMechanismCount": 3,
+          "coverage": 0.333,
+          "averageStrength": 5.0,
+          "evidenceScore": 38.1
+        }
+      ]
+    },
+    {
+      "outcomeId": "OUT008",
+      "outcome": "Healthy Ageing & Resilience",
+      "productCount": 19,
+      "products": [
+        {
+          "id": "PRD004",
+          "name": "Synergy Pro360 Wholefood Greens",
           "matchedMechanisms": [
             "MEC040",
             "MEC044",
             "MEC051",
+            "MEC111",
+            "MEC102",
+            "MEC091",
+            "MEC060"
+          ],
+          "matchedMechanismCount": 7,
+          "requiredMechanismCount": 8,
+          "coverage": 0.875,
+          "averageStrength": 5.0,
+          "evidenceScore": 100.0
+        },
+        {
+          "id": "PRD005",
+          "name": "Synergy Pro360 Superfood Performance Beets",
+          "matchedMechanisms": [
+            "MEC091",
+            "MEC040",
+            "MEC044",
+            "MEC060",
+            "MEC051",
+            "MEC111",
+            "MEC090"
+          ],
+          "matchedMechanismCount": 7,
+          "requiredMechanismCount": 8,
+          "coverage": 0.875,
+          "averageStrength": 4.43,
+          "evidenceScore": 83.5
+        },
+        {
+          "id": "PRD008",
+          "name": "Synergy Biome Shake",
+          "matchedMechanisms": [
+            "MEC111",
+            "MEC091",
+            "MEC102",
+            "MEC040",
+            "MEC044",
+            "MEC051"
+          ],
+          "matchedMechanismCount": 6,
+          "requiredMechanismCount": 8,
+          "coverage": 0.75,
+          "averageStrength": 4.83,
+          "evidenceScore": 80.3
+        },
+        {
+          "id": "PRD021",
+          "name": "Synergy Multivitamin",
+          "matchedMechanisms": [
+            "MEC040",
+            "MEC044",
+            "MEC091",
+            "MEC102",
+            "MEC051",
+            "MEC111"
+          ],
+          "matchedMechanismCount": 6,
+          "requiredMechanismCount": 8,
+          "coverage": 0.75,
+          "averageStrength": 4.5,
+          "evidenceScore": 78.8
+        },
+        {
+          "id": "PRD001",
+          "name": "Synergy ProArgi-9+",
+          "matchedMechanisms": [
+            "MEC051",
+            "MEC091",
+            "MEC040",
+            "MEC044",
+            "MEC111",
             "MEC102"
           ],
+          "matchedMechanismCount": 6,
+          "requiredMechanismCount": 8,
+          "coverage": 0.75,
+          "averageStrength": 4.67,
+          "evidenceScore": 76.4
+        },
+        {
+          "id": "PRD007",
+          "name": "Synergy Biome DT",
+          "matchedMechanisms": [
+            "MEC040",
+            "MEC102",
+            "MEC044",
+            "MEC060",
+            "MEC051",
+            "MEC090",
+            "MEC111"
+          ],
+          "matchedMechanismCount": 7,
+          "requiredMechanismCount": 8,
+          "coverage": 0.875,
+          "averageStrength": 4.0,
+          "evidenceScore": 68.3
+        },
+        {
+          "id": "PRD013",
+          "name": "Synergy Collagen+ Beauty",
+          "matchedMechanisms": [
+            "MEC090",
+            "MEC040",
+            "MEC044",
+            "MEC111",
+            "MEC051"
+          ],
+          "matchedMechanismCount": 5,
+          "requiredMechanismCount": 8,
+          "coverage": 0.625,
+          "averageStrength": 4.4,
           "evidenceScore": 63.5
         },
         {
-          "outcomeId": "OUT004",
-          "outcome": "Better Fitness & Physical Performance",
-          "coverage": 0.5,
-          "matchedMechanismCount": 1,
-          "requiredMechanismCount": 2,
-          "averageStrength": 4.0,
-          "matchedMechanisms": [
-            "MEC102"
-          ],
-          "evidenceScore": 59.0
-        },
-        {
-          "outcomeId": "OUT001",
-          "outcome": "Better Sleep",
-          "coverage": 0.25,
-          "matchedMechanismCount": 1,
-          "requiredMechanismCount": 4,
-          "averageStrength": 5.0,
-          "matchedMechanisms": [
-            "MEC051"
-          ],
-          "evidenceScore": 47.5
-        },
-        {
-          "outcomeId": "OUT005",
-          "outcome": "Digestive & Gut Health",
-          "coverage": 0.182,
-          "matchedMechanismCount": 2,
-          "requiredMechanismCount": 11,
-          "averageStrength": 2.0,
-          "matchedMechanisms": [
-            "MEC030",
-            "MEC035"
-          ],
-          "evidenceScore": 24.7
-        }
-      ]
-    },
-    {
-      "productId": "PRD002",
-      "productName": "Synergy e9",
-      "outcomeCount": 3,
-      "outcomes": [
-        {
-          "outcomeId": "OUT006",
-          "outcome": "Mental Clarity & Cognitive Performance",
-          "coverage": 0.333,
-          "matchedMechanismCount": 1,
-          "requiredMechanismCount": 3,
-          "averageStrength": 5.0,
-          "matchedMechanisms": [
-            "MEC051"
-          ],
-          "evidenceScore": 53.3
-        },
-        {
-          "outcomeId": "OUT001",
-          "outcome": "Better Sleep",
-          "coverage": 0.25,
-          "matchedMechanismCount": 1,
-          "requiredMechanismCount": 4,
-          "averageStrength": 5.0,
-          "matchedMechanisms": [
-            "MEC051"
-          ],
-          "evidenceScore": 47.5
-        },
-        {
-          "outcomeId": "OUT008",
-          "outcome": "Healthy Ageing & Resilience",
-          "coverage": 0.125,
-          "matchedMechanismCount": 1,
-          "requiredMechanismCount": 8,
-          "averageStrength": 5.0,
-          "matchedMechanisms": [
-            "MEC051"
-          ],
-          "evidenceScore": 38.7
-        }
-      ]
-    },
-    {
-      "productId": "PRD003",
-      "productName": "Synergy Immune Booster",
-      "outcomeCount": 1,
-      "outcomes": [
-        {
-          "outcomeId": "OUT005",
-          "outcome": "Digestive & Gut Health",
-          "coverage": 0.455,
-          "matchedMechanismCount": 5,
-          "requiredMechanismCount": 11,
-          "averageStrength": 4.6,
-          "matchedMechanisms": [
-            "MEC030",
-            "MEC031",
-            "MEC032",
-            "MEC033",
-            "MEC036"
-          ],
-          "evidenceScore": 59.5
-        }
-      ]
-    },
-    {
-      "productId": "PRD004",
-      "productName": "Synergy Pro360 Wholefood Greens",
-      "outcomeCount": 4,
-      "outcomes": [
-        {
-          "outcomeId": "OUT003",
-          "outcome": "Healthy Weight Management",
-          "coverage": 1.0,
-          "matchedMechanismCount": 4,
-          "requiredMechanismCount": 4,
-          "averageStrength": 4.0,
+          "id": "PRD014",
+          "name": "Synergy FL-3X",
           "matchedMechanisms": [
             "MEC040",
-            "MEC041",
-            "MEC043",
-            "MEC044"
-          ],
-          "evidenceScore": 94.0
-        },
-        {
-          "outcomeId": "OUT005",
-          "outcome": "Digestive & Gut Health",
-          "coverage": 0.545,
-          "matchedMechanismCount": 6,
-          "requiredMechanismCount": 11,
-          "averageStrength": 4.17,
-          "matchedMechanisms": [
-            "MEC030",
-            "MEC031",
-            "MEC032",
-            "MEC033",
-            "MEC035",
-            "MEC036"
-          ],
-          "evidenceScore": 63.2
-        },
-        {
-          "outcomeId": "OUT002",
-          "outcome": "More Energy",
-          "coverage": 0.5,
-          "matchedMechanismCount": 1,
-          "requiredMechanismCount": 2,
-          "averageStrength": 4.0,
-          "matchedMechanisms": [
-            "MEC044"
-          ],
-          "evidenceScore": 59.0
-        },
-        {
-          "outcomeId": "OUT008",
-          "outcome": "Healthy Ageing & Resilience",
-          "coverage": 0.25,
-          "matchedMechanismCount": 2,
-          "requiredMechanismCount": 8,
-          "averageStrength": 4.5,
-          "matchedMechanisms": [
-            "MEC040",
-            "MEC044"
-          ],
-          "evidenceScore": 44.5
-        }
-      ]
-    },
-    {
-      "productId": "PRD005",
-      "productName": "Synergy Pro360 Superfood Performance Beets",
-      "outcomeCount": 2,
-      "outcomes": [
-        {
-          "outcomeId": "OUT005",
-          "outcome": "Digestive & Gut Health",
-          "coverage": 0.364,
-          "matchedMechanismCount": 4,
-          "requiredMechanismCount": 11,
-          "averageStrength": 4.5,
-          "matchedMechanisms": [
-            "MEC030",
-            "MEC031",
-            "MEC032",
-            "MEC033"
-          ],
-          "evidenceScore": 52.5
-        },
-        {
-          "outcomeId": "OUT008",
-          "outcome": "Healthy Ageing & Resilience",
-          "coverage": 0.125,
-          "matchedMechanismCount": 1,
-          "requiredMechanismCount": 8,
-          "averageStrength": 4.0,
-          "matchedMechanisms": [
-            "MEC060"
-          ],
-          "evidenceScore": 32.8
-        }
-      ]
-    },
-    {
-      "productId": "PRD006",
-      "productName": "Synergy Biome Actives",
-      "outcomeCount": 1,
-      "outcomes": [
-        {
-          "outcomeId": "OUT005",
-          "outcome": "Digestive & Gut Health",
-          "coverage": 0.455,
-          "matchedMechanismCount": 5,
-          "requiredMechanismCount": 11,
-          "averageStrength": 4.6,
-          "matchedMechanisms": [
-            "MEC030",
-            "MEC031",
-            "MEC032",
-            "MEC035",
-            "MEC036"
-          ],
-          "evidenceScore": 59.5
-        }
-      ]
-    },
-    {
-      "productId": "PRD007",
-      "productName": "Synergy Biome DT",
-      "outcomeCount": 6,
-      "outcomes": [
-        {
-          "outcomeId": "OUT005",
-          "outcome": "Digestive & Gut Health",
-          "coverage": 0.727,
-          "matchedMechanismCount": 8,
-          "requiredMechanismCount": 11,
-          "averageStrength": 4.38,
-          "matchedMechanisms": [
-            "MEC030",
-            "MEC031",
-            "MEC032",
-            "MEC033",
-            "MEC035",
-            "MEC036",
-            "MEC112",
-            "MEC113"
-          ],
-          "evidenceScore": 77.2
-        },
-        {
-          "outcomeId": "OUT002",
-          "outcome": "More Energy",
-          "coverage": 0.5,
-          "matchedMechanismCount": 1,
-          "requiredMechanismCount": 2,
-          "averageStrength": 4.0,
-          "matchedMechanisms": [
-            "MEC102"
-          ],
-          "evidenceScore": 59.0
-        },
-        {
-          "outcomeId": "OUT003",
-          "outcome": "Healthy Weight Management",
-          "coverage": 0.5,
-          "matchedMechanismCount": 2,
-          "requiredMechanismCount": 4,
-          "averageStrength": 4.0,
-          "matchedMechanisms": [
-            "MEC040",
-            "MEC043"
-          ],
-          "evidenceScore": 59.0
-        },
-        {
-          "outcomeId": "OUT004",
-          "outcome": "Better Fitness & Physical Performance",
-          "coverage": 0.5,
-          "matchedMechanismCount": 1,
-          "requiredMechanismCount": 2,
-          "averageStrength": 4.0,
-          "matchedMechanisms": [
-            "MEC102"
-          ],
-          "evidenceScore": 59.0
-        },
-        {
-          "outcomeId": "OUT008",
-          "outcome": "Healthy Ageing & Resilience",
-          "coverage": 0.375,
-          "matchedMechanismCount": 3,
-          "requiredMechanismCount": 8,
-          "averageStrength": 3.67,
-          "matchedMechanisms": [
-            "MEC040",
+            "MEC111",
+            "MEC044",
             "MEC060",
-            "MEC102"
-          ],
-          "evidenceScore": 48.3
-        },
-        {
-          "outcomeId": "OUT006",
-          "outcome": "Mental Clarity & Cognitive Performance",
-          "coverage": 0.333,
-          "matchedMechanismCount": 1,
-          "requiredMechanismCount": 3,
-          "averageStrength": 4.0,
-          "matchedMechanisms": [
-            "MEC102"
-          ],
-          "evidenceScore": 47.3
-        }
-      ]
-    },
-    {
-      "productId": "PRD008",
-      "productName": "Synergy Biome Shake",
-      "outcomeCount": 2,
-      "outcomes": [
-        {
-          "outcomeId": "OUT005",
-          "outcome": "Digestive & Gut Health",
-          "coverage": 0.545,
-          "matchedMechanismCount": 6,
-          "requiredMechanismCount": 11,
-          "averageStrength": 4.83,
-          "matchedMechanisms": [
-            "MEC030",
-            "MEC031",
-            "MEC032",
-            "MEC033",
-            "MEC035",
-            "MEC036"
-          ],
-          "evidenceScore": 67.1
-        },
-        {
-          "outcomeId": "OUT003",
-          "outcome": "Healthy Weight Management",
-          "coverage": 0.25,
-          "matchedMechanismCount": 1,
-          "requiredMechanismCount": 4,
-          "averageStrength": 4.0,
-          "matchedMechanisms": [
-            "MEC043"
-          ],
-          "evidenceScore": 41.5
-        }
-      ]
-    },
-    {
-      "productId": "PRD009",
-      "productName": "Synergy Body Prime",
-      "outcomeCount": 1,
-      "outcomes": [
-        {
-          "outcomeId": "OUT005",
-          "outcome": "Digestive & Gut Health",
-          "coverage": 0.545,
-          "matchedMechanismCount": 6,
-          "requiredMechanismCount": 11,
-          "averageStrength": 4.83,
-          "matchedMechanisms": [
-            "MEC030",
-            "MEC031",
-            "MEC032",
-            "MEC033",
-            "MEC035",
-            "MEC036"
-          ],
-          "evidenceScore": 67.1
-        }
-      ]
-    },
-    {
-      "productId": "PRD010",
-      "productName": "PhytoLife",
-      "outcomeCount": 2,
-      "outcomes": [
-        {
-          "outcomeId": "OUT005",
-          "outcome": "Digestive & Gut Health",
-          "coverage": 0.182,
-          "matchedMechanismCount": 2,
-          "requiredMechanismCount": 11,
-          "averageStrength": 3.5,
-          "matchedMechanisms": [
-            "MEC112",
-            "MEC113"
-          ],
-          "evidenceScore": 33.7
-        },
-        {
-          "outcomeId": "OUT008",
-          "outcome": "Healthy Ageing & Resilience",
-          "coverage": 0.125,
-          "matchedMechanismCount": 1,
-          "requiredMechanismCount": 8,
-          "averageStrength": 3.0,
-          "matchedMechanisms": [
-            "MEC060"
-          ],
-          "evidenceScore": 26.7
-        }
-      ]
-    },
-    {
-      "productId": "PRD011",
-      "productName": "Mistify",
-      "outcomeCount": 0,
-      "outcomes": []
-    },
-    {
-      "productId": "PRD012",
-      "productName": "Synergy Collagen+",
-      "outcomeCount": 3,
-      "outcomes": [
-        {
-          "outcomeId": "OUT007",
-          "outcome": "Mobility & Joint Health",
-          "coverage": 0.667,
-          "matchedMechanismCount": 2,
-          "requiredMechanismCount": 3,
-          "averageStrength": 4.0,
-          "matchedMechanisms": [
-            "MEC090",
-            "MEC094"
-          ],
-          "evidenceScore": 70.7
-        },
-        {
-          "outcomeId": "OUT004",
-          "outcome": "Better Fitness & Physical Performance",
-          "coverage": 0.5,
-          "matchedMechanismCount": 1,
-          "requiredMechanismCount": 2,
-          "averageStrength": 3.0,
-          "matchedMechanisms": [
-            "MEC092"
-          ],
-          "evidenceScore": 53.0
-        },
-        {
-          "outcomeId": "OUT008",
-          "outcome": "Healthy Ageing & Resilience",
-          "coverage": 0.125,
-          "matchedMechanismCount": 1,
-          "requiredMechanismCount": 8,
-          "averageStrength": 5.0,
-          "matchedMechanisms": [
             "MEC090"
           ],
-          "evidenceScore": 38.7
-        }
-      ]
-    },
-    {
-      "productId": "PRD013",
-      "productName": "Synergy Collagen+ Beauty",
-      "outcomeCount": 8,
-      "outcomes": [
+          "matchedMechanismCount": 5,
+          "requiredMechanismCount": 8,
+          "coverage": 0.625,
+          "averageStrength": 4.2,
+          "evidenceScore": 52.2
+        },
         {
-          "outcomeId": "OUT003",
-          "outcome": "Healthy Weight Management",
-          "coverage": 0.75,
-          "matchedMechanismCount": 3,
-          "requiredMechanismCount": 4,
-          "averageStrength": 4.67,
+          "id": "PRD002",
+          "name": "Synergy e9",
           "matchedMechanisms": [
+            "MEC051",
             "MEC040",
-            "MEC041",
-            "MEC044"
+            "MEC044",
+            "MEC111"
           ],
-          "evidenceScore": 80.5
-        },
-        {
-          "outcomeId": "OUT007",
-          "outcome": "Mobility & Joint Health",
-          "coverage": 0.667,
-          "matchedMechanismCount": 2,
-          "requiredMechanismCount": 3,
-          "averageStrength": 4.0,
-          "matchedMechanisms": [
-            "MEC090",
-            "MEC094"
-          ],
-          "evidenceScore": 70.7
-        },
-        {
-          "outcomeId": "OUT002",
-          "outcome": "More Energy",
-          "coverage": 0.5,
-          "matchedMechanismCount": 1,
-          "requiredMechanismCount": 2,
-          "averageStrength": 5.0,
-          "matchedMechanisms": [
-            "MEC044"
-          ],
-          "evidenceScore": 65.0
-        },
-        {
-          "outcomeId": "OUT008",
-          "outcome": "Healthy Ageing & Resilience",
-          "coverage": 0.5,
           "matchedMechanismCount": 4,
           "requiredMechanismCount": 8,
+          "coverage": 0.5,
           "averageStrength": 4.5,
+          "evidenceScore": 50.4
+        },
+        {
+          "id": "PRD011",
+          "name": "Mistify",
           "matchedMechanisms": [
             "MEC040",
             "MEC044",
-            "MEC051",
-            "MEC090"
+            "MEC111"
           ],
-          "evidenceScore": 62.0
+          "matchedMechanismCount": 3,
+          "requiredMechanismCount": 8,
+          "coverage": 0.375,
+          "averageStrength": 4.33,
+          "evidenceScore": 35.0
         },
         {
-          "outcomeId": "OUT004",
-          "outcome": "Better Fitness & Physical Performance",
-          "coverage": 0.5,
-          "matchedMechanismCount": 1,
-          "requiredMechanismCount": 2,
-          "averageStrength": 3.0,
+          "id": "PRD018",
+          "name": "Synergy Liver Health",
           "matchedMechanisms": [
-            "MEC092"
+            "MEC040",
+            "MEC044",
+            "MEC060"
           ],
-          "evidenceScore": 53.0
+          "matchedMechanismCount": 3,
+          "requiredMechanismCount": 8,
+          "coverage": 0.375,
+          "averageStrength": 4.67,
+          "evidenceScore": 33.9
         },
         {
-          "outcomeId": "OUT006",
-          "outcome": "Mental Clarity & Cognitive Performance",
-          "coverage": 0.333,
-          "matchedMechanismCount": 1,
-          "requiredMechanismCount": 3,
-          "averageStrength": 3.0,
+          "id": "PRD003",
+          "name": "Synergy Immune Booster",
           "matchedMechanisms": [
-            "MEC051"
+            "MEC091",
+            "MEC111"
           ],
-          "evidenceScore": 41.3
-        },
-        {
-          "outcomeId": "OUT001",
-          "outcome": "Better Sleep",
-          "coverage": 0.25,
-          "matchedMechanismCount": 1,
-          "requiredMechanismCount": 4,
-          "averageStrength": 3.0,
-          "matchedMechanisms": [
-            "MEC051"
-          ],
-          "evidenceScore": 35.5
-        },
-        {
-          "outcomeId": "OUT005",
-          "outcome": "Digestive & Gut Health",
-          "coverage": 0.182,
           "matchedMechanismCount": 2,
-          "requiredMechanismCount": 11,
-          "averageStrength": 2.0,
-          "matchedMechanisms": [
-            "MEC030",
-            "MEC035"
-          ],
-          "evidenceScore": 24.7
-        }
-      ]
-    },
-    {
-      "productId": "PRD014",
-      "productName": "Synergy FL-3X",
-      "outcomeCount": 1,
-      "outcomes": [
-        {
-          "outcomeId": "OUT007",
-          "outcome": "Mobility & Joint Health",
-          "coverage": 0.333,
-          "matchedMechanismCount": 1,
-          "requiredMechanismCount": 3,
-          "averageStrength": 4.0,
-          "matchedMechanisms": [
-            "MEC094"
-          ],
-          "evidenceScore": 47.3
-        }
-      ]
-    },
-    {
-      "productId": "PRD015",
-      "productName": "Synergy Vitamin D3",
-      "outcomeCount": 3,
-      "outcomes": [
-        {
-          "outcomeId": "OUT007",
-          "outcome": "Mobility & Joint Health",
-          "coverage": 0.333,
-          "matchedMechanismCount": 1,
-          "requiredMechanismCount": 3,
-          "averageStrength": 5.0,
-          "matchedMechanisms": [
-            "MEC114"
-          ],
-          "evidenceScore": 53.3
+          "requiredMechanismCount": 8,
+          "coverage": 0.25,
+          "averageStrength": 4.5,
+          "evidenceScore": 26.3
         },
         {
-          "outcomeId": "OUT009",
-          "outcome": "Menopause Transition Resilience",
-          "coverage": 0.2,
+          "id": "PRD012",
+          "name": "Synergy Collagen+",
+          "matchedMechanisms": [
+            "MEC090",
+            "MEC111"
+          ],
+          "matchedMechanismCount": 2,
+          "requiredMechanismCount": 8,
+          "coverage": 0.25,
+          "averageStrength": 4.5,
+          "evidenceScore": 26.3
+        },
+        {
+          "id": "PRD010",
+          "name": "PhytoLife",
+          "matchedMechanisms": [
+            "MEC040",
+            "MEC060"
+          ],
+          "matchedMechanismCount": 2,
+          "requiredMechanismCount": 8,
+          "coverage": 0.25,
+          "averageStrength": 3.5,
+          "evidenceScore": 18.7
+        },
+        {
+          "id": "PRD015",
+          "name": "Synergy Vitamin D3",
+          "matchedMechanisms": [
+            "MEC091"
+          ],
+          "matchedMechanismCount": 1,
+          "requiredMechanismCount": 8,
+          "coverage": 0.125,
+          "averageStrength": 5.0,
+          "evidenceScore": 14.6
+        },
+        {
+          "id": "PRD016",
+          "name": "Synergy Omega-3",
+          "matchedMechanisms": [
+            "MEC044"
+          ],
+          "matchedMechanismCount": 1,
+          "requiredMechanismCount": 8,
+          "coverage": 0.125,
+          "averageStrength": 5.0,
+          "evidenceScore": 14.6
+        },
+        {
+          "id": "PRD022",
+          "name": "Synergy Carb Blocker",
+          "matchedMechanisms": [
+            "MEC040"
+          ],
+          "matchedMechanismCount": 1,
+          "requiredMechanismCount": 8,
+          "coverage": 0.125,
+          "averageStrength": 4.0,
+          "evidenceScore": 10.7
+        },
+        {
+          "id": "PRD023",
+          "name": "Synergy Fat Grabber",
+          "matchedMechanisms": [
+            "MEC040"
+          ],
+          "matchedMechanismCount": 1,
+          "requiredMechanismCount": 8,
+          "coverage": 0.125,
+          "averageStrength": 4.0,
+          "evidenceScore": 10.7
+        },
+        {
+          "id": "PRD019",
+          "name": "Synergy Zinc Protect",
+          "matchedMechanisms": [
+            "MEC040"
+          ],
+          "matchedMechanismCount": 1,
+          "requiredMechanismCount": 8,
+          "coverage": 0.125,
+          "averageStrength": 4.0,
+          "evidenceScore": 9.1
+        }
+      ]
+    },
+    {
+      "outcomeId": "OUT009",
+      "outcome": "Menopause Transition Resilience",
+      "productCount": 8,
+      "products": [
+        {
+          "id": "PRD021",
+          "name": "Synergy Multivitamin",
+          "matchedMechanisms": [
+            "MEC083",
+            "MEC091"
+          ],
+          "matchedMechanismCount": 2,
+          "requiredMechanismCount": 5,
+          "coverage": 0.4,
+          "averageStrength": 5.0,
+          "evidenceScore": 100.0
+        },
+        {
+          "id": "PRD001",
+          "name": "Synergy ProArgi-9+",
+          "matchedMechanisms": [
+            "MEC091"
+          ],
           "matchedMechanismCount": 1,
           "requiredMechanismCount": 5,
+          "coverage": 0.2,
           "averageStrength": 5.0,
-          "matchedMechanisms": [
-            "MEC114"
-          ],
-          "evidenceScore": 44.0
+          "evidenceScore": 50.0
         },
         {
-          "outcomeId": "OUT008",
-          "outcome": "Healthy Ageing & Resilience",
-          "coverage": 0.125,
+          "id": "PRD003",
+          "name": "Synergy Immune Booster",
+          "matchedMechanisms": [
+            "MEC091"
+          ],
           "matchedMechanismCount": 1,
-          "requiredMechanismCount": 8,
+          "requiredMechanismCount": 5,
+          "coverage": 0.2,
           "averageStrength": 5.0,
-          "matchedMechanisms": [
-            "MEC114"
-          ],
-          "evidenceScore": 38.7
-        }
-      ]
-    },
-    {
-      "productId": "PRD016",
-      "productName": "Synergy Omega-3",
-      "outcomeCount": 3,
-      "outcomes": [
-        {
-          "outcomeId": "OUT003",
-          "outcome": "Healthy Weight Management",
-          "coverage": 0.75,
-          "matchedMechanismCount": 3,
-          "requiredMechanismCount": 4,
-          "averageStrength": 4.33,
-          "matchedMechanisms": [
-            "MEC041",
-            "MEC043",
-            "MEC044"
-          ],
-          "evidenceScore": 78.5
+          "evidenceScore": 50.0
         },
         {
-          "outcomeId": "OUT002",
-          "outcome": "More Energy",
-          "coverage": 0.5,
-          "matchedMechanismCount": 1,
-          "requiredMechanismCount": 2,
-          "averageStrength": 5.0,
+          "id": "PRD004",
+          "name": "Synergy Pro360 Wholefood Greens",
           "matchedMechanisms": [
-            "MEC044"
+            "MEC091"
           ],
-          "evidenceScore": 65.0
+          "matchedMechanismCount": 1,
+          "requiredMechanismCount": 5,
+          "coverage": 0.2,
+          "averageStrength": 5.0,
+          "evidenceScore": 50.0
         },
         {
-          "outcomeId": "OUT008",
-          "outcome": "Healthy Ageing & Resilience",
-          "coverage": 0.125,
-          "matchedMechanismCount": 1,
-          "requiredMechanismCount": 8,
-          "averageStrength": 5.0,
+          "id": "PRD005",
+          "name": "Synergy Pro360 Superfood Performance Beets",
           "matchedMechanisms": [
-            "MEC044"
+            "MEC091"
           ],
-          "evidenceScore": 38.7
-        }
-      ]
-    },
-    {
-      "productId": "PRD017",
-      "productName": "Synergy CoQ10",
-      "outcomeCount": 2,
-      "outcomes": [
+          "matchedMechanismCount": 1,
+          "requiredMechanismCount": 5,
+          "coverage": 0.2,
+          "averageStrength": 5.0,
+          "evidenceScore": 50.0
+        },
         {
-          "outcomeId": "OUT003",
-          "outcome": "Healthy Weight Management",
-          "coverage": 0.5,
-          "matchedMechanismCount": 2,
-          "requiredMechanismCount": 4,
+          "id": "PRD008",
+          "name": "Synergy Biome Shake",
+          "matchedMechanisms": [
+            "MEC091"
+          ],
+          "matchedMechanismCount": 1,
+          "requiredMechanismCount": 5,
+          "coverage": 0.2,
+          "averageStrength": 5.0,
+          "evidenceScore": 50.0
+        },
+        {
+          "id": "PRD015",
+          "name": "Synergy Vitamin D3",
+          "matchedMechanisms": [
+            "MEC091"
+          ],
+          "matchedMechanismCount": 1,
+          "requiredMechanismCount": 5,
+          "coverage": 0.2,
+          "averageStrength": 5.0,
+          "evidenceScore": 50.0
+        },
+        {
+          "id": "PRD018",
+          "name": "Synergy Liver Health",
+          "matchedMechanisms": [
+            "MEC108"
+          ],
+          "matchedMechanismCount": 1,
+          "requiredMechanismCount": 5,
+          "coverage": 0.2,
           "averageStrength": 4.0,
-          "matchedMechanisms": [
-            "MEC041",
-            "MEC043"
-          ],
-          "evidenceScore": 59.0
-        },
-        {
-          "outcomeId": "OUT005",
-          "outcome": "Digestive & Gut Health",
-          "coverage": 0.182,
-          "matchedMechanismCount": 2,
-          "requiredMechanismCount": 11,
-          "averageStrength": 5.0,
-          "matchedMechanisms": [
-            "MEC032",
-            "MEC035"
-          ],
-          "evidenceScore": 42.7
-        }
-      ]
-    },
-    {
-      "productId": "PRD018",
-      "productName": "Synergy Liver Health",
-      "outcomeCount": 2,
-      "outcomes": [
-        {
-          "outcomeId": "OUT005",
-          "outcome": "Digestive & Gut Health",
-          "coverage": 0.455,
-          "matchedMechanismCount": 5,
-          "requiredMechanismCount": 11,
-          "averageStrength": 4.8,
-          "matchedMechanisms": [
-            "MEC030",
-            "MEC031",
-            "MEC032",
-            "MEC035",
-            "MEC036"
-          ],
-          "evidenceScore": 60.7
-        },
-        {
-          "outcomeId": "OUT003",
-          "outcome": "Healthy Weight Management",
-          "coverage": 0.25,
-          "matchedMechanismCount": 1,
-          "requiredMechanismCount": 4,
-          "averageStrength": 4.0,
-          "matchedMechanisms": [
-            "MEC043"
-          ],
-          "evidenceScore": 41.5
-        }
-      ]
-    },
-    {
-      "productId": "PRD019",
-      "productName": "Synergy Zinc Protect",
-      "outcomeCount": 0,
-      "outcomes": []
-    },
-    {
-      "productId": "PRD020",
-      "productName": "Synergy SleepWell",
-      "outcomeCount": 0,
-      "outcomes": []
-    },
-    {
-      "productId": "PRD021",
-      "productName": "Synergy Multivitamin",
-      "outcomeCount": 1,
-      "outcomes": [
-        {
-          "outcomeId": "OUT005",
-          "outcome": "Digestive & Gut Health",
-          "coverage": 0.364,
-          "matchedMechanismCount": 4,
-          "requiredMechanismCount": 11,
-          "averageStrength": 4.5,
-          "matchedMechanisms": [
-            "MEC030",
-            "MEC031",
-            "MEC032",
-            "MEC033"
-          ],
-          "evidenceScore": 52.5
-        }
-      ]
-    },
-    {
-      "productId": "PRD022",
-      "productName": "Synergy Carb Blocker",
-      "outcomeCount": 0,
-      "outcomes": []
-    },
-    {
-      "productId": "PRD023",
-      "productName": "Synergy Fat Grabber",
-      "outcomeCount": 1,
-      "outcomes": [
-        {
-          "outcomeId": "OUT005",
-          "outcome": "Digestive & Gut Health",
-          "coverage": 0.545,
-          "matchedMechanismCount": 6,
-          "requiredMechanismCount": 11,
-          "averageStrength": 4.67,
-          "matchedMechanisms": [
-            "MEC030",
-            "MEC031",
-            "MEC032",
-            "MEC033",
-            "MEC035",
-            "MEC036"
-          ],
-          "evidenceScore": 66.2
+          "evidenceScore": 31.1
         }
       ]
     }
-  ],
-  "evidenceScoreFormula": "0.7 \u00d7 coverage + 0.3 \u00d7 (averageStrength \u00f7 5), scaled to 0\u2013100"
+  ]
 }

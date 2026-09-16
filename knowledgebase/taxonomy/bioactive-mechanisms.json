@@ -1,7 +1,7 @@
 {
-  "version": "20260916-1.0",
+  "version": "20260916-4.0",
   "generated": "2026-09-16T14:22:06Z",
-  "count": 526,
+  "count": 548,
   "relationships": [
     {
       "id": "BM000001",
@@ -2771,61 +2771,6 @@
       "strength": 3,
       "confidence": "Moderate",
       "notes": "Supports a healthy intestinal environment and epithelial function.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000253",
-      "bioactive": "FC007",
-      "mechanism": "MEC032",
-      "strength": 5,
-      "confidence": "High",
-      "notes": "Principal documented biological role.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000254",
-      "bioactive": "FC007",
-      "mechanism": "MEC043",
-      "strength": 5,
-      "confidence": "High",
-      "notes": "Primary mechanism explicitly identified in the repository.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000255",
-      "bioactive": "FC007",
-      "mechanism": "MEC041",
-      "strength": 4,
-      "confidence": "High",
-      "notes": "Healthy inflammatory regulation is a principal action.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000256",
-      "bioactive": "FC007",
-      "mechanism": "MEC035",
-      "strength": 4,
-      "confidence": "Moderate",
-      "notes": "Repository identifies microbiome stability as a key function.",
-      "references": [
-        "Scientific Literature"
-      ]
-    },
-    {
-      "id": "BM000257",
-      "bioactive": "FC007",
-      "mechanism": "MEC038",
-      "strength": 4,
-      "confidence": "Moderate",
-      "notes": "Direct consequence of improved barrier integrity.",
       "references": [
         "Scientific Literature"
       ]
@@ -5770,6 +5715,303 @@
       "strength": 2,
       "confidence": "Emerging",
       "notes": "Schisandra is traditionally used for broad resilience support relevant to the menopausal transition, though direct evidence is limited.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM001018",
+      "bioactive": "FC041",
+      "mechanism": "MEC090",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Hydrolyzed collagen peptides supply amino acid building blocks and signalling peptides that stimulate the body's own collagen synthesis.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM001019",
+      "bioactive": "FC041",
+      "mechanism": "MEC093",
+      "strength": 4,
+      "confidence": "High",
+      "notes": "Supports the structural integrity of connective tissue including skin, tendons and cartilage matrix.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM001020",
+      "bioactive": "FC041",
+      "mechanism": "MEC097",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Collagen peptides supply the amino acid substrate for tendon collagen turnover and repair.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM001021",
+      "bioactive": "FC042",
+      "mechanism": "MEC093",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Hyaluronic acid is a key glycosaminoglycan component of the connective tissue extracellular matrix, maintaining hydration and structure.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM001022",
+      "bioactive": "FC042",
+      "mechanism": "MEC094",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Oral hyaluronic acid has been studied for supporting joint fluid viscosity and comfort.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM001023",
+      "bioactive": "FC043",
+      "mechanism": "MEC094",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Glucosamine is a substrate for glycosaminoglycan synthesis in articular cartilage, supporting joint comfort.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM001024",
+      "bioactive": "FC043",
+      "mechanism": "MEC093",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Contributes building blocks for proteoglycan synthesis within connective tissue.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM001025",
+      "bioactive": "FC044",
+      "mechanism": "MEC094",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Chondroitin sulfate is a major structural component of cartilage that helps it retain water and resist compressive load.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM001026",
+      "bioactive": "FC044",
+      "mechanism": "MEC093",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Supports proteoglycan aggregation within the connective tissue extracellular matrix.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM001027",
+      "bioactive": "FC045",
+      "mechanism": "MEC094",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "MSM supplies bioavailable sulfur used in connective tissue formation and has shown modest joint-symptom benefit in trials.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM001028",
+      "bioactive": "FC045",
+      "mechanism": "MEC060",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "MSM has demonstrated mild anti-inflammatory activity relevant to joint comfort.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM001029",
+      "bioactive": "FC046",
+      "mechanism": "MEC098",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Ginsenosides are associated with improved physical stamina and resistance to fatigue in clinical studies.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM001030",
+      "bioactive": "FC046",
+      "mechanism": "MEC056",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Ginsenosides have nootropic effects supporting mental alertness and performance.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM001031",
+      "bioactive": "FC046",
+      "mechanism": "MEC102",
+      "strength": 2,
+      "confidence": "Emerging",
+      "notes": "Preliminary evidence suggests ginsenosides may support cellular energy metabolism pathways.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM001032",
+      "bioactive": "FC047",
+      "mechanism": "MEC098",
+      "strength": 2,
+      "confidence": "Emerging",
+      "notes": "Maca's characteristic macamides are traditionally and preliminarily associated with improved energy and physical stamina.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM001033",
+      "bioactive": "FC047",
+      "mechanism": "MEC083",
+      "strength": 2,
+      "confidence": "Emerging",
+      "notes": "Maca has traditional and preliminary clinical use for supporting hormonal balance, though mechanisms remain under-characterised.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM001034",
+      "bioactive": "FC048",
+      "mechanism": "MEC040",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Phaseolamin inhibits pancreatic alpha-amylase, directly slowing the breakdown and absorption of dietary starch.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM001035",
+      "bioactive": "FC048",
+      "mechanism": "MEC042",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "By blunting starch digestion, phaseolamin reduces the post-meal blood glucose rise from carbohydrate-containing meals.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM001036",
+      "bioactive": "FC049",
+      "mechanism": "MEC057",
+      "strength": 4,
+      "confidence": "Moderate",
+      "notes": "Valerenic acid modulates GABA-A receptor activity, supporting healthy nervous system tone and relaxation.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM001037",
+      "bioactive": "FC049",
+      "mechanism": "MEC058",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Valerian's calming activity is traditionally and clinically associated with supporting mood and reducing tension.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM001038",
+      "bioactive": "FC050",
+      "mechanism": "MEC057",
+      "strength": 2,
+      "confidence": "Emerging",
+      "notes": "Chrysin shows preclinical affinity for GABA-A benzodiazepine binding sites, consistent with passionflower's calming reputation.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM001039",
+      "bioactive": "FC050",
+      "mechanism": "MEC058",
+      "strength": 2,
+      "confidence": "Emerging",
+      "notes": "Passionflower has a traditional and preliminary evidence base for supporting calm mood.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM001040",
+      "bioactive": "FC051",
+      "mechanism": "MEC057",
+      "strength": 2,
+      "confidence": "Emerging",
+      "notes": "Hop-derived xanthohumol shows preclinical interaction with GABA-A pathways, consistent with hops' traditional sedative pairing with valerian.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM001041",
+      "bioactive": "FC051",
+      "mechanism": "MEC020",
+      "strength": 2,
+      "confidence": "Emerging",
+      "notes": "Xanthohumol has demonstrated antioxidant activity in preclinical studies.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM001042",
+      "bioactive": "FC007",
+      "mechanism": "MEC057",
+      "strength": 5,
+      "confidence": "High",
+      "notes": "Melatonin's principal, best-documented physiological role is regulating the sleep-wake cycle via circadian signalling in the nervous system.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM001043",
+      "bioactive": "FC007",
+      "mechanism": "MEC058",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Sleep and mood regulation are closely linked; melatonin has secondary associations with normal mood balance.",
+      "references": [
+        "Scientific Literature"
+      ]
+    },
+    {
+      "id": "BM001044",
+      "bioactive": "FC007",
+      "mechanism": "MEC020",
+      "strength": 3,
+      "confidence": "Moderate",
+      "notes": "Melatonin is also a potent direct antioxidant and free-radical scavenger, independent of its circadian signalling role.",
       "references": [
         "Scientific Literature"
       ]
