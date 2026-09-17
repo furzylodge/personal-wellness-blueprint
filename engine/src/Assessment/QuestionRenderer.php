@@ -51,6 +51,11 @@ private function iconPaths(string $icon): string
         <path d="M24 34s-9-5-9-12a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 7-9 12-9 12z"/>
         <path d="M20 22h8M24 18v8" stroke="white" stroke-width="1.5" fill="none"/>',
 
+        'flag-check' => '
+        <rect x="14" y="10" width="2" height="28"/>
+        <path d="M16 12c6-4 10 2 16-2v14c-6 4-10-2-16 2z"/>
+        <path d="M20 20l2.5 2.5L27 18" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>',
+
         default => '
         <circle cx="24" cy="24" r="8"/>'
     };
@@ -168,6 +173,9 @@ case 'welcome':
 
 case 'finish':
 
+            $html .= "<div class='section-header'>";
+            $html .= $this->renderJourneyNav($page, $reviewData, $answers);
+
             if ($title !== '') {
                 $html .= "<h1>{$title}</h1>";
             }
@@ -175,6 +183,8 @@ case 'finish':
             if ($subtitle !== '') {
                 $html .= "<p class='subtitle'>{$subtitle}</p>";
             }
+
+            $html .= "</div>";
             break;
     }
 
@@ -595,7 +605,12 @@ private function renderJourneyNav(array $currentPage, array $reviewData, array $
 
     $currentPageId = $currentPage['id'] ?? '';
 
-    $currentIndex = 0;
+    // The review/finish step is always reachable as a final node,
+    // even though it isn't one of the scored sections.
+    $totalStops = count($sections) + 1;
+    $lastIndex  = max(1, $totalStops - 1);
+
+    $currentIndex = $lastIndex; // defaults to the finish node's position
 
     foreach ($sections as $i => $section) {
         if ($section['page'] === $currentPageId) {
@@ -604,7 +619,6 @@ private function renderJourneyNav(array $currentPage, array $reviewData, array $
         }
     }
 
-    $lastIndex = max(1, count($sections) - 1);
     $fillPercent = ($currentIndex / $lastIndex) * 100;
 
     $html = "<div class='journey-nav'>";
@@ -647,6 +661,33 @@ private function renderJourneyNav(array $currentPage, array $reviewData, array $
             </a>";
     }
 
+    // Final "Review & Finish" node — always clickable, badged with
+    // the total questions still remaining across the whole assessment.
+    $grand = $this->calculateGrandProgress($sections, $pages, $answers, $profile);
+    $grandTotal = $grand['total'];
+    $grandRemaining = max(0, $grand['total'] - $grand['answered']);
+    $isFinishCurrent = $currentPageId === 'FINISH';
+    $isFinishComplete = $grandTotal > 0 && $grandRemaining === 0;
+
+    $finishClass = $isFinishCurrent ? 'current' : ($isFinishComplete ? 'complete' : 'upcoming');
+
+    $finishBadge = '';
+
+    if ($isFinishComplete) {
+        $finishBadge = "<span class='journey-badge journey-badge-complete'>&#10003;</span>";
+    } elseif ($grandRemaining > 0) {
+        $finishBadge = "<span class='journey-badge journey-badge-remaining'>{$grandRemaining}</span>";
+    }
+
+    $html .= "
+        <a class='journey-node journey-node-finish {$finishClass}' href='?page=FINISH' title='Review &amp; Finish'>
+            <span class='journey-icon-circle'>
+                {$this->renderIcon('flag-check')}
+                {$finishBadge}
+            </span>
+            <span class='journey-node-label'>Review &amp; Finish</span>
+        </a>";
+
     $html .= "</div></div>";
 
     return $html;
@@ -662,15 +703,33 @@ private function renderReview(
 
 $sections = $this->sectionDefinitions();
 
+$grand = $this->calculateGrandProgress($sections, $reviewData['pages'], $answers, $reviewData['profile']);
+$grandRemaining = max(0, $grand['total'] - $grand['answered']);
+
+if ($grandRemaining > 0) {
+
+    $plural = $grandRemaining === 1 ? 'question' : 'questions';
+
+    $headerIcon = "!";
+    $headerTitle = "Assessment In Progress";
+    $headerSubtitle = "{$grandRemaining} required {$plural} still need answering before your Personal Wellness Blueprint can be generated.";
+
+} else {
+
+    $headerIcon = "&#10003;";
+    $headerTitle = "Assessment Complete";
+    $headerSubtitle = "Review your answers before generating your Personal Wellness Blueprint.";
+}
+
     $html = "
     <div class='review-header'>
-        <div class='review-success'>
-            ✓
+        <div class='review-success" . ($grandRemaining > 0 ? " review-success-incomplete" : "") . "'>
+            {$headerIcon}
         </div>
 
         <div>
-            <h2>Assessment Complete</h2>
-            <p>Review your answers before generating your Personal Wellness Blueprint.</p>
+            <h2>{$headerTitle}</h2>
+            <p>{$headerSubtitle}</p>
 
             <div class='review-tip'>
                 Expand a section to review or edit your answers.
@@ -681,7 +740,7 @@ $sections = $this->sectionDefinitions();
     <div class='review-list'>";
 
     foreach ($sections as $i => $section) {
-    
+
     $editPage = match ($section['id']) {
     'profile'   => 'PROFILE',
     'energy'    => 'ENERGY',
@@ -694,8 +753,8 @@ $sections = $this->sectionDefinitions();
     default     => 'PROFILE',
 };
 
-        $open = $i === 0 ? " open" : "";        
-        
+        $open = "";
+
 $summary = $this->calculateSectionProgress(
     $section['page'],
     $reviewData['pages'],
@@ -762,11 +821,28 @@ $html .= "
 
     }
 
-    $html .= "
-    </div>
+    if ($grandRemaining > 0) {
 
-    <a class='next' href='generate-report.php' target='_blank'>
-    Generate My Wellness Blueprint</a>";
+        $questionWord = $grandRemaining === 1 ? 'question' : 'questions';
+
+        $html .= "
+        </div>
+
+        <button type='button' class='next disabled' disabled title='Complete every section before generating your blueprint'>
+        Generate My Wellness Blueprint</button>
+
+        <p class='review-generate-note'>
+            {$grandRemaining} required {$questionWord} still need answering above.
+        </p>";
+
+    } else {
+
+        $html .= "
+        </div>
+
+        <a class='next' href='generate-report.php' target='_blank'>
+        Generate My Wellness Blueprint</a>";
+    }
 
     return $html;
 }
@@ -889,6 +965,32 @@ private function isQuestionVisible(array $question, array $answers): bool
         default:
             return true;
     }
+}
+
+/**
+ * Sum answered/total required questions across every real section,
+ * used both by the journey nav's finish node and to decide whether
+ * the "Generate My Wellness Blueprint" button should be enabled.
+ */
+private function calculateGrandProgress(array $sections, array $pages, array $answers, array $profile): array
+{
+    $answered = 0;
+    $total    = 0;
+
+    foreach ($sections as $section) {
+
+        $summary = $this->calculateSectionProgress(
+            $section['page'],
+            $pages,
+            $answers,
+            $profile
+        );
+
+        $answered += $summary['answered'];
+        $total    += $summary['total'];
+    }
+
+    return ['answered' => $answered, 'total' => $total];
 }
 
 private function calculateSectionProgress(
