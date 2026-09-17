@@ -45,12 +45,38 @@ document.addEventListener('DOMContentLoaded', () => {
 
             hidden.value = values[index];
             current.textContent = labels[index];
+
+            slider.classList.remove('is-unset');
+            current.classList.remove('is-unset');
+            question.classList.remove('has-error');
+
+            const existingError = question.querySelector('.field-error');
+            if (existingError) existingError.remove();
         });
-        slider.addEventListener("input", () => {
-    current.textContent = labels[slider.value];
-    hidden.value = values[slider.value];
-    slider.classList.remove("is-unset");
-});
+    });
+
+
+    /* ---------------------------------------
+       Clear error state on radio / checkbox
+       questions as soon as they're answered
+    ---------------------------------------- */
+
+    document.querySelectorAll('.question.has-error').forEach(question => {
+
+        const inputs = question.querySelectorAll(
+            'input[type=radio], input[type=checkbox]'
+        );
+
+        inputs.forEach(input => {
+
+            input.addEventListener('change', () => {
+
+                question.classList.remove('has-error');
+
+                const existingError = question.querySelector('.field-error');
+                if (existingError) existingError.remove();
+            });
+        });
     });
 
 
@@ -254,6 +280,48 @@ document.querySelectorAll('.review-summary').forEach(button => {
 
     });
 
+});
+
+
+// ==========================================
+// Required-slider submit validation
+// ==========================================
+
+document.querySelectorAll('form').forEach(form => {
+
+    form.addEventListener('submit', event => {
+
+        let firstInvalid = null;
+
+        form.querySelectorAll('.slider-question[data-required="1"]').forEach(question => {
+
+            const slider = question.querySelector('.likert-slider');
+
+            if (!slider || !slider.classList.contains('is-unset')) {
+                return;
+            }
+
+            question.classList.add('has-error');
+
+            let message = question.querySelector('.field-error');
+
+            if (!message) {
+                message = document.createElement('div');
+                message.className = 'field-error';
+                message.textContent = 'Please answer this question before continuing.';
+                question.appendChild(message);
+            }
+
+            if (!firstInvalid) {
+                firstInvalid = question;
+            }
+        });
+
+        if (firstInvalid) {
+            event.preventDefault();
+            firstInvalid.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+    });
 });
 
 });

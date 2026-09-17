@@ -5,6 +5,68 @@ namespace PWB\Assessment;
 class QuestionRenderer
 {
 
+/**
+ * Return the raw inline-SVG path/shape markup for a named icon.
+ * Shared by renderSectionIcon() (report page) and renderIcon()
+ * (welcome page / section headers) so both draw the same artwork.
+ */
+private function iconPaths(string $icon): string
+{
+    return match ($icon) {
+
+       'user-round' => '
+<circle cx="24" cy="16" r="6"/>
+<path d="M12 36c2-7 22-7 24 0"/>',
+
+        'zap' => '
+        <path d="M26 10L15 26h8l-1 12 11-16h-8z"/>',
+
+        'leaf' => '
+        <path d="M16 30c4-8 12-12 16-10-2 8-8 14-16 10z"/>
+        <path d="M20 28c2 0 6-4 8-8" stroke="white" stroke-width="1.5" fill="none"/>',
+
+        'trees' => '
+        <circle cx="24" cy="16" r="5"/>
+        <circle cx="17" cy="23" r="4"/>
+        <circle cx="31" cy="23" r="4"/>
+        <circle cx="21" cy="30" r="4"/>
+        <circle cx="28" cy="30" r="4"/>
+        <rect x="23" y="14" width="2" height="18"/>',
+
+        'mountain' => '
+        <path d="M12 32L24 14l12 18z"/>',
+
+        'moon' => '
+        <path d="M29 12a11 11 0 1 0 7 20A13 13 0 1 1 29 12z"/>',
+
+        'tree' => '
+        <circle cx="24" cy="14" r="5"/>
+        <circle cx="17" cy="20" r="5"/>
+        <circle cx="31" cy="20" r="5"/>
+        <circle cx="20" cy="28" r="5"/>
+        <circle cx="28" cy="28" r="5"/>
+        <rect x="23" y="18" width="2" height="16"/>',
+
+        'heart-pulse' => '
+        <path d="M24 34s-9-5-9-12a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 7-9 12-9 12z"/>
+        <path d="M20 22h8M24 18v8" stroke="white" stroke-width="1.5" fill="none"/>',
+
+        default => '
+        <circle cx="24" cy="24" r="8"/>'
+    };
+}
+
+/**
+ * Bare inline-SVG markup for a named icon, sized for the welcome
+ * page icon and section-header icon containers (.section-icon-svg).
+ */
+public function renderIcon(string $icon): string
+{
+    $paths = $this->iconPaths($icon);
+
+    return "<svg viewBox='0 0 48 48' class='section-icon-svg'><g fill='currentColor'>{$paths}</g></svg>";
+}
+
 public function render(array $page, array $answers = [], array $errors = [],array $reviewData = []): string
 {
     $pageId   = $this->e($page['id'] ?? '');
@@ -51,7 +113,7 @@ case 'profile':
         <div class='section-intro'>
 
             <div class='section-icon'>
-                <div class='section-icon-inner icon-{$icon}'></div>
+                {$this->renderIcon($icon)}
             </div>
 
             <div class='section-text'>
@@ -81,7 +143,7 @@ case 'questions':
         <div class='section-intro'>
 
             <div class='section-icon'>
-                <div class='section-icon-inner icon-{$icon}'></div>
+                {$this->renderIcon($icon)}
             </div>
 
             <div class='section-text'>
@@ -324,7 +386,14 @@ $exclusive = !empty($question['exclusive_none'])
     ? " data-exclusive-none='true'"
     : '';
 
-$html .= "<div class='question'{$exclusive}>";
+$questionHasError = isset($errors[$id]) && ($question['answer_type'] ?? '') !== 'frequency_3'
+    && ($question['answer_type'] ?? '') !== 'frequency_4'
+    && ($question['answer_type'] ?? '') !== 'frequency_5'
+    && ($question['answer_type'] ?? '') !== 'quality_5';
+
+$questionClass = 'question' . ($questionHasError ? ' has-error' : '');
+
+$html .= "<div class='{$questionClass}'{$exclusive}>";
 
 $html .= "<h3>{$title}</h3>";
 
@@ -406,17 +475,21 @@ if (!$isUnset) {
         ENT_QUOTES,
         'UTF-8'
     );
-    
+
     $jsonLabels = htmlspecialchars(
     json_encode($labels),
     ENT_QUOTES,
     'UTF-8'
 	);
 
-$html .= "<div class='slider-question' data-values='{$jsonValues}' data-option-labels='{$jsonLabels}'>";
+$isRequired = !empty($question['required']);
+$hasError   = isset($errors[$id]);
+$sliderQuestionClass = 'slider-question' . ($hasError ? ' has-error' : '');
 
-$html .= "<div class='slider-current'>"
-    . ($isUnset ? "Not set" : $this->e($labels[$selectedIndex]))
+$html .= "<div class='{$sliderQuestionClass}' data-question-id='{$id}' data-required='" . ($isRequired ? '1' : '0') . "' data-values='{$jsonValues}' data-option-labels='{$jsonLabels}'>";
+
+$html .= "<div class='slider-current" . ($isUnset ? " is-unset" : "") . "'>"
+    . ($isUnset ? "Tap or drag to answer" : $this->e($labels[$selectedIndex]))
     . "</div>";
 
 $html .= "
@@ -436,11 +509,20 @@ $html .= "
     <div class='slider-ends'>
         <span>{$this->e($labels[0])}</span>
         <span>{$this->e(end($labels))}</span>
-    </div>
-</div>";
+    </div>";
+
+if ($hasError) {
+    $html .= "<div class='field-error'>" . $this->e($errors[$id]['message']) . "</div>";
+}
+
+$html .= "</div>";
 
 
         break;
+}
+
+if ($questionHasError) {
+    $html .= "<div class='field-error'>" . $this->e($errors[$id]['message']) . "</div>";
 }
 
 if (!empty($question['follow_up'])) {
@@ -710,48 +792,7 @@ $html .= "
 
 private function renderSectionIcon(string $icon, string $colour): string
 {
-    $svg = match ($icon) {
-
-       'user-round' => '
-<circle cx="24" cy="16" r="6"/>
-<path d="M12 36c2-7 22-7 24 0"/>',
-
-        'zap' => '
-        <path d="M26 10L15 26h8l-1 12 11-16h-8z"/>',
-
-        'leaf' => '
-        <path d="M16 30c4-8 12-12 16-10-2 8-8 14-16 10z"/>
-        <path d="M20 28c2 0 6-4 8-8" stroke="white" stroke-width="1.5" fill="none"/>',
-
-        'trees' => '
-        <circle cx="24" cy="16" r="5"/>
-        <circle cx="17" cy="23" r="4"/>
-        <circle cx="31" cy="23" r="4"/>
-        <circle cx="21" cy="30" r="4"/>
-        <circle cx="28" cy="30" r="4"/>
-        <rect x="23" y="14" width="2" height="18"/>',
-
-        'mountain' => '
-        <path d="M12 32L24 14l12 18z"/>',
-
-        'moon' => '
-        <path d="M29 12a11 11 0 1 0 7 20A13 13 0 1 1 29 12z"/>',
-
-        'tree' => '
-        <circle cx="24" cy="14" r="5"/>
-        <circle cx="17" cy="20" r="5"/>
-        <circle cx="31" cy="20" r="5"/>
-        <circle cx="20" cy="28" r="5"/>
-        <circle cx="28" cy="28" r="5"/>
-        <rect x="23" y="18" width="2" height="16"/>',
-
-        'heart-pulse' => '
-        <path d="M24 34s-9-5-9-12a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 7-9 12-9 12z"/>
-        <path d="M20 22h8M24 18v8" stroke="white" stroke-width="1.5" fill="none"/>',
-
-        default => '
-        <circle cx="24" cy="24" r="8"/>'
-    };
+    $svg = $this->iconPaths($icon);
 
     return "
     <div class='review-icon review-{$colour}'>

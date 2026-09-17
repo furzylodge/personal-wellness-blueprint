@@ -13,8 +13,7 @@
     "question_id": "IMM001",
     "legacy_id": "Q02",
     "body_system_scores": {
-      "BS005": "Y",
-      "BS006": "Y"
+      "BS005": "Y"
     }
   },
   {
@@ -30,8 +29,7 @@
     "legacy_id": "Q04",
     "body_system_scores": {
       "BS001": "Y",
-      "BS005": "Y",
-      "BS006": "Y"
+      "BS005": "Y"
     }
   },
   {
@@ -47,10 +45,10 @@
     "question_id": "SAF001",
     "legacy_id": "Q06",
     "body_system_scores": {
-      "BS002": "Y",
       "BS003": "Y",
-      "BS005": "Y",
+      "BS004": "Y",
       "BS006": "Y",
+      "BS007": "Y",
       "BS008": "Y"
     }
   },
@@ -66,8 +64,7 @@
     "question_id": "MND001",
     "legacy_id": "Q08",
     "body_system_scores": {
-      "BS004": "Y",
-      "BS006": "Y"
+      "BS004": "Y"
     }
   },
   {
@@ -144,8 +141,7 @@
       "BS003": "Y",
       "BS004": "Y",
       "BS007": "Y",
-      "BS008": "Y",
-      "BS009": "Y"
+      "BS008": "Y"
     }
   },
   {
@@ -170,8 +166,7 @@
     "question_id": "NUT003",
     "legacy_id": "Q17",
     "body_system_scores": {
-      "BS004": "Y",
-      "BS006": "Y"
+      "BS004": "Y"
     }
   },
   {
@@ -188,8 +183,7 @@
     "body_system_scores": {
       "BS002": "Y",
       "BS004": "Y",
-      "BS008": "Y",
-      "BS009": "Y"
+      "BS008": "Y"
     }
   },
   {
@@ -205,8 +199,7 @@
     "question_id": "SLP002",
     "legacy_id": "Q21",
     "body_system_scores": {
-      "BS007": "Y",
-      "BS009": "Y"
+      "BS007": "Y"
     }
   },
   {
@@ -232,8 +225,7 @@
       "BS001": "Y",
       "BS002": "Y",
       "BS003": "Y",
-      "BS008": "Y",
-      "BS009": "Y"
+      "BS008": "Y"
     }
   },
   {
@@ -242,8 +234,7 @@
     "body_system_scores": {
       "BS001": "Y",
       "BS003": "Y",
-      "BS005": "Y",
-      "BS006": "Y"
+      "BS005": "Y"
     }
   },
   {
@@ -253,7 +244,6 @@
       "BS001": "Y",
       "BS004": "Y",
       "BS005": "Y",
-      "BS006": "Y",
       "BS008": "Y"
     }
   },
@@ -317,8 +307,7 @@
     "body_system_scores": {
       "BS001": "Y",
       "BS002": "Y",
-      "BS003": "Y",
-      "BS009": "Y"
+      "BS003": "Y"
     }
   },
   {
@@ -353,8 +342,7 @@
     "body_system_scores": {
       "BS001": "Y",
       "BS004": "Y",
-      "BS008": "Y",
-      "BS009": "Y"
+      "BS008": "Y"
     }
   },
   {
@@ -363,8 +351,7 @@
     "body_system_scores": {
       "BS001": "Y",
       "BS004": "Y",
-      "BS008": "Y",
-      "BS009": "Y"
+      "BS008": "Y"
     }
   },
   {
@@ -373,8 +360,7 @@
     "body_system_scores": {
       "BS001": "Y",
       "BS004": "Y",
-      "BS008": "Y",
-      "BS009": "Y"
+      "BS008": "Y"
     }
   },
   {
@@ -419,8 +405,7 @@
     "body_system_scores": {
       "BS002": "Y",
       "BS004": "Y",
-      "BS008": "Y",
-      "BS009": "Y"
+      "BS008": "Y"
     }
   },
   {
@@ -443,7 +428,13 @@
       "BS003": "Y",
       "BS004": "Y",
       "BS005": "Y",
-      "BS006": "Y",
+      "BS009": "Y"
+    }
+  },
+  {
+    "question_id": "PHY010",
+    "legacy_id": null,
+    "body_system_scores": {
       "BS009": "Y"
     }
   },
@@ -482,7 +473,6 @@
       "BS003": "Y",
       "BS004": "Y",
       "BS005": "Y",
-      "BS006": "Y",
       "BS009": "Y"
     }
   },

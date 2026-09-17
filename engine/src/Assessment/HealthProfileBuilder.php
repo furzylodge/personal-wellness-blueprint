@@ -44,12 +44,48 @@ foreach ($assessment->answers as $questionId => $answer) {
 
 $stored = $questions[$questionId]['stored_values'] ?? [];
 $scores = $questions[$questionId]['score_values'] ?? $stored;
+$optionBodySystemScores = $questions[$questionId]['option_body_system_scores'] ?? null;
 
 // Normalise scalar values to arrays
 $stored = is_array($stored) ? $stored : [$stored];
 $scores = is_array($scores) ? $scores : [$scores];
 
     $score = 0.0;
+
+    if (is_array($answer) && $optionBodySystemScores) {
+
+        // Multi-select with per-option body-system mapping:
+        // each mapped body system scores 1.0 if ANY selected option
+        // that maps to it has a positive score value, so unrelated
+        // conditions bundled in the same question no longer bleed
+        // into each other's body systems.
+        $perSystemScore = [];
+
+        foreach ($answer as $selected) {
+            $index = array_search($selected, $stored, true);
+
+            if ($index === false || (($scores[$index] ?? 0) <= 0)) {
+                continue;
+            }
+
+            $optionSystems = $optionBodySystemScores[$selected] ?? [];
+
+            foreach ($optionSystems as $bs => $flag) {
+                if (strtoupper((string)$flag) === 'Y') {
+                    $perSystemScore[$bs] = 1.0;
+                }
+            }
+        }
+
+        foreach ($perSystemScore as $bs => $value) {
+            if (isset($bodySystems[$bs])) {
+                $bodySystems[$bs] += $value;
+            }
+        }
+
+        continue;
+
+    }
 
     if (is_array($answer)) {
 

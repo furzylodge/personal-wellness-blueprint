@@ -748,6 +748,28 @@
     ]
   },
   {
+    "id": "PHY010",
+    "legacy_id": null,
+    "page": "BODY",
+    "question": "How often do you do stretching, mobility work, or flexibility exercises (such as yoga, Pilates, or a dedicated stretching routine)?",
+    "answer_type": "single_select",
+    "required": true,
+    "answer_options": [
+      "Daily",
+      "A few times a week",
+      "Occasionally",
+      "Rarely",
+      "Never"
+    ],
+    "stored_values": [
+      0,
+      0.25,
+      0.5,
+      0.75,
+      1
+    ]
+  },
+  {
     "id": "EXP004",
     "legacy_id": "Q45",
     "page": "LIFESTYLE",

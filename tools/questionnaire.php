@@ -192,6 +192,64 @@ foreach ($page['components'] ?? [] as $component) {
 
 }
 
+/* ----------------------------------------------------------
+   Validate required question answers
+---------------------------------------------------------- */
+
+foreach ($page['components'] ?? [] as $component) {
+
+    if (($component['type'] ?? '') !== 'question') {
+        continue;
+    }
+
+    $question = $component['question'] ?? [];
+
+    if (empty($question['required'])) {
+        continue;
+    }
+
+    $questionId = $question['id'];
+
+    // Respect conditional visibility so hidden questions aren't forced
+    $visibleIf = $question['visible_if'] ?? null;
+
+    if ($visibleIf) {
+
+        $controllingAnswer = $answers[$visibleIf['id']] ?? null;
+        $conditionMet = false;
+
+        switch ($visibleIf['operator']) {
+
+            case 'equals':
+                $conditionMet = ((string)$controllingAnswer === (string)$visibleIf['value']);
+                break;
+
+            case 'contains':
+                $conditionMet = is_array($controllingAnswer)
+                    && in_array((string)$visibleIf['value'], array_map('strval', $controllingAnswer), true);
+                break;
+        }
+
+        if (!$conditionMet) {
+            continue;
+        }
+    }
+
+    $value = $answers[$questionId] ?? null;
+
+    $isEmpty = match ($question['answer_type'] ?? '') {
+        'multi_select' => empty($value) || (is_array($value) && count($value) === 0),
+        default        => trim((string)$value) === ''
+    };
+
+    if ($isEmpty) {
+        $errors[$questionId] = [
+            'label'   => $question['question'] ?? 'This question',
+            'message' => 'Please answer this question before continuing.'
+        ];
+    }
+}
+
     // Persist answers
     $_SESSION['answers'] = $answers;
 
@@ -237,7 +295,7 @@ if (empty($errors)) {
 <div class="welcome-card">
 
     <div class="welcome-icon">
-<div class="welcome-icon-inner"></div>
+<?= $renderer->renderIcon($page['icon'] ?? 'leaf') ?>
     </div>
 
     <?= $renderer->render($page); ?>
@@ -299,8 +357,21 @@ if (empty($errors)) {
 
             <?php endif; ?>
 
-            <button class="next" type="submit">Continue</button>
-            
+            <div class="nav-buttons">
+
+                <?php if ($previous = $quiz->previousPageId($pageId)): ?>
+                    <a class="next previous" href="?page=<?= $previous ?>">
+                        Previous
+                    </a>
+                <?php else: ?>
+                    <div></div>
+                <?php endif; ?>
+
+                <button class="next" type="submit">
+                    Continue
+                </button>
+
+            </div>
 
         </form>
 
@@ -317,6 +388,14 @@ if (empty($errors)) {
        value="<?= htmlspecialchars($_SESSION['theme'] ?? 'green') ?>">
 
             <?= $renderer->render($page, $answers, $errors); ?>
+
+            <?php if (!empty($errors)): ?>
+
+                <div class="error">
+                    <strong>Please answer all required questions before continuing.</strong>
+                </div>
+
+            <?php endif; ?>
 
             <div class="nav-buttons">
 

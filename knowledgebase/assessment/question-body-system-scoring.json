@@ -37,8 +37,7 @@
       1
     ],
     "body_system_scores": {
-      "BS005": "Y",
-      "BS006": "Y"
+      "BS005": "Y"
     }
   },
   {
@@ -87,8 +86,7 @@
     ],
     "body_system_scores": {
       "BS001": "Y",
-      "BS005": "Y",
-      "BS006": "Y"
+      "BS005": "Y"
     }
   },
   {
@@ -149,11 +147,36 @@
       1
     ],
     "body_system_scores": {
-      "BS002": "Y",
       "BS003": "Y",
-      "BS005": "Y",
-      "BS006": "Y",
-      "BS008": "Y"
+      "BS008": "Y",
+      "BS007": "Y",
+      "BS004": "Y",
+      "BS006": "Y"
+    },
+    "option_body_system_scores": {
+      "hypertension": {
+        "BS003": "Y",
+        "BS008": "Y",
+        "BS007": "Y"
+      },
+      "cholesterol": {
+        "BS003": "Y",
+        "BS008": "Y"
+      },
+      "type2_diabetes": {
+        "BS008": "Y",
+        "BS003": "Y"
+      },
+      "heart_disease": {
+        "BS003": "Y"
+      },
+      "stroke_tia": {
+        "BS003": "Y",
+        "BS004": "Y"
+      },
+      "asthma_copd": {
+        "BS006": "Y"
+      }
     }
   },
   {
@@ -198,8 +221,7 @@
       1
     ],
     "body_system_scores": {
-      "BS004": "Y",
-      "BS006": "Y"
+      "BS004": "Y"
     }
   },
   {
@@ -415,8 +437,7 @@
       "BS003": "Y",
       "BS004": "Y",
       "BS007": "Y",
-      "BS008": "Y",
-      "BS009": "Y"
+      "BS008": "Y"
     }
   },
   {
@@ -496,8 +517,7 @@
       1.0
     ],
     "body_system_scores": {
-      "BS004": "Y",
-      "BS006": "Y"
+      "BS004": "Y"
     }
   },
   {
@@ -546,8 +566,7 @@
     "body_system_scores": {
       "BS002": "Y",
       "BS004": "Y",
-      "BS008": "Y",
-      "BS009": "Y"
+      "BS008": "Y"
     }
   },
   {
@@ -595,8 +614,7 @@
       1
     ],
     "body_system_scores": {
-      "BS007": "Y",
-      "BS009": "Y"
+      "BS007": "Y"
     }
   },
   {
@@ -666,8 +684,7 @@
       "BS001": "Y",
       "BS002": "Y",
       "BS003": "Y",
-      "BS008": "Y",
-      "BS009": "Y"
+      "BS008": "Y"
     }
   },
   {
@@ -686,8 +703,7 @@
     "body_system_scores": {
       "BS001": "Y",
       "BS003": "Y",
-      "BS005": "Y",
-      "BS006": "Y"
+      "BS005": "Y"
     }
   },
   {
@@ -713,7 +729,6 @@
       "BS001": "Y",
       "BS004": "Y",
       "BS005": "Y",
-      "BS006": "Y",
       "BS008": "Y"
     }
   },
@@ -869,8 +884,7 @@
     "body_system_scores": {
       "BS001": "Y",
       "BS002": "Y",
-      "BS003": "Y",
-      "BS009": "Y"
+      "BS003": "Y"
     }
   },
   {
@@ -965,8 +979,7 @@
     "body_system_scores": {
       "BS001": "Y",
       "BS004": "Y",
-      "BS008": "Y",
-      "BS009": "Y"
+      "BS008": "Y"
     }
   },
   {
@@ -993,8 +1006,7 @@
     "body_system_scores": {
       "BS001": "Y",
       "BS004": "Y",
-      "BS008": "Y",
-      "BS009": "Y"
+      "BS008": "Y"
     }
   },
   {
@@ -1021,8 +1033,7 @@
     "body_system_scores": {
       "BS001": "Y",
       "BS004": "Y",
-      "BS008": "Y",
-      "BS009": "Y"
+      "BS008": "Y"
     }
   },
   {
@@ -1141,8 +1152,7 @@
     "body_system_scores": {
       "BS002": "Y",
       "BS004": "Y",
-      "BS008": "Y",
-      "BS009": "Y"
+      "BS008": "Y"
     }
   },
   {
@@ -1199,7 +1209,29 @@
       "BS003": "Y",
       "BS004": "Y",
       "BS005": "Y",
-      "BS006": "Y",
+      "BS009": "Y"
+    }
+  },
+  {
+    "production_id": "PHY010",
+    "legacy_id": null,
+    "question": "How often do you do stretching, mobility work, or flexibility exercises (such as yoga, Pilates, or a dedicated stretching routine)?",
+    "answer_type": "single_select",
+    "answer_options": [
+      "Daily",
+      "A few times a week",
+      "Occasionally",
+      "Rarely",
+      "Never"
+    ],
+    "stored_values": [
+      0,
+      0.25,
+      0.5,
+      0.75,
+      1
+    ],
+    "body_system_scores": {
       "BS009": "Y"
     }
   },
@@ -1300,7 +1332,6 @@
       "BS003": "Y",
       "BS004": "Y",
       "BS005": "Y",
-      "BS006": "Y",
       "BS009": "Y"
     }
   },

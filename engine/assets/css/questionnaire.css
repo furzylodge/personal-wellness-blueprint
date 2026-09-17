@@ -233,14 +233,42 @@ input.invalid{
     text-align:center;
 }
 
+.slider-current.is-unset{
+    background:transparent;
+    border:1.5px dashed var(--text-muted);
+    color:var(--text-muted);
+    font-weight:600;
+}
+
 .slider-question{
     text-align:center;
+}
+
+.slider-question.has-error{
+    border-color:#d32f2f;
+    background:#fff8f8;
 }
 
 .likert-slider{
     width:100%;
     accent-color:var(--primary);
     cursor:pointer;
+}
+
+.likert-slider.is-unset{
+    accent-color:var(--text-muted);
+    opacity:.6;
+}
+
+.question.has-error{
+    border:1.5px solid #d32f2f;
+    background:#fff8f8;
+    border-radius:18px;
+    padding:20px;
+}
+
+.question.has-error h3{
+    color:#d32f2f;
 }
 
 .slider-ends{
@@ -380,9 +408,16 @@ border:1px solid var(--border);
     flex-shrink:0;
     border-radius:14px;
     background:var(--primary-soft);
+    color:var(--primary);
     display:flex;
     align-items:center;
     justify-content:center;
+}
+
+.section-icon-svg{
+    width:30px;
+    height:30px;
+    color:inherit;
 }
 
 .section-text{
@@ -439,17 +474,15 @@ border:1px solid var(--border);
     margin:0 auto .5rem;
     border-radius:24px;
     background:var(--primary-soft);
+    color:var(--primary);
     display:flex;
     align-items:center;
     justify-content:center;
 }
 
-.welcome-icon-inner{
-    width:42px;
-    height:42px;
-    border-radius:50%;
-    background:var(--primary);
-    opacity:.9;
+.welcome-icon .section-icon-svg{
+    width:44px;
+    height:44px;
 }
 
 .welcome-card h1{
@@ -512,16 +545,6 @@ border:1px solid var(--border);
     font-size:.9rem;
 }
 
-.section-icon{
-    background:var(--primary-soft);
-}
-
-.section-icon-inner{
-    width:38px;
-    height:38px;
-    border-radius:50%;
-    background:var(--primary);
-}
 
 .progress-bar{
     display:grid;
@@ -804,15 +827,6 @@ border:1px solid var(--border);
 .review-violet { background:#F2E8FA; color:#8B3FC7; }
 .review-brown  { background:#F2ECE7; color:#8A5A3B; }
 .review-rose   { background:#FCE7EF; color:#D63A73; }
-
-.icon-user-round { mask-image:url('../icons/user.svg'); -webkit-mask-image:url('../icons/user.svg'); }
-.icon-zap        { mask-image:url('../icons/zap.svg'); -webkit-mask-image:url('../icons/zap.svg'); }
-.icon-leaf       { mask-image:url('../icons/leaf.svg'); -webkit-mask-image:url('../icons/leaf.svg'); }
-.icon-trees      { mask-image:url('../icons/trees.svg'); -webkit-mask-image:url('../icons/trees.svg'); }
-.icon-mountain   { mask-image:url('../icons/mountain.svg'); -webkit-mask-image:url('../icons/mountain.svg'); }
-.icon-moon       { mask-image:url('../icons/moon.svg'); -webkit-mask-image:url('../icons/moon.svg'); }
-.icon-tree       { mask-image:url('../icons/tree.svg'); -webkit-mask-image:url('../icons/tree.svg'); }
-.icon-heart-pulse{ mask-image:url('../icons/heart-pulse.svg'); -webkit-mask-image:url('../icons/heart-pulse.svg'); }
 
 .review-question-label{
     display:flex;
