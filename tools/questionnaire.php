@@ -61,27 +61,6 @@ $answers = $_SESSION['answers'];
 $errors = [];
 $page = $quiz->pageComponents($pageId, $answers);
 
-
-$pages = [];
-
-foreach ($quiz->pages() as $quizPage) {
-    $pages[] = $quiz->pageComponents($quizPage['id'], $answers);
-}
-
-// Build profile values keyed by field key
-$profile = [];
-
-foreach ($loader->profileFields()['fields'] as $field) {
-    $profile[$field['key']] = $answers[$field['id']] ?? null;
-}
-
-$reviewData = [
-    'pages'     => $pages,
-    'questions' => $loader->questions(),
-    'profile'   => $profile,
-    'answers'   => $answers
-];
-
 /* ----------------------------------------------------------
    Handle form submission
 ---------------------------------------------------------- */
@@ -215,7 +194,7 @@ foreach ($page['components'] ?? [] as $component) {
 
     if ($visibleIf) {
 
-        $controllingAnswer = $answers[$visibleIf['id']] ?? null;
+        $controllingAnswer = $answers[$visibleIf['question']] ?? null;
         $conditionMet = false;
 
         switch ($visibleIf['operator']) {
@@ -224,9 +203,18 @@ foreach ($page['components'] ?? [] as $component) {
                 $conditionMet = ((string)$controllingAnswer === (string)$visibleIf['value']);
                 break;
 
+            case 'not_equals':
+                $conditionMet = ((string)$controllingAnswer !== (string)$visibleIf['value']);
+                break;
+
             case 'contains':
                 $conditionMet = is_array($controllingAnswer)
                     && in_array((string)$visibleIf['value'], array_map('strval', $controllingAnswer), true);
+                break;
+
+            case 'not_contains':
+                $conditionMet = !is_array($controllingAnswer)
+                    || !in_array((string)$visibleIf['value'], array_map('strval', $controllingAnswer), true);
                 break;
         }
 
@@ -268,6 +256,30 @@ if (empty($errors)) {
 
 }
 
+/* ----------------------------------------------------------
+   Build review/nav data from the final answers, so the journey
+   nav and the review page both reflect this request's submission
+---------------------------------------------------------- */
+
+$pages = [];
+
+foreach ($quiz->pages() as $quizPage) {
+    $pages[] = $quiz->pageComponents($quizPage['id'], $answers);
+}
+
+// Build profile values keyed by field key
+$profile = [];
+
+foreach ($loader->profileFields()['fields'] as $field) {
+    $profile[$field['key']] = $answers[$field['id']] ?? null;
+}
+
+$reviewData = [
+    'pages'     => $pages,
+    'questions' => $loader->questions(),
+    'profile'   => $profile,
+    'answers'   => $answers
+];
 
 ?>
 <!DOCTYPE html>
@@ -298,7 +310,7 @@ if (empty($errors)) {
 <?= $renderer->renderIcon($page['icon'] ?? 'leaf') ?>
     </div>
 
-    <?= $renderer->render($page); ?>
+    <?= $renderer->render($page, $answers, $errors, $reviewData); ?>
 
 <?php if (!empty($page['stats'])): ?>
 
@@ -338,7 +350,7 @@ if (empty($errors)) {
         <input type="hidden" name="theme"
        value="<?= htmlspecialchars($_SESSION['theme'] ?? 'green') ?>">
 
-            <?= $renderer->render($page, $answers, $errors); ?>
+            <?= $renderer->render($page, $answers, $errors, $reviewData); ?>
 
             <?php if (!empty($errors)): ?>
 
@@ -387,7 +399,7 @@ if (empty($errors)) {
         <input type="hidden" name="theme"
        value="<?= htmlspecialchars($_SESSION['theme'] ?? 'green') ?>">
 
-            <?= $renderer->render($page, $answers, $errors); ?>
+            <?= $renderer->render($page, $answers, $errors, $reviewData); ?>
 
             <?php if (!empty($errors)): ?>
 
