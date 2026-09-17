@@ -50,6 +50,14 @@ $optionBodySystemScores = $questions[$questionId]['option_body_system_scores'] ?
 $stored = is_array($stored) ? $stored : [$stored];
 $scores = is_array($scores) ? $scores : [$scores];
 
+// Submitted answers are always strings (form posts, session storage),
+// while stored_values decoded from JSON are native int/float for
+// numeric scales (e.g. [0, 0.33, 0.67, 1]). A *strict* array_search of
+// a string against that array never matches — "1" !== 1 — so every
+// numeric-scale question was silently scoring 0 regardless of the
+// answer given. Compare against the stringified array instead.
+$storedAsStrings = array_map('strval', $stored);
+
     $score = 0.0;
 
     if (is_array($answer) && $optionBodySystemScores) {
@@ -62,7 +70,7 @@ $scores = is_array($scores) ? $scores : [$scores];
         $perSystemScore = [];
 
         foreach ($answer as $selected) {
-            $index = array_search($selected, $stored, true);
+            $index = array_search((string)$selected, $storedAsStrings, true);
 
             if ($index === false || (($scores[$index] ?? 0) <= 0)) {
                 continue;
@@ -91,7 +99,7 @@ $scores = is_array($scores) ? $scores : [$scores];
 
         // Multi-select: any positive option = 1
         foreach ($answer as $selected) {
-            $index = array_search($selected, $stored, true);
+            $index = array_search((string)$selected, $storedAsStrings, true);
 
             if ($index !== false && (($scores[$index] ?? 0) > 0)) {
                 $score = 1.0;
@@ -104,7 +112,7 @@ $scores = is_array($scores) ? $scores : [$scores];
  // Radio / single select
 
 
-    $index = array_search((string)$answer, $stored, true);
+    $index = array_search((string)$answer, $storedAsStrings, true);
 
     if ($index !== false && isset($scores[$index])) {
         $score = (float) $scores[$index];

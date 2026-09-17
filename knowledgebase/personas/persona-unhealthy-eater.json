@@ -1,0 +1,19 @@
+{
+  "id": "unhealthy-eater",
+  "extends": "neutral",
+  "name": "Unhealthy Eater",
+  "description": "Every Nutrition/Digestion question answered at its worst value, everything else neutral.",
+  "answers": {
+    "DIG001": 1,
+    "DIG002": 1,
+    "DIG003": 1,
+    "DIG004": 1,
+    "NUT001": 1,
+    "NUT003": 1,
+    "NUT004": 1,
+    "NUT005": 1,
+    "NUT007": 1,
+    "NUT008": 1,
+    "NUT011": 1
+  }
+}

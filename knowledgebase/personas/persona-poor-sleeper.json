@@ -1,0 +1,16 @@
+{
+  "id": "poor-sleeper",
+  "extends": "neutral",
+  "name": "Poor Sleeper",
+  "description": "Every Sleep question answered at its worst value, everything else neutral.",
+  "answers": {
+    "SLP001": 1,
+    "SLP002": 1,
+    "SLP003": 1,
+    "SLP004": 1,
+    "SLP005": 1,
+    "SLP006": 1,
+    "SLP007": 1,
+    "SLP008": 1
+  }
+}

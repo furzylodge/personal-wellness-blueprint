@@ -8,7 +8,7 @@
   "answers": {
     "IMM001": 1,
     "DIG002": 1,
-    "SAF001": 1,
+    "SAF001": ["asthma_copd"],
     "MND001": 1,
     "EXP001": 1,
     "EXP006": 1,
