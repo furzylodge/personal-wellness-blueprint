@@ -3,8 +3,5 @@
   "name": "Maximum Health Baseline",
   "description": "Every scored question is answered with its highest possible score.",
   "extends": null,
-  "expected": {
-    "topBodySystem": "BS001"
-  },
   "answers": {}
 }
