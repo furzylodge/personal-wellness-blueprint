@@ -74,11 +74,23 @@ public function pageComponents(string $pageId, array $answers = []): array
     }
 
 // Dynamic questions page
-
-// Dynamic questions page
 if (($page['source'] ?? '') === 'questions.json') {
 
     $page['components'] = [];
+
+    // Ids of every question that will appear on this page, so we can
+    // tell a same-page conditional (its parent question's input is
+    // present in the DOM and toggled live by JS) apart from a
+    // cross-page one (the parent, e.g. a profile field or a question
+    // from an earlier section, isn't rendered here at all, so it
+    // must be filtered out server-side using the stored answer).
+    $pageQuestionIds = [];
+
+    foreach ($this->questions as $question) {
+        if (($question['page'] ?? '') === $pageId) {
+            $pageQuestionIds[] = $question['id'];
+        }
+    }
 
     foreach ($this->questions as $question) {
 
@@ -86,6 +98,14 @@ if (($page['source'] ?? '') === 'questions.json') {
             continue;
         }
 
+        $visibleIf = $question['visible_if'] ?? null;
+
+        if ($visibleIf && !in_array($visibleIf['question'] ?? null, $pageQuestionIds, true)) {
+
+            if (!VisibilityEvaluator::isVisible($question, $answers)) {
+                continue;
+            }
+        }
 
         $page['components'][] = [
             'type'     => 'question',

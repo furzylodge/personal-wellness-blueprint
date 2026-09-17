@@ -59,9 +59,12 @@ document.addEventListener('DOMContentLoaded', () => {
     /* ---------------------------------------
        Clear error state on radio / checkbox
        questions as soon as they're answered
+       (covers both server-flagged errors on
+       load and errors added by the client-side
+       submit check below)
     ---------------------------------------- */
 
-    document.querySelectorAll('.question.has-error').forEach(question => {
+    document.querySelectorAll('.question[data-required="1"]').forEach(question => {
 
         const inputs = question.querySelectorAll(
             'input[type=radio], input[type=checkbox]'
@@ -100,6 +103,14 @@ function updateConditionalQuestions() {
             );
 
             visible = selected && selected.value === expected;
+
+        } else if (operator === 'not_equals') {
+
+            const selected = document.querySelector(
+                `input[name="${parentId}"]:checked`
+            );
+
+            visible = selected && selected.value !== expected;
 
         } else {
 
@@ -284,8 +295,39 @@ document.querySelectorAll('.review-summary').forEach(button => {
 
 
 // ==========================================
-// Required-slider submit validation
+// Required-question submit validation
 // ==========================================
+
+function flagRequiredError(question) {
+
+    question.classList.add('has-error');
+
+    let message = question.querySelector('.field-error');
+
+    if (!message) {
+        message = document.createElement('div');
+        message.className = 'field-error';
+        message.textContent = 'Please answer this question before continuing.';
+        question.appendChild(message);
+    }
+}
+
+function isSliderUnanswered(question) {
+    const slider = question.querySelector('.likert-slider');
+    return !slider || slider.classList.contains('is-unset');
+}
+
+function isRadioUnanswered(question) {
+    const radios = question.querySelectorAll('input[type=radio]');
+    return radios.length > 0
+        && !Array.from(radios).some(radio => radio.checked);
+}
+
+function isCheckboxUnanswered(question) {
+    const boxes = question.querySelectorAll('input[type=checkbox]');
+    return boxes.length > 0
+        && !Array.from(boxes).some(box => box.checked);
+}
 
 document.querySelectorAll('form').forEach(form => {
 
@@ -293,27 +335,43 @@ document.querySelectorAll('form').forEach(form => {
 
         let firstInvalid = null;
 
-        form.querySelectorAll('.slider-question[data-required="1"]').forEach(question => {
+        form.querySelectorAll('.question[data-required="1"]').forEach(question => {
 
-            const slider = question.querySelector('.likert-slider');
+            const type = question.dataset.questionType || '';
 
-            if (!slider || !slider.classList.contains('is-unset')) {
+            const isSliderType = ['frequency_3', 'frequency_4', 'frequency_5', 'quality_5']
+                .includes(type) || question.classList.contains('slider-question');
+
+            let unanswered = false;
+
+            if (isSliderType) {
+                // The slider markup lives inside a nested .slider-question
+                // container; validate that, not the outer wrapper twice.
+                const target = question.classList.contains('slider-question')
+                    ? question
+                    : question.querySelector('.slider-question');
+
+                if (!target) return;
+
+                unanswered = isSliderUnanswered(target);
+
+                if (unanswered) {
+                    flagRequiredError(target);
+                    if (!firstInvalid) firstInvalid = target;
+                }
+
                 return;
             }
 
-            question.classList.add('has-error');
-
-            let message = question.querySelector('.field-error');
-
-            if (!message) {
-                message = document.createElement('div');
-                message.className = 'field-error';
-                message.textContent = 'Please answer this question before continuing.';
-                question.appendChild(message);
+            if (type === 'multi_select') {
+                unanswered = isCheckboxUnanswered(question);
+            } else if (question.querySelectorAll('input[type=radio]').length > 0) {
+                unanswered = isRadioUnanswered(question);
             }
 
-            if (!firstInvalid) {
-                firstInvalid = question;
+            if (unanswered) {
+                flagRequiredError(question);
+                if (!firstInvalid) firstInvalid = question;
             }
         });
 

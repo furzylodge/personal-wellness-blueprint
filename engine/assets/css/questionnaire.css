@@ -546,27 +546,162 @@ border:1px solid var(--border);
 }
 
 
-.progress-bar{
-    display:grid;
-    grid-template-columns:repeat(8, minmax(0, 1fr));
-    gap:8px;
-    align-items:center;      /* centres every segment vertically */
-    height:16px;             /* shared track height */
-    margin:0 0 18px;
-    width:100%;
+.journey-nav{
+    position:relative;
+    margin:0 0 24px;
+    padding:6px 0 0;
 }
 
-.progress-segment{
-    width:100%;
-    height:8px;
-    border-radius:999px;
+.journey-track{
+    position:absolute;
+    top:28px;
+    left:28px;
+    right:28px;
+    height:3px;
     background:var(--border);
+    border-radius:999px;
+    z-index:0;
+}
+
+.journey-track-fill{
+    position:absolute;
+    top:28px;
+    left:28px;
+    height:3px;
+    background:var(--primary);
+    border-radius:999px;
+    z-index:1;
+    max-width:calc(100% - 56px);
+    transition:width .3s ease;
+}
+
+.journey-nodes{
+    position:relative;
+    z-index:2;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+}
+
+.journey-node{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:6px;
+    text-decoration:none;
+    flex:1;
+    min-width:0;
+}
+
+.journey-icon-circle{
+    position:relative;
+    width:56px;
+    height:56px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:var(--surface);
+    border:2px solid var(--border);
+    color:var(--text-muted);
     transition:all .2s ease;
 }
 
-.progress-segment.active{
-    height:12px;
+.journey-icon-circle .section-icon-svg{
+    width:30px;
+    height:30px;
+}
+
+.journey-node.current .journey-icon-circle{
+    background:var(--primary-soft);
+    border-color:var(--primary);
+    color:var(--primary);
+    box-shadow:0 0 0 4px var(--primary-soft);
+}
+
+.journey-node.complete .journey-icon-circle{
     background:var(--primary);
+    border-color:var(--primary);
+    color:var(--surface);
+}
+
+.journey-node.upcoming .journey-icon-circle{
+    background:var(--surface);
+    border-color:var(--border);
+    color:var(--text-muted);
+}
+
+.journey-node-label{
+    font-size:.68rem;
+    color:var(--text-muted);
+    text-align:center;
+    line-height:1.2;
+    max-width:72px;
+    display:none;
+}
+
+.journey-node.current .journey-node-label{
+    display:block;
+    color:var(--primary);
+    font-weight:600;
+}
+
+.journey-badge{
+    position:absolute;
+    top:-6px;
+    right:-8px;
+    min-width:22px;
+    height:22px;
+    padding:0 5px;
+    border-radius:999px;
+    font-size:.75rem;
+    font-weight:700;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    line-height:1;
+    border:2px solid var(--surface);
+    box-shadow:0 1px 3px rgba(0,0,0,.15);
+}
+
+.journey-badge-remaining{
+    background:#D97706;
+    color:#FFFFFF;
+}
+
+.journey-badge-complete{
+    background:#16A34A;
+    color:#FFFFFF;
+    font-size:.85rem;
+}
+
+@media (max-width:640px){
+
+    .journey-track,
+    .journey-track-fill{
+        left:16px;
+        right:16px;
+    }
+
+    .journey-icon-circle{
+        width:40px;
+        height:40px;
+    }
+
+    .journey-icon-circle .section-icon-svg{
+        width:22px;
+        height:22px;
+    }
+
+    .journey-badge{
+        min-width:18px;
+        height:18px;
+        font-size:.65rem;
+    }
+
+    .journey-node-label{
+        display:none !important;
+    }
 }
 
 /* ======================================================

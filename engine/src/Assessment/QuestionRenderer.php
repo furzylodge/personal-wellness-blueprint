@@ -84,10 +84,7 @@ public function render(array $page, array $answers = [], array $errors = [],arra
 case 'profile':
 
     $html .= "<div class='section-header'>";
-    $html .= $this->renderProgressBar(
-        (int)($page['section'] ?? 1),
-        (int)($page['total_sections'] ?? 7)
-    );
+    $html .= $this->renderJourneyNav($page, $reviewData, $answers);
 
     $html .= "
         <div class='section-meta'>
@@ -129,10 +126,7 @@ case 'profile':
 case 'questions':
 
     $html .= "<div class='section-header'>";
-    $html .= $this->renderProgressBar(
-        (int)($page['section'] ?? 1),
-        (int)($page['total_sections'] ?? 7)
-    );
+    $html .= $this->renderJourneyNav($page, $reviewData, $answers);
 
     $html .= "
         <div class='section-meta'>
@@ -392,8 +386,9 @@ $questionHasError = isset($errors[$id]) && ($question['answer_type'] ?? '') !== 
     && ($question['answer_type'] ?? '') !== 'quality_5';
 
 $questionClass = 'question' . ($questionHasError ? ' has-error' : '');
+$questionRequired = !empty($question['required']) ? " data-required='1' data-question-type='{$this->e($question['answer_type'] ?? '')}'" : '';
 
-$html .= "<div class='{$questionClass}'{$exclusive}>";
+$html .= "<div class='{$questionClass}'{$exclusive}{$questionRequired}>";
 
 $html .= "<h3>{$title}</h3>";
 
@@ -568,15 +563,14 @@ if ($visibleIf) {
     return $html;
 }
 
-private function renderReview(
-    array $profile,
-    array $answers,
-    array $reviewData
-): string
-
+/**
+ * Canonical ordered list of the quiz's real sections (excludes the
+ * welcome and finish/review pages), shared by the review page and
+ * the in-progress journey nav so both stay in sync.
+ */
+private function sectionDefinitions(): array
 {
-
-$sections = [
+    return [
     ['id'=>'profile',   'page'=>'PROFILE',   'title'=>'About You',            'icon'=>'user-round',  'colour'=>'green'],
     ['id'=>'energy',    'page'=>'ENERGY',    'title'=>'Energy & Foundations', 'icon'=>'zap',         'colour'=>'lime'],
     ['id'=>'nutrition', 'page'=>'NUTRITION', 'title'=>'Nutrition',            'icon'=>'leaf',        'colour'=>'gold'],
@@ -585,7 +579,88 @@ $sections = [
     ['id'=>'sleep',     'page'=>'SLEEP',     'title'=>'Sleep',                'icon'=>'moon',        'colour'=>'violet'],
     ['id'=>'lifestyle', 'page'=>'LIFESTYLE', 'title'=>'Lifestyle',            'icon'=>'tree',        'colour'=>'brown'],
     ['id'=>'medical',   'page'=>'MEDICAL',   'title'=>'Medical',              'icon'=>'heart-pulse', 'colour'=>'rose'],
-];
+    ];
+}
+
+/**
+ * Horizontal step nav shown at the top of every profile/question
+ * page: one clickable icon node per section, showing completion
+ * state and how many required questions remain on that page.
+ */
+private function renderJourneyNav(array $currentPage, array $reviewData, array $answers): string
+{
+    $sections = $this->sectionDefinitions();
+    $pages    = $reviewData['pages'] ?? [];
+    $profile  = $reviewData['profile'] ?? [];
+
+    $currentPageId = $currentPage['id'] ?? '';
+
+    $currentIndex = 0;
+
+    foreach ($sections as $i => $section) {
+        if ($section['page'] === $currentPageId) {
+            $currentIndex = $i;
+            break;
+        }
+    }
+
+    $lastIndex = max(1, count($sections) - 1);
+    $fillPercent = ($currentIndex / $lastIndex) * 100;
+
+    $html = "<div class='journey-nav'>";
+    $html .= "<div class='journey-track'></div>";
+    $html .= "<div class='journey-track-fill' style='width:{$fillPercent}%'></div>";
+    $html .= "<div class='journey-nodes'>";
+
+    foreach ($sections as $i => $section) {
+
+        $summary = $this->calculateSectionProgress(
+            $section['page'],
+            $pages,
+            $answers,
+            $profile
+        );
+
+        $remaining = max(0, $summary['total'] - $summary['answered']);
+        $isCurrent = $section['page'] === $currentPageId;
+        $isComplete = $summary['total'] > 0 && $remaining === 0;
+
+        $stateClass = $isCurrent ? 'current' : ($isComplete ? 'complete' : 'upcoming');
+
+        $badge = '';
+
+        if ($isComplete) {
+            $badge = "<span class='journey-badge journey-badge-complete'>&#10003;</span>";
+        } elseif ($remaining > 0) {
+            $badge = "<span class='journey-badge journey-badge-remaining'>{$remaining}</span>";
+        }
+
+        $label = $this->e($section['title']);
+
+        $html .= "
+            <a class='journey-node {$stateClass}' href='?page={$section['page']}' title='{$label}'>
+                <span class='journey-icon-circle'>
+                    {$this->renderIcon($section['icon'])}
+                    {$badge}
+                </span>
+                <span class='journey-node-label'>{$label}</span>
+            </a>";
+    }
+
+    $html .= "</div></div>";
+
+    return $html;
+}
+
+private function renderReview(
+    array $profile,
+    array $answers,
+    array $reviewData
+): string
+
+{
+
+$sections = $this->sectionDefinitions();
 
     $html = "
     <div class='review-header'>
@@ -701,21 +776,6 @@ $html .= "
         return htmlspecialchars($text, ENT_QUOTES, 'UTF-8');
     }
     
-    private function renderProgressBar(int $current, int $total): string
-{
-    $html = "<div class='progress-bar'>";
-
-    for ($i = 1; $i <= $total; $i++) {
-
-        $class = $i === $current ? "active" : "inactive";
-
-        $html .= "<span class='progress-segment {$class}'></span>";
-    }
-
-    $html .= "</div>";
-
-    return $html;
-}
 
 private function renderPageAnswers(array $page, array $answers): string
 {
@@ -818,10 +878,13 @@ private function isQuestionVisible(array $question, array $answers): bool
         case 'equals':
             return (string)$answer === (string)$rule['value'];
 
+        case 'not_equals':
+            return (string)$answer !== (string)$rule['value'];
+
         case 'contains':
             return is_array($answer) && in_array($rule['value'], $answer);
         case 'not_contains':
-            return is_array($answer) && !in_array($rule['value'], $answer, true);
+            return !is_array($answer) || !in_array($rule['value'], $answer, true);
 
         default:
             return true;

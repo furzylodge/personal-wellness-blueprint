@@ -27,8 +27,14 @@ class VisibilityEvaluator
             'equals' =>
                 (string)$answer === (string)$value,
 
+            'not_equals' =>
+                (string)$answer !== (string)$value,
+
             'contains' =>
                 is_array($answer) && in_array($value, $answer, true),
+
+            'not_contains' =>
+                !is_array($answer) || !in_array($value, $answer, true),
 
             default => false,
         };

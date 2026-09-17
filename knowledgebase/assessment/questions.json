@@ -604,20 +604,21 @@
       "Another diagnosed skin condition",
       "None of these"
     ],
-"stored_values": [
-  "eczema",
-  "psoriasis",
-  "rosacea",
-  "other_skin",
-  "none"
-],
-"score_values": [
-  1,
-  1,
-  1,
-  1,
-  0
-]  },
+    "stored_values": [
+      "eczema",
+      "psoriasis",
+      "rosacea",
+      "other_skin",
+      "none"
+    ],
+    "score_values": [
+      1,
+      1,
+      1,
+      1,
+      0
+    ]
+  },
   {
     "id": "PHY002",
     "legacy_id": "Q16b",
@@ -627,8 +628,8 @@
     "required": true,
     "visible_if": {
       "question": "PHY001",
-  "operator": "not_contains",
-  "value": "none"
+      "operator": "not_contains",
+      "value": "none"
     },
     "answer_options": [
       "Not at all",
@@ -1238,15 +1239,16 @@
       "Stroke or TIA",
       "Asthma or COPD"
     ],
-"stored_values": [
-  "none",
-  "hypertension",
-  "cholesterol",
-  "type2_diabetes",
-  "heart_disease",
-  "stroke_tia",
-  "asthma_copd"
-]  },
+    "stored_values": [
+      "none",
+      "hypertension",
+      "cholesterol",
+      "type2_diabetes",
+      "heart_disease",
+      "stroke_tia",
+      "asthma_copd"
+    ]
+  },
   {
     "id": "SAF002",
     "legacy_id": "Q09",
@@ -1291,23 +1293,38 @@
       "Sulphur dioxide / sulphites",
       "Tree nuts"
     ],
-"stored_values": [
-  "celery",
-  "gluten",
-  "crustaceans",
-  "eggs",
-  "fish",
-  "lupin",
-  "milk",
-  "molluscs",
-  "mustard",
-  "peanuts",
-  "sesame",
-  "soybeans",
-  "sulphites",
-  "tree_nuts"
-],
-"score_values": [1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+    "stored_values": [
+      "celery",
+      "gluten",
+      "crustaceans",
+      "eggs",
+      "fish",
+      "lupin",
+      "milk",
+      "molluscs",
+      "mustard",
+      "peanuts",
+      "sesame",
+      "soybeans",
+      "sulphites",
+      "tree_nuts"
+    ],
+    "score_values": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
   },
   {
     "id": "SAF007",
@@ -1409,7 +1426,7 @@
     "page": "MEDICAL",
     "question": "Do you currently experience menstrual or cycle-related changes or symptoms that you would like to take into account?",
     "answer_type": "radio",
-        "follow_up": {
+    "follow_up": {
       "id": "LIF001_DETAIL",
       "label": "Please describe the changes or symptom",
       "type": "textarea",
@@ -1426,7 +1443,12 @@
     "stored_values": [
       1,
       0
-    ]
+    ],
+    "visible_if": {
+      "question": "PF006",
+      "operator": "not_equals",
+      "value": "male"
+    }
   },
   {
     "id": "LIF002",
@@ -1434,7 +1456,7 @@
     "page": "MEDICAL",
     "question": "Are you experiencing perimenopause, menopause or related life-stage changes that you would like to take into account?",
     "answer_type": "radio",
-            "follow_up": {
+    "follow_up": {
       "id": "LIF002_DETAIL",
       "label": "Please describe the changes",
       "type": "textarea",
@@ -1451,7 +1473,12 @@
     "stored_values": [
       1,
       0
-    ]
+    ],
+    "visible_if": {
+      "question": "PF006",
+      "operator": "not_equals",
+      "value": "male"
+    }
   },
   {
     "id": "MND008",
