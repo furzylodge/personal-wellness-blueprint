@@ -17,7 +17,9 @@ declare(strict_types=1);
  * For each persona this prints a console summary (top body systems, top
  * mechanisms, top foods, and a pass/fail against any "expected" block in
  * the persona file) and writes the full rendered report to
- * tools/reports/report-<persona-id>.html for visual review.
+ * tools/report-<persona-id>.html for visual review (open it in a browser
+ * from within the actual project checkout, so the relative stylesheet
+ * link resolves).
  */
 
 require_once __DIR__ . '/../vendor/autoload.php';
@@ -27,11 +29,13 @@ use PWB\Reports\ReportDataBuilder;
 use PWB\Utils\TestAssessmentFactory;
 
 $kb = __DIR__ . '/../knowledgebase';
-$outputDir = __DIR__ . '/reports';
 
-if (!is_dir($outputDir)) {
-    mkdir($outputDir, 0777, true);
-}
+// Written directly into tools/ (same level as generate-report.php), not a
+// subfolder — ReportBuilder links its stylesheet as a relative
+// "../engine/assets/css/questionnaire.css", which only resolves correctly
+// one directory below the project root. A "tools/reports/" subfolder would
+// silently break that link and load unstyled.
+$outputDir = __DIR__;
 
 $requested = array_slice($argv, 1);
 

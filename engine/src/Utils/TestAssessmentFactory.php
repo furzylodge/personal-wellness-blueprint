@@ -127,13 +127,21 @@ final class TestAssessmentFactory
             $answers[$questionId] = $isMultiSelect ? [$value] : $value;
         }
 
+        // A persona can also declare stated wellness goals (PF014's
+        // options, e.g. "OUT005" for Digestive & Gut Health), separately
+        // from "answers" since PF014 is a profile field rather than a
+        // scored question.
+        $goals = $persona['goals'] ?? [];
+        $answers['PF014'] = $goals;
+
         return new Assessment(
             assessment: [
                 'version' => '1.0.0',
                 'persona' => $personaId,
                 'name'    => $persona['name'] ?? $personaId,
             ],
-            answers: $answers
+            answers: $answers,
+            goals: $goals
         );
     }
 

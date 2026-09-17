@@ -16,6 +16,7 @@ use PWB\Recommendation\FoodResolver;
 use PWB\Recommendation\NutrientResolver;
 use PWB\Assessment\Assessment;
 use PWB\Recommendation\RecommendationConfiguration;
+use PWB\Loader\MonographParser;
 
 class ReportDataBuilder
 {
@@ -29,6 +30,7 @@ class ReportDataBuilder
     private array $mechanismLookup = [];
     private array $bioactiveLookup = [];
     private array $foodLookup = [];
+    private array $monographLookup = [];
 
     public function __construct()
     {
@@ -54,6 +56,24 @@ class ReportDataBuilder
         $this->bodySystems = $this->loadLookup(
   	  	'body-systems.json',
     		'bodySystems');
+
+        // Full food detail records now live as monograph markdown files
+        // (knowledgebase/monographs/FDxxx-*.md) rather than the archived
+        // per-food JSON files knowledgebase/foods/*.json used to hold —
+        // FoodResolver still scores/matches foods via taxonomy/foods.json
+        // and taxonomy/food-mechanisms.json, but the descriptive detail
+        // (description, active compounds, tags, food group, etc.) for the
+        // report comes from parsing the monograph.
+        $parser = new MonographParser();
+
+        foreach ($this->repository->getMonographs() as $monographFile) {
+
+            $food = $parser->parse($monographFile);
+
+            if ($food !== null) {
+                $this->monographLookup[$food['id']] = $food;
+            }
+        }
     }
 
     public function build(Assessment $assessment): array
@@ -66,7 +86,10 @@ $builder = new HealthProfileBuilder(
 
 $profile = $builder->build($assessment);
 
-$priorityScorer = new PriorityScorer();
+$priorityScorer = new PriorityScorer(
+    new JsonLoader(),
+    $this->locator->getKnowledgebaseDirectory()
+);
 $config = new RecommendationConfiguration();
 
 $priorities = $priorityScorer->score($profile, $config);
@@ -108,13 +131,9 @@ foreach ($foodResults as $foodResult) {
 
     $foodId = $foodResult['foodId'];
 
-            foreach ($this->repository->getFoods() as $foodFile) {
+    $food = $this->monographLookup[$foodId] ?? null;
 
-                $food = $this->loader->load($foodFile);
-
-                if (($food['id'] ?? '') !== $foodId) {
-                    continue;
-                }
+    if ($food !== null) {
 
                 $food = $this->prepareFood($food);
 
@@ -141,11 +160,8 @@ $food['sources'] = array_map(
 );
 
 $foods[] = $food;
-
-                break;
-            }
-
-        }
+    }
+}
 
 // Normalise food scores (0–100)
 //
@@ -278,7 +294,18 @@ private function buildBodySystems(array $foods, array $priorities): array
 
         $foodName = $food['identity']['name'] ?? 'Unknown';
 
-        foreach ($food['supports']['bodySystems'] ?? [] as $systemId) {
+        // Prefer the body systems this food actually matched for THIS
+        // person (computed dynamically by FoodResolver from their
+        // mechanism scores) over the food's static monograph tag, which
+        // is often missing (e.g. beetroot has no "JSON Mapping" footer)
+        // and, even when present, doesn't vary per person. Falling back
+        // to the static tag keeps foods visible for any legacy/partial
+        // scoreBreakdown data that predates this field.
+        $systemIds = $food['scoreBreakdown']['summary']['systemsCoveredIds']
+            ?? $food['supports']['bodySystems']
+            ?? [];
+
+        foreach ($systemIds as $systemId) {
 
             if (!isset($systems[$systemId])) {
 

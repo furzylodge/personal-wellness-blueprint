@@ -114,7 +114,7 @@ $assessment = new Assessment(
     bodySystems: [],
     preferences: [],
     restrictions: [],
-    goals: []
+    goals: $answers['PF014'] ?? []
 );
 
 /*

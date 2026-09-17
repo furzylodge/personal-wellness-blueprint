@@ -82,8 +82,15 @@ foreach ($priorities as $priority) {
     'evidence'      => $mechanismLookup[$id]['evidence'] ?? '',
     'plainEnglish' => $mechanismLookup[$id]['plainEnglish'] ?? '',
 'description'  => $mechanismLookup[$id]['description'] ?? '',
-'tooltip'      => $mechanismLookup[$id]['tooltip'] ?? '',
-'whyItMatters' => $mechanismLookup[$id]['whyItMatters'] ?? '',
+// mechanism-content.json (the source of tooltip/whyItMatters) is
+// still mostly unpopulated test data — only a couple of the 100+
+// mechanisms have dedicated entries. Rather than show blank hover
+// text for everything else, fall back to the mechanism's own
+// description, which mechanisms.json always populates with real
+// clinical copy. Once mechanism-content.json is filled in properly
+// these fallbacks become no-ops.
+'tooltip'      => $mechanismLookup[$id]['tooltip'] ?? $mechanismLookup[$id]['description'] ?? '',
+'whyItMatters' => $mechanismLookup[$id]['whyItMatters'] ?? $mechanismLookup[$id]['description'] ?? '',
     'sources'       => []
 ];
         }

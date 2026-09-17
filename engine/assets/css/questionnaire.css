@@ -1641,10 +1641,23 @@ color:var(--report-chip-text);
     font-weight:600;
     color:#0F766E;
     list-style:none;
+    display:flex;
+    align-items:center;
+    gap:6px;
 }
 
 .food-score-breakdown summary::-webkit-details-marker{
     display:none;
+}
+
+.food-score-breakdown summary::after{
+    content:'\25B8';
+    font-size:12px;
+    transition:transform 0.15s ease;
+}
+
+.food-score-breakdown[open] summary::after{
+    transform:rotate(90deg);
 }
 
 .score-breakdown-table{

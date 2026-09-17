@@ -8,6 +8,13 @@ use PWB\Loader\JsonLoader;
 
 final class FoodResolver
 {
+    // Each successive matched pathway (ranked strongest-first) counts for
+    // this fraction of the previous one's weight, so a food's score is
+    // driven by how well it matches its BEST few mechanisms rather than
+    // how many it matches in total. Starting value — worth tuning once
+    // you've compared it against more personas/assessments.
+    private const PATHWAY_DECAY = 0.6;
+
     public function __construct(
         private JsonLoader $loader,
         private string $knowledgePath
@@ -162,23 +169,39 @@ if ($contribution < 0.5) {
             if ($total <= 0) {
                 continue;
             }
-            
+
             $averageStrength = $pathwayCount > 0
     ? $strengthTotal / $pathwayCount
     : 0;
 
 $systemCount = count($systemsCovered);
 
-$breadthScore = min($systemCount / 6, 1);
+// Rank this food's own matched pathways strongest-first, and apply a
+// diminishing weight per rank (self::PATHWAY_DECAY per step down) rather
+// than adding every matched contribution up in full. A flat sum
+// (the previous approach) let a food that matched many mechanisms
+// decently always out-total a food that matched a handful very
+// strongly and specifically — e.g. a generalist high-fibre food would
+// beat beetroot for a respiratory profile purely by volume, even
+// though beetroot's few matches (oxidative stress, nitric oxide,
+// endothelial function) are a much sharper fit. Ranking by decayed
+// contribution keeps a food's strongest, most relevant pathways
+// dominant and lets weaker/incidental matches contribute only a
+// little, without discarding them outright the way a hard top-N cap
+// would.
+usort($matched, fn($a, $b) => $b['contribution'] <=> $a['contribution']);
+usort($breakdown, fn($a, $b) => $b['contribution'] <=> $a['contribution']);
 
-$diversityBonus = $pathwayCount >= 4 ? 1 : ($pathwayCount / 4);
+$decayedTotal = 0;
+
+foreach ($matched as $rank => $m) {
+    $decayedTotal += $m['contribution'] * (self::PATHWAY_DECAY ** $rank);
+}
 
 $clinicalScore =
-    ($total * 0.50) +
-    ($total * $averageStrength * 0.20) +
-    ($total * $breadthScore * 0.20) +
-    ($total * $diversityBonus * 0.10);
-    
+    ($decayedTotal * 0.80) +
+    ($decayedTotal * $averageStrength * 0.20);
+
 $results[] = [
     'foodId' => $foodId,
     'name' => $foodLookup[$foodId]['name'] ?? $foodId,
@@ -187,15 +210,14 @@ $results[] = [
     'matchedMechanisms' => $matched,
 
     'scoreBreakdown' => [
-        'total' => round($total, 2),
+        'total' => round($decayedTotal, 2),
         'mechanisms' => $breakdown,
         'summary' => [
-            'relevance' => round($total * 0.50, 2),
-            'breadth'   => round($total * $breadthScore * 0.20, 2),
-            'strength'  => round($total * $averageStrength * 0.20, 2),
-            'diversity' => round($total * $diversityBonus * 0.10, 2),
-            'systemsCovered' => array_values($systemsCovered),
-            'systemCount'    => $systemCount,
+            'relevance' => round($decayedTotal * 0.80, 2),
+            'strength'  => round($decayedTotal * $averageStrength * 0.20, 2),
+            'systemsCovered'   => array_values($systemsCovered),
+            'systemsCoveredIds' => array_keys($systemsCovered),
+            'systemCount'      => $systemCount,
         ],
     ],
 ];
