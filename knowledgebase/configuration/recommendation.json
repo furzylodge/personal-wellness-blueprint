@@ -1,0 +1,31 @@
+{
+    "version": "1.0",
+    "description": "Recommendation Engine Configuration",
+
+    "priorityWeights": {
+        "bodySystems": 1.00,
+        "mechanisms": 1.00,
+        "symptoms": 1.00,
+        "conditions": 1.00,
+        "biomarkers": 1.00
+    },
+
+    "scoreRanges": {
+        "minimum": 0,
+        "maximum": 100
+    },
+
+    "recommendationLimits": {
+        "foods": 20,
+        "bioactives": 20,
+        "supplements": 10,
+        "lifestyle": 10
+    },
+
+    "minimumRecommendationScore": 20,
+
+    "confidence": {
+        "default": 1.00,
+        "minimum": 0.50
+    }
+}
