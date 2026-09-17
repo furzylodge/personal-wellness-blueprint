@@ -148,12 +148,18 @@ $foods[] = $food;
         }
 
 // Normalise food scores (0–100)
+//
+// $foods can legitimately be empty (e.g. a low-scoring assessment
+// where no food/mechanism pairing clears FoodResolver's contribution
+// threshold), and every rawScore can legitimately be 0 — max() throws
+// on an empty array in PHP 8, and dividing by a zero $maxScore would
+// throw a DivisionByZeroError, so both are guarded here.
 
-$maxScore = max(array_column($foods, 'rawScore'));
+$maxScore = !empty($foods) ? max(array_column($foods, 'rawScore')) : 0;
 
 foreach ($foods as &$food) {
 
-    $normalised = $food['rawScore'] / $maxScore;
+    $normalised = $maxScore > 0 ? $food['rawScore'] / $maxScore : 0;
 
     // Create a wider spread (40–100)
     $food['score'] = (int) round(
