@@ -78,6 +78,7 @@ body{
     background: var(--background);
     margin:0;
     padding:40px;
+    box-sizing:border-box;
 }
 
 .container{
@@ -87,6 +88,22 @@ body{
     padding:40px;
     border-radius:12px;
     box-shadow:0 8px 24px rgba(0,0,0,.08);
+    box-sizing:border-box;
+}
+
+/* Mobile-first base spacing: the desktop values above are the
+   exception, applied back in via the min-width query further
+   down, not the default. */
+@media (max-width:640px){
+
+    body{
+        padding:12px;
+    }
+
+    .container{
+        padding:18px;
+        border-radius:14px;
+    }
 }
 
 h1{
@@ -122,14 +139,95 @@ input[type=number]{
 
 .radio,
 .checkbox{
-    display:block;
-    font-weight:400;
-    margin:8px 0;
+    display:flex;
+    align-items:center;
+    gap:14px;
+    position:relative;
+    font-weight:500;
+    color:var(--text);
+    margin:10px 0;
+    padding:14px 16px;
+    border:1.5px solid var(--border);
+    border-radius:12px;
+    background:var(--surface);
+    cursor:pointer;
+    transition:border-color .15s ease, background .15s ease;
+    -webkit-tap-highlight-color:transparent;
 }
 
+.radio:hover,
+.checkbox:hover{
+    border-color:var(--primary);
+}
+
+.radio:has(input:checked),
+.checkbox:has(input:checked){
+    border-color:var(--primary);
+    background:var(--primary-soft);
+    font-weight:700;
+}
+
+.radio:has(input:disabled),
+.checkbox:has(input:disabled){
+    opacity:.45;
+    cursor:not-allowed;
+    border-color:var(--border);
+    background:var(--surface-soft);
+}
+
+/* Native input stays in the DOM (and in the tab order) for
+   accessibility and form submission, just visually hidden —
+   the ::before/::after pseudo-elements below draw its state. */
 .radio input,
 .checkbox input{
-    margin-right:8px;
+    position:absolute;
+    opacity:0;
+    width:1px;
+    height:1px;
+    margin:0;
+}
+
+.radio::before,
+.checkbox::before{
+    content:"";
+    flex-shrink:0;
+    width:24px;
+    height:24px;
+    border:2px solid var(--border);
+    background:var(--surface);
+    transition:border-color .15s ease, background .15s ease;
+    box-sizing:border-box;
+}
+
+.radio::before{
+    border-radius:50%;
+}
+
+.checkbox::before{
+    border-radius:7px;
+}
+
+.radio:has(input:checked)::before{
+    border-color:var(--primary);
+    background:var(--primary);
+    box-shadow:inset 0 0 0 4px var(--surface);
+}
+
+.checkbox:has(input:checked)::before{
+    border-color:var(--primary);
+    background:var(--primary);
+}
+
+.checkbox:has(input:checked)::after{
+    content:"";
+    position:absolute;
+    left:23px;
+    top:50%;
+    width:6px;
+    height:11px;
+    border:solid var(--surface);
+    border-width:0 2px 2px 0;
+    transform:translateY(-60%) rotate(45deg);
 }
 
 .helper{
@@ -147,10 +245,13 @@ input[type=number]{
 .next,
 button.next,
 a.next{
-    display:inline-block;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
     background:var(--primary);
     color:var(--surface) !important;
     padding:14px 24px;
+    min-height:48px;
     border:none;
     border-radius:8px;
     text-decoration:none;
@@ -159,6 +260,7 @@ a.next{
     margin-top:20px;
     font-size:15px;
     appearance:none;
+    box-sizing:border-box;
 }
 
 .next:hover,
@@ -171,6 +273,53 @@ a.next:hover{
 .next:visited,
 .next:active{
     color:var(--surface);
+}
+
+/* Previous is a secondary action — same touch target, lighter
+   visual weight so Continue clearly reads as the primary action */
+a.next.previous{
+    background:var(--surface);
+    color:var(--text) !important;
+    border:1.5px solid var(--border);
+}
+
+a.next.previous:hover{
+    background:var(--surface-soft);
+    border-color:var(--text-muted);
+    color:var(--text) !important;
+}
+
+.nav-buttons{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+}
+
+.nav-buttons .next{
+    margin-top:0;
+    flex:0 0 auto;
+}
+
+@media (max-width:640px){
+
+    .nav-buttons{
+        position:sticky;
+        bottom:0;
+        left:0;
+        right:0;
+        background:var(--surface);
+        padding:12px 0;
+        margin:20px -18px -18px;
+        padding-left:18px;
+        padding-right:18px;
+        box-shadow:0 -4px 12px rgba(0,0,0,.06);
+        z-index:20;
+    }
+
+    .nav-buttons .next{
+        flex:1 1 0;
+    }
 }
 
 .next.disabled,
@@ -409,11 +558,6 @@ border:1px solid var(--border);
     border-radius:999px;
     font-size:.75rem;
     font-weight:600;
-}
-
-.section-time{
-    color:var(--text-muted);
-    font-size:.8rem;
 }
 
 .section-icon{
@@ -720,6 +864,45 @@ border:1px solid var(--border);
 
     .journey-node-label{
         display:none !important;
+    }
+}
+
+/* Smallest phones: shrink further so all 9 stops (8 sections +
+   review) stay visible and tappable without overlapping or
+   forcing horizontal scroll */
+@media (max-width:400px){
+
+    .journey-track,
+    .journey-track-fill{
+        left:10px;
+        right:10px;
+    }
+
+    .journey-nodes{
+        gap:2px;
+    }
+
+    .journey-icon-circle{
+        width:30px;
+        height:30px;
+        border-width:1.5px;
+    }
+
+    .journey-icon-circle .section-icon-svg{
+        width:16px;
+        height:16px;
+    }
+
+    .journey-node.current .journey-icon-circle{
+        transform:scale(1.15);
+    }
+
+    .journey-badge{
+        min-width:15px;
+        height:15px;
+        font-size:.55rem;
+        top:-4px;
+        right:-5px;
     }
 }
 

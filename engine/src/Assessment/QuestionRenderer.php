@@ -78,7 +78,6 @@ public function render(array $page, array $answers = [], array $errors = [],arra
     $title    = $this->e($page['title'] ?? '');
     $subtitle = $this->e($page['subtitle'] ?? '');
     $icon     = $this->e($page['icon'] ?? 'circle');
-    $minutes  = $page['estimated_minutes'] ?? '';
     $section = $page['section'] ?? '';
     $total   = $page['total_sections'] ?? 7;
 
@@ -96,7 +95,6 @@ case 'profile':
 
             <div class='section-meta-left'>
                 <span class='section-badge'>Section {$section} of {$total}</span>
-                <span class='section-time'>{$minutes} min</span>
             </div>
 
             <div class='theme-picker'>
@@ -136,7 +134,6 @@ case 'questions':
     $html .= "
         <div class='section-meta'>
             <span class='section-badge'>Section {$section} of {$total}</span>
-            <span class='section-time'>{$minutes} min</span>
         </div>
 
         <div class='section-intro'>
