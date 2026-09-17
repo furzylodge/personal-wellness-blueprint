@@ -38,8 +38,7 @@
     ],
     "body_system_scores": {
       "BS005": "Y",
-      "BS006": "Y",
-      "BS007": "Y"
+      "BS006": "Y"
     }
   },
   {
@@ -114,7 +113,6 @@
     "body_system_scores": {
       "BS002": "Y",
       "BS003": "Y",
-      "BS007": "Y",
       "BS008": "Y"
     }
   },
@@ -129,7 +127,7 @@
       "High cholesterol",
       "Type 2 diabetes",
       "Heart disease",
-      "Stroke or TAI",
+      "Stroke or TIA",
       "Asthma or COPD"
     ],
     "stored_values": [
@@ -219,8 +217,7 @@
     ],
     "body_system_scores": {
       "BS001": "Y",
-      "BS005": "Y",
-      "BS007": "Y"
+      "BS005": "Y"
     }
   },
   {
@@ -266,8 +263,7 @@
     ],
     "body_system_scores": {
       "BS001": "Y",
-      "BS005": "Y",
-      "BS007": "Y"
+      "BS005": "Y"
     }
   },
   {
@@ -325,21 +321,21 @@
   {
     "production_id": "COG001",
     "legacy_id": "Q12",
-    "question": "How often do you have difficulty concentrating or remembering things?",
+    "question": "How often do you feel mentally sharp and able to focus?",
     "answer_type": "frequency_5",
     "answer_options": [
-      "Never",
-      "Occasionally",
-      "Sometimes",
+      "Always",
       "Often",
-      "Very often"
+      "Sometimes",
+      "Rarely",
+      "Never"
     ],
     "stored_values": [
       0,
-      0.25,
+      0.2,
       0.5,
       0.75,
-      1
+      1.0
     ],
     "body_system_scores": {
       "BS003": "Y",
@@ -349,7 +345,7 @@
   {
     "production_id": "IMM002",
     "legacy_id": "Q13",
-    "question": "How often do you feel that you are unusually susceptible to infections or take longer than expected to recover from them?",
+    "question": "How often do you seem to catch colds or infections more easily than most people?",
     "answer_type": "frequency_5",
     "answer_options": [
       "Rarely catch things",
@@ -373,7 +369,7 @@
   {
     "production_id": "DIG003",
     "legacy_id": "Q14",
-    "question": "How often do you experience discomfort, bloating, reflux or other symptoms after eating?",
+    "question": "How often do you experience discomfort, bloating, heartburn or other symptoms after eating?",
     "answer_type": "frequency_5",
     "answer_options": [
       "Never",
@@ -531,7 +527,7 @@
   {
     "production_id": "MND003",
     "legacy_id": "Q19",
-    "question": "How often do you feel unusually low, flat or lacking motivation?",
+    "question": "How often do you feel low in energy or enthusiasm for things you'd normally enjoy?",
     "answer_type": "frequency_5",
     "answer_options": [
       "Never",
@@ -745,7 +741,7 @@
   {
     "production_id": "PHY005",
     "legacy_id": "Q26b",
-    "question": "How much does the breathlessness limit your daily activities?",
+    "question": "How often do you feel breathless during everyday activities, such as climbing stairs or walking briskly?",
     "answer_type": "frequency_5",
     "answer_options": [
       "Never",
@@ -899,7 +895,6 @@
     "body_system_scores": {
       "BS003": "Y",
       "BS004": "Y",
-      "BS007": "Y",
       "BS009": "Y"
     }
   },
@@ -953,15 +948,19 @@
   {
     "production_id": "CTX002",
     "legacy_id": "Q36",
-    "question": "Have you experienced an unexplained loss of appetite recently?",
-    "answer_type": "radio",
+    "question": "How would you describe your appetite recently?",
+    "answer_type": "single_select",
     "answer_options": [
-      "Yes",
-      "No"
+      "Normal",
+      "Increased",
+      "Variable",
+      "Reduced"
     ],
     "stored_values": [
-      1,
-      0
+      0,
+      0.33,
+      0.67,
+      1
     ],
     "body_system_scores": {
       "BS001": "Y",
@@ -1089,25 +1088,30 @@
       1.0
     ],
     "body_system_scores": {
-      "BS001": "Y",
-      "BS002": "Y",
       "BS003": "Y",
       "BS004": "Y",
-      "BS005": "Y"
+      "BS005": "Y",
+      "BS009": "Y"
     }
   },
   {
     "production_id": "MND006",
     "legacy_id": "Q42",
-    "question": "How often do you find yourself worrying more than you would like?",
-    "answer_type": "radio",
+    "question": "How often do you find your mind racing or unable to settle?",
+    "answer_type": "frequency_5",
     "answer_options": [
-      "Yes",
-      "No"
+      "Never",
+      "Occasionally",
+      "Sometimes",
+      "Often",
+      "Very often"
     ],
     "stored_values": [
-      1,
-      0
+      0,
+      0.25,
+      0.5,
+      0.75,
+      1
     ],
     "body_system_scores": {
       "BS001": "Y",
@@ -1118,15 +1122,21 @@
   {
     "production_id": "MND007",
     "legacy_id": "Q43",
-    "question": "How well do you usually cope when things don't go as planned?",
-    "answer_type": "radio",
+    "question": "How easily do you bounce back after a stressful day?",
+    "answer_type": "quality_5",
     "answer_options": [
-      "Yes",
-      "No"
+      "Very easily",
+      "Fairly easily",
+      "Moderately",
+      "With some difficulty",
+      "With great difficulty"
     ],
     "stored_values": [
-      1,
-      0
+      0,
+      0.25,
+      0.5,
+      0.75,
+      1
     ],
     "body_system_scores": {
       "BS002": "Y",
@@ -1315,7 +1325,7 @@
       0.6,
       0.8,
       1.0,
-      null
+      0.5
     ],
     "body_system_scores": {
       "BS001": "Y",
@@ -1361,21 +1371,21 @@
     "answer_type": "single_select",
     "answer_options": [
       "Less than 5 hours",
-      "5–5.9 hours",
-      "6–6.9 hours",
+      "5–6 hours",
+      "6–7 hours",
       "7–8 hours",
       "More than 8 hours",
       "It varies considerably",
       "I'm not sure"
     ],
     "stored_values": [
-      0,
-      0.2,
-      0.4,
-      0.6,
       0.8,
-      1.0,
-      null
+      0.6,
+      0.4,
+      0.0,
+      0.2,
+      0.8,
+      0.4
     ],
     "body_system_scores": {
       "BS003": "Y",
@@ -1405,6 +1415,52 @@
     "body_system_scores": {
       "BS002": "Y",
       "BS004": "Y"
+    }
+  },
+  {
+    "production_id": "URI001",
+    "legacy_id": null,
+    "question": "Compared to what's normal for you, how would you describe your urinary frequency recently?",
+    "answer_type": "single_select",
+    "answer_options": [
+      "About the same as usual",
+      "More frequent than usual",
+      "Less frequent than usual",
+      "Not sure"
+    ],
+    "stored_values": [
+      0,
+      1,
+      0.5,
+      0.25
+    ],
+    "body_system_scores": {
+      "BS007": "Y"
+    }
+  },
+  {
+    "production_id": "URI002",
+    "legacy_id": null,
+    "question": "On a typical day, how much water or other fluids do you drink?",
+    "answer_type": "single_select",
+    "answer_options": [
+      "Less than 1 litre",
+      "1–1.5 litres",
+      "1.5–2 litres",
+      "2–3 litres",
+      "More than 3 litres",
+      "I'm not sure"
+    ],
+    "stored_values": [
+      1,
+      0.75,
+      0.5,
+      0.1,
+      0,
+      0.5
+    ],
+    "body_system_scores": {
+      "BS007": "Y"
     }
   }
 ]

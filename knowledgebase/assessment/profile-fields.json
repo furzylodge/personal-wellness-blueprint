@@ -79,19 +79,19 @@
       "options": [
         {
           "value": "OUT001",
-          "label": "More Energy"
-        },
-        {
-          "value": "OUT002",
           "label": "Better Sleep"
         },
         {
+          "value": "OUT002",
+          "label": "More Energy"
+        },
+        {
           "value": "OUT003",
-          "label": "Heart Health"
+          "label": "Healthy Weight Management"
         },
         {
           "value": "OUT004",
-          "label": "Healthy Weight"
+          "label": "Better Fitness & Physical Performance"
         },
         {
           "value": "OUT005",
@@ -99,7 +99,7 @@
         },
         {
           "value": "OUT006",
-          "label": "Mental Wellbeing"
+          "label": "Mental Clarity & Cognitive Performance"
         },
         {
           "value": "OUT007",
@@ -107,7 +107,7 @@
         },
         {
           "value": "OUT008",
-          "label": "Healthy Ageing"
+          "label": "Healthy Ageing & Resilience"
         },
         {
           "value": "OUT009",

@@ -28,5 +28,5 @@ require_once __DIR__ . '/src/Recommendation/MechanismResolver.php';
 require_once __DIR__ . '/src/Recommendation/BioactiveResolver.php';
 require_once __DIR__ . '/src/Recommendation/FoodResolver.php';
 require_once __DIR__ . '/src/Recommendation/NutrientResolver.php';
-require_once __DIR__ . '/src/Recommendation/VitaminResolver.php';
-require_once __DIR__ . '/src/Recommendation/ProductResolver.php';
+// require_once __DIR__ . '/src/Recommendation/VitaminResolver.php';
+// require_once __DIR__ . '/src/Recommendation/ProductResolver.php';

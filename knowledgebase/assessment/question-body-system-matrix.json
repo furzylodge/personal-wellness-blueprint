@@ -14,8 +14,7 @@
     "legacy_id": "Q02",
     "body_system_scores": {
       "BS005": "Y",
-      "BS006": "Y",
-      "BS007": "Y"
+      "BS006": "Y"
     }
   },
   {
@@ -41,7 +40,6 @@
     "body_system_scores": {
       "BS002": "Y",
       "BS003": "Y",
-      "BS007": "Y",
       "BS008": "Y"
     }
   },
@@ -77,8 +75,7 @@
     "legacy_id": "Q09",
     "body_system_scores": {
       "BS001": "Y",
-      "BS005": "Y",
-      "BS007": "Y"
+      "BS005": "Y"
     }
   },
   {
@@ -91,8 +88,7 @@
     "legacy_id": null,
     "body_system_scores": {
       "BS001": "Y",
-      "BS005": "Y",
-      "BS007": "Y"
+      "BS005": "Y"
     }
   },
   {
@@ -331,7 +327,6 @@
     "body_system_scores": {
       "BS003": "Y",
       "BS004": "Y",
-      "BS007": "Y",
       "BS009": "Y"
     }
   },
@@ -403,11 +398,10 @@
     "question_id": "PHY007",
     "legacy_id": "Q41",
     "body_system_scores": {
-      "BS001": "Y",
-      "BS002": "Y",
       "BS003": "Y",
       "BS004": "Y",
-      "BS005": "Y"
+      "BS005": "Y",
+      "BS009": "Y"
     }
   },
   {
@@ -529,6 +523,20 @@
     "body_system_scores": {
       "BS002": "Y",
       "BS004": "Y"
+    }
+  },
+  {
+    "question_id": "URI001",
+    "legacy_id": null,
+    "body_system_scores": {
+      "BS007": "Y"
+    }
+  },
+  {
+    "question_id": "URI002",
+    "legacy_id": null,
+    "body_system_scores": {
+      "BS007": "Y"
     }
   }
 ]
