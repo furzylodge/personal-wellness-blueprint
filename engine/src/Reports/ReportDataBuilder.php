@@ -31,6 +31,7 @@ class ReportDataBuilder
     private array $bioactiveLookup = [];
     private array $foodLookup = [];
     private array $monographLookup = [];
+    private array $outcomeLookup = [];
 
     public function __construct()
     {
@@ -56,6 +57,20 @@ class ReportDataBuilder
         $this->bodySystems = $this->loadLookup(
   	  	'body-systems.json',
     		'bodySystems');
+
+        // Full outcome records (not just id => name) so the dashboard can
+        // work out which stated wellness goal (PF014) lines up with which
+        // body system, the same way PriorityScorer's goal bonus does.
+        $outcomesFile = $this->locator->getTaxonomyDirectory() . DIRECTORY_SEPARATOR . 'outcomes.json';
+
+        if (file_exists($outcomesFile)) {
+
+            $outcomesData = $this->loader->load($outcomesFile);
+
+            foreach ($outcomesData['outcomes'] ?? [] as $outcome) {
+                $this->outcomeLookup[$outcome['id']] = $outcome;
+            }
+        }
 
         // Full food detail records now live as monograph markdown files
         // (knowledgebase/monographs/FDxxx-*.md) rather than the archived
@@ -208,7 +223,17 @@ foreach ($foods as $food) {
 }
 
 $bioactives = $this->enrichBioactives($bioactives);
-        
+
+$bodySystemsData = $this->buildBodySystems($foods, $priorities);
+
+$dashboard = $this->buildDashboard(
+    $priorities,
+    $mechanisms,
+    $foods,
+    $bodySystemsData,
+    $assessment->goals ?? []
+);
+
 		return [
 		'client' => [
         'name' => 'Test User'
@@ -220,34 +245,10 @@ $bioactives = $this->enrichBioactives($bioactives);
 'vitamins'     => $vitamins,
 'minerals'     => $minerals,
 'foods'        => $foods,
-'bodySystems' => $this->buildBodySystems($foods, $priorities),
+'bodySystems' => $bodySystemsData,
+'dashboard'   => $dashboard,
 'theme' => $assessment->theme ?? 'theme-green',
-'actionPlan' => [
-
-    'This Week' => [
-
-        'Add at least one serving of oats to your breakfast.',
-        'Aim to eat one additional wholegrain food each day.',
-        'Include at least five different plant foods this week.'
-
-    ],
-
-    'Over the Next Month' => [
-
-        'Gradually increase your fibre intake.',
-        'Drink plenty of water as fibre intake increases.',
-        'Introduce a wider variety of minimally processed foods.'
-
-    ],
-
-    'Long-Term Goals' => [
-
-        'Build meals around whole foods.',
-        'Maintain a diverse range of plant-based foods.',
-        'Review your progress every four weeks.'
-
-             ]
-    ]
+'actionPlan' => $this->buildActionPlan()
 ];
     }
 
@@ -310,6 +311,7 @@ private function buildBodySystems(array $foods, array $priorities): array
             if (!isset($systems[$systemId])) {
 
                 $systems[$systemId] = [
+                    'id' => $systemId,
                     'name' => $this->bodySystems[$systemId] ?? $systemId,
                     'score' => $priorityLookup[$systemId] ?? 0,
                     'topFoods' => [],
@@ -413,6 +415,192 @@ $system['summary'] =
 
     return array_values($systems);
 }
+
+    /**
+     * Assembles the top-of-report "at a glance" dashboard: a simple heat
+     * grid of body systems, a short bar-style read-out of the strongest
+     * mechanisms, the top food matches, a goal-alignment note and a
+     * personalised summary paragraph, plus a handful of quick actions.
+     * Everything here is derived from data already computed elsewhere in
+     * this class (priorities/mechanisms/foods/bodySystems) — nothing new
+     * is scored here, it's purely a presentation layer over it.
+     */
+    private function buildDashboard(
+        array $priorities,
+        array $mechanisms,
+        array $foods,
+        array $bodySystemsData,
+        array $goalIds
+    ): array {
+
+        // ---- Body system heat grid ----
+        // $bodySystemsData is already sorted strongest-first and filtered
+        // to score > 0 by buildBodySystems(). Cap the grid at 8 so it
+        // stays scannable even for a maximal/severe persona that flags
+        // most systems.
+        $heatMap = array_map(
+            function ($system) {
+                // Clamp so even a low-scoring tile still reads as a
+                // filled cell rather than fading to invisible white, and
+                // so the very top tile doesn't necessarily hit 100%
+                // saturation if its score isn't actually maxed.
+                $heat = max(15, min(95, (int) $system['score']));
+
+                return [
+                    'id'      => $system['id'] ?? null,
+                    'name'    => $system['name'],
+                    'score'   => (int) $system['score'],
+                    'heat'    => $heat,
+                    'strong'  => $heat >= 55, // dark enough to need light text
+                ];
+            },
+            array_slice($bodySystemsData, 0, 8)
+        );
+
+        // ---- Key mechanisms (bar read-out) ----
+        $topMechanismsRaw = array_slice($mechanisms, 0, 5);
+        $maxMechanismScore = $topMechanismsRaw[0]['clinicalScore'] ?? 1;
+        $maxMechanismScore = $maxMechanismScore > 0 ? $maxMechanismScore : 1;
+
+        $topMechanisms = array_map(
+            fn($m) => [
+                'name'    => $m['mechanismName'] ?? $m['mechanismId'],
+                'score'   => $m['clinicalScore'],
+                'percent' => (int) round(($m['clinicalScore'] / $maxMechanismScore) * 100),
+            ],
+            $topMechanismsRaw
+        );
+
+        // ---- Top food matches ----
+        $topFoods = array_map(
+            fn($f) => [
+                'name'           => $f['identity']['name'] ?? $f['name'] ?? 'Unknown',
+                'score'          => $f['score'] ?? 0,
+                'recommendation' => $f['recommendation'] ?? '',
+            ],
+            array_slice($foods, 0, 5)
+        );
+
+        // ---- Quick actions ----
+        $actions = array_slice($this->buildActionPlan()['This Week'], 0, 3);
+
+        // ---- Goal alignment ----
+        $topSystem = $bodySystemsData[0] ?? null;
+        $goalAlignment = null;
+
+        foreach ($goalIds as $goalId) {
+
+            $outcome = $this->outcomeLookup[$goalId] ?? null;
+
+            if ($outcome === null) {
+                continue;
+            }
+
+            // Prefer a primary match, fall back to secondary, and pick
+            // whichever of the person's own flagged systems it hits with
+            // the highest score, so the note points at something that's
+            // actually prominent in their results rather than merely
+            // technically linked.
+            $candidateIds = array_merge(
+                $outcome['primaryBodySystems'] ?? [],
+                $outcome['secondaryBodySystems'] ?? []
+            );
+
+            $best = null;
+
+            foreach ($bodySystemsData as $system) {
+                if (in_array($system['id'] ?? null, $candidateIds, true)) {
+                    if ($best === null || $system['score'] > $best['score']) {
+                        $best = $system;
+                    }
+                }
+            }
+
+            if ($best !== null) {
+                $goalAlignment = [
+                    'goalName'   => $outcome['name'],
+                    'systemName' => $best['name'],
+                    'score'      => $best['score'],
+                ];
+                break;
+            }
+        }
+
+        // ---- Personalised summary paragraph ----
+        $topMechanismName = $topMechanisms[0]['name'] ?? null;
+        $topFoodName = $topFoods[0]['name'] ?? null;
+
+        $paragraph = 'Your questionnaire highlights ' .
+            ($topSystem['name'] ?? 'a few key areas') .
+            ' as your strongest current priority';
+
+        $paragraph .= '. ';
+
+        if ($topMechanismName) {
+            // Mechanism names are short verb phrases (e.g. "Reduces
+            // Oxidative Stress"), written for use as their own clause
+            // rather than lower-cased mid-sentence.
+            $paragraph .= 'The pathway behind this: ' . $topMechanismName . '. ';
+        }
+
+        if ($topFoodName) {
+            $paragraph .= $topFoodName . ' is your top-matching food for this profile. ';
+        }
+
+        if ($goalAlignment) {
+            $paragraph .= 'This also lines up well with your stated goal of ' .
+                $goalAlignment['goalName'] . ', which is closely tied to your ' .
+                $goalAlignment['systemName'] . ' priority.';
+        } else {
+            $paragraph .= 'The sections below break down exactly why, and which foods can help.';
+        }
+
+        return [
+            'paragraph'     => $paragraph,
+            'heatMap'       => $heatMap,
+            'topMechanisms' => $topMechanisms,
+            'topFoods'      => $topFoods,
+            'actions'       => $actions,
+            'goalAlignment' => $goalAlignment,
+            'topSystem'     => $topSystem,
+        ];
+    }
+
+    /**
+     * The generic (not yet personalised) action-plan content, factored
+     * out so both the dashboard's "quick actions" widget and the full
+     * Action Plan section can draw on the same list without drifting out
+     * of sync.
+     */
+    private function buildActionPlan(): array
+    {
+        return [
+
+            'This Week' => [
+
+                'Add at least one serving of oats to your breakfast.',
+                'Aim to eat one additional wholegrain food each day.',
+                'Include at least five different plant foods this week.'
+
+            ],
+
+            'Over the Next Month' => [
+
+                'Gradually increase your fibre intake.',
+                'Drink plenty of water as fibre intake increases.',
+                'Introduce a wider variety of minimally processed foods.'
+
+            ],
+
+            'Long-Term Goals' => [
+
+                'Build meals around whole foods.',
+                'Maintain a diverse range of plant-based foods.',
+                'Review your progress every four weeks.'
+
+            ]
+        ];
+    }
 
 private function enrichBioactives(array $bioactives): array
 {

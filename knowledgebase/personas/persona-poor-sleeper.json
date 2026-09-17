@@ -3,6 +3,7 @@
   "extends": "neutral",
   "name": "Poor Sleeper",
   "description": "Every Sleep question answered at its worst value, everything else neutral.",
+  "goals": ["OUT001"],
   "answers": {
     "SLP001": 1,
     "SLP002": 1,

@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 namespace PWB\Reports;
+use PWB\Reports\Sections\DashboardSection;
 use PWB\Reports\Sections\FoodSection;
 use PWB\Reports\Sections\BodySystemsSection;
 use PWB\Reports\Sections\ActionPlanSection;
@@ -57,6 +58,7 @@ HTML;
 
 HTML;
 
+$dashboardSection = new DashboardSection();
 $foodSection = new FoodSection();
 $bodySystemsSection = new BodySystemsSection();
 $bioactiveSection = new BioactiveSection();
@@ -64,6 +66,7 @@ $bioactiveSection = new BioactiveSection();
 //$mineralSection = new MineralSection();
 //$actionPlanSection = new ActionPlanSection();
 
+$html .= $dashboardSection->render($reportData['dashboard'] ?? []);
 $html .= $foodSection->render($reportData);
 $html .= $bodySystemsSection->render(
     $reportData['bodySystems']
