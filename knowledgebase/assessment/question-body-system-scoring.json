@@ -44,7 +44,7 @@
   {
     "production_id": "DIG001",
     "legacy_id": "Q03",
-    "question": "Which of the following have you noticed recently or repeatedly? Select any that apply.",
+    "question": "Digestive imbalance can sometimes show up in less obvious ways. Have you noticed any of the following recently or repeatedly? Select any that apply.",
     "answer_type": "multi_select",
     "answer_options": [
       "Bad breath",
@@ -602,7 +602,7 @@
   {
     "production_id": "EXP002",
     "legacy_id": "Q22",
-    "question": "On a typical day, how much time do you spend using social media?",
+    "question": "On a typical day, how much recreational time do you spend on screens (phone, TV, gaming, social media combined)?",
     "answer_type": "single_select",
     "answer_options": [
       "I don't use social media",
@@ -693,21 +693,21 @@
   {
     "production_id": "NUT006",
     "legacy_id": "Q25",
-    "question": "How difficult is it for you to maintain a healthy weight for your body and lifestyle?",
-    "answer_type": "frequency_5",
+    "question": "How stable has your body weight been over the past year?",
+    "answer_type": "single_select",
     "answer_options": [
-      "Not difficult",
-      "Slightly difficult",
-      "Moderately difficult",
-      "Very difficult",
-      "Extremely difficult"
+      "Very stable",
+      "Fairly stable",
+      "Fluctuates somewhat",
+      "Fluctuates significantly",
+      "Not sure"
     ],
     "stored_values": [
       0,
-      0.2,
-      0.5,
-      0.8,
-      1.0
+      0.25,
+      0.6,
+      1,
+      0.5
     ],
     "body_system_scores": {
       "BS001": "Y",
@@ -1436,6 +1436,126 @@
     ],
     "body_system_scores": {
       "BS007": "Y"
+    }
+  },
+  {
+    "production_id": "SLP007",
+    "legacy_id": null,
+    "question": "How consistent are your sleep and wake times from day to day?",
+    "answer_type": "single_select",
+    "answer_options": [
+      "Very consistent",
+      "Fairly consistent",
+      "Somewhat irregular",
+      "Highly irregular",
+      "Not sure"
+    ],
+    "stored_values": [
+      0,
+      0.25,
+      0.6,
+      1,
+      0.5
+    ],
+    "body_system_scores": {
+      "BS004": "Y",
+      "BS008": "Y"
+    }
+  },
+  {
+    "production_id": "SLP008",
+    "legacy_id": null,
+    "question": "In the hour before bed, how much time do you typically spend on a phone, tablet or other screen?",
+    "answer_type": "single_select",
+    "answer_options": [
+      "None",
+      "Less than 15 minutes",
+      "15–30 minutes",
+      "30–60 minutes",
+      "More than 60 minutes"
+    ],
+    "stored_values": [
+      0,
+      0.25,
+      0.5,
+      0.75,
+      1
+    ],
+    "body_system_scores": {
+      "BS004": "Y",
+      "BS008": "Y"
+    }
+  },
+  {
+    "production_id": "NUT011",
+    "legacy_id": null,
+    "question": "How often do you include a source of protein (such as meat, fish, eggs, dairy, beans, lentils or tofu) in your meals?",
+    "answer_type": "single_select",
+    "answer_options": [
+      "With most meals",
+      "With about half my meals",
+      "Occasionally",
+      "Rarely",
+      "I'm not sure"
+    ],
+    "stored_values": [
+      0,
+      0.33,
+      0.67,
+      1,
+      0.5
+    ],
+    "body_system_scores": {
+      "BS008": "Y",
+      "BS009": "Y"
+    }
+  },
+  {
+    "production_id": "MND009",
+    "legacy_id": null,
+    "question": "How often do you practise deliberate relaxation, such as mindfulness, meditation, or slow breathing exercises?",
+    "answer_type": "single_select",
+    "answer_options": [
+      "Daily",
+      "A few times a week",
+      "Occasionally",
+      "Rarely",
+      "Never"
+    ],
+    "stored_values": [
+      0,
+      0.25,
+      0.5,
+      0.75,
+      1
+    ],
+    "body_system_scores": {
+      "BS004": "Y",
+      "BS008": "Y"
+    }
+  },
+  {
+    "production_id": "EXP007",
+    "legacy_id": null,
+    "question": "On a typical day, how much time do you spend outdoors in daylight?",
+    "answer_type": "single_select",
+    "answer_options": [
+      "More than 60 minutes",
+      "30–60 minutes",
+      "15–30 minutes",
+      "Less than 15 minutes",
+      "Rarely go outdoors"
+    ],
+    "stored_values": [
+      0,
+      0.25,
+      0.5,
+      0.75,
+      1
+    ],
+    "body_system_scores": {
+      "BS004": "Y",
+      "BS008": "Y"
     }
   },
   {

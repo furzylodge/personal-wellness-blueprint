@@ -526,6 +526,46 @@
     }
   },
   {
+    "question_id": "SLP007",
+    "legacy_id": null,
+    "body_system_scores": {
+      "BS004": "Y",
+      "BS008": "Y"
+    }
+  },
+  {
+    "question_id": "SLP008",
+    "legacy_id": null,
+    "body_system_scores": {
+      "BS004": "Y",
+      "BS008": "Y"
+    }
+  },
+  {
+    "question_id": "NUT011",
+    "legacy_id": null,
+    "body_system_scores": {
+      "BS008": "Y",
+      "BS009": "Y"
+    }
+  },
+  {
+    "question_id": "MND009",
+    "legacy_id": null,
+    "body_system_scores": {
+      "BS004": "Y",
+      "BS008": "Y"
+    }
+  },
+  {
+    "question_id": "EXP007",
+    "legacy_id": null,
+    "body_system_scores": {
+      "BS004": "Y",
+      "BS008": "Y"
+    }
+  },
+  {
     "question_id": "URI001",
     "legacy_id": null,
     "body_system_scores": {
