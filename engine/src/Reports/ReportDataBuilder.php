@@ -157,6 +157,15 @@ $food['clinicalScore'] = $foodResult['reportScore'];
 $food['rawScore']      = $foodResult['clinicalScore'];
 $food['scoreBreakdown']  = $foodResult['scoreBreakdown'] ?? null;
 
+// taxonomy/foods.json's foodGroup is far more complete than the
+// monograph's own (often-missing) "Food group:" line, so it's the
+// source used for the food-group icon shown in the report.
+$food['foodGroupId'] = $foodResult['foodGroupId'] ?? null;
+
+if (!empty($foodResult['foodGroupName'])) {
+    $food['classification']['foodGroup'] = $foodResult['foodGroupName'];
+}
+
 $food['sources'] = array_map(
     function ($m) {
 
@@ -322,7 +331,8 @@ private function buildBodySystems(array $foods, array $priorities): array
             $systems[$systemId]['topFoods'][$food['id']] = [
                 'id' => $food['id'],
                 'name' => $foodName,
-                'score' => $food['score'] ?? 0
+                'score' => $food['score'] ?? 0,
+                'foodGroupId' => $food['foodGroupId'] ?? null,
             ];
 
             foreach ($food['sources'] ?? [] as $source) {
@@ -372,17 +382,30 @@ $systems[$systemId]['mechanisms'][$id]['score'] += $source['contribution'];
         unset($system['mechanisms']);
 
 // -------------------------------------------------
-// Convert internal priority score to a 0–100
-// Wellness Support Score for reporting only
 // -------------------------------------------------
-
-$rawScore = $system['score'];
-
-$maxScore = !empty($priorityLookup)
-    ? max($priorityLookup)
-    : 1;
-
-$wellnessScore = (int) round(($rawScore / $maxScore) * 100);
+// The 0–100 Wellness Support Score shown in the report
+// -------------------------------------------------
+//
+// $system['score'] here is a Priority::finalScore, and for body systems
+// that's already an absolute 0–100 figure: BodySystemNormalizer (in
+// HealthProfileBuilder) divides each system's raw questionnaire score by
+// that system's own theoretical maximum (given which questions map to
+// it and their score ranges), so it's directly comparable across people
+// — a 60 always means the same amount of flagged severity, however many
+// or few systems someone's answers happened to touch.
+//
+// This used to be re-normalised AGAIN here, dividing by max($priorityLookup)
+// — i.e. by this one person's own top-scoring system — which forces the
+// #1 system to display as 100/100 for literally everyone, including a
+// "best possible answers" persona whose real top score is ~17. That's
+// the numbers-look-too-high issue: confirmed by running the scoring
+// pipeline with every question answered at its healthiest value
+// (persona-minimum) and comparing to worst-case (persona-maximum):
+// raw top-system scores of ~17 vs ~62 (neutral) vs ~100+ (worst), which
+// the old code flattened to 100/100/100. Clamped to 100 because a goal
+// bonus (PriorityScorer::PRIMARY_GOAL_BONUS) can push a couple of points
+// past it.
+$wellnessScore = (int) round(min(100, max(0, $system['score'])));
 
 $system['score'] = $wellnessScore;
 
@@ -437,25 +460,45 @@ $system['summary'] =
         // $bodySystemsData is already sorted strongest-first and filtered
         // to score > 0 by buildBodySystems(). Cap the grid at 8 so it
         // stays scannable even for a maximal/severe persona that flags
-        // most systems.
-        $heatMap = array_map(
-            function ($system) {
-                // Clamp so even a low-scoring tile still reads as a
-                // filled cell rather than fading to invisible white, and
-                // so the very top tile doesn't necessarily hit 100%
-                // saturation if its score isn't actually maxed.
-                $heat = max(15, min(95, (int) $system['score']));
+        // most systems. Every cell keeps the same fixed dark text — only
+        // the meter bar length varies with score, so there's no
+        // light-text/dark-text switching to reason about.
+        $heatMap = array_values(array_map(
+            fn($system, $rank) => [
+                'id'    => $system['id'] ?? null,
+                'name'  => $system['name'],
+                'score' => (int) $system['score'],
+                'top'   => $rank === 0,
+            ],
+            array_slice($bodySystemsData, 0, 8),
+            array_keys(array_slice($bodySystemsData, 0, 8))
+        ));
 
-                return [
-                    'id'      => $system['id'] ?? null,
-                    'name'    => $system['name'],
-                    'score'   => (int) $system['score'],
-                    'heat'    => $heat,
-                    'strong'  => $heat >= 55, // dark enough to need light text
-                ];
-            },
-            array_slice($bodySystemsData, 0, 8)
+        // ---- Body system radar (all flagged systems, not just the top 8,
+        // so it reads as the fuller picture alongside the heat grid) ----
+        $radarSystems = array_map(
+            fn($system) => [
+                'id'    => $system['id'] ?? null,
+                'name'  => $system['name'],
+                'score' => (int) $system['score'],
+            ],
+            $bodySystemsData
         );
+
+        // ---- Stated wellness goals (PF014), tying the dashboard back to
+        // the questionnaire's own outcome choices ----
+        $goals = [];
+
+        foreach ($goalIds as $goalId) {
+            $outcome = $this->outcomeLookup[$goalId] ?? null;
+
+            if ($outcome !== null) {
+                $goals[] = [
+                    'id'   => $goalId,
+                    'name' => $outcome['name'],
+                ];
+            }
+        }
 
         // ---- Key mechanisms (bar read-out) ----
         $topMechanismsRaw = array_slice($mechanisms, 0, 5);
@@ -477,6 +520,7 @@ $system['summary'] =
                 'name'           => $f['identity']['name'] ?? $f['name'] ?? 'Unknown',
                 'score'          => $f['score'] ?? 0,
                 'recommendation' => $f['recommendation'] ?? '',
+                'foodGroupId'    => $f['foodGroupId'] ?? null,
             ],
             array_slice($foods, 0, 5)
         );
@@ -558,6 +602,8 @@ $system['summary'] =
         return [
             'paragraph'     => $paragraph,
             'heatMap'       => $heatMap,
+            'radarSystems'  => $radarSystems,
+            'goals'         => $goals,
             'topMechanisms' => $topMechanisms,
             'topFoods'      => $topFoods,
             'actions'       => $actions,

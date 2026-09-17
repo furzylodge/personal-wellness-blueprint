@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace PWB\Reports\Sections;
 
+use PWB\Reports\IconLibrary;
+
 class FoodSection
 {
     public function render(array $reportData): string
@@ -58,6 +60,10 @@ $description = htmlspecialchars($description);
                 3
             );
 
+$foodGroupIcon = !empty($food['foodGroupId'])
+    ? '<span class="food-group-icon">' . IconLibrary::render($food['foodGroupId']) . '</span>'
+    : '';
+
 $html .= '
 <div class="recommendation-card">
 
@@ -65,6 +71,7 @@ $html .= '
 
     <div class="recommendation-title-group">
         <div class="rank-badge">'.$rank.'</div>
+        '.$foodGroupIcon.'
         <h3>'.$name.'</h3>
     </div>
 

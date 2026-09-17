@@ -205,7 +205,12 @@ $clinicalScore =
 $results[] = [
     'foodId' => $foodId,
     'name' => $foodLookup[$foodId]['name'] ?? $foodId,
-    'category' => $foodLookup[$foodId]['category'] ?? '',
+    // taxonomy/foods.json (not the monograph, which only names a food
+    // group for ~11 of 86 files) is the complete source for this — every
+    // food in the catalogue has a foodGroup id/name, used for the
+    // food-group icon shown in the report.
+    'foodGroupId'   => $foodLookup[$foodId]['foodGroup'] ?? null,
+    'foodGroupName' => $foodLookup[$foodId]['foodGroupName'] ?? null,
     'clinicalScore' => round($clinicalScore, 2),
     'matchedMechanisms' => $matched,
 

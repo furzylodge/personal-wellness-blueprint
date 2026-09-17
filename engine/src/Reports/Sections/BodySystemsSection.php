@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace PWB\Reports\Sections;
 use PWB\Reports\Components\MechanismPopover;
+use PWB\Reports\IconLibrary;
 
 class BodySystemsSection
 {
@@ -75,8 +76,12 @@ foreach ($system['topMechanisms'] ?? [] as $mechanism) {
 
             foreach ($system['topFoods'] ?? [] as $food) {
 
+                $icon = !empty($food['foodGroupId'])
+                    ? '<span class="food-group-icon">' . IconLibrary::render($food['foodGroupId']) . '</span>'
+                    : '';
+
                 $html .= '
-                    <span class="body-food-chip">'
+                    <span class="body-food-chip">' . $icon
                         .htmlspecialchars($food['name']).'
                     </span>';
             }

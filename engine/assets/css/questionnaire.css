@@ -9,6 +9,8 @@
     --primary:#0F7A42;
     --primary-hover:#0C6838;
     --primary-soft:#E8F6EE;
+    --accent:#D97757;
+    --accent-soft:#FBEDE6;
 
     /* Surfaces */
 
@@ -49,28 +51,41 @@
    THEMES
 ====================================================== */
 
+/* Each theme's --accent is a second, warm/contrasting hue used only for
+   decorative touches (icon backgrounds, small highlights) — never for the
+   score/heat encoding, which stays a single hue (--primary) throughout so
+   "more color = higher score" keeps meaning everywhere it appears. */
+
 body.theme-green{
     --primary:#0F7A42;
     --primary-hover:#0C6838;
     --primary-soft:#E8F6EE;
+    --accent:#D97757;
+    --accent-soft:#FBEDE6;
 }
 
 body.theme-ocean{
     --primary:#1565C0;
     --primary-hover:#0D47A1;
     --primary-soft:#EAF3FD;
+    --accent:#E8874A;
+    --accent-soft:#FDF0E6;
 }
 
 body.theme-lavender{
     --primary:#6A1B9A;
     --primary-hover:#4A148C;
     --primary-soft:#F4EEFB;
+    --accent:#C98A3E;
+    --accent-soft:#FBF1E3;
 }
 
 body.theme-amber{
     --primary:#B7791F;
     --primary-hover:#975A16;
     --primary-soft:#FEF6E7;
+    --accent:#2F6F72;
+    --accent-soft:#E7F1F1;
 }
 
 body{
@@ -1687,13 +1702,14 @@ color:var(--report-chip-text);
     margin:8px 0 12px;
 }
 
+
 /* ======================================================
    WELLNESS SNAPSHOT DASHBOARD
    The at-a-glance grid shown at the top of the report, above the
-   longer-form sections. Kept deliberately quiet — one accent hue
-   (the theme's --primary), generous whitespace, thin bars and a
-   sequential (light-to-dark) heat scale rather than a multi-colour
-   chart — so it reads as premium and calm rather than busy.
+   longer-form sections. One accent hue (--primary) carries every score
+   encoding (heat grid, radar, bars) so "more colour = higher score" means
+   the same thing everywhere; --accent is used only decoratively (icon
+   backgrounds) and never stands in for a score.
 ====================================================== */
 
 .dashboard-section{
@@ -1720,7 +1736,14 @@ color:var(--report-chip-text);
     letter-spacing:.08em;
     text-transform:uppercase;
     color:var(--text-muted);
-    margin-bottom:14px;
+    margin-bottom:6px;
+}
+
+.dashboard-card-caption{
+    font-size:12px;
+    color:var(--text-muted);
+    line-height:1.5;
+    margin:0 0 14px;
 }
 
 /* Row 1 — full-width personalised summary */
@@ -1738,7 +1761,66 @@ color:var(--report-chip-text);
     max-width:78ch;
 }
 
-/* Row 2 — body system heat grid (wide) + outcome note */
+/* Row 2 — your goals strip (icons tying the dashboard back to the
+   questionnaire's own outcome choices) */
+.dashboard-goals{
+    grid-column:1 / -1;
+}
+
+.goal-chip-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    margin-bottom:14px;
+}
+
+.goal-chip{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:8px;
+    width:84px;
+    text-align:center;
+}
+
+.goal-chip-icon{
+    width:52px;
+    height:52px;
+    border-radius:50%;
+    background:var(--accent-soft);
+    color:var(--accent);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-shrink:0;
+}
+
+.goal-chip-icon .pwb-icon{
+    width:26px;
+    height:26px;
+}
+
+.goal-chip-name{
+    font-size:12px;
+    font-weight:600;
+    color:var(--text-secondary);
+    line-height:1.3;
+}
+
+.goal-note{
+    margin:0;
+    font-size:14px;
+    line-height:1.55;
+    color:var(--report-body);
+    padding-top:14px;
+    border-top:1px solid var(--border-soft);
+}
+
+.goal-note strong{
+    color:var(--primary);
+}
+
+/* Row 3 — body system heat grid (wide) + radar chart */
 .dashboard-heatmap{
     grid-column:span 2;
 }
@@ -1750,57 +1832,127 @@ color:var(--report-chip-text);
 }
 
 .heat-cell{
-    /* --heat is a 0-100 score set inline per cell; color-mix derives a
-       light-to-dark tint of the theme's own primary hue from it, so the
-       ramp always follows whichever theme (green/ocean/lavender/amber)
-       is active rather than a hardcoded scale. */
-    background:var(--primary-soft); /* fallback for browsers without color-mix() */
-    background:color-mix(in srgb, var(--primary) var(--heat, 40%), white);
-    border-radius:10px;
-    padding:12px 10px;
+    position:relative;
+    background:var(--surface-soft);
+    border:1px solid var(--border-soft);
+    border-radius:12px;
+    padding:12px;
     display:flex;
     flex-direction:column;
-    gap:4px;
-    min-height:64px;
+    gap:8px;
+}
+
+.heat-cell-top{
+    background:var(--primary-soft);
+    border-color:transparent;
+}
+
+.heat-cell-head{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.heat-cell-icon{
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    background:var(--accent-soft);
+    color:var(--accent);
+    display:flex;
+    align-items:center;
     justify-content:center;
+    flex-shrink:0;
 }
 
-.heat-score{
-    font-size:20px;
-    font-weight:700;
-    color:var(--text);
+.heat-cell-icon .pwb-icon{
+    width:17px;
+    height:17px;
 }
 
-.heat-name{
+.heat-cell-name{
     font-size:12px;
     font-weight:600;
     color:var(--text-secondary);
     line-height:1.3;
 }
 
-.heat-cell-strong .heat-score,
-.heat-cell-strong .heat-name{
-    color:#FFFFFF;
+.heat-cell-score-row{
+    display:flex;
+    align-items:baseline;
+    justify-content:space-between;
 }
 
-.dashboard-goal{
+.heat-cell-score{
+    font-size:20px;
+    font-weight:700;
+    color:var(--text);
+}
+
+.heat-cell-tag{
+    font-size:10px;
+    font-weight:700;
+    letter-spacing:.04em;
+    text-transform:uppercase;
+    color:var(--primary);
+    background:var(--surface);
+    border-radius:999px;
+    padding:2px 7px;
+}
+
+.heat-cell-meter{
+    background:var(--border-soft);
+    border-radius:4px;
+    height:6px;
+    overflow:hidden;
+}
+
+.heat-cell-meter-fill{
+    background:var(--primary);
+    height:100%;
+    border-radius:4px;
+}
+
+.dashboard-radar{
     display:flex;
     flex-direction:column;
-    justify-content:center;
 }
 
-.goal-note{
-    margin:0;
-    font-size:14px;
-    line-height:1.55;
-    color:var(--report-body);
+.radar-svg{
+    width:100%;
+    height:auto;
+    margin-top:4px;
 }
 
-.goal-note strong{
-    color:var(--primary);
+.radar-grid{
+    fill:none;
+    stroke:var(--border);
+    stroke-width:1;
 }
 
-/* Row 3 — mechanisms bar read-out, top foods, quick actions */
+.radar-spoke{
+    stroke:var(--border);
+    stroke-width:1;
+}
+
+.radar-shape{
+    fill:color-mix(in srgb, var(--primary) 22%, transparent);
+    stroke:var(--primary);
+    stroke-width:2;
+    stroke-linejoin:round;
+}
+
+.radar-point{
+    fill:var(--primary);
+}
+
+.radar-label{
+    font-size:9px;
+    fill:var(--text-secondary);
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Row 4 — mechanisms bar read-out, top foods, quick actions */
 .bar-row{
     margin-bottom:12px;
 }
@@ -1844,9 +1996,51 @@ color:var(--report-chip-text);
 }
 
 .dash-food-name{
+    display:flex;
+    align-items:center;
+    gap:8px;
     font-size:13px;
     font-weight:500;
     color:var(--report-chip-text);
+}
+
+.dash-food-icon{
+    width:22px;
+    height:22px;
+    border-radius:50%;
+    background:var(--accent-soft);
+    color:var(--accent);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-shrink:0;
+}
+
+.dash-food-icon .pwb-icon{
+    width:13px;
+    height:13px;
+}
+
+/* Reused wherever a food-group icon sits beside a food name outside the
+   dashboard (food cards, body-system pills) so the same icon treatment
+   appears consistently across the report. */
+.food-group-icon{
+    width:22px;
+    height:22px;
+    border-radius:50%;
+    background:var(--accent-soft);
+    color:var(--accent);
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    flex-shrink:0;
+    vertical-align:middle;
+    margin-right:6px;
+}
+
+.food-group-icon .pwb-icon{
+    width:13px;
+    height:13px;
 }
 
 .dash-food-score{
@@ -1881,4 +2075,3 @@ color:var(--report-chip-text);
         grid-template-columns:repeat(2, 1fr);
     }
 }
-
