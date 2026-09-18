@@ -3,5 +3,6 @@
   "name": "Minimum Severity Baseline",
   "description": "Every scored question is answered with its best/healthiest possible value — the floor this scoring system can produce. Used as a sanity check: if body system scores still look high here, the normalisation (not the underlying answers) is the problem.",
   "extends": null,
+  "goals": ["OUT002"],
   "answers": {}
 }

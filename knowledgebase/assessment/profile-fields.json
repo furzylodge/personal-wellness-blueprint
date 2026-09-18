@@ -123,7 +123,8 @@
       "type": "multi_select",
       "required": false,
       "maxSelections": 5,
-      "helper": "Optional — this is shown alongside your results so recommendations feel relevant, but doesn't change which foods are suggested yet.",
+      "helper": "Optional — we'll tailor your food recommendations to match, and won't suggest anything that conflicts with your choice.",
+      "explainer": "food-exclusions",
       "options": [
         {
           "value": "vegetarian",

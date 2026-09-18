@@ -95,8 +95,22 @@ foreach ($priorities as $priority) {
 ];
         }
 
-        // Add the contribution from this body system
-        $resolved[$id]['clinicalScore'] += $clinicalContribution;
+        // Take the strongest single contributing body system rather than
+        // summing across every system a mechanism happens to be linked
+        // to. Most mechanisms belong to only one body system, but a
+        // handful (the "gut" cluster shared by Digestive+Intestinal, and
+        // the "oxidative stress" cluster shared by Immune+Respiratory)
+        // belong to two — summing gave those an unearned ~2x head start
+        // over every other mechanism, regardless of whether either of
+        // those two systems was actually the person's real priority.
+        // Taking the max means a mechanism's importance reflects its
+        // single most relevant body system, not how many systems the
+        // taxonomy structure happens to attach it to. All contributing
+        // systems are still recorded in `sources` below for transparency.
+        $resolved[$id]['clinicalScore'] = max(
+            $resolved[$id]['clinicalScore'],
+            $clinicalContribution
+        );
 
         $resolved[$id]['sources'][] = [
             'bodySystem' => $bodySystemId,

@@ -1,131 +1,526 @@
 {
-  "version": "1.0",
+  "version": "1.1",
   "description": "Canonical product registry for the PWB product relationship layer. PRD codes are stable internal identifiers used by product-bioactives and product-mechanisms.",
-  "count": 23,
+  "count": 24,
   "products": [
     {
       "id": "PRD001",
       "name": "Synergy ProArgi-9+",
+      "description": "Synergy's flagship L-arginine complex, combining L-arginine and L-citrulline with vitamins C, D3, K, B6 and B12 to support normal energy metabolism, immune function and blood vessel health.",
+      "claims": [
+        "Contains Vitamin C, which supports the normal functioning of the nervous and immune systems",
+        "Contains Vitamin K, which supports bone health and blood coagulation",
+        "Contains Vitamin B6, Vitamin B12, and folic acid, which support red blood cell formation and homocysteine metabolism"
+      ],
+      "format": "Powder Sachets",
+      "servingSize": "1 sachet (9.83 g)",
+      "servingsPerContainer": 30,
+      "servingsPerDay": 1,
+      "category": "Cardiovascular",
+      "image": "proargi9.jpg",
+      "allergens": [],
+      "dietaryExclusions": [
+        "vegan"
+      ],
       "status": "Active"
     },
     {
       "id": "PRD002",
       "name": "Synergy e9",
+      "description": "An energising blend of L-arginine and amino acids with B-vitamins and natural caffeine sources to support normal energy-yielding metabolism and reduce tiredness and fatigue.",
+      "claims": [
+        "Contributes to normal, energy-yielding metabolism",
+        "Plays a role in the reduction of tiredness and fatigue",
+        "Contributes to normal psychological and mental function"
+      ],
+      "format": "Powder Sachets",
+      "servingSize": "1 packet (6.5 g)",
+      "servingsPerContainer": 30,
+      "servingsPerDay": 1,
+      "category": "Energy",
+      "image": "new-e9.jpg",
+      "allergens": [],
+      "dietaryExclusions": [],
       "status": "Active"
     },
     {
       "id": "PRD003",
       "name": "Synergy Immune Booster",
+      "description": "A single-serve powder drink formulated to proactively strengthen the body's immune defenses, delivering vitamins, minerals, polyphenols and fruit extracts in each daily serving. Designed to be combined with ProArgi-9+ for added circulatory and immune benefits.",
+      "claims": [
+        "Supports normal function of your immune system",
+        "Protects cells from oxidative stress",
+        "Contributes to normal energy metabolism",
+        "Contributes to the reduction of tiredness and fatigue"
+      ],
+      "format": "Powder Sachets",
+      "servingSize": "1 packet (4.4 g)",
+      "servingsPerContainer": 30,
+      "servingsPerDay": 1,
+      "category": "Immune Support",
+      "image": "immune-boost.jpg",
+      "allergens": [],
+      "dietaryExclusions": [
+        "vegan"
+      ],
       "status": "Active"
     },
     {
       "id": "PRD004",
       "name": "Synergy Pro360 Wholefood Greens",
+      "description": "A greens powder packed with superfoods providing essential vitamins, minerals, fibre, and antioxidants, formulated to address nutrition, energy, digestive health, immune health, psychological function, and oxidation.",
+      "claims": [
+        "Provides clinically effective levels of nutrients that help fill gaps in your diet",
+        "Naturally promotes a healthy metabolism",
+        "Supports digestion and gut health",
+        "Supports a healthy immune system"
+      ],
+      "format": "Powder",
+      "servingSize": "1 serving (15 g)",
+      "servingsPerContainer": 30,
+      "servingsPerDay": 1,
+      "category": "Foundational Nutrition",
+      "image": "greens.jpg",
+      "allergens": [],
+      "dietaryExclusions": [],
       "status": "Active"
     },
     {
       "id": "PRD005",
       "name": "Synergy Pro360 Superfood Performance Beets",
+      "description": "A beet-based performance drink combining red beet's nitric-oxide-boosting nitrates with two blends of polyphenol-rich superfood plants, plus vitamins and minerals, intended to support vitality, recovery, mental acuity, and healthy blood pressure.",
+      "claims": [
+        "Elevates natural energy production",
+        "Promotes peak performance and vitality",
+        "Enhances blood flow by activating nitric oxide",
+        "Helps maintain healthy blood pressure"
+      ],
+      "format": "Powder Sachets",
+      "servingSize": "1 sachet (7 g)",
+      "servingsPerContainer": 30,
+      "servingsPerDay": 2,
+      "category": "Energy",
+      "image": "beets-eu.jpg",
+      "allergens": [],
+      "dietaryExclusions": [
+        "vegan"
+      ],
       "status": "Active"
     },
     {
       "id": "PRD006",
       "name": "Synergy Biome Actives",
+      "description": "A prebiotic and probiotic capsule formula containing inulin and 1 billion CFU of Bacillus coagulans per capsule, designed to support a favorable environment for beneficial gut bacteria.",
+      "claims": [
+        "Provides 1 billion CFU of Bacillus coagulans per capsule",
+        "Supports the digestive system"
+      ],
+      "format": "Capsules",
+      "servingSize": "3 capsules",
+      "servingsPerContainer": 30,
+      "servingsPerDay": 1,
+      "category": "Digestive Support",
+      "image": "biome-actives.jpg",
+      "allergens": [],
+      "dietaryExclusions": [
+        "vegan"
+      ],
       "status": "Active"
     },
     {
       "id": "PRD007",
       "name": "Synergy Biome DT",
+      "description": "A patent-pending drink mix combining psyllium, broccoli, inulin, glutamine, and zinc, formulated to support microbiome purification as part of a short-term cleanse programme.",
+      "claims": [
+        "Zinc contributes to the protection of cell constituents from oxidative stress",
+        "Zinc contributes to the normal function of the immune system"
+      ],
+      "format": "Powder Sachets",
+      "servingSize": "1 sachet",
+      "servingsPerContainer": 30,
+      "servingsPerDay": 1,
+      "category": "Digestive Support",
+      "image": "biome-dt.jpg",
+      "allergens": [],
+      "dietaryExclusions": [],
       "status": "Active"
     },
     {
       "id": "PRD008",
       "name": "Synergy Biome Shake",
+      "description": "A vegetable-protein shake formulated as part of the Purify program to support balance in the microbiome, featuring a broccoli and pea protein base along with vitamins, minerals, fibre, and beneficial fats.",
+      "claims": [
+        "22 grams of vegetable protein per serving",
+        "Promotes a feeling of fullness",
+        "Gluten free"
+      ],
+      "format": "Powder",
+      "servingSize": "2 scoops (40 g)",
+      "servingsPerContainer": 15,
+      "servingsPerDay": 1,
+      "category": "Digestive Support",
+      "image": "biome-shake.jpg",
+      "allergens": [],
+      "dietaryExclusions": [],
       "status": "Active"
     },
     {
       "id": "PRD009",
       "name": "Synergy Body Prime",
+      "description": "A magnesium-based capsule with an apple pectin and prune powder blend, intended to prepare the body for a health regimen by supporting energy metabolism and electrolyte balance.",
+      "claims": [
+        "Supports proper electrolyte balance",
+        "Supports natural energy metabolism",
+        "Supports muscle function"
+      ],
+      "format": "Capsules",
+      "servingSize": "2 capsules",
+      "servingsPerContainer": 45,
+      "servingsPerDay": 1,
+      "category": "Energy",
+      "image": "body-prime.jpg",
+      "allergens": [],
+      "dietaryExclusions": [
+        "vegan"
+      ],
       "status": "Active"
     },
     {
       "id": "PRD010",
       "name": "PhytoLife",
+      "description": "A liquid food supplement combining chlorophyllin, peppermint oil, barley grass, and alfalfa leaf and stem, intended to be mixed with water to taste as a daily drink that supports digestion and overall wellness.",
+      "claims": [
+        "Helps promote the natural blood-cleansing functions of the body",
+        "Promotes the elimination of toxins from the body",
+        "Inhibits LDL oxidation",
+        "Helps to maintain low homocysteine levels"
+      ],
+      "format": "Liquid",
+      "servingSize": "15 ml (1 tablespoon), mixed with water to taste",
+      "servingsPerContainer": 49,
+      "servingsPerDay": 1,
+      "category": "Digestive Support",
+      "image": "phytolife.jpg",
+      "allergens": [],
+      "dietaryExclusions": [],
       "status": "Active"
     },
     {
       "id": "PRD011",
       "name": "Mistify",
+      "description": "A liquid food supplement rich in fruit concentrates, green tea extract, and vitamin B6, intended to provide immune, energy, and nervous system support. Can be drunk neat.",
+      "claims": [
+        "Promotes normal psychological function",
+        "Promotes normal red blood cell formation",
+        "Reduces tiredness and fatigue"
+      ],
+      "format": "Liquid",
+      "servingSize": "30 ml (2 tablespoons), can be drunk neat",
+      "servingsPerContainer": 24,
+      "servingsPerDay": 1,
+      "category": "Energy",
+      "image": "mistify.jpg",
+      "allergens": [
+        "soybeans"
+      ],
+      "dietaryExclusions": [],
       "status": "Active"
     },
     {
       "id": "PRD012",
       "name": "Synergy Collagen+",
+      "description": "A hydrolyzed bovine collagen powder enhanced with Vitamin C, Hyaluronic Acid, and Zinc, formulated to support collagen production, hydration, and normal protein synthesis for hair, skin, nails, muscles, bones, and cartilage.",
+      "claims": [
+        "Supports collagen production throughout the body",
+        "Supports a normal protein synthesis",
+        "Strengthens body tissues including hair, skin, nails, muscles, bones, and cartilage"
+      ],
+      "format": "Powder Sachets",
+      "servingSize": "1 sachet (6 g)",
+      "servingsPerContainer": 30,
+      "servingsPerDay": 1,
+      "category": "Skin & Beauty",
+      "image": "collagen-plus.jpg",
+      "allergens": [],
+      "dietaryExclusions": [
+        "vegan",
+        "vegetarian",
+        "no_red_meat"
+      ],
       "status": "Active"
     },
     {
       "id": "PRD013",
       "name": "Synergy Collagen+ Beauty",
+      "description": "A premium marine collagen peptide powder with resveratrol, hyaluronic acid, Vitamin C, and Zinc, formulated to help restore the body's natural collagen supply and support skin elasticity, hair, and nail strength.",
+      "claims": [
+        "Maintains integrity of hair, skin, and nails",
+        "Supports normal collagen formation for your skin",
+        "Bolsters the hydration and maintenance of skin and cartilage"
+      ],
+      "format": "Powder Sachets",
+      "servingSize": "1 sachet (6 g)",
+      "servingsPerContainer": 30,
+      "servingsPerDay": 1,
+      "category": "Skin & Beauty",
+      "image": "collagen-beauty.jpg",
+      "allergens": [
+        "fish"
+      ],
+      "dietaryExclusions": [
+        "vegan",
+        "vegetarian"
+      ],
       "status": "Active"
     },
     {
       "id": "PRD014",
       "name": "Synergy FL-3X",
+      "description": "A gel-matrix food supplement with glucosamine HCL, chondroitin sulfate, MSM, and plant extracts, formulated to support the joint tissue components involved in producing hyaluronic acid and to aid mobility and flexibility.",
+      "claims": [
+        "Supports mobility, range of motion, and flexibility",
+        "Glucosamine and Chondroitin are fundamental components of joint tissue involved in the production of beneficial hyaluronic acid",
+        "Vitamin C contributes to the collagen formation for the normal function of cartilage and bones"
+      ],
+      "format": "Gel Sachets",
+      "servingSize": "1 serving (12.15 g)",
+      "servingsPerContainer": 96,
+      "servingsPerDay": 1,
+      "category": "Joint & Mobility",
+      "image": "fl-3x.jpg",
+      "allergens": [
+        "crustaceans",
+        "fish"
+      ],
+      "dietaryExclusions": [
+        "vegan",
+        "vegetarian",
+        "halal",
+        "kosher"
+      ],
       "status": "Active"
     },
     {
       "id": "PRD015",
       "name": "Synergy Vitamin D3",
+      "description": "Chewable Vitamin D3 tablets intended to provide powerful immune support and support healthy bone metabolism, calcium balance, and muscle development.",
+      "claims": [
+        "Provides 600 IU of Vitamin D3 per tablet",
+        "Helps maintain normal levels of calcium in the blood",
+        "Helps maintain bone health and mineralization",
+        "Helps support a healthy immune system"
+      ],
+      "format": "Chewable Tablets",
+      "servingSize": "3 chewable tablets",
+      "servingsPerContainer": 60,
+      "servingsPerDay": 1,
+      "category": "Foundational Nutrition",
+      "image": "d3.jpg",
+      "allergens": [],
+      "dietaryExclusions": [
+        "vegan"
+      ],
       "status": "Active"
     },
     {
       "id": "PRD016",
       "name": "Synergy Omega-3",
+      "description": "A high-potency fish oil capsule sourced from cold-water mackerel, anchovy, and sardine, rich in EPA and DHA, flavoured with natural lemon oil and tested to be free from mercury and other toxins.",
+      "claims": [
+        "Reinforces normal brain function",
+        "Supports normal function of the heart",
+        "Promotes normal vision and eye health"
+      ],
+      "format": "Softgels",
+      "servingSize": "1 capsule",
+      "servingsPerContainer": 60,
+      "servingsPerDay": 2,
+      "category": "Cardiovascular",
+      "image": "omega-3.jpg",
+      "allergens": [
+        "fish"
+      ],
+      "dietaryExclusions": [
+        "vegan",
+        "vegetarian"
+      ],
       "status": "Active"
     },
     {
       "id": "PRD017",
       "name": "Synergy CoQ10",
+      "description": "An oil-soluble Coenzyme Q10 (Ubiquinone) softgel supplement using a patented lipid blend for enhanced bioavailability, intended to support the body's natural conversion of food into cellular energy (ATP).",
+      "claims": [
+        "Helps the body convert food into energy",
+        "Nutrient involved in the creation of ATP, the energy-carrying molecule found in cells",
+        "Uses a patented lipid blend that enhances bioavailability and absorption"
+      ],
+      "format": "Softgels",
+      "servingSize": "1 capsule",
+      "servingsPerContainer": 60,
+      "servingsPerDay": 2,
+      "category": "Energy",
+      "image": "coq10.jpg",
+      "allergens": [],
+      "dietaryExclusions": [
+        "vegan",
+        "vegetarian"
+      ],
       "status": "Active"
     },
     {
       "id": "PRD018",
       "name": "Synergy Liver Health",
+      "description": "A capsule blend of tonifying herbs (including burdock root, turmeric root, gentian root, spirulina, and dandelion) traditionally used to support and nourish the liver's natural functions, including digestion and healthy glucose and lipid metabolism.",
+      "claims": [
+        "Provides nutritional support for the liver",
+        "Traditionally used to support liver functions"
+      ],
+      "format": "Capsules",
+      "servingSize": "1 capsule",
+      "servingsPerContainer": 100,
+      "servingsPerDay": 3,
+      "category": "Liver Support",
+      "image": "liver-health.jpg",
+      "allergens": [],
+      "dietaryExclusions": [
+        "vegan",
+        "vegetarian"
+      ],
       "status": "Active"
     },
     {
       "id": "PRD019",
       "name": "Synergy Zinc Protect",
+      "description": "A zinc gluconate tablet with kelp leaves/stem and thyme leaves, intended to support hundreds of the body's zinc-dependent functions including immune strength, DNA synthesis, and cognitive function.",
+      "claims": [
+        "Supports immune function",
+        "Contributes to normal cognitive function",
+        "Assists with taste and smell",
+        "Contributes to the maintenance of normal vision",
+        "Supports healthy bones"
+      ],
+      "format": "Tablets",
+      "servingSize": "1 tablet",
+      "servingsPerContainer": 120,
+      "servingsPerDay": 1,
+      "category": "Immune Support",
+      "image": "zinc-protect.jpg",
+      "allergens": [],
+      "dietaryExclusions": [],
       "status": "Active"
     },
     {
       "id": "PRD020",
       "name": "Synergy SleepWell",
+      "description": "A capsule formula featuring Valerian root extract, passionflower, and hop flower, designed with a steady release of valerian to prepare the body for calm, restful sleep without morning grogginess.",
+      "claims": [
+        "Promotes calm and more restful sleep",
+        "Supports nervous system health",
+        "Helps maintain good cognitive function",
+        "Helps induce a state of calm"
+      ],
+      "format": "Capsules",
+      "servingSize": "2 capsules",
+      "servingsPerContainer": 50,
+      "servingsPerDay": 1,
+      "category": "Sleep",
+      "image": "sleepwell.jpg",
+      "allergens": [],
+      "dietaryExclusions": [
+        "vegan",
+        "vegetarian"
+      ],
       "status": "Active"
     },
     {
-    "id": "PRD021",
-    "name": "Synergy Multivitamin",
-    "category": "Foundational Nutrition",
-    "format": "Powder Sachets",
-    "servings": 30,
-    "status": "Active"
-  },
-  {
-    "id": "PRD022",
-    "name": "Synergy Carb Blocker",
-    "category": "Metabolic Support",
-    "format": "Capsules",
-    "servings": 60,
-    "status": "Active"
-  },
-  {
-    "id": "PRD023",
-    "name": "Synergy Fat Grabber",
-    "category": "Digestive Support",
-    "format": "Capsules",
-    "servings": 120,
-    "status": "Active"
-  }
+      "id": "PRD021",
+      "name": "Synergy Multivitamin",
+      "description": "A drinkable multivitamin powder containing 17 different vitamins and minerals in a raspberry lemonade flavour, intended as a foundational daily nutrition supplement.",
+      "claims": [
+        "Normal energy yielding metabolism",
+        "Protection of cells from oxidative stress",
+        "Maintenance of normal bones",
+        "Reduction of tiredness and fatigue",
+        "Normal function of the immune system"
+      ],
+      "format": "Powder Sachets",
+      "servingSize": "1 sachet (5 g)",
+      "servingsPerContainer": 30,
+      "servingsPerDay": 1,
+      "category": "Foundational Nutrition",
+      "image": "multivitamin.jpg",
+      "allergens": [],
+      "dietaryExclusions": [
+        "vegan"
+      ],
+      "status": "Active"
+    },
+    {
+      "id": "PRD022",
+      "name": "Synergy Carb Blocker",
+      "description": "An all-natural capsule containing white kidney bean extract, formulated to help block the enzymes responsible for digesting carbohydrates as part of a healthy, calorie-controlled lifestyle.",
+      "claims": [
+        "May support healthy weight management in conjunction with a proper calorie-controlled diet and exercise"
+      ],
+      "format": "Capsules",
+      "servingSize": "2 capsules",
+      "servingsPerContainer": 30,
+      "servingsPerDay": 3,
+      "category": "Weight Management",
+      "image": "carb-blocker.jpg",
+      "allergens": [],
+      "dietaryExclusions": [
+        "vegan",
+        "vegetarian"
+      ],
+      "status": "Active"
+    },
+    {
+      "id": "PRD023",
+      "name": "Synergy Fat Grabber",
+      "description": "A natural fibre capsule blend of Guar Gum and Psyllium designed to support and maintain a healthy intestine and facilitate digestion, intended for use alongside a healthy diet and regular exercise.",
+      "claims": [
+        "Helps maintain a healthy intestine and facilitates digestion",
+        "Guar gum does not affect mineral absorption",
+        "May support healthy weight management in conjunction with a proper calorie-controlled diet and exercise"
+      ],
+      "format": "Capsules",
+      "servingSize": "4 capsules",
+      "servingsPerContainer": 30,
+      "servingsPerDay": 3,
+      "category": "Weight Management",
+      "image": "fat-grabber.jpg",
+      "allergens": [
+        "soybeans"
+      ],
+      "dietaryExclusions": [
+        "vegan",
+        "vegetarian"
+      ],
+      "status": "Active"
+    },
+    {
+      "id": "PRD024",
+      "name": "SmartMeal",
+      "description": "A vegan, gluten-free meal-replacement shake with 24 grams of protein and a full vitamin and mineral blend, intended to conveniently replace one meal a day as part of a weight-management routine.",
+      "claims": [
+        "Provides 24 vitamins and minerals",
+        "Delivers 24 grams of protein per serving",
+        "Supports maintenance of muscle mass",
+        "Contributes to normal energy-yielding metabolism",
+        "Contributes to the reduction of tiredness and fatigue",
+        "Supports normal immune system function"
+      ],
+      "format": "Powder",
+      "servingSize": "2 scoops (54 g)",
+      "servingsPerContainer": 15,
+      "servingsPerDay": 1,
+      "category": "Weight Management",
+      "image": "smartmeal.jpg",
+      "allergens": [],
+      "dietaryExclusions": [],
+      "status": "Active"
+    }
   ]
 }

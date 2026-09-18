@@ -20,9 +20,46 @@
             "pattern": "^PRD[0-9]{3}$"
           },
           "name": { "type": "string", "minLength": 1 },
+          "description": { "type": "string" },
+          "claims": {
+            "type": "array",
+            "items": { "type": "string", "minLength": 1 },
+            "description": "Provable, factsheet-derived health claims for this product. Not free marketing copy — each entry should trace back to an approved claim or a manufacturer factsheet statement."
+          },
           "category": { "type": "string" },
           "format": { "type": "string" },
-          "servings": { "type": "integer", "minimum": 1 },
+          "servingSize": {
+            "type": "string",
+            "description": "The amount taken in a single administration, e.g. \"2 capsules\" or \"1 sachet (9.83 g)\". Paired with servingsPerDay to describe full dosing."
+          },
+          "servingsPerContainer": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "How many single-administration servings (per servingSize) the container holds. Replaces the old 'servings' field."
+          },
+          "servingsPerDay": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "How many single-administration servings are taken per day. servingsPerContainer / servingsPerDay gives the computed 'lasts X days' figure."
+          },
+          "image": { "type": "string", "description": "Path or filename of the product packshot image, supplied by Simon." },
+          "cost": { "type": "number", "minimum": 0, "description": "Retail price for one container, in the site's base currency." },
+          "allergens": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": ["celery", "gluten", "crustaceans", "eggs", "fish", "lupin", "milk", "molluscs", "mustard", "peanuts", "sesame", "soybeans", "sulphites", "tree_nuts"]
+            },
+            "description": "Allergens this product actually contains, using the same 14-slug UK FSA vocabulary as foods.json and SAF006."
+          },
+          "dietaryExclusions": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": ["vegetarian", "vegan", "pescatarian", "dairy_free", "gluten_free", "halal", "kosher", "low_fodmap", "no_red_meat"]
+            },
+            "description": "Dietary preferences (PF020 vocabulary) this product VIOLATES, matching the foods.json convention — e.g. a product containing bovine gelatin lists \"vegetarian\" and \"vegan\" here, not the preferences it complies with."
+          },
           "status": { "type": "string", "enum": ["Active", "Discontinued", "Proposed"] }
         },
         "additionalProperties": false

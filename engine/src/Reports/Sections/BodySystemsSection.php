@@ -68,11 +68,11 @@ class BodySystemsSection
 
                         <div class="rank-badge">'.$rank.'</div>
 
-                        <div>
+                        <div class="card-title-row">
                             <h3>'.htmlspecialchars($system['name']).'</h3>
-                            <div class="priority-label">'
+                            <span class="card-subtitle">'
                                 .htmlspecialchars($system['interpretation'] ?? '').'
-                            </div>
+                            </span>
                         </div>
 
                     </div>

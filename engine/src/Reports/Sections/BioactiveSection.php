@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace PWB\Reports\Sections;
 use PWB\Reports\Components\MechanismPopover;
+use PWB\Reports\IconLibrary;
 
 class BioactiveSection
 {
@@ -98,14 +99,16 @@ class BioactiveSection
 <div class="bioactive-header">
 
     <div class="bioactive-title">
-        <h3>'.$name.'</h3>';
+        <div class="card-title-row">
+            <h3>'.$name.'</h3>';
 
         if ($category !== '') {
             $html .= '
-        <div class="bioactive-category">' . $category . ($subcategory !== '' ? ' &middot; ' . $subcategory : '') . '</div>';
+            <span class="card-subtitle">' . $category . ($subcategory !== '' ? ' &middot; ' . $subcategory : '') . '</span>';
         }
 
         $html .= '
+        </div>
     </div>
 
     <div class="score-badge">
@@ -117,27 +120,19 @@ class BioactiveSection
 
                     <p class="bioactive-summary">'.$summary.'</p>';
 
-        // What it actually does, day to day — the one line the old card
-        // was missing beyond the name and a pathway list.
+        // Evidence badge shares a line with the primary-action text (right
+        // before it) rather than sitting on its own row underneath — saves
+        // a line per card without losing either piece of information.
+        $evidenceBadge = $evidence !== ''
+            ? '<span class="tag tag-evidence">Evidence: ' . $evidence . '</span> '
+            : '';
+
         if ($primaryAction !== '') {
             $html .= '
-                    <div class="bioactive-primary-action">' . $primaryAction . '</div>';
-        }
-
-        if ($evidence !== '') {
+                    <div class="bioactive-primary-action">' . $evidenceBadge . $primaryAction . '</div>';
+        } elseif ($evidenceBadge !== '') {
             $html .= '
-                    <div class="tag-row"><span class="tag tag-evidence">Evidence: ' . $evidence . '</span></div>';
-        }
-
-        // Full description, tucked behind a details toggle rather than
-        // always shown, so the card stays scannable but the fuller
-        // explanation is one click away for anyone who wants it.
-        if ($description !== '' && $description !== $summary) {
-            $html .= '
-                    <details class="bioactive-more">
-                        <summary>More about ' . $name . ' <span class="expand-chevron">&#9662;</span></summary>
-                        <p>' . $description . '</p>
-                    </details>';
+                    <div class="tag-row">' . $evidenceBadge . '</div>';
         }
 
 // Supporting mechanisms
@@ -178,12 +173,29 @@ if (!empty($item['mechanisms'])) {
                             : $food
                     );
 
+                    $foodGroupId = is_array($food) ? ($food['foodGroupId'] ?? null) : null;
+
+                    $icon = !empty($foodGroupId)
+                        ? '<span class="food-group-icon">' . IconLibrary::render($foodGroupId) . '</span>'
+                        : '';
+
                     $html .= '
-                        <span class="body-food-chip">'.$label.'</span>';
+                        <span class="body-food-chip">' . $icon . $label . '</span>';
                 }
 
                 $html .= '</div>';
             }
+
+        // Full description, tucked behind a details toggle at the bottom of
+        // the card — an expander never sits above other constantly-visible
+        // content, so opening it doesn't push anything else around.
+        if ($description !== '' && $description !== $summary) {
+            $html .= '
+                    <details class="bioactive-more">
+                        <summary>More about ' . $name . ' <span class="expand-chevron">&#9662;</span></summary>
+                        <p>' . $description . '</p>
+                    </details>';
+        }
 
             $html .= '
                 </div>';

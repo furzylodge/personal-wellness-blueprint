@@ -3,6 +3,7 @@
   "extends": "neutral",
   "name": "Unhealthy Eater",
   "description": "Every Nutrition/Digestion question answered at its worst value, everything else neutral.",
+  "goals": ["OUT005"],
   "answers": {
     "DIG001": 1,
     "DIG002": 1,

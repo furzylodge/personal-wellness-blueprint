@@ -33,15 +33,12 @@ $mechanisms = (new MechanismResolver(
     __DIR__ . '/../knowledgebase'
 ))->resolve(array_slice($priorities, 0, 3));
 
-$bioactives = (new BioactiveResolver(
-    $loader,
-    __DIR__ . '/../knowledgebase'
-))->resolve($mechanisms);
+$excludedTags = array_merge($assessment->restrictions ?? [], $assessment->preferences ?? []);
 
 $products = (new ProductResolver(
     $loader,
     __DIR__ . '/../knowledgebase'
-))->resolve($bioactives);
+))->resolve($mechanisms, $excludedTags);
 
 echo PHP_EOL;
 echo "Top Recommended Products" . PHP_EOL;

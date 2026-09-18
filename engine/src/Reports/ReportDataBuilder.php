@@ -13,6 +13,7 @@ use PWB\Recommendation\Scorers\PriorityScorer;
 use PWB\Recommendation\MechanismResolver;
 use PWB\Recommendation\BioactiveResolver;
 use PWB\Recommendation\FoodResolver;
+use PWB\Recommendation\ProductResolver;
 use PWB\Recommendation\NutrientResolver;
 use PWB\Assessment\Assessment;
 use PWB\Recommendation\RecommendationConfiguration;
@@ -194,13 +195,26 @@ $nutrientResolver = new NutrientResolver(
     $this->locator->getKnowledgebaseDirectory()
 );
 
+$productResolver = new ProductResolver(
+    new JsonLoader(),
+    $this->locator->getKnowledgebaseDirectory()
+);
+
 $bioactives = $bioactiveResolver->resolve($mechanisms);
 // Allergies (restrictions) and dietary preferences are now BOTH functional
 // exclusions — foods.json tags every food against both vocabularies
 // (allergens + dietaryExclusions), so FoodResolver just needs one combined
-// list of slugs to check a food's tags against.
+// list of slugs to check a food's tags against. products.json now carries
+// the same two vocabularies, so ProductResolver reuses the identical
+// excluded-tags list.
 $excludedFoodTags = array_merge($assessment->restrictions ?? [], $assessment->preferences ?? []);
 $foodResults = $foodResolver->resolve($mechanisms, $excludedFoodTags);
+$productResults = $productResolver->resolve($mechanisms, $excludedFoodTags);
+
+foreach ($productResults as &$product) {
+    $product['whySelected'] = $this->buildProductWhySelected($product);
+}
+unset($product);
 
 $vitamins = $nutrientResolver->resolve($mechanisms, 'vitamin');
 $minerals = $nutrientResolver->resolve($mechanisms, 'mineral');
@@ -307,7 +321,8 @@ $dashboard = $this->buildDashboard(
     $bodySystemsData,
     $assessment->goals ?? [],
     $bioactives,
-    array_merge($vitamins, $minerals)
+    array_merge($vitamins, $minerals),
+    $productResults[0] ?? null
 );
 
 		return [
@@ -334,8 +349,14 @@ $dashboard = $this->buildDashboard(
 'foods'        => $foods,
 'bodySystems' => $bodySystemsData,
 'dashboard'   => $dashboard,
+'products'    => $productResults,
+'topProduct'  => $productResults[0] ?? null,
 'theme' => $assessment->theme ?? 'theme-green',
-'actionPlan' => $this->buildActionPlan()
+'actionPlan' => $this->buildActionPlan(),
+// Live counts of the underlying dataset (questions, foods, body
+// systems, etc.) for the report's "scope" strip — see ScopeStats for
+// why these are computed rather than hand-typed.
+'scope' => \PWB\Knowledge\ScopeStats::compute($this->locator->getKnowledgebaseDirectory()),
 ];
     }
 
@@ -533,7 +554,8 @@ $system['summary'] =
         array $bodySystemsData,
         array $goalIds,
         array $bioactives,
-        array $nutrients
+        array $nutrients,
+        ?array $topProduct = null
     ): array {
 
         // ---- Body system heat grid ----
@@ -728,7 +750,93 @@ $system['summary'] =
             'actions'       => $actions,
             'goalAlignment' => $goalAlignment,
             'topSystem'     => $topSystem,
+            // The supplementation-framing intro shown inside the product
+            // strip, above the recommended product — approved copy, static
+            // rather than generated, since it must never drift into
+            // language that tells someone to replace food with a product.
+            // Exposed here (ahead of the strip UI itself being built) so
+            // the text and the data it introduces ship from the same
+            // place.
+            'supplementationIntro' => 'Many people use nutritional supplementation to help close everyday gaps in their diet, particularly where getting enough of a specific nutrient through food alone can be difficult. Supplementation isn\'t a substitute for a varied, balanced diet — it\'s simply one more tool that research suggests can help support the areas your results have highlighted. Based on your answers, here\'s the product our engine identified as the closest match for you:',
+            // The single top-scoring product (ProductResolver's own ranked
+            // output for this person, already allergy/dietary excluded) —
+            // handed straight through so the dashboard's product strip has
+            // everything it needs (image, claims, servings, whySelected)
+            // without DashboardSection reaching outside the $dashboard array.
+            'topProduct' => $topProduct,
         ];
+    }
+
+    /**
+     * Auto-generates the "why this was selected" explanation for a scored
+     * product, built entirely from that product's own matchedMechanisms
+     * (ProductResolver's real scoring output for this person) — never
+     * hand-written or generic copy. Mirrors the same "explain the score"
+     * approach already used for Priority Foods (FoodResolver's
+     * scoreBreakdown, surfaced via $food['sources']), so a product
+     * recommendation is auditable back to the person's own answers in
+     * exactly the same way a food recommendation is.
+     */
+    private function buildProductWhySelected(array $product): string
+    {
+        $matched = $product['matchedMechanisms'] ?? [];
+
+        if (empty($matched)) {
+            return '';
+        }
+
+        // scoreBreakdown.summary.systemsCovered lists EVERY body system any
+        // matched mechanism touches, collected in raw iteration order
+        // before the strongest-first sort — it does not line up with which
+        // 1-2 mechanisms are actually named below. So the systems named
+        // here are derived directly from those same top mechanisms' own
+        // body-system links (via mechanismLookup, populated from
+        // MechanismResolver's per-mechanism "sources"), keeping the
+        // sentence internally consistent.
+        $topMatched = array_slice($matched, 0, 2);
+        $topMechanismNames = array_map(fn($m) => $m['name'], $topMatched);
+
+        $systemNames = [];
+
+        foreach ($topMatched as $m) {
+            foreach ($this->mechanismLookup[$m['id']]['sources'] ?? [] as $source) {
+                $systemId = $source['bodySystem'] ?? null;
+                if ($systemId && isset($this->bodySystems[$systemId])) {
+                    $systemNames[$this->bodySystems[$systemId]] = true;
+                }
+            }
+        }
+
+        $systemNames = array_slice(array_keys($systemNames), 0, 2);
+
+        $sentence = 'Recommended based on your own results';
+
+        if (!empty($systemNames)) {
+            $sentence .= ' — it targets ' . $this->joinWithAnd($systemNames) .
+                ', flagged as ' . (count($systemNames) > 1 ? 'priority areas' : 'a priority area') . ' in your results';
+        }
+
+        $sentence .= '. ';
+
+        if (!empty($topMechanismNames)) {
+            $sentence .= 'Its strongest matched pathway' . (count($topMechanismNames) > 1 ? 's are ' : ' is ') .
+                $this->joinWithAnd($topMechanismNames) . ', identified from your questionnaire answers.';
+        }
+
+        return trim($sentence);
+    }
+
+    private function joinWithAnd(array $items): string
+    {
+        $items = array_values($items);
+
+        if (count($items) <= 1) {
+            return $items[0] ?? '';
+        }
+
+        $last = array_pop($items);
+
+        return implode(', ', $items) . ' and ' . $last;
     }
 
     /**
@@ -815,8 +923,9 @@ foreach (array_slice($bioactive['matchedMechanisms'] ?? [], 0, 3) as $m) {
             $food = $this->foodLookup[$foodId];
 
             $foods[] = [
-                'name'  => $food['identity']['name'] ?? $foodId,
-                'score' => $food['clinicalScore'] ?? 0,
+                'name'        => $food['identity']['name'] ?? $foodId,
+                'score'       => $food['clinicalScore'] ?? 0,
+                'foodGroupId' => $food['foodGroupId'] ?? null,
             ];
         }
 

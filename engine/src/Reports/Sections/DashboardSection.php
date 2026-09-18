@@ -52,6 +52,7 @@ class DashboardSection
 
         $html .= $this->renderHeatMap($dashboard['heatMap'] ?? []);
         $html .= $this->renderRadar($dashboard['radarSystems'] ?? []);
+        $html .= $this->renderProductStrip($dashboard['topProduct'] ?? null, $dashboard['supplementationIntro'] ?? '');
         // These four "insight" cards get their own nested 4-column row
         // rather than sharing the outer grid's fixed 2fr/1fr/1fr template,
         // which was sized for exactly the three cards that used to live
@@ -80,13 +81,80 @@ class DashboardSection
         return $html;
     }
 
+    /**
+     * "Your top takeaways" — three colour-accented cards pulled straight
+     * from this person's own results (top body system, top pathway, top
+     * food match) rather than a single generic paragraph. Replaces the
+     * old plain-text summary, which was capped at max-width:78ch and read
+     * as a bland subtitle rather than the headline moment this section
+     * deserves. Falls back gracefully if any one of the three is missing
+     * (e.g. an edge-case/empty assessment) by simply omitting that card.
+     */
     private function renderSummary(array $dashboard): string
     {
-        $paragraph = $dashboard['paragraph'] ?? '';
+        $topSystem = $dashboard['topSystem'] ?? null;
+        $topMechanism = ($dashboard['topMechanisms'] ?? [])[0] ?? null;
+        $topFood = ($dashboard['topFoods'] ?? [])[0] ?? null;
+
+        $cards = '';
+
+        if ($topSystem) {
+            $icon = IconLibrary::render($topSystem['id'] ?? '');
+            $score = (int) round($topSystem['score'] ?? 0);
+
+            $cards .= '
+                        <div class="hero-takeaway-card hero-takeaway-a">
+                            <div class="hero-takeaway-icon">' . $icon . '</div>
+                            <div class="hero-takeaway-tag">Strongest priority</div>
+                            <div class="hero-takeaway-title">' . htmlspecialchars($topSystem['name'] ?? '') . '</div>
+                            <div class="hero-takeaway-detail">Scored ' . $score . '/100 — the highest of any body system in your results.</div>
+                        </div>';
+        }
+
+        if ($topMechanism) {
+            $icon = IconLibrary::render('TARGET');
+
+            $cards .= '
+                        <div class="hero-takeaway-card hero-takeaway-b">
+                            <div class="hero-takeaway-icon">' . $icon . '</div>
+                            <div class="hero-takeaway-tag">Key pathway</div>
+                            <div class="hero-takeaway-title">' . htmlspecialchars($topMechanism['name'] ?? '') . '</div>
+                            <div class="hero-takeaway-detail">The mechanism driving most of what you\'ll see below.</div>
+                        </div>';
+        }
+
+        if ($topFood) {
+            $icon = !empty($topFood['foodGroupId'])
+                ? IconLibrary::render($topFood['foodGroupId'])
+                : IconLibrary::render('CHECK');
+            $recommendation = htmlspecialchars($topFood['recommendation'] ?? 'A strong match');
+
+            $cards .= '
+                        <div class="hero-takeaway-card hero-takeaway-c">
+                            <div class="hero-takeaway-icon">' . $icon . '</div>
+                            <div class="hero-takeaway-tag">Top food match</div>
+                            <div class="hero-takeaway-title">' . htmlspecialchars($topFood['name'] ?? '') . '</div>
+                            <div class="hero-takeaway-detail">' . $recommendation . ' for your profile.</div>
+                        </div>';
+        }
+
+        // Truly nothing to show (edge-case/empty assessment) — fall back
+        // to the plain paragraph rather than an empty card grid.
+        if ($cards === '') {
+            $paragraph = htmlspecialchars($dashboard['paragraph'] ?? '');
+
+            return $paragraph === '' ? '' : '
+                <div class="dashboard-card dashboard-summary">
+                    <p>' . $paragraph . '</p>
+                </div>';
+        }
 
         return '
-                <div class="dashboard-card dashboard-summary">
-                    <p>' . htmlspecialchars($paragraph) . '</p>
+                <div class="dashboard-card dashboard-summary hero-card-grid-wrap">
+                    <div class="hero-eyebrow">Your top takeaways</div>
+                    <p class="hero-subline">The things your answers point to most clearly.</p>
+                    <div class="hero-card-grid">' . $cards . '
+                    </div>
                 </div>';
     }
 
@@ -321,6 +389,66 @@ class DashboardSection
                     <div class="dashboard-card-label">The Shape of Your Results</div>
                     <div class="radar-placeholder-icon-wrap">' . $icon . '</div>
                     <p class="radar-placeholder-message">' . htmlspecialchars($message) . '</p>
+                </div>';
+    }
+
+    /**
+     * The product strip — the single top-scoring product from
+     * ProductResolver, already ranked and allergy/dietary-excluded for this
+     * person by ReportDataBuilder. Deliberately singular (not a top-5 list
+     * like Foods/Bioactives/Nutrients above): this is a recommendation, not
+     * a leaderboard. Carries the compliance-framing intro paragraph
+     * (approved copy, see ReportDataBuilder::buildDashboard()) directly
+     * above the product itself, and the auto-generated "why this was
+     * selected" sentence (buildProductWhySelected(), built from this
+     * person's own matched mechanisms) rather than generic marketing copy.
+     * Renders nothing if no product could be matched (e.g. every product
+     * was excluded by the person's own allergies/dietary preferences) —
+     * a false "no exclusions" strip would be worse than no strip at all.
+     */
+    private function renderProductStrip(?array $product, string $intro): string
+    {
+        if ($product === null) {
+            return '';
+        }
+
+        $image = !empty($product['image'])
+            ? '<img class="product-strip-image" src="../engine/assets/images/products/' . htmlspecialchars($product['image']) . '" alt="' . htmlspecialchars($product['name'] ?? '') . '">'
+            : '<div class="product-strip-image product-strip-image-placeholder"></div>';
+
+        $metaParts = array_filter([
+            $product['format'] ?? null,
+            $product['servingSize'] ?? null,
+            !empty($product['lastsDays']) ? 'Lasts ~' . (int) $product['lastsDays'] . ' days' : null,
+        ]);
+
+        $claims = '';
+        foreach (array_slice($product['claims'] ?? [], 0, 4) as $claim) {
+            $claims .= '
+                                <li>
+                                    <span class="product-strip-claim-icon">' . IconLibrary::render('CHECK', 'pwb-icon') . '</span>
+                                    <span>' . htmlspecialchars($claim) . '</span>
+                                </li>';
+        }
+
+        $why = !empty($product['whySelected'])
+            ? '<p class="product-strip-why">' . htmlspecialchars($product['whySelected']) . '</p>'
+            : '';
+
+        return '
+                <div class="dashboard-card dashboard-product-strip">
+                    <div class="dashboard-card-label">Recommended For You</div>
+                    <p class="product-strip-intro">' . htmlspecialchars($intro) . '</p>
+                    <div class="product-strip-card">
+                        <div class="product-strip-image-wrap">' . $image . '</div>
+                        <div class="product-strip-body">
+                            <div class="product-strip-name">' . htmlspecialchars($product['name'] ?? '') . '</div>
+                            <div class="product-strip-meta">' . htmlspecialchars(implode(' · ', $metaParts)) . '</div>
+                            ' . $why . '
+                            <ul class="product-strip-claims">' . $claims . '
+                            </ul>
+                        </div>
+                    </div>
                 </div>';
     }
 

@@ -39,24 +39,12 @@ $mechanisms = (new MechanismResolver(
     __DIR__ . '/../knowledgebase'
 ))->resolve(array_slice($priorities, 0, 3));
 
-$bioactives = (new BioactiveResolver(
-    $loader,
-    __DIR__ . '/../knowledgebase'
-))->resolve($mechanisms);
+$excludedTags = array_merge($assessment->restrictions ?? [], $assessment->preferences ?? []);
 
 $products = (new ProductResolver(
     $loader,
     __DIR__ . '/../knowledgebase'
-))->resolve($bioactives);
-
-// -----------------------------------------------------
-// Bioactive lookup
-// -----------------------------------------------------
-
-$bioLookup = [];
-foreach ($bioactives as $bio) {
-    $bioLookup[$bio['bioactiveId']] = $bio;
-}
+))->resolve($mechanisms, $excludedTags);
 
 // -----------------------------------------------------
 // Output
@@ -81,24 +69,24 @@ foreach (array_slice($products, 0, 10) as $product) {
 
     echo str_repeat('-', 72) . PHP_EOL;
 
-    foreach ($product['matchedBioactives'] as $match) {
-
-        $bio = $bioLookup[$match['id']] ?? null;
-
-        $bioName = $bio['name'] ?? $match['id'];
+    foreach ($product['matchedMechanisms'] as $match) {
 
         printf(
             " +%7.2f   %-8s %s\n",
             $match['contribution'],
             $match['id'],
-            $bioName
+            $match['name']
         );
 
         printf(
-            "           Status: %s\n",
-            $match['status']
+            "           Strength: %d  Confidence: %.2f\n",
+            $match['strength'],
+            $match['confidence']
         );
     }
+
+    echo PHP_EOL;
+    echo "  Why selected: " . ($product['whySelected'] ?? '(generated in ReportDataBuilder, not here)') . PHP_EOL;
 }
 
 echo PHP_EOL;
@@ -107,8 +95,8 @@ echo PHP_EOL;
 // Audit products with zero score
 // -----------------------------------------------------
 
-$relationships = $loader->load(
-    __DIR__ . '/../knowledgebase/taxonomy/product-bioactives.json'
+$productMechanisms = $loader->load(
+    __DIR__ . '/../knowledgebase/taxonomy/product-mechanisms.json'
 );
 
 $scored = [];
@@ -117,26 +105,25 @@ foreach ($products as $p) {
 }
 
 echo PHP_EOL;
-echo "Products With No Matching Clinical Bioactives" . PHP_EOL;
+echo "Products With No Matching Clinical Mechanisms" . PHP_EOL;
 echo "============================================" . PHP_EOL;
 
-foreach ($relationships['products'] as $product) {
+foreach ($productMechanisms['products'] as $product) {
 
-    if (isset($scored[$product['id']])) {
+    if (isset($scored[$product['productId']])) {
         continue;
     }
 
     echo PHP_EOL;
-    echo $product['name'] . PHP_EOL;
+    echo $product['productName'] . PHP_EOL;
 
-    foreach ($product['bioactives'] as $bio) {
-        $name = $bioLookup[$bio['id']]['name'] ?? $bio['id'];
-
+    foreach (array_slice($product['mechanisms'], 0, 5) as $mech) {
         printf(
-            "   %-8s %-35s %s\n",
-            $bio['id'],
-            $name,
-            $bio['status']
+            "   %-8s %-35s strength=%d confidence=%.2f\n",
+            $mech['id'],
+            $mech['name'],
+            $mech['strength'],
+            $mech['confidence']
         );
     }
 }

@@ -2,6 +2,8 @@
 
 namespace PWB\Assessment;
 
+use PWB\Reports\Components\ExplainerPopover;
+
 class QuestionRenderer
 {
 
@@ -318,6 +320,14 @@ $html .= "
 
                 if (!empty($field['helper'])) {
                     $html .= "<p class='helper'>" . $this->e($field['helper']) . "</p>";
+                }
+
+                // A field can opt into a shared "What does this mean?"
+                // explainer by name (see ExplainerPopover) — currently
+                // only PF020 (dietary preferences) uses this, to explain
+                // how a selection here actually removes foods later on.
+                if (($field['explainer'] ?? null) === 'food-exclusions') {
+                    $html .= ExplainerPopover::foodExclusions('profile-' . $id);
                 }
 
                 break;

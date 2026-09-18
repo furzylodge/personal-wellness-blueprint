@@ -11,6 +11,7 @@ declare(strict_types=1);
 */
 
 require_once __DIR__ . '/src/Loader/JsonLoader.php';
+require_once __DIR__ . '/src/Knowledge/ScopeStats.php';
 
 require_once __DIR__ . '/src/Assessment/Assessment.php';
 require_once __DIR__ . '/src/Assessment/AssessmentLoader.php';
@@ -20,6 +21,10 @@ require_once __DIR__ . '/src/Assessment/QuizController.php';
 require_once __DIR__ . '/src/Assessment/QuestionRenderer.php';
 require_once __DIR__ . '/src/Assessment/VisibilityEvaluator.php';
 
+// Shared report components also used by the questionnaire itself (e.g. the
+// "What does this mean?" explainer shown next to PF020).
+require_once __DIR__ . '/src/Reports/Components/ExplainerPopover.php';
+
 // Recommendation Engine
 require_once __DIR__ . '/src/Recommendation/RecommendationConfiguration.php';
 require_once __DIR__ . '/src/Recommendation/PriorityEngine.php';
@@ -28,5 +33,4 @@ require_once __DIR__ . '/src/Recommendation/MechanismResolver.php';
 require_once __DIR__ . '/src/Recommendation/BioactiveResolver.php';
 require_once __DIR__ . '/src/Recommendation/FoodResolver.php';
 require_once __DIR__ . '/src/Recommendation/NutrientResolver.php';
-// require_once __DIR__ . '/src/Recommendation/VitaminResolver.php';
-// require_once __DIR__ . '/src/Recommendation/ProductResolver.php';
+require_once __DIR__ . '/src/Recommendation/ProductResolver.php';

@@ -5,6 +5,7 @@
   "expected": {
     "topBodySystem": "BS006"
   },
+  "goals": ["OUT002"],
   "answers": {
     "IMM001": 1,
     "DIG002": 1,

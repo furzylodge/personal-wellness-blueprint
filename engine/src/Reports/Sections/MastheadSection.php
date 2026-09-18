@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace PWB\Reports\Sections;
 
+use PWB\Reports\Components\ExplainerPopover;
+
 /**
  * The report's opening header: replaces the old "Personal Wellness
  * Blueprint" <h1> + "Client: X" line + an always-empty "Summary" heading
@@ -41,8 +43,11 @@ class MastheadSection
             $tags .= '<span class="masthead-tag masthead-tag-allergy">' . htmlspecialchars($allergy) . ' allergy</span>';
         }
 
+        // The "what does this mean?" link only earns its place when there's
+        // actually something to explain — no tags means nothing was
+        // excluded on this person's report.
         $tagsHtml = $tags !== ''
-            ? '<div class="masthead-tags">' . $tags . '</div>'
+            ? '<div class="masthead-tags">' . $tags . ExplainerPopover::foodExclusions('masthead') . '</div>'
             : '';
 
         return '

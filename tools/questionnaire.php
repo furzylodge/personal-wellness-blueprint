@@ -329,14 +329,76 @@ $reviewData = [
 
 <?php endif; ?>
 
+<?php $scope = \PWB\Knowledge\ScopeStats::compute($root . '/knowledgebase'); ?>
+
+<div class="scope-banner">
+
+    <div class="scope-banner-label">The depth behind your Blueprint</div>
+
+    <div class="scope-banner-grid">
+
+        <div class="scope-stat">
+            <strong><?= number_format($scope['questions']) ?></strong>
+            <span>Questions asked</span>
+        </div>
+
+        <div class="scope-stat">
+            <strong><?= number_format($scope['foods']) ?></strong>
+            <span>Foods analysed</span>
+        </div>
+
+        <div class="scope-stat">
+            <strong><?= number_format($scope['bodySystems']) ?></strong>
+            <span>Body systems mapped</span>
+        </div>
+
+        <div class="scope-stat">
+            <strong><?= number_format($scope['mechanisms']) ?></strong>
+            <span>Pathways modelled</span>
+        </div>
+
+        <div class="scope-stat">
+            <strong><?= number_format($scope['bioactives']) ?></strong>
+            <span>Bioactives tracked</span>
+        </div>
+
+        <div class="scope-stat">
+            <strong><?= number_format($scope['nutrients']) ?></strong>
+            <span>Nutrients scored</span>
+        </div>
+
+        <div class="scope-stat scope-stat-highlight">
+            <?php // Rounded down to the nearest hundred for the "+" claim —
+                  // the exact count shifts slightly as the catalogue grows,
+                  // and a precise-looking number ("3,003+") reads oddly next
+                  // to a "+", whereas a round one stays true as it grows.
+                  // This is every distinct food -> pathway route in the
+                  // dataset (direct, or via a bioactive the food contains) —
+                  // a real, computed number, not a combinatorial estimate. ?>
+            <strong><?= number_format((int) floor($scope['foodPathways'] / 100) * 100) ?>+</strong>
+            <span>Food pathways traced</span>
+        </div>
+
+        <div class="scope-stat scope-stat-you">
+            <strong>1</strong>
+            <span>You</span>
+        </div>
+
+    </div>
+
+</div>
+
     <a class="next" href="?page=<?= $quiz->nextPageId($pageId) ?>">
         Begin Assessment
     </a>
-    
+
                 <p class="welcome-note">
     Your progress is saved automatically as you complete the assessment.
 </p>
 
+<p class="welcome-disclaimer">
+    This assessment is for educational and general wellness purposes only. It does not diagnose, treat, or replace professional medical advice. If any of your answers raise a personal health concern, please speak to your GP or a qualified healthcare professional.
+</p>
 
 </div>
 
