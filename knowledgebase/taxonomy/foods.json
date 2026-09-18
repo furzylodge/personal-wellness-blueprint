@@ -15,6 +15,9 @@
       "monograph": "FD001-oats.md",
       "allergens": [
         "gluten"
+      ],
+      "dietaryExclusions": [
+        "gluten_free"
       ]
     },
     {
@@ -27,7 +30,8 @@
       "evidence": "High",
       "status": "Approved",
       "monograph": "FD002-blueberries.md",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": []
     },
     {
       "id": "FD003",
@@ -39,7 +43,10 @@
       "evidence": "High",
       "status": "Approved",
       "monograph": "FD003-blackberries.md",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": [
+        "low_fodmap"
+      ]
     },
     {
       "id": "FD004",
@@ -51,7 +58,8 @@
       "evidence": "High",
       "status": "Approved",
       "monograph": "FD004-strawberries.md",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": []
     },
     {
       "id": "FD005",
@@ -63,7 +71,8 @@
       "evidence": "High",
       "status": "Approved",
       "monograph": "FD005-raspberries.md",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": []
     },
     {
       "id": "FD006",
@@ -75,7 +84,8 @@
       "evidence": "High",
       "status": "Approved",
       "monograph": "FD006-spinach.md",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": []
     },
     {
       "id": "FD007",
@@ -87,7 +97,8 @@
       "evidence": "High",
       "status": "Approved",
       "monograph": "FD007-kale.md",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": []
     },
     {
       "id": "FD008",
@@ -99,7 +110,8 @@
       "evidence": "High",
       "status": "Approved",
       "monograph": "FD008-watercress.md",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": []
     },
     {
       "id": "FD009",
@@ -111,7 +123,8 @@
       "evidence": "High",
       "status": "Approved",
       "monograph": "FD009-swiss-chard.md",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": []
     },
     {
       "id": "FD010",
@@ -123,7 +136,8 @@
       "evidence": "High",
       "status": "Approved",
       "monograph": "FD010-broccoli.md",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": []
     },
     {
       "id": "FD011",
@@ -135,7 +149,10 @@
       "evidence": "High",
       "status": "Approved",
       "monograph": "FD011-brussels-sprouts.md",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": [
+        "low_fodmap"
+      ]
     },
     {
       "id": "FD012",
@@ -147,7 +164,10 @@
       "evidence": "High",
       "status": "Approved",
       "monograph": "FD012-cauliflower.md",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": [
+        "low_fodmap"
+      ]
     },
     {
       "id": "FD013",
@@ -159,7 +179,10 @@
       "evidence": "High",
       "status": "Approved",
       "monograph": "FD013-cabbage.md",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": [
+        "low_fodmap"
+      ]
     },
     {
       "id": "FD014",
@@ -171,7 +194,10 @@
       "evidence": "High",
       "status": "Approved",
       "monograph": "FD014-lentils.md",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": [
+        "low_fodmap"
+      ]
     },
     {
       "id": "FD015",
@@ -183,7 +209,10 @@
       "evidence": "High",
       "status": "Approved",
       "monograph": "FD015-chickpeas.md",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": [
+        "low_fodmap"
+      ]
     },
     {
       "id": "FD016",
@@ -195,7 +224,10 @@
       "evidence": "High",
       "status": "Approved",
       "monograph": "FD016-black-beans.md",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": [
+        "low_fodmap"
+      ]
     },
     {
       "id": "FD017",
@@ -207,7 +239,10 @@
       "evidence": "High",
       "status": "Approved",
       "monograph": "FD017-kidney-beans.md",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": [
+        "low_fodmap"
+      ]
     },
     {
       "id": "FD018",
@@ -221,7 +256,8 @@
       "monograph": "FD018-walnuts.md",
       "allergens": [
         "tree_nuts"
-      ]
+      ],
+      "dietaryExclusions": []
     },
     {
       "id": "FD019",
@@ -235,7 +271,8 @@
       "monograph": "FD019-almonds.md",
       "allergens": [
         "tree_nuts"
-      ]
+      ],
+      "dietaryExclusions": []
     },
     {
       "id": "FD020",
@@ -247,7 +284,8 @@
       "evidence": "High",
       "status": "Approved",
       "monograph": "FD020-pumpkin-seeds.md",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": []
     },
     {
       "id": "FD021",
@@ -259,7 +297,8 @@
       "evidence": "High",
       "status": "Approved",
       "monograph": "FD021-chia-seeds.md",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": []
     },
     {
       "id": "FD022",
@@ -271,7 +310,8 @@
       "evidence": "High",
       "status": "Approved",
       "monograph": "FD022-flaxseed.md",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": []
     },
     {
       "id": "FD023",
@@ -285,7 +325,8 @@
       "monograph": "FD023-brazil-nuts.md",
       "allergens": [
         "tree_nuts"
-      ]
+      ],
+      "dietaryExclusions": []
     },
     {
       "id": "FD024",
@@ -297,7 +338,8 @@
       "evidence": "High",
       "status": "Approved",
       "monograph": "FD024-extra-virgin-olive-oil.md",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": []
     },
     {
       "id": "FD025",
@@ -309,7 +351,10 @@
       "evidence": "High",
       "status": "Approved",
       "monograph": "FD025-garlic.md",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": [
+        "low_fodmap"
+      ]
     },
     {
       "id": "FD026",
@@ -321,7 +366,10 @@
       "evidence": "High",
       "status": "Approved",
       "monograph": "FD026-onions.md",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": [
+        "low_fodmap"
+      ]
     },
     {
       "id": "FD027",
@@ -333,7 +381,8 @@
       "evidence": "High",
       "status": "Approved",
       "monograph": "FD027-tomatoes.md",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": []
     },
     {
       "id": "FD028",
@@ -345,7 +394,10 @@
       "evidence": "High",
       "status": "Approved",
       "monograph": "FD028-avocados.md",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": [
+        "low_fodmap"
+      ]
     },
     {
       "id": "FD029",
@@ -357,7 +409,10 @@
       "evidence": "High",
       "status": "Approved",
       "monograph": "FD029-mushrooms.md",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": [
+        "low_fodmap"
+      ]
     },
     {
       "id": "FD030",
@@ -371,6 +426,10 @@
       "foodGroupName": "Fish & Seafood",
       "allergens": [
         "fish"
+      ],
+      "dietaryExclusions": [
+        "vegan",
+        "vegetarian"
       ]
     },
     {
@@ -385,6 +444,10 @@
       "foodGroupName": "Fish & Seafood",
       "allergens": [
         "fish"
+      ],
+      "dietaryExclusions": [
+        "vegan",
+        "vegetarian"
       ]
     },
     {
@@ -399,6 +462,10 @@
       "foodGroupName": "Fish & Seafood",
       "allergens": [
         "fish"
+      ],
+      "dietaryExclusions": [
+        "vegan",
+        "vegetarian"
       ]
     },
     {
@@ -413,6 +480,10 @@
       "foodGroupName": "Fish & Seafood",
       "allergens": [
         "fish"
+      ],
+      "dietaryExclusions": [
+        "vegan",
+        "vegetarian"
       ]
     },
     {
@@ -427,6 +498,11 @@
       "foodGroupName": "Fermented Foods",
       "allergens": [
         "milk"
+      ],
+      "dietaryExclusions": [
+        "dairy_free",
+        "low_fodmap",
+        "vegan"
       ]
     },
     {
@@ -441,6 +517,11 @@
       "foodGroupName": "Fermented Foods",
       "allergens": [
         "milk"
+      ],
+      "dietaryExclusions": [
+        "dairy_free",
+        "low_fodmap",
+        "vegan"
       ]
     },
     {
@@ -453,7 +534,10 @@
       "monograph": "FD036-sauerkraut.md",
       "foodGroup": "FG011",
       "foodGroupName": "Fermented Foods",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": [
+        "low_fodmap"
+      ]
     },
     {
       "id": "FD037",
@@ -465,7 +549,10 @@
       "monograph": "FD037-kimchi.md",
       "foodGroup": "FG011",
       "foodGroupName": "Fermented Foods",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": [
+        "low_fodmap"
+      ]
     },
     {
       "id": "FD038",
@@ -477,7 +564,8 @@
       "monograph": "FD038-turmeric.md",
       "foodGroup": "FG006",
       "foodGroupName": "Herbs & Spices",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": []
     },
     {
       "id": "FD039",
@@ -489,7 +577,8 @@
       "monograph": "FD039-ginger.md",
       "foodGroup": "FG006",
       "foodGroupName": "Herbs & Spices",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": []
     },
     {
       "id": "FD040",
@@ -501,7 +590,8 @@
       "monograph": "FD040-cinnamon.md",
       "foodGroup": "FG006",
       "foodGroupName": "Herbs & Spices",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": []
     },
     {
       "id": "FD041",
@@ -513,7 +603,8 @@
       "monograph": "FD041-rosemary.md",
       "foodGroup": "FG006",
       "foodGroupName": "Herbs & Spices",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": []
     },
     {
       "id": "FD042",
@@ -525,7 +616,8 @@
       "monograph": "FD042-oregano.md",
       "foodGroup": "FG006",
       "foodGroupName": "Herbs & Spices",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": []
     },
     {
       "id": "FD043",
@@ -537,7 +629,8 @@
       "monograph": "FD043-green-tea.md",
       "foodGroup": "FG015",
       "foodGroupName": "Beverages",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": []
     },
     {
       "id": "FD044",
@@ -549,7 +642,8 @@
       "monograph": "FD044-black-tea.md",
       "foodGroup": "FG015",
       "foodGroupName": "Beverages",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": []
     },
     {
       "id": "FD045",
@@ -561,7 +655,8 @@
       "monograph": "FD045-coffee.md",
       "foodGroup": "FG015",
       "foodGroupName": "Beverages",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": []
     },
     {
       "id": "FD046",
@@ -573,7 +668,8 @@
       "monograph": "FD046-cocoa.md",
       "foodGroup": "FG015",
       "foodGroupName": "Beverages",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": []
     },
     {
       "id": "FD047",
@@ -585,7 +681,8 @@
       "evidence": "High",
       "status": "Approved",
       "monograph": "FD047-olives.md",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": []
     },
     {
       "id": "FD048",
@@ -597,7 +694,10 @@
       "evidence": "High",
       "status": "Approved",
       "monograph": "FD048-chicory-root.md",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": [
+        "low_fodmap"
+      ]
     },
     {
       "id": "FD049",
@@ -609,7 +709,8 @@
       "evidence": "Moderate",
       "status": "Approved",
       "monograph": "FD049-spirulina.md",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": []
     },
     {
       "id": "FD050",
@@ -621,7 +722,10 @@
       "evidence": "High",
       "status": "Approved",
       "monograph": "FD050-beetroot.md",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": [
+        "low_fodmap"
+      ]
     },
     {
       "id": "FD051",
@@ -633,7 +737,8 @@
       "evidence": "Moderate",
       "status": "Approved",
       "monograph": "FD051-schisandra.md",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": []
     },
     {
       "id": "FD052",
@@ -645,7 +750,8 @@
       "evidence": "Moderate",
       "status": "Approved",
       "monograph": "FD052-rhodiola-root.md",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": []
     },
     {
       "id": "FD053",
@@ -657,7 +763,8 @@
       "evidence": "High",
       "status": "Approved",
       "monograph": "FD053-carrots.md",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": []
     },
     {
       "id": "FD054",
@@ -669,7 +776,8 @@
       "evidence": "High",
       "status": "Approved",
       "monograph": "FD054-grapefruit.md",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": []
     },
     {
       "id": "FD055",
@@ -681,7 +789,8 @@
       "evidence": "High",
       "status": "Approved",
       "monograph": "FD055-black-pepper.md",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": []
     },
     {
       "id": "FD056",
@@ -693,7 +802,8 @@
       "evidence": "High",
       "status": "Approved",
       "monograph": "FD056-chilli-peppers.md",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": []
     },
     {
       "id": "FD057",
@@ -705,7 +815,8 @@
       "evidence": "High",
       "status": "Approved",
       "monograph": "FD057-grapes.md",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": []
     },
     {
       "id": "FD058",
@@ -717,7 +828,8 @@
       "evidence": "High",
       "status": "Approved",
       "monograph": "FD058-oranges.md",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": []
     },
     {
       "id": "FD059",
@@ -729,7 +841,8 @@
       "evidence": "High",
       "status": "Approved",
       "monograph": "FD059-lemons.md",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": []
     },
     {
       "id": "FD060",
@@ -741,7 +854,8 @@
       "evidence": "High",
       "status": "Approved",
       "monograph": "FD060-mandarins.md",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": []
     },
     {
       "id": "FD061",
@@ -755,6 +869,9 @@
       "monograph": "FD061-eggs.md",
       "allergens": [
         "eggs"
+      ],
+      "dietaryExclusions": [
+        "vegan"
       ]
     },
     {
@@ -767,7 +884,8 @@
       "evidence": "High",
       "status": "Approved",
       "monograph": "FD062-pomegranate.md",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": []
     },
     {
       "id": "FD063",
@@ -779,7 +897,8 @@
       "evidence": "High",
       "status": "Approved",
       "monograph": "FD063-seaweed.md",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": []
     },
     {
       "id": "FD064",
@@ -791,7 +910,10 @@
       "evidence": "High",
       "status": "Approved",
       "monograph": "FD064-artichoke.md",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": [
+        "low_fodmap"
+      ]
     },
     {
       "id": "FD065",
@@ -805,7 +927,8 @@
       "monograph": "FD065-sesame-seeds.md",
       "allergens": [
         "sesame"
-      ]
+      ],
+      "dietaryExclusions": []
     },
     {
       "id": "FD066",
@@ -819,7 +942,8 @@
       "monograph": "FD066-sesame-oil.md",
       "allergens": [
         "sesame"
-      ]
+      ],
+      "dietaryExclusions": []
     },
     {
       "id": "FD067",
@@ -833,6 +957,9 @@
       "monograph": "FD067-soybeans.md",
       "allergens": [
         "soybeans"
+      ],
+      "dietaryExclusions": [
+        "low_fodmap"
       ]
     },
     {
@@ -847,7 +974,8 @@
       "monograph": "FD068-tofu.md",
       "allergens": [
         "soybeans"
-      ]
+      ],
+      "dietaryExclusions": []
     },
     {
       "id": "FD069",
@@ -861,7 +989,8 @@
       "monograph": "FD069-tempeh.md",
       "allergens": [
         "soybeans"
-      ]
+      ],
+      "dietaryExclusions": []
     },
     {
       "id": "FD070",
@@ -873,7 +1002,12 @@
       "evidence": "High",
       "status": "Approved",
       "monograph": "FD070-chicken-breast.md",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": [
+        "pescatarian",
+        "vegan",
+        "vegetarian"
+      ]
     },
     {
       "id": "FD071",
@@ -885,7 +1019,12 @@
       "evidence": "High",
       "status": "Approved",
       "monograph": "FD071-turkey.md",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": [
+        "pescatarian",
+        "vegan",
+        "vegetarian"
+      ]
     },
     {
       "id": "FD072",
@@ -897,7 +1036,13 @@
       "evidence": "High",
       "status": "Approved",
       "monograph": "FD072-lean-beef.md",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": [
+        "no_red_meat",
+        "pescatarian",
+        "vegan",
+        "vegetarian"
+      ]
     },
     {
       "id": "FD073",
@@ -911,6 +1056,11 @@
       "monograph": "FD073-milk.md",
       "allergens": [
         "milk"
+      ],
+      "dietaryExclusions": [
+        "dairy_free",
+        "low_fodmap",
+        "vegan"
       ]
     },
     {
@@ -925,6 +1075,10 @@
       "monograph": "FD074-cheddar-cheese.md",
       "allergens": [
         "milk"
+      ],
+      "dietaryExclusions": [
+        "dairy_free",
+        "vegan"
       ]
     },
     {
@@ -939,6 +1093,11 @@
       "monograph": "FD075-cottage-cheese.md",
       "allergens": [
         "milk"
+      ],
+      "dietaryExclusions": [
+        "dairy_free",
+        "low_fodmap",
+        "vegan"
       ]
     },
     {
@@ -951,7 +1110,10 @@
       "evidence": "Moderate",
       "status": "Approved",
       "monograph": "FD076-oat-milk.md",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": [
+        "low_fodmap"
+      ]
     },
     {
       "id": "FD077",
@@ -963,7 +1125,8 @@
       "evidence": "Moderate",
       "status": "Approved",
       "monograph": "FD077-almond-milk.md",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": []
     },
     {
       "id": "FD078",
@@ -977,6 +1140,9 @@
       "monograph": "FD078-soy-milk.md",
       "allergens": [
         "soybeans"
+      ],
+      "dietaryExclusions": [
+        "low_fodmap"
       ]
     },
     {
@@ -989,7 +1155,8 @@
       "evidence": "High",
       "status": "Approved",
       "monograph": "FD079-brown-rice.md",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": []
     },
     {
       "id": "FD080",
@@ -1001,7 +1168,8 @@
       "evidence": "High",
       "status": "Approved",
       "monograph": "FD080-quinoa.md",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": []
     },
     {
       "id": "FD081",
@@ -1015,6 +1183,10 @@
       "monograph": "FD081-barley.md",
       "allergens": [
         "gluten"
+      ],
+      "dietaryExclusions": [
+        "gluten_free",
+        "low_fodmap"
       ]
     },
     {
@@ -1027,7 +1199,8 @@
       "evidence": "Moderate",
       "status": "Approved",
       "monograph": "FD082-buckwheat.md",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": []
     },
     {
       "id": "FD083",
@@ -1041,7 +1214,8 @@
       "monograph": "FD083-peanuts.md",
       "allergens": [
         "peanuts"
-      ]
+      ],
+      "dietaryExclusions": []
     },
     {
       "id": "FD084",
@@ -1053,7 +1227,10 @@
       "evidence": "High",
       "status": "Approved",
       "monograph": "FD084-apples.md",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": [
+        "low_fodmap"
+      ]
     },
     {
       "id": "FD085",
@@ -1065,7 +1242,8 @@
       "evidence": "High",
       "status": "Approved",
       "monograph": "FD085-bananas.md",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": []
     },
     {
       "id": "FD086",
@@ -1077,7 +1255,10 @@
       "evidence": "High",
       "status": "Approved",
       "monograph": "FD086-pears.md",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": [
+        "low_fodmap"
+      ]
     },
     {
       "id": "FD087",
@@ -1089,7 +1270,10 @@
       "evidence": "High",
       "status": "Approved",
       "monograph": "FD087-mango.md",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": [
+        "low_fodmap"
+      ]
     },
     {
       "id": "FD088",
@@ -1101,7 +1285,10 @@
       "evidence": "High",
       "status": "Approved",
       "monograph": "FD088-sweet-potato.md",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": [
+        "low_fodmap"
+      ]
     },
     {
       "id": "FD089",
@@ -1113,7 +1300,8 @@
       "evidence": "High",
       "status": "Approved",
       "monograph": "FD089-potato.md",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": []
     },
     {
       "id": "FD090",
@@ -1125,7 +1313,8 @@
       "evidence": "High",
       "status": "Approved",
       "monograph": "FD090-bell-peppers.md",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": []
     },
     {
       "id": "FD091",
@@ -1137,7 +1326,8 @@
       "evidence": "Moderate",
       "status": "Approved",
       "monograph": "FD091-cucumber.md",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": []
     },
     {
       "id": "FD092",
@@ -1149,7 +1339,10 @@
       "evidence": "High",
       "status": "Approved",
       "monograph": "FD092-peas.md",
-      "allergens": []
+      "allergens": [],
+      "dietaryExclusions": [
+        "low_fodmap"
+      ]
     }
   ]
 }

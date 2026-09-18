@@ -21,15 +21,20 @@ final class FoodResolver
     ) {}
 
     /**
-     * @param string[] $excludedAllergens Allergen slugs (matching foods.json's
-     *                                     "allergens" tags, e.g. "peanuts",
-     *                                     "gluten") to exclude from
-     *                                     recommendations entirely — sourced
-     *                                     from the person's declared food
-     *                                     allergies (assessment SAF006), never
-     *                                     from a soft dietary preference.
+     * @param string[] $excludedTags Slugs to exclude foods against, checked
+     *                                against each food's combined "allergens"
+     *                                + "dietaryExclusions" tags in
+     *                                taxonomy/foods.json. The caller merges
+     *                                two different sources into this one
+     *                                list before calling: declared allergies
+     *                                (SAF006 — e.g. "peanuts", "gluten") and
+     *                                stated dietary preferences (PF020 —
+     *                                e.g. "vegetarian", "low_fodmap"). Both
+     *                                are treated as a hard exclusion here;
+     *                                there's no "soft" version — a food
+     *                                either matches a tag or it doesn't.
      */
-    public function resolve(array $resolvedMechanisms, array $excludedAllergens = []): array
+    public function resolve(array $resolvedMechanisms, array $excludedTags = []): array
     {
         $foods = $this->loader->load(
             $this->knowledgePath . '/taxonomy/foods.json'
@@ -116,12 +121,16 @@ foreach ($bodySystemMap['bodySystems'] as $bodySystem) {
 
             $foodId = $foodRelationship['foodId'];
 
-            // Hard exclusion, not a scoring penalty — a declared allergy
-            // means this food must never be recommended, regardless of how
-            // well it otherwise matches the person's mechanisms.
-            $foodAllergens = $foodLookup[$foodId]['allergens'] ?? [];
+            // Hard exclusion, not a scoring penalty — a declared allergy or
+            // stated dietary preference means this food must never be
+            // recommended, regardless of how well it otherwise matches the
+            // person's mechanisms.
+            $foodTags = array_merge(
+                $foodLookup[$foodId]['allergens'] ?? [],
+                $foodLookup[$foodId]['dietaryExclusions'] ?? []
+            );
 
-            if ($excludedAllergens && array_intersect($foodAllergens, $excludedAllergens)) {
+            if ($excludedTags && array_intersect($foodTags, $excludedTags)) {
                 continue;
             }
 

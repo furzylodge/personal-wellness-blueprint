@@ -112,10 +112,8 @@ $assessment = new Assessment(
     person: $reportProfile,
     answers: $answers,
     bodySystems: [],
-    // Dietary preferences (PF020, informational only for now — see
-    // FoodResolver, which is deliberately NOT filtered by these) and
-    // declared food allergies (SAF006, which FoodResolver DOES hard-exclude
-    // foods against).
+    // Dietary preferences (PF020) and declared food allergies (SAF006) —
+    // FoodResolver hard-excludes foods against both.
     preferences: $reportProfile['dietary_preferences'] ?? [],
     restrictions: $answers['SAF006'] ?? [],
     goals: $answers['PF014'] ?? []

@@ -95,9 +95,8 @@ class ReportDataBuilder
 
         // Stored-value → display-label lookups for the masthead, so it can
         // show "Vegetarian" / "Peanuts" rather than raw slugs like
-        // "vegetarian" / "peanuts". PF020 (dietary preferences) is
-        // informational-only for now — see FoodResolver, which is
-        // deliberately NOT filtered against it, unlike allergies (SAF006).
+        // "vegetarian" / "peanuts". Both PF020 (dietary preferences) and
+        // SAF006 (allergies) are functional exclusions in FoodResolver.
         $profileFieldsFile = $this->locator->getKnowledgebaseDirectory() . '/assessment/profile-fields.json';
 
         if (file_exists($profileFieldsFile)) {
@@ -196,7 +195,12 @@ $nutrientResolver = new NutrientResolver(
 );
 
 $bioactives = $bioactiveResolver->resolve($mechanisms);
-$foodResults = $foodResolver->resolve($mechanisms, $assessment->restrictions ?? []);
+// Allergies (restrictions) and dietary preferences are now BOTH functional
+// exclusions — foods.json tags every food against both vocabularies
+// (allergens + dietaryExclusions), so FoodResolver just needs one combined
+// list of slugs to check a food's tags against.
+$excludedFoodTags = array_merge($assessment->restrictions ?? [], $assessment->preferences ?? []);
+$foodResults = $foodResolver->resolve($mechanisms, $excludedFoodTags);
 
 $vitamins = $nutrientResolver->resolve($mechanisms, 'vitamin');
 $minerals = $nutrientResolver->resolve($mechanisms, 'mineral');
@@ -310,8 +314,8 @@ $dashboard = $this->buildDashboard(
 		'client' => [
         'firstName' => trim((string) ($assessment->person['first_name'] ?? '')) ?: 'there',
         'lastName'  => trim((string) ($assessment->person['last_name'] ?? '')),
-        // Informational only — see FoodResolver for why allergies (not
-        // preferences) are the ones that actually change recommendations.
+        // Both of these are functional exclusions in FoodResolver now —
+        // see taxonomy/foods.json's "allergens"/"dietaryExclusions" fields.
         'dietaryPreferences' => array_map(
             fn($slug) => $this->dietaryPreferenceLabels[$slug] ?? $slug,
             $assessment->preferences ?? []

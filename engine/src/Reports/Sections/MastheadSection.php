@@ -16,11 +16,12 @@ namespace PWB\Reports\Sections;
  * below, and showing them twice would recreate the "too many competing
  * things at the top" problem this replaces.
  *
- * Dietary preferences (PF020) are informational only — they're shown here
- * for context but don't change which foods get recommended (see
- * FoodResolver). Allergies (SAF006) DO change recommendations — FoodResolver
- * hard-excludes any food tagged with a declared allergen — so they're
- * styled distinctly here as a safety-relevant fact, not just a preference.
+ * Both dietary preferences (PF020) and allergies (SAF006) are functional —
+ * FoodResolver hard-excludes any food tagged against either (see
+ * taxonomy/foods.json's "allergens" and "dietaryExclusions" fields) — but
+ * allergies stay visually distinct (red) here because they're a safety
+ * fact, not a lifestyle choice: getting one wrong has very different
+ * consequences than getting a preference wrong.
  */
 class MastheadSection
 {
