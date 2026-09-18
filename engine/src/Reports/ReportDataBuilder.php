@@ -213,6 +213,7 @@ $productResults = $productResolver->resolve($mechanisms, $excludedFoodTags);
 
 foreach ($productResults as &$product) {
     $product['whySelected'] = $this->buildProductWhySelected($product);
+    $product['mechanisms'] = $this->buildProductMechanisms($product);
 }
 unset($product);
 
@@ -837,6 +838,40 @@ $system['summary'] =
         $last = array_pop($items);
 
         return implode(', ', $items) . ' and ' . $last;
+    }
+
+    /**
+     * Resolves a product's top matched mechanisms into full records
+     * (plainEnglish/whyItMatters/evidence/tooltip) via mechanismLookup, in
+     * exactly the same shape enrichBioactives() builds for bioactives —
+     * so ProductSection can reuse MechanismPopover unchanged for the
+     * "Key Nutritional Pathways" chips on the Recommended Products cards.
+     */
+    private function buildProductMechanisms(array $product): array
+    {
+        $mechanisms = [];
+
+        foreach (array_slice($product['matchedMechanisms'] ?? [], 0, 3) as $m) {
+
+            $mechanismId = $m['id'] ?? null;
+
+            if (!$mechanismId || !isset($this->mechanismLookup[$mechanismId])) {
+                continue;
+            }
+
+            $resolved = $this->mechanismLookup[$mechanismId];
+
+            $mechanisms[] = [
+                'id'           => $mechanismId,
+                'name'         => $resolved['mechanismName'] ?? $m['name'],
+                'plainEnglish' => $resolved['plainEnglish'] ?? '',
+                'whyItMatters' => $resolved['whyItMatters'] ?? '',
+                'tooltip'      => $resolved['tooltip'] ?? '',
+                'evidence'     => $resolved['evidence'] ?? '',
+            ];
+        }
+
+        return $mechanisms;
     }
 
     /**

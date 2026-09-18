@@ -9,9 +9,9 @@ use PWB\Reports\Sections\FoodSection;
 use PWB\Reports\Sections\BodySystemsSection;
 use PWB\Reports\Sections\ActionPlanSection;
 use PWB\Reports\Sections\BioactiveSection;
+use PWB\Reports\Sections\ProductSection;
 use PWB\Reports\Sections\VitaminSection;
 use PWB\Reports\Sections\MineralSection;
-use PWB\Reports\Components\ScopeBanner;
 
 class ReportBuilder
 {
@@ -39,18 +39,22 @@ $dashboardSection = new DashboardSection();
 $foodSection = new FoodSection();
 $bodySystemsSection = new BodySystemsSection();
 $bioactiveSection = new BioactiveSection();
+$productSection = new ProductSection();
 //$vitaminSection = new VitaminSection();
 //$mineralSection = new MineralSection();
 //$actionPlanSection = new ActionPlanSection();
 
+// ScopeBanner ("The Depth Behind Your Results") is now rendered inline
+// inside MastheadSection, alongside the greeting rather than as its own
+// full-width block — see that class's docblock for why.
 $html .= $mastheadSection->render($reportData);
-$html .= ScopeBanner::render($reportData['scope'] ?? []);
 $html .= $dashboardSection->render($reportData['dashboard'] ?? []);
 $html .= $foodSection->render($reportData);
 $html .= $bodySystemsSection->render(
     $reportData['bodySystems']
 );
 $html .= $bioactiveSection->render($reportData);
+$html .= $productSection->render($reportData);
 //$html .= $vitaminSection->render($reportData);
 //$html .= $mineralSection->render($reportData);
 //$html .= $actionPlanSection->render($reportData);

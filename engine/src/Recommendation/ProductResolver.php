@@ -279,6 +279,7 @@ final class ProductResolver
                     ? round($product['cost'] / (int) floor($servingsPerContainer / $servingsPerDay), 2)
                     : null,
                 'shopUrl'           => $product['shopUrl'] ?? null,
+                'factsheetUrl'      => $product['factsheetUrl'] ?? null,
                 'allergens'         => $product['allergens'] ?? [],
                 'dietaryExclusions' => $product['dietaryExclusions'] ?? [],
                 'clinicalScore' => round($clinicalScore, 2),

@@ -28,10 +28,10 @@ final class ScopeBanner
         $items = [
             [$scope['questions'] ?? 0, 'Questions asked'],
             [$scope['foods'] ?? 0, 'Foods analysed'],
-            [$scope['bodySystems'] ?? 0, 'Body systems mapped'],
-            [$scope['mechanisms'] ?? 0, 'Pathways modelled'],
-            [$scope['bioactives'] ?? 0, 'Bioactives tracked'],
-            [$scope['nutrients'] ?? 0, 'Nutrients scored'],
+            [$scope['bodySystems'] ?? 0, 'Body systems reviewed'],
+            [$scope['mechanisms'] ?? 0, 'Nutritional pathways modelled'],
+            [$scope['bioactives'] ?? 0, 'Bioactive mechanisms mapped'],
+            [$scope['nutrients'] ?? 0, 'Vitamins & minerals scored'],
         ];
 
         $cells = '';

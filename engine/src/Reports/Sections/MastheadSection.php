@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace PWB\Reports\Sections;
 
 use PWB\Reports\Components\ExplainerPopover;
+use PWB\Reports\Components\ScopeBanner;
 
 /**
  * The report's opening header: replaces the old "Personal Wellness
@@ -24,6 +25,15 @@ use PWB\Reports\Components\ExplainerPopover;
  * allergies stay visually distinct (red) here because they're a safety
  * fact, not a lifestyle choice: getting one wrong has very different
  * consequences than getting a preference wrong.
+ *
+ * "The Depth Behind Your Results" (ScopeBanner) now renders inline in the
+ * spare space to the right of the greeting, rather than as its own
+ * full-width block below — the greeting text rarely fills the card's
+ * width, and stacking the two pushed the actual Wellness Snapshot further
+ * down the page than it needed to be. ScopeBanner's own markup/CSS is
+ * untouched (the questionnaire welcome page still uses it full-width) —
+ * this just nests it and overrides sizing via `.report-masthead
+ * .scope-banner` in CSS, scoped to this context only.
  */
 class MastheadSection
 {
@@ -50,11 +60,30 @@ class MastheadSection
             ? '<div class="masthead-tags">' . $tags . ExplainerPopover::foodExclusions('masthead') . '</div>'
             : '';
 
-        return '
+        $scopeHtml = ScopeBanner::render($reportData['scope'] ?? []);
+
+        // Falls back to the plain single-column header when there's no
+        // scope data to show (an edge case — ScopeStats failed, or an
+        // empty knowledgebase) rather than leaving a lopsided empty column.
+        if ($scopeHtml === '') {
+            return '
         <header class="report-masthead">
             <div class="masthead-kicker">Personal Wellness Blueprint</div>
             <h1 class="masthead-greeting">Hi ' . $firstName . '</h1>
             <p class="masthead-subtitle">Here\'s a personalised look at what your answers reveal, and where to focus first.</p>' . $tagsHtml . '
+        </header>';
+        }
+
+        return '
+        <header class="report-masthead">
+            <div class="masthead-row">
+                <div class="masthead-main">
+                    <div class="masthead-kicker">Personal Wellness Blueprint</div>
+                    <h1 class="masthead-greeting">Hi ' . $firstName . '</h1>
+                    <p class="masthead-subtitle">Here\'s a personalised look at what your answers reveal, and where to focus first.</p>' . $tagsHtml . '
+                </div>
+                <div class="masthead-scope">' . $scopeHtml . '</div>
+            </div>
         </header>';
     }
 }

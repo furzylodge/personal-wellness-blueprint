@@ -48,6 +48,10 @@
             "type": "string",
             "description": "Link to this product's page in the Synergy shop, used by the report's 'more information' link. Currently a bare product URL; once the consultant/team-member feature is built, the consultant's id will be appended as a query parameter so the shop and any follow-up email are personalised to whoever sent the report."
           },
+          "factsheetUrl": {
+            "type": "string",
+            "description": "Link to a downloadable PDF factsheet for this product, offered from the 'More about' expander on the Recommended Products section of the report."
+          },
           "allergens": {
             "type": "array",
             "items": {

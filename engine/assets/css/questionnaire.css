@@ -616,6 +616,75 @@ border-left:4px solid var(--primary);
     margin-top:16px;
 }
 
+/* Greeting + "depth behind your results" side by side — the greeting
+   column rarely uses the card's full width on its own, so the scope grid
+   fills that space instead of sitting stacked underneath, which just
+   pushed the actual Wellness Snapshot further down the page. */
+.masthead-row{
+    display:flex;
+    align-items:center;
+    gap:32px;
+}
+
+.masthead-main{
+    flex:1 1 380px;
+    min-width:0;
+}
+
+.masthead-scope{
+    flex:0 0 420px;
+    max-width:100%;
+}
+
+/* Compact override of the shared .scope-banner/.scope-stat styling (see
+   ScopeBanner.php) for this narrower, side-by-side context only — the
+   questionnaire welcome page's own full-width use of the same component
+   is untouched since these rules are scoped under .report-masthead. */
+.report-masthead .scope-banner{
+    margin:0;
+    padding:16px 16px 18px;
+    border-radius:16px;
+}
+
+.report-masthead .scope-banner-label{
+    font-size:.68rem;
+    margin-bottom:.7rem;
+}
+
+.report-masthead .scope-banner-grid{
+    gap:.5rem;
+}
+
+.report-masthead .scope-stat{
+    padding:.55rem .3rem;
+    border-radius:10px;
+}
+
+.report-masthead .scope-stat strong{
+    font-size:1.15rem;
+    margin-bottom:.1rem;
+}
+
+.report-masthead .scope-stat span{
+    font-size:.62rem;
+    line-height:1.2;
+}
+
+.report-masthead .scope-stat-you strong{
+    font-size:1.35rem;
+}
+
+@media (max-width:900px){
+    .masthead-row{
+        flex-direction:column;
+        align-items:stretch;
+    }
+
+    .masthead-scope{
+        flex:1 1 auto;
+    }
+}
+
 .masthead-tag{
     display:inline-flex;
     align-items:center;
@@ -1909,6 +1978,24 @@ color:var(--report-chip-text);
     margin:10px 0 0;
     color:var(--text-secondary);
     line-height:1.6;
+}
+
+/* Factsheet download link, inside a product card's "More about" expander
+   (ProductSection) only — bioactives have no equivalent, so this sits
+   alongside .bioactive-more rather than as a variant of it. */
+.factsheet-link{
+    display:inline-block;
+    margin-top:10px;
+    font-size:13.5px;
+    font-weight:600;
+    color:var(--primary);
+    text-decoration:none;
+    border-bottom:1px solid var(--primary);
+    padding-bottom:1px;
+}
+
+.factsheet-link:hover{
+    opacity:.8;
 }
 
 .mechanism-chip-row{

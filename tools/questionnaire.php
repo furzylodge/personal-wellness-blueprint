@@ -349,22 +349,22 @@ $reviewData = [
 
         <div class="scope-stat">
             <strong><?= number_format($scope['bodySystems']) ?></strong>
-            <span>Body systems mapped</span>
+            <span>Body systems reviewed</span>
         </div>
 
         <div class="scope-stat">
             <strong><?= number_format($scope['mechanisms']) ?></strong>
-            <span>Pathways modelled</span>
+            <span>Nutritional pathways modelled</span>
         </div>
 
         <div class="scope-stat">
             <strong><?= number_format($scope['bioactives']) ?></strong>
-            <span>Bioactives tracked</span>
+            <span>Bioactive mechanisms mapped</span>
         </div>
 
         <div class="scope-stat">
             <strong><?= number_format($scope['nutrients']) ?></strong>
-            <span>Nutrients scored</span>
+            <span>Vitamins &amp; minerals scored</span>
         </div>
 
         <div class="scope-stat scope-stat-highlight">
