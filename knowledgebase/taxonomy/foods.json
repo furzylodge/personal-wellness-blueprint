@@ -12,7 +12,10 @@
       "foodGroupName": "Wholegrains",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD001-oats.md"
+      "monograph": "FD001-oats.md",
+      "allergens": [
+        "gluten"
+      ]
     },
     {
       "id": "FD002",
@@ -23,7 +26,8 @@
       "foodGroupName": "Fruit",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD002-blueberries.md"
+      "monograph": "FD002-blueberries.md",
+      "allergens": []
     },
     {
       "id": "FD003",
@@ -34,18 +38,20 @@
       "foodGroupName": "Fruit",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD003-blackberries.md"
+      "monograph": "FD003-blackberries.md",
+      "allergens": []
     },
     {
       "id": "FD004",
       "name": "Strawberries",
-      "scientificName": "Fragaria \u00d7 ananassa",
+      "scientificName": "Fragaria × ananassa",
       "slug": "strawberries",
       "foodGroup": "FG003",
       "foodGroupName": "Fruit",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD004-strawberries.md"
+      "monograph": "FD004-strawberries.md",
+      "allergens": []
     },
     {
       "id": "FD005",
@@ -56,7 +62,8 @@
       "foodGroupName": "Fruit",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD005-raspberries.md"
+      "monograph": "FD005-raspberries.md",
+      "allergens": []
     },
     {
       "id": "FD006",
@@ -67,7 +74,8 @@
       "foodGroupName": "Vegetables",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD006-spinach.md"
+      "monograph": "FD006-spinach.md",
+      "allergens": []
     },
     {
       "id": "FD007",
@@ -78,7 +86,8 @@
       "foodGroupName": "Vegetables",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD007-kale.md"
+      "monograph": "FD007-kale.md",
+      "allergens": []
     },
     {
       "id": "FD008",
@@ -89,7 +98,8 @@
       "foodGroupName": "Vegetables",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD008-watercress.md"
+      "monograph": "FD008-watercress.md",
+      "allergens": []
     },
     {
       "id": "FD009",
@@ -100,7 +110,8 @@
       "foodGroupName": "Vegetables",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD009-swiss-chard.md"
+      "monograph": "FD009-swiss-chard.md",
+      "allergens": []
     },
     {
       "id": "FD010",
@@ -111,7 +122,8 @@
       "foodGroupName": "Vegetables",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD010-broccoli.md"
+      "monograph": "FD010-broccoli.md",
+      "allergens": []
     },
     {
       "id": "FD011",
@@ -122,7 +134,8 @@
       "foodGroupName": "Vegetables",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD011-brussels-sprouts.md"
+      "monograph": "FD011-brussels-sprouts.md",
+      "allergens": []
     },
     {
       "id": "FD012",
@@ -133,7 +146,8 @@
       "foodGroupName": "Vegetables",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD012-cauliflower.md"
+      "monograph": "FD012-cauliflower.md",
+      "allergens": []
     },
     {
       "id": "FD013",
@@ -144,7 +158,8 @@
       "foodGroupName": "Vegetables",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD013-cabbage.md"
+      "monograph": "FD013-cabbage.md",
+      "allergens": []
     },
     {
       "id": "FD014",
@@ -155,7 +170,8 @@
       "foodGroupName": "Beans & Legumes",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD014-lentils.md"
+      "monograph": "FD014-lentils.md",
+      "allergens": []
     },
     {
       "id": "FD015",
@@ -166,7 +182,8 @@
       "foodGroupName": "Beans & Legumes",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD015-chickpeas.md"
+      "monograph": "FD015-chickpeas.md",
+      "allergens": []
     },
     {
       "id": "FD016",
@@ -177,7 +194,8 @@
       "foodGroupName": "Beans & Legumes",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD016-black-beans.md"
+      "monograph": "FD016-black-beans.md",
+      "allergens": []
     },
     {
       "id": "FD017",
@@ -188,7 +206,8 @@
       "foodGroupName": "Beans & Legumes",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD017-kidney-beans.md"
+      "monograph": "FD017-kidney-beans.md",
+      "allergens": []
     },
     {
       "id": "FD018",
@@ -199,7 +218,10 @@
       "foodGroupName": "Nuts & Seeds",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD018-walnuts.md"
+      "monograph": "FD018-walnuts.md",
+      "allergens": [
+        "tree_nuts"
+      ]
     },
     {
       "id": "FD019",
@@ -210,7 +232,10 @@
       "foodGroupName": "Nuts & Seeds",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD019-almonds.md"
+      "monograph": "FD019-almonds.md",
+      "allergens": [
+        "tree_nuts"
+      ]
     },
     {
       "id": "FD020",
@@ -221,7 +246,8 @@
       "foodGroupName": "Nuts & Seeds",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD020-pumpkin-seeds.md"
+      "monograph": "FD020-pumpkin-seeds.md",
+      "allergens": []
     },
     {
       "id": "FD021",
@@ -232,7 +258,8 @@
       "foodGroupName": "Nuts & Seeds",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD021-chia-seeds.md"
+      "monograph": "FD021-chia-seeds.md",
+      "allergens": []
     },
     {
       "id": "FD022",
@@ -243,7 +270,8 @@
       "foodGroupName": "Nuts & Seeds",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD022-flaxseed.md"
+      "monograph": "FD022-flaxseed.md",
+      "allergens": []
     },
     {
       "id": "FD023",
@@ -254,7 +282,10 @@
       "foodGroupName": "Nuts & Seeds",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD023-brazil-nuts.md"
+      "monograph": "FD023-brazil-nuts.md",
+      "allergens": [
+        "tree_nuts"
+      ]
     },
     {
       "id": "FD024",
@@ -265,7 +296,8 @@
       "foodGroupName": "Oils & Fats",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD024-extra-virgin-olive-oil.md"
+      "monograph": "FD024-extra-virgin-olive-oil.md",
+      "allergens": []
     },
     {
       "id": "FD025",
@@ -276,7 +308,8 @@
       "foodGroupName": "Herbs & Spices",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD025-garlic.md"
+      "monograph": "FD025-garlic.md",
+      "allergens": []
     },
     {
       "id": "FD026",
@@ -287,7 +320,8 @@
       "foodGroupName": "Vegetables",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD026-onions.md"
+      "monograph": "FD026-onions.md",
+      "allergens": []
     },
     {
       "id": "FD027",
@@ -298,7 +332,8 @@
       "foodGroupName": "Vegetables",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD027-tomatoes.md"
+      "monograph": "FD027-tomatoes.md",
+      "allergens": []
     },
     {
       "id": "FD028",
@@ -309,7 +344,8 @@
       "foodGroupName": "Fruit",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD028-avocados.md"
+      "monograph": "FD028-avocados.md",
+      "allergens": []
     },
     {
       "id": "FD029",
@@ -320,7 +356,8 @@
       "foodGroupName": "Vegetables",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD029-mushrooms.md"
+      "monograph": "FD029-mushrooms.md",
+      "allergens": []
     },
     {
       "id": "FD030",
@@ -331,7 +368,10 @@
       "status": "Approved",
       "monograph": "FD030-salmon.md",
       "foodGroup": "FG007",
-      "foodGroupName": "Fish & Seafood"
+      "foodGroupName": "Fish & Seafood",
+      "allergens": [
+        "fish"
+      ]
     },
     {
       "id": "FD031",
@@ -342,7 +382,10 @@
       "status": "Approved",
       "monograph": "FD031-sardines.md",
       "foodGroup": "FG007",
-      "foodGroupName": "Fish & Seafood"
+      "foodGroupName": "Fish & Seafood",
+      "allergens": [
+        "fish"
+      ]
     },
     {
       "id": "FD032",
@@ -353,7 +396,10 @@
       "status": "Approved",
       "monograph": "FD032-mackerel.md",
       "foodGroup": "FG007",
-      "foodGroupName": "Fish & Seafood"
+      "foodGroupName": "Fish & Seafood",
+      "allergens": [
+        "fish"
+      ]
     },
     {
       "id": "FD033",
@@ -364,7 +410,10 @@
       "status": "Approved",
       "monograph": "FD033-herring.md",
       "foodGroup": "FG007",
-      "foodGroupName": "Fish & Seafood"
+      "foodGroupName": "Fish & Seafood",
+      "allergens": [
+        "fish"
+      ]
     },
     {
       "id": "FD034",
@@ -375,7 +424,10 @@
       "status": "Approved",
       "monograph": "FD034-kefir.md",
       "foodGroup": "FG011",
-      "foodGroupName": "Fermented Foods"
+      "foodGroupName": "Fermented Foods",
+      "allergens": [
+        "milk"
+      ]
     },
     {
       "id": "FD035",
@@ -386,7 +438,10 @@
       "status": "Approved",
       "monograph": "FD035-live-yoghurt.md",
       "foodGroup": "FG011",
-      "foodGroupName": "Fermented Foods"
+      "foodGroupName": "Fermented Foods",
+      "allergens": [
+        "milk"
+      ]
     },
     {
       "id": "FD036",
@@ -397,7 +452,8 @@
       "status": "Approved",
       "monograph": "FD036-sauerkraut.md",
       "foodGroup": "FG011",
-      "foodGroupName": "Fermented Foods"
+      "foodGroupName": "Fermented Foods",
+      "allergens": []
     },
     {
       "id": "FD037",
@@ -408,7 +464,8 @@
       "status": "Approved",
       "monograph": "FD037-kimchi.md",
       "foodGroup": "FG011",
-      "foodGroupName": "Fermented Foods"
+      "foodGroupName": "Fermented Foods",
+      "allergens": []
     },
     {
       "id": "FD038",
@@ -419,7 +476,8 @@
       "status": "Approved",
       "monograph": "FD038-turmeric.md",
       "foodGroup": "FG006",
-      "foodGroupName": "Herbs & Spices"
+      "foodGroupName": "Herbs & Spices",
+      "allergens": []
     },
     {
       "id": "FD039",
@@ -430,7 +488,8 @@
       "status": "Approved",
       "monograph": "FD039-ginger.md",
       "foodGroup": "FG006",
-      "foodGroupName": "Herbs & Spices"
+      "foodGroupName": "Herbs & Spices",
+      "allergens": []
     },
     {
       "id": "FD040",
@@ -441,7 +500,8 @@
       "status": "Approved",
       "monograph": "FD040-cinnamon.md",
       "foodGroup": "FG006",
-      "foodGroupName": "Herbs & Spices"
+      "foodGroupName": "Herbs & Spices",
+      "allergens": []
     },
     {
       "id": "FD041",
@@ -452,7 +512,8 @@
       "status": "Approved",
       "monograph": "FD041-rosemary.md",
       "foodGroup": "FG006",
-      "foodGroupName": "Herbs & Spices"
+      "foodGroupName": "Herbs & Spices",
+      "allergens": []
     },
     {
       "id": "FD042",
@@ -463,7 +524,8 @@
       "status": "Approved",
       "monograph": "FD042-oregano.md",
       "foodGroup": "FG006",
-      "foodGroupName": "Herbs & Spices"
+      "foodGroupName": "Herbs & Spices",
+      "allergens": []
     },
     {
       "id": "FD043",
@@ -474,7 +536,8 @@
       "status": "Approved",
       "monograph": "FD043-green-tea.md",
       "foodGroup": "FG015",
-      "foodGroupName": "Beverages"
+      "foodGroupName": "Beverages",
+      "allergens": []
     },
     {
       "id": "FD044",
@@ -485,7 +548,8 @@
       "status": "Approved",
       "monograph": "FD044-black-tea.md",
       "foodGroup": "FG015",
-      "foodGroupName": "Beverages"
+      "foodGroupName": "Beverages",
+      "allergens": []
     },
     {
       "id": "FD045",
@@ -496,7 +560,8 @@
       "status": "Approved",
       "monograph": "FD045-coffee.md",
       "foodGroup": "FG015",
-      "foodGroupName": "Beverages"
+      "foodGroupName": "Beverages",
+      "allergens": []
     },
     {
       "id": "FD046",
@@ -507,7 +572,8 @@
       "status": "Approved",
       "monograph": "FD046-cocoa.md",
       "foodGroup": "FG015",
-      "foodGroupName": "Beverages"
+      "foodGroupName": "Beverages",
+      "allergens": []
     },
     {
       "id": "FD047",
@@ -518,7 +584,8 @@
       "foodGroupName": "Fruit",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD047-olives.md"
+      "monograph": "FD047-olives.md",
+      "allergens": []
     },
     {
       "id": "FD048",
@@ -529,7 +596,8 @@
       "foodGroupName": "Vegetables",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD048-chicory-root.md"
+      "monograph": "FD048-chicory-root.md",
+      "allergens": []
     },
     {
       "id": "FD049",
@@ -540,7 +608,8 @@
       "foodGroupName": "Algae & Superfoods",
       "evidence": "Moderate",
       "status": "Approved",
-      "monograph": "FD049-spirulina.md"
+      "monograph": "FD049-spirulina.md",
+      "allergens": []
     },
     {
       "id": "FD050",
@@ -551,7 +620,8 @@
       "foodGroupName": "Vegetables",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD050-beetroot.md"
+      "monograph": "FD050-beetroot.md",
+      "allergens": []
     },
     {
       "id": "FD051",
@@ -562,7 +632,8 @@
       "foodGroupName": "Herbs & Spices",
       "evidence": "Moderate",
       "status": "Approved",
-      "monograph": "FD051-schisandra.md"
+      "monograph": "FD051-schisandra.md",
+      "allergens": []
     },
     {
       "id": "FD052",
@@ -573,7 +644,8 @@
       "foodGroupName": "Herbs & Spices",
       "evidence": "Moderate",
       "status": "Approved",
-      "monograph": "FD052-rhodiola-root.md"
+      "monograph": "FD052-rhodiola-root.md",
+      "allergens": []
     },
     {
       "id": "FD053",
@@ -584,18 +656,20 @@
       "foodGroupName": "Vegetables",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD053-carrots.md"
+      "monograph": "FD053-carrots.md",
+      "allergens": []
     },
     {
       "id": "FD054",
       "name": "Grapefruit",
-      "scientificName": "Citrus \u00d7 paradisi",
+      "scientificName": "Citrus × paradisi",
       "slug": "grapefruit",
       "foodGroup": "FG003",
       "foodGroupName": "Fruit",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD054-grapefruit.md"
+      "monograph": "FD054-grapefruit.md",
+      "allergens": []
     },
     {
       "id": "FD055",
@@ -606,7 +680,8 @@
       "foodGroupName": "Herbs & Spices",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD055-black-pepper.md"
+      "monograph": "FD055-black-pepper.md",
+      "allergens": []
     },
     {
       "id": "FD056",
@@ -617,7 +692,8 @@
       "foodGroupName": "Herbs & Spices",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD056-chilli-peppers.md"
+      "monograph": "FD056-chilli-peppers.md",
+      "allergens": []
     },
     {
       "id": "FD057",
@@ -628,7 +704,8 @@
       "foodGroupName": "Fruit",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD057-grapes.md"
+      "monograph": "FD057-grapes.md",
+      "allergens": []
     },
     {
       "id": "FD058",
@@ -639,7 +716,8 @@
       "foodGroupName": "Fruit",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD058-oranges.md"
+      "monograph": "FD058-oranges.md",
+      "allergens": []
     },
     {
       "id": "FD059",
@@ -650,7 +728,8 @@
       "foodGroupName": "Fruit",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD059-lemons.md"
+      "monograph": "FD059-lemons.md",
+      "allergens": []
     },
     {
       "id": "FD060",
@@ -661,7 +740,8 @@
       "foodGroupName": "Fruit",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD060-mandarins.md"
+      "monograph": "FD060-mandarins.md",
+      "allergens": []
     },
     {
       "id": "FD061",
@@ -672,7 +752,10 @@
       "foodGroupName": "Eggs",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD061-eggs.md"
+      "monograph": "FD061-eggs.md",
+      "allergens": [
+        "eggs"
+      ]
     },
     {
       "id": "FD062",
@@ -683,7 +766,8 @@
       "foodGroupName": "Fruit",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD062-pomegranate.md"
+      "monograph": "FD062-pomegranate.md",
+      "allergens": []
     },
     {
       "id": "FD063",
@@ -694,7 +778,8 @@
       "foodGroupName": "Sea Vegetables",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD063-seaweed.md"
+      "monograph": "FD063-seaweed.md",
+      "allergens": []
     },
     {
       "id": "FD064",
@@ -705,7 +790,8 @@
       "foodGroupName": "Vegetables",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD064-artichoke.md"
+      "monograph": "FD064-artichoke.md",
+      "allergens": []
     },
     {
       "id": "FD065",
@@ -716,7 +802,10 @@
       "foodGroupName": "Nuts & Seeds",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD065-sesame-seeds.md"
+      "monograph": "FD065-sesame-seeds.md",
+      "allergens": [
+        "sesame"
+      ]
     },
     {
       "id": "FD066",
@@ -727,7 +816,10 @@
       "foodGroupName": "Oils & Fats",
       "evidence": "Moderate",
       "status": "Approved",
-      "monograph": "FD066-sesame-oil.md"
+      "monograph": "FD066-sesame-oil.md",
+      "allergens": [
+        "sesame"
+      ]
     },
     {
       "id": "FD067",
@@ -738,7 +830,10 @@
       "foodGroupName": "Beans & Legumes",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD067-soybeans.md"
+      "monograph": "FD067-soybeans.md",
+      "allergens": [
+        "soybeans"
+      ]
     },
     {
       "id": "FD068",
@@ -749,7 +844,10 @@
       "foodGroupName": "Beans & Legumes",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD068-tofu.md"
+      "monograph": "FD068-tofu.md",
+      "allergens": [
+        "soybeans"
+      ]
     },
     {
       "id": "FD069",
@@ -760,7 +858,10 @@
       "foodGroupName": "Beans & Legumes",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD069-tempeh.md"
+      "monograph": "FD069-tempeh.md",
+      "allergens": [
+        "soybeans"
+      ]
     },
     {
       "id": "FD070",
@@ -771,7 +872,8 @@
       "foodGroupName": "Meat & Poultry",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD070-chicken-breast.md"
+      "monograph": "FD070-chicken-breast.md",
+      "allergens": []
     },
     {
       "id": "FD071",
@@ -782,7 +884,8 @@
       "foodGroupName": "Meat & Poultry",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD071-turkey.md"
+      "monograph": "FD071-turkey.md",
+      "allergens": []
     },
     {
       "id": "FD072",
@@ -793,7 +896,8 @@
       "foodGroupName": "Meat & Poultry",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD072-lean-beef.md"
+      "monograph": "FD072-lean-beef.md",
+      "allergens": []
     },
     {
       "id": "FD073",
@@ -804,7 +908,10 @@
       "foodGroupName": "Dairy",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD073-milk.md"
+      "monograph": "FD073-milk.md",
+      "allergens": [
+        "milk"
+      ]
     },
     {
       "id": "FD074",
@@ -815,7 +922,10 @@
       "foodGroupName": "Dairy",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD074-cheddar-cheese.md"
+      "monograph": "FD074-cheddar-cheese.md",
+      "allergens": [
+        "milk"
+      ]
     },
     {
       "id": "FD075",
@@ -826,7 +936,10 @@
       "foodGroupName": "Dairy",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD075-cottage-cheese.md"
+      "monograph": "FD075-cottage-cheese.md",
+      "allergens": [
+        "milk"
+      ]
     },
     {
       "id": "FD076",
@@ -837,7 +950,8 @@
       "foodGroupName": "Plant-Based Alternatives",
       "evidence": "Moderate",
       "status": "Approved",
-      "monograph": "FD076-oat-milk.md"
+      "monograph": "FD076-oat-milk.md",
+      "allergens": []
     },
     {
       "id": "FD077",
@@ -848,7 +962,8 @@
       "foodGroupName": "Plant-Based Alternatives",
       "evidence": "Moderate",
       "status": "Approved",
-      "monograph": "FD077-almond-milk.md"
+      "monograph": "FD077-almond-milk.md",
+      "allergens": []
     },
     {
       "id": "FD078",
@@ -859,7 +974,10 @@
       "foodGroupName": "Plant-Based Alternatives",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD078-soy-milk.md"
+      "monograph": "FD078-soy-milk.md",
+      "allergens": [
+        "soybeans"
+      ]
     },
     {
       "id": "FD079",
@@ -870,7 +988,8 @@
       "foodGroupName": "Wholegrains",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD079-brown-rice.md"
+      "monograph": "FD079-brown-rice.md",
+      "allergens": []
     },
     {
       "id": "FD080",
@@ -881,7 +1000,8 @@
       "foodGroupName": "Wholegrains",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD080-quinoa.md"
+      "monograph": "FD080-quinoa.md",
+      "allergens": []
     },
     {
       "id": "FD081",
@@ -892,7 +1012,10 @@
       "foodGroupName": "Wholegrains",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD081-barley.md"
+      "monograph": "FD081-barley.md",
+      "allergens": [
+        "gluten"
+      ]
     },
     {
       "id": "FD082",
@@ -903,7 +1026,8 @@
       "foodGroupName": "Wholegrains",
       "evidence": "Moderate",
       "status": "Approved",
-      "monograph": "FD082-buckwheat.md"
+      "monograph": "FD082-buckwheat.md",
+      "allergens": []
     },
     {
       "id": "FD083",
@@ -914,7 +1038,10 @@
       "foodGroupName": "Nuts & Seeds",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD083-peanuts.md"
+      "monograph": "FD083-peanuts.md",
+      "allergens": [
+        "peanuts"
+      ]
     },
     {
       "id": "FD084",
@@ -925,7 +1052,8 @@
       "foodGroupName": "Fruit",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD084-apples.md"
+      "monograph": "FD084-apples.md",
+      "allergens": []
     },
     {
       "id": "FD085",
@@ -936,7 +1064,8 @@
       "foodGroupName": "Fruit",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD085-bananas.md"
+      "monograph": "FD085-bananas.md",
+      "allergens": []
     },
     {
       "id": "FD086",
@@ -947,7 +1076,8 @@
       "foodGroupName": "Fruit",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD086-pears.md"
+      "monograph": "FD086-pears.md",
+      "allergens": []
     },
     {
       "id": "FD087",
@@ -958,7 +1088,8 @@
       "foodGroupName": "Fruit",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD087-mango.md"
+      "monograph": "FD087-mango.md",
+      "allergens": []
     },
     {
       "id": "FD088",
@@ -969,7 +1100,8 @@
       "foodGroupName": "Vegetables",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD088-sweet-potato.md"
+      "monograph": "FD088-sweet-potato.md",
+      "allergens": []
     },
     {
       "id": "FD089",
@@ -980,7 +1112,8 @@
       "foodGroupName": "Vegetables",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD089-potato.md"
+      "monograph": "FD089-potato.md",
+      "allergens": []
     },
     {
       "id": "FD090",
@@ -991,7 +1124,8 @@
       "foodGroupName": "Vegetables",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD090-bell-peppers.md"
+      "monograph": "FD090-bell-peppers.md",
+      "allergens": []
     },
     {
       "id": "FD091",
@@ -1002,7 +1136,8 @@
       "foodGroupName": "Vegetables",
       "evidence": "Moderate",
       "status": "Approved",
-      "monograph": "FD091-cucumber.md"
+      "monograph": "FD091-cucumber.md",
+      "allergens": []
     },
     {
       "id": "FD092",
@@ -1013,7 +1148,8 @@
       "foodGroupName": "Beans & Legumes",
       "evidence": "High",
       "status": "Approved",
-      "monograph": "FD092-peas.md"
+      "monograph": "FD092-peas.md",
+      "allergens": []
     }
   ]
 }

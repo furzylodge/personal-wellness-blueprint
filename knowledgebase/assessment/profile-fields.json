@@ -73,9 +73,10 @@
       "key": "primary_goals",
       "label": "What are your primary wellness goals?",
       "type": "multi_select",
-      "required": false,
+      "required": true,
+      "minSelections": 1,
       "maxSelections": 3,
-      "helper": "Select up to three that matter most to you.",
+      "helper": "Select at least one, up to three, that matter most to you.",
       "options": [
         {
           "value": "OUT001",
@@ -112,6 +113,53 @@
         {
           "value": "OUT009",
           "label": "Menopause Transition Resilience"
+        }
+      ]
+    },
+    {
+      "id": "PF020",
+      "key": "dietary_preferences",
+      "label": "Do you follow any particular way of eating?",
+      "type": "multi_select",
+      "required": false,
+      "maxSelections": 5,
+      "helper": "Optional — this is shown alongside your results so recommendations feel relevant, but doesn't change which foods are suggested yet.",
+      "options": [
+        {
+          "value": "vegetarian",
+          "label": "Vegetarian"
+        },
+        {
+          "value": "vegan",
+          "label": "Vegan"
+        },
+        {
+          "value": "pescatarian",
+          "label": "Pescatarian"
+        },
+        {
+          "value": "dairy_free",
+          "label": "Dairy-free"
+        },
+        {
+          "value": "gluten_free",
+          "label": "Gluten-free"
+        },
+        {
+          "value": "halal",
+          "label": "Halal"
+        },
+        {
+          "value": "kosher",
+          "label": "Kosher"
+        },
+        {
+          "value": "low_fodmap",
+          "label": "Low-FODMAP"
+        },
+        {
+          "value": "no_red_meat",
+          "label": "No red meat"
         }
       ]
     },

@@ -86,6 +86,16 @@ final class BioactiveResolver
                     'bioactiveId' => $bioId,
                     'name' => $bioLookup[$bioId]['name'] ?? $bioId,
                     'category' => $bioLookup[$bioId]['category'] ?? '',
+                    'subcategory' => $bioLookup[$bioId]['subcategory'] ?? '',
+                    // plainEnglish/description/primaryAction give the report
+                    // something real to say about a bioactive beyond its name
+                    // and pathway list — description is the fuller version,
+                    // plainEnglish the one-line gist, primaryAction what it
+                    // actually does day to day.
+                    'plainEnglish' => $bioLookup[$bioId]['plainEnglish'] ?? '',
+                    'description' => $bioLookup[$bioId]['description'] ?? '',
+                    'primaryAction' => $bioLookup[$bioId]['primaryAction'] ?? '',
+                    'evidence' => $bioLookup[$bioId]['evidence'] ?? '',
                     'clinicalScore' => 0,
                     'matchedMechanisms' => []
                 ];
@@ -116,8 +126,17 @@ final class BioactiveResolver
             fn($a, $b) => $b['clinicalScore'] <=> $a['clinicalScore']
         );
 
+        // clinicalScore is an open-ended decayed sum (can run into the
+        // hundreds), not a figure calibrated to 0-100 — showing it as
+        // "538/100" is misleading. reportScore expresses it relative to
+        // this person's own top-scoring bioactive instead, the same
+        // treatment FoodResolver already gives its own reportScore.
+        $topScore = $ranked[0]['clinicalScore'] ?? 0;
+        $topScore = $topScore > 0 ? $topScore : 1;
+
         foreach ($ranked as $i => &$bio) {
             $bio['rank'] = $i + 1;
+            $bio['reportScore'] = (int) round(($bio['clinicalScore'] / $topScore) * 100);
         }
 
         return $ranked;

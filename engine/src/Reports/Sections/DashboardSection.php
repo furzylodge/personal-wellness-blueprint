@@ -37,12 +37,40 @@ class DashboardSection
             <div class="dashboard-grid">';
 
         $html .= $this->renderSummary($dashboard);
-        $html .= $this->renderGoals($dashboard['goals'] ?? [], $dashboard['goalAlignment'] ?? null, $dashboard['topSystem'] ?? null);
+
+        // Goals (up to 3 chips) never needed the full dashboard width it
+        // was given before — narrowed here and paired with a dedicated
+        // "goal alignment" card so that note has room to be a real visual
+        // moment (a target graphic) rather than a single sentence tacked
+        // under the chip row.
+        $html .= '
+                <div class="dashboard-goals-row">';
+        $html .= $this->renderGoals($dashboard['goals'] ?? []);
+        $html .= $this->renderGoalAlignment($dashboard['goalAlignment'] ?? null, $dashboard['topSystem'] ?? null);
+        $html .= '
+                </div>';
+
         $html .= $this->renderHeatMap($dashboard['heatMap'] ?? []);
         $html .= $this->renderRadar($dashboard['radarSystems'] ?? []);
+        // These four "insight" cards get their own nested 4-column row
+        // rather than sharing the outer grid's fixed 2fr/1fr/1fr template,
+        // which was sized for exactly the three cards that used to live
+        // here (mechanisms/foods/bioactives) before nutrients joined them.
+        $html .= '
+                <div class="dashboard-insights-row">';
         $html .= $this->renderMechanisms($dashboard['topMechanisms'] ?? []);
         $html .= $this->renderFoods($dashboard['topFoods'] ?? []);
-        $html .= $this->renderActions($dashboard['actions'] ?? []);
+        $html .= $this->renderBioactives($dashboard['topBioactives'] ?? []);
+        $html .= $this->renderNutrients($dashboard['topNutrients'] ?? []);
+        $html .= '
+                </div>';
+        // "This Week" is deliberately not rendered here — its content
+        // (buildActionPlan()) is currently three fixed, generic lines with
+        // no connection to the person's own answers, which isn't worth the
+        // dashboard space, especially with Products coming. The data/method
+        // is left in place rather than deleted in case it's revived as a
+        // genuinely personalised feature later.
+        // $html .= $this->renderActions($dashboard['actions'] ?? []);
 
         $html .= '
             </div>
@@ -62,20 +90,14 @@ class DashboardSection
                 </div>';
     }
 
-    private function renderGoals(array $goals, ?array $goalAlignment, ?array $topSystem): string
+    private function renderGoals(array $goals): string
     {
-        // Nothing selected — skip the strip but keep a one-line note about
-        // the top priority so the card isn't just missing.
+        // Nothing selected — a short note instead of an empty chip row.
         if (empty($goals)) {
-            $note = $topSystem !== null
-                ? 'Your top priority right now is <strong>' . htmlspecialchars($topSystem['name']) . '</strong>.'
-                : 'No standout priority found yet — the detail below still applies.';
-
             return '
                 <div class="dashboard-card dashboard-goals">
                     <div class="dashboard-card-label">Your Goals</div>
                     <p class="dashboard-card-caption">You didn\'t select any wellness goals in the questionnaire.</p>
-                    <p class="goal-note">' . $note . '</p>
                 </div>';
         }
 
@@ -91,20 +113,37 @@ class DashboardSection
                         </div>';
         }
 
-        $noteText = $goalAlignment
-            ? 'Your goal of <strong>' . htmlspecialchars($goalAlignment['goalName']) . '</strong> lines up with your <strong>' . htmlspecialchars($goalAlignment['systemName']) . '</strong> priority.'
-            : ($topSystem !== null
-                ? 'Your top priority right now is <strong>' . htmlspecialchars($topSystem['name']) . '</strong>.'
-                : '');
-
-        $note = $noteText !== '' ? '<p class="goal-note">' . $noteText . '</p>' : '';
-
         return '
                 <div class="dashboard-card dashboard-goals">
                     <div class="dashboard-card-label">Your Goals</div>
-                    <p class="dashboard-card-caption">The wellness goals you chose at the start of the questionnaire.</p>
+                    <p class="dashboard-card-caption">Chosen at the start of the questionnaire.</p>
                     <div class="goal-chip-row">' . $chips . '
-                    </div>' . $note . '
+                    </div>
+                </div>';
+    }
+
+    /**
+     * The "your goal of X lines up with your Y priority" note, given its
+     * own card with a target graphic — previously a single sentence tacked
+     * under the goal chips, easy to skim past. Falls back to a plain
+     * top-priority note when there's no goal/system alignment to show (no
+     * goals selected, or none of them matched a flagged body system), and
+     * disappears entirely if there's truly nothing to say yet.
+     */
+    private function renderGoalAlignment(?array $goalAlignment, ?array $topSystem): string
+    {
+        if ($goalAlignment) {
+            $text = 'Your goal of <strong>' . htmlspecialchars($goalAlignment['goalName']) . '</strong> lines up with your <strong>' . htmlspecialchars($goalAlignment['systemName']) . '</strong> priority.';
+        } elseif ($topSystem !== null) {
+            $text = 'Your top priority right now is <strong>' . htmlspecialchars($topSystem['name']) . '</strong>.';
+        } else {
+            return '';
+        }
+
+        return '
+                <div class="dashboard-card dashboard-goal-alignment">
+                    <div class="goal-alignment-icon">' . IconLibrary::render('TARGET') . '</div>
+                    <p class="goal-alignment-text">' . $text . '</p>
                 </div>';
     }
 
@@ -154,14 +193,25 @@ class DashboardSection
      * above — the heat grid remains the precise, readable reference, this
      * is the "shape of your results at a glance" picture.
      */
+    // Matches ReportDataBuilder::buildBodySystems()'s own "Lower current
+    // focus" band boundary, so the placeholder's positive framing and the
+    // interpretation text elsewhere in the report never disagree with
+    // each other about what counts as low.
+    private const LOW_SCORE_THRESHOLD = 40;
+
     private function renderRadar(array $systems): string
     {
         $count = count($systems);
 
+        // A radar needs a handful of axes to read as a shape rather than
+        // a random polygon. Rather than just disappearing when there
+        // aren't enough, show something that still fits "Shape of Your
+        // Results": a full, rounded heart when the reason is genuinely
+        // good news (nothing scored high enough to stand out), or a
+        // single pin when it's the opposite reason — one sharp, specific
+        // priority rather than too few to plot.
         if ($count < 3) {
-            // A radar needs at least a handful of axes to read as a shape
-            // rather than a random polygon — fall back quietly.
-            return '';
+            return $this->renderRadarPlaceholder($systems);
         }
 
         $size = 300;
@@ -238,9 +288,39 @@ class DashboardSection
 
         return '
                 <div class="dashboard-card dashboard-radar">
-                    <div class="dashboard-card-label">Shape of Your Results</div>
-                    <p class="dashboard-card-caption">All of your flagged body systems in one picture — bigger reach, more areas in play.</p>
+                    <div class="dashboard-card-label">The Shape of Your Results</div>
+                    <p class="dashboard-card-caption">Every body system your answers have flagged, shown together.</p>
                     ' . $svg . '
+                </div>';
+    }
+
+    private function renderRadarPlaceholder(array $systems): string
+    {
+        $topScore = 0;
+
+        foreach ($systems as $system) {
+            $topScore = max($topScore, (int) $system['score']);
+        }
+
+        // Nothing flagged at all, or what is flagged is genuinely mild —
+        // there just isn't enough of a shape to plot, and that's good news.
+        if (empty($systems) || $topScore < self::LOW_SCORE_THRESHOLD) {
+            $icon = IconLibrary::render('SHAPE_GOOD', 'pwb-icon radar-placeholder-icon');
+            $message = 'Great news — nothing in your results stood out as a strong priority, so there isn\'t much of a shape to draw yet. A well-rounded, low-key result is exactly what we\'d hope to see here.';
+        } else {
+            // Too few systems to plot a shape, but at least one of them
+            // scored meaningfully — a single sharp priority rather than a
+            // broad pattern, so the framing should stay neutral rather
+            // than falsely reassuring.
+            $icon = IconLibrary::render('SHAPE_FOCUSED', 'pwb-icon radar-placeholder-icon');
+            $message = 'Your results are concentrated in one or two areas rather than spread across many — there isn\'t enough spread yet to draw a shape, but the detail below covers exactly where to focus.';
+        }
+
+        return '
+                <div class="dashboard-card dashboard-radar dashboard-radar-placeholder">
+                    <div class="dashboard-card-label">The Shape of Your Results</div>
+                    <div class="radar-placeholder-icon-wrap">' . $icon . '</div>
+                    <p class="radar-placeholder-message">' . htmlspecialchars($message) . '</p>
                 </div>';
     }
 
@@ -292,9 +372,63 @@ class DashboardSection
         return '
                 <div class="dashboard-card dashboard-foods">
                     <div class="dashboard-card-label">Top Foods</div>
-                    <p class="dashboard-card-caption">Scored out of 100 on how well each food matches your top pathways.</p>
+                    <p class="dashboard-card-caption">Scored out of 100 on how well each food matches your key mechanisms.</p>
                     <div class="dash-food-list">' . $chips . '
                     </div>
+                </div>';
+    }
+
+    private function renderBioactives(array $bioactives): string
+    {
+        if (empty($bioactives)) {
+            return '';
+        }
+
+        $rows = '';
+
+        foreach ($bioactives as $bioactive) {
+
+            $rows .= '
+                        <div class="bar-row">
+                            <div class="bar-row-label">' . htmlspecialchars($bioactive['name']) . '</div>
+                            <div class="bar-track">
+                                <div class="bar-fill" style="width:' . (int) $bioactive['percent'] . '%"></div>
+                            </div>
+                        </div>';
+        }
+
+        return '
+                <div class="dashboard-card dashboard-bioactives">
+                    <div class="dashboard-card-label">Key Bioactives</div>
+                    <p class="dashboard-card-caption">The plant compounds doing the most work behind your key mechanisms.</p>' . $rows . '
+                </div>';
+    }
+
+    private function renderNutrients(array $nutrients): string
+    {
+        if (empty($nutrients)) {
+            return '';
+        }
+
+        $rows = '';
+
+        foreach ($nutrients as $nutrient) {
+
+            $typeLabel = $nutrient['type'] === 'mineral' ? 'Mineral' : 'Vitamin';
+
+            $rows .= '
+                        <div class="bar-row">
+                            <div class="bar-row-label">' . htmlspecialchars($nutrient['name']) . ' <span class="nutrient-type-tag">' . $typeLabel . '</span></div>
+                            <div class="bar-track">
+                                <div class="bar-fill" style="width:' . (int) $nutrient['percent'] . '%"></div>
+                            </div>
+                        </div>';
+        }
+
+        return '
+                <div class="dashboard-card dashboard-nutrients">
+                    <div class="dashboard-card-label">Top Nutrients</div>
+                    <p class="dashboard-card-caption">The vitamins &amp; minerals your answers point to most strongly.</p>' . $rows . '
                 </div>';
     }
 
@@ -307,14 +441,20 @@ class DashboardSection
         $items = '';
 
         foreach ($actions as $action) {
-            $items .= '<li>' . htmlspecialchars($action) . '</li>';
+
+            $items .= '
+                        <div class="dash-action-item">
+                            <span class="dash-action-check">' . IconLibrary::render('CHECK', 'pwb-icon') . '</span>
+                            <span>' . htmlspecialchars($action) . '</span>
+                        </div>';
         }
 
         return '
                 <div class="dashboard-card dashboard-actions">
                     <div class="dashboard-card-label">This Week</div>
                     <p class="dashboard-card-caption">Simple starting points based on your results.</p>
-                    <ul class="dash-action-list">' . $items . '</ul>
+                    <div class="dash-action-row">' . $items . '
+                    </div>
                 </div>';
     }
 }

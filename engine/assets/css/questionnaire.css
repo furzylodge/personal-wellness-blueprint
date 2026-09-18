@@ -192,7 +192,11 @@ input[type=number]{
 
 /* Native input stays in the DOM (and in the tab order) for
    accessibility and form submission, just visually hidden —
-   the ::before/::after pseudo-elements below draw its state. */
+   the ::before/::after pseudo-elements below draw its state.
+   appearance:none + border/outline:none belt-and-suspenders this
+   against browsers/OS accessibility modes (e.g. Windows forced-colors)
+   that redraw native checkbox/radio controls over author styles even
+   when opacity/size are suppressed. */
 .radio input,
 .checkbox input{
     position:absolute;
@@ -200,6 +204,11 @@ input[type=number]{
     width:1px;
     height:1px;
     margin:0;
+    padding:0;
+    border:none;
+    outline:none;
+    appearance:none;
+    -webkit-appearance:none;
 }
 
 .radio::before,
@@ -531,6 +540,83 @@ border-left:4px solid var(--primary);
     margin: 0 auto;
     padding: 32px 24px 48px;
     box-sizing: border-box;
+}
+
+/* ======================================================
+   MASTHEAD
+   A single, tight header — brand kicker, personalised greeting, one
+   orientation line — replacing the old stacked "Personal Wellness
+   Blueprint" title / "Client: X" line / empty "Summary" heading.
+====================================================== */
+.report-masthead{
+    background:linear-gradient(135deg, var(--primary-soft), var(--surface) 70%);
+    border-radius:18px;
+    padding:36px 40px;
+    margin-bottom:28px;
+    border-bottom:3px solid var(--accent);
+}
+
+.masthead-kicker{
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    color:var(--primary);
+    margin-bottom:10px;
+}
+
+.masthead-greeting{
+    margin:0 0 8px;
+    font-size:34px;
+    line-height:1.2;
+    color:var(--text);
+}
+
+.masthead-subtitle{
+    margin:0;
+    font-size:15px;
+    line-height:1.5;
+    color:var(--text-secondary);
+    max-width:56ch;
+}
+
+.masthead-tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-top:16px;
+}
+
+.masthead-tag{
+    display:inline-flex;
+    align-items:center;
+    font-size:12.5px;
+    font-weight:600;
+    padding:5px 12px;
+    border-radius:999px;
+    background:var(--surface);
+    color:var(--text);
+    border:1px solid var(--border);
+}
+
+/* Allergies aren't just a preference — FoodResolver actively excludes
+   matching foods for these, so they're flagged in a distinct, slightly
+   more attention-grabbing style rather than blending in with the plain
+   dietary-preference tags. */
+.masthead-tag-allergy{
+    background:#fdecec;
+    color:#9c2b2b;
+    border-color:#f3c8c8;
+}
+
+@media (max-width:640px){
+    .report-masthead{
+        padding:24px 22px;
+    }
+
+    .masthead-greeting{
+        font-size:26px;
+    }
 }
 
 @media (max-width:768px){
@@ -1299,6 +1385,7 @@ background:var(--report-card-bg);
 .recommendation-header h3{
     margin:0;
     color:var(--report-heading);
+    font-size:20px;
 }
 
 .score-badge{
@@ -1331,9 +1418,12 @@ color:var(--report-chip-text);
     gap:12px;
 }
 
+/* Same footprint as .food-group-icon (22x22) so the rank number and the
+   food-group icon that sits right beside it (in Priority Foods' card
+   header) read as a matched pair rather than two different-sized circles. */
 .rank-badge{
-    width:30px;
-    height:30px;
+    width:22px;
+    height:22px;
     border-radius:50%;
     background:#2F7D4B;
     color:white;
@@ -1341,7 +1431,7 @@ color:var(--report-chip-text);
     align-items:center;
     justify-content:center;
     font-weight:700;
-    font-size:14px;
+    font-size:12px;
     flex-shrink:0;
 }
 
@@ -1607,8 +1697,8 @@ color:var(--report-chip-text);
 
 .bioactive-title h3{
     margin:0 0 4px;
-    font-size:32px;
-    line-height:1.1;
+    font-size:20px;
+    line-height:1.3;
     color:var(--text);
 }
 
@@ -1621,6 +1711,56 @@ color:var(--report-chip-text);
 
 .bioactive-summary{
     margin:0 0 18px;
+    color:var(--text-secondary);
+    line-height:1.6;
+}
+
+.bioactive-category{
+    font-size:12.5px;
+    font-weight:600;
+    color:var(--text-muted);
+    text-transform:uppercase;
+    letter-spacing:.03em;
+}
+
+.bioactive-primary-action{
+    font-size:14px;
+    font-weight:600;
+    color:var(--text);
+    background:var(--accent-soft);
+    border-left:3px solid var(--accent);
+    padding:10px 14px;
+    border-radius:8px;
+    margin:0 0 14px;
+}
+
+.tag-evidence{
+    background:var(--primary-soft);
+    color:var(--primary);
+    font-weight:700;
+}
+
+.bioactive-more{
+    margin:4px 0 16px;
+}
+
+.bioactive-more summary{
+    cursor:pointer;
+    font-size:13.5px;
+    font-weight:600;
+    color:var(--primary);
+    list-style:none;
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+}
+
+.bioactive-more summary::-webkit-details-marker{
+    display:none;
+}
+
+.bioactive-more p{
+    margin:10px 0 0;
     color:var(--text-secondary);
     line-height:1.6;
 }
@@ -1673,6 +1813,73 @@ color:var(--report-chip-text);
 
 .food-score-breakdown[open] summary::after{
     transform:rotate(90deg);
+}
+
+.expand-hint{
+    font-weight:400;
+    color:var(--text-muted);
+    font-size:12.5px;
+}
+
+/* ======================================================
+   EXPAND / COLLAPSE ("top 3, then show more")
+   Used by Priority Foods, Priority Bioactives and Your Wellness
+   Priorities so a long ranked list doesn't force a wall of scrolling
+   before the next report section — the first 3 cards stay visible,
+   the rest live behind this toggle.
+====================================================== */
+.expand-more{
+    margin-top:8px;
+}
+
+.expand-more > summary{
+    list-style:none;
+    cursor:pointer;
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:12px 20px;
+    border:1.5px solid var(--border);
+    border-radius:999px;
+    font-weight:600;
+    font-size:14px;
+    color:var(--primary);
+    background:var(--surface);
+    transition:border-color .15s ease, background .15s ease;
+}
+
+.expand-more > summary:hover{
+    border-color:var(--primary);
+    background:var(--primary-soft);
+}
+
+.expand-more > summary::-webkit-details-marker{
+    display:none;
+}
+
+.expand-more .expand-chevron{
+    display:inline-block;
+    transition:transform .15s ease;
+}
+
+.expand-more[open] .expand-chevron{
+    transform:rotate(180deg);
+}
+
+.expand-more .expand-label-open{
+    display:none;
+}
+
+.expand-more[open] .expand-label-closed{
+    display:none;
+}
+
+.expand-more[open] .expand-label-open{
+    display:inline;
+}
+
+.expand-more .expand-content{
+    margin-top:16px;
 }
 
 .score-breakdown-table{
@@ -1730,6 +1937,32 @@ color:var(--report-chip-text);
     padding:20px 22px;
 }
 
+/* Key Mechanisms / Top Foods / Key Bioactives / Top Nutrients get their own
+   nested row so a 4th card doesn't have to fight the outer grid's
+   2fr/1fr/1fr template, which was sized for exactly the 3 cards that used
+   to live here. Mechanisms keeps the wider column since its bar labels
+   ("Activates Endogenous Antioxidant Pathways") are the longest of the four. */
+.dashboard-insights-row{
+    grid-column:1 / -1;
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr 1fr;
+    gap:16px;
+}
+
+.nutrient-type-tag{
+    display:inline-block;
+    font-size:10px;
+    font-weight:700;
+    letter-spacing:.03em;
+    text-transform:uppercase;
+    color:var(--text-muted);
+    background:var(--surface-soft);
+    border-radius:4px;
+    padding:1px 5px;
+    margin-left:4px;
+    vertical-align:middle;
+}
+
 .dashboard-card-label{
     font-size:12px;
     font-weight:700;
@@ -1762,9 +1995,55 @@ color:var(--report-chip-text);
 }
 
 /* Row 2 — your goals strip (icons tying the dashboard back to the
-   questionnaire's own outcome choices) */
-.dashboard-goals{
+   questionnaire's own outcome choices), paired with a dedicated goal-
+   alignment card to its right rather than spanning the full width alone —
+   up to 3 small chips never needed that much room. */
+.dashboard-goals-row{
     grid-column:1 / -1;
+    display:grid;
+    grid-template-columns:1fr 2fr;
+    gap:16px;
+}
+
+/* If there's truly nothing to say in the alignment card (no topSystem at
+   all — only possible with an empty/edge-case assessment), let the goals
+   card take the full row rather than leaving an empty column beside it. */
+.dashboard-goals-row > .dashboard-card:only-child{
+    grid-column:1 / -1;
+}
+
+.dashboard-goal-alignment{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+.goal-alignment-icon{
+    width:64px;
+    height:64px;
+    border-radius:50%;
+    background:var(--accent-soft);
+    color:var(--accent);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-shrink:0;
+}
+
+.goal-alignment-icon .pwb-icon{
+    width:36px;
+    height:36px;
+}
+
+.goal-alignment-text{
+    margin:0;
+    font-size:15px;
+    line-height:1.55;
+    color:var(--report-body);
+}
+
+.goal-alignment-text strong{
+    color:var(--primary);
 }
 
 .goal-chip-row{
@@ -1952,6 +2231,41 @@ color:var(--report-chip-text);
     font-family:Arial, Helvetica, sans-serif;
 }
 
+/* Shown instead of the radar chart when too few body systems are flagged
+   to plot a meaningful shape — see DashboardSection::renderRadarPlaceholder. */
+.dashboard-radar-placeholder{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    justify-content:center;
+    padding-top:8px;
+}
+
+.radar-placeholder-icon-wrap{
+    width:76px;
+    height:76px;
+    border-radius:50%;
+    background:var(--primary-soft);
+    color:var(--primary);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:8px 0 16px;
+}
+
+.radar-placeholder-icon{
+    width:40px;
+    height:40px;
+}
+
+.radar-placeholder-message{
+    margin:0;
+    font-size:13px;
+    line-height:1.6;
+    color:var(--report-body);
+}
+
 /* Row 4 — mechanisms bar read-out, top foods, quick actions */
 .bar-row{
     margin-bottom:12px;
@@ -2049,21 +2363,61 @@ color:var(--report-chip-text);
     color:var(--primary);
 }
 
-.dash-action-list{
-    margin:0;
-    padding-left:18px;
-    color:var(--report-body);
-    font-size:14px;
-    line-height:1.7;
+/* "This Week" is dropped to its own full-width row below the 3-column
+   grid, laid out as a row of steps rather than a cramped bullet list now
+   that it has the room. */
+.dashboard-actions{
+    grid-column:1 / -1;
 }
 
-.dash-action-list li{
-    margin-bottom:4px;
+.dash-action-row{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:16px;
+}
+
+.dash-action-item{
+    display:flex;
+    align-items:flex-start;
+    gap:10px;
+    font-size:14px;
+    line-height:1.5;
+    color:var(--report-body);
+}
+
+.dash-action-check{
+    width:22px;
+    height:22px;
+    border-radius:50%;
+    background:var(--primary-soft);
+    color:var(--primary);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-shrink:0;
+    margin-top:1px;
+}
+
+.dash-action-check .pwb-icon{
+    width:13px;
+    height:13px;
 }
 
 @media (max-width:900px){
 
+    .dash-action-row{
+        grid-template-columns:1fr;
+    }
+
     .dashboard-grid{
+        grid-template-columns:1fr;
+    }
+
+    .dashboard-insights-row{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .dashboard-goals-row{
         grid-template-columns:1fr;
     }
 

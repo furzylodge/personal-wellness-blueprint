@@ -20,7 +20,16 @@ final class FoodResolver
         private string $knowledgePath
     ) {}
 
-    public function resolve(array $resolvedMechanisms): array
+    /**
+     * @param string[] $excludedAllergens Allergen slugs (matching foods.json's
+     *                                     "allergens" tags, e.g. "peanuts",
+     *                                     "gluten") to exclude from
+     *                                     recommendations entirely — sourced
+     *                                     from the person's declared food
+     *                                     allergies (assessment SAF006), never
+     *                                     from a soft dietary preference.
+     */
+    public function resolve(array $resolvedMechanisms, array $excludedAllergens = []): array
     {
         $foods = $this->loader->load(
             $this->knowledgePath . '/taxonomy/foods.json'
@@ -106,6 +115,15 @@ foreach ($bodySystemMap['bodySystems'] as $bodySystem) {
         foreach ($foodMechanisms['relationships'] as $foodRelationship) {
 
             $foodId = $foodRelationship['foodId'];
+
+            // Hard exclusion, not a scoring penalty — a declared allergy
+            // means this food must never be recommended, regardless of how
+            // well it otherwise matches the person's mechanisms.
+            $foodAllergens = $foodLookup[$foodId]['allergens'] ?? [];
+
+            if ($excludedAllergens && array_intersect($foodAllergens, $excludedAllergens)) {
+                continue;
+            }
 
 $total = 0;
 $matched = [];

@@ -10,18 +10,11 @@
 <body class="<?= theme-green ?>">
 <div class="report-container">
 
-<h1>Personal Wellness Blueprint</h1>
-
-<p><strong>Client:</strong> Test User</p>
-
-<h2>Summary</h2>
-
-<ul>
-
-</ul>
-
-<ul>
-
+        <header class="report-masthead">
+            <div class="masthead-kicker">Personal Wellness Blueprint</div>
+            <h1 class="masthead-greeting">Hi Alex</h1>
+            <p class="masthead-subtitle">Here's a personalised look at what your answers reveal, and where to focus first.</p><div class="masthead-tags"><span class="masthead-tag masthead-tag-allergy">Celery allergy</span></div>
+        </header>
         <section class="report-section dashboard-section">
 
             <h2>Your Wellness Snapshot</h2>
@@ -59,6 +52,12 @@
                         </div>
                     </div>
                 </div>
+                <div class="dashboard-card dashboard-radar dashboard-radar-placeholder">
+                    <div class="dashboard-card-label">The Shape of Your Results</div>
+                    <div class="radar-placeholder-icon-wrap"><svg class="pwb-icon radar-placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.2S3.8 15.3 3.8 9.4C3.8 6.4 6 4.6 8.3 4.6c1.6 0 3 .9 3.7 2.2.7-1.3 2.1-2.2 3.7-2.2 2.3 0 4.5 1.8 4.5 4.8 0 5.9-8.2 10.8-8.2 10.8Z"/></svg></div>
+                    <p class="radar-placeholder-message">Great news — nothing in your results stood out as a strong priority, so there isn&#039;t much of a shape to draw yet. A well-rounded, low-key result is exactly what we&#039;d hope to see here.</p>
+                </div>
+                <div class="dashboard-insights-row">
                 <div class="dashboard-card dashboard-mechanisms">
                     <div class="dashboard-card-label">Key Mechanisms</div>
                     <p class="dashboard-card-caption">The nutritional pathways doing the most work for your top priorities, ranked strongest first.</p>
@@ -95,7 +94,7 @@
                 </div>
                 <div class="dashboard-card dashboard-foods">
                     <div class="dashboard-card-label">Top Foods</div>
-                    <p class="dashboard-card-caption">Scored out of 100 on how well each food matches your top pathways.</p>
+                    <p class="dashboard-card-caption">Scored out of 100 on how well each food matches your key mechanisms.</p>
                     <div class="dash-food-list">
                         <div class="dash-food-chip">
                             <span class="dash-food-name"><span class="dash-food-icon"><svg class="pwb-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 9c-3-2.6-7-1-7 3.4C5 17 8 20 10.4 20c.9 0 1.1-.4 1.6-.4s.7.4 1.6.4C16 20 19 17 19 12.4 19 8 15 6.4 12 9Z"/><path d="M12 9V6.5"/><path d="M12 6.5c0-1.2.8-2 2-2"/></svg></span>Grapes</span>
@@ -119,10 +118,80 @@
                         </div>
                     </div>
                 </div>
+                <div class="dashboard-card dashboard-bioactives">
+                    <div class="dashboard-card-label">Key Bioactives</div>
+                    <p class="dashboard-card-caption">The plant compounds doing the most work behind your key mechanisms.</p>
+                        <div class="bar-row">
+                            <div class="bar-row-label">Resveratrol</div>
+                            <div class="bar-track">
+                                <div class="bar-fill" style="width:100%"></div>
+                            </div>
+                        </div>
+                        <div class="bar-row">
+                            <div class="bar-row-label">Proanthocyanidins</div>
+                            <div class="bar-track">
+                                <div class="bar-fill" style="width:56%"></div>
+                            </div>
+                        </div>
+                        <div class="bar-row">
+                            <div class="bar-row-label">Hydroxytyrosol</div>
+                            <div class="bar-track">
+                                <div class="bar-fill" style="width:54%"></div>
+                            </div>
+                        </div>
+                        <div class="bar-row">
+                            <div class="bar-row-label">D-Ribose</div>
+                            <div class="bar-track">
+                                <div class="bar-fill" style="width:51%"></div>
+                            </div>
+                        </div>
+                </div>
+                <div class="dashboard-card dashboard-nutrients">
+                    <div class="dashboard-card-label">Top Nutrients</div>
+                    <p class="dashboard-card-caption">The vitamins &amp; minerals your answers point to most strongly.</p>
+                        <div class="bar-row">
+                            <div class="bar-row-label">Vitamin C <span class="nutrient-type-tag">Vitamin</span></div>
+                            <div class="bar-track">
+                                <div class="bar-fill" style="width:100%"></div>
+                            </div>
+                        </div>
+                        <div class="bar-row">
+                            <div class="bar-row-label">Vitamin E <span class="nutrient-type-tag">Vitamin</span></div>
+                            <div class="bar-track">
+                                <div class="bar-fill" style="width:94%"></div>
+                            </div>
+                        </div>
+                        <div class="bar-row">
+                            <div class="bar-row-label">Manganese <span class="nutrient-type-tag">Mineral</span></div>
+                            <div class="bar-track">
+                                <div class="bar-fill" style="width:82%"></div>
+                            </div>
+                        </div>
+                        <div class="bar-row">
+                            <div class="bar-row-label">Vitamin B9 (Folate) <span class="nutrient-type-tag">Vitamin</span></div>
+                            <div class="bar-track">
+                                <div class="bar-fill" style="width:71%"></div>
+                            </div>
+                        </div>
+                </div>
+                </div>
                 <div class="dashboard-card dashboard-actions">
                     <div class="dashboard-card-label">This Week</div>
                     <p class="dashboard-card-caption">Simple starting points based on your results.</p>
-                    <ul class="dash-action-list"><li>Add at least one serving of oats to your breakfast.</li><li>Aim to eat one additional wholegrain food each day.</li><li>Include at least five different plant foods this week.</li></ul>
+                    <div class="dash-action-row">
+                        <div class="dash-action-item">
+                            <span class="dash-action-check"><svg class="pwb-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.6"/><path d="M8.4 12.4l2.4 2.4 4.8-5.6"/></svg></span>
+                            <span>Add at least one serving of oats to your breakfast.</span>
+                        </div>
+                        <div class="dash-action-item">
+                            <span class="dash-action-check"><svg class="pwb-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.6"/><path d="M8.4 12.4l2.4 2.4 4.8-5.6"/></svg></span>
+                            <span>Aim to eat one additional wholegrain food each day.</span>
+                        </div>
+                        <div class="dash-action-item">
+                            <span class="dash-action-check"><svg class="pwb-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.6"/><path d="M8.4 12.4l2.4 2.4 4.8-5.6"/></svg></span>
+                            <span>Include at least five different plant foods this week.</span>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -233,7 +302,7 @@ These foods have been prioritised because they best support the highest-scoring 
 </div>
 <div class="body-label" style="margin-top:14px;">PHYSIOLOGICAL SYSTEMS</div><div class="tag-row"><span class="tag">Immune</span><span class="tag">Respiratory</span><span class="tag">Circulatory</span></div>
 <details class="food-score-breakdown">
-    <summary>Why this was recommended</summary>
+    <summary>Why this was recommended <span class="expand-hint">(click to see the full breakdown)</span></summary>
 
     <div class="score-breakdown-intro">
         These values show how each nutritional pathway contributed to this foods Explainable Recommendation Score.
@@ -364,7 +433,7 @@ These foods have been prioritised because they best support the highest-scoring 
 </div>
 <div class="body-label" style="margin-top:14px;">PHYSIOLOGICAL SYSTEMS</div><div class="tag-row"><span class="tag">Immune</span><span class="tag">Respiratory</span></div>
 <details class="food-score-breakdown">
-    <summary>Why this was recommended</summary>
+    <summary>Why this was recommended <span class="expand-hint">(click to see the full breakdown)</span></summary>
 
     <div class="score-breakdown-intro">
         These values show how each nutritional pathway contributed to this foods Explainable Recommendation Score.
@@ -491,7 +560,7 @@ These foods have been prioritised because they best support the highest-scoring 
 </div>
 <div class="tag-row"><span class="tag">Oleic Acid</span><span class="tag">Hydroxytyrosol and Oleocanthal</span></div><div class="body-label" style="margin-top:14px;">PHYSIOLOGICAL SYSTEMS</div><div class="tag-row"><span class="tag">Immune</span><span class="tag">Respiratory</span></div>
 <details class="food-score-breakdown">
-    <summary>Why this was recommended</summary>
+    <summary>Why this was recommended <span class="expand-hint">(click to see the full breakdown)</span></summary>
 
     <div class="score-breakdown-intro">
         These values show how each nutritional pathway contributed to this foods Explainable Recommendation Score.
@@ -518,6 +587,13 @@ These foods have been prioritised because they best support the highest-scoring 
     </details>
 </div>
 
+<details class="expand-more">
+    <summary class="expand-toggle">
+        <span class="expand-label-closed">Show 7 more foods</span>
+        <span class="expand-label-open">Show fewer foods</span>
+        <span class="expand-chevron">&#9662;</span>
+    </summary>
+    <div class="expand-content">
 <div class="recommendation-card">
 
 <div class="recommendation-header">
@@ -618,7 +694,7 @@ These foods have been prioritised because they best support the highest-scoring 
 </div>
 <div class="tag-row"><span class="tag">Dietary Nitrate</span><span class="tag">Betalains</span></div><div class="body-label" style="margin-top:14px;">PHYSIOLOGICAL SYSTEMS</div><div class="tag-row"><span class="tag">Immune</span><span class="tag">Respiratory</span><span class="tag">Circulatory</span></div>
 <details class="food-score-breakdown">
-    <summary>Why this was recommended</summary>
+    <summary>Why this was recommended <span class="expand-hint">(click to see the full breakdown)</span></summary>
 
     <div class="score-breakdown-intro">
         These values show how each nutritional pathway contributed to this foods Explainable Recommendation Score.
@@ -719,7 +795,7 @@ These foods have been prioritised because they best support the highest-scoring 
 </div>
 <div class="body-label" style="margin-top:14px;">PHYSIOLOGICAL SYSTEMS</div><div class="tag-row"><span class="tag">Immune</span><span class="tag">Respiratory</span></div>
 <details class="food-score-breakdown">
-    <summary>Why this was recommended</summary>
+    <summary>Why this was recommended <span class="expand-hint">(click to see the full breakdown)</span></summary>
 
     <div class="score-breakdown-intro">
         These values show how each nutritional pathway contributed to this foods Explainable Recommendation Score.
@@ -816,7 +892,7 @@ These foods have been prioritised because they best support the highest-scoring 
 </div>
 <div class="tag-row"><span class="tag">Schisandrins (Lignans)</span></div><div class="body-label" style="margin-top:14px;">PHYSIOLOGICAL SYSTEMS</div><div class="tag-row"><span class="tag">Immune</span><span class="tag">Respiratory</span></div>
 <details class="food-score-breakdown">
-    <summary>Why this was recommended</summary>
+    <summary>Why this was recommended <span class="expand-hint">(click to see the full breakdown)</span></summary>
 
     <div class="score-breakdown-intro">
         These values show how each nutritional pathway contributed to this foods Explainable Recommendation Score.
@@ -939,7 +1015,7 @@ These foods have been prioritised because they best support the highest-scoring 
 </div>
 <div class="body-label" style="margin-top:14px;">PHYSIOLOGICAL SYSTEMS</div><div class="tag-row"><span class="tag">Immune</span><span class="tag">Respiratory</span><span class="tag">Circulatory</span></div>
 <details class="food-score-breakdown">
-    <summary>Why this was recommended</summary>
+    <summary>Why this was recommended <span class="expand-hint">(click to see the full breakdown)</span></summary>
 
     <div class="score-breakdown-intro">
         These values show how each nutritional pathway contributed to this foods Explainable Recommendation Score.
@@ -1070,7 +1146,7 @@ These foods have been prioritised because they best support the highest-scoring 
 </div>
 <div class="body-label" style="margin-top:14px;">PHYSIOLOGICAL SYSTEMS</div><div class="tag-row"><span class="tag">Immune</span><span class="tag">Respiratory</span></div>
 <details class="food-score-breakdown">
-    <summary>Why this was recommended</summary>
+    <summary>Why this was recommended <span class="expand-hint">(click to see the full breakdown)</span></summary>
 
     <div class="score-breakdown-intro">
         These values show how each nutritional pathway contributed to this foods Explainable Recommendation Score.
@@ -1197,7 +1273,7 @@ These foods have been prioritised because they best support the highest-scoring 
 </div>
 <div class="tag-row"><span class="tag">Phycocyanin</span><span class="tag">Protein</span></div><div class="body-label" style="margin-top:14px;">PHYSIOLOGICAL SYSTEMS</div><div class="tag-row"><span class="tag">Immune</span><span class="tag">Respiratory</span></div>
 <details class="food-score-breakdown">
-    <summary>Why this was recommended</summary>
+    <summary>Why this was recommended <span class="expand-hint">(click to see the full breakdown)</span></summary>
 
     <div class="score-breakdown-intro">
         These values show how each nutritional pathway contributed to this foods Explainable Recommendation Score.
@@ -1298,7 +1374,7 @@ These foods have been prioritised because they best support the highest-scoring 
 </div>
 <div class="tag-row"><span class="tag">Salidroside and Rosavins</span></div><div class="body-label" style="margin-top:14px;">PHYSIOLOGICAL SYSTEMS</div><div class="tag-row"><span class="tag">Immune</span><span class="tag">Respiratory</span></div>
 <details class="food-score-breakdown">
-    <summary>Why this was recommended</summary>
+    <summary>Why this was recommended <span class="expand-hint">(click to see the full breakdown)</span></summary>
 
     <div class="score-breakdown-intro">
         These values show how each nutritional pathway contributed to this foods Explainable Recommendation Score.
@@ -1320,7 +1396,8 @@ These foods have been prioritised because they best support the highest-scoring 
         </div>
     </details>
 </div>
-
+</div>
+</details>
         <section class="report-section">
 
             <h2>Your Wellness Priorities</h2>
@@ -1473,16 +1550,23 @@ These foods have been prioritised because they best support the highest-scoring 
 
     <div class="bioactive-title">
         <h3>Resveratrol</h3>
+        <div class="bioactive-category">Polyphenols &middot; Stilbenes</div>
     </div>
 
     <div class="score-badge">
-        64
+        100
         <span class="score-label">/100</span>
     </div>
 
 </div>
 
-                    <p class="bioactive-summary"></p>
+                    <p class="bioactive-summary">A natural plant compound best known from grapes that supports healthy ageing and cardiovascular health.</p>
+                    <div class="bioactive-primary-action">Supports healthy cellular ageing and cardiovascular function.</div>
+                    <div class="tag-row"><span class="tag tag-evidence">Evidence: Moderate</span></div>
+                    <details class="bioactive-more">
+                        <summary>More about Resveratrol <span class="expand-chevron">&#9662;</span></summary>
+                        <p>Resveratrol occurs naturally in grapes, blueberries, peanuts and red wine. It has attracted considerable scientific interest because of its potential role in healthy ageing, cardiovascular protection and cellular resilience.</p>
+                    </details>
         <div class="body-label">
             KEY NUTRITIONAL PATHWAYS
         </div>
@@ -1566,6 +1650,13 @@ These foods have been prioritised because they best support the highest-scoring 
             </div>
 
         </details></div>
+                    <div class="bioactive-section-title">
+                        Best food sources
+                    </div>
+
+                    <div class="body-food-row">
+                        <span class="body-food-chip">Grapes</span>
+                        <span class="body-food-chip">Peanuts</span></div>
                 </div>
                 <div class="bioactive-card">
 
@@ -1573,16 +1664,23 @@ These foods have been prioritised because they best support the highest-scoring 
 
     <div class="bioactive-title">
         <h3>Proanthocyanidins</h3>
+        <div class="bioactive-category">Polyphenols &middot; Flavan-3-ol Oligomers</div>
     </div>
 
     <div class="score-badge">
-        36
+        56
         <span class="score-label">/100</span>
     </div>
 
 </div>
 
-                    <p class="bioactive-summary"></p>
+                    <p class="bioactive-summary">A family of flavonoid polymers found particularly in grape skins, seeds and other plant foods.</p>
+                    <div class="bioactive-primary-action">Supports antioxidant protection and healthy vascular function.</div>
+                    <div class="tag-row"><span class="tag tag-evidence">Evidence: Moderate</span></div>
+                    <details class="bioactive-more">
+                        <summary>More about Proanthocyanidins <span class="expand-chevron">&#9662;</span></summary>
+                        <p>Proanthocyanidins are oligomeric and polymeric flavan-3-ols found in foods including grapes and grape seeds. They are an important class of condensed plant polyphenols.</p>
+                    </details>
         <div class="body-label">
             KEY NUTRITIONAL PATHWAYS
         </div>
@@ -1666,6 +1764,13 @@ These foods have been prioritised because they best support the highest-scoring 
             </div>
 
         </details></div>
+                    <div class="bioactive-section-title">
+                        Best food sources
+                    </div>
+
+                    <div class="body-food-row">
+                        <span class="body-food-chip">Grapes</span>
+                        <span class="body-food-chip">Pomegranate</span></div>
                 </div>
                 <div class="bioactive-card">
 
@@ -1673,16 +1778,23 @@ These foods have been prioritised because they best support the highest-scoring 
 
     <div class="bioactive-title">
         <h3>Hydroxytyrosol</h3>
+        <div class="bioactive-category">Polyphenols &middot; Phenolic Alcohols</div>
     </div>
 
     <div class="score-badge">
-        34
+        54
         <span class="score-label">/100</span>
     </div>
 
 </div>
 
-                    <p class="bioactive-summary"></p>
+                    <p class="bioactive-summary">A phenolic compound associated particularly with olives and olive-derived foods.</p>
+                    <div class="bioactive-primary-action">Supports antioxidant protection and healthy cardiovascular function.</div>
+                    <div class="tag-row"><span class="tag tag-evidence">Evidence: High</span></div>
+                    <details class="bioactive-more">
+                        <summary>More about Hydroxytyrosol <span class="expand-chevron">&#9662;</span></summary>
+                        <p>Hydroxytyrosol is a phenolic compound found in olives and olive-derived products. It is also formed during the metabolism and hydrolysis of olive secoiridoids such as oleuropein.</p>
+                    </details>
         <div class="body-label">
             KEY NUTRITIONAL PATHWAYS
         </div>
@@ -1766,23 +1878,45 @@ These foods have been prioritised because they best support the highest-scoring 
             </div>
 
         </details></div>
+                    <div class="bioactive-section-title">
+                        Best food sources
+                    </div>
+
+                    <div class="body-food-row">
+                        <span class="body-food-chip">Extra Virgin Olive Oil</span>
+                        <span class="body-food-chip">Olives</span></div>
                 </div>
+            </div>
+            <details class="expand-more">
+                <summary class="expand-toggle">
+                    <span class="expand-label-closed">Show 5 more bioactives</span>
+                    <span class="expand-label-open">Show fewer bioactives</span>
+                    <span class="expand-chevron">&#9662;</span>
+                </summary>
+                <div class="expand-content bioactive-grid">
                 <div class="bioactive-card">
 
 <div class="bioactive-header">
 
     <div class="bioactive-title">
         <h3>D-Ribose</h3>
+        <div class="bioactive-category">Functional Compounds &middot; Pentose Sugars</div>
     </div>
 
     <div class="score-badge">
-        32
+        51
         <span class="score-label">/100</span>
     </div>
 
 </div>
 
-                    <p class="bioactive-summary"></p>
+                    <p class="bioactive-summary">A five-carbon sugar that forms part of the molecular structure of nucleotides and nucleic acids.</p>
+                    <div class="bioactive-primary-action">Participates in nucleotide and cellular energy metabolism.</div>
+                    <div class="tag-row"><span class="tag tag-evidence">Evidence: Moderate</span></div>
+                    <details class="bioactive-more">
+                        <summary>More about D-Ribose <span class="expand-chevron">&#9662;</span></summary>
+                        <p>D-ribose is a naturally occurring pentose sugar incorporated into ribonucleotides, RNA and ATP-related metabolic pathways. It is also used as a defined ingredient in nutritional formulations.</p>
+                    </details>
         <div class="body-label">
             KEY NUTRITIONAL PATHWAYS
         </div>
@@ -1873,16 +2007,23 @@ These foods have been prioritised because they best support the highest-scoring 
 
     <div class="bioactive-title">
         <h3>Allicin</h3>
+        <div class="bioactive-category">Sulphur Compounds &middot; Thiosulfinates</div>
     </div>
 
     <div class="score-badge">
-        23
+        36
         <span class="score-label">/100</span>
     </div>
 
 </div>
 
-                    <p class="bioactive-summary"></p>
+                    <p class="bioactive-summary">A natural sulphur compound produced when fresh garlic is crushed that supports heart and immune health.</p>
+                    <div class="bioactive-primary-action">Supports cardiovascular health, healthy circulation and normal immune function.</div>
+                    <div class="tag-row"><span class="tag tag-evidence">Evidence: High</span></div>
+                    <details class="bioactive-more">
+                        <summary>More about Allicin <span class="expand-chevron">&#9662;</span></summary>
+                        <p>Allicin is formed when garlic is chopped or crushed, activating the enzyme alliinase. It is responsible for many of garlic&#039;s recognised health benefits, including support for cardiovascular health, immune function and natural antimicrobial activity.</p>
+                    </details>
         <div class="body-label">
             KEY NUTRITIONAL PATHWAYS
         </div>
@@ -1966,6 +2107,12 @@ These foods have been prioritised because they best support the highest-scoring 
             </div>
 
         </details></div>
+                    <div class="bioactive-section-title">
+                        Best food sources
+                    </div>
+
+                    <div class="body-food-row">
+                        <span class="body-food-chip">Garlic</span></div>
                 </div>
                 <div class="bioactive-card">
 
@@ -1973,16 +2120,23 @@ These foods have been prioritised because they best support the highest-scoring 
 
     <div class="bioactive-title">
         <h3>Oleuropein</h3>
+        <div class="bioactive-category">Polyphenols &middot; Secoiridoids</div>
     </div>
 
     <div class="score-badge">
-        20
+        31
         <span class="score-label">/100</span>
     </div>
 
 </div>
 
-                    <p class="bioactive-summary"></p>
+                    <p class="bioactive-summary">A characteristic olive polyphenol found especially in olive leaves and unripe olives.</p>
+                    <div class="bioactive-primary-action">Supports antioxidant protection and healthy cardiovascular function.</div>
+                    <div class="tag-row"><span class="tag tag-evidence">Evidence: Moderate</span></div>
+                    <details class="bioactive-more">
+                        <summary>More about Oleuropein <span class="expand-chevron">&#9662;</span></summary>
+                        <p>Oleuropein is a secoiridoid glycoside characteristic of Olea europaea. It is particularly abundant in olive leaves and contributes to the phenolic profile of olives and olive-derived materials.</p>
+                    </details>
         <div class="body-label">
             KEY NUTRITIONAL PATHWAYS
         </div>
@@ -2066,6 +2220,12 @@ These foods have been prioritised because they best support the highest-scoring 
             </div>
 
         </details></div>
+                    <div class="bioactive-section-title">
+                        Best food sources
+                    </div>
+
+                    <div class="body-food-row">
+                        <span class="body-food-chip">Olives</span></div>
                 </div>
                 <div class="bioactive-card">
 
@@ -2073,16 +2233,23 @@ These foods have been prioritised because they best support the highest-scoring 
 
     <div class="bioactive-title">
         <h3>Schisandrin</h3>
+        <div class="bioactive-category">Functional Compounds &middot; Lignans</div>
     </div>
 
     <div class="score-badge">
-        19
+        30
         <span class="score-label">/100</span>
     </div>
 
 </div>
 
-                    <p class="bioactive-summary"></p>
+                    <p class="bioactive-summary">A characteristic lignan found in Schisandra berries.</p>
+                    <div class="bioactive-primary-action">Supports antioxidant and cellular resilience pathways.</div>
+                    <div class="tag-row"><span class="tag tag-evidence">Evidence: Moderate</span></div>
+                    <details class="bioactive-more">
+                        <summary>More about Schisandrin <span class="expand-chevron">&#9662;</span></summary>
+                        <p>Schisandrin is a dibenzocyclooctadiene lignan characteristic of Schisandra berries and related preparations.</p>
+                    </details>
         <div class="body-label">
             KEY NUTRITIONAL PATHWAYS
         </div>
@@ -2166,6 +2333,12 @@ These foods have been prioritised because they best support the highest-scoring 
             </div>
 
         </details></div>
+                    <div class="bioactive-section-title">
+                        Best food sources
+                    </div>
+
+                    <div class="body-food-row">
+                        <span class="body-food-chip">Schisandra</span></div>
                 </div>
                 <div class="bioactive-card">
 
@@ -2173,16 +2346,23 @@ These foods have been prioritised because they best support the highest-scoring 
 
     <div class="bioactive-title">
         <h3>Alpha-carotene</h3>
+        <div class="bioactive-category">Carotenoids &middot; Carotenes</div>
     </div>
 
     <div class="score-badge">
-        18
+        29
         <span class="score-label">/100</span>
     </div>
 
 </div>
 
-                    <p class="bioactive-summary"></p>
+                    <p class="bioactive-summary">A naturally occurring carotenoid that supports antioxidant protection and vitamin A production.</p>
+                    <div class="bioactive-primary-action">Supports antioxidant protection and healthy vitamin A status.</div>
+                    <div class="tag-row"><span class="tag tag-evidence">Evidence: Moderate</span></div>
+                    <details class="bioactive-more">
+                        <summary>More about Alpha-carotene <span class="expand-chevron">&#9662;</span></summary>
+                        <p>Alpha-carotene is found in carrots, pumpkin and winter squash. Like beta-carotene it can contribute to vitamin A production while providing antioxidant activity.</p>
+                    </details>
         <div class="body-label">
             KEY NUTRITIONAL PATHWAYS
         </div>
@@ -2266,11 +2446,15 @@ These foods have been prioritised because they best support the highest-scoring 
             </div>
 
         </details></div>
-                </div>
-            </div>
+                    <div class="bioactive-section-title">
+                        Best food sources
+                    </div>
 
+                    <div class="body-food-row">
+                        <span class="body-food-chip">Carrots</span></div>
+                </div></div>
+            </details>
         </section>
-</ul>
 </div>
 </body>
 

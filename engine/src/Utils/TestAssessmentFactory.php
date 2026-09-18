@@ -140,7 +140,27 @@ final class TestAssessmentFactory
                 'persona' => $personaId,
                 'name'    => $persona['name'] ?? $personaId,
             ],
+            person: [
+                // Personas can optionally declare a display name (e.g.
+                // "firstName": "Alex") so the report's personalised
+                // header has something real to show in test output;
+                // defaults to a generic placeholder otherwise.
+                'first_name' => $persona['firstName'] ?? 'Alex',
+                'last_name'  => $persona['lastName'] ?? '',
+            ],
             answers: $answers,
+            // Dietary preferences have no scored question of their own, so
+            // (unlike allergies below) a persona declares them directly via
+            // an optional top-level "dietaryPreferences" array, e.g.
+            // ["vegetarian", "gluten_free"] — matching PF020's stored
+            // values.
+            preferences: $persona['dietaryPreferences'] ?? [],
+            // Allergies ARE a real scored question (SAF006), so they're
+            // already settable like any other answer via the persona's
+            // "answers" override — e.g. "SAF006": ["peanuts"] — no special
+            // top-level field needed; just surface whatever ended up in
+            // $answers for FoodResolver's exclusion check downstream.
+            restrictions: $answers['SAF006'] ?? [],
             goals: $goals
         );
     }

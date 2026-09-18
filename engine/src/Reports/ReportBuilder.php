@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 namespace PWB\Reports;
+use PWB\Reports\Sections\MastheadSection;
 use PWB\Reports\Sections\DashboardSection;
 use PWB\Reports\Sections\FoodSection;
 use PWB\Reports\Sections\BodySystemsSection;
@@ -16,12 +17,6 @@ class ReportBuilder
     public function build(array $reportData): string
     {
         $theme = $reportData['theme'] ?? 'theme-green';
-        
-        $clientName = $reportData['client']['name'] ?? 'Unknown';
-
-        $foods = $reportData['foods'] ?? [];
-
-        $summary = $reportData['summary'] ?? [];
 
         $html = <<<HTML
 <!DOCTYPE html>
@@ -36,28 +31,9 @@ class ReportBuilder
 <body class="<?= $theme ?>">
 <div class="report-container">
 
-<h1>Personal Wellness Blueprint</h1>
-
-<p><strong>Client:</strong> {$clientName}</p>
-
-<h2>Summary</h2>
-
-<ul>
-
 HTML;
 
-        foreach ($summary as $item) {
-            $html .= "<li>{$item}</li>";
-        }
-
-        $html .= <<<HTML
-
-</ul>
-
-<ul>
-
-HTML;
-
+$mastheadSection = new MastheadSection();
 $dashboardSection = new DashboardSection();
 $foodSection = new FoodSection();
 $bodySystemsSection = new BodySystemsSection();
@@ -66,6 +42,7 @@ $bioactiveSection = new BioactiveSection();
 //$mineralSection = new MineralSection();
 //$actionPlanSection = new ActionPlanSection();
 
+$html .= $mastheadSection->render($reportData);
 $html .= $dashboardSection->render($reportData['dashboard'] ?? []);
 $html .= $foodSection->render($reportData);
 $html .= $bodySystemsSection->render(
@@ -77,7 +54,6 @@ $html .= $bioactiveSection->render($reportData);
 //$html .= $actionPlanSection->render($reportData);
 $html .= <<<HTML
 
-</ul>
 </div>
 </body>
 

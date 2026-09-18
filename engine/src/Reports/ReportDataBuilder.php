@@ -32,6 +32,9 @@ class ReportDataBuilder
     private array $foodLookup = [];
     private array $monographLookup = [];
     private array $outcomeLookup = [];
+    private array $dietaryPreferenceLabels = [];
+    private array $allergyLabels = [];
+    private array $foodBioactiveLookup = [];
 
     public function __construct()
     {
@@ -89,6 +92,64 @@ class ReportDataBuilder
                 $this->monographLookup[$food['id']] = $food;
             }
         }
+
+        // Stored-value → display-label lookups for the masthead, so it can
+        // show "Vegetarian" / "Peanuts" rather than raw slugs like
+        // "vegetarian" / "peanuts". PF020 (dietary preferences) is
+        // informational-only for now — see FoodResolver, which is
+        // deliberately NOT filtered against it, unlike allergies (SAF006).
+        $profileFieldsFile = $this->locator->getKnowledgebaseDirectory() . '/assessment/profile-fields.json';
+
+        if (file_exists($profileFieldsFile)) {
+
+            $profileFields = $this->loader->load($profileFieldsFile);
+
+            foreach ($profileFields['fields'] ?? [] as $field) {
+
+                if (($field['key'] ?? '') === 'dietary_preferences') {
+
+                    foreach ($field['options'] ?? [] as $option) {
+                        $this->dietaryPreferenceLabels[$option['value']] = $option['label'];
+                    }
+                }
+            }
+        }
+
+        // Bioactive -> food reverse lookup for "Best food sources", sourced
+        // from the complete taxonomy relationship file rather than the
+        // monograph's own "Contains" tagging, which — like food group and
+        // food description before it — is only sparsely populated there.
+        $foodBioactivesFile = $this->locator->getTaxonomyDirectory() . '/food-bioactives.json';
+
+        if (file_exists($foodBioactivesFile)) {
+
+            $foodBioactivesData = $this->loader->load($foodBioactivesFile);
+
+            foreach ($foodBioactivesData['relationships'] ?? [] as $relationship) {
+                $this->foodBioactiveLookup[$relationship['bioactive']][] = $relationship['food'];
+            }
+        }
+
+        $questionsFile = $this->locator->getKnowledgebaseDirectory() . '/assessment/questions.json';
+
+        if (file_exists($questionsFile)) {
+
+            $questionsData = $this->loader->load($questionsFile);
+            $questionList  = $questionsData['questions'] ?? $questionsData;
+
+            foreach ($questionList as $question) {
+
+                if (($question['id'] ?? '') === 'SAF006') {
+
+                    $labels = $question['answer_options'] ?? [];
+                    $values = $question['stored_values'] ?? [];
+
+                    foreach ($values as $index => $value) {
+                        $this->allergyLabels[(string) $value] = $labels[$index] ?? (string) $value;
+                    }
+                }
+            }
+        }
     }
 
     public function build(Assessment $assessment): array
@@ -135,7 +196,7 @@ $nutrientResolver = new NutrientResolver(
 );
 
 $bioactives = $bioactiveResolver->resolve($mechanisms);
-$foodResults = $foodResolver->resolve($mechanisms);
+$foodResults = $foodResolver->resolve($mechanisms, $assessment->restrictions ?? []);
 
 $vitamins = $nutrientResolver->resolve($mechanisms, 'vitamin');
 $minerals = $nutrientResolver->resolve($mechanisms, 'mineral');
@@ -240,12 +301,25 @@ $dashboard = $this->buildDashboard(
     $mechanisms,
     $foods,
     $bodySystemsData,
-    $assessment->goals ?? []
+    $assessment->goals ?? [],
+    $bioactives,
+    array_merge($vitamins, $minerals)
 );
 
 		return [
 		'client' => [
-        'name' => 'Test User'
+        'firstName' => trim((string) ($assessment->person['first_name'] ?? '')) ?: 'there',
+        'lastName'  => trim((string) ($assessment->person['last_name'] ?? '')),
+        // Informational only — see FoodResolver for why allergies (not
+        // preferences) are the ones that actually change recommendations.
+        'dietaryPreferences' => array_map(
+            fn($slug) => $this->dietaryPreferenceLabels[$slug] ?? $slug,
+            $assessment->preferences ?? []
+        ),
+        'allergies' => array_map(
+            fn($slug) => $this->allergyLabels[$slug] ?? $slug,
+            $assessment->restrictions ?? []
+        ),
     ],
 		'summary'      => [],
 'priorities'   => $priorities,
@@ -453,7 +527,9 @@ $system['summary'] =
         array $mechanisms,
         array $foods,
         array $bodySystemsData,
-        array $goalIds
+        array $goalIds,
+        array $bioactives,
+        array $nutrients
     ): array {
 
         // ---- Body system heat grid ----
@@ -512,6 +588,43 @@ $system['summary'] =
                 'percent' => (int) round(($m['clinicalScore'] / $maxMechanismScore) * 100),
             ],
             $topMechanismsRaw
+        );
+
+        // ---- Key bioactives (same relative bar treatment as mechanisms —
+        // clinicalScore here is an open-ended decayed sum, not a
+        // calibrated 0-100 figure, so it's shown relative to the person's
+        // own top bioactive rather than as a misleading absolute number) ----
+        $topBioactivesRaw = array_slice($bioactives, 0, 4);
+        $maxBioactiveScore = $topBioactivesRaw[0]['clinicalScore'] ?? 1;
+        $maxBioactiveScore = $maxBioactiveScore > 0 ? $maxBioactiveScore : 1;
+
+        $topBioactives = array_map(
+            fn($b) => [
+                'name'    => $b['name'] ?? $b['bioactiveId'],
+                'percent' => (int) round(($b['clinicalScore'] / $maxBioactiveScore) * 100),
+            ],
+            $topBioactivesRaw
+        );
+
+        // ---- Key nutrients (vitamins & minerals, same relative bar
+        // treatment as mechanisms/bioactives) — combines both lists and
+        // re-ranks by score so the widget shows whichever nutrients this
+        // person's own answers point to most strongly, not a fixed split
+        // between vitamins and minerals ----
+        $nutrientsRanked = $nutrients;
+        usort($nutrientsRanked, fn($a, $b) => ($b['clinicalScore'] ?? 0) <=> ($a['clinicalScore'] ?? 0));
+
+        $topNutrientsRaw = array_slice($nutrientsRanked, 0, 4);
+        $maxNutrientScore = $topNutrientsRaw[0]['clinicalScore'] ?? 1;
+        $maxNutrientScore = $maxNutrientScore > 0 ? $maxNutrientScore : 1;
+
+        $topNutrients = array_map(
+            fn($n) => [
+                'name'    => $n['name'] ?? $n['nutrientId'],
+                'type'    => $n['type'] ?? '',
+                'percent' => (int) round(($n['clinicalScore'] / $maxNutrientScore) * 100),
+            ],
+            $topNutrientsRaw
         );
 
         // ---- Top food matches ----
@@ -606,6 +719,8 @@ $system['summary'] =
             'goals'         => $goals,
             'topMechanisms' => $topMechanisms,
             'topFoods'      => $topFoods,
+            'topBioactives' => $topBioactives,
+            'topNutrients'  => $topNutrients,
             'actions'       => $actions,
             'goalAlignment' => $goalAlignment,
             'topSystem'     => $topSystem,
@@ -654,10 +769,10 @@ private function enrichBioactives(array $bioactives): array
 
         $id = $bioactive['bioactiveId'];
 
-        // Description
-        $bioactive['description'] =
-            $bioactive['description']
-            ?? ($this->bioactiveLookup[$id]['description'] ?? '');
+        // description/plainEnglish/primaryAction/evidence already come
+        // straight from BioactiveResolver (which reads the full taxonomy
+        // record) — nothing to enrich here, just guard the empty case.
+        $bioactive['description'] = $bioactive['description'] ?? '';
 
 $bioactive['mechanisms'] = [];
 
@@ -680,17 +795,23 @@ foreach (array_slice($bioactive['matchedMechanisms'] ?? [], 0, 3) as $m) {
         'evidence'      => $resolved['evidence'] ?? '',
     ];
 }
-        // Best food sources
+        // Best food sources — via the taxonomy reverse lookup built in the
+        // constructor, cross-referenced against THIS person's own scored
+        // food list (not a generic ranking), so a food only shows here if
+        // it's both a real source of this bioactive AND actually relevant
+        // to them.
         $foods = [];
 
-        foreach ($this->foodLookup as $food) {
+        foreach ($this->foodBioactiveLookup[$id] ?? [] as $foodId) {
 
-            if (!in_array($id, $food['contains']['bioactives'] ?? [], true)) {
+            if (!isset($this->foodLookup[$foodId])) {
                 continue;
             }
 
+            $food = $this->foodLookup[$foodId];
+
             $foods[] = [
-                'name'  => $food['identity']['name'],
+                'name'  => $food['identity']['name'] ?? $foodId,
                 'score' => $food['clinicalScore'] ?? 0,
             ];
         }

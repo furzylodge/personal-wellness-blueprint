@@ -109,11 +109,15 @@ $assessment = new Assessment(
     assessment: [
         'theme' => $_SESSION['theme'] ?? 'green',
     ],
-    person: [],
+    person: $reportProfile,
     answers: $answers,
     bodySystems: [],
-    preferences: [],
-    restrictions: [],
+    // Dietary preferences (PF020, informational only for now — see
+    // FoodResolver, which is deliberately NOT filtered by these) and
+    // declared food allergies (SAF006, which FoodResolver DOES hard-exclude
+    // foods against).
+    preferences: $reportProfile['dietary_preferences'] ?? [],
+    restrictions: $answers['SAF006'] ?? [],
     goals: $answers['PF014'] ?? []
 );
 

@@ -96,6 +96,29 @@ final class IconLibrary
             // Menopause Transition Resilience — butterfly (renewal/transition)
             'OUT009' => '<path d="M12 6.4v11.2"/><path d="M12 8c-1-3-3.4-4.4-5.4-3.8-2 .6-2.6 3-1.3 4.8C6.5 10.8 9 11.4 12 10.6"/><path d="M12 8c1-3 3.4-4.4 5.4-3.8 2 .6 2.6 3 1.3 4.8-1.2 1.8-3.7 2.4-6.7 1.6"/><path d="M12 12.4c-.9 2.7-3 3.9-4.8 3.4-1.8-.5-2.4-2.6-1.2-4.2 1-1.5 3.2-2.1 6-1.4"/><path d="M12 12.4c.9 2.7 3 3.9 4.8 3.4 1.8-.5 2.4-2.6 1.2-4.2-1-1.5-3.2-2.1-6-1.4"/>',
 
+            // ---------------- Dashboard radar placeholders ----------------
+            // Shown in place of the radar/spider chart when too few body
+            // systems are flagged to plot a meaningful shape (see
+            // DashboardSection::renderRadar). Same heart glyph as BS003,
+            // reused deliberately: a full, even, well-rounded shape is the
+            // visual point when there's nothing sharp enough to plot.
+            'SHAPE_GOOD' => '<path d="M12 20.2S3.8 15.3 3.8 9.4C3.8 6.4 6 4.6 8.3 4.6c1.6 0 3 .9 3.7 2.2.7-1.3 2.1-2.2 3.7-2.2 2.3 0 4.5 1.8 4.5 4.8 0 5.9-8.2 10.8-8.2 10.8Z"/>',
+
+            // A single location pin — the opposite idea: one sharp, specific
+            // point rather than a broad, even shape.
+            'SHAPE_FOCUSED' => '<path d="M12 3.6c3.6 0 6.4 2.8 6.4 6.4 0 4.8-6.4 10.4-6.4 10.4S5.6 14.8 5.6 10c0-3.6 2.8-6.4 6.4-6.4Z"/><circle cx="12" cy="10" r="2.2"/>',
+
+            // A simple check mark, used for small "done/step" indicators
+            // (e.g. the dashboard's quick-actions list) — not tied to any
+            // body system or outcome.
+            'CHECK' => '<circle cx="12" cy="12" r="8.6"/><path d="M8.4 12.4l2.4 2.4 4.8-5.6"/>',
+
+            // A simple bullseye/target — used for the dashboard's goal
+            // alignment card ("your goal of X lines up with your Y
+            // priority") to visually echo the idea of a goal being hit,
+            // not tied to any body system or outcome.
+            'TARGET' => '<circle cx="12" cy="12" r="8.4"/><circle cx="12" cy="12" r="5.2"/><circle cx="12" cy="12" r="1.6" fill="currentColor" stroke="none"/>',
+
             // ---------------- Food groups ----------------
 
             // Wholegrains — a stalk of grain

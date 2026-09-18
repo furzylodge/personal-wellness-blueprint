@@ -30,13 +30,44 @@ These foods have been prioritised because they best support the highest-scoring 
 
 HTML;
 
+        $cards = [];
 
         foreach ($foods as $index => $food) {
-   
-   
-$recommendation = $food['recommendation'] ?? 'Useful option';        
+            $cards[] = $this->renderFoodCard($food, $index + 1);
+        }
 
-    $rank = $index + 1;
+        // Top 3 stay visible as full cards; the rest sit behind an
+        // expand/collapse — 10 full recommendation cards in a row was a
+        // long scroll before anyone reached the body-systems section below.
+        $visible = array_slice($cards, 0, 3);
+        $hidden  = array_slice($cards, 3);
+
+        $html .= implode('', $visible);
+
+        if (!empty($hidden)) {
+
+            $count = count($hidden);
+            $plural = $count === 1 ? 'food' : 'foods';
+
+            $html .= '
+<details class="expand-more">
+    <summary class="expand-toggle">
+        <span class="expand-label-closed">Show ' . $count . ' more ' . $plural . '</span>
+        <span class="expand-label-open">Show fewer foods</span>
+        <span class="expand-chevron">&#9662;</span>
+    </summary>
+    <div class="expand-content">' . implode('', $hidden) . '</div>
+</details>';
+        }
+
+        return $html;
+    }
+
+    private function renderFoodCard(array $food, int $rank): string
+    {
+        $html = '';
+
+$recommendation = $food['recommendation'] ?? 'Useful option';
 
             $name = htmlspecialchars(
                 $food['identity']['name'] ?? 'Unknown'
@@ -164,7 +195,7 @@ HTML;
 
 $html .= '
 <details class="food-score-breakdown">
-    <summary>Why this was recommended</summary>
+    <summary>Why this was recommended <span class="expand-hint">(click to see the full breakdown)</span></summary>
 
     <div class="score-breakdown-intro">
         These values show how each nutritional pathway contributed to this foods Explainable Recommendation Score.
@@ -215,8 +246,6 @@ if ($other > 0) {
 </div>
 
 HTML;
-
-        }
 
         return $html;
     }
