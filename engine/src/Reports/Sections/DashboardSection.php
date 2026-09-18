@@ -435,6 +435,17 @@ class DashboardSection
             ? '<p class="product-strip-why">' . htmlspecialchars($product['whySelected']) . '</p>'
             : '';
 
+        $pricing = $this->renderProductPricing($product);
+
+        // "More information" only appears once there's somewhere real to
+        // send someone — an empty shopUrl (every product's default until
+        // Simon supplies the real Synergy shop links) means no link rather
+        // than a dead href. Opens in a new tab so leaving the report to
+        // browse the shop doesn't lose the person's own results.
+        $moreInfo = !empty($product['shopUrl'])
+            ? '<a class="product-strip-more-info" href="' . htmlspecialchars($product['shopUrl']) . '" target="_blank" rel="noopener">More information</a>'
+            : '';
+
         return '
                 <div class="dashboard-card dashboard-product-strip">
                     <div class="dashboard-card-label">Recommended For You</div>
@@ -447,9 +458,66 @@ class DashboardSection
                             ' . $why . '
                             <ul class="product-strip-claims">' . $claims . '
                             </ul>
+                            ' . $pricing . '
+                            ' . $moreInfo . '
                         </div>
                     </div>
                 </div>';
+    }
+
+    /**
+     * Pricing block: one-off price, the subscribe & save price (already
+     * computed as 10% off by ProductResolver, alongside the fixed free-
+     * shipping/cancel-anytime policy text — never a second stored price to
+     * drift out of sync with the one-off figure), and a per-day figure
+     * worked out from the standard daily serving so cost is comparable
+     * across products regardless of format or container size. All three
+     * are currently the same £50 placeholder cost across every product —
+     * Simon is supplying the real price list.
+     */
+    private function renderProductPricing(array $product): string
+    {
+        if (!isset($product['priceOneOff'])) {
+            return '';
+        }
+
+        $oneOff = $this->formatPrice($product['priceOneOff']);
+        $subscription = isset($product['priceSubscription']) ? $this->formatPrice($product['priceSubscription']) : null;
+        $perDay = isset($product['pricePerDay']) ? $this->formatPrice($product['pricePerDay']) : null;
+
+        $html = '
+                            <div class="product-strip-pricing">
+                                <div class="product-price-option product-price-oneoff">
+                                    <div class="product-price-label">One-off</div>
+                                    <div class="product-price-value">' . $oneOff . '</div>
+                                </div>';
+
+        if ($subscription !== null) {
+            $html .= '
+                                <div class="product-price-option product-price-subscription">
+                                    <div class="product-price-label">Subscribe &amp; Save</div>
+                                    <div class="product-price-value">' . $subscription . '</div>
+                                    <div class="product-price-note">10% off, free shipping — cancel anytime</div>
+                                </div>';
+        }
+
+        if ($perDay !== null) {
+            $html .= '
+                                <div class="product-price-option product-price-per-day">
+                                    <div class="product-price-label">Works out at</div>
+                                    <div class="product-price-value">' . $perDay . '<span class="product-price-per-day-unit">/day</span></div>
+                                </div>';
+        }
+
+        $html .= '
+                            </div>';
+
+        return $html;
+    }
+
+    private function formatPrice(float $amount): string
+    {
+        return '£' . number_format($amount, 2);
     }
 
     private function renderMechanisms(array $mechanisms): string

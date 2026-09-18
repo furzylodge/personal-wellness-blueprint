@@ -18,6 +18,8 @@
       "servingsPerDay": 1,
       "category": "Cardiovascular",
       "image": "proargi9.jpg",
+      "cost": 50,
+      "shopUrl": "",
       "allergens": [],
       "dietaryExclusions": [
         "vegan"
@@ -39,6 +41,8 @@
       "servingsPerDay": 1,
       "category": "Energy",
       "image": "new-e9.jpg",
+      "cost": 50,
+      "shopUrl": "",
       "allergens": [],
       "dietaryExclusions": [],
       "status": "Active"
@@ -59,6 +63,8 @@
       "servingsPerDay": 1,
       "category": "Immune Support",
       "image": "immune-boost.jpg",
+      "cost": 50,
+      "shopUrl": "",
       "allergens": [],
       "dietaryExclusions": [
         "vegan"
@@ -81,6 +87,8 @@
       "servingsPerDay": 1,
       "category": "Foundational Nutrition",
       "image": "greens.jpg",
+      "cost": 50,
+      "shopUrl": "",
       "allergens": [],
       "dietaryExclusions": [],
       "status": "Active"
@@ -101,6 +109,8 @@
       "servingsPerDay": 2,
       "category": "Energy",
       "image": "beets-eu.jpg",
+      "cost": 50,
+      "shopUrl": "",
       "allergens": [],
       "dietaryExclusions": [
         "vegan"
@@ -121,6 +131,8 @@
       "servingsPerDay": 1,
       "category": "Digestive Support",
       "image": "biome-actives.jpg",
+      "cost": 50,
+      "shopUrl": "",
       "allergens": [],
       "dietaryExclusions": [
         "vegan"
@@ -141,6 +153,8 @@
       "servingsPerDay": 1,
       "category": "Digestive Support",
       "image": "biome-dt.jpg",
+      "cost": 50,
+      "shopUrl": "",
       "allergens": [],
       "dietaryExclusions": [],
       "status": "Active"
@@ -160,6 +174,8 @@
       "servingsPerDay": 1,
       "category": "Digestive Support",
       "image": "biome-shake.jpg",
+      "cost": 50,
+      "shopUrl": "",
       "allergens": [],
       "dietaryExclusions": [],
       "status": "Active"
@@ -179,6 +195,8 @@
       "servingsPerDay": 1,
       "category": "Energy",
       "image": "body-prime.jpg",
+      "cost": 50,
+      "shopUrl": "",
       "allergens": [],
       "dietaryExclusions": [
         "vegan"
@@ -201,6 +219,8 @@
       "servingsPerDay": 1,
       "category": "Digestive Support",
       "image": "phytolife.jpg",
+      "cost": 50,
+      "shopUrl": "",
       "allergens": [],
       "dietaryExclusions": [],
       "status": "Active"
@@ -220,6 +240,8 @@
       "servingsPerDay": 1,
       "category": "Energy",
       "image": "mistify.jpg",
+      "cost": 50,
+      "shopUrl": "",
       "allergens": [
         "soybeans"
       ],
@@ -241,6 +263,8 @@
       "servingsPerDay": 1,
       "category": "Skin & Beauty",
       "image": "collagen-plus.jpg",
+      "cost": 50,
+      "shopUrl": "",
       "allergens": [],
       "dietaryExclusions": [
         "vegan",
@@ -264,6 +288,8 @@
       "servingsPerDay": 1,
       "category": "Skin & Beauty",
       "image": "collagen-beauty.jpg",
+      "cost": 50,
+      "shopUrl": "",
       "allergens": [
         "fish"
       ],
@@ -288,6 +314,8 @@
       "servingsPerDay": 1,
       "category": "Joint & Mobility",
       "image": "fl-3x.jpg",
+      "cost": 50,
+      "shopUrl": "",
       "allergens": [
         "crustaceans",
         "fish"
@@ -316,6 +344,8 @@
       "servingsPerDay": 1,
       "category": "Foundational Nutrition",
       "image": "d3.jpg",
+      "cost": 50,
+      "shopUrl": "",
       "allergens": [],
       "dietaryExclusions": [
         "vegan"
@@ -337,6 +367,8 @@
       "servingsPerDay": 2,
       "category": "Cardiovascular",
       "image": "omega-3.jpg",
+      "cost": 50,
+      "shopUrl": "",
       "allergens": [
         "fish"
       ],
@@ -361,6 +393,8 @@
       "servingsPerDay": 2,
       "category": "Energy",
       "image": "coq10.jpg",
+      "cost": 50,
+      "shopUrl": "",
       "allergens": [],
       "dietaryExclusions": [
         "vegan",
@@ -382,6 +416,8 @@
       "servingsPerDay": 3,
       "category": "Liver Support",
       "image": "liver-health.jpg",
+      "cost": 50,
+      "shopUrl": "",
       "allergens": [],
       "dietaryExclusions": [
         "vegan",
@@ -406,6 +442,8 @@
       "servingsPerDay": 1,
       "category": "Immune Support",
       "image": "zinc-protect.jpg",
+      "cost": 50,
+      "shopUrl": "",
       "allergens": [],
       "dietaryExclusions": [],
       "status": "Active"
@@ -426,6 +464,8 @@
       "servingsPerDay": 1,
       "category": "Sleep",
       "image": "sleepwell.jpg",
+      "cost": 50,
+      "shopUrl": "",
       "allergens": [],
       "dietaryExclusions": [
         "vegan",
@@ -450,6 +490,8 @@
       "servingsPerDay": 1,
       "category": "Foundational Nutrition",
       "image": "multivitamin.jpg",
+      "cost": 50,
+      "shopUrl": "",
       "allergens": [],
       "dietaryExclusions": [
         "vegan"
@@ -469,6 +511,8 @@
       "servingsPerDay": 3,
       "category": "Weight Management",
       "image": "carb-blocker.jpg",
+      "cost": 50,
+      "shopUrl": "",
       "allergens": [],
       "dietaryExclusions": [
         "vegan",
@@ -491,6 +535,8 @@
       "servingsPerDay": 3,
       "category": "Weight Management",
       "image": "fat-grabber.jpg",
+      "cost": 50,
+      "shopUrl": "",
       "allergens": [
         "soybeans"
       ],
@@ -518,6 +564,8 @@
       "servingsPerDay": 1,
       "category": "Weight Management",
       "image": "smartmeal.jpg",
+      "cost": 50,
+      "shopUrl": "",
       "allergens": [],
       "dietaryExclusions": [],
       "status": "Active"

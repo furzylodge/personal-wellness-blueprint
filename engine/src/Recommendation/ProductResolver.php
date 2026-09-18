@@ -36,6 +36,12 @@ final class ProductResolver
     // most" logic rather than by how many mechanisms they happen to touch.
     private const PATHWAY_DECAY = 0.6;
 
+    // The subscribe & save discount is a fixed site-wide policy (plus free
+    // shipping, cancel anytime), not per-product data — so it's applied
+    // here rather than stored as a second price in products.json, which
+    // would just be a second place for the two figures to drift apart.
+    private const SUBSCRIPTION_DISCOUNT = 0.10;
+
     public function __construct(
         private JsonLoader $loader,
         private string $knowledgePath
@@ -252,7 +258,27 @@ final class ProductResolver
                     ? (int) floor($servingsPerContainer / $servingsPerDay)
                     : null,
                 'image'         => $product['image'] ?? null,
-                'cost'          => $product['cost'] ?? null,
+                // Three figures, all derived from the single stored 'cost'
+                // (the one-off retail price) rather than stored separately,
+                // so the subscription price and the per-day figure can
+                // never disagree with the base price:
+                //  - priceOneOff: the plain retail price for one container.
+                //  - priceSubscription: subscribe & save price (10% off,
+                //    free shipping, cancel anytime — policy, not per-item
+                //    data).
+                //  - pricePerDay: cost spread over how long one container
+                //    lasts at the standard daily serving (lastsDays above),
+                //    so it's comparable across products with very different
+                //    formats/container sizes.
+                'cost'              => $product['cost'] ?? null,
+                'priceOneOff'       => $product['cost'] ?? null,
+                'priceSubscription' => isset($product['cost'])
+                    ? round($product['cost'] * (1 - self::SUBSCRIPTION_DISCOUNT), 2)
+                    : null,
+                'pricePerDay' => (isset($product['cost']) && !empty($servingsPerContainer) && !empty($servingsPerDay))
+                    ? round($product['cost'] / (int) floor($servingsPerContainer / $servingsPerDay), 2)
+                    : null,
+                'shopUrl'           => $product['shopUrl'] ?? null,
                 'allergens'         => $product['allergens'] ?? [],
                 'dietaryExclusions' => $product['dietaryExclusions'] ?? [],
                 'clinicalScore' => round($clinicalScore, 2),

@@ -43,7 +43,11 @@
             "description": "How many single-administration servings are taken per day. servingsPerContainer / servingsPerDay gives the computed 'lasts X days' figure."
           },
           "image": { "type": "string", "description": "Path or filename of the product packshot image, supplied by Simon." },
-          "cost": { "type": "number", "minimum": 0, "description": "Retail price for one container, in the site's base currency." },
+          "cost": { "type": "number", "minimum": 0, "description": "One-off retail price for one container, in the site's base currency (GBP). The subscribe & save price and the per-day price are both derived from this at report-build time, not stored separately." },
+          "shopUrl": {
+            "type": "string",
+            "description": "Link to this product's page in the Synergy shop, used by the report's 'more information' link. Currently a bare product URL; once the consultant/team-member feature is built, the consultant's id will be appended as a query parameter so the shop and any follow-up email are personalised to whoever sent the report."
+          },
           "allergens": {
             "type": "array",
             "items": {
