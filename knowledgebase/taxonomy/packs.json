@@ -1,0 +1,157 @@
+{
+  "version": "1.0",
+  "description": "Synergy's curated multi-product bundles ('programs'), each sold at a combined pack price cheaper than the constituent products bought separately. Packs never enter ProductResolver's scoring or ranking - PackResolver offers one as an optional extra alongside the single top-ranked product, only when the pack's formulatedFor.exactFor matches one of the person's selected wellness goals. Contents and pricing for PAK001-PAK007, PAK011 and PAK012 are taken directly from Synergy's official 'Product Pricelist UK - JULY 2026' (SKU-level). PAK008-PAK010 (the three 'Everyday' bundles) do NOT appear in that pricelist at all - their contents/pricing are still Claude's best read of the Synergy shop's own product-shot images and need Simon to confirm these are current, separately-run bundles.",
+  "count": 12,
+  "packs": [
+    {
+      "id": "PAK001",
+      "name": "Smart Greens",
+      "description": "Synergy Pro360 Wholefood Greens paired with SmartMeal, aimed at healthy weight management.",
+      "products": [
+        { "productId": "PRD004", "quantity": 1 },
+        { "productId": "PRD024", "quantity": 2 }
+      ],
+      "cost": 129.13,
+      "status": "Active",
+      "formulatedFor": { "exactFor": ["OUT003"] }
+    },
+    {
+      "id": "PAK002",
+      "name": "V3",
+      "description": "PhytoLife, Mistify and ProArgi-9+ together - a broad, foundational vitality bundle rather than a single-outcome program.",
+      "products": [
+        { "productId": "PRD010", "quantity": 1 },
+        { "productId": "PRD011", "quantity": 1 },
+        { "productId": "PRD001", "quantity": 1 }
+      ],
+      "cost": 152.05,
+      "status": "Active"
+    },
+    {
+      "id": "PAK003",
+      "name": "Purify Kit",
+      "description": "Synergy's well-documented, TV-tested program to rebalance the microbiome and support digestive health. The starter program - Biome Core Kit is the maintenance program that follows it.",
+      "products": [
+        { "productId": "PRD001", "quantity": 1 },
+        { "productId": "PRD008", "quantity": 1 },
+        { "productId": "PRD006", "quantity": 1 },
+        { "productId": "PRD009", "quantity": 1 },
+        { "productId": "PRD007", "quantity": 1 }
+      ],
+      "cost": 311.41,
+      "status": "Active",
+      "formulatedFor": { "exactFor": ["OUT005"] }
+    },
+    {
+      "id": "PAK004",
+      "name": "Biome Core Kit",
+      "description": "The maintenance program that follows Purify Kit, once the initial microbiome rebalance is done.",
+      "products": [
+        { "productId": "PRD008", "quantity": 2 },
+        { "productId": "PRD007", "quantity": 1 },
+        { "productId": "PRD006", "quantity": 1 }
+      ],
+      "cost": 217.77,
+      "status": "Active"
+    },
+    {
+      "id": "PAK005",
+      "name": "ProArgi-9+ Immune Booster Combo",
+      "description": "ProArgi-9+ paired with Immune Booster, for circulatory support alongside immune resilience.",
+      "products": [
+        { "productId": "PRD001", "quantity": 1 },
+        { "productId": "PRD003", "quantity": 1 }
+      ],
+      "cost": 116.00,
+      "status": "Active",
+      "formulatedFor": { "exactFor": ["OUT011"] }
+    },
+    {
+      "id": "PAK006",
+      "name": "Collagen+ Combo",
+      "description": "Collagen+ and Collagen+ Beauty together, aimed at healthy ageing and resilience.",
+      "products": [
+        { "productId": "PRD012", "quantity": 2 },
+        { "productId": "PRD013", "quantity": 2 }
+      ],
+      "cost": 240.21,
+      "status": "Active",
+      "formulatedFor": { "exactFor": ["OUT008"] }
+    },
+    {
+      "id": "PAK007",
+      "name": "Duo Pro360",
+      "description": "Pro360 Wholefood Greens and Pro360 Superfood Performance Beets together, for fitness and physical performance.",
+      "products": [
+        { "productId": "PRD004", "quantity": 1 },
+        { "productId": "PRD005", "quantity": 1 }
+      ],
+      "cost": 104.04,
+      "status": "Active",
+      "formulatedFor": { "exactFor": ["OUT004"] }
+    },
+    {
+      "id": "PAK008",
+      "name": "Everyday Energy & Glow",
+      "description": "e9 and Collagen+ Beauty together - an energy-plus-beauty bundle with no single clean outcome fit.",
+      "products": [
+        { "productId": "PRD002", "quantity": 1 },
+        { "productId": "PRD013", "quantity": 1 }
+      ],
+      "cost": 76.30,
+      "status": "Active"
+    },
+    {
+      "id": "PAK009",
+      "name": "Everyday Nutrition",
+      "description": "ProArgi-9+ and Pro360 Wholefood Greens - a broad, foundational nutrition bundle.",
+      "products": [
+        { "productId": "PRD001", "quantity": 1 },
+        { "productId": "PRD004", "quantity": 1 }
+      ],
+      "cost": 97.20,
+      "status": "Active"
+    },
+    {
+      "id": "PAK010",
+      "name": "Everyday Performance",
+      "description": "Pro360 Superfood Performance Beets and FL-3X together, for fitness and physical performance.",
+      "products": [
+        { "productId": "PRD005", "quantity": 1 },
+        { "productId": "PRD014", "quantity": 1 }
+      ],
+      "cost": 68.78,
+      "status": "Active",
+      "formulatedFor": { "exactFor": ["OUT004"] }
+    },
+    {
+      "id": "PAK011",
+      "name": "V3 + Power Pack",
+      "description": "PhytoLife, Mistify, ProArgi-9+, Body Prime, Pro360 Wholefood Greens and Pro360 Superfood Performance Beets together - a broad vitality-plus-fitness bundle rather than a single-outcome program.",
+      "products": [
+        { "productId": "PRD010", "quantity": 1 },
+        { "productId": "PRD011", "quantity": 1 },
+        { "productId": "PRD001", "quantity": 1 },
+        { "productId": "PRD009", "quantity": 1 },
+        { "productId": "PRD004", "quantity": 1 },
+        { "productId": "PRD005", "quantity": 1 }
+      ],
+      "cost": 263.34,
+      "status": "Active"
+    },
+    {
+      "id": "PAK012",
+      "name": "Performance Power Pack",
+      "description": "ProArgi-9+, e9, two Pro360 Superfood Performance Beets and Pro360 Wholefood Greens - for people wanting to raise their performance, both sporting and in business.",
+      "products": [
+        { "productId": "PRD001", "quantity": 1 },
+        { "productId": "PRD002", "quantity": 1 },
+        { "productId": "PRD005", "quantity": 2 },
+        { "productId": "PRD004", "quantity": 1 }
+      ],
+      "cost": 289.99,
+      "status": "Active",
+      "formulatedFor": { "exactFor": ["OUT004", "OUT006"] }
+    }
+  ]
+}

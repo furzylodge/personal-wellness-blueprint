@@ -84,7 +84,7 @@ final class IconLibrary
             // Digestive & Gut Health — leaf
             'OUT005' => '<path d="M5 19c8.3 0 13-4.9 13-13.5C9.4 5.5 5 10.4 5 19Z"/><path d="M5 19c1-3.6 3-6.4 6.8-9"/>',
 
-            // Mental Clarity & Cognitive Performance — lightbulb
+            // Mental Clarity & Performance Sharpness — lightbulb
             'OUT006' => '<path d="M9 17.5h6"/><path d="M9.5 20.2h5"/><path d="M12 4a5.6 5.6 0 0 0-3 10.4c.6.4.9 1 .9 1.7v.4h4.2v-.4c0-.7.3-1.3.9-1.7A5.6 5.6 0 0 0 12 4Z"/>',
 
             // Mobility & Joint Health — hinge/joint

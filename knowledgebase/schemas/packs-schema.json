@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "packs-schema.json",
+  "title": "Packs",
+  "description": "Synergy's curated multi-product bundles ('programs'), sold at a combined price cheaper than buying the constituent products separately. Distinct from products.json: a pack is never scored against a person's mechanisms and never competes in ProductResolver's ranking. Instead PackResolver offers a pack as an OPTIONAL EXTRA alongside the single top-ranked product, only when the pack's formulatedFor.exactFor matches one of the person's selected wellness goals (PF014) - the same narrow 'this is exactly what it's for' philosophy already used for products, never a hard override and never the main recommendation.",
+  "type": "object",
+  "required": ["version", "description", "count", "packs"],
+  "properties": {
+    "version": { "type": "string" },
+    "description": { "type": "string" },
+    "count": { "type": "integer", "minimum": 0 },
+    "packs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "products", "cost", "status"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^PAK[0-9]{3}$"
+          },
+          "name": { "type": "string", "minLength": 1 },
+          "description": { "type": "string" },
+          "products": {
+            "type": "array",
+            "minItems": 2,
+            "description": "The constituent products this pack bundles, with quantities. Every productId must match an id in products.json.",
+            "items": {
+              "type": "object",
+              "required": ["productId", "quantity"],
+              "properties": {
+                "productId": { "type": "string", "pattern": "^PRD[0-9]{3}$" },
+                "quantity": { "type": "integer", "minimum": 1 }
+              },
+              "additionalProperties": false
+            }
+          },
+          "cost": {
+            "type": "number",
+            "minimum": 0,
+            "description": "One-off retail price for the whole pack, in GBP. Set independently by Synergy, not derived from the constituent products' own costs - it's normally lower than their combined price, which is exactly the saving the report highlights. The subscribe & save price and the per-day price are both derived from this at report-build time, same convention as products.json."
+          },
+          "shopUrl": {
+            "type": "string",
+            "description": "Link to this pack's page in the Synergy shop."
+          },
+          "image": { "type": "string", "description": "Path or filename of the pack packshot image." },
+          "status": { "type": "string", "enum": ["Active", "Discontinued", "Proposed"] },
+          "formulatedFor": {
+            "type": "object",
+            "description": "Optional. Many packs (broad 'everyday' bundles) genuinely don't chase a single outcome and should omit this entirely - they stay in the catalogue but PackResolver never offers them. Only present it when the pack really is a focused program for one or two outcomes.",
+            "properties": {
+              "exactFor": {
+                "type": "array",
+                "items": { "type": "string", "pattern": "^OUT[0-9]{3}$" },
+                "description": "Must match ids in outcomes.json. The narrow, Simon-approved 'this is exactly what it's for' designation, mirroring products.json's formulatedFor.exactFor. PackResolver offers this pack as an optional extra only when one of these intersects the person's selected wellness goals (PF014)."
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

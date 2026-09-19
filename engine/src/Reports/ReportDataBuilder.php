@@ -14,6 +14,7 @@ use PWB\Recommendation\MechanismResolver;
 use PWB\Recommendation\BioactiveResolver;
 use PWB\Recommendation\FoodResolver;
 use PWB\Recommendation\ProductResolver;
+use PWB\Recommendation\PackResolver;
 use PWB\Recommendation\NutrientResolver;
 use PWB\Assessment\Assessment;
 use PWB\Recommendation\RecommendationConfiguration;
@@ -200,6 +201,11 @@ $productResolver = new ProductResolver(
     $this->locator->getKnowledgebaseDirectory()
 );
 
+$packResolver = new PackResolver(
+    new JsonLoader(),
+    $this->locator->getKnowledgebaseDirectory()
+);
+
 $bioactives = $bioactiveResolver->resolve($mechanisms);
 // Allergies (restrictions) and dietary preferences are now BOTH functional
 // exclusions — foods.json tags every food against both vocabularies
@@ -229,6 +235,16 @@ foreach ($productResults as &$product) {
     $product['mechanisms'] = $this->buildProductMechanisms($product);
 }
 unset($product);
+
+// The optional "program" pack shown alongside the top product — never a
+// replacement for it, only offered when a pack is genuinely, explicitly
+// "for" one of this person's own selected goals (see PackResolver).
+$recommendedPack = $packResolver->resolve($assessment->goals ?? []);
+
+if ($recommendedPack !== null) {
+    $matchedOutcome = $this->outcomeLookup[$recommendedPack['matchedGoal']] ?? null;
+    $recommendedPack['matchedGoalName'] = $matchedOutcome['name'] ?? null;
+}
 
 $vitamins = $nutrientResolver->resolve($mechanisms, 'vitamin');
 $minerals = $nutrientResolver->resolve($mechanisms, 'mineral');
@@ -336,7 +352,8 @@ $dashboard = $this->buildDashboard(
     $assessment->goals ?? [],
     $bioactives,
     array_merge($vitamins, $minerals),
-    $productResults[0] ?? null
+    $productResults[0] ?? null,
+    $recommendedPack
 );
 
 		return [
@@ -365,6 +382,7 @@ $dashboard = $this->buildDashboard(
 'dashboard'   => $dashboard,
 'products'    => $productResults,
 'topProduct'  => $productResults[0] ?? null,
+'recommendedPack' => $recommendedPack,
 'theme' => $assessment->theme ?? 'theme-green',
 'actionPlan' => $this->buildActionPlan(),
 // Live counts of the underlying dataset (questions, foods, body
@@ -569,7 +587,8 @@ $system['summary'] =
         array $goalIds,
         array $bioactives,
         array $nutrients,
-        ?array $topProduct = null
+        ?array $topProduct = null,
+        ?array $recommendedPack = null
     ): array {
 
         // ---- Body system heat grid ----
@@ -778,6 +797,10 @@ $system['summary'] =
             // everything it needs (image, claims, servings, whySelected)
             // without DashboardSection reaching outside the $dashboard array.
             'topProduct' => $topProduct,
+            // The single optional "program" pack for this person, if any —
+            // see PackResolver. Null for most people; when present it's
+            // rendered directly beside the product strip, never on its own.
+            'recommendedPack' => $recommendedPack,
         ];
     }
 

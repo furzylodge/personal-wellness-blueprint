@@ -53,6 +53,7 @@ class DashboardSection
         $html .= $this->renderHeatMap($dashboard['heatMap'] ?? []);
         $html .= $this->renderRadar($dashboard['radarSystems'] ?? []);
         $html .= $this->renderProductStrip($dashboard['topProduct'] ?? null, $dashboard['supplementationIntro'] ?? '');
+        $html .= $this->renderPackCard($dashboard['recommendedPack'] ?? null);
         // These four "insight" cards get their own nested 4-column row
         // rather than sharing the outer grid's fixed 2fr/1fr/1fr template,
         // which was sized for exactly the three cards that used to live
@@ -463,6 +464,115 @@ class DashboardSection
                         </div>
                     </div>
                 </div>';
+    }
+
+    /**
+     * The optional "program" pack — a curated multi-product bundle Synergy
+     * sells alongside individual products (see PackResolver), offered here
+     * directly beside the single top product it complements. Deliberately
+     * lighter-weight than the product strip above it (no claims list, no
+     * "why selected" mechanism explanation) so it reads as a genuine
+     * optional extra, not a second, competing recommendation. Renders
+     * nothing when no pack matched this person's selected goals — most
+     * people will see no pack card at all, which is the expected case.
+     */
+    private function renderPackCard(?array $pack): string
+    {
+        if ($pack === null) {
+            return '';
+        }
+
+        $image = !empty($pack['image'])
+            ? '<img class="product-strip-image" src="../engine/assets/images/packs/' . htmlspecialchars($pack['image']) . '" alt="' . htmlspecialchars($pack['name'] ?? '') . '">'
+            : '<div class="product-strip-image product-strip-image-placeholder"></div>';
+
+        $contents = '';
+        foreach ($pack['products'] ?? [] as $item) {
+            $label = htmlspecialchars($item['name'] ?? $item['productId']);
+            if (($item['quantity'] ?? 1) > 1) {
+                $label = (int) $item['quantity'] . '&times; ' . $label;
+            }
+            $contents .= '
+                                <li>
+                                    <span class="product-strip-claim-icon">' . IconLibrary::render('CHECK', 'pwb-icon') . '</span>
+                                    <span>' . $label . '</span>
+                                </li>';
+        }
+
+        $goalNote = !empty($pack['matchedGoalName'])
+            ? '<p class="product-strip-why">A focused Synergy program built specifically for ' . htmlspecialchars($pack['matchedGoalName']) . ', one of your selected goals.</p>'
+            : '';
+
+        $pricing = $this->renderPackPricing($pack);
+
+        $moreInfo = !empty($pack['shopUrl'])
+            ? '<a class="product-strip-more-info" href="' . htmlspecialchars($pack['shopUrl']) . '" target="_blank" rel="noopener">More information</a>'
+            : '';
+
+        return '
+                <div class="dashboard-card dashboard-product-strip dashboard-pack-card">
+                    <div class="dashboard-card-label">Optional Program</div>
+                    <p class="product-strip-intro">Alongside your recommended product, this bundled Synergy program is worth considering too:</p>
+                    <div class="product-strip-card">
+                        <div class="product-strip-image-wrap">' . $image . '</div>
+                        <div class="product-strip-body">
+                            <div class="product-strip-name">' . htmlspecialchars($pack['name'] ?? '') . '</div>
+                            ' . $goalNote . '
+                            <ul class="product-strip-claims">' . $contents . '
+                            </ul>
+                            ' . $pricing . '
+                            ' . $moreInfo . '
+                        </div>
+                    </div>
+                </div>';
+    }
+
+    /**
+     * Pack pricing — same one-off / subscribe & save shape as
+     * renderProductPricing(), plus a "saving" line when every constituent
+     * product in the pack carries a real cost (PackResolver returns null
+     * for 'saving' while products.json still holds its £50 placeholder
+     * across the board, so this stays hidden rather than showing a
+     * meaningless figure until Simon supplies real product prices).
+     */
+    private function renderPackPricing(array $pack): string
+    {
+        if (!isset($pack['priceOneOff'])) {
+            return '';
+        }
+
+        $oneOff = $this->formatPrice($pack['priceOneOff']);
+        $subscription = isset($pack['priceSubscription']) ? $this->formatPrice($pack['priceSubscription']) : null;
+
+        $html = '
+                            <div class="product-strip-pricing">
+                                <div class="product-price-option product-price-oneoff">
+                                    <div class="product-price-label">One-off</div>
+                                    <div class="product-price-value">' . $oneOff . '</div>
+                                </div>';
+
+        if ($subscription !== null) {
+            $html .= '
+                                <div class="product-price-option product-price-subscription">
+                                    <div class="product-price-label">Subscribe &amp; Save</div>
+                                    <div class="product-price-value">' . $subscription . '</div>
+                                    <div class="product-price-note">10% off, free shipping — cancel anytime</div>
+                                </div>';
+        }
+
+        if (!empty($pack['saving'])) {
+            $html .= '
+                                <div class="product-price-option product-price-saving">
+                                    <div class="product-price-label">Bundled saving</div>
+                                    <div class="product-price-value">' . $this->formatPrice($pack['saving']) . '</div>
+                                    <div class="product-price-note">vs. buying these products separately</div>
+                                </div>';
+        }
+
+        $html .= '
+                            </div>';
+
+        return $html;
     }
 
     /**
