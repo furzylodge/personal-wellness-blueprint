@@ -209,7 +209,20 @@ $bioactives = $bioactiveResolver->resolve($mechanisms);
 // excluded-tags list.
 $excludedFoodTags = array_merge($assessment->restrictions ?? [], $assessment->preferences ?? []);
 $foodResults = $foodResolver->resolve($mechanisms, $excludedFoodTags);
-$productResults = $productResolver->resolve($mechanisms, $excludedFoodTags);
+
+// ProductResolver's formulatedFor bonus needs this person's #1 ranked body
+// system (priorities is already sorted strongest-first by PriorityScorer)
+// and their selected wellness goals (PF014 — the same OUT-code list
+// PriorityScorer's own goal bonus reads), so a product's hand-reviewed
+// flagship tag can earn the same kind of bounded edge PriorityScorer
+// already gives body systems.
+$topBodySystemId = $priorities[0]->id ?? null;
+$productResults = $productResolver->resolve(
+    $mechanisms,
+    $excludedFoodTags,
+    $topBodySystemId,
+    $assessment->goals ?? []
+);
 
 foreach ($productResults as &$product) {
     $product['whySelected'] = $this->buildProductWhySelected($product);

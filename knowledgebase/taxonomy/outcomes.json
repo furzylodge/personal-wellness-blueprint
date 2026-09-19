@@ -1,15 +1,13 @@
 {
-  "version": "2.2",
+  "version": "3.0",
   "status": "Active",
-  "description": "Canonical Personal Wellness Blueprint outcomes linking user goals to body systems, biological mechanisms and demographic modifiers.",
+  "description": "Canonical Personal Wellness Blueprint outcomes linking user-stated wellness goals directly to body systems and biological mechanisms. Outcomes are the single goal/outcome vocabulary used throughout PWB - the same OUT-codes the questionnaire (PF014) offers as goal choices, that products and foods are tagged/scored against, and that PriorityScorer applies as a body-system bonus. The separate goals.json layer (GOAL### ids sitting between user intent and outcomes) has been retired as an unused extra layer - it was never read by any scoring code and the questionnaire already asked for outcomes directly.",
   "outcomes": [
     {
       "id": "OUT001",
       "name": "Better Sleep",
       "description": "Support better sleep quality and restorative recovery.",
-      "goals": [
-        "GOAL002"
-      ],
+      "goals": [],
       "primaryBodySystems": [
         "BS004",
         "BS008"
@@ -27,9 +25,7 @@
       "id": "OUT002",
       "name": "More Energy",
       "description": "Support energy, vitality and physical stamina.",
-      "goals": [
-        "GOAL001"
-      ],
+      "goals": [],
       "primaryBodySystems": [
         "BS008",
         "BS004"
@@ -48,9 +44,7 @@
       "id": "OUT003",
       "name": "Healthy Weight Management",
       "description": "Support healthy weight and body composition.",
-      "goals": [
-        "GOAL003"
-      ],
+      "goals": [],
       "primaryBodySystems": [
         "BS008",
         "BS002"
@@ -71,9 +65,7 @@
       "id": "OUT004",
       "name": "Better Fitness & Physical Performance",
       "description": "Support physical fitness, strength, stamina and exercise performance.",
-      "goals": [
-        "GOAL004"
-      ],
+      "goals": [],
       "primaryBodySystems": [
         "BS009",
         "BS003",
@@ -92,9 +84,7 @@
       "id": "OUT005",
       "name": "Digestive & Gut Health",
       "description": "Support digestive comfort, regularity and healthy gut function.",
-      "goals": [
-        "GOAL005"
-      ],
+      "goals": [],
       "primaryBodySystems": [
         "BS001",
         "BS002"
@@ -121,9 +111,7 @@
       "id": "OUT006",
       "name": "Mental Clarity & Cognitive Performance",
       "description": "Support concentration, focus, memory and cognitive performance.",
-      "goals": [
-        "GOAL006"
-      ],
+      "goals": [],
       "primaryBodySystems": [
         "BS004",
         "BS003"
@@ -144,9 +132,7 @@
       "id": "OUT007",
       "name": "Mobility & Joint Health",
       "description": "Support mobility, joint function and comfortable movement.",
-      "goals": [
-        "GOAL007"
-      ],
+      "goals": [],
       "primaryBodySystems": [
         "BS009"
       ],
@@ -165,10 +151,7 @@
       "id": "OUT008",
       "name": "Healthy Ageing & Resilience",
       "description": "Support resilience, function and wellbeing across ageing.",
-      "goals": [
-        "GOAL008",
-        "GOAL009"
-      ],
+      "goals": [],
       "primaryBodySystems": [
         "BS003",
         "BS004",
@@ -203,9 +186,7 @@
       "id": "OUT009",
       "name": "Menopause Transition Resilience",
       "description": "Support wellbeing and resilience during the menopause transition.",
-      "goals": [
-        "GOAL010"
-      ],
+      "goals": [],
       "primaryBodySystems": [
         "BS008",
         "BS004",
@@ -233,6 +214,60 @@
           "65+"
         ]
       },
+      "status": "Active"
+    },
+    {
+      "id": "OUT010",
+      "name": "Heart & Cardiovascular Health",
+      "description": "Support healthy blood pressure, circulation and cardiovascular function.",
+      "goals": [],
+      "primaryBodySystems": [
+        "BS003"
+      ],
+      "secondaryBodySystems": [],
+      "candidateMechanisms": [
+        "MEC013",
+        "MEC002",
+        "MEC010",
+        "MEC011",
+        "MEC012"
+      ],
+      "status": "Active"
+    },
+    {
+      "id": "OUT011",
+      "name": "Immune Resilience",
+      "description": "Support healthy immune function, resilience and a balanced inflammatory response.",
+      "goals": [],
+      "primaryBodySystems": [
+        "BS005"
+      ],
+      "secondaryBodySystems": [],
+      "candidateMechanisms": [
+        "MEC060",
+        "MEC061",
+        "MEC062",
+        "MEC068",
+        "MEC069"
+      ],
+      "status": "Active"
+    },
+    {
+      "id": "OUT012",
+      "name": "Sexual Health & Libido",
+      "description": "Support healthy circulation and hormonal balance associated with sexual health and libido.",
+      "goals": [],
+      "primaryBodySystems": [
+        "BS003",
+        "BS008"
+      ],
+      "secondaryBodySystems": [],
+      "candidateMechanisms": [
+        "MEC011",
+        "MEC010",
+        "MEC086",
+        "MEC083"
+      ],
       "status": "Active"
     }
   ]

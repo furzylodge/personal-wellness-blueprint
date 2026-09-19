@@ -25,7 +25,28 @@
       "dietaryExclusions": [
         "vegan"
       ],
-      "status": "Active"
+      "status": "Active",
+      "formulatedFor": {
+        "primaryBodySystems": [
+          "BS003",
+          "BS006"
+        ],
+        "outcomes": [
+          "OUT001",
+          "OUT002",
+          "OUT003",
+          "OUT004",
+          "OUT006",
+          "OUT007",
+          "OUT008",
+          "OUT010",
+          "OUT012"
+        ],
+        "exactFor": [
+          "OUT010",
+          "OUT012"
+        ]
+      }
     },
     {
       "id": "PRD002",
@@ -47,7 +68,25 @@
       "factsheetUrl": "",
       "allergens": [],
       "dietaryExclusions": [],
-      "status": "Active"
+      "status": "Active",
+      "formulatedFor": {
+        "primaryBodySystems": [
+          "BS003"
+        ],
+        "outcomes": [
+          "OUT001",
+          "OUT002",
+          "OUT003",
+          "OUT004",
+          "OUT006",
+          "OUT007",
+          "OUT010",
+          "OUT012"
+        ],
+        "exactFor": [
+          "OUT002"
+        ]
+      }
     },
     {
       "id": "PRD003",
@@ -72,7 +111,22 @@
       "dietaryExclusions": [
         "vegan"
       ],
-      "status": "Active"
+      "status": "Active",
+      "formulatedFor": {
+        "primaryBodySystems": [
+          "BS005"
+        ],
+        "outcomes": [
+          "OUT001",
+          "OUT005",
+          "OUT007",
+          "OUT008",
+          "OUT011"
+        ],
+        "exactFor": [
+          "OUT011"
+        ]
+      }
     },
     {
       "id": "PRD004",
@@ -95,7 +149,31 @@
       "factsheetUrl": "",
       "allergens": [],
       "dietaryExclusions": [],
-      "status": "Active"
+      "status": "Active",
+      "formulatedFor": {
+        "primaryBodySystems": [
+          "BS001",
+          "BS002"
+        ],
+        "secondaryBodySystems": [
+          "BS004",
+          "BS005",
+          "BS008"
+        ],
+        "outcomes": [
+          "OUT001",
+          "OUT002",
+          "OUT003",
+          "OUT004",
+          "OUT005",
+          "OUT006",
+          "OUT007",
+          "OUT008",
+          "OUT009",
+          "OUT010",
+          "OUT011"
+        ]
+      }
     },
     {
       "id": "PRD005",
@@ -120,7 +198,31 @@
       "dietaryExclusions": [
         "vegan"
       ],
-      "status": "Active"
+      "status": "Active",
+      "formulatedFor": {
+        "primaryBodySystems": [
+          "BS003"
+        ],
+        "secondaryBodySystems": [
+          "BS004",
+          "BS006"
+        ],
+        "outcomes": [
+          "OUT001",
+          "OUT002",
+          "OUT003",
+          "OUT004",
+          "OUT005",
+          "OUT006",
+          "OUT007",
+          "OUT008",
+          "OUT010",
+          "OUT012"
+        ],
+        "exactFor": [
+          "OUT004"
+        ]
+      }
     },
     {
       "id": "PRD006",
@@ -143,7 +245,25 @@
       "dietaryExclusions": [
         "vegan"
       ],
-      "status": "Active"
+      "status": "Active",
+      "formulatedFor": {
+        "primaryBodySystems": [
+          "BS001"
+        ],
+        "secondaryBodySystems": [
+          "BS002"
+        ],
+        "outcomes": [
+          "OUT003",
+          "OUT005",
+          "OUT008",
+          "OUT009",
+          "OUT011"
+        ],
+        "exactFor": [
+          "OUT005"
+        ]
+      }
     },
     {
       "id": "PRD007",
@@ -164,7 +284,29 @@
       "factsheetUrl": "",
       "allergens": [],
       "dietaryExclusions": [],
-      "status": "Active"
+      "status": "Active",
+      "formulatedFor": {
+        "primaryBodySystems": [
+          "BS001"
+        ],
+        "secondaryBodySystems": [
+          "BS005",
+          "BS008",
+          "BS009"
+        ],
+        "outcomes": [
+          "OUT002",
+          "OUT003",
+          "OUT004",
+          "OUT005",
+          "OUT006",
+          "OUT008",
+          "OUT011"
+        ],
+        "exactFor": [
+          "OUT005"
+        ]
+      }
     },
     {
       "id": "PRD008",
@@ -186,7 +328,30 @@
       "factsheetUrl": "",
       "allergens": [],
       "dietaryExclusions": [],
-      "status": "Active"
+      "status": "Active",
+      "formulatedFor": {
+        "primaryBodySystems": [
+          "BS001"
+        ],
+        "secondaryBodySystems": [
+          "BS002",
+          "BS009"
+        ],
+        "outcomes": [
+          "OUT001",
+          "OUT002",
+          "OUT003",
+          "OUT004",
+          "OUT005",
+          "OUT006",
+          "OUT007",
+          "OUT008",
+          "OUT011"
+        ],
+        "exactFor": [
+          "OUT005"
+        ]
+      }
     },
     {
       "id": "PRD009",
@@ -210,7 +375,20 @@
       "dietaryExclusions": [
         "vegan"
       ],
-      "status": "Active"
+      "status": "Active",
+      "formulatedFor": {
+        "secondaryBodySystems": [
+          "BS004",
+          "BS009"
+        ],
+        "outcomes": [
+          "OUT001",
+          "OUT007",
+          "OUT008",
+          "OUT010",
+          "OUT011"
+        ]
+      }
     },
     {
       "id": "PRD010",
@@ -233,7 +411,31 @@
       "factsheetUrl": "",
       "allergens": [],
       "dietaryExclusions": [],
-      "status": "Active"
+      "status": "Active",
+      "formulatedFor": {
+        "primaryBodySystems": [
+          "BS001"
+        ],
+        "secondaryBodySystems": [
+          "BS003",
+          "BS007",
+          "BS008"
+        ],
+        "outcomes": [
+          "OUT001",
+          "OUT003",
+          "OUT005",
+          "OUT006",
+          "OUT007",
+          "OUT008",
+          "OUT009",
+          "OUT010",
+          "OUT011"
+        ],
+        "exactFor": [
+          "OUT005"
+        ]
+      }
     },
     {
       "id": "PRD011",
@@ -257,7 +459,31 @@
         "soybeans"
       ],
       "dietaryExclusions": [],
-      "status": "Active"
+      "status": "Active",
+      "formulatedFor": {
+        "primaryBodySystems": [
+          "BS005"
+        ],
+        "secondaryBodySystems": [
+          "BS004",
+          "BS006"
+        ],
+        "outcomes": [
+          "OUT001",
+          "OUT002",
+          "OUT003",
+          "OUT004",
+          "OUT006",
+          "OUT007",
+          "OUT008",
+          "OUT010",
+          "OUT011",
+          "OUT012"
+        ],
+        "exactFor": [
+          "OUT011"
+        ]
+      }
     },
     {
       "id": "PRD012",
@@ -283,7 +509,22 @@
         "vegetarian",
         "no_red_meat"
       ],
-      "status": "Active"
+      "status": "Active",
+      "formulatedFor": {
+        "primaryBodySystems": [
+          "BS009"
+        ],
+        "outcomes": [
+          "OUT004",
+          "OUT007",
+          "OUT008",
+          "OUT009",
+          "OUT010"
+        ],
+        "exactFor": [
+          "OUT007"
+        ]
+      }
     },
     {
       "id": "PRD013",
@@ -310,7 +551,24 @@
         "vegan",
         "vegetarian"
       ],
-      "status": "Active"
+      "status": "Active",
+      "formulatedFor": {
+        "primaryBodySystems": [
+          "BS009"
+        ],
+        "secondaryBodySystems": [
+          "BS008"
+        ],
+        "outcomes": [
+          "OUT003",
+          "OUT007",
+          "OUT008",
+          "OUT010"
+        ],
+        "exactFor": [
+          "OUT008"
+        ]
+      }
     },
     {
       "id": "PRD014",
@@ -340,7 +598,20 @@
         "halal",
         "kosher"
       ],
-      "status": "Active"
+      "status": "Active",
+      "formulatedFor": {
+        "primaryBodySystems": [
+          "BS009"
+        ],
+        "outcomes": [
+          "OUT004",
+          "OUT007",
+          "OUT008"
+        ],
+        "exactFor": [
+          "OUT007"
+        ]
+      }
     },
     {
       "id": "PRD015",
@@ -365,7 +636,25 @@
       "dietaryExclusions": [
         "vegan"
       ],
-      "status": "Active"
+      "status": "Active",
+      "formulatedFor": {
+        "primaryBodySystems": [
+          "BS005",
+          "BS009"
+        ],
+        "outcomes": [
+          "OUT001",
+          "OUT005",
+          "OUT008",
+          "OUT010",
+          "OUT011",
+          "OUT012"
+        ],
+        "exactFor": [
+          "OUT008",
+          "OUT011"
+        ]
+      }
     },
     {
       "id": "PRD016",
@@ -392,7 +681,27 @@
         "vegan",
         "vegetarian"
       ],
-      "status": "Active"
+      "status": "Active",
+      "formulatedFor": {
+        "primaryBodySystems": [
+          "BS003"
+        ],
+        "secondaryBodySystems": [
+          "BS004",
+          "BS008"
+        ],
+        "outcomes": [
+          "OUT001",
+          "OUT003",
+          "OUT007",
+          "OUT008",
+          "OUT010",
+          "OUT011"
+        ],
+        "exactFor": [
+          "OUT010"
+        ]
+      }
     },
     {
       "id": "PRD017",
@@ -417,7 +726,18 @@
         "vegan",
         "vegetarian"
       ],
-      "status": "Active"
+      "status": "Active",
+      "formulatedFor": {
+        "secondaryBodySystems": [
+          "BS004",
+          "BS008"
+        ],
+        "outcomes": [
+          "OUT002",
+          "OUT004",
+          "OUT010"
+        ]
+      }
     },
     {
       "id": "PRD018",
@@ -441,7 +761,26 @@
         "vegan",
         "vegetarian"
       ],
-      "status": "Active"
+      "status": "Active",
+      "formulatedFor": {
+        "primaryBodySystems": [
+          "BS001"
+        ],
+        "secondaryBodySystems": [
+          "BS007",
+          "BS008"
+        ],
+        "outcomes": [
+          "OUT001",
+          "OUT003",
+          "OUT005",
+          "OUT008",
+          "OUT011"
+        ],
+        "exactFor": [
+          "OUT005"
+        ]
+      }
     },
     {
       "id": "PRD019",
@@ -465,7 +804,25 @@
       "factsheetUrl": "",
       "allergens": [],
       "dietaryExclusions": [],
-      "status": "Active"
+      "status": "Active",
+      "formulatedFor": {
+        "primaryBodySystems": [
+          "BS005"
+        ],
+        "secondaryBodySystems": [
+          "BS008",
+          "BS009"
+        ],
+        "outcomes": [
+          "OUT001",
+          "OUT005",
+          "OUT008",
+          "OUT009"
+        ],
+        "exactFor": [
+          "OUT011"
+        ]
+      }
     },
     {
       "id": "PRD020",
@@ -491,7 +848,22 @@
         "vegan",
         "vegetarian"
       ],
-      "status": "Active"
+      "status": "Active",
+      "formulatedFor": {
+        "primaryBodySystems": [
+          "BS004"
+        ],
+        "secondaryBodySystems": [
+          "BS008"
+        ],
+        "outcomes": [
+          "OUT001",
+          "OUT008"
+        ],
+        "exactFor": [
+          "OUT001"
+        ]
+      }
     },
     {
       "id": "PRD021",
@@ -517,7 +889,29 @@
       "dietaryExclusions": [
         "vegan"
       ],
-      "status": "Active"
+      "status": "Active",
+      "formulatedFor": {
+        "secondaryBodySystems": [
+          "BS001",
+          "BS002",
+          "BS004",
+          "BS005",
+          "BS006",
+          "BS007",
+          "BS008"
+        ],
+        "outcomes": [
+          "OUT001",
+          "OUT002",
+          "OUT003",
+          "OUT004",
+          "OUT005",
+          "OUT006",
+          "OUT008",
+          "OUT009",
+          "OUT011"
+        ]
+      }
     },
     {
       "id": "PRD022",
@@ -540,7 +934,19 @@
         "vegan",
         "vegetarian"
       ],
-      "status": "Active"
+      "status": "Active",
+      "formulatedFor": {
+        "secondaryBodySystems": [
+          "BS001"
+        ],
+        "outcomes": [
+          "OUT003",
+          "OUT005"
+        ],
+        "exactFor": [
+          "OUT003"
+        ]
+      }
     },
     {
       "id": "PRD023",
@@ -567,7 +973,22 @@
         "vegan",
         "vegetarian"
       ],
-      "status": "Active"
+      "status": "Active",
+      "formulatedFor": {
+        "primaryBodySystems": [
+          "BS001"
+        ],
+        "secondaryBodySystems": [
+          "BS003"
+        ],
+        "outcomes": [
+          "OUT003",
+          "OUT005"
+        ],
+        "exactFor": [
+          "OUT003"
+        ]
+      }
     },
     {
       "id": "PRD024",
@@ -592,7 +1013,27 @@
       "factsheetUrl": "",
       "allergens": [],
       "dietaryExclusions": [],
-      "status": "Active"
+      "status": "Active",
+      "formulatedFor": {
+        "secondaryBodySystems": [
+          "BS001",
+          "BS002",
+          "BS004",
+          "BS005",
+          "BS008",
+          "BS009"
+        ],
+        "outcomes": [
+          "OUT003",
+          "OUT004",
+          "OUT005",
+          "OUT008",
+          "OUT011"
+        ],
+        "exactFor": [
+          "OUT003"
+        ]
+      }
     }
   ]
 }

@@ -113,6 +113,18 @@
         {
           "value": "OUT009",
           "label": "Menopause Transition Resilience"
+        },
+        {
+          "value": "OUT010",
+          "label": "Heart & Cardiovascular Health"
+        },
+        {
+          "value": "OUT011",
+          "label": "Immune Resilience"
+        },
+        {
+          "value": "OUT012",
+          "label": "Sexual Health & Libido"
         }
       ]
     },

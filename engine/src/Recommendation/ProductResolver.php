@@ -42,6 +42,45 @@ final class ProductResolver
     // would just be a second place for the two figures to drift apart.
     private const SUBSCRIPTION_DISCOUNT = 0.10;
 
+    // Bonuses applied to clinicalScore when a product's hand-reviewed
+    // "formulatedFor" tag (products.json, factsheet-grounded, Simon-
+    // approved) lines up with this person's own top body-system priority
+    // or one of their selected wellness goals (PF014). Mirrors
+    // PriorityScorer::PRIMARY_GOAL_BONUS / SECONDARY_GOAL_BONUS — a real
+    // but bounded edge, never a hard override, and never stacked: at most
+    // one body-system bonus and one outcome bonus per product, each taking
+    // the strongest applicable match rather than summing several.
+    // Expressed as a fraction of clinicalScore (that score's scale varies
+    // per assessment) rather than a flat point value, since ProductResolver
+    // — unlike PriorityScorer's 0-100 body-system scale — has no fixed
+    // scale to add flat points to.
+    private const PRIMARY_FLAGSHIP_BONUS = 0.15;
+    private const SECONDARY_FLAGSHIP_BONUS = 0.07;
+    private const OUTCOME_MATCH_BONUS = 0.10;
+
+    // A percentage bonus can't guarantee anything — if a product's raw
+    // mechanism-based score is very low (e.g. SleepWell, because
+    // mechanisms.json has no real sleep-specific mechanism yet), even a
+    // large multiplier leaves it buried. Simon asked for a way to force a
+    // product to appear when it's directly formulated for one of the
+    // person's own selected goals — not just "relevant" to it
+    // (formulatedFor.outcomes) but its exact, explicit purpose.
+    //
+    // This deliberately reads formulatedFor.exactFor — a narrow,
+    // hand-approved list, separate from primaryBodySystems — rather than
+    // deriving the match from shared body systems. An earlier version did
+    // derive it that way and it came out too broad: SleepWell (flagship
+    // system Nervous) started forcing itself into a Better Fitness result
+    // too, because More Energy also lists Nervous as a primary system.
+    // exactFor has no such structural leakage: a product with no entry can
+    // never be forced in, however its body systems or mechanisms overlap.
+    //
+    // When a match is found, this product's clinicalScore is floored to at
+    // least the current #3 product's score — guaranteed a top-3 place,
+    // not merely nudged. Still fully transparent: every floored product is
+    // flagged in scoreBreakdown.formulatedForBonus.forcedInclusion.
+    private const FORCED_INCLUSION_RANK = 3;
+
     public function __construct(
         private JsonLoader $loader,
         private string $knowledgePath
@@ -57,9 +96,26 @@ final class ProductResolver
      *                                plus stated dietary preferences from
      *                                PF020). A hard exclusion, not a scoring
      *                                penalty.
+     * @param string|null $topBodySystemId This person's #1 ranked body
+     *                                       system (the first entry of
+     *                                       PriorityScorer's already-sorted
+     *                                       output) — compared against each
+     *                                       product's formulatedFor tag for
+     *                                       the flagship bonus.
+     * @param string[] $selectedGoals This person's selected wellness goals
+     *                                 (PF014 answers, up to 3 OUT-codes) —
+     *                                 compared against each product's
+     *                                 formulatedFor.outcomes for the outcome
+     *                                 match bonus, and against
+     *                                 formulatedFor.exactFor for the
+     *                                 forced-inclusion floor.
      */
-    public function resolve(array $resolvedMechanisms, array $excludedTags = []): array
-    {
+    public function resolve(
+        array $resolvedMechanisms,
+        array $excludedTags = [],
+        ?string $topBodySystemId = null,
+        array $selectedGoals = []
+    ): array {
         $catalogue = $this->loader->load(
             $this->knowledgePath . '/taxonomy/products.json'
         );
@@ -237,9 +293,49 @@ final class ProductResolver
                 $decayedTotal += $m['contribution'] * (self::PATHWAY_DECAY ** $rank);
             }
 
-            $clinicalScore =
+            $baseClinicalScore =
                 ($decayedTotal * 0.80) +
                 ($decayedTotal * $averageStrength * 0.20);
+
+            // ---------------------------------------------------------
+            // formulatedFor bonus — see class-level constants for the
+            // rationale. Bounded and transparent: the strongest single
+            // body-system match and the strongest single outcome match
+            // each apply once, never summed across several matches.
+            // ---------------------------------------------------------
+            $formulatedFor = $product['formulatedFor'] ?? [];
+
+            $bodySystemBonusRate = 0.0;
+            $bodySystemBonusReason = null;
+
+            if ($topBodySystemId !== null) {
+                if (in_array($topBodySystemId, $formulatedFor['primaryBodySystems'] ?? [], true)) {
+                    $bodySystemBonusRate = self::PRIMARY_FLAGSHIP_BONUS;
+                    $bodySystemBonusReason = 'primary';
+                } elseif (in_array($topBodySystemId, $formulatedFor['secondaryBodySystems'] ?? [], true)) {
+                    $bodySystemBonusRate = self::SECONDARY_FLAGSHIP_BONUS;
+                    $bodySystemBonusReason = 'secondary';
+                }
+            }
+
+            $matchedOutcomes = array_values(array_intersect(
+                $formulatedFor['outcomes'] ?? [],
+                $selectedGoals
+            ));
+
+            $outcomeBonusRate = $matchedOutcomes ? self::OUTCOME_MATCH_BONUS : 0.0;
+
+            $totalBonusRate = $bodySystemBonusRate + $outcomeBonusRate;
+            $clinicalScore = $baseClinicalScore * (1 + $totalBonusRate);
+
+            // Direct match check for forced inclusion (see class-level
+            // FORCED_INCLUSION_RANK comment) — is one of the person's
+            // selected goals in this product's explicit, hand-approved
+            // exactFor list?
+            $directMatchGoals = array_values(array_intersect(
+                $formulatedFor['exactFor'] ?? [],
+                $selectedGoals
+            ));
 
             $servingsPerContainer = $product['servingsPerContainer'] ?? null;
             $servingsPerDay       = $product['servingsPerDay'] ?? null;
@@ -295,6 +391,20 @@ final class ProductResolver
                         'systemsCoveredIds' => array_keys($systemsCovered),
                         'systemCount'       => $systemCount,
                     ],
+                    'formulatedForBonus' => [
+                        'baseScore'          => round($baseClinicalScore, 2),
+                        'bodySystemMatch'    => $bodySystemBonusReason,
+                        'bodySystemBonusRate' => $bodySystemBonusRate,
+                        'matchedOutcomes'    => $matchedOutcomes,
+                        'outcomeBonusRate'   => $outcomeBonusRate,
+                        'totalBonusRate'     => $totalBonusRate,
+                        'preFloorScore'      => round($clinicalScore, 2),
+                        'directMatchGoals'   => $directMatchGoals,
+                        // Filled in below, once every product's score is
+                        // known and the #3 cutoff can be worked out.
+                        'forcedInclusion'    => false,
+                        'finalScore'         => round($clinicalScore, 2),
+                    ],
                 ],
             ];
         }
@@ -303,6 +413,36 @@ final class ProductResolver
             $results,
             fn($a, $b) => $b['clinicalScore'] <=> $a['clinicalScore']
         );
+
+        // ---------------------------------------------------------------
+        // Forced inclusion — see FORCED_INCLUSION_RANK. Floor any directly-
+        // matched product up to the current #3 score, then re-sort once.
+        // Reads the cutoff from the pre-floor ranking so a product being
+        // lifted can't inflate the very cutoff it's being measured against.
+        // ---------------------------------------------------------------
+        $cutoffIndex = min(self::FORCED_INCLUSION_RANK, count($results)) - 1;
+        $floorScore = $cutoffIndex >= 0 ? $results[$cutoffIndex]['clinicalScore'] : 0.0;
+
+        $anyForced = false;
+
+        foreach ($results as &$product) {
+            $directMatchGoals = $product['scoreBreakdown']['formulatedForBonus']['directMatchGoals'];
+
+            if ($directMatchGoals && $product['clinicalScore'] < $floorScore) {
+                $product['clinicalScore'] = round($floorScore + 0.01, 2);
+                $product['scoreBreakdown']['formulatedForBonus']['forcedInclusion'] = true;
+                $product['scoreBreakdown']['formulatedForBonus']['finalScore'] = $product['clinicalScore'];
+                $anyForced = true;
+            }
+        }
+        unset($product);
+
+        if ($anyForced) {
+            usort(
+                $results,
+                fn($a, $b) => $b['clinicalScore'] <=> $a['clinicalScore']
+            );
+        }
 
         $maxScore = $results[0]['clinicalScore'] ?? 1;
 

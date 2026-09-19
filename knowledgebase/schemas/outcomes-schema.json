@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "outcomes-schema.json",
   "title": "Outcomes",
-  "description": "Canonical Personal Wellness Blueprint outcomes linking user goals to body systems, biological mechanisms and demographic modifiers. This is the structured physiological target layer the scoring engine works from; goals.json is the user-facing intent layer that points into it.",
+  "description": "Canonical Personal Wellness Blueprint outcomes linking user-stated wellness goals directly to body systems, biological mechanisms and demographic modifiers. This is both the user-facing goal vocabulary (the questionnaire's PF014 options are these OUT-codes directly) and the structured physiological target layer the scoring engine works from. The separate goals.json layer has been retired.",
   "type": "object",
   "required": ["version", "status", "description", "outcomes"],
   "properties": {
@@ -23,7 +23,7 @@
           "description": { "type": "string", "minLength": 1 },
           "goals": {
             "type": "array",
-            "description": "Must match ids in goals.json.",
+            "description": "Deprecated - goals.json has been retired and this is always empty now. Kept only so older records still validate against this schema without a shape change.",
             "items": {
               "type": "string",
               "pattern": "^GOAL[0-9]{3}$"

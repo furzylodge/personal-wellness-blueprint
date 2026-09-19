@@ -96,6 +96,17 @@ final class IconLibrary
             // Menopause Transition Resilience — butterfly (renewal/transition)
             'OUT009' => '<path d="M12 6.4v11.2"/><path d="M12 8c-1-3-3.4-4.4-5.4-3.8-2 .6-2.6 3-1.3 4.8C6.5 10.8 9 11.4 12 10.6"/><path d="M12 8c1-3 3.4-4.4 5.4-3.8 2 .6 2.6 3 1.3 4.8-1.2 1.8-3.7 2.4-6.7 1.6"/><path d="M12 12.4c-.9 2.7-3 3.9-4.8 3.4-1.8-.5-2.4-2.6-1.2-4.2 1-1.5 3.2-2.1 6-1.4"/><path d="M12 12.4c.9 2.7 3 3.9 4.8 3.4 1.8-.5 2.4-2.6 1.2-4.2-1-1.5-3.2-2.1-6-1.4"/>',
 
+            // Heart & Cardiovascular Health — heartbeat/pulse line
+            'OUT010' => '<path d="M3 12h4l2-6 3 12 2-9 2 3h5"/>',
+
+            // Immune Resilience — shield with a repair/resilience cross
+            // (deliberately echoes BS005's shield, but with a cross rather
+            // than a checkmark, to read as related but distinct)
+            'OUT011' => '<path d="M12 3.4l6.8 2.5v5.3c0 4.6-2.9 7.6-6.8 9.4-3.9-1.8-6.8-4.8-6.8-9.4V5.9Z"/><path d="M12 9v6"/><path d="M9 12h6"/>',
+
+            // Sexual Health & Libido — two interlocking rings (connection/intimacy)
+            'OUT012' => '<circle cx="9.5" cy="12" r="5"/><circle cx="14.5" cy="12" r="5"/>',
+
             // ---------------- Dashboard radar placeholders ----------------
             // Shown in place of the radar/spider chart when too few body
             // systems are flagged to plot a meaningful shape (see

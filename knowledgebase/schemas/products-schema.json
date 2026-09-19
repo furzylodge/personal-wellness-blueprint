@@ -68,7 +68,34 @@
             },
             "description": "Dietary preferences (PF020 vocabulary) this product VIOLATES, matching the foods.json convention — e.g. a product containing bovine gelatin lists \"vegetarian\" and \"vegan\" here, not the preferences it complies with."
           },
-          "status": { "type": "string", "enum": ["Active", "Discontinued", "Proposed"] }
+          "status": { "type": "string", "enum": ["Active", "Discontinued", "Proposed"] },
+          "formulatedFor": {
+            "type": "object",
+            "description": "Hand-reviewed (factsheet-grounded, Simon-approved) tag of which body systems and outcomes this product is genuinely formulated for. Distinct from the mechanism-matching that drives clinicalScore: this is a targeted 'this is what it's actually for' signal that ProductResolver uses for a modest ranking boost (PRIMARY_FLAGSHIP_BONUS / SECONDARY_FLAGSHIP_BONUS / OUTCOME_MATCH_BONUS) when it aligns with the person's own top body-system priority or selected wellness goals — never a hard override. A product with no clean single-system or outcome fit (broad-spectrum foundational products) can omit this field entirely.",
+            "properties": {
+              "primaryBodySystems": {
+                "type": "array",
+                "items": { "type": "string", "pattern": "^BS[0-9]{3}$" },
+                "description": "Must match ids in body-systems-mechanisms.json. The system(s) this product is a flagship formulation for."
+              },
+              "secondaryBodySystems": {
+                "type": "array",
+                "items": { "type": "string", "pattern": "^BS[0-9]{3}$" },
+                "description": "Must match ids in body-systems-mechanisms.json. Genuinely relevant but not the flagship purpose."
+              },
+              "outcomes": {
+                "type": "array",
+                "items": { "type": "string", "pattern": "^OUT[0-9]{3}$" },
+                "description": "Must match ids in outcomes.json. Wellness goals/outcomes this product is confirmed to meaningfully support."
+              },
+              "exactFor": {
+                "type": "array",
+                "items": { "type": "string", "pattern": "^OUT[0-9]{3}$" },
+                "description": "Must match ids in outcomes.json, and should normally be a subset of 'outcomes'. The narrow, explicitly Simon-approved 'this is exactly what it's for' designation - deliberately NOT derived from primaryBodySystems overlap (that was tried and came out too broad, e.g. SleepWell forcing itself into a Better Fitness result on a shared Nervous-system link). ProductResolver uses this list, and only this list, for the forced-inclusion floor (guaranteed top-3 placement when a person selects a matching goal) - a product with no exactFor entry can never be forced in, no matter how its body systems or mechanisms overlap."
+              }
+            },
+            "additionalProperties": false
+          }
         },
         "additionalProperties": false
       }
